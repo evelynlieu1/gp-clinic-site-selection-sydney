@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / IDE
+.env
+.venv/
+*.swp
+*.swo
+
+# OSM suburb polygon cache (large; regenerate with eda/plot_pressure_choropleth.py)
+eda/geo_cache/

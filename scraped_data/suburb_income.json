@@ -1,0 +1,3378 @@
+{
+  "Abbotsbury": {
+    "median_household_income_weekly": 2621,
+    "median_family_income_weekly": 2684,
+    "median_personal_income_weekly": 846
+  },
+  "Abbotsford": {
+    "median_household_income_weekly": 2263,
+    "median_family_income_weekly": 2988,
+    "median_personal_income_weekly": 1179
+  },
+  "Acacia Gardens": {
+    "median_household_income_weekly": 2796,
+    "median_family_income_weekly": 2800,
+    "median_personal_income_weekly": 1055
+  },
+  "Agnes Banks": {
+    "median_household_income_weekly": 2454,
+    "median_family_income_weekly": 2517,
+    "median_personal_income_weekly": 953
+  },
+  "Airds": {
+    "median_household_income_weekly": 944,
+    "median_family_income_weekly": 1111,
+    "median_personal_income_weekly": 451
+  },
+  "Alexandria": {
+    "median_household_income_weekly": 2654,
+    "median_family_income_weekly": 3600,
+    "median_personal_income_weekly": 1629
+  },
+  "Alfords Point": {
+    "median_household_income_weekly": 2969,
+    "median_family_income_weekly": 2978,
+    "median_personal_income_weekly": 956
+  },
+  "Allambie Heights": {
+    "median_household_income_weekly": 2890,
+    "median_family_income_weekly": 3298,
+    "median_personal_income_weekly": 1006
+  },
+  "Allawah": {
+    "median_household_income_weekly": 1774,
+    "median_family_income_weekly": 1960,
+    "median_personal_income_weekly": 765
+  },
+  "Ambarvale": {
+    "median_household_income_weekly": 1431,
+    "median_family_income_weekly": 1611,
+    "median_personal_income_weekly": 630
+  },
+  "Angus": {
+    "median_household_income_weekly": 1890,
+    "median_family_income_weekly": 1958,
+    "median_personal_income_weekly": 757
+  },
+  "Annandale": {
+    "median_household_income_weekly": 2683,
+    "median_family_income_weekly": 3905,
+    "median_personal_income_weekly": 1442
+  },
+  "Annangrove": {
+    "median_household_income_weekly": 2650,
+    "median_family_income_weekly": 2529,
+    "median_personal_income_weekly": 899
+  },
+  "Arcadia": {
+    "median_household_income_weekly": 2659,
+    "median_family_income_weekly": 2736,
+    "median_personal_income_weekly": 920
+  },
+  "Arncliffe": {
+    "median_household_income_weekly": 2046,
+    "median_family_income_weekly": 2205,
+    "median_personal_income_weekly": 856
+  },
+  "Arndell Park": {
+    "median_household_income_weekly": 1375,
+    "median_family_income_weekly": 2250,
+    "median_personal_income_weekly": 1208
+  },
+  "Artarmon": {
+    "median_household_income_weekly": 2420,
+    "median_family_income_weekly": 3052,
+    "median_personal_income_weekly": 1202
+  },
+  "Ashbury": {
+    "median_household_income_weekly": 2571,
+    "median_family_income_weekly": 2869,
+    "median_personal_income_weekly": 892
+  },
+  "Ashcroft": {
+    "median_household_income_weekly": 1089,
+    "median_family_income_weekly": 1316,
+    "median_personal_income_weekly": 458
+  },
+  "Ashfield": {
+    "median_household_income_weekly": 1888,
+    "median_family_income_weekly": 2256,
+    "median_personal_income_weekly": 890
+  },
+  "Asquith": {
+    "median_household_income_weekly": 2300,
+    "median_family_income_weekly": 2603,
+    "median_personal_income_weekly": 1041
+  },
+  "Auburn": {
+    "median_household_income_weekly": 1533,
+    "median_family_income_weekly": 1440,
+    "median_personal_income_weekly": 580
+  },
+  "Austral": {
+    "median_household_income_weekly": 2168,
+    "median_family_income_weekly": 2224,
+    "median_personal_income_weekly": 930
+  },
+  "Avalon Beach": {
+    "median_household_income_weekly": 2481,
+    "median_family_income_weekly": 2891,
+    "median_personal_income_weekly": 995
+  },
+  "Badgerys Creek": {
+    "median_household_income_weekly": 1271,
+    "median_family_income_weekly": 1312,
+    "median_personal_income_weekly": 490
+  },
+  "Balgowlah": {
+    "median_household_income_weekly": 2681,
+    "median_family_income_weekly": 3462,
+    "median_personal_income_weekly": 1264
+  },
+  "Balgowlah Heights": {
+    "median_household_income_weekly": 4687,
+    "median_family_income_weekly": 4784,
+    "median_personal_income_weekly": 1333
+  },
+  "Balmain": {
+    "median_household_income_weekly": 3039,
+    "median_family_income_weekly": 4562,
+    "median_personal_income_weekly": 1577
+  },
+  "Balmain East": {
+    "median_household_income_weekly": 3020,
+    "median_family_income_weekly": 4641,
+    "median_personal_income_weekly": 1550
+  },
+  "Bangor": {
+    "median_household_income_weekly": 2626,
+    "median_family_income_weekly": 2843,
+    "median_personal_income_weekly": 949
+  },
+  "Banksia": {
+    "median_household_income_weekly": 2018,
+    "median_family_income_weekly": 2174,
+    "median_personal_income_weekly": 763
+  },
+  "Banksmeadow": {
+    "median_household_income_weekly": 2225,
+    "median_family_income_weekly": 2571,
+    "median_personal_income_weekly": 1353
+  },
+  "Bankstown": {
+    "median_household_income_weekly": 1331,
+    "median_family_income_weekly": 1436,
+    "median_personal_income_weekly": 542
+  },
+  "Bankstown Aerodrome": {
+    "median_household_income_weekly": 1999,
+    "median_family_income_weekly": 2250,
+    "median_personal_income_weekly": 1125
+  },
+  "Barangaroo": {
+    "median_household_income_weekly": 4591,
+    "median_family_income_weekly": 4807,
+    "median_personal_income_weekly": 2167
+  },
+  "Barden Ridge": {
+    "median_household_income_weekly": 3134,
+    "median_family_income_weekly": 3145,
+    "median_personal_income_weekly": 1033
+  },
+  "Bardia": {
+    "median_household_income_weekly": 2417,
+    "median_family_income_weekly": 2401,
+    "median_personal_income_weekly": 990
+  },
+  "Bardwell Park": {
+    "median_household_income_weekly": 2386,
+    "median_family_income_weekly": 2709,
+    "median_personal_income_weekly": 916
+  },
+  "Bardwell Valley": {
+    "median_household_income_weekly": 2099,
+    "median_family_income_weekly": 2329,
+    "median_personal_income_weekly": 793
+  },
+  "Bass Hill": {
+    "median_household_income_weekly": 1411,
+    "median_family_income_weekly": 1576,
+    "median_personal_income_weekly": 534
+  },
+  "Baulkham Hills": {
+    "median_household_income_weekly": 2474,
+    "median_family_income_weekly": 2748,
+    "median_personal_income_weekly": 973
+  },
+  "Bayview": {
+    "median_household_income_weekly": 1885,
+    "median_family_income_weekly": 3050,
+    "median_personal_income_weekly": 876
+  },
+  "Beacon Hill": {
+    "median_household_income_weekly": 2937,
+    "median_family_income_weekly": 3028,
+    "median_personal_income_weekly": 982
+  },
+  "Beaconsfield": {
+    "median_household_income_weekly": 3061,
+    "median_family_income_weekly": 3510,
+    "median_personal_income_weekly": 1462
+  },
+  "Beaumont Hills": {
+    "median_household_income_weekly": 3308,
+    "median_family_income_weekly": 3274,
+    "median_personal_income_weekly": 1046
+  },
+  "Beecroft": {
+    "median_household_income_weekly": 2962,
+    "median_family_income_weekly": 3298,
+    "median_personal_income_weekly": 1076
+  },
+  "Belfield": {
+    "median_household_income_weekly": 1727,
+    "median_family_income_weekly": 2056,
+    "median_personal_income_weekly": 672
+  },
+  "Bella Vista": {
+    "median_household_income_weekly": 3518,
+    "median_family_income_weekly": 3393,
+    "median_personal_income_weekly": 1081
+  },
+  "Bellevue Hill": {
+    "median_household_income_weekly": 3315,
+    "median_family_income_weekly": 4509,
+    "median_personal_income_weekly": 1575
+  },
+  "Belmore": {
+    "median_household_income_weekly": 1456,
+    "median_family_income_weekly": 1737,
+    "median_personal_income_weekly": 640
+  },
+  "Belrose": {
+    "median_household_income_weekly": 2598,
+    "median_family_income_weekly": 3114,
+    "median_personal_income_weekly": 903
+  },
+  "Berala": {
+    "median_household_income_weekly": 1552,
+    "median_family_income_weekly": 1620,
+    "median_personal_income_weekly": 595
+  },
+  "Berkshire Park": {
+    "median_household_income_weekly": 2036,
+    "median_family_income_weekly": 2194,
+    "median_personal_income_weekly": 756
+  },
+  "Berowra": {
+    "median_household_income_weekly": 2781,
+    "median_family_income_weekly": 3052,
+    "median_personal_income_weekly": 998
+  },
+  "Berowra Heights": {
+    "median_household_income_weekly": 2468,
+    "median_family_income_weekly": 2810,
+    "median_personal_income_weekly": 974
+  },
+  "Berowra Waters": {
+    "median_household_income_weekly": 1812,
+    "median_family_income_weekly": 2650,
+    "median_personal_income_weekly": 1097
+  },
+  "Berrilee": {
+    "median_household_income_weekly": 2349,
+    "median_family_income_weekly": 2643,
+    "median_personal_income_weekly": 815
+  },
+  "Beverley Park": {
+    "median_household_income_weekly": 2242,
+    "median_family_income_weekly": 2586,
+    "median_personal_income_weekly": 859
+  },
+  "Beverly Hills": {
+    "median_household_income_weekly": 1862,
+    "median_family_income_weekly": 2108,
+    "median_personal_income_weekly": 701
+  },
+  "Bexley": {
+    "median_household_income_weekly": 1870,
+    "median_family_income_weekly": 2119,
+    "median_personal_income_weekly": 735
+  },
+  "Bexley North": {
+    "median_household_income_weekly": 1894,
+    "median_family_income_weekly": 2329,
+    "median_personal_income_weekly": 735
+  },
+  "Bidwill": {
+    "median_household_income_weekly": 899,
+    "median_family_income_weekly": 1045,
+    "median_personal_income_weekly": 451
+  },
+  "Bilgola Beach": {
+    "median_household_income_weekly": 4299,
+    "median_family_income_weekly": 4600,
+    "median_personal_income_weekly": 1557
+  },
+  "Bilgola Plateau": {
+    "median_household_income_weekly": 2856,
+    "median_family_income_weekly": 3003,
+    "median_personal_income_weekly": 1062
+  },
+  "Birchgrove": {
+    "median_household_income_weekly": 3603,
+    "median_family_income_weekly": 4706,
+    "median_personal_income_weekly": 1661
+  },
+  "Birrong": {
+    "median_household_income_weekly": 1575,
+    "median_family_income_weekly": 1639,
+    "median_personal_income_weekly": 548
+  },
+  "Blackett": {
+    "median_household_income_weekly": 1174,
+    "median_family_income_weekly": 1386,
+    "median_personal_income_weekly": 560
+  },
+  "Blacktown": {
+    "median_household_income_weekly": 1774,
+    "median_family_income_weekly": 1935,
+    "median_personal_income_weekly": 757
+  },
+  "Blair Athol": {
+    "median_household_income_weekly": 2389,
+    "median_family_income_weekly": 2388,
+    "median_personal_income_weekly": 809
+  },
+  "Blairmount": {
+    "median_household_income_weekly": 1792,
+    "median_family_income_weekly": 1890,
+    "median_personal_income_weekly": 763
+  },
+  "Blakehurst": {
+    "median_household_income_weekly": 2474,
+    "median_family_income_weekly": 2744,
+    "median_personal_income_weekly": 901
+  },
+  "Bligh Park": {
+    "median_household_income_weekly": 2029,
+    "median_family_income_weekly": 2250,
+    "median_personal_income_weekly": 935
+  },
+  "Bondi": {
+    "median_household_income_weekly": 2546,
+    "median_family_income_weekly": 3345,
+    "median_personal_income_weekly": 1386
+  },
+  "Bondi Beach": {
+    "median_household_income_weekly": 2795,
+    "median_family_income_weekly": 3592,
+    "median_personal_income_weekly": 1583
+  },
+  "Bondi Junction": {
+    "median_household_income_weekly": 2379,
+    "median_family_income_weekly": 3225,
+    "median_personal_income_weekly": 1307
+  },
+  "Bonnet Bay": {
+    "median_household_income_weekly": 3087,
+    "median_family_income_weekly": 3169,
+    "median_personal_income_weekly": 1104
+  },
+  "Bonnyrigg": {
+    "median_household_income_weekly": 1393,
+    "median_family_income_weekly": 1463,
+    "median_personal_income_weekly": 486
+  },
+  "Bonnyrigg Heights": {
+    "median_household_income_weekly": 1930,
+    "median_family_income_weekly": 1849,
+    "median_personal_income_weekly": 568
+  },
+  "Bossley Park": {
+    "median_household_income_weekly": 1542,
+    "median_family_income_weekly": 1639,
+    "median_personal_income_weekly": 497
+  },
+  "Botany": {
+    "median_household_income_weekly": 2373,
+    "median_family_income_weekly": 2844,
+    "median_personal_income_weekly": 1153
+  },
+  "Bow Bowing": {
+    "median_household_income_weekly": 2108,
+    "median_family_income_weekly": 2271,
+    "median_personal_income_weekly": 807
+  },
+  "Box Hill": {
+    "median_household_income_weekly": 2881,
+    "median_family_income_weekly": 2896,
+    "median_personal_income_weekly": 1271
+  },
+  "Bradbury": {
+    "median_household_income_weekly": 1557,
+    "median_family_income_weekly": 1780,
+    "median_personal_income_weekly": 731
+  },
+  "Breakfast Point": {
+    "median_household_income_weekly": 2303,
+    "median_family_income_weekly": 2850,
+    "median_personal_income_weekly": 1249
+  },
+  "Brighton-Le-Sands": {
+    "median_household_income_weekly": 1582,
+    "median_family_income_weekly": 2080,
+    "median_personal_income_weekly": 814
+  },
+  "Bringelly": {
+    "median_household_income_weekly": 1833,
+    "median_family_income_weekly": 1912,
+    "median_personal_income_weekly": 686
+  },
+  "Bronte": {
+    "median_household_income_weekly": 3365,
+    "median_family_income_weekly": 4501,
+    "median_personal_income_weekly": 1562
+  },
+  "Brooklyn": {
+    "median_household_income_weekly": 2062,
+    "median_family_income_weekly": 2687,
+    "median_personal_income_weekly": 904
+  },
+  "Brookvale": {
+    "median_household_income_weekly": 2127,
+    "median_family_income_weekly": 2619,
+    "median_personal_income_weekly": 1113
+  },
+  "Bundeena": {
+    "median_household_income_weekly": 1832,
+    "median_family_income_weekly": 2156,
+    "median_personal_income_weekly": 812
+  },
+  "Bungarribee": {
+    "median_household_income_weekly": 2928,
+    "median_family_income_weekly": 2752,
+    "median_personal_income_weekly": 1077
+  },
+  "Burraneer": {
+    "median_household_income_weekly": 3490,
+    "median_family_income_weekly": 3861,
+    "median_personal_income_weekly": 1209
+  },
+  "Burwood": {
+    "median_household_income_weekly": 1671,
+    "median_family_income_weekly": 1862,
+    "median_personal_income_weekly": 707
+  },
+  "Burwood Heights": {
+    "median_household_income_weekly": 2087,
+    "median_family_income_weekly": 2411,
+    "median_personal_income_weekly": 903
+  },
+  "Busby": {
+    "median_household_income_weekly": 1163,
+    "median_family_income_weekly": 1287,
+    "median_personal_income_weekly": 461
+  },
+  "Cabarita": {
+    "median_household_income_weekly": 2695,
+    "median_family_income_weekly": 3012,
+    "median_personal_income_weekly": 1150
+  },
+  "Cabramatta": {
+    "median_household_income_weekly": 1184,
+    "median_family_income_weekly": 1279,
+    "median_personal_income_weekly": 461
+  },
+  "Cabramatta West": {
+    "median_household_income_weekly": 1509,
+    "median_family_income_weekly": 1474,
+    "median_personal_income_weekly": 481
+  },
+  "Caddens": {
+    "median_household_income_weekly": 2592,
+    "median_family_income_weekly": 2714,
+    "median_personal_income_weekly": 1053
+  },
+  "Cambridge Gardens": {
+    "median_household_income_weekly": 1950,
+    "median_family_income_weekly": 2127,
+    "median_personal_income_weekly": 835
+  },
+  "Cambridge Park": {
+    "median_household_income_weekly": 1535,
+    "median_family_income_weekly": 1747,
+    "median_personal_income_weekly": 750
+  },
+  "Camden": {
+    "median_household_income_weekly": 1650,
+    "median_family_income_weekly": 2227,
+    "median_personal_income_weekly": 865
+  },
+  "Camden South": {
+    "median_household_income_weekly": 2032,
+    "median_family_income_weekly": 2318,
+    "median_personal_income_weekly": 929
+  },
+  "Cammeray": {
+    "median_household_income_weekly": 2870,
+    "median_family_income_weekly": 4078,
+    "median_personal_income_weekly": 1612
+  },
+  "Campbelltown": {
+    "median_household_income_weekly": 1432,
+    "median_family_income_weekly": 1834,
+    "median_personal_income_weekly": 739
+  },
+  "Camperdown": {
+    "median_household_income_weekly": 2331,
+    "median_family_income_weekly": 3384,
+    "median_personal_income_weekly": 1291
+  },
+  "Campsie": {
+    "median_household_income_weekly": 1497,
+    "median_family_income_weekly": 1600,
+    "median_personal_income_weekly": 652
+  },
+  "Canada Bay": {
+    "median_household_income_weekly": 2473,
+    "median_family_income_weekly": 2797,
+    "median_personal_income_weekly": 1056
+  },
+  "Canley Heights": {
+    "median_household_income_weekly": 1486,
+    "median_family_income_weekly": 1463,
+    "median_personal_income_weekly": 481
+  },
+  "Canley Vale": {
+    "median_household_income_weekly": 1330,
+    "median_family_income_weekly": 1452,
+    "median_personal_income_weekly": 475
+  },
+  "Canoelands": {
+    "median_household_income_weekly": 2166,
+    "median_family_income_weekly": 2277,
+    "median_personal_income_weekly": 809
+  },
+  "Canterbury": {
+    "median_household_income_weekly": 1882,
+    "median_family_income_weekly": 2101,
+    "median_personal_income_weekly": 852
+  },
+  "Caringbah": {
+    "median_household_income_weekly": 1890,
+    "median_family_income_weekly": 2536,
+    "median_personal_income_weekly": 1032
+  },
+  "Caringbah South": {
+    "median_household_income_weekly": 2721,
+    "median_family_income_weekly": 3173,
+    "median_personal_income_weekly": 1041
+  },
+  "Carlingford": {
+    "median_household_income_weekly": 2084,
+    "median_family_income_weekly": 2181,
+    "median_personal_income_weekly": 791
+  },
+  "Carlton": {
+    "median_household_income_weekly": 1860,
+    "median_family_income_weekly": 2075,
+    "median_personal_income_weekly": 762
+  },
+  "Carnes Hill": {
+    "median_household_income_weekly": 2630,
+    "median_family_income_weekly": 2584,
+    "median_personal_income_weekly": 932
+  },
+  "Carramar": {
+    "median_household_income_weekly": 1073,
+    "median_family_income_weekly": 1350,
+    "median_personal_income_weekly": 529
+  },
+  "Carss Park": {
+    "median_household_income_weekly": 2297,
+    "median_family_income_weekly": 3269,
+    "median_personal_income_weekly": 913
+  },
+  "Cartwright": {
+    "median_household_income_weekly": 826,
+    "median_family_income_weekly": 1127,
+    "median_personal_income_weekly": 426
+  },
+  "Castle Cove": {
+    "median_household_income_weekly": 3439,
+    "median_family_income_weekly": 3841,
+    "median_personal_income_weekly": 1219
+  },
+  "Castle Hill": {
+    "median_household_income_weekly": 2551,
+    "median_family_income_weekly": 2858,
+    "median_personal_income_weekly": 931
+  },
+  "Castlecrag": {
+    "median_household_income_weekly": 4675,
+    "median_family_income_weekly": 4857,
+    "median_personal_income_weekly": 1446
+  },
+  "Castlereagh": {
+    "median_household_income_weekly": 2370,
+    "median_family_income_weekly": 2371,
+    "median_personal_income_weekly": 828
+  },
+  "Casula": {
+    "median_household_income_weekly": 1730,
+    "median_family_income_weekly": 1917,
+    "median_personal_income_weekly": 645
+  },
+  "Catherine Field": {
+    "median_household_income_weekly": 2316,
+    "median_family_income_weekly": 2298,
+    "median_personal_income_weekly": 885
+  },
+  "Cattai": {
+    "median_household_income_weekly": 2878,
+    "median_family_income_weekly": 2962,
+    "median_personal_income_weekly": 969
+  },
+  "Cawdor": {
+    "median_household_income_weekly": 2399,
+    "median_family_income_weekly": 2482,
+    "median_personal_income_weekly": 930
+  },
+  "Cecil Hills": {
+    "median_household_income_weekly": 2409,
+    "median_family_income_weekly": 2346,
+    "median_personal_income_weekly": 727
+  },
+  "Cecil Park": {
+    "median_household_income_weekly": 2446,
+    "median_family_income_weekly": 2457,
+    "median_personal_income_weekly": 767
+  },
+  "Centennial Park": {
+    "median_household_income_weekly": 2154,
+    "median_family_income_weekly": 3371,
+    "median_personal_income_weekly": 1415
+  },
+  "Chatswood": {
+    "median_household_income_weekly": 2158,
+    "median_family_income_weekly": 2455,
+    "median_personal_income_weekly": 938
+  },
+  "Chatswood West": {
+    "median_household_income_weekly": 3121,
+    "median_family_income_weekly": 3430,
+    "median_personal_income_weekly": 1057
+  },
+  "Cheltenham": {
+    "median_household_income_weekly": 3573,
+    "median_family_income_weekly": 3843,
+    "median_personal_income_weekly": 1159
+  },
+  "Cherrybrook": {
+    "median_household_income_weekly": 2924,
+    "median_family_income_weekly": 3098,
+    "median_personal_income_weekly": 940
+  },
+  "Chester Hill": {
+    "median_household_income_weekly": 1355,
+    "median_family_income_weekly": 1534,
+    "median_personal_income_weekly": 495
+  },
+  "Chifley": {
+    "median_household_income_weekly": 2311,
+    "median_family_income_weekly": 2823,
+    "median_personal_income_weekly": 841
+  },
+  "Chippendale": {
+    "median_household_income_weekly": 1606,
+    "median_family_income_weekly": 2304,
+    "median_personal_income_weekly": 882
+  },
+  "Chipping Norton": {
+    "median_household_income_weekly": 2024,
+    "median_family_income_weekly": 2199,
+    "median_personal_income_weekly": 773
+  },
+  "Chiswick": {
+    "median_household_income_weekly": 2444,
+    "median_family_income_weekly": 3268,
+    "median_personal_income_weekly": 1447
+  },
+  "Chullora": {
+    "median_household_income_weekly": 0,
+    "median_family_income_weekly": 0,
+    "median_personal_income_weekly": 0
+  },
+  "Church Point": {
+    "median_household_income_weekly": 3182,
+    "median_family_income_weekly": 3420,
+    "median_personal_income_weekly": 1161
+  },
+  "Claremont Meadows": {
+    "median_household_income_weekly": 2297,
+    "median_family_income_weekly": 2428,
+    "median_personal_income_weekly": 979
+  },
+  "Clarendon": {
+    "median_household_income_weekly": 1625,
+    "median_family_income_weekly": 1666,
+    "median_personal_income_weekly": 684
+  },
+  "Clareville": {
+    "median_household_income_weekly": 2802,
+    "median_family_income_weekly": 3054,
+    "median_personal_income_weekly": 1223
+  },
+  "Claymore": {
+    "median_household_income_weekly": 1020,
+    "median_family_income_weekly": 1211,
+    "median_personal_income_weekly": 483
+  },
+  "Clemton Park": {
+    "median_household_income_weekly": 1869,
+    "median_family_income_weekly": 2267,
+    "median_personal_income_weekly": 634
+  },
+  "Clontarf": {
+    "median_household_income_weekly": 4609,
+    "median_family_income_weekly": 4774,
+    "median_personal_income_weekly": 1385
+  },
+  "Clovelly": {
+    "median_household_income_weekly": 3474,
+    "median_family_income_weekly": 4236,
+    "median_personal_income_weekly": 1633
+  },
+  "Clyde": {
+    "median_household_income_weekly": 725,
+    "median_family_income_weekly": 0,
+    "median_personal_income_weekly": 574
+  },
+  "Coasters Retreat": {
+    "median_household_income_weekly": 2250,
+    "median_family_income_weekly": 2374,
+    "median_personal_income_weekly": 949
+  },
+  "Cobbitty": {
+    "median_household_income_weekly": 2313,
+    "median_family_income_weekly": 2468,
+    "median_personal_income_weekly": 992
+  },
+  "Colebee": {
+    "median_household_income_weekly": 3223,
+    "median_family_income_weekly": 3102,
+    "median_personal_income_weekly": 1173
+  },
+  "Collaroy": {
+    "median_household_income_weekly": 2372,
+    "median_family_income_weekly": 2907,
+    "median_personal_income_weekly": 1074
+  },
+  "Collaroy Plateau": {
+    "median_household_income_weekly": 3278,
+    "median_family_income_weekly": 3341,
+    "median_personal_income_weekly": 1071
+  },
+  "Colyton": {
+    "median_household_income_weekly": 1539,
+    "median_family_income_weekly": 1757,
+    "median_personal_income_weekly": 713
+  },
+  "Como": {
+    "median_household_income_weekly": 3152,
+    "median_family_income_weekly": 3452,
+    "median_personal_income_weekly": 1149
+  },
+  "Concord": {
+    "median_household_income_weekly": 2410,
+    "median_family_income_weekly": 2805,
+    "median_personal_income_weekly": 935
+  },
+  "Concord West": {
+    "median_household_income_weekly": 2354,
+    "median_family_income_weekly": 2827,
+    "median_personal_income_weekly": 938
+  },
+  "Condell Park": {
+    "median_household_income_weekly": 1636,
+    "median_family_income_weekly": 1711,
+    "median_personal_income_weekly": 565
+  },
+  "Connells Point": {
+    "median_household_income_weekly": 2644,
+    "median_family_income_weekly": 2874,
+    "median_personal_income_weekly": 947
+  },
+  "Constitution Hill": {
+    "median_household_income_weekly": 1706,
+    "median_family_income_weekly": 2136,
+    "median_personal_income_weekly": 722
+  },
+  "Coogee": {
+    "median_household_income_weekly": 2976,
+    "median_family_income_weekly": 3669,
+    "median_personal_income_weekly": 1555
+  },
+  "Cornwallis": {
+    "median_household_income_weekly": 1875,
+    "median_family_income_weekly": 1875,
+    "median_personal_income_weekly": 669
+  },
+  "Cottage Point": {
+    "median_household_income_weekly": 2750,
+    "median_family_income_weekly": 3583,
+    "median_personal_income_weekly": 1350
+  },
+  "Cowan": {
+    "median_household_income_weekly": 2250,
+    "median_family_income_weekly": 2487,
+    "median_personal_income_weekly": 852
+  },
+  "Cranebrook": {
+    "median_household_income_weekly": 2108,
+    "median_family_income_weekly": 2300,
+    "median_personal_income_weekly": 903
+  },
+  "Cremorne": {
+    "median_household_income_weekly": 2481,
+    "median_family_income_weekly": 3708,
+    "median_personal_income_weekly": 1502
+  },
+  "Cremorne Point": {
+    "median_household_income_weekly": 2951,
+    "median_family_income_weekly": 4509,
+    "median_personal_income_weekly": 1661
+  },
+  "Cromer": {
+    "median_household_income_weekly": 2483,
+    "median_family_income_weekly": 2874,
+    "median_personal_income_weekly": 949
+  },
+  "Cronulla": {
+    "median_household_income_weekly": 2058,
+    "median_family_income_weekly": 2719,
+    "median_personal_income_weekly": 1179
+  },
+  "Crows Nest": {
+    "median_household_income_weekly": 2614,
+    "median_family_income_weekly": 3812,
+    "median_personal_income_weekly": 1657
+  },
+  "Croydon": {
+    "median_household_income_weekly": 2157,
+    "median_family_income_weekly": 2526,
+    "median_personal_income_weekly": 835
+  },
+  "Croydon Park": {
+    "median_household_income_weekly": 1843,
+    "median_family_income_weekly": 2318,
+    "median_personal_income_weekly": 807
+  },
+  "Cumberland Reach": {
+    "median_household_income_weekly": 2386,
+    "median_family_income_weekly": 2383,
+    "median_personal_income_weekly": 922
+  },
+  "Curl Curl": {
+    "median_household_income_weekly": 3870,
+    "median_family_income_weekly": 4420,
+    "median_personal_income_weekly": 1260
+  },
+  "Currans Hill": {
+    "median_household_income_weekly": 2170,
+    "median_family_income_weekly": 2331,
+    "median_personal_income_weekly": 971
+  },
+  "Daceyville": {
+    "median_household_income_weekly": 651,
+    "median_family_income_weekly": 1187,
+    "median_personal_income_weekly": 450
+  },
+  "Dangar Island": {
+    "median_household_income_weekly": 1857,
+    "median_family_income_weekly": 2625,
+    "median_personal_income_weekly": 936
+  },
+  "Darling Point": {
+    "median_household_income_weekly": 3219,
+    "median_family_income_weekly": 4620,
+    "median_personal_income_weekly": 1799
+  },
+  "Darlinghurst": {
+    "median_household_income_weekly": 2279,
+    "median_family_income_weekly": 3913,
+    "median_personal_income_weekly": 1535
+  },
+  "Darlington": null,
+  "Davidson": {
+    "median_household_income_weekly": 3254,
+    "median_family_income_weekly": 3351,
+    "median_personal_income_weekly": 1046
+  },
+  "Dawes Point": {
+    "median_household_income_weekly": 4708,
+    "median_family_income_weekly": 4985,
+    "median_personal_income_weekly": 2468
+  },
+  "Dean Park": {
+    "median_household_income_weekly": 1846,
+    "median_family_income_weekly": 1985,
+    "median_personal_income_weekly": 753
+  },
+  "Dee Why": {
+    "median_household_income_weekly": 2106,
+    "median_family_income_weekly": 2460,
+    "median_personal_income_weekly": 1065
+  },
+  "Denham Court": {
+    "median_household_income_weekly": 2448,
+    "median_family_income_weekly": 2593,
+    "median_personal_income_weekly": 981
+  },
+  "Denistone": {
+    "median_household_income_weekly": 2683,
+    "median_family_income_weekly": 2901,
+    "median_personal_income_weekly": 970
+  },
+  "Denistone East": {
+    "median_household_income_weekly": 2424,
+    "median_family_income_weekly": 2612,
+    "median_personal_income_weekly": 879
+  },
+  "Denistone West": {
+    "median_household_income_weekly": 2579,
+    "median_family_income_weekly": 2750,
+    "median_personal_income_weekly": 855
+  },
+  "Dharruk": {
+    "median_household_income_weekly": 1467,
+    "median_family_income_weekly": 1558,
+    "median_personal_income_weekly": 556
+  },
+  "Dolans Bay": {
+    "median_household_income_weekly": 3542,
+    "median_family_income_weekly": 3865,
+    "median_personal_income_weekly": 1215
+  },
+  "Dolls Point": {
+    "median_household_income_weekly": 1708,
+    "median_family_income_weekly": 2176,
+    "median_personal_income_weekly": 996
+  },
+  "Doonside": {
+    "median_household_income_weekly": 1582,
+    "median_family_income_weekly": 1770,
+    "median_personal_income_weekly": 647
+  },
+  "Double Bay": {
+    "median_household_income_weekly": 3077,
+    "median_family_income_weekly": 4250,
+    "median_personal_income_weekly": 1662
+  },
+  "Dover Heights": {
+    "median_household_income_weekly": 3877,
+    "median_family_income_weekly": 4572,
+    "median_personal_income_weekly": 1404
+  },
+  "Drummoyne": {
+    "median_household_income_weekly": 2776,
+    "median_family_income_weekly": 3506,
+    "median_personal_income_weekly": 1388
+  },
+  "Duffys Forest": {
+    "median_household_income_weekly": 4250,
+    "median_family_income_weekly": 4374,
+    "median_personal_income_weekly": 1223
+  },
+  "Dulwich Hill": {
+    "median_household_income_weekly": 2095,
+    "median_family_income_weekly": 2774,
+    "median_personal_income_weekly": 1157
+  },
+  "Dundas": {
+    "median_household_income_weekly": 1962,
+    "median_family_income_weekly": 2188,
+    "median_personal_income_weekly": 764
+  },
+  "Dundas Valley": {
+    "median_household_income_weekly": 1835,
+    "median_family_income_weekly": 2137,
+    "median_personal_income_weekly": 726
+  },
+  "Dural": null,
+  "Eagle Vale": {
+    "median_household_income_weekly": 1785,
+    "median_family_income_weekly": 1905,
+    "median_personal_income_weekly": 728
+  },
+  "Earlwood": {
+    "median_household_income_weekly": 2164,
+    "median_family_income_weekly": 2486,
+    "median_personal_income_weekly": 837
+  },
+  "East Hills": {
+    "median_household_income_weekly": 1829,
+    "median_family_income_weekly": 2368,
+    "median_personal_income_weekly": 789
+  },
+  "East Killara": {
+    "median_household_income_weekly": 3005,
+    "median_family_income_weekly": 3053,
+    "median_personal_income_weekly": 905
+  },
+  "East Kurrajong": {
+    "median_household_income_weekly": 2757,
+    "median_family_income_weekly": 2695,
+    "median_personal_income_weekly": 949
+  },
+  "East Lindfield": {
+    "median_household_income_weekly": 3457,
+    "median_family_income_weekly": 3898,
+    "median_personal_income_weekly": 1132
+  },
+  "East Ryde": {
+    "median_household_income_weekly": 3240,
+    "median_family_income_weekly": 3545,
+    "median_personal_income_weekly": 1114
+  },
+  "Eastern Creek": {
+    "median_household_income_weekly": 1861,
+    "median_family_income_weekly": 1958,
+    "median_personal_income_weekly": 683
+  },
+  "Eastgardens": {
+    "median_household_income_weekly": 2232,
+    "median_family_income_weekly": 2565,
+    "median_personal_income_weekly": 1113
+  },
+  "Eastlakes": {
+    "median_household_income_weekly": 1300,
+    "median_family_income_weekly": 1784,
+    "median_personal_income_weekly": 631
+  },
+  "Eastwood": {
+    "median_household_income_weekly": 1945,
+    "median_family_income_weekly": 2177,
+    "median_personal_income_weekly": 760
+  },
+  "Ebenezer": {
+    "median_household_income_weekly": 2261,
+    "median_family_income_weekly": 2218,
+    "median_personal_income_weekly": 836
+  },
+  "Edensor Park": {
+    "median_household_income_weekly": 1817,
+    "median_family_income_weekly": 1805,
+    "median_personal_income_weekly": 538
+  },
+  "Edgecliff": {
+    "median_household_income_weekly": 2321,
+    "median_family_income_weekly": 3756,
+    "median_personal_income_weekly": 1510
+  },
+  "Edmondson Park": {
+    "median_household_income_weekly": 2562,
+    "median_family_income_weekly": 2619,
+    "median_personal_income_weekly": 1008
+  },
+  "Elanora Heights": {
+    "median_household_income_weekly": 3052,
+    "median_family_income_weekly": 3177,
+    "median_personal_income_weekly": 1046
+  },
+  "Elderslie": null,
+  "Elizabeth Bay": {
+    "median_household_income_weekly": 2116,
+    "median_family_income_weekly": 4147,
+    "median_personal_income_weekly": 1676
+  },
+  "Elizabeth Hills": {
+    "median_household_income_weekly": 2413,
+    "median_family_income_weekly": 2388,
+    "median_personal_income_weekly": 822
+  },
+  "Ellis Lane": {
+    "median_household_income_weekly": 2269,
+    "median_family_income_weekly": 2472,
+    "median_personal_income_weekly": 875
+  },
+  "Elvina Bay": {
+    "median_household_income_weekly": 1958,
+    "median_family_income_weekly": 2687,
+    "median_personal_income_weekly": 1020
+  },
+  "Emerton": {
+    "median_household_income_weekly": 1238,
+    "median_family_income_weekly": 1414,
+    "median_personal_income_weekly": 562
+  },
+  "Emu Heights": {
+    "median_household_income_weekly": 2398,
+    "median_family_income_weekly": 2616,
+    "median_personal_income_weekly": 978
+  },
+  "Emu Plains": {
+    "median_household_income_weekly": 1877,
+    "median_family_income_weekly": 2341,
+    "median_personal_income_weekly": 880
+  },
+  "Enfield": {
+    "median_household_income_weekly": 1742,
+    "median_family_income_weekly": 2155,
+    "median_personal_income_weekly": 764
+  },
+  "Engadine": {
+    "median_household_income_weekly": 2303,
+    "median_family_income_weekly": 2602,
+    "median_personal_income_weekly": 946
+  },
+  "Englorie Park": {
+    "median_household_income_weekly": 1653,
+    "median_family_income_weekly": 1795,
+    "median_personal_income_weekly": 767
+  },
+  "Enmore": null,
+  "Epping": {
+    "median_household_income_weekly": 2243,
+    "median_family_income_weekly": 2445,
+    "median_personal_income_weekly": 946
+  },
+  "Ermington": {
+    "median_household_income_weekly": 1993,
+    "median_family_income_weekly": 2317,
+    "median_personal_income_weekly": 812
+  },
+  "Erskine Park": {
+    "median_household_income_weekly": 2349,
+    "median_family_income_weekly": 2397,
+    "median_personal_income_weekly": 906
+  },
+  "Erskineville": {
+    "median_household_income_weekly": 3020,
+    "median_family_income_weekly": 3766,
+    "median_personal_income_weekly": 1704
+  },
+  "Eschol Park": {
+    "median_household_income_weekly": 1851,
+    "median_family_income_weekly": 2019,
+    "median_personal_income_weekly": 820
+  },
+  "Eveleigh": {
+    "median_household_income_weekly": 1339,
+    "median_family_income_weekly": 1699,
+    "median_personal_income_weekly": 913
+  },
+  "Fairfield": {
+    "median_household_income_weekly": 1092,
+    "median_family_income_weekly": 1246,
+    "median_personal_income_weekly": 454
+  },
+  "Fairfield East": {
+    "median_household_income_weekly": 1212,
+    "median_family_income_weekly": 1369,
+    "median_personal_income_weekly": 459
+  },
+  "Fairfield Heights": {
+    "median_household_income_weekly": 1285,
+    "median_family_income_weekly": 1349,
+    "median_personal_income_weekly": 431
+  },
+  "Fairfield West": {
+    "median_household_income_weekly": 1428,
+    "median_family_income_weekly": 1450,
+    "median_personal_income_weekly": 476
+  },
+  "Fairlight": {
+    "median_household_income_weekly": 3251,
+    "median_family_income_weekly": 4187,
+    "median_personal_income_weekly": 1491
+  },
+  "Fiddletown": {
+    "median_household_income_weekly": 2562,
+    "median_family_income_weekly": 2874,
+    "median_personal_income_weekly": 1016
+  },
+  "Five Dock": {
+    "median_household_income_weekly": 2328,
+    "median_family_income_weekly": 2943,
+    "median_personal_income_weekly": 1079
+  },
+  "Forest Glen": {
+    "median_household_income_weekly": 2583,
+    "median_family_income_weekly": 2625,
+    "median_personal_income_weekly": 919
+  },
+  "Forest Lodge": {
+    "median_household_income_weekly": 2437,
+    "median_family_income_weekly": 3664,
+    "median_personal_income_weekly": 1469
+  },
+  "Forestville": {
+    "median_household_income_weekly": 2507,
+    "median_family_income_weekly": 3125,
+    "median_personal_income_weekly": 936
+  },
+  "Freemans Reach": {
+    "median_household_income_weekly": 2143,
+    "median_family_income_weekly": 2291,
+    "median_personal_income_weekly": 877
+  },
+  "Frenchs Forest": {
+    "median_household_income_weekly": 3109,
+    "median_family_income_weekly": 3302,
+    "median_personal_income_weekly": 1038
+  },
+  "Freshwater": {
+    "median_household_income_weekly": 2726,
+    "median_family_income_weekly": 3390,
+    "median_personal_income_weekly": 1355
+  },
+  "Gables": {
+    "median_household_income_weekly": 3219,
+    "median_family_income_weekly": 3192,
+    "median_personal_income_weekly": 1345
+  },
+  "Galston": {
+    "median_household_income_weekly": 2295,
+    "median_family_income_weekly": 2724,
+    "median_personal_income_weekly": 875
+  },
+  "Georges Hall": {
+    "median_household_income_weekly": 1785,
+    "median_family_income_weekly": 1927,
+    "median_personal_income_weekly": 650
+  },
+  "Gilead": {
+    "median_household_income_weekly": 758,
+    "median_family_income_weekly": 1007,
+    "median_personal_income_weekly": 471
+  },
+  "Girraween": {
+    "median_household_income_weekly": 2378,
+    "median_family_income_weekly": 2556,
+    "median_personal_income_weekly": 918
+  },
+  "Gladesville": {
+    "median_household_income_weekly": 2257,
+    "median_family_income_weekly": 3136,
+    "median_personal_income_weekly": 1200
+  },
+  "Glebe": {
+    "median_household_income_weekly": 1756,
+    "median_family_income_weekly": 2947,
+    "median_personal_income_weekly": 1045
+  },
+  "Gledswood Hills": {
+    "median_household_income_weekly": 2780,
+    "median_family_income_weekly": 2854,
+    "median_personal_income_weekly": 1192
+  },
+  "Glen Alpine": {
+    "median_household_income_weekly": 2669,
+    "median_family_income_weekly": 2653,
+    "median_personal_income_weekly": 883
+  },
+  "Glendenning": {
+    "median_household_income_weekly": 2203,
+    "median_family_income_weekly": 2207,
+    "median_personal_income_weekly": 855
+  },
+  "Glenfield": {
+    "median_household_income_weekly": 2070,
+    "median_family_income_weekly": 2203,
+    "median_personal_income_weekly": 844
+  },
+  "Glenhaven": {
+    "median_household_income_weekly": 2532,
+    "median_family_income_weekly": 3104,
+    "median_personal_income_weekly": 950
+  },
+  "Glenmore Park": {
+    "median_household_income_weekly": 2526,
+    "median_family_income_weekly": 2682,
+    "median_personal_income_weekly": 1045
+  },
+  "Glenorie": {
+    "median_household_income_weekly": 2524,
+    "median_family_income_weekly": 2644,
+    "median_personal_income_weekly": 882
+  },
+  "Glenwood": {
+    "median_household_income_weekly": 3068,
+    "median_family_income_weekly": 3009,
+    "median_personal_income_weekly": 984
+  },
+  "Glossodia": {
+    "median_household_income_weekly": 2119,
+    "median_family_income_weekly": 2186,
+    "median_personal_income_weekly": 886
+  },
+  "Gordon": {
+    "median_household_income_weekly": 2460,
+    "median_family_income_weekly": 2924,
+    "median_personal_income_weekly": 1075
+  },
+  "Grantham Farm": {
+    "median_household_income_weekly": 2570,
+    "median_family_income_weekly": 2657,
+    "median_personal_income_weekly": 1154
+  },
+  "Granville": {
+    "median_household_income_weekly": 1598,
+    "median_family_income_weekly": 1651,
+    "median_personal_income_weekly": 677
+  },
+  "Grasmere": {
+    "median_household_income_weekly": 1652,
+    "median_family_income_weekly": 2518,
+    "median_personal_income_weekly": 543
+  },
+  "Grays Point": {
+    "median_household_income_weekly": 3061,
+    "median_family_income_weekly": 3270,
+    "median_personal_income_weekly": 1083
+  },
+  "Great Mackerel Beach": {
+    "median_household_income_weekly": 1124,
+    "median_family_income_weekly": 2083,
+    "median_personal_income_weekly": 780
+  },
+  "Green Valley": {
+    "median_household_income_weekly": 1775,
+    "median_family_income_weekly": 1743,
+    "median_personal_income_weekly": 580
+  },
+  "Greenacre": {
+    "median_household_income_weekly": 1449,
+    "median_family_income_weekly": 1646,
+    "median_personal_income_weekly": 495
+  },
+  "Greendale": null,
+  "Greenfield Park": {
+    "median_household_income_weekly": 1477,
+    "median_family_income_weekly": 1492,
+    "median_personal_income_weekly": 462
+  },
+  "Greenhills Beach": {
+    "median_household_income_weekly": 4704,
+    "median_family_income_weekly": 4701,
+    "median_personal_income_weekly": 1373
+  },
+  "Greenwich": {
+    "median_household_income_weekly": 2946,
+    "median_family_income_weekly": 4034,
+    "median_personal_income_weekly": 1457
+  },
+  "Gregory Hills": {
+    "median_household_income_weekly": 2406,
+    "median_family_income_weekly": 2471,
+    "median_personal_income_weekly": 1082
+  },
+  "Greystanes": {
+    "median_household_income_weekly": 1930,
+    "median_family_income_weekly": 2150,
+    "median_personal_income_weekly": 737
+  },
+  "Grose Vale": {
+    "median_household_income_weekly": 2447,
+    "median_family_income_weekly": 2530,
+    "median_personal_income_weekly": 838
+  },
+  "Grose Wold": {
+    "median_household_income_weekly": 2409,
+    "median_family_income_weekly": 2434,
+    "median_personal_income_weekly": 914
+  },
+  "Guildford": {
+    "median_household_income_weekly": 1314,
+    "median_family_income_weekly": 1473,
+    "median_personal_income_weekly": 513
+  },
+  "Guildford West": {
+    "median_household_income_weekly": 1583,
+    "median_family_income_weekly": 1676,
+    "median_personal_income_weekly": 569
+  },
+  "Gymea": {
+    "median_household_income_weekly": 2049,
+    "median_family_income_weekly": 2514,
+    "median_personal_income_weekly": 1020
+  },
+  "Gymea Bay": {
+    "median_household_income_weekly": 3047,
+    "median_family_income_weekly": 3244,
+    "median_personal_income_weekly": 1049
+  },
+  "Haberfield": {
+    "median_household_income_weekly": 2761,
+    "median_family_income_weekly": 3494,
+    "median_personal_income_weekly": 996
+  },
+  "Hammondville": {
+    "median_household_income_weekly": 1868,
+    "median_family_income_weekly": 2250,
+    "median_personal_income_weekly": 827
+  },
+  "Harrington Park": {
+    "median_household_income_weekly": 3014,
+    "median_family_income_weekly": 3040,
+    "median_personal_income_weekly": 1014
+  },
+  "Harris Park": {
+    "median_household_income_weekly": 1779,
+    "median_family_income_weekly": 1967,
+    "median_personal_income_weekly": 802
+  },
+  "Hassall Grove": {
+    "median_household_income_weekly": 2018,
+    "median_family_income_weekly": 2051,
+    "median_personal_income_weekly": 787
+  },
+  "Haymarket": {
+    "median_household_income_weekly": 1931,
+    "median_family_income_weekly": 1916,
+    "median_personal_income_weekly": 758
+  },
+  "Heathcote": {
+    "median_household_income_weekly": 2240,
+    "median_family_income_weekly": 2638,
+    "median_personal_income_weekly": 957
+  },
+  "Hebersham": {
+    "median_household_income_weekly": 1335,
+    "median_family_income_weekly": 1472,
+    "median_personal_income_weekly": 574
+  },
+  "Heckenberg": {
+    "median_household_income_weekly": 1159,
+    "median_family_income_weekly": 1290,
+    "median_personal_income_weekly": 462
+  },
+  "Henley": {
+    "median_household_income_weekly": 3353,
+    "median_family_income_weekly": 4042,
+    "median_personal_income_weekly": 1341
+  },
+  "Hillsdale": {
+    "median_household_income_weekly": 1635,
+    "median_family_income_weekly": 1958,
+    "median_personal_income_weekly": 862
+  },
+  "Hinchinbrook": {
+    "median_household_income_weekly": 1909,
+    "median_family_income_weekly": 1866,
+    "median_personal_income_weekly": 631
+  },
+  "Hobartville": {
+    "median_household_income_weekly": 1759,
+    "median_family_income_weekly": 2127,
+    "median_personal_income_weekly": 826
+  },
+  "Holroyd": {
+    "median_household_income_weekly": 1893,
+    "median_family_income_weekly": 2020,
+    "median_personal_income_weekly": 854
+  },
+  "Holsworthy": {
+    "median_household_income_weekly": 2571,
+    "median_family_income_weekly": 2660,
+    "median_personal_income_weekly": 1104
+  },
+  "Homebush": {
+    "median_household_income_weekly": 2101,
+    "median_family_income_weekly": 2242,
+    "median_personal_income_weekly": 960
+  },
+  "Homebush West": {
+    "median_household_income_weekly": 1952,
+    "median_family_income_weekly": 2072,
+    "median_personal_income_weekly": 860
+  },
+  "Horningsea Park": {
+    "median_household_income_weekly": 2457,
+    "median_family_income_weekly": 2438,
+    "median_personal_income_weekly": 825
+  },
+  "Hornsby": {
+    "median_household_income_weekly": 1952,
+    "median_family_income_weekly": 2284,
+    "median_personal_income_weekly": 890
+  },
+  "Hornsby Heights": {
+    "median_household_income_weekly": 2699,
+    "median_family_income_weekly": 2977,
+    "median_personal_income_weekly": 967
+  },
+  "Horsley Park": {
+    "median_household_income_weekly": 2135,
+    "median_family_income_weekly": 2337,
+    "median_personal_income_weekly": 764
+  },
+  "Hoxton Park": {
+    "median_household_income_weekly": 1960,
+    "median_family_income_weekly": 2010,
+    "median_personal_income_weekly": 663
+  },
+  "Hunters Hill": {
+    "median_household_income_weekly": 3413,
+    "median_family_income_weekly": 4583,
+    "median_personal_income_weekly": 1239
+  },
+  "Huntleys Cove": {
+    "median_household_income_weekly": 2359,
+    "median_family_income_weekly": 2987,
+    "median_personal_income_weekly": 1177
+  },
+  "Huntleys Point": {
+    "median_household_income_weekly": 3999,
+    "median_family_income_weekly": 4250,
+    "median_personal_income_weekly": 1192
+  },
+  "Hurlstone Park": {
+    "median_household_income_weekly": 2121,
+    "median_family_income_weekly": 2573,
+    "median_personal_income_weekly": 968
+  },
+  "Hurstville": {
+    "median_household_income_weekly": 1804,
+    "median_family_income_weekly": 1802,
+    "median_personal_income_weekly": 698
+  },
+  "Hurstville Grove": {
+    "median_household_income_weekly": 2419,
+    "median_family_income_weekly": 2565,
+    "median_personal_income_weekly": 872
+  },
+  "Illawong": {
+    "median_household_income_weekly": 2778,
+    "median_family_income_weekly": 2882,
+    "median_personal_income_weekly": 985
+  },
+  "Ingleburn": {
+    "median_household_income_weekly": 1596,
+    "median_family_income_weekly": 1834,
+    "median_personal_income_weekly": 719
+  },
+  "Ingleside": {
+    "median_household_income_weekly": 2776,
+    "median_family_income_weekly": 2793,
+    "median_personal_income_weekly": 989
+  },
+  "Jamisontown": {
+    "median_household_income_weekly": 1538,
+    "median_family_income_weekly": 2026,
+    "median_personal_income_weekly": 873
+  },
+  "Jannali": {
+    "median_household_income_weekly": 2220,
+    "median_family_income_weekly": 2760,
+    "median_personal_income_weekly": 1023
+  },
+  "Jordan Springs": {
+    "median_household_income_weekly": 2484,
+    "median_family_income_weekly": 2548,
+    "median_personal_income_weekly": 1100
+  },
+  "Kangaroo Point": {
+    "median_household_income_weekly": 4111,
+    "median_family_income_weekly": 3963,
+    "median_personal_income_weekly": 1245
+  },
+  "Kareela": {
+    "median_household_income_weekly": 2765,
+    "median_family_income_weekly": 2964,
+    "median_personal_income_weekly": 983
+  },
+  "Kearns": {
+    "median_household_income_weekly": 2147,
+    "median_family_income_weekly": 2312,
+    "median_personal_income_weekly": 908
+  },
+  "Kellyville": {
+    "median_household_income_weekly": 3044,
+    "median_family_income_weekly": 3122,
+    "median_personal_income_weekly": 1049
+  },
+  "Kellyville Ridge": {
+    "median_household_income_weekly": 3073,
+    "median_family_income_weekly": 3100,
+    "median_personal_income_weekly": 1131
+  },
+  "Kemps Creek": {
+    "median_household_income_weekly": 1753,
+    "median_family_income_weekly": 1916,
+    "median_personal_income_weekly": 633
+  },
+  "Kensington": {
+    "median_household_income_weekly": 2118,
+    "median_family_income_weekly": 2744,
+    "median_personal_income_weekly": 943
+  },
+  "Kenthurst": {
+    "median_household_income_weekly": 3061,
+    "median_family_income_weekly": 3024,
+    "median_personal_income_weekly": 942
+  },
+  "Kentlyn": {
+    "median_household_income_weekly": 2066,
+    "median_family_income_weekly": 2125,
+    "median_personal_income_weekly": 733
+  },
+  "Killara": {
+    "median_household_income_weekly": 2802,
+    "median_family_income_weekly": 3294,
+    "median_personal_income_weekly": 1117
+  },
+  "Killarney Heights": {
+    "median_household_income_weekly": 3426,
+    "median_family_income_weekly": 3809,
+    "median_personal_income_weekly": 1063
+  },
+  "Kings Langley": {
+    "median_household_income_weekly": 2457,
+    "median_family_income_weekly": 2694,
+    "median_personal_income_weekly": 955
+  },
+  "Kings Park": {
+    "median_household_income_weekly": 2186,
+    "median_family_income_weekly": 2380,
+    "median_personal_income_weekly": 960
+  },
+  "Kingsford": {
+    "median_household_income_weekly": 1892,
+    "median_family_income_weekly": 2514,
+    "median_personal_income_weekly": 845
+  },
+  "Kingsgrove": {
+    "median_household_income_weekly": 1898,
+    "median_family_income_weekly": 2167,
+    "median_personal_income_weekly": 716
+  },
+  "Kingswood": null,
+  "Kirkham": {
+    "median_household_income_weekly": 3416,
+    "median_family_income_weekly": 3349,
+    "median_personal_income_weekly": 1009
+  },
+  "Kirrawee": {
+    "median_household_income_weekly": 2070,
+    "median_family_income_weekly": 2613,
+    "median_personal_income_weekly": 995
+  },
+  "Kirribilli": {
+    "median_household_income_weekly": 2267,
+    "median_family_income_weekly": 3744,
+    "median_personal_income_weekly": 1598
+  },
+  "Kogarah": {
+    "median_household_income_weekly": 1903,
+    "median_family_income_weekly": 2134,
+    "median_personal_income_weekly": 871
+  },
+  "Kogarah Bay": {
+    "median_household_income_weekly": 2528,
+    "median_family_income_weekly": 2761,
+    "median_personal_income_weekly": 837
+  },
+  "Ku-ring-gai Chase": {
+    "median_household_income_weekly": 1708,
+    "median_family_income_weekly": 1687,
+    "median_personal_income_weekly": 1375
+  },
+  "Kurmond": {
+    "median_household_income_weekly": 1941,
+    "median_family_income_weekly": 2010,
+    "median_personal_income_weekly": 825
+  },
+  "Kurnell": {
+    "median_household_income_weekly": 2161,
+    "median_family_income_weekly": 2299,
+    "median_personal_income_weekly": 811
+  },
+  "Kurraba Point": {
+    "median_household_income_weekly": 3047,
+    "median_family_income_weekly": 4125,
+    "median_personal_income_weekly": 1744
+  },
+  "Kurrajong": {
+    "median_household_income_weekly": 2304,
+    "median_family_income_weekly": 2462,
+    "median_personal_income_weekly": 894
+  },
+  "Kurrajong Hills": {
+    "median_household_income_weekly": 2644,
+    "median_family_income_weekly": 2837,
+    "median_personal_income_weekly": 994
+  },
+  "Kyeemagh": {
+    "median_household_income_weekly": 1699,
+    "median_family_income_weekly": 1865,
+    "median_personal_income_weekly": 709
+  },
+  "Kyle Bay": {
+    "median_household_income_weekly": 3069,
+    "median_family_income_weekly": 3139,
+    "median_personal_income_weekly": 940
+  },
+  "La Perouse": {
+    "median_household_income_weekly": 2062,
+    "median_family_income_weekly": 2096,
+    "median_personal_income_weekly": 733
+  },
+  "Lakemba": {
+    "median_household_income_weekly": 1227,
+    "median_family_income_weekly": 1285,
+    "median_personal_income_weekly": 521
+  },
+  "Lalor Park": {
+    "median_household_income_weekly": 1460,
+    "median_family_income_weekly": 1888,
+    "median_personal_income_weekly": 691
+  },
+  "Lane Cove": {
+    "median_household_income_weekly": 2539,
+    "median_family_income_weekly": 3375,
+    "median_personal_income_weekly": 1377
+  },
+  "Lane Cove North": {
+    "median_household_income_weekly": 2386,
+    "median_family_income_weekly": 3225,
+    "median_personal_income_weekly": 1374
+  },
+  "Lane Cove West": {
+    "median_household_income_weekly": 2966,
+    "median_family_income_weekly": 3702,
+    "median_personal_income_weekly": 1293
+  },
+  "Lansvale": {
+    "median_household_income_weekly": 1528,
+    "median_family_income_weekly": 1579,
+    "median_personal_income_weekly": 576
+  },
+  "Laughtondale": {
+    "median_household_income_weekly": 1724,
+    "median_family_income_weekly": 2166,
+    "median_personal_income_weekly": 1019
+  },
+  "Lavender Bay": {
+    "median_household_income_weekly": 2379,
+    "median_family_income_weekly": 3884,
+    "median_personal_income_weekly": 1582
+  },
+  "Leets Vale": {
+    "median_household_income_weekly": 1812,
+    "median_family_income_weekly": 2250,
+    "median_personal_income_weekly": 556
+  },
+  "Leichhardt": {
+    "median_household_income_weekly": 2673,
+    "median_family_income_weekly": 3471,
+    "median_personal_income_weekly": 1377
+  },
+  "Leonay": {
+    "median_household_income_weekly": 2466,
+    "median_family_income_weekly": 2737,
+    "median_personal_income_weekly": 1051
+  },
+  "Leppington": {
+    "median_household_income_weekly": 2275,
+    "median_family_income_weekly": 2371,
+    "median_personal_income_weekly": 910
+  },
+  "Lethbridge Park": {
+    "median_household_income_weekly": 1073,
+    "median_family_income_weekly": 1284,
+    "median_personal_income_weekly": 524
+  },
+  "Leumeah": {
+    "median_household_income_weekly": 1469,
+    "median_family_income_weekly": 1776,
+    "median_personal_income_weekly": 692
+  },
+  "Lewisham": {
+    "median_household_income_weekly": 2405,
+    "median_family_income_weekly": 3263,
+    "median_personal_income_weekly": 1344
+  },
+  "Liberty Grove": {
+    "median_household_income_weekly": 2663,
+    "median_family_income_weekly": 2867,
+    "median_personal_income_weekly": 1113
+  },
+  "Lidcombe": {
+    "median_household_income_weekly": 1888,
+    "median_family_income_weekly": 1898,
+    "median_personal_income_weekly": 741
+  },
+  "Lilli Pilli": {
+    "median_household_income_weekly": 3625,
+    "median_family_income_weekly": 3690,
+    "median_personal_income_weekly": 1186
+  },
+  "Lilyfield": {
+    "median_household_income_weekly": 2858,
+    "median_family_income_weekly": 3973,
+    "median_personal_income_weekly": 1348
+  },
+  "Lindfield": {
+    "median_household_income_weekly": 2833,
+    "median_family_income_weekly": 3347,
+    "median_personal_income_weekly": 1174
+  },
+  "Linley Point": {
+    "median_household_income_weekly": 3833,
+    "median_family_income_weekly": 4374,
+    "median_personal_income_weekly": 1361
+  },
+  "Little Bay": {
+    "median_household_income_weekly": 2364,
+    "median_family_income_weekly": 3002,
+    "median_personal_income_weekly": 1141
+  },
+  "Liverpool": {
+    "median_household_income_weekly": 1303,
+    "median_family_income_weekly": 1475,
+    "median_personal_income_weekly": 589
+  },
+  "Llandilo": {
+    "median_household_income_weekly": 1879,
+    "median_family_income_weekly": 2006,
+    "median_personal_income_weekly": 709
+  },
+  "Loftus": {
+    "median_household_income_weekly": 2425,
+    "median_family_income_weekly": 2791,
+    "median_personal_income_weekly": 939
+  },
+  "Londonderry": {
+    "median_household_income_weekly": 2158,
+    "median_family_income_weekly": 2173,
+    "median_personal_income_weekly": 809
+  },
+  "Long Point": {
+    "median_household_income_weekly": 1775,
+    "median_family_income_weekly": 1968,
+    "median_personal_income_weekly": 900
+  },
+  "Longueville": {
+    "median_household_income_weekly": 4894,
+    "median_family_income_weekly": 5150,
+    "median_personal_income_weekly": 1453
+  },
+  "Lovett Bay": {
+    "median_household_income_weekly": 2437,
+    "median_family_income_weekly": 3062,
+    "median_personal_income_weekly": 1149
+  },
+  "Lower Portland": {
+    "median_household_income_weekly": 1965,
+    "median_family_income_weekly": 2043,
+    "median_personal_income_weekly": 788
+  },
+  "Lucas Heights": {
+    "median_household_income_weekly": 0,
+    "median_family_income_weekly": 0,
+    "median_personal_income_weekly": 0
+  },
+  "Luddenham": {
+    "median_household_income_weekly": 2968,
+    "median_family_income_weekly": 2890,
+    "median_personal_income_weekly": 1007
+  },
+  "Lugarno": {
+    "median_household_income_weekly": 2721,
+    "median_family_income_weekly": 2895,
+    "median_personal_income_weekly": 934
+  },
+  "Lurnea": {
+    "median_household_income_weekly": 1239,
+    "median_family_income_weekly": 1384,
+    "median_personal_income_weekly": 486
+  },
+  "Macquarie Fields": {
+    "median_household_income_weekly": 1374,
+    "median_family_income_weekly": 1576,
+    "median_personal_income_weekly": 587
+  },
+  "Macquarie Links": {
+    "median_household_income_weekly": 3135,
+    "median_family_income_weekly": 3020,
+    "median_personal_income_weekly": 1047
+  },
+  "Macquarie Park": {
+    "median_household_income_weekly": 1886,
+    "median_family_income_weekly": 2314,
+    "median_personal_income_weekly": 970
+  },
+  "Maianbar": {
+    "median_household_income_weekly": 2339,
+    "median_family_income_weekly": 2704,
+    "median_personal_income_weekly": 1122
+  },
+  "Malabar": {
+    "median_household_income_weekly": 1790,
+    "median_family_income_weekly": 2822,
+    "median_personal_income_weekly": 820
+  },
+  "Manly": {
+    "median_household_income_weekly": 3164,
+    "median_family_income_weekly": 4266,
+    "median_personal_income_weekly": 1595
+  },
+  "Manly Vale": {
+    "median_household_income_weekly": 2351,
+    "median_family_income_weekly": 2927,
+    "median_personal_income_weekly": 1158
+  },
+  "Maraylya": {
+    "median_household_income_weekly": 2607,
+    "median_family_income_weekly": 2763,
+    "median_personal_income_weekly": 970
+  },
+  "Marayong": {
+    "median_household_income_weekly": 1593,
+    "median_family_income_weekly": 1843,
+    "median_personal_income_weekly": 680
+  },
+  "Maroota": {
+    "median_household_income_weekly": 2079,
+    "median_family_income_weekly": 2113,
+    "median_personal_income_weekly": 763
+  },
+  "Maroubra": {
+    "median_household_income_weekly": 2141,
+    "median_family_income_weekly": 2741,
+    "median_personal_income_weekly": 1026
+  },
+  "Marrickville": {
+    "median_household_income_weekly": 2170,
+    "median_family_income_weekly": 2714,
+    "median_personal_income_weekly": 1077
+  },
+  "Marsden Park": {
+    "median_household_income_weekly": 2722,
+    "median_family_income_weekly": 2734,
+    "median_personal_income_weekly": 1131
+  },
+  "Marsfield": {
+    "median_household_income_weekly": 1943,
+    "median_family_income_weekly": 2346,
+    "median_personal_income_weekly": 829
+  },
+  "Mascot": {
+    "median_household_income_weekly": 2254,
+    "median_family_income_weekly": 2394,
+    "median_personal_income_weekly": 993
+  },
+  "Matraville": {
+    "median_household_income_weekly": 2075,
+    "median_family_income_weekly": 2521,
+    "median_personal_income_weekly": 865
+  },
+  "Mays Hill": {
+    "median_household_income_weekly": 2076,
+    "median_family_income_weekly": 2193,
+    "median_personal_income_weekly": 971
+  },
+  "McGraths Hill": {
+    "median_household_income_weekly": 2177,
+    "median_family_income_weekly": 2378,
+    "median_personal_income_weekly": 942
+  },
+  "McMahons Point": {
+    "median_household_income_weekly": 2568,
+    "median_family_income_weekly": 4226,
+    "median_personal_income_weekly": 1664
+  },
+  "Meadowbank": {
+    "median_household_income_weekly": 1993,
+    "median_family_income_weekly": 2531,
+    "median_personal_income_weekly": 1184
+  },
+  "Melonba": {
+    "median_household_income_weekly": 2859,
+    "median_family_income_weekly": 2825,
+    "median_personal_income_weekly": 1266
+  },
+  "Melrose Park": {
+    "median_household_income_weekly": 2182,
+    "median_family_income_weekly": 2529,
+    "median_personal_income_weekly": 973
+  },
+  "Menai": {
+    "median_household_income_weekly": 2575,
+    "median_family_income_weekly": 2824,
+    "median_personal_income_weekly": 994
+  },
+  "Menangle Park": {
+    "median_household_income_weekly": 1687,
+    "median_family_income_weekly": 2041,
+    "median_personal_income_weekly": 792
+  },
+  "Merrylands": {
+    "median_household_income_weekly": 1470,
+    "median_family_income_weekly": 1656,
+    "median_personal_income_weekly": 607
+  },
+  "Merrylands West": {
+    "median_household_income_weekly": 1394,
+    "median_family_income_weekly": 1692,
+    "median_personal_income_weekly": 588
+  },
+  "Middle Cove": {
+    "median_household_income_weekly": 4446,
+    "median_family_income_weekly": 4660,
+    "median_personal_income_weekly": 1369
+  },
+  "Middle Dural": {
+    "median_household_income_weekly": 3067,
+    "median_family_income_weekly": 3066,
+    "median_personal_income_weekly": 990
+  },
+  "Middleton Grange": {
+    "median_household_income_weekly": 2344,
+    "median_family_income_weekly": 2381,
+    "median_personal_income_weekly": 861
+  },
+  "Miller": {
+    "median_household_income_weekly": 825,
+    "median_family_income_weekly": 1087,
+    "median_personal_income_weekly": 435
+  },
+  "Millers Point": {
+    "median_household_income_weekly": 3160,
+    "median_family_income_weekly": 4125,
+    "median_personal_income_weekly": 1723
+  },
+  "Milperra": {
+    "median_household_income_weekly": 2117,
+    "median_family_income_weekly": 2326,
+    "median_personal_income_weekly": 806
+  },
+  "Milsons Passage": {
+    "median_household_income_weekly": 949,
+    "median_family_income_weekly": 949,
+    "median_personal_income_weekly": 575
+  },
+  "Milsons Point": {
+    "median_household_income_weekly": 3267,
+    "median_family_income_weekly": 4517,
+    "median_personal_income_weekly": 1866
+  },
+  "Minchinbury": {
+    "median_household_income_weekly": 2208,
+    "median_family_income_weekly": 2264,
+    "median_personal_income_weekly": 832
+  },
+  "Minto": {
+    "median_household_income_weekly": 1646,
+    "median_family_income_weekly": 1824,
+    "median_personal_income_weekly": 691
+  },
+  "Minto Heights": {
+    "median_household_income_weekly": 2178,
+    "median_family_income_weekly": 2125,
+    "median_personal_income_weekly": 791
+  },
+  "Miranda": {
+    "median_household_income_weekly": 1920,
+    "median_family_income_weekly": 2370,
+    "median_personal_income_weekly": 917
+  },
+  "Mona Vale": {
+    "median_household_income_weekly": 2296,
+    "median_family_income_weekly": 2824,
+    "median_personal_income_weekly": 1020
+  },
+  "Monterey": {
+    "median_household_income_weekly": 1785,
+    "median_family_income_weekly": 2263,
+    "median_personal_income_weekly": 847
+  },
+  "Moore Park": {
+    "median_household_income_weekly": 3874,
+    "median_family_income_weekly": 3750,
+    "median_personal_income_weekly": 774
+  },
+  "Moorebank": {
+    "median_household_income_weekly": 2201,
+    "median_family_income_weekly": 2340,
+    "median_personal_income_weekly": 843
+  },
+  "Morning Bay": {
+    "median_household_income_weekly": 1791,
+    "median_family_income_weekly": 2499,
+    "median_personal_income_weekly": 1125
+  },
+  "Mortdale": {
+    "median_household_income_weekly": 1995,
+    "median_family_income_weekly": 2406,
+    "median_personal_income_weekly": 903
+  },
+  "Mortlake": {
+    "median_household_income_weekly": 2347,
+    "median_family_income_weekly": 2886,
+    "median_personal_income_weekly": 1321
+  },
+  "Mosman": {
+    "median_household_income_weekly": 2892,
+    "median_family_income_weekly": 4502,
+    "median_personal_income_weekly": 1487
+  },
+  "Mount Annan": {
+    "median_household_income_weekly": 2493,
+    "median_family_income_weekly": 2595,
+    "median_personal_income_weekly": 947
+  },
+  "Mount Colah": {
+    "median_household_income_weekly": 2505,
+    "median_family_income_weekly": 2805,
+    "median_personal_income_weekly": 1032
+  },
+  "Mount Druitt": {
+    "median_household_income_weekly": 1478,
+    "median_family_income_weekly": 1625,
+    "median_personal_income_weekly": 608
+  },
+  "Mount Kuring-Gai": {
+    "median_household_income_weekly": 2428,
+    "median_family_income_weekly": 2643,
+    "median_personal_income_weekly": 961
+  },
+  "Mount Lewis": {
+    "median_household_income_weekly": 1539,
+    "median_family_income_weekly": 1775,
+    "median_personal_income_weekly": 596
+  },
+  "Mount Pritchard": {
+    "median_household_income_weekly": 1396,
+    "median_family_income_weekly": 1560,
+    "median_personal_income_weekly": 520
+  },
+  "Mount Vernon": {
+    "median_household_income_weekly": 3177,
+    "median_family_income_weekly": 3009,
+    "median_personal_income_weekly": 917
+  },
+  "Mulgoa": {
+    "median_household_income_weekly": 2533,
+    "median_family_income_weekly": 2695,
+    "median_personal_income_weekly": 951
+  },
+  "Mulgrave": {
+    "median_household_income_weekly": 1812,
+    "median_family_income_weekly": 2187,
+    "median_personal_income_weekly": 956
+  },
+  "Narellan": {
+    "median_household_income_weekly": 1706,
+    "median_family_income_weekly": 1981,
+    "median_personal_income_weekly": 768
+  },
+  "Narellan Vale": {
+    "median_household_income_weekly": 2248,
+    "median_family_income_weekly": 2412,
+    "median_personal_income_weekly": 923
+  },
+  "Naremburn": {
+    "median_household_income_weekly": 3272,
+    "median_family_income_weekly": 4200,
+    "median_personal_income_weekly": 1593
+  },
+  "Narrabeen": {
+    "median_household_income_weekly": 1780,
+    "median_family_income_weekly": 2543,
+    "median_personal_income_weekly": 1025
+  },
+  "Narraweena": {
+    "median_household_income_weekly": 1935,
+    "median_family_income_weekly": 2509,
+    "median_personal_income_weekly": 790
+  },
+  "Narwee": {
+    "median_household_income_weekly": 1431,
+    "median_family_income_weekly": 1828,
+    "median_personal_income_weekly": 647
+  },
+  "Neutral Bay": {
+    "median_household_income_weekly": 2443,
+    "median_family_income_weekly": 3600,
+    "median_personal_income_weekly": 1552
+  },
+  "Newington": {
+    "median_household_income_weekly": 2465,
+    "median_family_income_weekly": 2776,
+    "median_personal_income_weekly": 1070
+  },
+  "Newport": {
+    "median_household_income_weekly": 2479,
+    "median_family_income_weekly": 3054,
+    "median_personal_income_weekly": 1126
+  },
+  "Newtown": {
+    "median_household_income_weekly": 2330,
+    "median_family_income_weekly": 3383,
+    "median_personal_income_weekly": 1309
+  },
+  "Nirimba Fields": {
+    "median_household_income_weekly": 2567,
+    "median_family_income_weekly": 2740,
+    "median_personal_income_weekly": 1159
+  },
+  "Normanhurst": {
+    "median_household_income_weekly": 2590,
+    "median_family_income_weekly": 3127,
+    "median_personal_income_weekly": 921
+  },
+  "North Balgowlah": {
+    "median_household_income_weekly": 4212,
+    "median_family_income_weekly": 4569,
+    "median_personal_income_weekly": 1254
+  },
+  "North Bondi": {
+    "median_household_income_weekly": 3292,
+    "median_family_income_weekly": 4180,
+    "median_personal_income_weekly": 1493
+  },
+  "North Curl Curl": {
+    "median_household_income_weekly": 3611,
+    "median_family_income_weekly": 3878,
+    "median_personal_income_weekly": 1110
+  },
+  "North Epping": {
+    "median_household_income_weekly": 3062,
+    "median_family_income_weekly": 3325,
+    "median_personal_income_weekly": 1036
+  },
+  "North Kellyville": {
+    "median_household_income_weekly": 3120,
+    "median_family_income_weekly": 3206,
+    "median_personal_income_weekly": 1212
+  },
+  "North Manly": {
+    "median_household_income_weekly": 3169,
+    "median_family_income_weekly": 3529,
+    "median_personal_income_weekly": 1141
+  },
+  "North Narrabeen": {
+    "median_household_income_weekly": 2711,
+    "median_family_income_weekly": 2997,
+    "median_personal_income_weekly": 1048
+  },
+  "North Parramatta": {
+    "median_household_income_weekly": 1703,
+    "median_family_income_weekly": 2200,
+    "median_personal_income_weekly": 874
+  },
+  "North Richmond": {
+    "median_household_income_weekly": 1724,
+    "median_family_income_weekly": 2094,
+    "median_personal_income_weekly": 815
+  },
+  "North Rocks": {
+    "median_household_income_weekly": 2354,
+    "median_family_income_weekly": 2551,
+    "median_personal_income_weekly": 938
+  },
+  "North Ryde": {
+    "median_household_income_weekly": 2383,
+    "median_family_income_weekly": 2895,
+    "median_personal_income_weekly": 1039
+  },
+  "North St Marys": {
+    "median_household_income_weekly": 1255,
+    "median_family_income_weekly": 1434,
+    "median_personal_income_weekly": 597
+  },
+  "North Strathfield": {
+    "median_household_income_weekly": 2333,
+    "median_family_income_weekly": 2508,
+    "median_personal_income_weekly": 1049
+  },
+  "North Sydney": {
+    "median_household_income_weekly": 2405,
+    "median_family_income_weekly": 3532,
+    "median_personal_income_weekly": 1566
+  },
+  "North Turramurra": {
+    "median_household_income_weekly": 2064,
+    "median_family_income_weekly": 3089,
+    "median_personal_income_weekly": 886
+  },
+  "North Wahroonga": {
+    "median_household_income_weekly": 3189,
+    "median_family_income_weekly": 3531,
+    "median_personal_income_weekly": 1039
+  },
+  "North Willoughby": {
+    "median_household_income_weekly": 2488,
+    "median_family_income_weekly": 3150,
+    "median_personal_income_weekly": 1067
+  },
+  "Northbridge": {
+    "median_household_income_weekly": 3874,
+    "median_family_income_weekly": 4650,
+    "median_personal_income_weekly": 1375
+  },
+  "Northmead": {
+    "median_household_income_weekly": 1924,
+    "median_family_income_weekly": 2414,
+    "median_personal_income_weekly": 941
+  },
+  "Northwood": {
+    "median_household_income_weekly": 5012,
+    "median_family_income_weekly": 5175,
+    "median_personal_income_weekly": 1526
+  },
+  "Norwest": {
+    "median_household_income_weekly": 2207,
+    "median_family_income_weekly": 2587,
+    "median_personal_income_weekly": 1053
+  },
+  "Oakhurst": {
+    "median_household_income_weekly": 2097,
+    "median_family_income_weekly": 2149,
+    "median_personal_income_weekly": 824
+  },
+  "Oakville": {
+    "median_household_income_weekly": 2368,
+    "median_family_income_weekly": 2359,
+    "median_personal_income_weekly": 876
+  },
+  "Oatlands": {
+    "median_household_income_weekly": 2292,
+    "median_family_income_weekly": 2556,
+    "median_personal_income_weekly": 848
+  },
+  "Oatley": {
+    "median_household_income_weekly": 2537,
+    "median_family_income_weekly": 3042,
+    "median_personal_income_weekly": 1064
+  },
+  "Old Guildford": {
+    "median_household_income_weekly": 1511,
+    "median_family_income_weekly": 1464,
+    "median_personal_income_weekly": 468
+  },
+  "Old Toongabbie": {
+    "median_household_income_weekly": 2172,
+    "median_family_income_weekly": 2520,
+    "median_personal_income_weekly": 909
+  },
+  "Oran Park": {
+    "median_household_income_weekly": 2349,
+    "median_family_income_weekly": 2381,
+    "median_personal_income_weekly": 1026
+  },
+  "Orchard Hills": {
+    "median_household_income_weekly": 2279,
+    "median_family_income_weekly": 2525,
+    "median_personal_income_weekly": 844
+  },
+  "Oxford Falls": {
+    "median_household_income_weekly": 961,
+    "median_family_income_weekly": 1297,
+    "median_personal_income_weekly": 602
+  },
+  "Oxley Park": {
+    "median_household_income_weekly": 1612,
+    "median_family_income_weekly": 1793,
+    "median_personal_income_weekly": 802
+  },
+  "Oyster Bay": {
+    "median_household_income_weekly": 3137,
+    "median_family_income_weekly": 3396,
+    "median_personal_income_weekly": 1096
+  },
+  "Paddington": {
+    "median_household_income_weekly": 3131,
+    "median_family_income_weekly": 4686,
+    "median_personal_income_weekly": 1698
+  },
+  "Padstow": {
+    "median_household_income_weekly": 1891,
+    "median_family_income_weekly": 2210,
+    "median_personal_income_weekly": 743
+  },
+  "Padstow Heights": {
+    "median_household_income_weekly": 1938,
+    "median_family_income_weekly": 2484,
+    "median_personal_income_weekly": 841
+  },
+  "Pagewood": {
+    "median_household_income_weekly": 2281,
+    "median_family_income_weekly": 2843,
+    "median_personal_income_weekly": 849
+  },
+  "Palm Beach": {
+    "median_household_income_weekly": 2807,
+    "median_family_income_weekly": 3327,
+    "median_personal_income_weekly": 1295
+  },
+  "Panania": {
+    "median_household_income_weekly": 2036,
+    "median_family_income_weekly": 2331,
+    "median_personal_income_weekly": 803
+  },
+  "Parklea": {
+    "median_household_income_weekly": 2832,
+    "median_family_income_weekly": 2814,
+    "median_personal_income_weekly": 975
+  },
+  "Parramatta": {
+    "median_household_income_weekly": 2092,
+    "median_family_income_weekly": 2314,
+    "median_personal_income_weekly": 1015
+  },
+  "Peakhurst": {
+    "median_household_income_weekly": 1835,
+    "median_family_income_weekly": 2269,
+    "median_personal_income_weekly": 777
+  },
+  "Peakhurst Heights": {
+    "median_household_income_weekly": 2105,
+    "median_family_income_weekly": 2519,
+    "median_personal_income_weekly": 862
+  },
+  "Pemulwuy": {
+    "median_household_income_weekly": 2758,
+    "median_family_income_weekly": 2925,
+    "median_personal_income_weekly": 1098
+  },
+  "Pendle Hill": {
+    "median_household_income_weekly": 1824,
+    "median_family_income_weekly": 2121,
+    "median_personal_income_weekly": 773
+  },
+  "Pennant Hills": {
+    "median_household_income_weekly": 2433,
+    "median_family_income_weekly": 2865,
+    "median_personal_income_weekly": 952
+  },
+  "Penrith": {
+    "median_household_income_weekly": 1397,
+    "median_family_income_weekly": 1850,
+    "median_personal_income_weekly": 812
+  },
+  "Penshurst": {
+    "median_household_income_weekly": 1835,
+    "median_family_income_weekly": 2090,
+    "median_personal_income_weekly": 807
+  },
+  "Petersham": {
+    "median_household_income_weekly": 2217,
+    "median_family_income_weekly": 3202,
+    "median_personal_income_weekly": 1223
+  },
+  "Phillip Bay": {
+    "median_household_income_weekly": 2193,
+    "median_family_income_weekly": 2555,
+    "median_personal_income_weekly": 845
+  },
+  "Picnic Point": {
+    "median_household_income_weekly": 2459,
+    "median_family_income_weekly": 2734,
+    "median_personal_income_weekly": 963
+  },
+  "Pitt Town": {
+    "median_household_income_weekly": 2707,
+    "median_family_income_weekly": 2832,
+    "median_personal_income_weekly": 1014
+  },
+  "Pitt Town Bottoms": {
+    "median_household_income_weekly": 3250,
+    "median_family_income_weekly": 2349,
+    "median_personal_income_weekly": 1104
+  },
+  "Pleasure Point": {
+    "median_household_income_weekly": 3276,
+    "median_family_income_weekly": 3367,
+    "median_personal_income_weekly": 1218
+  },
+  "Plumpton": {
+    "median_household_income_weekly": 2171,
+    "median_family_income_weekly": 2228,
+    "median_personal_income_weekly": 808
+  },
+  "Point Piper": {
+    "median_household_income_weekly": 4530,
+    "median_family_income_weekly": 4921,
+    "median_personal_income_weekly": 1835
+  },
+  "Port Hacking": {
+    "median_household_income_weekly": 3394,
+    "median_family_income_weekly": 3553,
+    "median_personal_income_weekly": 1231
+  },
+  "Potts Hill": {
+    "median_household_income_weekly": 2223,
+    "median_family_income_weekly": 2447,
+    "median_personal_income_weekly": 893
+  },
+  "Potts Point": {
+    "median_household_income_weekly": 2054,
+    "median_family_income_weekly": 3455,
+    "median_personal_income_weekly": 1534
+  },
+  "Prairiewood": {
+    "median_household_income_weekly": 1478,
+    "median_family_income_weekly": 1562,
+    "median_personal_income_weekly": 496
+  },
+  "Prestons": {
+    "median_household_income_weekly": 2310,
+    "median_family_income_weekly": 2291,
+    "median_personal_income_weekly": 757
+  },
+  "Prospect": {
+    "median_household_income_weekly": 2084,
+    "median_family_income_weekly": 2300,
+    "median_personal_income_weekly": 841
+  },
+  "Punchbowl": {
+    "median_household_income_weekly": 1389,
+    "median_family_income_weekly": 1483,
+    "median_personal_income_weekly": 504
+  },
+  "Putney": {
+    "median_household_income_weekly": 3053,
+    "median_family_income_weekly": 3313,
+    "median_personal_income_weekly": 1085
+  },
+  "Pymble": {
+    "median_household_income_weekly": 3379,
+    "median_family_income_weekly": 3757,
+    "median_personal_income_weekly": 1224
+  },
+  "Pyrmont": {
+    "median_household_income_weekly": 2422,
+    "median_family_income_weekly": 3035,
+    "median_personal_income_weekly": 1297
+  },
+  "Quakers Hill": {
+    "median_household_income_weekly": 2310,
+    "median_family_income_weekly": 2399,
+    "median_personal_income_weekly": 917
+  },
+  "Queens Park": {
+    "median_household_income_weekly": 3441,
+    "median_family_income_weekly": 4637,
+    "median_personal_income_weekly": 1515
+  },
+  "Queenscliff": {
+    "median_household_income_weekly": 2903,
+    "median_family_income_weekly": 3385,
+    "median_personal_income_weekly": 1532
+  },
+  "Raby": {
+    "median_household_income_weekly": 1907,
+    "median_family_income_weekly": 2039,
+    "median_personal_income_weekly": 812
+  },
+  "Ramsgate": {
+    "median_household_income_weekly": 1803,
+    "median_family_income_weekly": 2180,
+    "median_personal_income_weekly": 779
+  },
+  "Ramsgate Beach": {
+    "median_household_income_weekly": 1475,
+    "median_family_income_weekly": 2105,
+    "median_personal_income_weekly": 860
+  },
+  "Randwick": {
+    "median_household_income_weekly": 2422,
+    "median_family_income_weekly": 3255,
+    "median_personal_income_weekly": 1336
+  },
+  "Redfern": {
+    "median_household_income_weekly": 2145,
+    "median_family_income_weekly": 3263,
+    "median_personal_income_weekly": 1191
+  },
+  "Regents Park": {
+    "median_household_income_weekly": 1402,
+    "median_family_income_weekly": 1560,
+    "median_personal_income_weekly": 566
+  },
+  "Regentville": {
+    "median_household_income_weekly": 2187,
+    "median_family_income_weekly": 2553,
+    "median_personal_income_weekly": 963
+  },
+  "Revesby": {
+    "median_household_income_weekly": 1844,
+    "median_family_income_weekly": 2140,
+    "median_personal_income_weekly": 721
+  },
+  "Revesby Heights": {
+    "median_household_income_weekly": 2673,
+    "median_family_income_weekly": 2789,
+    "median_personal_income_weekly": 1005
+  },
+  "Rhodes": {
+    "median_household_income_weekly": 2183,
+    "median_family_income_weekly": 2404,
+    "median_personal_income_weekly": 1119
+  },
+  "Richards": {
+    "median_household_income_weekly": 725,
+    "median_family_income_weekly": 1583,
+    "median_personal_income_weekly": 450
+  },
+  "Richmond": {
+    "median_household_income_weekly": 1353,
+    "median_family_income_weekly": 1816,
+    "median_personal_income_weekly": 744
+  },
+  "Richmond Lowlands": {
+    "median_household_income_weekly": 2749,
+    "median_family_income_weekly": 2374,
+    "median_personal_income_weekly": 1321
+  },
+  "Riverstone": {
+    "median_household_income_weekly": 2138,
+    "median_family_income_weekly": 2298,
+    "median_personal_income_weekly": 898
+  },
+  "Riverview": {
+    "median_household_income_weekly": 4731,
+    "median_family_income_weekly": 4841,
+    "median_personal_income_weekly": 1417
+  },
+  "Riverwood": {
+    "median_household_income_weekly": 1210,
+    "median_family_income_weekly": 1563,
+    "median_personal_income_weekly": 564
+  },
+  "Rockdale": {
+    "median_household_income_weekly": 1906,
+    "median_family_income_weekly": 2024,
+    "median_personal_income_weekly": 801
+  },
+  "Rodd Point": {
+    "median_household_income_weekly": 2953,
+    "median_family_income_weekly": 3568,
+    "median_personal_income_weekly": 1099
+  },
+  "Rookwood": {
+    "median_household_income_weekly": 1874,
+    "median_family_income_weekly": 1874,
+    "median_personal_income_weekly": 824
+  },
+  "Rooty Hill": {
+    "median_household_income_weekly": 2001,
+    "median_family_income_weekly": 2112,
+    "median_personal_income_weekly": 742
+  },
+  "Ropes Crossing": {
+    "median_household_income_weekly": 2216,
+    "median_family_income_weekly": 2317,
+    "median_personal_income_weekly": 958
+  },
+  "Rose Bay": {
+    "median_household_income_weekly": 2539,
+    "median_family_income_weekly": 3510,
+    "median_personal_income_weekly": 1398
+  },
+  "Rosebery": {
+    "median_household_income_weekly": 2274,
+    "median_family_income_weekly": 2722,
+    "median_personal_income_weekly": 1158
+  },
+  "Rosehill": {
+    "median_household_income_weekly": 1763,
+    "median_family_income_weekly": 2011,
+    "median_personal_income_weekly": 899
+  },
+  "Roselands": {
+    "median_household_income_weekly": 1685,
+    "median_family_income_weekly": 1900,
+    "median_personal_income_weekly": 666
+  },
+  "Rosemeadow": {
+    "median_household_income_weekly": 1708,
+    "median_family_income_weekly": 1841,
+    "median_personal_income_weekly": 703
+  },
+  "Roseville": {
+    "median_household_income_weekly": 3200,
+    "median_family_income_weekly": 3689,
+    "median_personal_income_weekly": 1203
+  },
+  "Roseville Chase": {
+    "median_household_income_weekly": 4026,
+    "median_family_income_weekly": 4399,
+    "median_personal_income_weekly": 1197
+  },
+  "Rossmore": {
+    "median_household_income_weekly": 1827,
+    "median_family_income_weekly": 1838,
+    "median_personal_income_weekly": 611
+  },
+  "Rouse Hill": {
+    "median_household_income_weekly": 2643,
+    "median_family_income_weekly": 2935,
+    "median_personal_income_weekly": 1089
+  },
+  "Rozelle": {
+    "median_household_income_weekly": 3196,
+    "median_family_income_weekly": 4372,
+    "median_personal_income_weekly": 1652
+  },
+  "Ruse": {
+    "median_household_income_weekly": 1797,
+    "median_family_income_weekly": 2002,
+    "median_personal_income_weekly": 759
+  },
+  "Rushcutters Bay": {
+    "median_household_income_weekly": 1877,
+    "median_family_income_weekly": 3413,
+    "median_personal_income_weekly": 1480
+  },
+  "Russell Lea": {
+    "median_household_income_weekly": 2658,
+    "median_family_income_weekly": 3256,
+    "median_personal_income_weekly": 1133
+  },
+  "Rydalmere": {
+    "median_household_income_weekly": 1871,
+    "median_family_income_weekly": 2199,
+    "median_personal_income_weekly": 792
+  },
+  "Ryde": {
+    "median_household_income_weekly": 2024,
+    "median_family_income_weekly": 2445,
+    "median_personal_income_weekly": 983
+  },
+  "Sackville": {
+    "median_household_income_weekly": 2178,
+    "median_family_income_weekly": 2428,
+    "median_personal_income_weekly": 973
+  },
+  "Sackville North": {
+    "median_household_income_weekly": 2833,
+    "median_family_income_weekly": 2643,
+    "median_personal_income_weekly": 1017
+  },
+  "Sadleir": {
+    "median_household_income_weekly": 946,
+    "median_family_income_weekly": 1154,
+    "median_personal_income_weekly": 446
+  },
+  "Sandringham": {
+    "median_household_income_weekly": 2101,
+    "median_family_income_weekly": 2808,
+    "median_personal_income_weekly": 978
+  },
+  "Sandy Point": {
+    "median_household_income_weekly": 2986,
+    "median_family_income_weekly": 3166,
+    "median_personal_income_weekly": 1234
+  },
+  "Sans Souci": {
+    "median_household_income_weekly": 1863,
+    "median_family_income_weekly": 2421,
+    "median_personal_income_weekly": 859
+  },
+  "Scheyville": {
+    "median_household_income_weekly": 6999,
+    "median_family_income_weekly": 5250,
+    "median_personal_income_weekly": 1625
+  },
+  "Schofields": {
+    "median_household_income_weekly": 2696,
+    "median_family_income_weekly": 2771,
+    "median_personal_income_weekly": 1162
+  },
+  "Scotland Island": {
+    "median_household_income_weekly": 2397,
+    "median_family_income_weekly": 2912,
+    "median_personal_income_weekly": 1101
+  },
+  "Seaforth": {
+    "median_household_income_weekly": 4184,
+    "median_family_income_weekly": 4620,
+    "median_personal_income_weekly": 1263
+  },
+  "Sefton": {
+    "median_household_income_weekly": 1528,
+    "median_family_income_weekly": 1674,
+    "median_personal_income_weekly": 555
+  },
+  "Seven Hills": {
+    "median_household_income_weekly": 1892,
+    "median_family_income_weekly": 2133,
+    "median_personal_income_weekly": 780
+  },
+  "Shalvey": {
+    "median_household_income_weekly": 1180,
+    "median_family_income_weekly": 1345,
+    "median_personal_income_weekly": 550
+  },
+  "Shanes Park": {
+    "median_household_income_weekly": 1531,
+    "median_family_income_weekly": 1968,
+    "median_personal_income_weekly": 752
+  },
+  "Silverwater": {
+    "median_household_income_weekly": 1875,
+    "median_family_income_weekly": 2055,
+    "median_personal_income_weekly": 857
+  },
+  "Singletons Mill": {
+    "median_household_income_weekly": 725,
+    "median_family_income_weekly": 0,
+    "median_personal_income_weekly": 725
+  },
+  "Smeaton Grange": {
+    "median_household_income_weekly": 899,
+    "median_family_income_weekly": 1399,
+    "median_personal_income_weekly": 762
+  },
+  "Smithfield": {
+    "median_household_income_weekly": 1300,
+    "median_family_income_weekly": 1476,
+    "median_personal_income_weekly": 479
+  },
+  "South Coogee": {
+    "median_household_income_weekly": 2105,
+    "median_family_income_weekly": 3625,
+    "median_personal_income_weekly": 958
+  },
+  "South Granville": {
+    "median_household_income_weekly": 1104,
+    "median_family_income_weekly": 1326,
+    "median_personal_income_weekly": 441
+  },
+  "South Hurstville": {
+    "median_household_income_weekly": 1867,
+    "median_family_income_weekly": 2059,
+    "median_personal_income_weekly": 721
+  },
+  "South Maroota": {
+    "median_household_income_weekly": 2424,
+    "median_family_income_weekly": 2607,
+    "median_personal_income_weekly": 920
+  },
+  "South Penrith": {
+    "median_household_income_weekly": 1870,
+    "median_family_income_weekly": 2116,
+    "median_personal_income_weekly": 828
+  },
+  "South Turramurra": {
+    "median_household_income_weekly": 3447,
+    "median_family_income_weekly": 3781,
+    "median_personal_income_weekly": 1058
+  },
+  "South Wentworthville": {
+    "median_household_income_weekly": 1793,
+    "median_family_income_weekly": 2017,
+    "median_personal_income_weekly": 726
+  },
+  "South Windsor": {
+    "median_household_income_weekly": 1466,
+    "median_family_income_weekly": 1896,
+    "median_personal_income_weekly": 763
+  },
+  "Spring Farm": {
+    "median_household_income_weekly": 2403,
+    "median_family_income_weekly": 2501,
+    "median_personal_income_weekly": 1118
+  },
+  "St Andrews": {
+    "median_household_income_weekly": 1837,
+    "median_family_income_weekly": 1963,
+    "median_personal_income_weekly": 743
+  },
+  "St Clair": {
+    "median_household_income_weekly": 2067,
+    "median_family_income_weekly": 2183,
+    "median_personal_income_weekly": 849
+  },
+  "St Helens Park": {
+    "median_household_income_weekly": 1850,
+    "median_family_income_weekly": 1988,
+    "median_personal_income_weekly": 794
+  },
+  "St Ives": {
+    "median_household_income_weekly": 2888,
+    "median_family_income_weekly": 3306,
+    "median_personal_income_weekly": 1077
+  },
+  "St Ives Chase": {
+    "median_household_income_weekly": 3306,
+    "median_family_income_weekly": 3355,
+    "median_personal_income_weekly": 1025
+  },
+  "St Johns Park": {
+    "median_household_income_weekly": 1567,
+    "median_family_income_weekly": 1570,
+    "median_personal_income_weekly": 485
+  },
+  "St Leonards": {
+    "median_household_income_weekly": 2475,
+    "median_family_income_weekly": 3415,
+    "median_personal_income_weekly": 1627
+  },
+  "St Marys": {
+    "median_household_income_weekly": 1437,
+    "median_family_income_weekly": 1747,
+    "median_personal_income_weekly": 754
+  },
+  "St Peters": {
+    "median_household_income_weekly": 2924,
+    "median_family_income_weekly": 3397,
+    "median_personal_income_weekly": 1465
+  },
+  "Stanhope Gardens": {
+    "median_household_income_weekly": 2868,
+    "median_family_income_weekly": 3068,
+    "median_personal_income_weekly": 1050
+  },
+  "Stanmore": {
+    "median_household_income_weekly": 2395,
+    "median_family_income_weekly": 3373,
+    "median_personal_income_weekly": 1283
+  },
+  "Strathfield": {
+    "median_household_income_weekly": 2262,
+    "median_family_income_weekly": 2423,
+    "median_personal_income_weekly": 815
+  },
+  "Strathfield South": {
+    "median_household_income_weekly": 2045,
+    "median_family_income_weekly": 2341,
+    "median_personal_income_weekly": 870
+  },
+  "Summer Hill": {
+    "median_household_income_weekly": 2260,
+    "median_family_income_weekly": 3076,
+    "median_personal_income_weekly": 1317
+  },
+  "Surry Hills": {
+    "median_household_income_weekly": 2308,
+    "median_family_income_weekly": 3551,
+    "median_personal_income_weekly": 1442
+  },
+  "Sutherland": {
+    "median_household_income_weekly": 1949,
+    "median_family_income_weekly": 2432,
+    "median_personal_income_weekly": 1109
+  },
+  "Sydenham": {
+    "median_household_income_weekly": 2245,
+    "median_family_income_weekly": 2545,
+    "median_personal_income_weekly": 954
+  },
+  "Sydney Olympic Park": {
+    "median_household_income_weekly": 1975,
+    "median_family_income_weekly": 2258,
+    "median_personal_income_weekly": 1135
+  },
+  "Sylvania": {
+    "median_household_income_weekly": 1961,
+    "median_family_income_weekly": 2358,
+    "median_personal_income_weekly": 840
+  },
+  "Sylvania Waters": {
+    "median_household_income_weekly": 2371,
+    "median_family_income_weekly": 2643,
+    "median_personal_income_weekly": 920
+  },
+  "Sydney": {
+    "median_household_income_weekly": 2227,
+    "median_family_income_weekly": 2342,
+    "median_personal_income_weekly": 971
+  },
+  "Tallawong": {
+    "median_household_income_weekly": 2759,
+    "median_family_income_weekly": 2785,
+    "median_personal_income_weekly": 1137
+  },
+  "Tamarama": {
+    "median_household_income_weekly": 4522,
+    "median_family_income_weekly": 4771,
+    "median_personal_income_weekly": 1788
+  },
+  "Taren Point": {
+    "median_household_income_weekly": 1463,
+    "median_family_income_weekly": 2057,
+    "median_personal_income_weekly": 757
+  },
+  "Telopea": {
+    "median_household_income_weekly": 1465,
+    "median_family_income_weekly": 1875,
+    "median_personal_income_weekly": 699
+  },
+  "Tempe": {
+    "median_household_income_weekly": 2452,
+    "median_family_income_weekly": 2846,
+    "median_personal_income_weekly": 1067
+  },
+  "Tennyson": {
+    "median_household_income_weekly": 2133,
+    "median_family_income_weekly": 2319,
+    "median_personal_income_weekly": 884
+  },
+  "Tennyson Point": {
+    "median_household_income_weekly": 3232,
+    "median_family_income_weekly": 3616,
+    "median_personal_income_weekly": 1142
+  },
+  "Terrey Hills": {
+    "median_household_income_weekly": 2778,
+    "median_family_income_weekly": 3097,
+    "median_personal_income_weekly": 973
+  },
+  "The Ponds": {
+    "median_household_income_weekly": 3285,
+    "median_family_income_weekly": 3281,
+    "median_personal_income_weekly": 1207
+  },
+  "The Rocks": {
+    "median_household_income_weekly": 4374,
+    "median_family_income_weekly": 4764,
+    "median_personal_income_weekly": 1911
+  },
+  "The Slopes": {
+    "median_household_income_weekly": 2272,
+    "median_family_income_weekly": 2225,
+    "median_personal_income_weekly": 900
+  },
+  "Thornleigh": {
+    "median_household_income_weekly": 2681,
+    "median_family_income_weekly": 3016,
+    "median_personal_income_weekly": 1025
+  },
+  "Toongabbie": {
+    "median_household_income_weekly": 2106,
+    "median_family_income_weekly": 2237,
+    "median_personal_income_weekly": 843
+  },
+  "Tregear": {
+    "median_household_income_weekly": 1103,
+    "median_family_income_weekly": 1330,
+    "median_personal_income_weekly": 518
+  },
+  "Turramurra": {
+    "median_household_income_weekly": 3046,
+    "median_family_income_weekly": 3486,
+    "median_personal_income_weekly": 1144
+  },
+  "Turrella": {
+    "median_household_income_weekly": 2137,
+    "median_family_income_weekly": 2109,
+    "median_personal_income_weekly": 840
+  },
+  "Ultimo": {
+    "median_household_income_weekly": 1805,
+    "median_family_income_weekly": 2197,
+    "median_personal_income_weekly": 772
+  },
+  "Varroville": {
+    "median_household_income_weekly": 2549,
+    "median_family_income_weekly": 2583,
+    "median_personal_income_weekly": 617
+  },
+  "Vaucluse": {
+    "median_household_income_weekly": 3418,
+    "median_family_income_weekly": 4560,
+    "median_personal_income_weekly": 1393
+  },
+  "Villawood": {
+    "median_household_income_weekly": 951,
+    "median_family_income_weekly": 1230,
+    "median_personal_income_weekly": 435
+  },
+  "Vineyard": {
+    "median_household_income_weekly": 1214,
+    "median_family_income_weekly": 2095,
+    "median_personal_income_weekly": 640
+  },
+  "Voyager Point": {
+    "median_household_income_weekly": 3205,
+    "median_family_income_weekly": 3211,
+    "median_personal_income_weekly": 1152
+  },
+  "Wahroonga": {
+    "median_household_income_weekly": 2998,
+    "median_family_income_weekly": 3420,
+    "median_personal_income_weekly": 1042
+  },
+  "Waitara": {
+    "median_household_income_weekly": 2106,
+    "median_family_income_weekly": 2402,
+    "median_personal_income_weekly": 1055
+  },
+  "Wakeley": {
+    "median_household_income_weekly": 1553,
+    "median_family_income_weekly": 1583,
+    "median_personal_income_weekly": 502
+  },
+  "Wallacia": {
+    "median_household_income_weekly": 2004,
+    "median_family_income_weekly": 2339,
+    "median_personal_income_weekly": 849
+  },
+  "Wareemba": {
+    "median_household_income_weekly": 2294,
+    "median_family_income_weekly": 2905,
+    "median_personal_income_weekly": 1027
+  },
+  "Warrawee": {
+    "median_household_income_weekly": 3388,
+    "median_family_income_weekly": 3846,
+    "median_personal_income_weekly": 1153
+  },
+  "Warriewood": {
+    "median_household_income_weekly": 2598,
+    "median_family_income_weekly": 2925,
+    "median_personal_income_weekly": 1060
+  },
+  "Warwick Farm": {
+    "median_household_income_weekly": 1132,
+    "median_family_income_weekly": 1414,
+    "median_personal_income_weekly": 601
+  },
+  "Waterfall": {
+    "median_household_income_weekly": 2232,
+    "median_family_income_weekly": 2336,
+    "median_personal_income_weekly": 828
+  },
+  "Waterloo": {
+    "median_household_income_weekly": 2028,
+    "median_family_income_weekly": 2699,
+    "median_personal_income_weekly": 1172
+  },
+  "Watsons Bay": {
+    "median_household_income_weekly": 2924,
+    "median_family_income_weekly": 4083,
+    "median_personal_income_weekly": 1225
+  },
+  "Wattle Grove": {
+    "median_household_income_weekly": 2459,
+    "median_family_income_weekly": 2632,
+    "median_personal_income_weekly": 1010
+  },
+  "Waverley": {
+    "median_household_income_weekly": 2873,
+    "median_family_income_weekly": 3849,
+    "median_personal_income_weekly": 1407
+  },
+  "Waverton": {
+    "median_household_income_weekly": 2890,
+    "median_family_income_weekly": 3842,
+    "median_personal_income_weekly": 1528
+  },
+  "Wedderburn": {
+    "median_household_income_weekly": 2062,
+    "median_family_income_weekly": 2170,
+    "median_personal_income_weekly": 781
+  },
+  "Wentworth Point": {
+    "median_household_income_weekly": 2035,
+    "median_family_income_weekly": 2329,
+    "median_personal_income_weekly": 1196
+  },
+  "Wentworthville": {
+    "median_household_income_weekly": 2219,
+    "median_family_income_weekly": 2365,
+    "median_personal_income_weekly": 919
+  },
+  "Werrington": {
+    "median_household_income_weekly": 1605,
+    "median_family_income_weekly": 1885,
+    "median_personal_income_weekly": 806
+  },
+  "Werrington County": {
+    "median_household_income_weekly": 2042,
+    "median_family_income_weekly": 2161,
+    "median_personal_income_weekly": 863
+  },
+  "Werrington Downs": {
+    "median_household_income_weekly": 2139,
+    "median_family_income_weekly": 2253,
+    "median_personal_income_weekly": 922
+  },
+  "West Hoxton": {
+    "median_household_income_weekly": 2468,
+    "median_family_income_weekly": 2429,
+    "median_personal_income_weekly": 779
+  },
+  "West Pennant Hills": {
+    "median_household_income_weekly": 3078,
+    "median_family_income_weekly": 3264,
+    "median_personal_income_weekly": 1032
+  },
+  "West Pymble": {
+    "median_household_income_weekly": 3503,
+    "median_family_income_weekly": 3908,
+    "median_personal_income_weekly": 1107
+  },
+  "West Ryde": {
+    "median_household_income_weekly": 1983,
+    "median_family_income_weekly": 2331,
+    "median_personal_income_weekly": 901
+  },
+  "Westleigh": {
+    "median_household_income_weekly": 3021,
+    "median_family_income_weekly": 3305,
+    "median_personal_income_weekly": 1022
+  },
+  "Westmead": {
+    "median_household_income_weekly": 2144,
+    "median_family_income_weekly": 2367,
+    "median_personal_income_weekly": 974
+  },
+  "Wetherill Park": {
+    "median_household_income_weekly": 1556,
+    "median_family_income_weekly": 1669,
+    "median_personal_income_weekly": 536
+  },
+  "Whalan": {
+    "median_household_income_weekly": 1160,
+    "median_family_income_weekly": 1354,
+    "median_personal_income_weekly": 506
+  },
+  "Whale Beach": {
+    "median_household_income_weekly": 3285,
+    "median_family_income_weekly": 4791,
+    "median_personal_income_weekly": 1758
+  },
+  "Wheeler Heights": {
+    "median_household_income_weekly": 2914,
+    "median_family_income_weekly": 3049,
+    "median_personal_income_weekly": 1027
+  },
+  "Wilberforce": {
+    "median_household_income_weekly": 2259,
+    "median_family_income_weekly": 2429,
+    "median_personal_income_weekly": 915
+  },
+  "Wiley Park": {
+    "median_household_income_weekly": 1246,
+    "median_family_income_weekly": 1321,
+    "median_personal_income_weekly": 551
+  },
+  "Willmot": {
+    "median_household_income_weekly": 1036,
+    "median_family_income_weekly": 1252,
+    "median_personal_income_weekly": 475
+  },
+  "Willoughby": {
+    "median_household_income_weekly": 2995,
+    "median_family_income_weekly": 3830,
+    "median_personal_income_weekly": 1264
+  },
+  "Willoughby East": {
+    "median_household_income_weekly": 4536,
+    "median_family_income_weekly": 4678,
+    "median_personal_income_weekly": 1155
+  },
+  "Windsor": {
+    "median_household_income_weekly": 1679,
+    "median_family_income_weekly": 2123,
+    "median_personal_income_weekly": 756
+  },
+  "Windsor Downs": {
+    "median_household_income_weekly": 2629,
+    "median_family_income_weekly": 2664,
+    "median_personal_income_weekly": 908
+  },
+  "Winston Hills": {
+    "median_household_income_weekly": 2309,
+    "median_family_income_weekly": 2665,
+    "median_personal_income_weekly": 907
+  },
+  "Wisemans Ferry": {
+    "median_household_income_weekly": 1361,
+    "median_family_income_weekly": 1819,
+    "median_personal_income_weekly": 665
+  },
+  "Wolli Creek": {
+    "median_household_income_weekly": 2163,
+    "median_family_income_weekly": 2337,
+    "median_personal_income_weekly": 1071
+  },
+  "Wollstonecraft": {
+    "median_household_income_weekly": 2639,
+    "median_family_income_weekly": 3488,
+    "median_personal_income_weekly": 1590
+  },
+  "Woodbine": {
+    "median_household_income_weekly": 1714,
+    "median_family_income_weekly": 1923,
+    "median_personal_income_weekly": 715
+  },
+  "Woodcroft": {
+    "median_household_income_weekly": 2461,
+    "median_family_income_weekly": 2431,
+    "median_personal_income_weekly": 861
+  },
+  "Woodpark": {
+    "median_household_income_weekly": 1945,
+    "median_family_income_weekly": 1975,
+    "median_personal_income_weekly": 658
+  },
+  "Woollahra": {
+    "median_household_income_weekly": 3013,
+    "median_family_income_weekly": 4557,
+    "median_personal_income_weekly": 1638
+  },
+  "Woolloomooloo": {
+    "median_household_income_weekly": 2001,
+    "median_family_income_weekly": 3131,
+    "median_personal_income_weekly": 1368
+  },
+  "Woolooware": {
+    "median_household_income_weekly": 2228,
+    "median_family_income_weekly": 2917,
+    "median_personal_income_weekly": 1131
+  },
+  "Woolwich": {
+    "median_household_income_weekly": 2931,
+    "median_family_income_weekly": 4600,
+    "median_personal_income_weekly": 1288
+  },
+  "Woronora": {
+    "median_household_income_weekly": 2614,
+    "median_family_income_weekly": 3020,
+    "median_personal_income_weekly": 1027
+  },
+  "Woronora Heights": {
+    "median_household_income_weekly": 3250,
+    "median_family_income_weekly": 3240,
+    "median_personal_income_weekly": 1016
+  },
+  "Yagoona": {
+    "median_household_income_weekly": 1438,
+    "median_family_income_weekly": 1592,
+    "median_personal_income_weekly": 524
+  },
+  "Yarramundi": {
+    "median_household_income_weekly": 2829,
+    "median_family_income_weekly": 2814,
+    "median_personal_income_weekly": 966
+  },
+  "Yarrawarrah": {
+    "median_household_income_weekly": 2724,
+    "median_family_income_weekly": 2856,
+    "median_personal_income_weekly": 1020
+  },
+  "Yennora": {
+    "median_household_income_weekly": 900,
+    "median_family_income_weekly": 1299,
+    "median_personal_income_weekly": 448
+  },
+  "Yowie Bay": {
+    "median_household_income_weekly": 2959,
+    "median_family_income_weekly": 3336,
+    "median_personal_income_weekly": 1085
+  },
+  "Zetland": {
+    "median_household_income_weekly": 2192,
+    "median_family_income_weekly": 2670,
+    "median_personal_income_weekly": 1262
+  }
+}

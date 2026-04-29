@@ -1,0 +1,29 @@
+INPUT: [
+  "Old Guildford",
+  "Old Toongabbie",
+  "Oran Park",
+  "Orchard Hills",
+  "Oxford Falls",
+  "Oxley Park",
+  "Oyster Bay",
+  "Paddington",
+  "Padstow",
+  "Padstow Heights"
+]
+
+Loop through the whole list, and for each of those, I need you to browse the web and find all General Practitioners (GPs) / GP clinics / medical centres in [that suburb], New South Wales, Australia.
+
+Please:
+
+1. **Count**: Give me the total number of GPs (or GP clinics/practices) you find in that suburb. If the source gives "number of GPs" and "number of clinics" separately, give both.
+
+2. **List**: List each GP practice / medical centre you find, with:
+   - Practice or clinic name  
+   - Address (if available)  
+   - Number of GPs in that practice
+
+Use Australian sources where possible (e.g. HealthEngine, HotDoc, local directories, clinic websites, or the Health Workforce Locator / Department of Health tools if they show practices by location). Say which source(s) you used.
+
+give me a downloadable csv with 3 columns, clinic_name, suburb and number_of_gps
+
+Browse very extensively and be very deep and thorough with your search

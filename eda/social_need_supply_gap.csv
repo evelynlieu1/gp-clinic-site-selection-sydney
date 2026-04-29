@@ -1,0 +1,12 @@
+suburb,total_gp,population,People_Per_GP_Ratio,median_household_income_weekly,over_65_pct,spatial_density,area,filter_reason
+Mount Pritchard,0.0,10426,10426.0,1396,14.43,3355.9726,3.1067,income_below_1800
+Canley Vale,0.0,10300,10300.0,1330,15.59,3608.0849,2.8547,income_below_1800
+Narrabeen,0.0,8255,8255.0,1780,31.13,1804.3716,4.575,income_below_1800
+Lalor Park,0.0,7834,7834.0,1460,14.0,2943.8954,2.6611,income_below_1800
+Ambarvale,0.0,7254,7254.0,1431,12.94,2633.0309,2.755,income_below_1800
+Merrylands West,0.0,7054,7054.0,1394,15.74,4052.8584,1.7405,income_below_1800
+Belmore,1.0,13781,6890.5,1456,16.83,4967.0211,2.7745,income_below_1800
+Warwick Farm,0.0,6135,6135.0,1132,11.87,1323.0537,4.637,income_below_1800
+Guildford West,0.0,5762,5762.0,1583,10.93,3588.0192,1.6059,income_below_1800
+Ruse,0.0,5632,5632.0,1797,18.29,2172.7557,2.5921,income_below_1800
+Allawah,0.0,5351,5351.0,1774,14.6,9106.5351,0.5876,income_below_1800

@@ -12,3 +12,889 @@ morans_i_k4,site_score,0.3970350604802289,,,0.001
 morans_i_k8,site_score,0.3588457604254986,,,0.001
 morans_i_k16,site_score,0.2955179630354085,,,0.001
 morans_i_k32,site_score,0.23195973691427807,,,0.001
+lisa_site_score,Cronulla,0.47917149476422555,,,0.632
+lisa_site_score,Caringbah South,1.4532738671772594,,,0.079
+lisa_site_score,St Clair,-0.023301682725342287,,,0.972
+lisa_site_score,Avalon Beach,2.355688664208444,,,0.004
+lisa_site_score,Cranebrook,0.3298908671262672,,,0.677
+lisa_site_score,Oran Park,1.3784894177014957,,,0.067
+lisa_site_score,Glenmore Park,-0.06955980232457046,,,0.91
+lisa_site_score,Newport,2.1534632474586024,,,0.003
+lisa_site_score,Collaroy,1.8170594985280566,,,0.003
+lisa_site_score,Heathcote,1.3443416935955255,,,0.035
+lisa_site_score,Glenfield,1.1410711504346636,,,0.066
+lisa_site_score,Freshwater,0.4906947434796817,,,0.419
+lisa_site_score,Warriewood,1.358535750938753,,,0.024
+lisa_site_score,Spring Farm,0.38826724286229314,,,0.518
+lisa_site_score,Miranda,0.5072415707587185,,,0.404
+lisa_site_score,Cromer,1.50701736462626,,,0.009
+lisa_site_score,Dee Why,1.19551075522753,,,0.049
+lisa_site_score,North Kellyville,1.0580837591773353,,,0.081
+lisa_site_score,Schofields,0.5197262238847986,,,0.344
+lisa_site_score,Engadine,0.9780177046058224,,,0.095
+lisa_site_score,St Ives,0.07814985794982411,,,0.888
+lisa_site_score,Prestons,0.08041709771785918,,,0.881
+lisa_site_score,Botany,-0.6588927079490638,,,0.234
+lisa_site_score,Allambie Heights,0.5671062406869167,,,0.333
+lisa_site_score,Belrose,0.4863522037938332,,,0.382
+lisa_site_score,Edmondson Park,0.941279407215743,,,0.075
+lisa_site_score,West Hoxton,0.7976785758821427,,,0.142
+lisa_site_score,Cecil Hills,0.586884504096649,,,0.259
+lisa_site_score,Cherrybrook,0.9266126307414636,,,0.066
+lisa_site_score,Holsworthy,0.8228597275922196,,,0.105
+lisa_site_score,Erskine Park,0.6038443270154579,,,0.237
+lisa_site_score,Carlingford,-0.0739764883958806,,,0.867
+lisa_site_score,Beacon Hill,1.1508088037522703,,,0.019
+lisa_site_score,Leppington,0.8427274025258231,,,0.074
+lisa_site_score,Panania,0.1681660357443044,,,0.71
+lisa_site_score,Berowra,0.5539950521825702,,,0.238
+lisa_site_score,Castle Hill,0.9096430687606534,,,0.039
+lisa_site_score,Quakers Hill,-0.24439692272574262,,,0.618
+lisa_site_score,Kellyville,0.6934235147951914,,,0.131
+lisa_site_score,Hornsby Heights,0.5369381372892497,,,0.225
+lisa_site_score,Mascot,-0.005422538650328937,,,0.99
+lisa_site_score,Mona Vale,1.054781578038226,,,0.011
+lisa_site_score,Middleton Grange,0.8679086266576106,,,0.047
+lisa_site_score,Killara,-0.146752593258942,,,0.759
+lisa_site_score,North Narrabeen,1.1470232782167256,,,0.007
+lisa_site_score,Narraweena,0.7658961504382271,,,0.076
+lisa_site_score,Camden South,0.3477469245848615,,,0.42
+lisa_site_score,Wattle Grove,-0.4914966581825278,,,0.249
+lisa_site_score,Queenscliff,0.4175728462695086,,,0.337
+lisa_site_score,Baulkham Hills,0.2865766584841196,,,0.495
+lisa_site_score,Picnic Point,0.15916788856715372,,,0.694
+lisa_site_score,Denham Court,0.5770597015327806,,,0.162
+lisa_site_score,Jordan Springs,0.059159504971924036,,,0.878
+lisa_site_score,Sylvania,0.10840468229998972,,,0.786
+lisa_site_score,Maraylya,0.16441289100409545,,,0.687
+lisa_site_score,Sans Souci,-0.19942351258463012,,,0.633
+lisa_site_score,Harrington Park,0.7720479564433015,,,0.045
+lisa_site_score,Sutherland,0.19045125208435812,,,0.636
+lisa_site_score,Strathfield,-0.506498451776278,,,0.185
+lisa_site_score,Gregory Hills,-0.09194422846470561,,,0.814
+lisa_site_score,Narrabeen,1.1739771678392272,,,0.002
+lisa_site_score,Forestville,-0.21853306268885686,,,0.558
+lisa_site_score,Cobbitty,0.34203318548106515,,,0.344
+lisa_site_score,Ropes Crossing,-0.8211513525980072,,,0.031
+lisa_site_score,Wahroonga,0.044729176614995,,,0.913
+lisa_site_score,Glenhaven,1.0212601723790102,,,0.01
+lisa_site_score,Caringbah,0.6066622864402238,,,0.092
+lisa_site_score,Minchinbury,0.45555790831858617,,,0.197
+lisa_site_score,Rooty Hill,-0.03753457625264874,,,0.906
+lisa_site_score,Turramurra,-0.1503456176732632,,,0.654
+lisa_site_score,Mount Colah,0.3685329517760739,,,0.302
+lisa_site_score,Ryde,-0.17166744633502493,,,0.602
+lisa_site_score,Bilgola Plateau,1.1497378617080296,,,0.001
+lisa_site_score,Mulgoa,0.171542698920998,,,0.617
+lisa_site_score,Rouse Hill,0.570683414242926,,,0.095
+lisa_site_score,Oakhurst,-0.7019981474661363,,,0.05
+lisa_site_score,Waitara,0.15631911857974626,,,0.648
+lisa_site_score,Narellan Vale,0.5959967528493453,,,0.06
+lisa_site_score,Wheeler Heights,1.0056128018124628,,,0.001
+lisa_site_score,Wilberforce,-0.5499290188997915,,,0.09
+lisa_site_score,Earlwood,-0.6565805585687484,,,0.042
+lisa_site_score,Kellyville Ridge,0.4563252332812478,,,0.154
+lisa_site_score,Homebush,-0.04029572539121391,,,0.894
+lisa_site_score,Palm Beach,1.082905561088565,,,0.001
+lisa_site_score,Minto,-0.10268471611817437,,,0.747
+lisa_site_score,Castlereagh,0.5399889050084048,,,0.071
+lisa_site_score,Yarrawarrah,0.4943254620151827,,,0.1
+lisa_site_score,Hinchinbrook,-0.7237438373041232,,,0.018
+lisa_site_score,North Ryde,0.1689794572928387,,,0.582
+lisa_site_score,Glenwood,-0.19692422096217127,,,0.51
+lisa_site_score,Kirrawee,0.48584686058869825,,,0.115
+lisa_site_score,Horsley Park,0.06647576787840855,,,0.824
+lisa_site_score,Ingleside,0.731303154096019,,,0.012
+lisa_site_score,Mount Annan,0.4759802129613539,,,0.113
+lisa_site_score,Green Valley,-0.5884444033703354,,,0.046
+lisa_site_score,Loftus,0.385953894930485,,,0.172
+lisa_site_score,West Pennant Hills,0.3449176308393515,,,0.225
+lisa_site_score,Hornsby,0.36198091954744305,,,0.201
+lisa_site_score,Gymea Bay,0.48852701930811204,,,0.086
+lisa_site_score,Casula,-0.08113211904091139,,,0.753
+lisa_site_score,Frenchs Forest,0.7738990798685997,,,0.008
+lisa_site_score,Gladesville,-0.1947917281820991,,,0.477
+lisa_site_score,South Penrith,-0.04355766813926027,,,0.881
+lisa_site_score,Catherine Field,0.6722353563278267,,,0.019
+lisa_site_score,Kenthurst,0.468158738996093,,,0.089
+lisa_site_score,Marsden Park,-0.19456425415134984,,,0.489
+lisa_site_score,Marrickville,-0.3660640508884413,,,0.187
+lisa_site_score,Ermington,-0.2018303687634841,,,0.457
+lisa_site_score,Menai,0.124687784064018,,,0.633
+lisa_site_score,Padstow,-0.04298645288925874,,,0.884
+lisa_site_score,Elderslie,0.3066950293003764,,,0.238
+lisa_site_score,Revesby,0.12671198295707117,,,0.616
+lisa_site_score,Wentworth Point,-0.04115338536078701,,,0.884
+lisa_site_score,Bow Bowing,0.1197450260444604,,,0.607
+lisa_site_score,Lindfield,0.03561804368537979,,,0.881
+lisa_site_score,Arncliffe,-0.25265566810282686,,,0.308
+lisa_site_score,Moorebank,-0.2980656973719095,,,0.253
+lisa_site_score,Jannali,0.0539630683983631,,,0.82
+lisa_site_score,Gledswood Hills,0.21504393646564307,,,0.397
+lisa_site_score,Emu Heights,0.2719442630380452,,,0.247
+lisa_site_score,Bexley,-0.11104939751822976,,,0.689
+lisa_site_score,Eastwood,0.08305381519447647,,,0.747
+lisa_site_score,Melonba,-0.16576918074336142,,,0.488
+lisa_site_score,Tallawong,0.5046480044536025,,,0.015
+lisa_site_score,Oatley,-0.17447309670014916,,,0.425
+lisa_site_score,Sandringham,-0.20022916115778666,,,0.367
+lisa_site_score,West Ryde,0.0768722482365416,,,0.733
+lisa_site_score,Berowra Heights,0.308499791474273,,,0.164
+lisa_site_score,Austral,0.32910039529739776,,,0.114
+lisa_site_score,Abbotsbury,0.186296063331389,,,0.388
+lisa_site_score,Kogarah,-0.17684832213560409,,,0.4
+lisa_site_score,Dulwich Hill,-0.15217915747772637,,,0.436
+lisa_site_score,Blakehurst,-0.06405566996291268,,,0.746
+lisa_site_score,Illawong,-0.04540154930186111,,,0.828
+lisa_site_score,Glen Alpine,0.2920935676731374,,,0.155
+lisa_site_score,Plumpton,-0.10529433136880235,,,0.586
+lisa_site_score,Dural,0.3462248210912181,,,0.078
+lisa_site_score,Grantham Farm,0.20185151036895507,,,0.339
+lisa_site_score,Londonderry,-0.1924337725793077,,,0.333
+lisa_site_score,Ruse,-0.03699172606375804,,,0.848
+lisa_site_score,Croydon,-0.2896720634877073,,,0.155
+lisa_site_score,Elizabeth Hills,0.2582622936635363,,,0.2
+lisa_site_score,Seven Hills,-0.006822224258440763,,,0.975
+lisa_site_score,Bardia,0.3858117845758439,,,0.044
+lisa_site_score,Manly Vale,0.22770107208175935,,,0.231
+lisa_site_score,Bonnyrigg Heights,-0.14947614373092213,,,0.422
+lisa_site_score,Roseville,0.01258662958296475,,,0.949
+lisa_site_score,St Helens Park,0.037861803843719524,,,0.85
+lisa_site_score,Marsfield,-0.0350207014321654,,,0.844
+lisa_site_score,Edensor Park,-0.13487481769362678,,,0.402
+lisa_site_score,Mortdale,-0.04246125964596209,,,0.782
+lisa_site_score,Raby,-0.07594400545257557,,,0.629
+lisa_site_score,Riverstone,0.2071568544474469,,,0.22
+lisa_site_score,Mount Druitt,-0.09936257111087536,,,0.515
+lisa_site_score,Middle Dural,0.2893163231481094,,,0.061
+lisa_site_score,Stanhope Gardens,0.25444791478555023,,,0.092
+lisa_site_score,Kings Langley,-0.06821025089491031,,,0.688
+lisa_site_score,Gymea,0.26349718860239124,,,0.095
+lisa_site_score,Peakhurst,-0.07507463717739926,,,0.626
+lisa_site_score,Blair Athol,-0.12873374710270905,,,0.393
+lisa_site_score,Blacktown,-0.12089966161071417,,,0.4
+lisa_site_score,Carlton,-0.015095927690694495,,,0.911
+lisa_site_score,Gordon,0.015754791465329196,,,0.902
+lisa_site_score,Woolooware,0.1436377038153982,,,0.284
+lisa_site_score,Leonay,0.1299478101749598,,,0.35
+lisa_site_score,Mount Vernon,0.2991226502515879,,,0.028
+lisa_site_score,Bossley Park,-0.294888502637565,,,0.032
+lisa_site_score,Beaumont Hills,0.28305790077157766,,,0.037
+lisa_site_score,Greystanes,-0.36361399709635556,,,0.009
+lisa_site_score,Penrith,-0.047171276146429963,,,0.741
+lisa_site_score,Normanhurst,0.06265791906971362,,,0.585
+lisa_site_score,Kingsgrove,-0.15939661670642327,,,0.22
+lisa_site_score,The Ponds,0.21882290638404725,,,0.105
+lisa_site_score,Leumeah,-0.012022865188268495,,,0.926
+lisa_site_score,Bradbury,0.02459360649567128,,,0.856
+lisa_site_score,Norwest,0.20568145565902068,,,0.094
+lisa_site_score,Oakville,-0.10430278493679673,,,0.448
+lisa_site_score,Yowie Bay,0.2474838170320852,,,0.052
+lisa_site_score,Currans Hill,0.04061291004867017,,,0.75
+lisa_site_score,Lidcombe,-0.1650936261404661,,,0.189
+lisa_site_score,Sylvania Waters,0.13425472938639518,,,0.264
+lisa_site_score,Rockdale,-0.018299085525091636,,,0.876
+lisa_site_score,Woodcroft,-0.022553609380037854,,,0.85
+lisa_site_score,St Andrews,-0.04697231735588064,,,0.682
+lisa_site_score,Thornleigh,0.07142793632411297,,,0.51
+lisa_site_score,North Manly,0.13007140440243736,,,0.189
+lisa_site_score,Asquith,0.18894489680907575,,,0.058
+lisa_site_score,Campbelltown,-0.0705347646071714,,,0.488
+lisa_site_score,Oatlands,-0.0813980485523833,,,0.395
+lisa_site_score,Berkshire Park,-0.007097736559134133,,,0.943
+lisa_site_score,Collaroy Plateau,0.3572401092680865,,,0.001
+lisa_site_score,Kogarah Bay,0.009951138474057349,,,0.918
+lisa_site_score,Arcadia,0.14765373902219872,,,0.07
+lisa_site_score,Bligh Park,-0.1989007845882473,,,0.016
+lisa_site_score,Bangor,0.04888633736002705,,,0.543
+lisa_site_score,Homebush West,0.02502728986240003,,,0.775
+lisa_site_score,Bayview,0.27895089242422155,,,0.001
+lisa_site_score,Caddens,-0.08799815628838885,,,0.227
+lisa_site_score,Nirimba Fields,0.07464179952002044,,,0.296
+lisa_site_score,Bringelly,0.18289518435674795,,,0.018
+lisa_site_score,Wolli Creek,-0.060615418731853804,,,0.41
+lisa_site_score,North Turramurra,0.0584357120223828,,,0.404
+lisa_site_score,Box Hill,0.0403251784108447,,,0.574
+lisa_site_score,Beverley Park,-0.056781473892310946,,,0.438
+lisa_site_score,Rossmore,0.18232379476852728,,,0.01
+lisa_site_score,Grays Point,0.13142231974150856,,,0.042
+lisa_site_score,Woronora,0.04885047064637108,,,0.453
+lisa_site_score,Ashfield,-0.045695093505125836,,,0.51
+lisa_site_score,Hoxton Park,0.01691914681699718,,,0.773
+lisa_site_score,Mount Kuring-Gai,0.08426465700716212,,,0.17
+lisa_site_score,Kemps Creek,0.15035173194654508,,,0.007
+lisa_site_score,Pagewood,-0.0398908200845624,,,0.506
+lisa_site_score,Lugarno,0.016184637908548034,,,0.768
+lisa_site_score,Glendenning,0.024410574389913828,,,0.652
+lisa_site_score,Carss Park,-0.0014092786915966095,,,0.987
+lisa_site_score,Penshurst,-0.029984608687061036,,,0.563
+lisa_site_score,Macquarie Fields,0.11320643052314174,,,0.025
+lisa_site_score,Terrey Hills,0.07497446950013835,,,0.104
+lisa_site_score,Pemulwuy,-0.05425718806274602,,,0.23
+lisa_site_score,Werrington Downs,-0.02916097937121838,,,0.443
+lisa_site_score,Brookvale,0.07999053227056672,,,0.018
+lisa_site_score,Barden Ridge,0.05823972614617435,,,0.084
+lisa_site_score,Revesby Heights,0.030427462451186695,,,0.332
+lisa_site_score,Denistone East,0.029226648597383387,,,0.29
+lisa_site_score,Annangrove,0.03280765002937364,,,0.065
+lisa_site_score,Colyton,0.006225065994560036,,,0.727
+lisa_site_score,Hurstville,0.0014868591028866787,,,0.92
+lisa_site_score,Pymble,0.003105036088271946,,,0.645
+lisa_site_score,Bungarribee,0.0002525765702174878,,,0.502
+lisa_site_score,Oyster Bay,-4.5734516835838436e-05,,,0.894
+lisa_site_score,Llandilo,-0.00041578063251555456,,,0.119
+lisa_site_score,Kearns,0.0006367080420632501,,,0.817
+lisa_site_score,Beverly Hills,0.0010249704043751849,,,0.727
+lisa_site_score,Melrose Park,-0.00017913085902742358,,,0.982
+lisa_site_score,Church Point,-0.027227628582791492,,,0.002
+lisa_site_score,Hassall Grove,0.012076148884415211,,,0.132
+lisa_site_score,Grasmere,-0.022864181891788328,,,0.117
+lisa_site_score,Ingleburn,-0.02358874959087415,,,0.148
+lisa_site_score,Chipping Norton,0.0783931381616695,,,0.001
+lisa_site_score,Westleigh,-0.05097095000762469,,,0.054
+lisa_site_score,Emu Plains,0.0070809272356551,,,0.776
+lisa_site_score,Gables,-0.025879496519437002,,,0.347
+lisa_site_score,Eastgardens,0.019567413341378296,,,0.545
+lisa_site_score,Denistone,-0.042152103667204406,,,0.257
+lisa_site_score,Newington,-0.00909005625972751,,,0.836
+lisa_site_score,Macquarie Park,-0.022276033054039624,,,0.617
+lisa_site_score,Claremont Meadows,0.09241480952458334,,,0.031
+lisa_site_score,Parklea,-0.06449021159264993,,,0.166
+lisa_site_score,Cambridge Gardens,-0.003487170065460948,,,0.934
+lisa_site_score,Kurnell,-0.042502433938905564,,,0.402
+lisa_site_score,Petersham,0.036808585059599094,,,0.491
+lisa_site_score,Kings Park,-0.003291483106997268,,,0.951
+lisa_site_score,Peakhurst Heights,-0.005588958782714762,,,0.936
+lisa_site_score,East Hills,-0.04467132004040701,,,0.5
+lisa_site_score,Pitt Town,0.0629329660736359,,,0.33
+lisa_site_score,Hurstville Grove,0.01993571630182744,,,0.747
+lisa_site_score,Macquarie Links,-0.17447009455752838,,,0.007
+lisa_site_score,Haberfield,0.024031401142823924,,,0.728
+lisa_site_score,Ambarvale,-0.04230989403991228,,,0.576
+lisa_site_score,Windsor Downs,0.10738221838041018,,,0.163
+lisa_site_score,Hillsdale,0.04220970209067396,,,0.604
+lisa_site_score,Luddenham,-0.12031716197889401,,,0.14
+lisa_site_score,Riverwood,0.05054261803380229,,,0.526
+lisa_site_score,Summer Hill,0.03304715790111597,,,0.672
+lisa_site_score,Croydon Park,0.1954243931094584,,,0.014
+lisa_site_score,Stanmore,0.08217241370877293,,,0.349
+lisa_site_score,Granville,0.231559881807674,,,0.015
+lisa_site_score,Carnes Hill,-0.17101922511598247,,,0.1
+lisa_site_score,Connells Point,0.024268292494557225,,,0.829
+lisa_site_score,Putney,0.0184592832612656,,,0.862
+lisa_site_score,East Killara,-0.01637091334211368,,,0.88
+lisa_site_score,Acacia Gardens,-0.07485974225188063,,,0.546
+lisa_site_score,Elanora Heights,-0.36930415990161614,,,0.003
+lisa_site_score,Doonside,-0.023165308201888626,,,0.851
+lisa_site_score,Bundeena,-0.16128147293115752,,,0.182
+lisa_site_score,Port Hacking,-0.23308737453039674,,,0.055
+lisa_site_score,Galston,-0.21322964478345396,,,0.08
+lisa_site_score,Dundas,-0.016036537852389544,,,0.901
+lisa_site_score,Orchard Hills,-0.10723828134712741,,,0.451
+lisa_site_score,Bonnet Bay,-0.0692327562208721,,,0.606
+lisa_site_score,Monterey,0.10259782765396475,,,0.471
+lisa_site_score,Bonnyrigg,0.23869171681563084,,,0.088
+lisa_site_score,North Wahroonga,-0.10466710560375968,,,0.422
+lisa_site_score,Bardwell Valley,0.03527557386151788,,,0.824
+lisa_site_score,Horningsea Park,-0.36159013295904446,,,0.013
+lisa_site_score,Burwood,0.03587744088089194,,,0.791
+lisa_site_score,Punchbowl,0.300512985283887,,,0.032
+lisa_site_score,Glossodia,0.4365090743646915,,,0.004
+lisa_site_score,Prospect,0.029561173166364942,,,0.844
+lisa_site_score,Sydney Olympic Park,-0.05693965555650342,,,0.722
+lisa_site_score,Meadowbank,-0.1438005941901172,,,0.321
+lisa_site_score,Voyager Point,-0.18445408590349224,,,0.224
+lisa_site_score,North Curl Curl,-0.3427466230925543,,,0.023
+lisa_site_score,Dolls Point,0.04197465369096738,,,0.797
+lisa_site_score,Roselands,0.22716440867948412,,,0.144
+lisa_site_score,Rydalmere,0.1243001538006579,,,0.426
+lisa_site_score,Brighton-Le-Sands,0.04837799891182117,,,0.753
+lisa_site_score,Woronora Heights,-0.2617570314360889,,,0.104
+lisa_site_score,Curl Curl,-0.36069316608925656,,,0.029
+lisa_site_score,Lurnea,0.39475757906616993,,,0.016
+lisa_site_score,Liverpool,0.6622759210833697,,,0.001
+lisa_site_score,Greenacre,0.4197308224644223,,,0.012
+lisa_site_score,Rosemeadow,-0.11124688689414482,,,0.537
+lisa_site_score,Eschol Park,0.032122817160756115,,,0.845
+lisa_site_score,Hurlstone Park,0.08240392724549117,,,0.66
+lisa_site_score,Yagoona,0.7156601228609578,,,0.001
+lisa_site_score,Canterbury,0.17231461012706148,,,0.356
+lisa_site_score,Belmore,0.35091242966795544,,,0.069
+lisa_site_score,Milperra,-0.03448744543973691,,,0.85
+lisa_site_score,Silverwater,0.0019617020815710464,,,0.991
+lisa_site_score,Turrella,-0.012962710339555187,,,0.957
+lisa_site_score,Werrington County,0.18694077370296275,,,0.323
+lisa_site_score,Allawah,-0.11329356472025358,,,0.582
+lisa_site_score,Burraneer,-0.32516785489463285,,,0.075
+lisa_site_score,Alfords Point,-0.15177740711720475,,,0.438
+lisa_site_score,Colebee,-0.08015054273142554,,,0.69
+lisa_site_score,Condell Park,0.06132491683990287,,,0.768
+lisa_site_score,St Marys,0.501726343968012,,,0.013
+lisa_site_score,South Hurstville,0.061161857372338625,,,0.724
+lisa_site_score,Kareela,-0.16909860105591107,,,0.432
+lisa_site_score,Banksia,0.0057097511929199265,,,0.979
+lisa_site_score,Bardwell Park,0.13247155715692494,,,0.518
+lisa_site_score,Bankstown,0.429205194134532,,,0.049
+lisa_site_score,Auburn,0.5028833359505053,,,0.024
+lisa_site_score,Greenhills Beach,-0.40609169147112983,,,0.067
+lisa_site_score,Lilli Pilli,-0.5487152936536315,,,0.021
+lisa_site_score,Woodbine,0.020254142271085785,,,0.924
+lisa_site_score,Padstow Heights,-0.21006936309892063,,,0.344
+lisa_site_score,Burwood Heights,0.1958398480788971,,,0.411
+lisa_site_score,Potts Hill,0.8893698113274856,,,0.002
+lisa_site_score,Georges Hall,0.7901621686736319,,,0.001
+lisa_site_score,Dean Park,-0.10526660306190844,,,0.679
+lisa_site_score,Guildford,0.9792504521583137,,,0.001
+lisa_site_score,Campsie,0.3405977367886154,,,0.142
+lisa_site_score,Cabramatta,0.9625426950136929,,,0.001
+lisa_site_score,North Balgowlah,-0.509320223078074,,,0.026
+lisa_site_score,Merrylands,0.872797756710227,,,0.001
+lisa_site_score,Strathfield South,0.3773800919108756,,,0.105
+lisa_site_score,Cambridge Park,0.11159030981630885,,,0.639
+lisa_site_score,Dundas Valley,-0.15503236529651976,,,0.528
+lisa_site_score,Killarney Heights,-0.07237089620396987,,,0.779
+lisa_site_score,Lakemba,0.6046923299710395,,,0.023
+lisa_site_score,Mount Pritchard,1.0240778517232059,,,0.001
+lisa_site_score,Ashbury,0.19470068760891857,,,0.466
+lisa_site_score,Como,-0.1244830044491609,,,0.642
+lisa_site_score,Fairfield West,1.1181708851654901,,,0.001
+lisa_site_score,Wiley Park,0.7145110618903774,,,0.013
+lisa_site_score,Lethbridge Park,1.1160663683140513,,,0.001
+lisa_site_score,Tempe,0.04244420870425695,,,0.863
+lisa_site_score,Kyle Bay,0.001840636354465954,,,0.992
+lisa_site_score,Eagle Vale,0.011303249390538523,,,0.967
+lisa_site_score,Fairfield,1.598722655745208,,,0.001
+lisa_site_score,Kingswood,0.15991054584716477,,,0.585
+lisa_site_score,Lewisham,-0.022194379836293313,,,0.94
+lisa_site_score,Smithfield,1.0901561462150884,,,0.002
+lisa_site_score,Hunters Hill,0.031209705955925784,,,0.935
+lisa_site_score,Shalvey,1.1857415249983012,,,0.001
+lisa_site_score,Sydenham,0.17184843696051935,,,0.59
+lisa_site_score,Enmore,0.2898930277378946,,,0.357
+lisa_site_score,McGraths Hill,0.6428270915110313,,,0.036
+lisa_site_score,Holroyd,1.0865462187472263,,,0.002
+lisa_site_score,East Lindfield,0.010807849022537036,,,0.976
+lisa_site_score,Canley Heights,1.225356304126371,,,0.001
+lisa_site_score,Chester Hill,1.7329340777839022,,,0.001
+lisa_site_score,Airds,-0.219666130512815,,,0.544
+lisa_site_score,Oxley Park,0.32415742373273637,,,0.312
+lisa_site_score,Tennyson Point,-0.052531343019345346,,,0.873
+lisa_site_score,Hebersham,0.7997692282579791,,,0.017
+lisa_site_score,Hammondville,-0.008985360056493209,,,0.981
+lisa_site_score,St Peters,0.098279246532954,,,0.805
+lisa_site_score,Willmot,1.0644785079119308,,,0.003
+lisa_site_score,Ramsgate,-0.035903277959215406,,,0.917
+lisa_site_score,South Wentworthville,0.9191715022647845,,,0.017
+lisa_site_score,Belfield,0.793668150703943,,,0.025
+lisa_site_score,Lalor Park,0.10951302726999025,,,0.773
+lisa_site_score,Warrawee,-0.00798838555924204,,,0.975
+lisa_site_score,Bexley North,0.13346620530435896,,,0.743
+lisa_site_score,St Ives Chase,-0.25857898818580977,,,0.525
+lisa_site_score,Camden,-0.7540072128434676,,,0.066
+lisa_site_score,Dharruk,0.694783542697439,,,0.082
+lisa_site_score,Eastlakes,0.09196077508983387,,,0.83
+lisa_site_score,Taren Point,-1.0474235515162287,,,0.014
+lisa_site_score,Tregear,1.5098408083087707,,,0.001
+lisa_site_score,Berala,1.509510756372667,,,0.001
+lisa_site_score,Woodpark,1.407495835644054,,,0.001
+lisa_site_score,Freemans Reach,1.1809422497490911,,,0.009
+lisa_site_score,Roseville Chase,-0.035533956995069,,,0.937
+lisa_site_score,Marayong,-0.06441146461956167,,,0.872
+lisa_site_score,Narellan,-0.8876355696435672,,,0.048
+lisa_site_score,Canley Vale,1.8955166732268711,,,0.001
+lisa_site_score,North St Marys,1.0614909345820553,,,0.022
+lisa_site_score,West Pymble,-0.33470511422701,,,0.46
+lisa_site_score,Claymore,0.012548608308613067,,,0.982
+lisa_site_score,St Johns Park,1.2950654656688891,,,0.008
+lisa_site_score,Vineyard,0.4585386880839554,,,0.34
+lisa_site_score,Bass Hill,1.8472454182143936,,,0.001
+lisa_site_score,East Ryde,-0.07789332519541071,,,0.865
+lisa_site_score,Jamisontown,-0.6020332462293998,,,0.223
+lisa_site_score,Davidson,-0.5619278069422428,,,0.235
+lisa_site_score,Whalan,1.28657276838703,,,0.009
+lisa_site_score,Bella Vista,-0.5478449714184808,,,0.264
+lisa_site_score,Greenfield Park,0.9102120598380389,,,0.06
+lisa_site_score,Daceyville,0.07241596195597048,,,0.861
+lisa_site_score,Cabramatta West,1.5668274625774552,,,0.004
+lisa_site_score,Clemton Park,0.5134769713789623,,,0.32
+lisa_site_score,Fairfield Heights,2.1073459677706436,,,0.001
+lisa_site_score,Wetherill Park,0.9858803577748657,,,0.054
+lisa_site_score,Telopea,-0.2650957232574015,,,0.619
+lisa_site_score,Merrylands West,1.6694197034078764,,,0.004
+lisa_site_score,South Windsor,0.9876611513467995,,,0.067
+lisa_site_score,North Richmond,1.5088615136576955,,,0.006
+lisa_site_score,Wakeley,1.5452676842246034,,,0.004
+lisa_site_score,Cartwright,2.1503271721802344,,,0.002
+lisa_site_score,Werrington,0.7609364808336576,,,0.196
+lisa_site_score,South Turramurra,-0.10617249570032818,,,0.864
+lisa_site_score,Sadleir,1.9518784680583365,,,0.003
+lisa_site_score,Emerton,2.1592941084213884,,,0.002
+lisa_site_score,Ramsgate Beach,-0.19893177523736977,,,0.739
+lisa_site_score,Windsor,1.3974022666886308,,,0.016
+lisa_site_score,Narwee,0.18600346651396144,,,0.777
+lisa_site_score,Miller,1.5755912695998127,,,0.011
+lisa_site_score,Enfield,0.47847816629545953,,,0.457
+lisa_site_score,Villawood,3.306683731434817,,,0.001
+lisa_site_score,Blackett,1.7948659569084184,,,0.009
+lisa_site_score,Richmond,1.8618961338841151,,,0.004
+lisa_site_score,Heckenberg,2.140011516338126,,,0.001
+lisa_site_score,Hobartville,1.6044988595895568,,,0.015
+lisa_site_score,Sefton,2.5200458774417513,,,0.002
+lisa_site_score,Busby,1.781637749802817,,,0.01
+lisa_site_score,Ashcroft,2.494663220608768,,,0.002
+lisa_site_score,Warwick Farm,2.1814050774546665,,,0.002
+lisa_site_score,Bidwill,1.570426471885844,,,0.021
+lisa_site_score,Prairiewood,2.1052763920074806,,,0.004
+lisa_site_score,Guildford West,2.9041250652393127,,,0.001
+lisa_site_score,South Granville,2.5630446261302637,,,0.001
+lisa_site_score,Mount Lewis,1.1662727409296962,,,0.083
+lisa_site_score,Regents Park,1.9578743038501998,,,0.009
+lisa_site_score,Birrong,2.439199396373999,,,0.001
+lisa_site_score,Fairfield East,3.644957896399674,,,0.001
+lisa_site_score,Yennora,4.303630841683372,,,0.001
+lisa_site_score,Lansvale,3.37434267927716,,,0.001
+lisa_site_score,Old Guildford,4.164309391719645,,,0.001
+lisa_site_score,Carramar,4.263758470079162,,,0.001
+rank_bootstrap_blocked,Cronulla,1.0,1.0,1.0,
+rank_bootstrap_blocked,Caringbah South,3.0,2.0,5.0,
+rank_bootstrap_blocked,St Clair,3.0,1.0,7.0,
+rank_bootstrap_blocked,Avalon Beach,3.0,1.0,8.0,
+rank_bootstrap_blocked,Cranebrook,4.0,1.0,9.0,
+rank_bootstrap_blocked,Oran Park,5.0,2.0,11.0,
+rank_bootstrap_blocked,Glenmore Park,7.0,3.775000000000002,12.0,
+rank_bootstrap_blocked,Newport,9.0,4.0,14.0,
+rank_bootstrap_blocked,Collaroy,8.0,3.0,16.0,
+rank_bootstrap_blocked,Heathcote,9.0,3.0,17.0,
+rank_bootstrap_blocked,Glenfield,10.0,5.0,17.0,
+rank_bootstrap_blocked,Freshwater,12.0,6.0,19.0,
+rank_bootstrap_blocked,Warriewood,14.0,7.0,21.0,
+rank_bootstrap_blocked,Spring Farm,13.0,5.0,22.0,
+rank_bootstrap_blocked,Miranda,16.0,8.0,24.0,
+rank_bootstrap_blocked,Cromer,17.0,9.0,26.0,
+rank_bootstrap_blocked,Dee Why,19.0,11.0,29.0,
+rank_bootstrap_blocked,North Kellyville,17.0,7.0,28.0,
+rank_bootstrap_blocked,Schofields,18.0,9.0,30.199999999999932,
+rank_bootstrap_blocked,Engadine,20.0,9.425,32.0,
+rank_bootstrap_blocked,St Ives,20.0,10.0,31.0,
+rank_bootstrap_blocked,Prestons,21.0,11.0,32.0,
+rank_bootstrap_blocked,Botany,22.0,12.0,33.0,
+rank_bootstrap_blocked,Allambie Heights,27.0,17.0,38.75,
+rank_bootstrap_blocked,Belrose,28.0,19.0,41.875,
+rank_bootstrap_blocked,Edmondson Park,26.0,14.0,40.0,
+rank_bootstrap_blocked,West Hoxton,27.0,15.0,42.0,
+rank_bootstrap_blocked,Cecil Hills,28.0,16.0,44.0,
+rank_bootstrap_blocked,Cherrybrook,28.0,15.0,44.0,
+rank_bootstrap_blocked,Holsworthy,29.0,16.0,44.0,
+rank_bootstrap_blocked,Erskine Park,31.0,18.0,45.0,
+rank_bootstrap_blocked,Carlingford,31.0,18.0,46.0,
+rank_bootstrap_blocked,Beacon Hill,37.0,25.0,51.0,
+rank_bootstrap_blocked,Leppington,35.0,21.0,52.0,
+rank_bootstrap_blocked,Panania,34.0,19.0,51.0,
+rank_bootstrap_blocked,Berowra,35.0,21.0,52.875,
+rank_bootstrap_blocked,Castle Hill,37.0,22.0,54.0,
+rank_bootstrap_blocked,Quakers Hill,38.0,23.0,56.0,
+rank_bootstrap_blocked,Kellyville,40.0,25.0,57.0,
+rank_bootstrap_blocked,Hornsby Heights,40.0,24.125,58.0,
+rank_bootstrap_blocked,Mascot,41.0,25.0,57.0,
+rank_bootstrap_blocked,Mona Vale,44.0,28.0,62.0,
+rank_bootstrap_blocked,Middleton Grange,45.0,29.0,64.0,
+rank_bootstrap_blocked,Killara,43.0,27.925,63.0,
+rank_bootstrap_blocked,North Narrabeen,47.0,30.225,68.0,
+rank_bootstrap_blocked,Narraweena,51.0,35.0,69.875,
+rank_bootstrap_blocked,Camden South,47.0,29.0,67.0,
+rank_bootstrap_blocked,Wattle Grove,49.0,29.875,69.0,
+rank_bootstrap_blocked,Queenscliff,55.0,38.0,74.0,
+rank_bootstrap_blocked,Baulkham Hills,51.0,34.0,74.875,
+rank_bootstrap_blocked,Picnic Point,49.0,30.0,71.0,
+rank_bootstrap_blocked,Denham Court,51.0,32.0,74.0,
+rank_bootstrap_blocked,Jordan Springs,53.0,35.0,75.0,
+rank_bootstrap_blocked,Sylvania,55.0,35.0,77.0,
+rank_bootstrap_blocked,Maraylya,54.0,34.0,77.0,
+rank_bootstrap_blocked,Sans Souci,55.0,34.0,79.0,
+rank_bootstrap_blocked,Harrington Park,57.0,37.0,80.0,
+rank_bootstrap_blocked,Sutherland,58.0,37.0,82.0,
+rank_bootstrap_blocked,Strathfield,57.0,35.0,82.0,
+rank_bootstrap_blocked,Gregory Hills,63.0,42.0,86.27499999999998,
+rank_bootstrap_blocked,Narrabeen,67.0,48.0,90.0,
+rank_bootstrap_blocked,Forestville,69.0,49.0,93.0,
+rank_bootstrap_blocked,Cobbitty,66.0,44.725,93.27499999999998,
+rank_bootstrap_blocked,Ropes Crossing,62.0,39.0,88.0,
+rank_bootstrap_blocked,Wahroonga,65.0,42.925,92.0,
+rank_bootstrap_blocked,Glenhaven,68.0,46.0,95.0,
+rank_bootstrap_blocked,Caringbah,69.0,44.0,98.0,
+rank_bootstrap_blocked,Minchinbury,66.0,42.0,94.0,
+rank_bootstrap_blocked,Rooty Hill,68.0,46.0,95.0,
+rank_bootstrap_blocked,Turramurra,70.0,47.0,98.0,
+rank_bootstrap_blocked,Mount Colah,71.0,47.125,99.0,
+rank_bootstrap_blocked,Ryde,69.0,46.0,93.0,
+rank_bootstrap_blocked,Bilgola Plateau,75.0,52.0,104.0,
+rank_bootstrap_blocked,Mulgoa,74.0,51.0,102.0,
+rank_bootstrap_blocked,Rouse Hill,75.0,51.0,103.19999999999993,
+rank_bootstrap_blocked,Oakhurst,76.0,52.0,103.0,
+rank_bootstrap_blocked,Waitara,78.0,54.0,105.0,
+rank_bootstrap_blocked,Narellan Vale,79.0,52.0,105.0,
+rank_bootstrap_blocked,Wheeler Heights,87.0,64.0,112.0,
+rank_bootstrap_blocked,Wilberforce,77.0,50.0,104.0,
+rank_bootstrap_blocked,Earlwood,80.0,54.0,109.0,
+rank_bootstrap_blocked,Kellyville Ridge,84.0,57.0,112.0,
+rank_bootstrap_blocked,Homebush,81.0,54.0,110.0,
+rank_bootstrap_blocked,Palm Beach,87.0,61.0,118.0,
+rank_bootstrap_blocked,Minto,84.0,58.0,113.19999999999993,
+rank_bootstrap_blocked,Castlereagh,87.0,62.775000000000006,116.0,
+rank_bootstrap_blocked,Yarrawarrah,87.0,58.0,116.57499999999993,
+rank_bootstrap_blocked,Hinchinbrook,91.0,63.0,121.0,
+rank_bootstrap_blocked,North Ryde,87.0,61.0,114.0,
+rank_bootstrap_blocked,Glenwood,93.0,65.0,122.0,
+rank_bootstrap_blocked,Kirrawee,92.0,62.425,123.0,
+rank_bootstrap_blocked,Horsley Park,89.0,60.0,120.17499999999995,
+rank_bootstrap_blocked,Ingleside,102.0,76.0,128.0,
+rank_bootstrap_blocked,Mount Annan,95.0,64.525,125.47500000000002,
+rank_bootstrap_blocked,Green Valley,99.0,70.0,131.0,
+rank_bootstrap_blocked,Loftus,98.0,67.425,132.0,
+rank_bootstrap_blocked,West Pennant Hills,99.0,70.0,132.0,
+rank_bootstrap_blocked,Hornsby,99.0,68.0,131.0,
+rank_bootstrap_blocked,Gymea Bay,101.0,71.0,133.02499999999998,
+rank_bootstrap_blocked,Casula,100.0,67.0,133.0,
+rank_bootstrap_blocked,Frenchs Forest,110.5,82.0,141.0,
+rank_bootstrap_blocked,Gladesville,101.0,70.0,131.75,
+rank_bootstrap_blocked,South Penrith,104.0,74.775,138.0,
+rank_bootstrap_blocked,Catherine Field,108.0,75.725,143.0,
+rank_bootstrap_blocked,Kenthurst,101.0,70.65,138.0,
+rank_bootstrap_blocked,Marsden Park,109.0,77.0,145.0,
+rank_bootstrap_blocked,Marrickville,103.0,70.0,140.0,
+rank_bootstrap_blocked,Ermington,106.5,72.425,140.0,
+rank_bootstrap_blocked,Menai,112.0,77.0,147.57499999999993,
+rank_bootstrap_blocked,Padstow,109.0,76.0,142.0,
+rank_bootstrap_blocked,Elderslie,113.0,79.0,147.0,
+rank_bootstrap_blocked,Revesby,112.0,79.325,145.0,
+rank_bootstrap_blocked,Wentworth Point,111.0,77.0,147.0,
+rank_bootstrap_blocked,Bow Bowing,115.0,81.0,151.0,
+rank_bootstrap_blocked,Lindfield,115.0,83.925,150.0,
+rank_bootstrap_blocked,Arncliffe,114.0,79.0,149.0,
+rank_bootstrap_blocked,Moorebank,118.0,82.875,152.0,
+rank_bootstrap_blocked,Jannali,121.5,87.0,157.0,
+rank_bootstrap_blocked,Gledswood Hills,124.0,90.725,159.0,
+rank_bootstrap_blocked,Emu Heights,122.0,91.0,158.0,
+rank_bootstrap_blocked,Bexley,120.0,86.375,157.0,
+rank_bootstrap_blocked,Eastwood,122.0,87.0,154.0,
+rank_bootstrap_blocked,Melonba,127.0,92.0,164.0,
+rank_bootstrap_blocked,Tallawong,129.0,93.0,166.0,
+rank_bootstrap_blocked,Oatley,122.0,86.0,161.0,
+rank_bootstrap_blocked,Sandringham,126.0,91.0,164.0,
+rank_bootstrap_blocked,West Ryde,127.0,91.25,160.0,
+rank_bootstrap_blocked,Berowra Heights,130.0,92.0,166.0,
+rank_bootstrap_blocked,Austral,136.0,99.0,173.0,
+rank_bootstrap_blocked,Abbotsbury,127.0,90.0,167.0,
+rank_bootstrap_blocked,Kogarah,132.0,96.0,171.0,
+rank_bootstrap_blocked,Dulwich Hill,130.0,94.0,168.0,
+rank_bootstrap_blocked,Blakehurst,131.0,95.0,171.0,
+rank_bootstrap_blocked,Illawong,138.0,100.0,177.57499999999993,
+rank_bootstrap_blocked,Glen Alpine,136.0,97.8,170.0,
+rank_bootstrap_blocked,Plumpton,136.0,99.0,171.0,
+rank_bootstrap_blocked,Dural,133.0,99.0,170.0,
+rank_bootstrap_blocked,Grantham Farm,143.0,107.0,180.0,
+rank_bootstrap_blocked,Londonderry,136.0,101.0,173.125,
+rank_bootstrap_blocked,Ruse,141.0,103.0,178.0,
+rank_bootstrap_blocked,Croydon,140.0,104.0,179.0,
+rank_bootstrap_blocked,Elizabeth Hills,149.0,113.0,188.54999999999995,
+rank_bootstrap_blocked,Seven Hills,136.0,102.0,177.52499999999998,
+rank_bootstrap_blocked,Bardia,147.0,109.0,182.0,
+rank_bootstrap_blocked,Manly Vale,154.0,121.0,193.625,
+rank_bootstrap_blocked,Bonnyrigg Heights,143.0,105.825,186.0,
+rank_bootstrap_blocked,Roseville,146.0,110.0,187.0,
+rank_bootstrap_blocked,St Helens Park,151.0,112.0,189.0,
+rank_bootstrap_blocked,Marsfield,149.0,112.0,188.0,
+rank_bootstrap_blocked,Edensor Park,148.0,109.0,191.0,
+rank_bootstrap_blocked,Mortdale,148.0,112.0,191.0,
+rank_bootstrap_blocked,Raby,156.0,115.0,194.0,
+rank_bootstrap_blocked,Riverstone,158.0,121.8,201.0,
+rank_bootstrap_blocked,Mount Druitt,154.0,115.0,191.0,
+rank_bootstrap_blocked,Middle Dural,150.0,114.0,193.0,
+rank_bootstrap_blocked,Stanhope Gardens,162.0,125.0,204.0,
+rank_bootstrap_blocked,Kings Langley,152.0,114.0,194.52499999999998,
+rank_bootstrap_blocked,Gymea,158.0,122.0,200.0,
+rank_bootstrap_blocked,Peakhurst,157.0,121.0,201.04999999999995,
+rank_bootstrap_blocked,Blair Athol,165.0,125.0,204.0,
+rank_bootstrap_blocked,Blacktown,156.0,118.0,199.57499999999993,
+rank_bootstrap_blocked,Carlton,162.0,123.0,203.0,
+rank_bootstrap_blocked,Gordon,162.0,124.925,205.0,
+rank_bootstrap_blocked,Woolooware,165.0,129.0,207.0,
+rank_bootstrap_blocked,Leonay,165.0,131.775,208.0,
+rank_bootstrap_blocked,Mount Vernon,164.0,123.825,208.17499999999995,
+rank_bootstrap_blocked,Bossley Park,166.0,125.825,209.17499999999995,
+rank_bootstrap_blocked,Beaumont Hills,164.0,124.0,204.0,
+rank_bootstrap_blocked,Greystanes,164.0,125.0,208.19999999999993,
+rank_bootstrap_blocked,Penrith,171.0,137.0,213.22500000000002,
+rank_bootstrap_blocked,Normanhurst,171.0,131.125,213.0,
+rank_bootstrap_blocked,Kingsgrove,168.0,129.0,211.19999999999993,
+rank_bootstrap_blocked,The Ponds,179.0,142.0,221.0,
+rank_bootstrap_blocked,Leumeah,179.0,138.0,218.19999999999993,
+rank_bootstrap_blocked,Bradbury,180.0,139.0,221.19999999999993,
+rank_bootstrap_blocked,Norwest,176.0,136.0,220.875,
+rank_bootstrap_blocked,Oakville,173.0,134.0,213.82499999999993,
+rank_bootstrap_blocked,Yowie Bay,179.0,142.0,223.0,
+rank_bootstrap_blocked,Currans Hill,178.0,138.0,223.0,
+rank_bootstrap_blocked,Lidcombe,176.0,135.0,221.0,
+rank_bootstrap_blocked,Sylvania Waters,183.0,145.975,228.0,
+rank_bootstrap_blocked,Rockdale,182.0,140.375,225.0,
+rank_bootstrap_blocked,Woodcroft,178.5,139.0,224.0,
+rank_bootstrap_blocked,St Andrews,189.0,148.0,232.0,
+rank_bootstrap_blocked,Thornleigh,186.0,143.125,231.0,
+rank_bootstrap_blocked,North Manly,194.0,154.0,237.0,
+rank_bootstrap_blocked,Asquith,189.0,145.0,234.875,
+rank_bootstrap_blocked,Campbelltown,194.0,152.0,239.0,
+rank_bootstrap_blocked,Oatlands,185.0,142.0,231.0,
+rank_bootstrap_blocked,Berkshire Park,185.0,145.0,232.125,
+rank_bootstrap_blocked,Collaroy Plateau,200.0,160.125,244.0,
+rank_bootstrap_blocked,Kogarah Bay,192.0,149.0,239.0,
+rank_bootstrap_blocked,Arcadia,188.0,148.0,235.0,
+rank_bootstrap_blocked,Bligh Park,190.0,150.0,237.0,
+rank_bootstrap_blocked,Bangor,196.0,154.0,244.0,
+rank_bootstrap_blocked,Homebush West,193.0,153.0,244.0,
+rank_bootstrap_blocked,Bayview,196.0,156.225,244.0,
+rank_bootstrap_blocked,Caddens,199.0,160.0,247.0,
+rank_bootstrap_blocked,Nirimba Fields,205.0,164.6,252.0,
+rank_bootstrap_blocked,Bringelly,204.0,162.725,254.27499999999998,
+rank_bootstrap_blocked,Wolli Creek,203.0,158.0,250.25,
+rank_bootstrap_blocked,North Turramurra,200.0,159.925,251.14999999999986,
+rank_bootstrap_blocked,Box Hill,199.0,155.0,244.0,
+rank_bootstrap_blocked,Beverley Park,206.0,161.375,253.0,
+rank_bootstrap_blocked,Rossmore,211.0,167.0,260.0,
+rank_bootstrap_blocked,Grays Point,209.0,166.0,258.0,
+rank_bootstrap_blocked,Woronora,209.0,163.0,260.0,
+rank_bootstrap_blocked,Ashfield,207.0,163.0,259.0,
+rank_bootstrap_blocked,Hoxton Park,216.0,171.725,267.0,
+rank_bootstrap_blocked,Mount Kuring-Gai,212.0,164.0,263.875,
+rank_bootstrap_blocked,Kemps Creek,211.0,160.47500000000002,262.0,
+rank_bootstrap_blocked,Pagewood,207.0,163.7,257.0,
+rank_bootstrap_blocked,Lugarno,212.0,165.95,261.0999999999999,
+rank_bootstrap_blocked,Glendenning,214.0,167.0,261.0,
+rank_bootstrap_blocked,Carss Park,215.0,169.0,264.04999999999995,
+rank_bootstrap_blocked,Penshurst,216.0,171.95,265.04999999999995,
+rank_bootstrap_blocked,Macquarie Fields,223.0,175.0,272.0,
+rank_bootstrap_blocked,Terrey Hills,228.0,182.0,278.0,
+rank_bootstrap_blocked,Pemulwuy,219.0,173.0,268.0,
+rank_bootstrap_blocked,Werrington Downs,221.0,178.0,273.0,
+rank_bootstrap_blocked,Brookvale,231.0,183.125,282.875,
+rank_bootstrap_blocked,Barden Ridge,226.0,177.0,277.57499999999993,
+rank_bootstrap_blocked,Revesby Heights,220.0,172.325,272.0,
+rank_bootstrap_blocked,Denistone East,222.0,176.0,271.0,
+rank_bootstrap_blocked,Annangrove,219.0,172.0,271.35,
+rank_bootstrap_blocked,Colyton,219.0,174.0,274.04999999999995,
+rank_bootstrap_blocked,Hurstville,228.0,182.9,278.04999999999995,
+rank_bootstrap_blocked,Pymble,226.0,179.0,279.2249999999998,
+rank_bootstrap_blocked,Bungarribee,224.5,176.0,280.525,
+rank_bootstrap_blocked,Oyster Bay,233.0,187.425,285.57499999999993,
+rank_bootstrap_blocked,Llandilo,232.0,189.0,284.225,
+rank_bootstrap_blocked,Kearns,238.0,188.0,291.0,
+rank_bootstrap_blocked,Beverly Hills,234.0,189.0,286.04999999999995,
+rank_bootstrap_blocked,Melrose Park,230.0,180.0,281.57499999999993,
+rank_bootstrap_blocked,Church Point,234.0,186.225,288.0,
+rank_bootstrap_blocked,Hassall Grove,237.0,187.0,285.0,
+rank_bootstrap_blocked,Grasmere,235.0,186.0,287.0,
+rank_bootstrap_blocked,Ingleburn,245.0,194.0,297.0,
+rank_bootstrap_blocked,Chipping Norton,237.0,187.0,291.25,
+rank_bootstrap_blocked,Westleigh,243.0,191.0,295.0,
+rank_bootstrap_blocked,Emu Plains,243.0,198.0,298.0,
+rank_bootstrap_blocked,Gables,238.0,187.35,290.0,
+rank_bootstrap_blocked,Eastgardens,239.0,190.0,292.0,
+rank_bootstrap_blocked,Denistone,241.0,193.0,292.0,
+rank_bootstrap_blocked,Newington,239.0,193.0,296.9,
+rank_bootstrap_blocked,Macquarie Park,244.0,196.0,297.0,
+rank_bootstrap_blocked,Claremont Meadows,251.0,206.0,304.0,
+rank_bootstrap_blocked,Parklea,253.0,207.0,306.0,
+rank_bootstrap_blocked,Cambridge Gardens,253.0,207.0,308.225,
+rank_bootstrap_blocked,Kurnell,251.0,203.975,306.025,
+rank_bootstrap_blocked,Petersham,243.0,190.0,302.0,
+rank_bootstrap_blocked,Kings Park,247.0,195.0,307.525,
+rank_bootstrap_blocked,Peakhurst Heights,255.0,209.0,309.04999999999995,
+rank_bootstrap_blocked,East Hills,251.0,200.325,302.67499999999995,
+rank_bootstrap_blocked,Pitt Town,251.0,200.0,301.82499999999993,
+rank_bootstrap_blocked,Hurstville Grove,259.0,212.0,312.04999999999995,
+rank_bootstrap_blocked,Macquarie Links,265.0,211.4,316.0,
+rank_bootstrap_blocked,Haberfield,256.0,204.0,314.14999999999986,
+rank_bootstrap_blocked,Ambarvale,268.0,213.6,318.0,
+rank_bootstrap_blocked,Windsor Downs,255.0,202.875,311.125,
+rank_bootstrap_blocked,Hillsdale,256.0,208.0,311.0,
+rank_bootstrap_blocked,Luddenham,267.0,219.0,321.225,
+rank_bootstrap_blocked,Riverwood,266.0,217.95,322.0,
+rank_bootstrap_blocked,Summer Hill,262.0,211.775,321.14999999999986,
+rank_bootstrap_blocked,Croydon Park,264.0,212.85,322.14999999999986,
+rank_bootstrap_blocked,Stanmore,258.0,205.0,316.0,
+rank_bootstrap_blocked,Granville,260.0,206.0,317.0,
+rank_bootstrap_blocked,Carnes Hill,276.0,221.725,332.0,
+rank_bootstrap_blocked,Connells Point,273.0,224.9,329.04999999999995,
+rank_bootstrap_blocked,Putney,269.0,216.0,323.0,
+rank_bootstrap_blocked,East Killara,270.0,215.0,325.07499999999993,
+rank_bootstrap_blocked,Acacia Gardens,278.0,226.0,337.0,
+rank_bootstrap_blocked,Elanora Heights,271.0,219.225,326.0,
+rank_bootstrap_blocked,Doonside,270.0,214.0,333.57499999999993,
+rank_bootstrap_blocked,Bundeena,277.0,227.975,334.0,
+rank_bootstrap_blocked,Port Hacking,280.0,229.0,335.0,
+rank_bootstrap_blocked,Galston,271.0,217.65,325.35,
+rank_bootstrap_blocked,Dundas,274.0,217.425,327.0,
+rank_bootstrap_blocked,Orchard Hills,283.0,234.775,341.0,
+rank_bootstrap_blocked,Bonnet Bay,284.0,231.0,337.57499999999993,
+rank_bootstrap_blocked,Monterey,282.0,225.0,332.625,
+rank_bootstrap_blocked,Bonnyrigg,280.0,221.0,334.0,
+rank_bootstrap_blocked,North Wahroonga,282.0,225.0,337.14999999999986,
+rank_bootstrap_blocked,Bardwell Valley,285.5,227.375,335.625,
+rank_bootstrap_blocked,Horningsea Park,293.0,239.0,350.54999999999995,
+rank_bootstrap_blocked,Burwood,287.0,232.0,343.0,
+rank_bootstrap_blocked,Punchbowl,281.0,225.8,339.39999999999986,
+rank_bootstrap_blocked,Glossodia,280.0,226.0,334.0,
+rank_bootstrap_blocked,Prospect,285.0,230.0,348.525,
+rank_bootstrap_blocked,Sydney Olympic Park,285.0,229.0,342.0,
+rank_bootstrap_blocked,Meadowbank,291.0,236.0,343.0,
+rank_bootstrap_blocked,Voyager Point,290.0,232.0,344.0,
+rank_bootstrap_blocked,North Curl Curl,301.0,249.125,357.625,
+rank_bootstrap_blocked,Dolls Point,297.0,238.375,349.625,
+rank_bootstrap_blocked,Roselands,289.0,233.0,348.19999999999993,
+rank_bootstrap_blocked,Rydalmere,292.0,235.0,345.57499999999993,
+rank_bootstrap_blocked,Brighton-Le-Sands,300.0,244.0,353.0,
+rank_bootstrap_blocked,Woronora Heights,303.0,247.0,356.0,
+rank_bootstrap_blocked,Curl Curl,309.0,256.0,367.0,
+rank_bootstrap_blocked,Lurnea,297.0,240.0,356.0,
+rank_bootstrap_blocked,Liverpool,299.0,244.0,357.0,
+rank_bootstrap_blocked,Greenacre,300.0,242.0,353.67499999999995,
+rank_bootstrap_blocked,Rosemeadow,310.0,250.0,368.1999999999996,
+rank_bootstrap_blocked,Eschol Park,312.0,251.8,370.1999999999996,
+rank_bootstrap_blocked,Hurlstone Park,306.0,249.0,366.14999999999986,
+rank_bootstrap_blocked,Yagoona,304.0,246.0,360.0,
+rank_bootstrap_blocked,Canterbury,302.0,245.0,362.19999999999993,
+rank_bootstrap_blocked,Belmore,303.0,247.0,364.0,
+rank_bootstrap_blocked,Milperra,308.0,252.0,363.0,
+rank_bootstrap_blocked,Silverwater,305.0,249.1,365.0,
+rank_bootstrap_blocked,Turrella,314.0,257.75,367.0,
+rank_bootstrap_blocked,Werrington County,316.0,264.0,374.0,
+rank_bootstrap_blocked,Allawah,317.0,260.375,371.0,
+rank_bootstrap_blocked,Burraneer,316.0,259.975,374.07499999999993,
+rank_bootstrap_blocked,Alfords Point,320.0,262.425,375.0,
+rank_bootstrap_blocked,Colebee,321.0,268.0,381.1999999999996,
+rank_bootstrap_blocked,Condell Park,317.0,258.0,373.0,
+rank_bootstrap_blocked,St Marys,310.0,255.475,372.0,
+rank_bootstrap_blocked,South Hurstville,323.0,265.0,380.04999999999995,
+rank_bootstrap_blocked,Kareela,326.0,267.425,382.0,
+rank_bootstrap_blocked,Banksia,326.0,268.0,380.0,
+rank_bootstrap_blocked,Bardwell Park,328.0,269.375,382.625,
+rank_bootstrap_blocked,Bankstown,324.0,264.325,383.0,
+rank_bootstrap_blocked,Auburn,320.0,258.0,384.0,
+rank_bootstrap_blocked,Greenhills Beach,327.0,270.975,387.0,
+rank_bootstrap_blocked,Lilli Pilli,329.0,273.0,389.0,
+rank_bootstrap_blocked,Woodbine,335.0,269.8,400.39999999999986,
+rank_bootstrap_blocked,Padstow Heights,329.5,267.65,390.0,
+rank_bootstrap_blocked,Burwood Heights,330.0,270.0,393.0,
+rank_bootstrap_blocked,Potts Hill,333.0,269.65,393.67499999999995,
+rank_bootstrap_blocked,Georges Hall,335.0,271.325,394.67499999999995,
+rank_bootstrap_blocked,Dean Park,332.0,265.0,393.0,
+rank_bootstrap_blocked,Guildford,325.0,261.0,391.0,
+rank_bootstrap_blocked,Campsie,332.0,268.0,395.0,
+rank_bootstrap_blocked,Cabramatta,332.0,266.0,396.0,
+rank_bootstrap_blocked,North Balgowlah,346.0,283.125,404.0,
+rank_bootstrap_blocked,Merrylands,329.0,267.0,397.0,
+rank_bootstrap_blocked,Strathfield South,340.0,281.925,404.07499999999993,
+rank_bootstrap_blocked,Cambridge Park,344.0,285.775,406.0,
+rank_bootstrap_blocked,Dundas Valley,336.0,273.0,395.57499999999993,
+rank_bootstrap_blocked,Killarney Heights,352.5,289.0,411.0,
+rank_bootstrap_blocked,Lakemba,340.0,275.0,404.39999999999986,
+rank_bootstrap_blocked,Mount Pritchard,341.0,273.0,405.0,
+rank_bootstrap_blocked,Ashbury,347.0,287.0,411.07499999999993,
+rank_bootstrap_blocked,Como,352.0,288.425,411.0,
+rank_bootstrap_blocked,Fairfield West,344.0,276.825,410.0,
+rank_bootstrap_blocked,Wiley Park,345.0,280.8,411.0,
+rank_bootstrap_blocked,Lethbridge Park,347.0,281.0,410.0,
+rank_bootstrap_blocked,Tempe,339.0,275.0,409.39999999999986,
+rank_bootstrap_blocked,Kyle Bay,355.0,293.0,416.0,
+rank_bootstrap_blocked,Eagle Vale,360.0,294.8,429.0,
+rank_bootstrap_blocked,Fairfield,350.0,283.0,415.17499999999995,
+rank_bootstrap_blocked,Kingswood,359.0,297.0,422.45000000000005,
+rank_bootstrap_blocked,Lewisham,357.0,296.85,425.0,
+rank_bootstrap_blocked,Smithfield,354.0,287.0,421.0,
+rank_bootstrap_blocked,Hunters Hill,355.0,291.0,417.0,
+rank_bootstrap_blocked,Shalvey,357.0,291.0,421.0,
+rank_bootstrap_blocked,Sydenham,349.0,286.0,421.19999999999993,
+rank_bootstrap_blocked,Enmore,351.0,289.0,422.19999999999993,
+rank_bootstrap_blocked,McGraths Hill,354.0,293.0,416.82499999999993,
+rank_bootstrap_blocked,Holroyd,354.0,294.6,424.0,
+rank_bootstrap_blocked,East Lindfield,359.0,297.0,426.0,
+rank_bootstrap_blocked,Canley Heights,363.0,298.0,428.17499999999995,
+rank_bootstrap_blocked,Chester Hill,358.0,299.0,429.0,
+rank_bootstrap_blocked,Airds,374.0,310.8,442.0,
+rank_bootstrap_blocked,Oxley Park,357.0,299.0,425.0,
+rank_bootstrap_blocked,Tennyson Point,366.0,306.0,429.75,
+rank_bootstrap_blocked,Hebersham,369.0,306.0,434.0,
+rank_bootstrap_blocked,Hammondville,366.0,303.75,435.125,
+rank_bootstrap_blocked,St Peters,362.0,301.0,433.19999999999993,
+rank_bootstrap_blocked,Willmot,373.0,310.0,440.0,
+rank_bootstrap_blocked,Ramsgate,377.0,313.0,440.0,
+rank_bootstrap_blocked,South Wentworthville,368.0,310.0,437.19999999999993,
+rank_bootstrap_blocked,Belfield,373.0,310.0,441.19999999999993,
+rank_bootstrap_blocked,Lalor Park,369.0,305.475,439.0,
+rank_bootstrap_blocked,Warrawee,374.0,314.925,442.0,
+rank_bootstrap_blocked,Bexley North,383.0,317.375,444.25,
+rank_bootstrap_blocked,St Ives Chase,376.0,317.0,444.07499999999993,
+rank_bootstrap_blocked,Camden,372.0,312.525,437.0,
+rank_bootstrap_blocked,Dharruk,383.0,319.0,450.0,
+rank_bootstrap_blocked,Eastlakes,373.0,316.0,438.29999999999995,
+rank_bootstrap_blocked,Taren Point,385.0,321.0,452.0,
+rank_bootstrap_blocked,Tregear,387.0,323.0,454.0,
+rank_bootstrap_blocked,Berala,380.0,319.0,447.0,
+rank_bootstrap_blocked,Woodpark,380.0,322.0,448.0,
+rank_bootstrap_blocked,Freemans Reach,377.0,318.0,439.0,
+rank_bootstrap_blocked,Roseville Chase,386.0,327.0,451.07499999999993,
+rank_bootstrap_blocked,Marayong,384.0,323.0,451.0,
+rank_bootstrap_blocked,Narellan,383.0,323.575,450.0,
+rank_bootstrap_blocked,Canley Vale,390.0,328.825,457.17499999999995,
+rank_bootstrap_blocked,North St Marys,382.0,327.0,446.0,
+rank_bootstrap_blocked,West Pymble,391.5,333.0,460.0,
+rank_bootstrap_blocked,Claymore,402.0,338.8,469.0,
+rank_bootstrap_blocked,St Johns Park,395.0,333.0,464.0,
+rank_bootstrap_blocked,Vineyard,388.0,330.0,451.0,
+rank_bootstrap_blocked,Bass Hill,397.0,335.0,457.67499999999995,
+rank_bootstrap_blocked,East Ryde,396.0,336.25,459.5,
+rank_bootstrap_blocked,Jamisontown,402.5,338.775,471.225,
+rank_bootstrap_blocked,Davidson,408.0,343.125,474.0,
+rank_bootstrap_blocked,Whalan,404.0,339.0,472.0,
+rank_bootstrap_blocked,Bella Vista,398.0,325.5,463.0,
+rank_bootstrap_blocked,Greenfield Park,403.0,341.0,474.0,
+rank_bootstrap_blocked,Daceyville,396.0,335.0,460.0,
+rank_bootstrap_blocked,Cabramatta West,406.0,343.825,476.0,
+rank_bootstrap_blocked,Clemton Park,402.0,341.0,472.19999999999993,
+rank_bootstrap_blocked,Fairfield Heights,408.0,346.0,478.0,
+rank_bootstrap_blocked,Wetherill Park,410.0,348.0,479.0,
+rank_bootstrap_blocked,Telopea,401.0,339.0,467.57499999999993,
+rank_bootstrap_blocked,Merrylands West,405.0,347.0,475.19999999999993,
+rank_bootstrap_blocked,South Windsor,401.0,341.0,466.125,
+rank_bootstrap_blocked,North Richmond,403.0,343.0,468.0,
+rank_bootstrap_blocked,Wakeley,416.0,355.0,483.3499999999999,
+rank_bootstrap_blocked,Cartwright,410.0,346.0,477.0,
+rank_bootstrap_blocked,Werrington,419.0,355.0,486.225,
+rank_bootstrap_blocked,South Turramurra,414.0,357.0,483.14999999999986,
+rank_bootstrap_blocked,Sadleir,421.0,359.0,488.0,
+rank_bootstrap_blocked,Emerton,422.0,357.0,489.0,
+rank_bootstrap_blocked,Ramsgate Beach,424.0,359.375,485.0,
+rank_bootstrap_blocked,Windsor,412.0,350.0,479.0,
+rank_bootstrap_blocked,Narwee,423.0,357.0,488.0,
+rank_bootstrap_blocked,Miller,427.0,363.0,495.0,
+rank_bootstrap_blocked,Enfield,425.0,364.0,497.0,
+rank_bootstrap_blocked,Villawood,419.0,358.0,488.39999999999986,
+rank_bootstrap_blocked,Blackett,429.0,364.0,497.0,
+rank_bootstrap_blocked,Richmond,419.0,355.0,487.0,
+rank_bootstrap_blocked,Heckenberg,432.0,370.725,502.0,
+rank_bootstrap_blocked,Hobartville,423.0,356.0,489.125,
+rank_bootstrap_blocked,Sefton,425.0,364.8,495.5999999999998,
+rank_bootstrap_blocked,Busby,436.0,373.0,506.0,
+rank_bootstrap_blocked,Ashcroft,439.0,374.0,508.275,
+rank_bootstrap_blocked,Warwick Farm,430.0,357.0,503.0,
+rank_bootstrap_blocked,Bidwill,438.0,373.0,509.0,
+rank_bootstrap_blocked,Prairiewood,438.0,373.0,511.0,
+rank_bootstrap_blocked,Guildford West,432.0,370.0,505.19999999999993,
+rank_bootstrap_blocked,South Granville,434.0,372.0,507.0,
+rank_bootstrap_blocked,Mount Lewis,438.0,370.0,504.0,
+rank_bootstrap_blocked,Regents Park,434.0,364.0,506.9,
+rank_bootstrap_blocked,Birrong,442.0,374.0,505.67499999999995,
+rank_bootstrap_blocked,Fairfield East,439.0,376.0,512.0,
+rank_bootstrap_blocked,Yennora,442.0,378.0,514.0,
+rank_bootstrap_blocked,Lansvale,447.0,380.65,521.175,
+rank_bootstrap_blocked,Old Guildford,445.0,380.0,516.0,
+rank_bootstrap_blocked,Carramar,447.0,382.0,519.0,

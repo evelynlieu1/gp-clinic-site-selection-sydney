@@ -68,6 +68,11 @@ DEFAULT_K = 8
 N_PERMUTATIONS = 999
 N_BOOTSTRAP = 2000
 
+#: Resamples for the rank interval. Fewer than the AUC bootstrap because each draw
+#: re-ranks the whole cohort, and the quantity of interest is a coarse integer rank
+#: rather than a statistic needing three decimal places.
+N_RANK_BOOTSTRAP = 1000
+
 RNG_SEED = 20260923
 
 
@@ -244,6 +249,232 @@ def morans_i_test(
     }
 
 
+def local_morans_i(values: np.ndarray, w: np.ndarray) -> np.ndarray:
+    """
+    Local Moran's I per observation: ``I_i = n * z_i * (Wz)_i / sum(z^2)``.
+
+    Scaled so the MEAN of the local statistics is exactly the global statistic. That
+    identity is what makes this a decomposition of :func:`morans_i` rather than a second,
+    separately defined quantity that happens to look similar.
+
+    >>> xy = np.array([[float(i), 0.0] for i in range(8)])
+    >>> w = knn_weights(xy, k=2)
+    >>> v = np.array([1.0, 1.0, 1.0, 1.0, 9.0, 9.0, 9.0, 9.0])
+    >>> bool(np.isclose(local_morans_i(v, w).mean(), morans_i(v, w)))
+    True
+
+    A value sitting among others like it scores positive, and the two at the boundary
+    between the blocks score lowest, each being the one least like its neighbours:
+
+    >>> li = local_morans_i(v, w)
+    >>> bool(li[0] > 0), bool(li[3] < li[0]), bool(li[4] < li[7])
+    (True, True, True)
+
+    Constant input has no variance, and yields zeros rather than a divide by zero:
+
+    >>> local_morans_i(np.ones(8), w).tolist()
+    [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    """
+    z = np.asarray(values, dtype=float)
+    z = z - z.mean()
+    denom = float(z @ z)
+    if denom == 0.0:
+        return np.zeros_like(z)
+    return z.size * z * (w @ z) / denom
+
+
+def lisa_quadrants(values: np.ndarray, w: np.ndarray) -> np.ndarray:
+    """
+    Label each observation HH, LL, HL or LH from its own value and its neighbours' mean.
+
+    HL is the label that matters commercially: a suburb scoring high while its neighbours
+    score low is a LOCAL anomaly, so the opportunity is not shared with an adjacent
+    candidate. HH is a suburb that scores well because its whole region does, which is
+    the peninsula effect and is a weaker claim about the suburb itself.
+
+    >>> xy = np.array([[0.0, 0.0], [1.0, 0.0], [2.0, 0.0], [3.0, 0.0]])
+    >>> w = knn_weights(xy, k=1)
+    >>> lisa_quadrants(np.array([9.0, 0.0, 0.0, 0.0]), w).tolist()
+    ['HL', 'LH', 'LL', 'LL']
+    """
+    z = np.asarray(values, dtype=float)
+    z = z - z.mean()
+    lag = w @ z
+    out = np.empty(z.size, dtype=object)
+    for i in range(z.size):
+        hi = z[i] > 0
+        hi_lag = lag[i] > 0
+        out[i] = "HH" if hi and hi_lag else "HL" if hi else "LH" if hi_lag else "LL"
+    return out
+
+
+def benjamini_hochberg(p: np.ndarray, alpha: float = 0.05) -> np.ndarray:
+    """
+    Benjamini-Hochberg step-up: which p-values survive at false discovery rate ``alpha``.
+
+    Needed because LISA runs one test per suburb. At 443 suburbs and alpha 0.05 about 22
+    "significant" clusters appear in pure noise, so an uncorrected LISA map is a
+    well-known way to report nothing with confidence.
+
+    Thresholds are ``alpha * i / n``, so for five tests they are 0.01, 0.02, 0.03, 0.04,
+    0.05. Only the first two p-values clear their own threshold:
+
+    >>> benjamini_hochberg(np.array([0.001, 0.008, 0.039, 0.041, 0.9])).tolist()
+    [True, True, False, False, False]
+
+    STEP-UP, which is the whole point of the procedure and the part that surprises
+    people: 0.04 fails its own threshold of 0.0333, but a LARGER p-value below it clears
+    0.05, and everything up to that point is then accepted.
+
+    >>> benjamini_hochberg(np.array([0.001, 0.04, 0.045])).tolist()
+    [True, True, True]
+
+    Nothing significant returns all False rather than raising:
+
+    >>> benjamini_hochberg(np.array([0.06, 0.2, 0.5])).tolist()
+    [False, False, False]
+    """
+    p = np.asarray(p, dtype=float)
+    n = p.size
+    order = np.argsort(p)
+    ranked = p[order]
+    thresholds = alpha * np.arange(1, n + 1) / n
+    passed = ranked <= thresholds
+    out = np.zeros(n, dtype=bool)
+    if passed.any():
+        cutoff = int(np.flatnonzero(passed).max())
+        out[order[: cutoff + 1]] = True
+    return out
+
+
+def lisa_test(
+    values: np.ndarray,
+    w: np.ndarray,
+    n: int = N_PERMUTATIONS,
+    seed: int = RNG_SEED,
+    alpha: float = 0.05,
+) -> pd.DataFrame:
+    """
+    LISA with a CONDITIONAL permutation null and a Benjamini-Hochberg FDR filter.
+
+    Conditional means each observation keeps its own value while its neighbours are
+    resampled from the rest. That is the correct null for a local statistic: the question
+    is "given this suburb's score, are its neighbours more alike than chance would give",
+    not "could this whole map have arisen at random", which is what the global test asks.
+
+    The pseudo p-value is two-sided, because an unusually HIGH local I (a cluster) and an
+    unusually low one (a spatial outlier) are both findings.
+    """
+    z = np.asarray(values, dtype=float)
+    z = z - z.mean()
+    size = z.size
+    denom = float(z @ z)
+    positive = w[w > 0]
+    k = int(round(1.0 / positive.min())) if positive.size else 1
+    observed = local_morans_i(values, w)
+    rng = np.random.default_rng(seed)
+    p_values = np.empty(size, dtype=float)
+    for i in range(size):
+        others = np.delete(z, i)
+        draws = rng.choice(others, size=(n, k), replace=True).mean(axis=1)
+        null_i = size * z[i] * draws / denom if denom else np.zeros(n)
+        extreme = int((np.abs(null_i) >= abs(observed[i])).sum())
+        p_values[i] = (1 + extreme) / (1 + n)
+    return pd.DataFrame({
+        "local_i": observed,
+        "p_value": p_values,
+        "quadrant": lisa_quadrants(values, w),
+        "significant_fdr": benjamini_hochberg(p_values, alpha),
+    })
+
+
+def bootstrap_ranks(
+    suburbs: np.ndarray,
+    scores: np.ndarray,
+    blocks: np.ndarray | None,
+    n: int = N_RANK_BOOTSTRAP,
+    top_n: int = 10,
+    seed: int = RNG_SEED,
+) -> pd.DataFrame:
+    """
+    Resampling interval on each suburb's rank, optionally blocked on ``blocks``.
+
+    Rank is a RELATIVE statistic: a suburb's position depends entirely on which other
+    suburbs it is measured against. So the resampling question is "how much does this
+    rank depend on the comparison set", and the answer is an interval rather than the
+    single number the point ranking reports.
+
+``blocks=None`` resamples individual suburbs, which assumes they are independent.
+    :func:`morans_i` shows they are not (I = 0.36, p = 0.001), so blocking on GP
+    catchment is the defensible choice.
+
+    MEASURED, AND AGAINST EXPECTATION: blocking widens the top-10 intervals by only
+    about 7 percent. The prediction from the global Moran's I was a much larger gap. The
+    reason it does not appear is that a RANK depends on how many suburbs outscore you,
+    and whether correlated neighbours enter the resample together or separately barely
+    changes that count. Spatial blocking matters a great deal for a mean and very little
+    for a rank. Recorded here rather than quietly dropped, because the blocked interval
+    was justified in advance by an argument the data then only weakly supported.
+
+    TWO THINGS THIS DOES NOT CAPTURE, both of which make the intervals a LOWER BOUND:
+
+    1. Measurement error. Population, income and the practice register are treated as
+       exact, so none of their uncertainty reaches the rank.
+    2. The scores themselves never move. Resampling changes only WHICH suburbs compete,
+       so the highest-scoring suburb is rank 1 in every single draw by construction. An
+       interval of [1, 1] for the leader is therefore tautological, NOT evidence of
+       robustness, and must never be quoted as though it were. The informative rows are
+       the ones further down, where rank genuinely depends on the comparison set.
+
+    The assumption sweep in :mod:`site_score` answers the complementary question: it
+    holds the cohort fixed and varies the model instead.
+
+    Two suburbs, one clearly better, ranks are certain:
+
+    >>> out = bootstrap_ranks(np.array(["a", "b"]), np.array([1.0, 0.0]), None, n=50)
+    >>> out.loc[out["suburb"] == "a", "rank_median"].item()
+    1.0
+    >>> out.loc[out["suburb"] == "b", "rank_median"].item()
+    2.0
+    """
+    suburbs = np.asarray(suburbs)
+    scores = np.asarray(scores, dtype=float)
+    rng = np.random.default_rng(seed)
+    size = suburbs.size
+    seen = {s: [] for s in suburbs}
+
+    if blocks is None:
+        units = [np.array([i]) for i in range(size)]
+    else:
+        blocks = np.asarray(blocks)
+        units = [np.flatnonzero(blocks == b) for b in pd.unique(blocks)]
+
+    for _ in range(n):
+        picked = rng.integers(0, len(units), size=len(units))
+        idx = np.concatenate([units[j] for j in picked])
+        ranks = pd.Series(-scores[idx]).rank(method="min").to_numpy()
+        for name, r in zip(suburbs[idx], ranks):
+            seen[name].append(r)
+
+    rows = []
+    for name in suburbs:
+        draws = np.array(seen[name], dtype=float)
+        if draws.size == 0:
+            rows.append({"suburb": name, "appearances": 0, "rank_median": np.nan,
+                         "rank_lo": np.nan, "rank_hi": np.nan, "p_top_n": np.nan})
+            continue
+        lo, hi = np.percentile(draws, [2.5, 97.5])
+        rows.append({
+            "suburb": name,
+            "appearances": int(draws.size),
+            "rank_median": float(np.median(draws)),
+            "rank_lo": float(lo),
+            "rank_hi": float(hi),
+            "p_top_n": float((draws <= top_n).mean()),
+        })
+    return pd.DataFrame(rows)
+
+
 # ---------------------------------------------------------------------------
 # Data
 # ---------------------------------------------------------------------------
@@ -324,6 +555,96 @@ def main() -> None:
         rows.append({"test": f"morans_i_k{k}", "measure": "site_score",
                      "statistic": res["morans_i"], "ci_low": "", "ci_high": "",
                      "p_value": res["p_value"]})
+
+    print()
+    print("=" * 78)
+    print("3. LOCAL CLUSTERS, LISA with a conditional null and FDR control")
+    print("=" * 78)
+    lisa = lisa_test(elig["site_score"].to_numpy(float), w)
+    lisa.insert(0, "suburb", elig["suburb"].to_numpy())
+    lisa["rank"] = elig["rank"].to_numpy()
+    sig = lisa[lisa["significant_fdr"]]
+    raw = int((lisa["p_value"] <= 0.05).sum())
+    print(f"  {len(sig)} of {len(lisa)} suburbs significant at FDR 0.05 "
+          f"({raw} before correction)")
+    print("  by quadrant: " + ", ".join(
+        f"{q} {int((sig['quadrant'] == q).sum())}" for q in ("HH", "HL", "LH", "LL")))
+    print()
+    print("  HH = good suburb in a good region, i.e. the peninsula effect")
+    print("  HL = good suburb among poorly scoring neighbours: a LOCAL anomaly, so the")
+    print("       opportunity is not shared with an adjacent candidate")
+    print()
+    top = lisa[lisa["rank"] <= 10].sort_values("rank")
+    print(f"  {'rank':>4s}  {'suburb':22s} {'local I':>8s} {'p':>7s}  {'quad':4s} {'sig':>4s}")
+    for r in top.itertuples():
+        mark = "yes" if r.significant_fdr else "no"
+        print(f"  {int(r.rank):>4d}  {r.suburb:22s} {r.local_i:8.3f} {r.p_value:7.3f}  "
+              f"{r.quadrant:4s} {mark:>4s}")
+    hl = sig[sig["quadrant"] == "HL"].sort_values("rank")
+    print()
+    if len(hl):
+        print("  Significant HL suburbs (local anomalies), best rank first:")
+        for r in hl.head(8).itertuples():
+            print(f"    {r.suburb:22s} rank {int(r.rank):>3d}  I = {r.local_i:6.3f}")
+    else:
+        print("  No significant HL suburbs: every high scorer sits in a high-scoring")
+        print("  neighbourhood, so no candidate is a purely local anomaly.")
+    lisa.to_csv(ROOT / "eda" / "lisa_site_score.csv", index=False)
+    for r in lisa.itertuples():
+        rows.append({"test": "lisa_site_score", "measure": r.suburb,
+                     "statistic": r.local_i, "ci_low": "", "ci_high": "",
+                     "p_value": r.p_value})
+
+    print()
+    print("=" * 78)
+    print("4. RANK UNCERTAINTY, bootstrap blocked on GP catchment")
+    print("=" * 78)
+    names = elig["suburb"].to_numpy()
+    vals = elig["site_score"].to_numpy(float)
+    blocked = bootstrap_ranks(names, vals, elig["gpc_code"].to_numpy())
+    naive = bootstrap_ranks(names, vals, None)
+    merged = (
+        blocked.merge(naive, on="suburb", suffixes=("", "_naive"))
+        .merge(elig[["suburb", "rank"]], on="suburb")
+        .sort_values("rank")
+    )
+    n_blocks = int(pd.unique(elig["gpc_code"]).size)
+    print(f"  {N_RANK_BOOTSTRAP} resamples of {n_blocks} catchments "
+          f"covering {len(elig)} eligible suburbs")
+    print()
+    print(f"  {'rank':>4s}  {'suburb':20s} {'median':>7s} {'95% interval':>16s} "
+          f"{'P(top10)':>9s} {'naive width':>12s}")
+    top = merged[merged["rank"] <= 10]
+    for r in top.itertuples():
+        width = r.rank_hi - r.rank_lo
+        width_naive = r.rank_hi_naive - r.rank_lo_naive
+        print(f"  {int(r.rank):>4d}  {r.suburb:20s} {r.rank_median:7.0f} "
+              f"{f'[{r.rank_lo:.0f}, {r.rank_hi:.0f}]':>16s} {r.p_top_n:9.2f} "
+              f"{width_naive:7.0f} vs {width:.0f}")
+    blocked_w = (top["rank_hi"] - top["rank_lo"]).mean()
+    naive_w = (top["rank_hi_naive"] - top["rank_lo_naive"]).mean()
+    print()
+    print(f"  Mean 95% interval width over the top 10: blocked {blocked_w:.1f} ranks, "
+          f"naive {naive_w:.1f}")
+    print(f"  Blocking widens the interval by only "
+          f"{100 * (1 - naive_w / blocked_w):.0f} percent. The global Moran's I in "
+          f"section 2 predicted")
+    print("  a larger gap; it does not appear because a rank depends on how many "
+          "suburbs outscore")
+    print("  you, and that count barely notices whether correlated neighbours arrive "
+          "together.")
+    print()
+    print("  READ THE LEADER'S INTERVAL WITH CARE: resampling never changes a score, so "
+          "the top")
+    print("  scorer is rank 1 in every draw by construction. [1, 1] is tautological. "
+          "The rows")
+    print("  that carry information are the ones where rank depends on the comparison "
+          "set.")
+    merged.to_csv(ROOT / "eda" / "rank_bootstrap.csv", index=False)
+    for r in merged.itertuples():
+        rows.append({"test": "rank_bootstrap_blocked", "measure": r.suburb,
+                     "statistic": r.rank_median, "ci_low": r.rank_lo,
+                     "ci_high": r.rank_hi, "p_value": ""})
 
     pd.DataFrame(rows).to_csv(OUT, index=False)
     print()

@@ -101,6 +101,37 @@ The recommendation is the set that survives the sweep. It is not the point estim
 
 ---
 
+## What this model is not
+
+**It ranks commercial suitability for a mixed-billing clinic. It does not rank clinical
+need, and the two point in different directions.**
+
+A mixed-billing practice charges a gap fee, so the model rewards suburbs where
+households can pay one. Local Moran's I makes the consequence explicit: the only
+statistically significant cluster of low-scoring suburbs is in Western Sydney —
+Merrylands-Guildford, Fairfield, Bankstown, Mount Druitt, Liverpool — and decomposing
+the gap between that cluster and the high-scoring Northern Beaches cluster gives:
+
+| Criterion | High cluster | Low cluster | Share of the gap |
+|---|---|---|---|
+| `access_gap` | 0.845 | 0.179 | 64% |
+| `mixed_billing_fit` | 0.805 | 0.102 | 42% |
+
+Median household income is $2,481 a week in the high cluster and $1,355 in the low one.
+The low cluster's median sits *below* the model's lower income knot, so those suburbs
+score near zero on billing fit regardless of how thin their GP supply is.
+
+Stated plainly: the model is not claiming Western Sydney has enough GPs. It is claiming
+Western Sydney is a poor market for a clinic that charges a gap fee. Those are different
+claims and only the second one is supported here.
+
+`community_need_score` in [eda/site_scores_v2.csv](eda/site_scores_v2.csv) applies the
+opposite lens — the same access and demand measures with the income criterion inverted —
+and is reported for every suburb. It is never ranked on by default, because the brief was
+commercial.
+
+---
+
 ## Method
 
 | Component | Approach |
@@ -110,7 +141,7 @@ The recommendation is the set that survives the sweep. It is not the point estim
 | Billing fit | Inverted-U on household income, percentile-anchored |
 | Operational | Pharmacy co-location + Distribution Priority Area status |
 | Robustness | 31 perturbations across 9 families, 21,760 rows |
-| Validation | AUC vs the DoH under-supply flag; Moran's I under a permutation null |
+| Validation | AUC vs the DoH under-supply flag; Moran's I and LISA; blocked rank bootstrap |
 
 Weights are 0.40 access / 0.25 demand / 0.25 billing fit / 0.10 operational — and they
 are not defended by assertion. Every one is varied by ±50% and to zero in the sweep.
@@ -145,6 +176,13 @@ overlap heavily, so the guard's apparent cost is not distinguishable from noise.
 | `mixed_billing_fit` | 0.387 | 0.001 |
 | `site_score` | 0.359 | 0.001 |
 | `demand_scale` | 0.070 | 0.003 |
+
+Local Moran's I, with a conditional null and Benjamini-Hochberg FDR control, finds 58
+significant suburbs of 443 (124 before correction). **All nine significant high-high
+suburbs are Northern Beaches** — so ranks 4, 8 and 9 are one spatial phenomenon, which
+the catchment dedupe misses because Collaroy sits in a different administrative catchment
+from Avalon Beach and Newport. Cronulla is *not* significant (p = 0.632), meaning its
+score is not explained by a regional cluster.
 
 The peninsula concentration is real and now has a test statistic rather than an anecdote.
 It is stable across neighbour counts (I = 0.397 at k=4 down to 0.232 at k=32, p = 0.001

@@ -40,13 +40,13 @@ ranked on by default.
 
 D4 WARNING, REPEATED IN EVERY OUTPUT FILE
 -----------------------------------------
-:data:`NUVO_SITES` is UNVERIFIED and KNOWN INCOMPLETE. It was built by brand-string
-matching "nuvo" over the project clinic scrape (6 hits) and the Geoscience Australia
-register (4 hits, all a subset of the 6). Industry reporting suggests roughly 23 Sydney
-clinics operate under other brands, so the true exclusion set is likely about 4x larger
-than what is encoded here. CONFIRM THE SITE LIST WITH THE CLIENT before acting on any
-ranking in this file. Exclusion is applied at GP-CATCHMENT level, not suburb level,
-because a clinic 1 km away in the next suburb still cannibalises.
+:data:`NUVO_SITES` now comes from the operator's own published location list
+(nuvohealth.com.au, retrieved 2026-09-23), not from brand-string matching. The earlier
+method found 6 of 18 centres, because no register records a brand owner, and so
+understated the exclusion set threefold. Still CONFIRM WITH THE CLIENT before acting:
+a public site listing can lag an opening or a closure. Exclusion is applied at
+GP-CATCHMENT level, not suburb level, because a clinic 1 km away in the next suburb
+still cannibalises.
 
 D5: supply is practices per capita via accessibility, never headcount. No GP FTE source
 was obtained by any acquire task (the register has no practitioner-count field, and the
@@ -124,8 +124,9 @@ SHORTLIST_OUT = EDA_DIR / "final_shortlist_v2.csv"
 
 #: Stamped into every output file so a stray CSV cannot be read as verified.
 NUVO_UNVERIFIED_NOTE = (
-    "unverified - confirm site list with client; brand-string match only, "
-    "known incomplete (6 matched, roughly 23 Sydney clinics operate under other brands)"
+    "site list from nuvohealth.com.au/medical-centres/ retrieved 2026-09-23; "
+    "15 of 18 GP centres map to an ABS suburb, the other 3 are precinct names whose "
+    "catchments are already covered; confirm with client before acting"
 )
 
 SOURCE_NOTE = (
@@ -312,22 +313,44 @@ CRITERIA = tuple(BASE_WEIGHTS)
 # D4 - Nuvo exclusion
 # ---------------------------------------------------------------------------
 
-#: EDITABLE. Suburbs believed to host an existing Nuvo Health clinic. Every suburb in the
-#: same GP catchment as any of these is excluded from the shortlist.
+#: EDITABLE. Suburbs hosting an existing Nuvo Health GP centre. Every suburb in the same
+#: GP catchment as any of these is excluded from the shortlist, because a clinic 1 km away
+#: in the next suburb still cannibalises.
 #:
-#: PROVENANCE, so the client can correct it: brand-string match on "nuvo".
-#: ``scraped_data/gp_clinics_all.csv`` yields 6 clinics (Leichhardt 13 GPs, Maroubra 10,
-#: Five Dock 7, Epping 10, Longueville 8, Neutral Bay 4). The Geoscience Australia
-#: register independently yields 4 (Neutral Bay, Leichhardt, Maroubra, Five Dock), all a
-#: subset of the 6. Neither source names a brand owner, so a clinic Nuvo operates under a
-#: different trading name is INVISIBLE to this method. See :data:`NUVO_UNVERIFIED_NOTE`.
+#: PROVENANCE. Taken from the operator's own site listing, nuvohealth.com.au/medical-
+#: centres/, retrieved 2026-09-23: 18 GP medical centres.
+#:
+#: SUPERSEDES a brand-string match on "nuvo" over the clinic scrape, which found only 6
+#: (Leichhardt, Maroubra, Five Dock, Epping, Longueville, Neutral Bay) because neither
+#: the scrape nor the Geoscience Australia register records a brand owner, so any centre
+#: trading under another name was invisible. That method understated the exclusion set by
+#: a factor of three: 6 catchments and 75 suburbs, against 10 and 145 here.
+#:
+#: THREE of the 18 are precinct names rather than ABS suburbs and are omitted from this
+#: tuple, which is safe because each sits in a catchment the listed 15 already cover:
+#:   Green Square  -> Zetland,       Sydney Inner City  (covered by Surry Hills, Glebe)
+#:   Harold Park   -> Forest Lodge,  Sydney Inner City  (covered by Surry Hills, Glebe)
+#:   Birkenhead    -> Drummoyne,     Canada Bay         (covered by Five Dock)
+#:
+#: MEASURED effect of the correction: Manly (was rank 11) and Bondi Beach (was rank 13)
+#: leave contention. The top 10 is unchanged, so the recommendation does not depend on
+#: this fix - but the shortlist previously offered sites where Nuvo already trades.
 NUVO_SITES: tuple[str, ...] = (
-    "Leichhardt",
+    "Surry Hills",
+    "Randwick",
+    "Double Bay",
+    "Coogee",
     "Maroubra",
+    "Leichhardt",
+    "Rozelle",
+    "Glebe",
     "Five Dock",
-    "Epping",
+    "Manly",
+    "Chatswood",
     "Longueville",
     "Neutral Bay",
+    "Parramatta",
+    "Epping",
 )
 
 
@@ -1568,6 +1591,29 @@ def _test_headcount_guard(inputs: Inputs) -> None:
     ).all(), "strength 0.0 still altered access_gap"
 
 
+def _test_catchment_dedupe(inputs: Inputs) -> None:
+    """
+    No two suburbs marked "recommended" may share a GP catchment.
+
+    This is the Croydon objection applied to the OUTPUT rather than the input: having
+    fixed supply so it is measured across boundaries, a shortlist that then lists two
+    suburbs from one catchment reintroduces the same error at the point of decision.
+    """
+    frame = score(inputs)
+    elig = frame.loc[frame["eligible"]].sort_values("site_score", ascending=False)
+    top = elig.head(TOP_N)
+    leader = top.groupby("gpc_code")["suburb"].transform("first")
+    recommended = top.loc[top["suburb"] == leader]
+    assert recommended["gpc_code"].is_unique, (
+        "two recommended suburbs share a catchment: "
+        f"{recommended.loc[recommended['gpc_code'].duplicated(keep=False), 'suburb'].tolist()}"
+    )
+    assert len(recommended) < len(top), (
+        "dedupe removed nothing from the top 10, so either the data changed or the "
+        "grouping is not working - check before assuming this is good news"
+    )
+
+
 def _test_nuvo_catchment_exclusion(inputs: Inputs) -> None:
     """
     D4 must exclude the CATCHMENT, not just the suburb.
@@ -1601,6 +1647,7 @@ def run_tests(inputs: Inputs | None = None) -> None:
     if inputs is not None:
         for fn in (_test_reproduces_shipped_access, _test_monotone_in_access,
                    _test_headcount_guard, _test_derived_income_knots,
+                   _test_catchment_dedupe,
                    _test_nuvo_catchment_exclusion):
             fn(inputs)
             data_checks += 1
@@ -1766,15 +1813,29 @@ def main() -> None:
     out.to_csv(SCORES_OUT, index=False)
     long.drop(columns=[]).to_csv(SENSITIVITY_OUT, index=False)
 
+    # Two suburbs in the same GP catchment are ONE opportunity, not two: a clinic in
+    # either draws on the same practice pool and the same population, so opening both
+    # cannibalises. The shortlist used to list both - Cronulla and Caringbah South are
+    # both Cronulla - Miranda - Caringbah - which made it read as more diversified than
+    # it was. Duplicates are MARKED, never dropped, so the suppression stays auditable.
     shortlist = out.loc[out["robust_core_tier"] != ""].copy().sort_values("rank")
+    leader = shortlist.groupby("gpc_code")["suburb"].transform("first")
+    shortlist["shortlist_status"] = np.where(
+        shortlist["suburb"] == leader, "recommended", "same catchment as " + leader
+    )
+    distinct_sites = int((shortlist["shortlist_status"] == "recommended").sum())
     shortlist.to_csv(SHORTLIST_OUT, index=False)
 
     print()
     print(f"wrote {SCORES_OUT} ({len(out)} rows, {len(out.columns)} cols)")
     print(f"wrote {SENSITIVITY_OUT} ({len(long)} rows)")
-    print(f"wrote {SHORTLIST_OUT} ({len(shortlist)} rows) - robust core, "
+    print(f"wrote {SHORTLIST_OUT} ({len(shortlist)} rows, {distinct_sites} distinct "
+          f"catchments) - robust core, "
           f"{int((shortlist['robust_core_tier'] == 'core_all_perturbations').sum())} "
           f"surviving every perturbation")
+    suppressed = shortlist.loc[shortlist["shortlist_status"] != "recommended"]
+    for row in suppressed.itertuples():
+        print(f"  NOT a separate opportunity: {row.suburb} is {row.shortlist_status}")
     print(f"D4 NOTE stamped in every row: {NUVO_UNVERIFIED_NOTE}")
 
 

@@ -83,16 +83,19 @@ Dee Why moved from rank 2 to 19.
 ![Rank stability under 31 perturbations](eda/plots/readme_rank_stability.png)
 
 **Cronulla** — 17,899 residents, 6 practices within 2 km, thin on both the accessibility
-measure and on doctors per resident. It holds the top 10 in 30 of 31 perturbation runs.
-
-The single run it fails deletes `access_gap` — the criterion carrying 40% of the
-weight — entirely. That is not a robustness failure; it is a different study.
+measure and on doctors per resident. It holds the top 10 in **all 31** perturbation
+runs, including the four that delete a criterion outright.
 
 **Four suburbs survive every non-degenerate run:** Cronulla, Caringbah South,
 Avalon Beach, Oran Park.
 
 **Rank 10 is noise.** Heathcote holds the top 10 in 45% of runs. Anything below about
 rank 8 should be read as "in contention", never as a ranking.
+
+**The top 10 is only 7 opportunities.** Cronulla and Caringbah South share a GP
+catchment, as do Avalon Beach and Newport, and Cranebrook and Glenmore Park. Two suburbs
+in one catchment draw on the same practices and the same population, so opening in both
+cannibalises. `final_shortlist_v2.csv` marks the duplicates rather than dropping them.
 
 The recommendation is the set that survives the sweep. It is not the point estimate.
 
@@ -107,9 +110,47 @@ The recommendation is the set that survives the sweep. It is not the point estim
 | Billing fit | Inverted-U on household income, percentile-anchored |
 | Operational | Pharmacy co-location + Distribution Priority Area status |
 | Robustness | 31 perturbations across 9 families, 21,760 rows |
+| Validation | AUC vs the DoH under-supply flag; Moran's I under a permutation null |
 
 Weights are 0.40 access / 0.25 demand / 0.25 billing fit / 0.10 operational — and they
 are not defended by assertion. Every one is varied by ±50% and to zero in the sweep.
+
+### Does it work?
+
+Two checks in [validation.py](validation.py), neither of which the model can pass by
+construction.
+
+**External discrimination.** The Department of Health's Distribution Priority Area flag
+is an independent under-supply designation derived from GP FTE per capita. The score has
+never seen it.
+
+| Measure | AUC | 95% CI |
+|---|---|---|
+| `access_gap` (unguarded) | **0.813** | [0.743, 0.879] |
+| `access_gap` (guarded) | 0.779 | [0.707, 0.846] |
+| `site_score` (composite) | 0.641 | [0.576, 0.706] |
+| `demand_scale` | 0.240 | [0.208, 0.275] |
+
+The accessibility surface reproduces the government's own classification at AUC 0.813.
+Two readings travel with it: the composite scores *lower* than its own access criterion,
+because `demand_scale` anti-predicts DPA — DPA suburbs have a median population of 815
+while demand rewards size — and the intervals for the guarded and unguarded measures
+overlap heavily, so the guard's apparent cost is not distinguishable from noise.
+
+**Spatial structure.** Global Moran's I, k-nearest-neighbour weights, 999 permutations:
+
+| Measure | I | p |
+|---|---|---|
+| `access_gap` | 0.623 | 0.001 |
+| `mixed_billing_fit` | 0.387 | 0.001 |
+| `site_score` | 0.359 | 0.001 |
+| `demand_scale` | 0.070 | 0.003 |
+
+The peninsula concentration is real and now has a test statistic rather than an anecdote.
+It is stable across neighbour counts (I = 0.397 at k=4 down to 0.232 at k=32, p = 0.001
+throughout). Clustering is not itself a defect — health access genuinely is spatially
+structured — but it means the 443 eligible suburbs are not 443 independent observations,
+so any interval computed as though they were is too narrow.
 
 ### Data
 
@@ -132,10 +173,13 @@ Full detail in [CAVEATS.md](CAVEATS.md). The ones that would change a decision:
   plausible speed assumptions, and the assumption is least accurate across water — which
   matters, because the ranking is partly a map of Sydney's peninsulas.
 - **Caringbah South ranks 2 but has no trustworthy headcount**, so the demotion guard
-  cannot check it. 134 of 507 eligible suburbs are in that position.
+  cannot check it. 123 of 443 eligible suburbs are in that position.
 - **The `area` column is corrupted** — Sydney recorded at 26.47 km² against 2.94 actual.
   It feeds no part of the current score, only the superseded chain, but it is wrong.
-- **The existing-clinic exclusion list is unverified** and known incomplete.
+- **The existing-clinic exclusion list now comes from the operator's published site
+  listing** (18 GP centres, retrieved 2026-09-23), replacing a brand-string match that
+  found only 6 and understated the exclusion threefold. A public listing can still lag
+  an opening or a closure.
 - **Supply is March 2025, demand is the 2021 Census.** Growth corridors are
   systematically under-ranked; Oran Park grew 46% over that window.
 
@@ -144,12 +188,13 @@ Full detail in [CAVEATS.md](CAVEATS.md). The ones that would change a decision:
 ## Repository
 
 ```
-site_score.py          scoring, sensitivity sweep, self-tests    (1,782 lines)
+site_score.py          scoring, sensitivity sweep, self-tests    (1,843 lines)
 accessibility.py       E2SFCA surface, travel cost               (1,422)
 gp_supply.py           three-way supply status gate
 gp_catchments.py       Department of Health catchment join
 health_facilities.py   practice and pharmacy register
 dpa_status.py          Distribution Priority Area join
+validation.py          AUC against DPA, Moran's I under a permutation null  (339)
 METHODOLOGY.md         every decision and why                    (406)
 CAVEATS.md             every known weakness                      (367)
 ```
@@ -165,7 +210,7 @@ python site_score.py --test
 python site_score.py
 ```
 
-Self-checks: 4 assertion cases, 5 data-backed cases, 77 doctests.
+Self-checks: 4 assertion cases, 6 data-backed cases, 77 doctests, plus 12 in `validation.py`.
 
 ---
 

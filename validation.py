@@ -388,6 +388,70 @@ def lisa_test(
     })
 
 
+def spatial_clusters(significant: np.ndarray, quadrant: np.ndarray, w: np.ndarray) -> np.ndarray:
+    """
+    Connected components of the significant HH suburbs under the spatial weight graph.
+
+    A suburb belongs to a cluster only if it is BOTH significant and high-high, and two
+    such suburbs join the same cluster when either is among the other's k nearest
+    neighbours. Everything else gets an empty label.
+
+    This is what turns LISA from a per-suburb verdict into a group identity, which is
+    what the shortlist needs: not "is Collaroy significant" but "is Collaroy the same
+    opportunity as Avalon Beach".
+
+    Two adjacent significant HH suburbs merge; an isolated one stands alone; a
+    non-significant suburb between them does NOT bridge them.
+
+    >>> xy = np.array([[0.0, 0.0], [1.0, 0.0], [2.0, 0.0], [90.0, 0.0]])
+    >>> w = knn_weights(xy, k=1)
+    >>> sig = np.array([True, True, False, True])
+    >>> quad = np.array(["HH", "HH", "HH", "HH"])
+    >>> spatial_clusters(sig, quad, w).tolist()
+    ['SC1', 'SC1', '', 'SC2']
+
+    Significant but not HH is not a cluster member, because a LOW cluster is not a
+    shared opportunity:
+
+    >>> spatial_clusters(np.array([True, True, False, True]),
+    ...                  np.array(["LL", "LL", "HH", "HH"]), w).tolist()
+    ['', '', '', 'SC1']
+    """
+    member = np.asarray(significant, dtype=bool) & (np.asarray(quadrant) == "HH")
+    size = member.size
+    parent = list(range(size))
+
+    def find(a: int) -> int:
+        while parent[a] != a:
+            parent[a] = parent[parent[a]]
+            a = parent[a]
+        return a
+
+    def union(a: int, b: int) -> None:
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            parent[max(ra, rb)] = min(ra, rb)
+
+    adjacency = (w > 0) | (w.T > 0)
+    for i in range(size):
+        if not member[i]:
+            continue
+        for j in range(i + 1, size):
+            if member[j] and adjacency[i, j]:
+                union(i, j)
+
+    labels = np.array([""] * size, dtype=object)
+    seen: dict[int, str] = {}
+    for i in range(size):
+        if not member[i]:
+            continue
+        root = find(i)
+        if root not in seen:
+            seen[root] = f"SC{len(seen) + 1}"
+        labels[i] = seen[root]
+    return labels
+
+
 def bootstrap_ranks(
     suburbs: np.ndarray,
     scores: np.ndarray,
@@ -589,6 +653,38 @@ def main() -> None:
     else:
         print("  No significant HL suburbs: every high scorer sits in a high-scoring")
         print("  neighbourhood, so no candidate is a purely local anomaly.")
+    lisa["spatial_cluster"] = spatial_clusters(
+        lisa["significant_fdr"].to_numpy(bool), lisa["quadrant"].to_numpy(), w
+    )
+    named = lisa[lisa["spatial_cluster"] != ""]
+    print()
+    print(f"  {named['spatial_cluster'].nunique()} connected high-high cluster(s), "
+          f"used by site_score.py to group suburbs into single opportunities:")
+    for cid, grp in named.groupby("spatial_cluster"):
+        members = ", ".join(grp.sort_values("rank")["suburb"].head(6))
+        print(f"    {cid}: {len(grp)} suburbs - {members}")
+    print()
+    print("  STABILITY OF THE CLUSTERING, which decides whether these are one")
+    print("  opportunity or several. k is a free parameter with no principled value:")
+    for kk in (6, 8, 12, 16, 24):
+        wk = knn_weights(xy, kk)
+        lk = lisa_test(elig["site_score"].to_numpy(float), wk, n=299)
+        ck = spatial_clusters(
+            lk["significant_fdr"].to_numpy(bool), lk["quadrant"].to_numpy(), wk
+        )
+        members = pd.DataFrame({"suburb": elig["suburb"].to_numpy(), "c": ck})
+        members = members[members["c"] != ""]
+        groups = members.groupby("c")["suburb"].apply(list)
+        together = any(
+            "Avalon Beach" in g and "Collaroy" in g for g in groups
+        )
+        print(f"    k={kk:<3d} {members['c'].nunique()} cluster(s), "
+              f"{len(members):>2d} suburbs | Avalon Beach and Collaroy in ONE cluster: "
+              f"{'yes' if together else 'no'}")
+    print()
+    print("  The answer FLIPS on k, so cluster membership is advisory only. The")
+    print("  shortlist groups on GP catchment, which comes from Medicare patient flows")
+    print("  and is a measurement rather than a tuning choice.")
     lisa.to_csv(ROOT / "eda" / "lisa_site_score.csv", index=False)
     for r in lisa.itertuples():
         rows.append({"test": "lisa_site_score", "measure": r.suburb,

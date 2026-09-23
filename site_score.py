@@ -122,6 +122,10 @@ SCORES_OUT = EDA_DIR / "site_scores_v2.csv"
 SENSITIVITY_OUT = EDA_DIR / "sensitivity_analysis.csv"
 SHORTLIST_OUT = EDA_DIR / "final_shortlist_v2.csv"
 
+#: Optional input, written by ``validation.py``. Absent on a first run, which is why
+#: every use of it is guarded: the shortlist must build without it.
+LISA_CSV = EDA_DIR / "lisa_site_score.csv"
+
 #: Stamped into every output file so a stray CSV cannot be read as verified.
 NUVO_UNVERIFIED_NOTE = (
     "site list from nuvohealth.com.au/medical-centres/ retrieved 2026-09-23; "
@@ -1824,6 +1828,35 @@ def main() -> None:
         shortlist["suburb"] == leader, "recommended", "same catchment as " + leader
     )
     distinct_sites = int((shortlist["shortlist_status"] == "recommended").sum())
+
+    # ADVISORY, never automatic. validation.py identifies connected high-high LISA
+    # clusters, which are a second and non-administrative answer to "are these two
+    # suburbs one opportunity". It is NOT used to suppress a row, because the grouping
+    # is not stable: MEASURED, Avalon Beach and Collaroy land in separate clusters at
+    # k <= 12 and the same cluster at k >= 16, and k has no principled value. Grouping
+    # on a knob that flips the deliverable would be worse than the administrative
+    # boundary it replaces. GP catchments at least come from Medicare patient flows,
+    # so they are a measurement. The cluster is surfaced for a human to look at.
+    shortlist["spatial_cluster"] = ""
+    shortlist["spatial_note"] = ""
+    if LISA_CSV.exists():
+        lisa = pd.read_csv(LISA_CSV)
+        if "spatial_cluster" in lisa.columns:
+            lookup = dict(zip(lisa["suburb"], lisa["spatial_cluster"].fillna("")))
+            shortlist["spatial_cluster"] = [
+                lookup.get(s, "") for s in shortlist["suburb"]
+            ]
+            first_in_cluster = (
+                shortlist.loc[shortlist["spatial_cluster"] != ""]
+                .groupby("spatial_cluster")["suburb"].first().to_dict()
+            )
+            shortlist["spatial_note"] = [
+                ""
+                if not c or first_in_cluster.get(c) == s
+                else f"LISA k=8 puts this in a cluster with {first_in_cluster[c]}; "
+                     f"unstable in k, treat as advisory"
+                for s, c in zip(shortlist["suburb"], shortlist["spatial_cluster"])
+            ]
     shortlist.to_csv(SHORTLIST_OUT, index=False)
 
     print()

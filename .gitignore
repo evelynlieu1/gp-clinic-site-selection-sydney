@@ -21,5 +21,11 @@ build/
 *.swp
 *.swo
 
-# OSM suburb polygon cache (large; regenerate with eda/plot_pressure_choropleth.py)
+# OSM suburb polygon cache (large; regenerate with eda/plot_combined_pressure_density.py)
 eda/geo_cache/
+
+# GA HealthDirect facility API cache (regenerable: python health_facilities.py)
+# Also holds the DPA, ABS SAL, ABS SA2 and GPC bulk downloads, and the osmnx Overpass
+# cache (all regenerable: dpa_status.py and accessibility.py print the exact curl
+# command when a zip is absent).
+facility_cache/

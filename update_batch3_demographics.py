@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "scraped_data"
 
-# From user transcript _batch3_raw.txt — % 65+ = sum(65–69..85+) / headline People
+# From user transcript _batch3_raw.txt - % 65+ = sum(65-69..85+) / headline People
 BATCH3 = {
     "Long Point": {
         "population": 173,

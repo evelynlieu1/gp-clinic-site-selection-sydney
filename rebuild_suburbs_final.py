@@ -8,7 +8,7 @@ Or from PowerShell (use your real project path):
   Set-Location C:/Users/nhu92/Desktop/nuvo-health-suburb-selection-project
   python rebuild_suburbs_final.py
 
-Do NOT paste the Set-Location line into a Jupyter Python cell — that is only for the terminal.
+Do NOT paste the Set-Location line into a Jupyter Python cell - that is only for the terminal.
 """
 from __future__ import annotations
 

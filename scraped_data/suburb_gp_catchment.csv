@@ -1,0 +1,681 @@
+suburb,gpc_code,gpc_name,overlap_fraction,straddles_catchment
+Abbotsbury,GP1077,Fairfield,1.0,False
+Abbotsford,GP1044,Canada Bay,1.0,False
+Acacia Gardens,GP1023,Blacktown - North,0.947919,True
+Agnes Banks,GP1176,Richmond - Windsor,1.0,False
+Airds,GP1043,Campbelltown (NSW),1.0,False
+Alexandria,GP1189,Sydney Inner City,1.0,False
+Alfords Point,GP1074,Engadine - Heathcote,1.0,False
+Allambie Heights,GP1209,Warringah,1.0,False
+Allawah,GP1113,Kogarah - Rockdale,1.0,False
+Ambarvale,GP1043,Campbelltown (NSW),1.0,False
+Angus,GP1023,Blacktown - North,1.0,False
+Annandale,GP1121,Leichhardt,0.996928,False
+Annangrove,GP1070,Dural - Wisemans Ferry,1.0,False
+Arcadia,GP1070,Dural - Wisemans Ferry,1.0,False
+Arncliffe,GP1113,Kogarah - Rockdale,1.0,False
+Arndell Park,GP1143,Mount Druitt,0.989315,True
+Artarmon,GP1050,Chatswood - Lane Cove,1.0,False
+Ashbury,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Ashcroft,GP1036,Bringelly - Green Valley,1.0,False
+Ashfield,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Asquith,GP1100,Hornsby,1.0,False
+Auburn,GP1005,Auburn,1.0,False
+Austral,GP1036,Bringelly - Green Valley,1.0,False
+Avalon Beach,GP1169,Pittwater,1.0,False
+Badgerys Creek,GP1036,Bringelly - Green Valley,0.672347,True
+Balgowlah,GP1131,Manly,1.0,False
+Balgowlah Heights,GP1131,Manly,1.0,False
+Balmain,GP1121,Leichhardt,1.0,False
+Balmain East,GP1121,Leichhardt,0.812436,True
+Bangor,GP1074,Engadine - Heathcote,1.0,False
+Banksia,GP1113,Kogarah - Rockdale,1.0,False
+Banksmeadow,GP1030,Botany,1.0,False
+Bankstown,GP1008,Bankstown,0.99246,False
+Bankstown Aerodrome,GP1008,Bankstown,1.0,False
+Barangaroo,GP1189,Sydney Inner City,1.0,False
+Barden Ridge,GP1074,Engadine - Heathcote,1.0,False
+Bardia,GP1043,Campbelltown (NSW),1.0,False
+Bardwell Park,GP1113,Kogarah - Rockdale,1.0,False
+Bardwell Valley,GP1113,Kogarah - Rockdale,1.0,False
+Bass Hill,GP1008,Bankstown,0.993177,False
+Baulkham Hills,GP1015,Baulkham Hills,0.961016,True
+Bayview,GP1169,Pittwater,1.0,False
+Beacon Hill,GP1209,Warringah,1.0,False
+Beaconsfield,GP1189,Sydney Inner City,1.0,False
+Beaumont Hills,GP1178,Rouse Hill - McGraths Hill,1.0,False
+Beecroft,GP1166,Pennant Hills - Epping,0.774751,True
+Belfield,GP1046,Canterbury,1.0,False
+Bella Vista,GP1015,Baulkham Hills,1.0,False
+Bellevue Hill,GP1071,Eastern Suburbs - North,1.0,False
+Belmore,GP1046,Canterbury,1.0,False
+Belrose,GP1209,Warringah,1.0,False
+Berala,GP1005,Auburn,1.0,False
+Berkshire Park,GP1176,Richmond - Windsor,1.0,False
+Berowra,GP1100,Hornsby,1.0,False
+Berowra Heights,GP1100,Hornsby,1.0,False
+Berowra Waters,GP1070,Dural - Wisemans Ferry,0.896571,True
+Berrilee,GP1070,Dural - Wisemans Ferry,1.0,False
+Beverley Park,GP1113,Kogarah - Rockdale,1.0,False
+Beverly Hills,GP1101,Hurstville,0.813967,True
+Bexley,GP1113,Kogarah - Rockdale,1.0,False
+Bexley North,GP1113,Kogarah - Rockdale,1.0,False
+Bidwill,GP1143,Mount Druitt,1.0,False
+Bilgola Beach,GP1169,Pittwater,1.0,False
+Bilgola Plateau,GP1169,Pittwater,1.0,False
+Birchgrove,GP1121,Leichhardt,1.0,False
+Birrong,GP1008,Bankstown,1.0,False
+Blackett,GP1143,Mount Druitt,1.0,False
+Blacktown,GP1022,Blacktown,1.0,False
+Blair Athol,GP1043,Campbelltown (NSW),1.0,False
+Blairmount,GP1043,Campbelltown (NSW),1.0,False
+Blakehurst,GP1101,Hurstville,1.0,False
+Bligh Park,GP1176,Richmond - Windsor,1.0,False
+Bondi,GP1071,Eastern Suburbs - North,1.0,False
+Bondi Beach,GP1071,Eastern Suburbs - North,1.0,False
+Bondi Junction,GP1071,Eastern Suburbs - North,1.0,False
+Bonnet Bay,GP1074,Engadine - Heathcote,1.0,False
+Bonnyrigg,GP1077,Fairfield,1.0,False
+Bonnyrigg Heights,GP1077,Fairfield,1.0,False
+Bossley Park,GP1077,Fairfield,1.0,False
+Botany,GP1030,Botany,1.0,False
+Bow Bowing,GP1043,Campbelltown (NSW),1.0,False
+Box Hill,GP1178,Rouse Hill - McGraths Hill,1.0,False
+Bradbury,GP1043,Campbelltown (NSW),1.0,False
+Breakfast Point,GP1044,Canada Bay,1.0,False
+Brighton-Le-Sands,GP1113,Kogarah - Rockdale,1.0,False
+Bringelly,GP1036,Bringelly - Green Valley,1.0,False
+Bronte,GP1071,Eastern Suburbs - North,1.0,False
+Brooklyn,GP1100,Hornsby,1.0,False
+Brookvale,GP1209,Warringah,1.0,False
+Bundeena,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Bungarribee,GP1022,Blacktown,0.919375,True
+Burraneer,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Burwood,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Burwood Heights,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Busby,GP1036,Bringelly - Green Valley,1.0,False
+Cabarita,GP1044,Canada Bay,1.0,False
+Cabramatta,GP1077,Fairfield,1.0,False
+Cabramatta West,GP1077,Fairfield,1.0,False
+Caddens,GP1167,Penrith,1.0,False
+Cambridge Gardens,GP1167,Penrith,1.0,False
+Cambridge Park,GP1167,Penrith,1.0,False
+Camden,GP1041,Camden,1.0,False
+Camden South,GP1041,Camden,1.0,False
+Cammeray,GP1158,North Sydney - Mosman,0.949209,True
+Campbelltown,GP1043,Campbelltown (NSW),1.0,False
+Camperdown,GP1189,Sydney Inner City,0.976662,True
+Campsie,GP1046,Canterbury,1.0,False
+Canada Bay,GP1044,Canada Bay,1.0,False
+Canley Heights,GP1077,Fairfield,1.0,False
+Canley Vale,GP1077,Fairfield,1.0,False
+Canoelands,GP1070,Dural - Wisemans Ferry,1.0,False
+Canterbury,GP1046,Canterbury,0.506096,True
+Caringbah,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Caringbah South,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Carlingford,GP1047,Carlingford,0.995434,False
+Carlton,GP1113,Kogarah - Rockdale,0.911969,True
+Carnes Hill,GP1036,Bringelly - Green Valley,1.0,False
+Carramar,GP1137,Merrylands - Guildford,1.0,False
+Carss Park,GP1101,Hurstville,1.0,False
+Cartwright,GP1125,Liverpool,1.0,False
+Castle Cove,GP1050,Chatswood - Lane Cove,1.0,False
+Castle Hill,GP1015,Baulkham Hills,1.0,False
+Castlecrag,GP1050,Chatswood - Lane Cove,1.0,False
+Castlereagh,GP1167,Penrith,1.0,False
+Casula,GP1125,Liverpool,1.0,False
+Catherine Field,GP1036,Bringelly - Green Valley,1.0,False
+Cattai,GP1070,Dural - Wisemans Ferry,0.79237,True
+Cawdor,GP1066,Douglas Park - Appin,0.738287,True
+Cecil Hills,GP1036,Bringelly - Green Valley,1.0,False
+Cecil Park,GP1077,Fairfield,0.54017,True
+Centennial Park,GP1071,Eastern Suburbs - North,1.0,False
+Chatswood,GP1050,Chatswood - Lane Cove,1.0,False
+Chatswood West,GP1050,Chatswood - Lane Cove,1.0,False
+Cheltenham,GP1166,Pennant Hills - Epping,1.0,False
+Cherrybrook,GP1015,Baulkham Hills,1.0,False
+Chester Hill,GP1137,Merrylands - Guildford,1.0,False
+Chifley,GP1072,Eastern Suburbs - South,1.0,False
+Chippendale,GP1189,Sydney Inner City,1.0,False
+Chipping Norton,GP1125,Liverpool,1.0,False
+Chiswick,GP1044,Canada Bay,1.0,False
+Chullora,GP1008,Bankstown,1.0,False
+Church Point,GP1169,Pittwater,1.0,False
+Claremont Meadows,GP1167,Penrith,1.0,False
+Clarendon,GP1176,Richmond - Windsor,1.0,False
+Clareville,GP1169,Pittwater,1.0,False
+Claymore,GP1043,Campbelltown (NSW),1.0,False
+Clemton Park,GP1046,Canterbury,1.0,False
+Clontarf,GP1131,Manly,1.0,False
+Clovelly,GP1072,Eastern Suburbs - South,1.0,False
+Clyde,GP1137,Merrylands - Guildford,1.0,False
+Coasters Retreat,GP1169,Pittwater,1.0,False
+Cobbitty,GP1036,Bringelly - Green Valley,1.0,False
+Colebee,GP1023,Blacktown - North,0.983014,True
+Collaroy,GP1209,Warringah,1.0,False
+Collaroy Plateau,GP1209,Warringah,1.0,False
+Colyton,GP1185,St Marys (NSW),1.0,False
+Como,GP1074,Engadine - Heathcote,1.0,False
+Concord,GP1044,Canada Bay,1.0,False
+Concord West,GP1044,Canada Bay,1.0,False
+Condell Park,GP1008,Bankstown,1.0,False
+Connells Point,GP1101,Hurstville,1.0,False
+Constitution Hill,GP1165,Parramatta,1.0,False
+Coogee,GP1072,Eastern Suburbs - South,1.0,False
+Cornwallis,GP1176,Richmond - Windsor,1.0,False
+Cottage Point,GP1209,Warringah,1.0,False
+Cowan,GP1100,Hornsby,1.0,False
+Cranebrook,GP1167,Penrith,1.0,False
+Cremorne,GP1158,North Sydney - Mosman,1.0,False
+Cremorne Point,GP1158,North Sydney - Mosman,1.0,False
+Cromer,GP1209,Warringah,1.0,False
+Cronulla,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Crows Nest,GP1158,North Sydney - Mosman,1.0,False
+Croydon,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Croydon Park,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Cumberland Reach,GP1019,Bilpin - Colo - St Albans,1.0,False
+Curl Curl,GP1209,Warringah,1.0,False
+Currans Hill,GP1041,Camden,1.0,False
+Daceyville,GP1030,Botany,1.0,False
+Dangar Island,GP1100,Hornsby,1.0,False
+Darling Point,GP1071,Eastern Suburbs - North,1.0,False
+Darlinghurst,GP1189,Sydney Inner City,1.0,False
+Darlington,GP1189,Sydney Inner City,1.0,False
+Davidson,GP1209,Warringah,1.0,False
+Dawes Point,GP1189,Sydney Inner City,1.0,False
+Dean Park,GP1143,Mount Druitt,1.0,False
+Dee Why,GP1209,Warringah,1.0,False
+Denham Court,GP1043,Campbelltown (NSW),1.0,False
+Denistone,GP1179,Ryde - Hunters Hill,1.0,False
+Denistone East,GP1179,Ryde - Hunters Hill,1.0,False
+Denistone West,GP1179,Ryde - Hunters Hill,1.0,False
+Dharruk,GP1143,Mount Druitt,1.0,False
+Dolans Bay,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Dolls Point,GP1113,Kogarah - Rockdale,1.0,False
+Doonside,GP1022,Blacktown,1.0,False
+Double Bay,GP1071,Eastern Suburbs - North,1.0,False
+Dover Heights,GP1071,Eastern Suburbs - North,1.0,False
+Drummoyne,GP1044,Canada Bay,1.0,False
+Duffys Forest,GP1209,Warringah,1.0,False
+Dulwich Hill,GP1186,Strathfield - Burwood - Ashfield,0.977713,True
+Dundas,GP1047,Carlingford,1.0,False
+Dundas Valley,GP1047,Carlingford,1.0,False
+Dural,GP1070,Dural - Wisemans Ferry,1.0,False
+Eagle Vale,GP1043,Campbelltown (NSW),1.0,False
+Earlwood,GP1046,Canterbury,1.0,False
+East Hills,GP1008,Bankstown,1.0,False
+East Killara,GP1114,Ku-ring-gai,1.0,False
+East Kurrajong,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+East Lindfield,GP1114,Ku-ring-gai,1.0,False
+East Ryde,GP1179,Ryde - Hunters Hill,1.0,False
+Eastern Creek,GP1143,Mount Druitt,1.0,False
+Eastgardens,GP1030,Botany,1.0,False
+Eastlakes,GP1030,Botany,1.0,False
+Eastwood,GP1179,Ryde - Hunters Hill,1.0,False
+Ebenezer,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Edensor Park,GP1077,Fairfield,1.0,False
+Edgecliff,GP1071,Eastern Suburbs - North,1.0,False
+Edmondson Park,GP1125,Liverpool,0.87188,True
+Elanora Heights,GP1169,Pittwater,1.0,False
+Elderslie,GP1041,Camden,1.0,False
+Elizabeth Bay,GP1189,Sydney Inner City,1.0,False
+Elizabeth Hills,GP1036,Bringelly - Green Valley,1.0,False
+Ellis Lane,GP1041,Camden,1.0,False
+Elvina Bay,GP1169,Pittwater,1.0,False
+Emerton,GP1143,Mount Druitt,1.0,False
+Emu Heights,GP1167,Penrith,1.0,False
+Emu Plains,GP1167,Penrith,1.0,False
+Enfield,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Engadine,GP1074,Engadine - Heathcote,1.0,False
+Englorie Park,GP1043,Campbelltown (NSW),1.0,False
+Enmore,GP1132,Marrickville - Sydenham - Petersham,0.968462,True
+Epping,GP1166,Pennant Hills - Epping,0.953097,True
+Ermington,GP1047,Carlingford,1.0,False
+Erskine Park,GP1185,St Marys (NSW),1.0,False
+Erskineville,GP1189,Sydney Inner City,1.0,False
+Eschol Park,GP1043,Campbelltown (NSW),1.0,False
+Eveleigh,GP1189,Sydney Inner City,1.0,False
+Fairfield,GP1077,Fairfield,0.953436,True
+Fairfield East,GP1137,Merrylands - Guildford,1.0,False
+Fairfield Heights,GP1077,Fairfield,1.0,False
+Fairfield West,GP1077,Fairfield,1.0,False
+Fairlight,GP1131,Manly,1.0,False
+Fiddletown,GP1070,Dural - Wisemans Ferry,1.0,False
+Five Dock,GP1044,Canada Bay,1.0,False
+Forest Glen,GP1070,Dural - Wisemans Ferry,1.0,False
+Forest Lodge,GP1189,Sydney Inner City,1.0,False
+Forestville,GP1209,Warringah,1.0,False
+Freemans Reach,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Frenchs Forest,GP1209,Warringah,1.0,False
+Freshwater,GP1209,Warringah,1.0,False
+Gables,GP1178,Rouse Hill - McGraths Hill,1.0,False
+Galston,GP1070,Dural - Wisemans Ferry,1.0,False
+Georges Hall,GP1008,Bankstown,1.0,False
+Gilead,GP1043,Campbelltown (NSW),1.0,False
+Girraween,GP1165,Parramatta,1.0,False
+Gladesville,GP1179,Ryde - Hunters Hill,1.0,False
+Glebe,GP1189,Sydney Inner City,1.0,False
+Gledswood Hills,GP1036,Bringelly - Green Valley,1.0,False
+Glen Alpine,GP1043,Campbelltown (NSW),1.0,False
+Glendenning,GP1143,Mount Druitt,1.0,False
+Glenfield,GP1043,Campbelltown (NSW),1.0,False
+Glenhaven,GP1015,Baulkham Hills,1.0,False
+Glenmore Park,GP1167,Penrith,1.0,False
+Glenorie,GP1070,Dural - Wisemans Ferry,1.0,False
+Glenwood,GP1023,Blacktown - North,1.0,False
+Glossodia,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Gordon,GP1114,Ku-ring-gai,1.0,False
+Grantham Farm,GP1023,Blacktown - North,1.0,False
+Granville,GP1137,Merrylands - Guildford,0.921795,True
+Grasmere,GP1041,Camden,1.0,False
+Grays Point,GP1062,Cronulla - Miranda - Caringbah,0.970864,True
+Great Mackerel Beach,GP1169,Pittwater,1.0,False
+Green Valley,GP1036,Bringelly - Green Valley,1.0,False
+Greenacre,GP1008,Bankstown,0.993812,False
+Greendale,GP1036,Bringelly - Green Valley,1.0,False
+Greenfield Park,GP1077,Fairfield,1.0,False
+Greenhills Beach,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Greenwich,GP1050,Chatswood - Lane Cove,1.0,False
+Gregory Hills,GP1036,Bringelly - Green Valley,0.62712,True
+Greystanes,GP1137,Merrylands - Guildford,0.904814,True
+Grose Vale,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Grose Wold,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Guildford,GP1137,Merrylands - Guildford,1.0,False
+Guildford West,GP1137,Merrylands - Guildford,1.0,False
+Gymea,GP1062,Cronulla - Miranda - Caringbah,0.990199,False
+Gymea Bay,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Haberfield,GP1186,Strathfield - Burwood - Ashfield,0.998758,False
+Hammondville,GP1125,Liverpool,1.0,False
+Harrington Park,GP1041,Camden,1.0,False
+Harris Park,GP1165,Parramatta,1.0,False
+Hassall Grove,GP1143,Mount Druitt,1.0,False
+Haymarket,GP1189,Sydney Inner City,1.0,False
+Heathcote,GP1074,Engadine - Heathcote,1.0,False
+Hebersham,GP1143,Mount Druitt,1.0,False
+Heckenberg,GP1036,Bringelly - Green Valley,1.0,False
+Henley,GP1179,Ryde - Hunters Hill,1.0,False
+Hillsdale,GP1030,Botany,1.0,False
+Hinchinbrook,GP1036,Bringelly - Green Valley,1.0,False
+Hobartville,GP1176,Richmond - Windsor,1.0,False
+Holroyd,GP1137,Merrylands - Guildford,0.869282,True
+Holsworthy,GP1099,Holsworthy Military Area,0.682284,True
+Homebush,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Homebush West,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Horningsea Park,GP1036,Bringelly - Green Valley,1.0,False
+Hornsby,GP1100,Hornsby,1.0,False
+Hornsby Heights,GP1100,Hornsby,1.0,False
+Horsley Park,GP1077,Fairfield,1.0,False
+Hoxton Park,GP1036,Bringelly - Green Valley,0.989242,True
+Hunters Hill,GP1179,Ryde - Hunters Hill,1.0,False
+Huntleys Cove,GP1179,Ryde - Hunters Hill,1.0,False
+Huntleys Point,GP1179,Ryde - Hunters Hill,1.0,False
+Hurlstone Park,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Hurstville,GP1101,Hurstville,0.995614,False
+Hurstville Grove,GP1101,Hurstville,1.0,False
+Illawong,GP1074,Engadine - Heathcote,1.0,False
+Ingleburn,GP1043,Campbelltown (NSW),1.0,False
+Ingleside,GP1209,Warringah,0.551385,True
+Jamisontown,GP1167,Penrith,1.0,False
+Jannali,GP1074,Engadine - Heathcote,1.0,False
+Jordan Springs,GP1167,Penrith,1.0,False
+Kangaroo Point,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Kareela,GP1074,Engadine - Heathcote,1.0,False
+Kearns,GP1043,Campbelltown (NSW),1.0,False
+Kellyville,GP1015,Baulkham Hills,1.0,False
+Kellyville Ridge,GP1023,Blacktown - North,1.0,False
+Kemps Creek,GP1077,Fairfield,0.615783,True
+Kensington,GP1072,Eastern Suburbs - South,1.0,False
+Kenthurst,GP1070,Dural - Wisemans Ferry,1.0,False
+Kentlyn,GP1043,Campbelltown (NSW),1.0,False
+Killara,GP1114,Ku-ring-gai,1.0,False
+Killarney Heights,GP1209,Warringah,1.0,False
+Kings Langley,GP1022,Blacktown,1.0,False
+Kings Park,GP1022,Blacktown,1.0,False
+Kingsford,GP1072,Eastern Suburbs - South,1.0,False
+Kingsgrove,GP1046,Canterbury,0.586396,True
+Kingswood,GP1167,Penrith,1.0,False
+Kirkham,GP1041,Camden,1.0,False
+Kirrawee,GP1074,Engadine - Heathcote,1.0,False
+Kirribilli,GP1158,North Sydney - Mosman,1.0,False
+Kogarah,GP1113,Kogarah - Rockdale,1.0,False
+Kogarah Bay,GP1113,Kogarah - Rockdale,1.0,False
+Ku-ring-gai Chase,GP1209,Warringah,0.501579,True
+Kurmond,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Kurnell,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Kurraba Point,GP1158,North Sydney - Mosman,1.0,False
+Kurrajong,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Kurrajong Hills,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Kyeemagh,GP1113,Kogarah - Rockdale,1.0,False
+Kyle Bay,GP1101,Hurstville,1.0,False
+La Perouse,GP1072,Eastern Suburbs - South,1.0,False
+Lakemba,GP1046,Canterbury,1.0,False
+Lalor Park,GP1022,Blacktown,1.0,False
+Lane Cove,GP1050,Chatswood - Lane Cove,1.0,False
+Lane Cove North,GP1050,Chatswood - Lane Cove,1.0,False
+Lane Cove West,GP1050,Chatswood - Lane Cove,1.0,False
+Lansvale,GP1077,Fairfield,1.0,False
+Laughtondale,GP1070,Dural - Wisemans Ferry,1.0,False
+Lavender Bay,GP1158,North Sydney - Mosman,1.0,False
+Leets Vale,GP1070,Dural - Wisemans Ferry,0.660428,True
+Leichhardt,GP1121,Leichhardt,1.0,False
+Leonay,GP1167,Penrith,1.0,False
+Leppington,GP1036,Bringelly - Green Valley,1.0,False
+Lethbridge Park,GP1143,Mount Druitt,1.0,False
+Leumeah,GP1043,Campbelltown (NSW),1.0,False
+Lewisham,GP1186,Strathfield - Burwood - Ashfield,0.97689,True
+Liberty Grove,GP1044,Canada Bay,1.0,False
+Lidcombe,GP1005,Auburn,1.0,False
+Lilli Pilli,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Lilyfield,GP1121,Leichhardt,1.0,False
+Lindfield,GP1114,Ku-ring-gai,1.0,False
+Linley Point,GP1050,Chatswood - Lane Cove,1.0,False
+Little Bay,GP1072,Eastern Suburbs - South,1.0,False
+Liverpool,GP1125,Liverpool,1.0,False
+Llandilo,GP1167,Penrith,1.0,False
+Loftus,GP1074,Engadine - Heathcote,1.0,False
+Londonderry,GP1176,Richmond - Windsor,1.0,False
+Long Point,GP1043,Campbelltown (NSW),1.0,False
+Longueville,GP1050,Chatswood - Lane Cove,1.0,False
+Lovett Bay,GP1169,Pittwater,1.0,False
+Lower Portland,GP1019,Bilpin - Colo - St Albans,0.671757,True
+Lucas Heights,GP1074,Engadine - Heathcote,1.0,False
+Luddenham,GP1167,Penrith,0.822599,True
+Lugarno,GP1101,Hurstville,1.0,False
+Lurnea,GP1125,Liverpool,1.0,False
+Macquarie Fields,GP1043,Campbelltown (NSW),1.0,False
+Macquarie Links,GP1043,Campbelltown (NSW),1.0,False
+Macquarie Park,GP1179,Ryde - Hunters Hill,1.0,False
+Maianbar,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Malabar,GP1072,Eastern Suburbs - South,1.0,False
+Manly,GP1131,Manly,1.0,False
+Manly Vale,GP1209,Warringah,1.0,False
+Maraylya,GP1178,Rouse Hill - McGraths Hill,1.0,False
+Marayong,GP1022,Blacktown,1.0,False
+Maroota,GP1070,Dural - Wisemans Ferry,1.0,False
+Maroubra,GP1072,Eastern Suburbs - South,1.0,False
+Marrickville,GP1132,Marrickville - Sydenham - Petersham,1.0,False
+Marsden Park,GP1023,Blacktown - North,1.0,False
+Marsfield,GP1179,Ryde - Hunters Hill,1.0,False
+Mascot,GP1030,Botany,1.0,False
+Matraville,GP1072,Eastern Suburbs - South,0.599392,True
+Mays Hill,GP1165,Parramatta,1.0,False
+McGraths Hill,GP1178,Rouse Hill - McGraths Hill,1.0,False
+McMahons Point,GP1158,North Sydney - Mosman,1.0,False
+Meadowbank,GP1179,Ryde - Hunters Hill,1.0,False
+Melonba,GP1023,Blacktown - North,1.0,False
+Melrose Park,GP1047,Carlingford,0.581406,True
+Menai,GP1074,Engadine - Heathcote,1.0,False
+Menangle Park,GP1043,Campbelltown (NSW),1.0,False
+Merrylands,GP1137,Merrylands - Guildford,0.980217,True
+Merrylands West,GP1137,Merrylands - Guildford,1.0,False
+Middle Cove,GP1050,Chatswood - Lane Cove,1.0,False
+Middle Dural,GP1070,Dural - Wisemans Ferry,1.0,False
+Middleton Grange,GP1036,Bringelly - Green Valley,1.0,False
+Miller,GP1036,Bringelly - Green Valley,1.0,False
+Millers Point,GP1189,Sydney Inner City,1.0,False
+Milperra,GP1008,Bankstown,1.0,False
+Milsons Passage,GP1100,Hornsby,1.0,False
+Milsons Point,GP1158,North Sydney - Mosman,1.0,False
+Minchinbury,GP1143,Mount Druitt,1.0,False
+Minto,GP1043,Campbelltown (NSW),1.0,False
+Minto Heights,GP1043,Campbelltown (NSW),1.0,False
+Miranda,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Mona Vale,GP1169,Pittwater,1.0,False
+Monterey,GP1113,Kogarah - Rockdale,1.0,False
+Moore Park,GP1071,Eastern Suburbs - North,1.0,False
+Moorebank,GP1125,Liverpool,1.0,False
+Morning Bay,GP1169,Pittwater,1.0,False
+Mortdale,GP1101,Hurstville,1.0,False
+Mortlake,GP1044,Canada Bay,1.0,False
+Mosman,GP1158,North Sydney - Mosman,1.0,False
+Mount Annan,GP1041,Camden,1.0,False
+Mount Colah,GP1100,Hornsby,1.0,False
+Mount Druitt,GP1143,Mount Druitt,1.0,False
+Mount Kuring-Gai,GP1100,Hornsby,1.0,False
+Mount Lewis,GP1008,Bankstown,1.0,False
+Mount Pritchard,GP1077,Fairfield,1.0,False
+Mount Vernon,GP1077,Fairfield,1.0,False
+Mulgoa,GP1167,Penrith,1.0,False
+Mulgrave,GP1178,Rouse Hill - McGraths Hill,1.0,False
+Narellan,GP1041,Camden,1.0,False
+Narellan Vale,GP1041,Camden,1.0,False
+Naremburn,GP1050,Chatswood - Lane Cove,1.0,False
+Narrabeen,GP1209,Warringah,1.0,False
+Narraweena,GP1209,Warringah,1.0,False
+Narwee,GP1101,Hurstville,0.791531,True
+Neutral Bay,GP1158,North Sydney - Mosman,1.0,False
+Newington,GP1005,Auburn,1.0,False
+Newport,GP1169,Pittwater,1.0,False
+Newtown,GP1189,Sydney Inner City,0.994511,False
+Nirimba Fields,GP1023,Blacktown - North,1.0,False
+Normanhurst,GP1100,Hornsby,1.0,False
+North Balgowlah,GP1209,Warringah,1.0,False
+North Bondi,GP1071,Eastern Suburbs - North,1.0,False
+North Curl Curl,GP1209,Warringah,1.0,False
+North Epping,GP1166,Pennant Hills - Epping,1.0,False
+North Kellyville,GP1178,Rouse Hill - McGraths Hill,1.0,False
+North Manly,GP1209,Warringah,1.0,False
+North Narrabeen,GP1169,Pittwater,1.0,False
+North Parramatta,GP1165,Parramatta,1.0,False
+North Richmond,GP1176,Richmond - Windsor,1.0,False
+North Rocks,GP1165,Parramatta,1.0,False
+North Ryde,GP1179,Ryde - Hunters Hill,1.0,False
+North St Marys,GP1185,St Marys (NSW),1.0,False
+North Strathfield,GP1044,Canada Bay,1.0,False
+North Sydney,GP1158,North Sydney - Mosman,1.0,False
+North Turramurra,GP1114,Ku-ring-gai,1.0,False
+North Wahroonga,GP1114,Ku-ring-gai,1.0,False
+North Willoughby,GP1050,Chatswood - Lane Cove,1.0,False
+Northbridge,GP1050,Chatswood - Lane Cove,1.0,False
+Northmead,GP1165,Parramatta,1.0,False
+Northwood,GP1050,Chatswood - Lane Cove,1.0,False
+Norwest,GP1015,Baulkham Hills,1.0,False
+Oakhurst,GP1143,Mount Druitt,1.0,False
+Oakville,GP1178,Rouse Hill - McGraths Hill,1.0,False
+Oatlands,GP1047,Carlingford,0.992914,False
+Oatley,GP1101,Hurstville,1.0,False
+Old Guildford,GP1137,Merrylands - Guildford,1.0,False
+Old Toongabbie,GP1165,Parramatta,1.0,False
+Oran Park,GP1036,Bringelly - Green Valley,1.0,False
+Orchard Hills,GP1167,Penrith,1.0,False
+Oxford Falls,GP1209,Warringah,1.0,False
+Oxley Park,GP1185,St Marys (NSW),1.0,False
+Oyster Bay,GP1074,Engadine - Heathcote,1.0,False
+Paddington,GP1071,Eastern Suburbs - North,1.0,False
+Padstow,GP1008,Bankstown,1.0,False
+Padstow Heights,GP1008,Bankstown,1.0,False
+Pagewood,GP1030,Botany,1.0,False
+Palm Beach,GP1169,Pittwater,1.0,False
+Panania,GP1008,Bankstown,1.0,False
+Parklea,GP1023,Blacktown - North,1.0,False
+Parramatta,GP1165,Parramatta,0.957746,True
+Peakhurst,GP1101,Hurstville,1.0,False
+Peakhurst Heights,GP1101,Hurstville,1.0,False
+Pemulwuy,GP1143,Mount Druitt,0.612064,True
+Pendle Hill,GP1165,Parramatta,1.0,False
+Pennant Hills,GP1166,Pennant Hills - Epping,1.0,False
+Penrith,GP1167,Penrith,1.0,False
+Penshurst,GP1101,Hurstville,1.0,False
+Petersham,GP1132,Marrickville - Sydenham - Petersham,1.0,False
+Phillip Bay,GP1072,Eastern Suburbs - South,1.0,False
+Picnic Point,GP1008,Bankstown,1.0,False
+Pitt Town,GP1178,Rouse Hill - McGraths Hill,1.0,False
+Pitt Town Bottoms,GP1178,Rouse Hill - McGraths Hill,1.0,False
+Pleasure Point,GP1125,Liverpool,1.0,False
+Plumpton,GP1143,Mount Druitt,1.0,False
+Point Piper,GP1071,Eastern Suburbs - North,1.0,False
+Port Hacking,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Potts Hill,GP1008,Bankstown,0.98334,True
+Potts Point,GP1189,Sydney Inner City,1.0,False
+Prairiewood,GP1077,Fairfield,1.0,False
+Prestons,GP1125,Liverpool,1.0,False
+Prospect,GP1022,Blacktown,1.0,False
+Punchbowl,GP1046,Canterbury,0.97486,True
+Putney,GP1179,Ryde - Hunters Hill,1.0,False
+Pymble,GP1114,Ku-ring-gai,1.0,False
+Pyrmont,GP1189,Sydney Inner City,1.0,False
+Quakers Hill,GP1023,Blacktown - North,0.711231,True
+Queens Park,GP1071,Eastern Suburbs - North,1.0,False
+Queenscliff,GP1209,Warringah,1.0,False
+Raby,GP1043,Campbelltown (NSW),1.0,False
+Ramsgate,GP1113,Kogarah - Rockdale,1.0,False
+Ramsgate Beach,GP1113,Kogarah - Rockdale,1.0,False
+Randwick,GP1072,Eastern Suburbs - South,1.0,False
+Redfern,GP1189,Sydney Inner City,1.0,False
+Regents Park,GP1005,Auburn,1.0,False
+Regentville,GP1167,Penrith,1.0,False
+Revesby,GP1008,Bankstown,1.0,False
+Revesby Heights,GP1008,Bankstown,1.0,False
+Rhodes,GP1044,Canada Bay,1.0,False
+Richards,GP1023,Blacktown - North,1.0,False
+Richmond,GP1176,Richmond - Windsor,1.0,False
+Richmond Lowlands,GP1176,Richmond - Windsor,1.0,False
+Riverstone,GP1023,Blacktown - North,1.0,False
+Riverview,GP1050,Chatswood - Lane Cove,1.0,False
+Riverwood,GP1101,Hurstville,0.716732,True
+Rockdale,GP1113,Kogarah - Rockdale,1.0,False
+Rodd Point,GP1044,Canada Bay,1.0,False
+Rookwood,GP1005,Auburn,1.0,False
+Rooty Hill,GP1143,Mount Druitt,1.0,False
+Ropes Crossing,GP1143,Mount Druitt,1.0,False
+Rose Bay,GP1071,Eastern Suburbs - North,1.0,False
+Rosebery,GP1189,Sydney Inner City,0.760513,True
+Rosehill,GP1165,Parramatta,1.0,False
+Roselands,GP1046,Canterbury,1.0,False
+Rosemeadow,GP1043,Campbelltown (NSW),1.0,False
+Roseville,GP1114,Ku-ring-gai,0.818531,True
+Roseville Chase,GP1114,Ku-ring-gai,1.0,False
+Rossmore,GP1036,Bringelly - Green Valley,1.0,False
+Rouse Hill,GP1023,Blacktown - North,0.503815,True
+Rozelle,GP1121,Leichhardt,1.0,False
+Ruse,GP1043,Campbelltown (NSW),1.0,False
+Rushcutters Bay,GP1189,Sydney Inner City,1.0,False
+Russell Lea,GP1044,Canada Bay,1.0,False
+Rydalmere,GP1047,Carlingford,1.0,False
+Ryde,GP1179,Ryde - Hunters Hill,1.0,False
+Sackville,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Sackville North,GP1070,Dural - Wisemans Ferry,1.0,False
+Sadleir,GP1036,Bringelly - Green Valley,1.0,False
+Sandringham,GP1113,Kogarah - Rockdale,1.0,False
+Sandy Point,GP1125,Liverpool,1.0,False
+Sans Souci,GP1113,Kogarah - Rockdale,1.0,False
+Scheyville,GP1178,Rouse Hill - McGraths Hill,1.0,False
+Schofields,GP1023,Blacktown - North,1.0,False
+Scotland Island,GP1169,Pittwater,1.0,False
+Seaforth,GP1131,Manly,1.0,False
+Sefton,GP1137,Merrylands - Guildford,1.0,False
+Seven Hills,GP1022,Blacktown,1.0,False
+Shalvey,GP1143,Mount Druitt,1.0,False
+Shanes Park,GP1023,Blacktown - North,1.0,False
+Silverwater,GP1005,Auburn,1.0,False
+Singletons Mill,GP1070,Dural - Wisemans Ferry,1.0,False
+Smeaton Grange,GP1041,Camden,1.0,False
+Smithfield,GP1077,Fairfield,0.517473,True
+South Coogee,GP1072,Eastern Suburbs - South,1.0,False
+South Granville,GP1137,Merrylands - Guildford,1.0,False
+South Hurstville,GP1101,Hurstville,1.0,False
+South Maroota,GP1070,Dural - Wisemans Ferry,1.0,False
+South Penrith,GP1167,Penrith,1.0,False
+South Turramurra,GP1114,Ku-ring-gai,1.0,False
+South Wentworthville,GP1137,Merrylands - Guildford,0.845144,True
+South Windsor,GP1176,Richmond - Windsor,1.0,False
+Spring Farm,GP1041,Camden,1.0,False
+St Andrews,GP1043,Campbelltown (NSW),1.0,False
+St Clair,GP1185,St Marys (NSW),1.0,False
+St Helens Park,GP1043,Campbelltown (NSW),1.0,False
+St Ives,GP1114,Ku-ring-gai,1.0,False
+St Ives Chase,GP1114,Ku-ring-gai,1.0,False
+St Johns Park,GP1077,Fairfield,1.0,False
+St Leonards,GP1050,Chatswood - Lane Cove,1.0,False
+St Marys,GP1185,St Marys (NSW),1.0,False
+St Peters,GP1132,Marrickville - Sydenham - Petersham,1.0,False
+Stanhope Gardens,GP1023,Blacktown - North,1.0,False
+Stanmore,GP1132,Marrickville - Sydenham - Petersham,1.0,False
+Strathfield,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Strathfield South,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Summer Hill,GP1186,Strathfield - Burwood - Ashfield,1.0,False
+Surry Hills,GP1189,Sydney Inner City,1.0,False
+Sutherland,GP1074,Engadine - Heathcote,1.0,False
+Sydenham,GP1132,Marrickville - Sydenham - Petersham,1.0,False
+Sydney,GP1189,Sydney Inner City,1.0,False
+Sydney Olympic Park,GP1005,Auburn,0.956921,True
+Sylvania,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Sylvania Waters,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Tallawong,GP1023,Blacktown - North,1.0,False
+Tamarama,GP1071,Eastern Suburbs - North,1.0,False
+Taren Point,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Telopea,GP1047,Carlingford,1.0,False
+Tempe,GP1132,Marrickville - Sydenham - Petersham,1.0,False
+Tennyson,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Tennyson Point,GP1179,Ryde - Hunters Hill,1.0,False
+Terrey Hills,GP1209,Warringah,1.0,False
+The Ponds,GP1023,Blacktown - North,1.0,False
+The Rocks,GP1189,Sydney Inner City,1.0,False
+The Slopes,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Thornleigh,GP1100,Hornsby,0.968859,True
+Toongabbie,GP1165,Parramatta,0.519729,True
+Tregear,GP1143,Mount Druitt,1.0,False
+Turramurra,GP1114,Ku-ring-gai,1.0,False
+Turrella,GP1113,Kogarah - Rockdale,1.0,False
+Ultimo,GP1189,Sydney Inner City,1.0,False
+Varroville,GP1043,Campbelltown (NSW),1.0,False
+Vaucluse,GP1071,Eastern Suburbs - North,1.0,False
+Villawood,GP1137,Merrylands - Guildford,0.695691,True
+Vineyard,GP1178,Rouse Hill - McGraths Hill,0.788861,True
+Voyager Point,GP1125,Liverpool,1.0,False
+Wahroonga,GP1114,Ku-ring-gai,0.830501,True
+Waitara,GP1100,Hornsby,1.0,False
+Wakeley,GP1077,Fairfield,1.0,False
+Wallacia,GP1167,Penrith,1.0,False
+Wareemba,GP1044,Canada Bay,1.0,False
+Warrawee,GP1114,Ku-ring-gai,1.0,False
+Warriewood,GP1169,Pittwater,1.0,False
+Warwick Farm,GP1125,Liverpool,1.0,False
+Waterfall,GP1074,Engadine - Heathcote,1.0,False
+Waterloo,GP1189,Sydney Inner City,1.0,False
+Watsons Bay,GP1071,Eastern Suburbs - North,1.0,False
+Wattle Grove,GP1125,Liverpool,1.0,False
+Waverley,GP1071,Eastern Suburbs - North,1.0,False
+Waverton,GP1158,North Sydney - Mosman,1.0,False
+Wedderburn,GP1043,Campbelltown (NSW),1.0,False
+Wentworth Point,GP1005,Auburn,1.0,False
+Wentworthville,GP1165,Parramatta,1.0,False
+Werrington,GP1167,Penrith,1.0,False
+Werrington County,GP1167,Penrith,1.0,False
+Werrington Downs,GP1167,Penrith,1.0,False
+West Hoxton,GP1036,Bringelly - Green Valley,1.0,False
+West Pennant Hills,GP1015,Baulkham Hills,0.842583,True
+West Pymble,GP1114,Ku-ring-gai,1.0,False
+West Ryde,GP1179,Ryde - Hunters Hill,1.0,False
+Westleigh,GP1100,Hornsby,1.0,False
+Westmead,GP1165,Parramatta,1.0,False
+Wetherill Park,GP1077,Fairfield,1.0,False
+Whalan,GP1143,Mount Druitt,1.0,False
+Whale Beach,GP1169,Pittwater,1.0,False
+Wheeler Heights,GP1209,Warringah,1.0,False
+Wilberforce,GP1115,Kurrajong Heights - Ebenezer,1.0,False
+Wiley Park,GP1046,Canterbury,1.0,False
+Willmot,GP1143,Mount Druitt,1.0,False
+Willoughby,GP1050,Chatswood - Lane Cove,1.0,False
+Willoughby East,GP1050,Chatswood - Lane Cove,1.0,False
+Windsor,GP1176,Richmond - Windsor,1.0,False
+Windsor Downs,GP1176,Richmond - Windsor,1.0,False
+Winston Hills,GP1165,Parramatta,1.0,False
+Wisemans Ferry,GP1070,Dural - Wisemans Ferry,0.912704,True
+Wolli Creek,GP1113,Kogarah - Rockdale,1.0,False
+Wollstonecraft,GP1158,North Sydney - Mosman,1.0,False
+Woodbine,GP1043,Campbelltown (NSW),1.0,False
+Woodcroft,GP1022,Blacktown,1.0,False
+Woodpark,GP1137,Merrylands - Guildford,1.0,False
+Woollahra,GP1071,Eastern Suburbs - North,1.0,False
+Woolloomooloo,GP1189,Sydney Inner City,1.0,False
+Woolooware,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Woolwich,GP1179,Ryde - Hunters Hill,0.743598,True
+Woronora,GP1074,Engadine - Heathcote,1.0,False
+Woronora Heights,GP1074,Engadine - Heathcote,1.0,False
+Yagoona,GP1008,Bankstown,1.0,False
+Yarramundi,GP1021,Blackheath - Blue Mountains North,0.529824,True
+Yarrawarrah,GP1074,Engadine - Heathcote,1.0,False
+Yennora,GP1137,Merrylands - Guildford,1.0,False
+Yowie Bay,GP1062,Cronulla - Miranda - Caringbah,1.0,False
+Zetland,GP1189,Sydney Inner City,1.0,False

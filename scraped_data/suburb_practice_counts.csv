@@ -1,0 +1,681 @@
+suburb,practices_inside,pharmacies_inside,join_method,practices_name_join,practices_polygon_join,pharmacies_name_join,pharmacies_polygon_join,join_disagree,practices_join_delta
+Abbotsbury,0,0,polygon,0,0,0,0,False,0
+Abbotsford,1,0,polygon,1,1,0,0,False,0
+Acacia Gardens,0,0,polygon,0,0,0,0,False,0
+Agnes Banks,0,0,polygon,0,0,0,0,False,0
+Airds,0,1,polygon,0,0,1,1,False,0
+Alexandria,3,4,polygon,2,3,4,4,True,1
+Alfords Point,1,1,polygon,1,1,1,1,False,0
+Allambie Heights,1,2,polygon,1,1,2,2,False,0
+Allawah,0,1,polygon,0,0,1,1,False,0
+Ambarvale,0,0,polygon,0,0,1,0,True,0
+Angus,0,0,polygon,0,0,0,0,False,0
+Annandale,0,2,polygon,0,0,2,2,False,0
+Annangrove,1,1,polygon,1,1,1,1,False,0
+Arcadia,1,0,polygon,1,1,0,0,False,0
+Arncliffe,4,4,polygon,4,4,4,4,False,0
+Arndell Park,0,0,polygon,0,0,0,0,False,0
+Artarmon,1,1,polygon,1,1,1,1,False,0
+Ashbury,0,0,polygon,0,0,0,0,False,0
+Ashcroft,0,0,polygon,0,0,0,0,False,0
+Ashfield,10,6,polygon,10,10,6,6,False,0
+Asquith,3,1,polygon,3,3,1,1,False,0
+Auburn,10,7,polygon,10,10,7,7,False,0
+Austral,2,1,polygon,2,2,1,1,False,0
+Avalon Beach,2,3,polygon,2,2,3,3,False,0
+Badgerys Creek,0,0,polygon,0,0,0,0,False,0
+Balgowlah,3,3,polygon,3,3,3,3,False,0
+Balgowlah Heights,0,1,polygon,0,0,1,1,False,0
+Balmain,5,4,polygon,5,5,4,4,False,0
+Balmain East,1,0,polygon,1,1,0,0,False,0
+Bangor,1,1,polygon,1,1,1,1,False,0
+Banksia,1,1,polygon,1,1,1,1,False,0
+Banksmeadow,0,0,polygon,0,0,0,0,False,0
+Bankstown,24,15,polygon,24,24,15,15,False,0
+Bankstown Aerodrome,0,1,polygon,0,0,1,1,False,0
+Barangaroo,1,1,polygon,1,1,1,1,False,0
+Barden Ridge,0,0,polygon,0,0,0,0,False,0
+Bardia,0,0,polygon,0,0,0,0,False,0
+Bardwell Park,1,1,polygon,1,1,1,1,False,0
+Bardwell Valley,0,0,polygon,0,0,0,0,False,0
+Bass Hill,3,4,polygon,2,3,4,4,True,1
+Baulkham Hills,5,4,polygon,5,5,5,4,True,0
+Bayview,0,0,polygon,0,0,0,0,False,0
+Beacon Hill,0,0,polygon,0,0,0,0,False,0
+Beaconsfield,1,2,polygon,1,1,1,2,True,0
+Beaumont Hills,1,1,polygon,1,1,1,1,False,0
+Beecroft,4,1,polygon,4,4,1,1,False,0
+Belfield,0,1,polygon,0,0,1,1,False,0
+Bella Vista,6,3,polygon,7,6,3,3,True,-1
+Bellevue Hill,2,1,polygon,2,2,1,1,False,0
+Belmore,1,2,polygon,1,1,2,2,False,0
+Belrose,2,2,polygon,2,2,2,2,False,0
+Berala,2,3,polygon,2,2,3,3,False,0
+Berkshire Park,0,0,polygon,0,0,0,0,False,0
+Berowra,1,1,name,1,0,1,0,False,-1
+Berowra Heights,1,1,polygon,1,1,1,1,False,0
+Berowra Waters,0,0,polygon,0,0,0,0,False,0
+Berrilee,0,0,polygon,0,0,0,0,False,0
+Beverley Park,0,0,polygon,0,0,0,0,False,0
+Beverly Hills,4,3,polygon,4,4,3,3,False,0
+Bexley,3,3,polygon,3,3,3,3,False,0
+Bexley North,1,2,polygon,1,1,2,2,False,0
+Bidwill,2,0,polygon,2,2,0,0,False,0
+Bilgola Beach,0,0,polygon,0,0,0,0,False,0
+Bilgola Plateau,0,0,polygon,0,0,0,0,False,0
+Birchgrove,0,0,polygon,0,0,0,0,False,0
+Birrong,0,1,polygon,0,0,1,1,False,0
+Blackett,0,0,polygon,0,0,0,0,False,0
+Blacktown,18,13,polygon,18,18,13,13,False,0
+Blair Athol,0,0,polygon,0,0,0,0,False,0
+Blairmount,0,0,polygon,0,0,0,0,False,0
+Blakehurst,0,0,polygon,0,0,0,0,False,0
+Bligh Park,1,1,polygon,1,1,1,1,False,0
+Bondi,4,2,polygon,4,4,2,2,False,0
+Bondi Beach,2,5,polygon,2,2,6,5,True,0
+Bondi Junction,13,12,polygon,13,13,12,12,False,0
+Bonnet Bay,0,0,polygon,0,0,0,0,False,0
+Bonnyrigg,2,2,polygon,2,2,2,2,False,0
+Bonnyrigg Heights,0,0,polygon,0,0,0,0,False,0
+Bossley Park,2,0,polygon,2,2,0,0,False,0
+Botany,2,3,polygon,2,2,3,3,False,0
+Bow Bowing,0,0,polygon,0,0,0,0,False,0
+Box Hill,1,1,polygon,1,1,1,1,False,0
+Bradbury,1,1,polygon,1,1,1,1,False,0
+Breakfast Point,0,1,polygon,0,0,1,1,False,0
+Brighton-Le-Sands,5,1,polygon,5,5,1,1,False,0
+Bringelly,1,0,name,1,0,0,0,False,-1
+Bronte,2,2,polygon,2,2,2,2,False,0
+Brooklyn,2,0,name,2,0,0,0,False,-2
+Brookvale,4,6,polygon,4,4,6,6,False,0
+Bundeena,1,1,polygon,1,1,1,1,False,0
+Bungarribee,0,0,polygon,0,0,0,0,False,0
+Burraneer,1,0,polygon,1,1,0,0,False,0
+Burwood,10,9,polygon,10,10,9,9,False,0
+Burwood Heights,0,0,polygon,0,0,0,0,False,0
+Busby,2,1,polygon,2,2,1,1,False,0
+Cabarita,0,0,polygon,0,0,0,0,False,0
+Cabramatta,18,11,polygon,18,18,11,11,False,0
+Cabramatta West,2,1,polygon,2,2,1,1,False,0
+Caddens,1,1,polygon,1,1,1,1,False,0
+Cambridge Gardens,0,0,polygon,0,0,0,0,False,0
+Cambridge Park,1,1,polygon,1,1,1,1,False,0
+Camden,4,3,name,4,0,3,0,False,-4
+Camden South,1,1,polygon,1,1,1,1,False,0
+Cammeray,1,1,polygon,1,1,1,1,False,0
+Campbelltown,13,10,name,13,0,10,0,False,-13
+Camperdown,1,3,polygon,1,1,3,3,False,0
+Campsie,12,10,polygon,12,12,10,10,False,0
+Canada Bay,0,0,polygon,0,0,0,0,False,0
+Canley Heights,5,3,polygon,5,5,3,3,False,0
+Canley Vale,2,1,polygon,2,2,1,1,False,0
+Canoelands,0,0,polygon,0,0,0,0,False,0
+Canterbury,2,1,polygon,2,2,1,1,False,0
+Caringbah,4,9,polygon,4,4,9,9,False,0
+Caringbah South,0,1,polygon,0,0,1,1,False,0
+Carlingford,8,7,polygon,8,8,7,7,False,0
+Carlton,2,2,polygon,2,2,2,2,False,0
+Carnes Hill,2,0,polygon,2,2,0,0,False,0
+Carramar,0,0,polygon,0,0,0,0,False,0
+Carss Park,0,1,polygon,0,0,1,1,False,0
+Cartwright,0,0,polygon,0,0,0,0,False,0
+Castle Cove,1,0,polygon,1,1,0,0,False,0
+Castle Hill,13,10,polygon,13,13,10,10,False,0
+Castlecrag,1,1,polygon,1,1,1,1,False,0
+Castlereagh,0,0,polygon,0,0,0,0,False,0
+Casula,6,3,polygon,6,6,3,3,False,0
+Catherine Field,0,0,polygon,0,0,0,0,False,0
+Cattai,0,0,polygon,0,0,0,0,False,0
+Cawdor,0,0,name,0,0,0,0,False,0
+Cecil Hills,1,1,polygon,1,1,1,1,False,0
+Cecil Park,0,0,polygon,0,0,0,0,False,0
+Centennial Park,0,0,polygon,0,0,0,0,False,0
+Chatswood,16,13,name,16,0,13,0,False,-16
+Chatswood West,0,0,polygon,0,0,0,0,False,0
+Cheltenham,0,0,polygon,0,0,0,0,False,0
+Cherrybrook,3,2,polygon,3,3,2,2,False,0
+Chester Hill,5,4,polygon,5,5,4,4,False,0
+Chifley,0,0,polygon,0,0,0,0,False,0
+Chippendale,0,1,polygon,0,0,1,1,False,0
+Chipping Norton,3,1,polygon,3,3,1,1,False,0
+Chiswick,0,0,polygon,0,0,0,0,False,0
+Chullora,0,0,polygon,0,0,0,0,False,0
+Church Point,0,0,polygon,0,0,0,0,False,0
+Claremont Meadows,2,1,polygon,2,2,1,1,False,0
+Clarendon,0,0,polygon,0,0,0,0,False,0
+Clareville,0,0,polygon,0,0,0,0,False,0
+Claymore,1,1,polygon,1,1,1,1,False,0
+Clemton Park,0,0,polygon,0,0,0,0,False,0
+Clontarf,0,0,polygon,0,0,0,0,False,0
+Clovelly,0,0,polygon,0,0,0,0,False,0
+Clyde,0,0,polygon,0,0,0,0,False,0
+Coasters Retreat,0,0,polygon,0,0,0,0,False,0
+Cobbitty,0,0,name,0,0,0,0,False,0
+Colebee,2,1,polygon,2,2,1,1,False,0
+Collaroy,0,1,polygon,0,0,1,1,False,0
+Collaroy Plateau,1,1,polygon,1,1,1,1,False,0
+Colyton,2,2,polygon,2,2,1,2,True,0
+Como,1,1,polygon,1,1,1,1,False,0
+Concord,5,1,polygon,5,5,1,1,False,0
+Concord West,0,3,polygon,0,0,3,3,False,0
+Condell Park,2,2,polygon,2,2,2,2,False,0
+Connells Point,0,0,polygon,0,0,0,0,False,0
+Constitution Hill,0,1,polygon,0,0,1,1,False,0
+Coogee,4,2,polygon,4,4,2,2,False,0
+Cornwallis,0,0,name,0,0,0,0,False,0
+Cottage Point,0,0,name,0,0,0,0,False,0
+Cowan,0,0,name,0,0,0,0,False,0
+Cranebrook,2,1,polygon,2,2,1,1,False,0
+Cremorne,1,1,polygon,1,1,1,1,False,0
+Cremorne Point,0,0,polygon,0,0,0,0,False,0
+Cromer,0,0,polygon,0,0,0,0,False,0
+Cronulla,3,3,polygon,3,3,3,3,False,0
+Crows Nest,4,4,polygon,4,4,4,4,False,0
+Croydon,1,1,polygon,1,1,1,1,False,0
+Croydon Park,3,4,polygon,3,3,4,4,False,0
+Cumberland Reach,0,0,polygon,0,0,0,0,False,0
+Curl Curl,0,0,polygon,0,0,0,0,False,0
+Currans Hill,0,0,polygon,0,0,0,0,False,0
+Daceyville,0,0,polygon,0,0,0,0,False,0
+Dangar Island,0,0,polygon,0,0,0,0,False,0
+Darling Point,0,0,polygon,0,0,0,0,False,0
+Darlinghurst,4,3,polygon,4,4,3,3,False,0
+Darlington,1,1,polygon,0,1,1,1,True,1
+Davidson,1,0,polygon,1,1,0,0,False,0
+Dawes Point,0,0,polygon,0,0,0,0,False,0
+Dean Park,0,0,polygon,0,0,0,0,False,0
+Dee Why,5,9,polygon,5,5,9,9,False,0
+Denham Court,1,2,polygon,1,1,1,2,True,0
+Denistone,1,0,polygon,1,1,0,0,False,0
+Denistone East,0,0,polygon,0,0,0,0,False,0
+Denistone West,0,0,polygon,0,0,0,0,False,0
+Dharruk,1,0,polygon,1,1,0,0,False,0
+Dolans Bay,0,0,polygon,0,0,0,0,False,0
+Dolls Point,0,0,polygon,0,0,0,0,False,0
+Doonside,3,0,polygon,3,3,0,0,False,0
+Double Bay,2,2,polygon,2,2,2,2,False,0
+Dover Heights,0,0,polygon,0,0,0,0,False,0
+Drummoyne,3,3,polygon,3,3,3,3,False,0
+Duffys Forest,0,0,polygon,0,0,0,0,False,0
+Dulwich Hill,1,2,polygon,1,1,2,2,False,0
+Dundas,0,1,polygon,0,0,1,1,False,0
+Dundas Valley,0,0,polygon,0,0,0,0,False,0
+Dural,3,2,polygon,3,3,2,2,False,0
+Eagle Vale,1,1,polygon,1,1,1,1,False,0
+Earlwood,4,6,polygon,4,4,6,6,False,0
+East Hills,1,1,polygon,1,1,1,1,False,0
+East Killara,1,1,polygon,1,1,1,1,False,0
+East Kurrajong,0,0,polygon,0,0,0,0,False,0
+East Lindfield,0,1,polygon,0,0,1,1,False,0
+East Ryde,1,1,polygon,1,1,1,1,False,0
+Eastern Creek,1,1,polygon,1,1,1,1,False,0
+Eastgardens,2,4,polygon,2,2,4,4,False,0
+Eastlakes,0,1,polygon,0,0,1,1,False,0
+Eastwood,12,7,polygon,12,12,7,7,False,0
+Ebenezer,0,0,polygon,0,0,0,0,False,0
+Edensor Park,2,1,polygon,2,2,1,1,False,0
+Edgecliff,2,4,polygon,2,2,4,4,False,0
+Edmondson Park,1,0,polygon,1,1,0,0,False,0
+Elanora Heights,2,1,polygon,2,2,1,1,False,0
+Elderslie,1,1,polygon,1,1,1,1,False,0
+Elizabeth Bay,0,1,polygon,0,0,0,1,True,0
+Elizabeth Hills,0,0,polygon,0,0,0,0,False,0
+Ellis Lane,0,0,polygon,0,0,0,0,False,0
+Elvina Bay,0,0,polygon,0,0,0,0,False,0
+Emerton,2,1,polygon,2,2,1,1,False,0
+Emu Heights,0,1,polygon,0,0,1,1,False,0
+Emu Plains,5,4,polygon,5,5,4,4,False,0
+Enfield,1,1,polygon,1,1,1,1,False,0
+Engadine,9,5,polygon,9,9,5,5,False,0
+Englorie Park,0,0,polygon,0,0,0,0,False,0
+Enmore,0,0,polygon,0,0,0,0,False,0
+Epping,5,3,polygon,5,5,3,3,False,0
+Ermington,3,3,polygon,3,3,3,3,False,0
+Erskine Park,2,1,polygon,2,2,1,1,False,0
+Erskineville,1,2,polygon,1,1,2,2,False,0
+Eschol Park,0,0,polygon,0,0,0,0,False,0
+Eveleigh,1,0,polygon,1,1,0,0,False,0
+Fairfield,21,9,polygon,21,21,9,9,False,0
+Fairfield East,1,0,polygon,1,1,0,0,False,0
+Fairfield Heights,4,3,polygon,4,4,3,3,False,0
+Fairfield West,1,1,polygon,1,1,1,1,False,0
+Fairlight,1,1,polygon,1,1,1,1,False,0
+Fiddletown,0,0,polygon,0,0,0,0,False,0
+Five Dock,6,4,polygon,6,6,5,4,True,0
+Forest Glen,0,0,polygon,0,0,0,0,False,0
+Forest Lodge,1,0,polygon,1,1,0,0,False,0
+Forestville,3,1,polygon,3,3,1,1,False,0
+Freemans Reach,0,0,polygon,0,0,0,0,False,0
+Frenchs Forest,3,3,polygon,3,3,3,3,False,0
+Freshwater,2,2,polygon,2,2,2,2,False,0
+Gables,0,0,polygon,0,0,0,0,False,0
+Galston,1,2,polygon,1,1,2,2,False,0
+Georges Hall,1,0,polygon,1,1,0,0,False,0
+Gilead,0,0,polygon,0,0,0,0,False,0
+Girraween,0,0,polygon,0,0,0,0,False,0
+Gladesville,5,1,polygon,5,5,1,1,False,0
+Glebe,3,5,polygon,3,3,5,5,False,0
+Gledswood Hills,2,2,polygon,2,2,2,2,False,0
+Glen Alpine,0,0,polygon,0,0,0,0,False,0
+Glendenning,1,1,polygon,1,1,1,1,False,0
+Glenfield,1,1,polygon,1,1,1,1,False,0
+Glenhaven,1,0,polygon,1,1,0,0,False,0
+Glenmore Park,2,1,polygon,2,2,1,1,False,0
+Glenorie,1,1,polygon,1,1,1,1,False,0
+Glenwood,4,1,polygon,4,4,1,1,False,0
+Glossodia,1,1,polygon,1,1,1,1,False,0
+Gordon,3,2,polygon,3,3,2,2,False,0
+Grantham Farm,1,0,polygon,1,1,0,0,False,0
+Granville,3,5,polygon,3,3,5,5,False,0
+Grasmere,0,1,polygon,0,0,1,1,False,0
+Grays Point,0,0,polygon,0,0,0,0,False,0
+Great Mackerel Beach,0,0,polygon,0,0,0,0,False,0
+Green Valley,4,2,polygon,4,4,2,2,False,0
+Greenacre,7,3,polygon,7,7,3,3,False,0
+Greendale,0,0,polygon,0,0,0,0,False,0
+Greenfield Park,1,1,polygon,1,1,1,1,False,0
+Greenhills Beach,0,0,polygon,0,0,0,0,False,0
+Greenwich,1,1,polygon,1,1,1,1,False,0
+Gregory Hills,2,2,polygon,2,2,2,2,False,0
+Greystanes,4,1,polygon,4,4,1,1,False,0
+Grose Vale,0,0,polygon,0,0,0,0,False,0
+Grose Wold,0,0,polygon,0,0,0,0,False,0
+Guildford,6,5,polygon,6,6,5,5,False,0
+Guildford West,1,1,polygon,1,1,1,1,False,0
+Gymea,5,5,polygon,4,5,4,5,True,1
+Gymea Bay,0,0,polygon,0,0,0,0,False,0
+Haberfield,1,2,polygon,1,1,2,2,False,0
+Hammondville,1,1,polygon,1,1,1,1,False,0
+Harrington Park,2,1,polygon,2,2,1,1,False,0
+Harris Park,5,0,polygon,5,5,0,0,False,0
+Hassall Grove,1,1,polygon,1,1,1,1,False,0
+Haymarket,5,4,polygon,3,5,4,4,True,2
+Heathcote,0,1,polygon,0,0,1,1,False,0
+Hebersham,2,0,polygon,2,2,0,0,False,0
+Heckenberg,0,0,polygon,0,0,0,0,False,0
+Henley,0,0,polygon,0,0,0,0,False,0
+Hillsdale,1,1,polygon,1,1,1,1,False,0
+Hinchinbrook,1,1,polygon,1,1,1,1,False,0
+Hobartville,0,0,polygon,0,0,0,0,False,0
+Holroyd,0,0,polygon,0,0,0,0,False,0
+Holsworthy,1,0,polygon,1,1,0,0,False,0
+Homebush,2,2,polygon,2,2,2,2,False,0
+Homebush West,1,1,polygon,1,1,1,1,False,0
+Horningsea Park,0,0,polygon,0,0,0,0,False,0
+Hornsby,16,10,name,16,0,10,0,False,-16
+Hornsby Heights,0,1,polygon,0,0,1,1,False,0
+Horsley Park,1,0,polygon,1,1,0,0,False,0
+Hoxton Park,1,1,polygon,1,1,1,1,False,0
+Hunters Hill,2,3,polygon,2,2,3,3,False,0
+Huntleys Cove,0,0,polygon,0,0,0,0,False,0
+Huntleys Point,0,0,polygon,0,0,0,0,False,0
+Hurlstone Park,2,0,polygon,2,2,0,0,False,0
+Hurstville,9,10,polygon,9,9,10,10,False,0
+Hurstville Grove,0,0,polygon,0,0,0,0,False,0
+Illawong,1,0,polygon,1,1,0,0,False,0
+Ingleburn,4,3,polygon,4,4,3,3,False,0
+Ingleside,0,0,polygon,0,0,0,0,False,0
+Jamisontown,1,2,polygon,1,1,2,2,False,0
+Jannali,3,1,polygon,3,3,1,1,False,0
+Jordan Springs,1,1,polygon,1,1,1,1,False,0
+Kangaroo Point,0,0,polygon,0,0,0,0,False,0
+Kareela,1,0,polygon,1,1,0,0,False,0
+Kearns,0,0,polygon,0,0,0,0,False,0
+Kellyville,3,3,polygon,3,3,4,3,True,0
+Kellyville Ridge,1,1,polygon,1,1,1,1,False,0
+Kemps Creek,0,0,polygon,0,0,0,0,False,0
+Kensington,2,2,polygon,2,2,2,2,False,0
+Kenthurst,1,0,polygon,1,1,0,0,False,0
+Kentlyn,0,0,polygon,0,0,0,0,False,0
+Killara,0,0,polygon,0,0,0,0,False,0
+Killarney Heights,0,0,polygon,0,0,0,0,False,0
+Kings Langley,2,1,polygon,2,2,1,1,False,0
+Kings Park,0,0,polygon,0,0,0,0,False,0
+Kingsford,4,2,polygon,4,4,2,2,False,0
+Kingsgrove,1,6,polygon,1,1,6,6,False,0
+Kingswood,3,2,polygon,3,3,2,2,False,0
+Kirkham,0,0,polygon,0,0,0,0,False,0
+Kirrawee,4,2,polygon,5,4,3,2,True,-1
+Kirribilli,0,0,polygon,0,0,1,0,True,0
+Kogarah,9,8,polygon,9,9,8,8,False,0
+Kogarah Bay,0,0,polygon,0,0,0,0,False,0
+Ku-ring-gai Chase,0,0,name,0,0,0,0,False,0
+Kurmond,0,0,name,0,0,0,0,False,0
+Kurnell,0,1,polygon,0,0,1,1,False,0
+Kurraba Point,0,0,polygon,0,0,0,0,False,0
+Kurrajong,1,1,name,1,0,1,0,False,-1
+Kurrajong Hills,0,0,polygon,0,0,0,0,False,0
+Kyeemagh,0,0,polygon,0,0,0,0,False,0
+Kyle Bay,0,0,polygon,0,0,0,0,False,0
+La Perouse,0,0,polygon,0,0,0,0,False,0
+Lakemba,9,6,polygon,9,9,6,6,False,0
+Lalor Park,2,1,polygon,2,2,1,1,False,0
+Lane Cove,5,5,polygon,5,5,6,5,True,0
+Lane Cove North,0,0,name,0,0,0,0,False,0
+Lane Cove West,0,0,polygon,0,0,0,0,False,0
+Lansvale,0,1,polygon,0,0,1,1,False,0
+Laughtondale,0,0,polygon,0,0,0,0,False,0
+Lavender Bay,0,0,polygon,0,0,0,0,False,0
+Leets Vale,0,0,name,0,0,0,0,False,0
+Leichhardt,8,6,polygon,8,8,6,6,False,0
+Leonay,0,0,polygon,0,0,0,0,False,0
+Leppington,2,3,polygon,2,2,4,3,True,0
+Lethbridge Park,0,1,polygon,0,0,1,1,False,0
+Leumeah,1,1,polygon,1,1,1,1,False,0
+Lewisham,0,0,polygon,0,0,0,0,False,0
+Liberty Grove,0,0,polygon,0,0,0,0,False,0
+Lidcombe,9,4,polygon,9,9,4,4,False,0
+Lilli Pilli,0,0,polygon,0,0,0,0,False,0
+Lilyfield,0,0,polygon,0,0,0,0,False,0
+Lindfield,3,4,polygon,3,3,4,4,False,0
+Linley Point,0,1,polygon,0,0,0,1,True,0
+Little Bay,1,1,polygon,1,1,1,1,False,0
+Liverpool,21,14,name,21,0,14,0,False,-21
+Llandilo,0,0,polygon,0,0,0,0,False,0
+Loftus,1,1,polygon,1,1,1,1,False,0
+Londonderry,0,0,polygon,0,0,0,0,False,0
+Long Point,0,0,polygon,0,0,0,0,False,0
+Longueville,0,0,polygon,0,0,0,0,False,0
+Lovett Bay,0,0,polygon,0,0,0,0,False,0
+Lower Portland,0,0,polygon,0,0,0,0,False,0
+Lucas Heights,0,0,polygon,0,0,0,0,False,0
+Luddenham,1,1,name,1,0,1,0,False,-1
+Lugarno,1,0,polygon,1,1,0,0,False,0
+Lurnea,1,2,polygon,1,1,2,2,False,0
+Macquarie Fields,5,0,polygon,5,5,0,0,False,0
+Macquarie Links,0,0,polygon,0,0,0,0,False,0
+Macquarie Park,4,4,polygon,2,4,2,4,True,2
+Maianbar,0,0,polygon,0,0,0,0,False,0
+Malabar,1,1,polygon,1,1,1,1,False,0
+Manly,2,5,name,2,0,5,0,False,-2
+Manly Vale,2,1,polygon,2,2,1,1,False,0
+Maraylya,0,0,polygon,0,0,0,0,False,0
+Marayong,1,1,polygon,1,1,2,1,True,0
+Maroota,0,0,polygon,0,0,0,0,False,0
+Maroubra,6,12,polygon,6,6,12,12,False,0
+Marrickville,9,10,polygon,9,9,10,10,False,0
+Marsden Park,3,2,polygon,3,3,2,2,False,0
+Marsfield,1,2,polygon,1,1,1,2,True,0
+Mascot,5,8,polygon,5,5,7,8,True,0
+Matraville,4,3,polygon,4,4,3,3,False,0
+Mays Hill,0,0,polygon,0,0,0,0,False,0
+McGraths Hill,1,0,polygon,1,1,0,0,False,0
+McMahons Point,0,1,polygon,0,0,1,1,False,0
+Meadowbank,1,1,polygon,1,1,1,1,False,0
+Melonba,0,0,polygon,0,0,0,0,False,0
+Melrose Park,0,0,polygon,0,0,0,0,False,0
+Menai,5,2,polygon,5,5,2,2,False,0
+Menangle Park,0,0,polygon,0,0,0,0,False,0
+Merrylands,15,7,polygon,15,15,7,7,False,0
+Merrylands West,0,1,polygon,0,0,1,1,False,0
+Middle Cove,0,0,polygon,0,0,0,0,False,0
+Middle Dural,0,0,polygon,0,0,0,0,False,0
+Middleton Grange,1,0,polygon,1,1,0,0,False,0
+Miller,3,1,polygon,3,3,1,1,False,0
+Millers Point,2,0,polygon,2,2,0,0,False,0
+Milperra,2,1,polygon,2,2,1,1,False,0
+Milsons Passage,0,0,name,0,0,0,0,False,0
+Milsons Point,1,1,polygon,1,1,0,1,True,0
+Minchinbury,1,1,polygon,1,1,1,1,False,0
+Minto,3,3,polygon,3,3,3,3,False,0
+Minto Heights,0,0,polygon,0,0,0,0,False,0
+Miranda,7,7,polygon,7,7,7,7,False,0
+Mona Vale,6,5,name,6,0,5,0,False,-6
+Monterey,1,0,polygon,1,1,0,0,False,0
+Moore Park,0,0,polygon,0,0,0,0,False,0
+Moorebank,3,2,polygon,3,3,2,2,False,0
+Morning Bay,0,0,polygon,0,0,0,0,False,0
+Mortdale,3,3,polygon,3,3,3,3,False,0
+Mortlake,2,0,polygon,2,2,0,0,False,0
+Mosman,7,10,polygon,7,7,10,10,False,0
+Mount Annan,3,2,polygon,3,3,2,2,False,0
+Mount Colah,2,1,polygon,2,2,1,1,False,0
+Mount Druitt,7,6,polygon,7,7,6,6,False,0
+Mount Kuring-Gai,1,1,polygon,1,1,1,1,False,0
+Mount Lewis,0,0,polygon,0,0,0,0,False,0
+Mount Pritchard,2,1,polygon,2,2,1,1,False,0
+Mount Vernon,0,0,polygon,0,0,0,0,False,0
+Mulgoa,0,1,polygon,0,0,1,1,False,0
+Mulgrave,0,0,polygon,0,0,0,0,False,0
+Narellan,4,4,polygon,4,4,4,4,False,0
+Narellan Vale,0,0,polygon,0,0,0,0,False,0
+Naremburn,0,0,polygon,0,0,0,0,False,0
+Narrabeen,0,1,polygon,0,0,1,1,False,0
+Narraweena,1,1,polygon,1,1,1,1,False,0
+Narwee,3,3,polygon,3,3,3,3,False,0
+Neutral Bay,6,5,polygon,6,6,5,5,False,0
+Newington,1,1,polygon,1,1,1,1,False,0
+Newport,4,1,polygon,4,4,1,1,False,0
+Newtown,6,8,polygon,6,6,8,8,False,0
+Nirimba Fields,0,0,polygon,0,0,0,0,False,0
+Normanhurst,1,1,polygon,1,1,1,1,False,0
+North Balgowlah,0,1,polygon,0,0,1,1,False,0
+North Bondi,2,2,polygon,2,2,1,2,True,0
+North Curl Curl,0,0,polygon,0,0,0,0,False,0
+North Epping,1,1,polygon,1,1,1,1,False,0
+North Kellyville,2,2,polygon,2,2,1,2,True,0
+North Manly,0,0,polygon,0,0,0,0,False,0
+North Narrabeen,2,0,polygon,1,2,0,0,True,1
+North Parramatta,1,1,polygon,1,1,1,1,False,0
+North Richmond,4,2,polygon,4,4,2,2,False,0
+North Rocks,3,2,polygon,3,3,2,2,False,0
+North Ryde,3,4,polygon,4,3,6,4,True,-1
+North St Marys,1,1,polygon,1,1,1,1,False,0
+North Strathfield,1,2,polygon,1,1,2,2,False,0
+North Sydney,4,5,polygon,4,4,5,5,False,0
+North Turramurra,1,2,polygon,1,1,2,2,False,0
+North Wahroonga,0,0,polygon,0,0,0,0,False,0
+North Willoughby,0,1,polygon,0,0,1,1,False,0
+Northbridge,3,1,polygon,3,3,1,1,False,0
+Northmead,2,1,polygon,2,2,1,1,False,0
+Northwood,0,0,polygon,0,0,0,0,False,0
+Norwest,4,3,polygon,3,4,2,3,True,1
+Oakhurst,0,0,polygon,0,0,0,0,False,0
+Oakville,0,0,polygon,0,0,0,0,False,0
+Oatlands,1,1,polygon,1,1,1,1,False,0
+Oatley,2,3,polygon,2,2,3,3,False,0
+Old Guildford,0,0,polygon,0,0,0,0,False,0
+Old Toongabbie,1,1,polygon,1,1,1,1,False,0
+Oran Park,1,2,polygon,1,1,2,2,False,0
+Orchard Hills,0,1,polygon,0,0,1,1,False,0
+Oxford Falls,0,0,polygon,0,0,0,0,False,0
+Oxley Park,0,0,polygon,0,0,0,0,False,0
+Oyster Bay,0,1,polygon,0,0,1,1,False,0
+Paddington,1,2,polygon,1,1,2,2,False,0
+Padstow,6,3,polygon,6,6,3,3,False,0
+Padstow Heights,0,0,polygon,0,0,0,0,False,0
+Pagewood,0,0,polygon,0,0,0,0,False,0
+Palm Beach,0,0,polygon,0,0,0,0,False,0
+Panania,4,3,polygon,4,4,3,3,False,0
+Parklea,0,0,polygon,0,0,0,0,False,0
+Parramatta,8,9,polygon,8,8,9,9,False,0
+Peakhurst,2,1,polygon,2,2,1,1,False,0
+Peakhurst Heights,0,1,polygon,0,0,1,1,False,0
+Pemulwuy,1,1,polygon,1,1,1,1,False,0
+Pendle Hill,4,1,polygon,4,4,1,1,False,0
+Pennant Hills,4,3,polygon,4,4,3,3,False,0
+Penrith,12,12,polygon,12,12,12,12,False,0
+Penshurst,2,2,polygon,2,2,2,2,False,0
+Petersham,3,1,polygon,3,3,1,1,False,0
+Phillip Bay,0,0,polygon,0,0,0,0,False,0
+Picnic Point,1,1,polygon,1,1,1,1,False,0
+Pitt Town,1,1,polygon,1,1,1,1,False,0
+Pitt Town Bottoms,0,0,polygon,0,0,0,0,False,0
+Pleasure Point,0,0,name,0,0,0,0,False,0
+Plumpton,1,1,polygon,1,1,1,1,False,0
+Point Piper,0,0,polygon,0,0,0,0,False,0
+Port Hacking,0,0,polygon,0,0,0,0,False,0
+Potts Hill,0,0,polygon,0,0,0,0,False,0
+Potts Point,4,5,polygon,4,4,6,5,True,0
+Prairiewood,3,3,polygon,3,3,2,3,True,0
+Prestons,4,2,polygon,4,4,2,2,False,0
+Prospect,2,2,polygon,2,2,2,2,False,0
+Punchbowl,6,4,polygon,6,6,4,4,False,0
+Putney,0,0,polygon,0,0,0,0,False,0
+Pymble,3,1,polygon,3,3,1,1,False,0
+Pyrmont,2,2,polygon,2,2,2,2,False,0
+Quakers Hill,9,4,polygon,9,9,3,4,True,0
+Queens Park,0,0,polygon,0,0,0,0,False,0
+Queenscliff,0,0,polygon,0,0,0,0,False,0
+Raby,2,2,polygon,2,2,2,2,False,0
+Ramsgate,2,2,polygon,2,2,2,2,False,0
+Ramsgate Beach,2,1,polygon,2,2,2,1,True,0
+Randwick,9,13,polygon,9,9,13,13,False,0
+Redfern,3,4,polygon,3,3,4,4,False,0
+Regents Park,1,1,polygon,1,1,1,1,False,0
+Regentville,0,0,polygon,0,0,0,0,False,0
+Revesby,4,5,polygon,4,4,5,5,False,0
+Revesby Heights,0,0,polygon,0,0,0,0,False,0
+Rhodes,0,1,polygon,0,0,1,1,False,0
+Richards,0,0,polygon,0,0,0,0,False,0
+Richmond,4,3,name,4,0,3,0,False,-4
+Richmond Lowlands,0,0,name,0,0,0,0,False,0
+Riverstone,2,1,polygon,2,2,1,1,False,0
+Riverview,1,1,polygon,1,1,1,1,False,0
+Riverwood,7,6,polygon,7,7,6,6,False,0
+Rockdale,6,5,polygon,6,6,5,5,False,0
+Rodd Point,1,1,polygon,1,1,1,1,False,0
+Rookwood,0,0,name,0,0,0,0,False,0
+Rooty Hill,4,2,polygon,4,4,2,2,False,0
+Ropes Crossing,1,1,polygon,1,1,1,1,False,0
+Rose Bay,5,5,polygon,5,5,5,5,False,0
+Rosebery,3,2,polygon,3,3,3,2,True,0
+Rosehill,2,0,polygon,2,2,0,0,False,0
+Roselands,1,3,polygon,1,1,3,3,False,0
+Rosemeadow,3,1,polygon,3,3,1,1,False,0
+Roseville,2,2,polygon,2,2,2,2,False,0
+Roseville Chase,0,0,polygon,0,0,0,0,False,0
+Rossmore,0,0,polygon,0,0,0,0,False,0
+Rouse Hill,9,4,polygon,9,9,4,4,False,0
+Rozelle,1,3,polygon,1,1,3,3,False,0
+Ruse,0,1,polygon,0,0,1,1,False,0
+Rushcutters Bay,0,0,polygon,0,0,0,0,False,0
+Russell Lea,0,1,polygon,0,0,0,1,True,0
+Rydalmere,1,0,polygon,1,1,0,0,False,0
+Ryde,8,8,polygon,8,8,8,8,False,0
+Sackville,0,0,polygon,0,0,0,0,False,0
+Sackville North,0,0,polygon,0,0,0,0,False,0
+Sadleir,0,0,polygon,0,0,0,0,False,0
+Sandringham,0,0,polygon,0,0,0,0,False,0
+Sandy Point,0,0,polygon,0,0,0,0,False,0
+Sans Souci,3,3,polygon,3,3,2,3,True,0
+Scheyville,0,0,polygon,0,0,0,0,False,0
+Schofields,3,1,polygon,3,3,1,1,False,0
+Scotland Island,0,0,polygon,0,0,0,0,False,0
+Seaforth,1,1,polygon,1,1,1,1,False,0
+Sefton,0,0,polygon,1,0,0,0,True,-1
+Seven Hills,10,5,polygon,10,10,5,5,False,0
+Shalvey,0,1,polygon,0,0,1,1,False,0
+Shanes Park,0,0,polygon,0,0,0,0,False,0
+Silverwater,0,1,polygon,0,0,1,1,False,0
+Singletons Mill,0,0,polygon,0,0,0,0,False,0
+Smeaton Grange,0,0,polygon,0,0,0,0,False,0
+Smithfield,3,2,name,3,0,2,0,False,-3
+South Coogee,0,0,polygon,0,0,0,0,False,0
+South Granville,0,2,polygon,0,0,2,2,False,0
+South Hurstville,1,2,polygon,1,1,2,2,False,0
+South Maroota,0,0,polygon,0,0,0,0,False,0
+South Penrith,4,2,polygon,4,4,2,2,False,0
+South Turramurra,0,1,polygon,0,0,1,1,False,0
+South Wentworthville,0,0,polygon,0,0,0,0,False,0
+South Windsor,1,1,polygon,1,1,1,1,False,0
+Spring Farm,0,1,polygon,0,0,1,1,False,0
+St Andrews,1,1,polygon,1,1,1,1,False,0
+St Clair,4,2,polygon,4,4,2,2,False,0
+St Helens Park,0,0,polygon,0,0,0,0,False,0
+St Ives,4,6,polygon,4,4,6,6,False,0
+St Ives Chase,1,1,polygon,1,1,1,1,False,0
+St Johns Park,0,0,polygon,0,0,0,0,False,0
+St Leonards,5,3,polygon,5,5,3,3,False,0
+St Marys,7,9,polygon,7,7,10,9,True,0
+St Peters,0,0,polygon,0,0,0,0,False,0
+Stanhope Gardens,2,1,polygon,2,2,1,1,False,0
+Stanmore,1,2,polygon,1,1,2,2,False,0
+Strathfield,6,4,polygon,6,6,4,4,False,0
+Strathfield South,0,0,polygon,0,0,0,0,False,0
+Summer Hill,1,1,polygon,1,1,1,1,False,0
+Surry Hills,9,5,polygon,9,9,5,5,False,0
+Sutherland,2,3,polygon,2,2,3,3,False,0
+Sydenham,0,0,polygon,0,0,0,0,False,0
+Sydney,24,33,polygon,27,24,33,33,True,-3
+Sydney Olympic Park,1,2,polygon,1,1,2,2,False,0
+Sylvania,2,3,polygon,2,2,3,3,False,0
+Sylvania Waters,0,0,polygon,0,0,0,0,False,0
+Tallawong,0,0,polygon,0,0,0,0,False,0
+Tamarama,0,0,polygon,0,0,0,0,False,0
+Taren Point,0,0,polygon,0,0,0,0,False,0
+Telopea,2,2,polygon,2,2,2,2,False,0
+Tempe,0,0,polygon,0,0,0,0,False,0
+Tennyson,0,0,polygon,0,0,0,0,False,0
+Tennyson Point,0,0,polygon,0,0,0,0,False,0
+Terrey Hills,2,1,polygon,2,2,1,1,False,0
+The Ponds,3,0,polygon,3,3,0,0,False,0
+The Rocks,1,0,polygon,1,1,0,0,False,0
+The Slopes,0,0,polygon,0,0,0,0,False,0
+Thornleigh,4,2,polygon,4,4,2,2,False,0
+Toongabbie,6,3,polygon,6,6,3,3,False,0
+Tregear,1,0,polygon,1,1,0,0,False,0
+Turramurra,2,3,polygon,2,2,3,3,False,0
+Turrella,0,0,polygon,0,0,0,0,False,0
+Ultimo,2,0,polygon,2,2,0,0,False,0
+Varroville,0,0,polygon,0,0,0,0,False,0
+Vaucluse,0,2,polygon,0,0,2,2,False,0
+Villawood,2,1,polygon,2,2,1,1,False,0
+Vineyard,0,0,polygon,0,0,0,0,False,0
+Voyager Point,0,0,polygon,0,0,0,0,False,0
+Wahroonga,5,5,polygon,5,5,5,5,False,0
+Waitara,1,0,polygon,1,1,0,0,False,0
+Wakeley,0,1,polygon,0,0,1,1,False,0
+Wallacia,0,0,polygon,0,0,0,0,False,0
+Wareemba,0,2,polygon,0,0,2,2,False,0
+Warrawee,0,0,polygon,0,0,0,0,False,0
+Warriewood,0,1,polygon,1,0,1,1,True,-1
+Warwick Farm,0,1,polygon,0,0,1,1,False,0
+Waterfall,0,0,polygon,0,0,0,0,False,0
+Waterloo,2,3,polygon,2,2,3,3,False,0
+Watsons Bay,0,1,polygon,0,0,1,1,False,0
+Wattle Grove,0,1,polygon,0,0,1,1,False,0
+Waverley,1,1,polygon,1,1,1,1,False,0
+Waverton,0,1,polygon,0,0,1,1,False,0
+Wedderburn,0,0,polygon,0,0,0,0,False,0
+Wentworth Point,2,3,polygon,2,2,3,3,False,0
+Wentworthville,6,5,polygon,6,6,5,5,False,0
+Werrington,0,0,polygon,0,0,0,0,False,0
+Werrington County,1,1,polygon,1,1,1,1,False,0
+Werrington Downs,0,0,polygon,0,0,0,0,False,0
+West Hoxton,1,0,polygon,1,1,0,0,False,0
+West Pennant Hills,4,2,polygon,4,4,2,2,False,0
+West Pymble,0,0,polygon,0,0,0,0,False,0
+West Ryde,3,3,polygon,3,3,3,3,False,0
+Westleigh,0,1,polygon,0,0,1,1,False,0
+Westmead,7,5,polygon,7,7,6,5,True,0
+Wetherill Park,3,3,name,3,0,3,0,False,-3
+Whalan,1,1,polygon,1,1,1,1,False,0
+Whale Beach,0,0,polygon,0,0,0,0,False,0
+Wheeler Heights,0,1,polygon,0,0,1,1,False,0
+Wilberforce,1,1,polygon,1,1,1,1,False,0
+Wiley Park,1,2,polygon,1,1,2,2,False,0
+Willmot,0,0,polygon,0,0,0,0,False,0
+Willoughby,2,2,polygon,2,2,2,2,False,0
+Willoughby East,0,0,polygon,0,0,0,0,False,0
+Windsor,5,2,name,5,0,2,0,False,-5
+Windsor Downs,0,0,polygon,0,0,0,0,False,0
+Winston Hills,4,2,polygon,4,4,2,2,False,0
+Wisemans Ferry,0,1,name,0,0,1,0,False,0
+Wolli Creek,5,1,polygon,5,5,1,1,False,0
+Wollstonecraft,0,1,polygon,0,0,1,1,False,0
+Woodbine,0,0,polygon,0,0,0,0,False,0
+Woodcroft,1,1,polygon,1,1,1,1,False,0
+Woodpark,0,0,polygon,0,0,0,0,False,0
+Woollahra,3,1,polygon,3,3,1,1,False,0
+Woolloomooloo,2,1,polygon,2,2,1,1,False,0
+Woolooware,2,2,polygon,2,2,2,2,False,0
+Woolwich,0,0,polygon,0,0,0,0,False,0
+Woronora,0,0,polygon,0,0,0,0,False,0
+Woronora Heights,0,0,polygon,0,0,0,0,False,0
+Yagoona,4,4,polygon,4,4,4,4,False,0
+Yarramundi,0,0,polygon,0,0,0,0,False,0
+Yarrawarrah,1,1,polygon,1,1,1,1,False,0
+Yennora,0,0,polygon,0,0,0,0,False,0
+Yowie Bay,0,0,polygon,0,0,0,0,False,0
+Zetland,2,1,polygon,3,2,1,1,True,-1

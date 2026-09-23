@@ -1,0 +1,248 @@
+suburb,population,over_65_pct,median_household_income_weekly,clinics_listed,gp_data_status,practices_within_2km,nearest_practice_km,access_general,access_general_pct,gpc_name,saturated_nearby,access_above_median
+Caringbah South,13168,19.8,2721,0,no_data,5,1.223,0.171631,16.18,Cronulla - Miranda - Caringbah,False,False
+Lane Cove North,11773,12.16,2386,0,no_data,8,1.052,0.279723,64.41,Chatswood - Lane Cove,False,True
+Killara,10620,18.84,2802,0,no_data,5,1.256,0.254847,47.94,Ku-ring-gai,False,False
+Mount Pritchard,10426,14.43,1396,2,gp_count_unknown,7,0.66,0.284203,68.09,Fairfield,False,True
+Canley Vale,10300,15.59,1330,2,gp_count_unknown,34,0.479,0.3332,93.24,Fairfield,True,True
+Vaucluse,9510,19.04,3418,0,no_data,3,1.832,0.220126,32.65,Eastern Suburbs - North,False,False
+Narrabeen,8255,31.13,1780,0,no_data,2,1.578,0.183306,18.68,Warringah,False,False
+Wollstonecraft,8115,16.2,2639,0,no_data,15,0.7,0.315545,87.65,North Sydney - Mosman,True,True
+Cromer,8030,18.63,2483,0,no_data,1,1.659,0.18132,18.24,Warringah,False,False
+Lalor Park,7834,14.0,1460,1,gp_count_unknown,11,0.07,0.291514,71.91,Blacktown,True,True
+Lilyfield,7641,14.2,2858,0,no_data,12,1.066,0.344323,96.91,Leichhardt,True,True
+Bonnyrigg Heights,7369,15.46,1930,0,no_data,8,1.234,0.230906,37.06,Fairfield,False,False
+Ambarvale,7254,12.94,1431,0,no_data,7,1.087,0.199334,24.41,Campbelltown (NSW),False,False
+Merrylands West,7054,15.74,1394,0,no_data,13,0.72,0.310762,85.29,Merrylands - Guildford,True,True
+Gymea Bay,6983,17.0,3047,0,no_data,4,0.943,0.214945,30.44,Cronulla - Miranda - Caringbah,False,False
+Oakhurst,6947,9.77,2097,0,no_data,7,0.922,0.243354,43.68,Mount Druitt,False,False
+Narellan Vale,6931,10.92,2248,0,no_data,8,0.708,0.226328,35.44,Camden,False,False
+Blakehurst,6652,20.43,2474,0,no_data,1,1.433,0.265476,55.15,Hurstville,False,True
+St Helens Park,6647,9.69,1850,0,no_data,2,1.377,0.173905,16.62,Campbelltown (NSW),False,False
+Tallawong,6570,3.35,2759,0,no_data,3,1.445,0.225108,34.71,Blacktown - North,False,False
+Girraween,6256,10.71,2378,0,no_data,14,0.963,0.298346,76.47,Parramatta,True,True
+Concord West,6178,18.78,2354,0,no_data,8,1.461,0.274527,60.88,Canada Bay,False,True
+Warwick Farm,6135,11.87,1132,0,no_data,26,1.369,0.32426,90.0,Liverpool,True,True
+Naremburn,5924,13.57,3272,0,no_data,18,0.693,0.299466,77.79,Chatswood - Lane Cove,True,True
+Guildford West,5762,10.93,1583,1,gp_count_unknown,3,0.686,0.327917,91.91,Merrylands - Guildford,False,True
+Bardia,5747,2.89,2417,0,no_data,1,0.761,0.214067,30.15,Campbelltown (NSW),False,False
+Oyster Bay,5689,16.19,3137,0,no_data,6,1.531,0.260521,51.18,Engadine - Heathcote,False,True
+Ruse,5632,18.29,1797,0,no_data,0,2.162,0.183557,18.82,Campbelltown (NSW),False,False
+Currans Hill,5541,7.56,2170,0,no_data,3,1.467,0.246846,45.0,Camden,False,False
+Allawah,5351,14.6,1774,0,no_data,16,0.882,0.269408,57.65,Kogarah - Rockdale,True,True
+Dundas,4959,12.93,1962,0,no_data,6,0.747,0.28039,65.15,Carlingford,False,True
+Russell Lea,4920,18.64,2658,0,no_data,11,0.766,0.309338,83.68,Canada Bay,True,True
+Wakeley,4893,19.78,1553,1,gp_count_unknown,7,1.219,0.296411,74.85,Fairfield,False,True
+Clovelly,4887,11.66,3474,0,no_data,12,0.586,0.22471,34.56,Eastern Suburbs - South,True,False
+Breakfast Point,4678,25.42,2303,0,no_data,8,0.346,0.279312,63.97,Canada Bay,False,True
+Killarney Heights,4502,16.46,3426,0,no_data,3,1.36,0.216159,30.88,Warringah,False,False
+Glen Alpine,4429,16.82,2669,0,no_data,1,1.891,0.2026,26.03,Campbelltown (NSW),False,False
+North Curl Curl,4288,12.06,3611,0,no_data,8,1.025,0.152545,11.47,Warringah,False,False
+Cobbitty,4206,15.38,2313,0,no_data,0,5.533,0.084476,2.94,Bringelly - Green Valley,False,False
+Abbotsbury,4200,15.36,2621,0,no_data,2,1.498,0.202947,26.32,Fairfield,False,False
+Oxley Park,4197,9.98,1612,0,no_data,10,0.651,0.236608,39.85,St Marys (NSW),True,False
+Barden Ridge,4129,13.71,3134,0,no_data,0,2.022,0.16786,14.71,Engadine - Heathcote,False,False
+Putney,4097,18.77,3053,0,no_data,11,0.542,0.270497,58.68,Ryde - Hunters Hill,True,True
+Lewisham,4060,11.72,2405,0,no_data,22,0.499,0.335651,94.12,Strathfield - Burwood - Ashfield,True,True
+Constitution Hill,4030,15.09,1706,0,no_data,14,1.047,0.310537,85.0,Parramatta,True,True
+Londonderry,4024,14.99,2158,0,no_data,0,5.369,0.209943,29.12,Richmond - Windsor,False,False
+Darling Point,3977,30.63,3219,0,no_data,16,0.628,0.299258,77.21,Eastern Suburbs - North,True,True
+Pagewood,3885,18.66,2281,0,no_data,8,0.935,0.257551,49.12,Botany,False,False
+Burraneer,3719,18.77,3490,0,no_data,5,0.924,0.147127,10.44,Cronulla - Miranda - Caringbah,False,False
+East Lindfield,3710,20.0,3457,0,no_data,3,1.832,0.239636,41.76,Ku-ring-gai,False,False
+Parklea,3684,5.94,2832,0,no_data,7,0.734,0.278887,63.68,Blacktown - North,False,True
+Grantham Farm,3669,3.71,2570,0,no_data,4,0.832,0.213611,30.0,Blacktown - North,False,False
+Acacia Gardens,3668,8.78,2796,0,no_data,7,0.785,0.282741,67.35,Blacktown - North,False,True
+Bilgola Plateau,3650,21.73,2856,0,no_data,6,1.257,0.159004,13.38,Pittwater,False,False
+Strathfield South,3636,15.35,2045,0,no_data,5,0.73,0.302578,80.0,Strathfield - Burwood - Ashfield,False,True
+St Peters,3629,7.8,2924,0,no_data,13,0.953,0.328621,92.06,Marrickville - Sydenham - Petersham,True,True
+Silverwater,3600,5.89,1875,1,gp_count_unknown,4,0.986,0.26877,57.35,Auburn,False,True
+Padstow Heights,3594,24.79,1938,0,no_data,7,1.522,0.264288,53.97,Bankstown,False,True
+Balgowlah Heights,3546,15.12,4687,0,no_data,5,1.362,0.199682,24.56,Manly,False,False
+Chifley,3490,16.39,2311,0,no_data,6,1.023,0.137902,8.82,Eastern Suburbs - South,False,False
+Kings Park,3476,13.12,2186,0,no_data,5,0.882,0.279921,64.56,Blacktown,False,True
+Carramar,3475,18.79,1073,0,no_data,23,1.009,0.34319,96.32,Merrylands - Guildford,True,True
+Shalvey,3455,12.88,1180,0,no_data,4,1.201,0.228809,36.47,Mount Druitt,False,False
+Queenscliff,3407,10.89,2903,0,no_data,7,0.444,0.142307,9.41,Warringah,False,False
+Ashbury,3353,19.21,2571,0,no_data,25,0.801,0.322576,89.71,Strathfield - Burwood - Ashfield,True,True
+Heckenberg,3263,11.46,1159,0,no_data,11,0.552,0.282709,67.21,Bringelly - Green Valley,True,True
+Sadleir,3243,11.9,946,0,no_data,11,0.595,0.281749,66.18,Bringelly - Green Valley,True,True
+Werrington Downs,3221,12.76,2139,0,no_data,4,1.02,0.257606,49.26,Penrith,False,False
+Elizabeth Hills,3208,5.55,2413,0,no_data,6,0.755,0.203855,26.76,Bringelly - Green Valley,False,False
+South Turramurra,3208,17.33,3447,0,no_data,2,1.52,0.291324,71.62,Ku-ring-gai,False,True
+Emu Heights,3205,14.01,2398,0,no_data,0,2.246,0.22342,33.97,Penrith,False,False
+Sylvania Waters,3200,19.97,2371,0,no_data,7,1.323,0.236545,39.71,Cronulla - Miranda - Caringbah,False,False
+Dean Park,3180,14.94,1846,0,no_data,4,0.8,0.264554,54.26,Mount Druitt,False,True
+Bungarribee,3177,4.28,2928,0,no_data,4,1.151,0.249457,45.88,Blacktown,False,False
+Warrawee,3170,17.35,3388,0,no_data,4,0.869,0.260405,51.03,Ku-ring-gai,False,True
+Lane Cove West,3146,14.05,2966,0,no_data,7,0.757,0.279592,64.26,Chatswood - Lane Cove,False,True
+Queens Park,3143,15.4,3441,0,no_data,31,0.547,0.27247,59.71,Eastern Suburbs - North,True,True
+Yowie Bay,3053,21.85,2959,0,no_data,11,1.433,0.208887,28.82,Cronulla - Miranda - Caringbah,True,False
+Grays Point,3034,17.83,3061,0,no_data,1,1.602,0.194076,22.21,Cronulla - Miranda - Caringbah,False,False
+Waverton,2981,19.22,2890,0,no_data,15,0.878,0.320705,89.12,North Sydney - Mosman,True,True
+Chiswick,2909,17.7,2444,0,no_data,6,1.005,0.30618,81.76,Canada Bay,False,True
+Connells Point,2884,20.04,2644,0,no_data,2,1.203,0.2817,66.03,Hurstville,False,True
+Old Guildford,2857,10.19,1511,0,no_data,8,1.127,0.34677,97.35,Merrylands - Guildford,False,True
+Woronora Heights,2781,13.63,3250,0,no_data,1,1.564,0.205073,27.35,Engadine - Heathcote,False,False
+Woodbine,2780,16.12,1714,0,no_data,5,0.929,0.227565,36.18,Campbelltown (NSW),False,False
+Blair Athol,2725,10.97,2389,0,no_data,14,1.114,0.229367,36.76,Campbelltown (NSW),True,False
+Hobartville,2712,15.3,1759,0,no_data,4,0.998,0.362397,99.56,Richmond - Windsor,False,True
+Turrella,2673,9.8,2137,0,no_data,17,0.743,0.304246,81.18,Kogarah - Rockdale,True,True
+Beverley Park,2646,20.98,2242,0,no_data,19,0.824,0.262155,51.62,Kogarah - Rockdale,True,True
+Cartwright,2616,14.07,826,0,no_data,8,0.756,0.280675,65.44,Liverpool,False,True
+Catherine Field,2609,11.65,2316,0,no_data,0,2.494,0.156274,12.35,Bringelly - Green Valley,False,False
+Eschol Park,2607,13.08,1851,0,no_data,3,1.589,0.239547,41.62,Campbelltown (NSW),False,False
+Hurstville Grove,2606,18.34,2419,0,no_data,17,0.997,0.279022,63.82,Hurstville,True,True
+Leonay,2582,18.71,2466,0,no_data,4,1.732,0.215198,30.59,Penrith,False,False
+Curl Curl,2364,12.39,3870,0,no_data,9,1.224,0.155278,12.06,Warringah,False,False
+Bardwell Valley,2344,19.24,2099,0,no_data,18,0.86,0.294751,73.82,Kogarah - Rockdale,True,True
+Rushcutters Bay,2335,18.63,1877,0,no_data,37,0.286,0.315065,87.21,Sydney Inner City,True,True
+McMahons Point,2315,21.3,2568,0,no_data,13,0.74,0.327392,91.62,North Sydney - Mosman,True,True
+Cremorne Point,2270,23.17,2951,0,no_data,13,1.073,0.299267,77.35,North Sydney - Mosman,True,True
+Rossmore,2241,19.41,1827,0,no_data,0,3.721,0.093839,3.68,Bringelly - Green Valley,False,False
+Bonnet Bay,2238,20.91,3087,0,no_data,4,1.036,0.258458,49.56,Engadine - Heathcote,False,False
+Centennial Park,2225,13.21,2154,0,no_data,24,1.025,0.294544,73.53,Eastern Suburbs - North,True,True
+East Kurrajong,2203,12.66,2757,0,no_data,0,3.894,0.12214,6.62,Kurrajong Heights - Ebenezer,False,False
+Cheltenham,2166,19.67,3573,0,no_data,10,1.416,0.282141,66.76,Pennant Hills - Epping,True,True
+Berkshire Park,2149,9.59,2036,0,no_data,0,4.431,0.223391,33.82,Richmond - Windsor,False,False
+Kemps Creek,2121,21.07,1753,0,no_data,0,6.044,0.087159,3.38,Fairfield,False,False
+Grasmere,2105,43.33,1652,0,no_data,0,2.265,0.120749,6.18,Camden,False,False
+Kogarah Bay,2102,19.08,2528,0,no_data,9,1.131,0.259682,50.44,Kogarah - Rockdale,False,True
+North Wahroonga,2100,21.48,3189,0,no_data,3,1.613,0.223196,33.68,Ku-ring-gai,False,False
+Melrose Park,2059,13.16,2182,0,no_data,9,0.957,0.268886,57.5,Carlingford,False,True
+Liberty Grove,2055,10.61,2663,0,no_data,3,1.231,0.270384,58.53,Canada Bay,False,True
+Freemans Reach,2049,14.01,2143,0,no_data,0,3.715,0.342093,96.18,Kurrajong Heights - Ebenezer,False,True
+Mulgoa,2044,17.03,2533,1,gp_count_unknown,0,4.803,0.17816,17.35,Penrith,False,False
+Woronora,2043,18.45,2614,0,no_data,3,1.185,0.244085,43.97,Engadine - Heathcote,False,False
+Cambridge Gardens,2030,15.37,1950,0,no_data,4,0.922,0.244249,44.12,Penrith,False,False
+Oakville,2027,20.77,2368,0,no_data,0,3.018,0.213032,29.85,Rouse Hill - McGraths Hill,False,False
+Cabarita,1933,29.02,2695,0,no_data,9,0.822,0.286272,68.68,Canada Bay,False,True
+Taren Point,1879,43.37,1463,0,no_data,0,2.053,0.218157,31.62,Cronulla - Miranda - Caringbah,False,False
+Willoughby East,1864,15.08,4536,0,no_data,13,0.683,0.267538,55.88,Chatswood - Lane Cove,True,True
+Clontarf,1746,17.58,4609,0,no_data,5,1.345,0.222348,33.09,Manly,False,False
+Woodpark,1706,10.67,1945,0,no_data,4,1.336,0.310834,85.44,Merrylands - Guildford,False,True
+Voyager Point,1678,9.71,3205,0,no_data,2,1.088,0.236629,40.0,Liverpool,False,False
+Yennora,1675,25.85,900,0,no_data,28,1.289,0.337325,95.29,Merrylands - Guildford,True,True
+Palm Beach,1652,37.53,2807,0,no_data,0,3.991,0.132009,7.79,Pittwater,False,False
+Nirimba Fields,1632,3.98,2567,0,no_data,8,0.891,0.246326,44.85,Blacktown - North,False,False
+Llandilo,1618,15.7,1879,0,no_data,0,3.532,0.180875,18.09,Penrith,False,False
+Roseville Chase,1618,18.23,4026,0,no_data,2,0.843,0.237775,40.74,Ku-ring-gai,False,False
+Bow Bowing,1606,10.65,2108,0,no_data,4,0.918,0.204876,27.21,Campbelltown (NSW),False,False
+Chatswood West,1521,19.53,3121,0,no_data,6,1.776,0.276107,61.76,Chatswood - Lane Cove,False,True
+Wareemba,1519,20.61,2294,0,no_data,8,0.295,0.310049,84.56,Canada Bay,False,True
+Tamarama,1478,9.61,4522,0,no_data,21,0.733,0.223126,33.24,Eastern Suburbs - North,True,False
+Macquarie Links,1455,9.83,3135,0,no_data,9,1.409,0.208798,28.68,Campbelltown (NSW),False,False
+Potts Hill,1454,6.46,2223,0,no_data,6,1.24,0.309107,83.53,Bankstown,False,True
+Melonba,1439,2.02,2859,0,no_data,1,1.388,0.197248,23.68,Blacktown - North,False,False
+Lilli Pilli,1405,19.15,3625,0,no_data,0,2.755,0.151355,11.32,Cronulla - Miranda - Caringbah,False,False
+Kurraba Point,1401,18.56,3047,0,no_data,13,1.075,0.30223,79.85,North Sydney - Mosman,True,True
+Greenhills Beach,1375,6.18,4704,0,no_data,3,1.763,0.141791,9.26,Cronulla - Miranda - Caringbah,False,False
+Point Piper,1334,31.18,4530,0,no_data,5,1.541,0.276765,62.35,Eastern Suburbs - North,False,True
+Middle Cove,1327,18.09,4446,0,no_data,5,1.031,0.25592,48.38,Chatswood - Lane Cove,False,False
+Canada Bay,1308,16.36,2473,0,no_data,23,1.282,0.309864,84.41,Canada Bay,True,True
+Maraylya,1281,15.46,2607,0,no_data,0,5.472,0.112476,4.85,Rouse Hill - McGraths Hill,False,False
+Sandringham,1275,23.69,2101,0,no_data,7,0.965,0.217204,31.18,Kogarah - Rockdale,False,False
+Grose Vale,1272,19.26,2447,0,no_data,0,3.72,0.182059,18.38,Kurrajong Heights - Ebenezer,False,False
+Carss Park,1265,22.21,2297,0,no_data,5,1.515,0.265589,55.29,Hurstville,False,True
+Castlereagh,1248,18.43,2370,0,no_data,0,4.627,0.133529,8.09,Penrith,False,False
+Holroyd,1248,8.65,1893,0,no_data,30,0.627,0.293165,72.94,Merrylands - Guildford,True,True
+Tennyson Point,1247,18.28,3232,0,no_data,8,0.885,0.272855,60.0,Ryde - Hunters Hill,False,True
+Mount Vernon,1235,15.55,3177,0,no_data,0,4.061,0.114738,5.29,Fairfield,False,False
+Mount Lewis,1234,15.56,1539,0,no_data,35,1.007,0.297551,75.44,Bankstown,True,True
+Port Hacking,1210,17.93,3394,0,no_data,0,2.235,0.143646,9.85,Cronulla - Miranda - Caringbah,False,False
+Windsor Downs,1183,20.2,2629,0,no_data,0,2.92,0.27539,61.47,Richmond - Windsor,False,True
+Daceyville,1146,38.83,651,0,no_data,15,0.44,0.265164,54.71,Botany,True,True
+Vineyard,1143,25.37,1214,0,no_data,0,2.371,0.229906,36.91,Rouse Hill - McGraths Hill,False,False
+Burwood Heights,1134,18.96,2087,0,no_data,25,0.765,0.309652,84.12,Strathfield - Burwood - Ashfield,True,True
+Sydenham,1100,14.0,2245,0,no_data,15,1.011,0.330559,92.35,Marrickville - Sydenham - Petersham,True,True
+Ebenezer,1081,14.62,2261,0,no_data,0,6.313,0.058309,2.21,Kurrajong Heights - Ebenezer,False,False
+Cattai,1077,15.97,2878,0,no_data,0,6.815,0.062231,2.35,Dural - Wisemans Ferry,False,False
+Church Point,1066,30.3,3182,0,no_data,0,2.459,0.166851,14.41,Pittwater,False,False
+Middle Dural,1040,21.54,3067,0,no_data,0,2.703,0.126209,7.06,Dural - Wisemans Ferry,False,False
+Kyle Bay,1039,18.67,3069,0,no_data,2,1.29,0.282419,66.91,Hurstville,False,True
+Ingleside,1030,18.25,2776,0,no_data,0,2.055,0.179727,17.79,Warringah,False,False
+Agnes Banks,996,13.96,2454,0,no_data,0,4.795,0.297673,75.74,Richmond - Windsor,False,True
+Denistone West,947,18.59,2579,0,no_data,16,0.908,0.267671,56.03,Ryde - Hunters Hill,True,True
+Kyeemagh,935,22.99,1699,0,no_data,12,1.33,0.276353,61.91,Kogarah - Rockdale,True,True
+Northwood,916,18.01,5012,0,no_data,11,0.935,0.305225,81.47,Chatswood - Lane Cove,True,True
+Watsons Bay,883,16.87,2924,0,no_data,0,2.431,0.197015,23.53,Eastern Suburbs - North,False,False
+Gilead,882,86.96,758,0,no_data,0,4.412,0.183673,18.97,Campbelltown (NSW),False,False
+Lavender Bay,870,22.76,2379,0,no_data,16,0.433,0.320598,88.97,North Sydney - Mosman,True,True
+Ellis Lane,852,20.19,2269,0,no_data,0,2.805,0.137182,8.68,Camden,False,False
+Kurmond,850,21.18,1941,0,no_data,0,3.188,0.272127,59.41,Kurrajong Heights - Ebenezer,False,True
+Woolwich,833,32.89,2931,0,no_data,7,1.629,0.318445,88.24,Ryde - Hunters Hill,False,True
+Regentville,829,14.23,2187,0,no_data,2,0.971,0.216916,31.03,Penrith,False,False
+Yarramundi,829,14.11,2829,0,no_data,0,4.793,0.110551,4.41,Blackheath - Blue Mountains North,False,False
+Clareville,822,34.79,2802,0,no_data,2,1.562,0.159004,13.38,Pittwater,False,False
+Cecil Park,815,21.1,2446,0,no_data,0,2.754,0.136965,8.53,Fairfield,False,False
+Huntleys Cove,740,32.16,2359,0,no_data,6,0.7,0.291545,72.06,Ryde - Hunters Hill,False,True
+Phillip Bay,721,22.19,2193,0,no_data,1,1.208,0.119782,5.88,Eastern Suburbs - South,False,False
+Lower Portland,711,19.41,1965,0,no_data,0,14.183,0.0,0.66,Bilpin - Colo - St Albans,False,False
+Scotland Island,711,17.02,2397,0,no_data,0,2.87,0.152742,11.76,Pittwater,False,False
+Kurrajong Hills,705,17.3,2644,0,no_data,0,3.571,0.112396,4.71,Kurrajong Heights - Ebenezer,False,False
+Dolans Bay,699,15.02,3542,0,no_data,1,1.802,0.149657,11.03,Cronulla - Miranda - Caringbah,False,False
+Kirkham,690,15.51,3416,0,no_data,1,1.776,0.175687,16.91,Camden,False,False
+Grose Wold,668,15.57,2409,0,no_data,0,4.575,0.265248,54.85,Kurrajong Heights - Ebenezer,False,True
+Wedderburn,665,18.05,2062,0,no_data,0,4.973,0.169591,15.15,Campbelltown (NSW),False,False
+Cowan,631,17.43,2250,0,no_data,0,5.745,0.117157,5.44,Hornsby,False,False
+Maroota,616,18.34,2079,0,no_data,0,15.914,0.0,0.66,Dural - Wisemans Ferry,False,False
+South Maroota,613,14.85,2424,0,no_data,0,11.393,0.008133,1.47,Dural - Wisemans Ferry,False,False
+Pleasure Point,606,11.22,3276,0,no_data,1,0.753,0.234791,38.97,Liverpool,False,False
+Kangaroo Point,602,22.92,4111,0,no_data,2,0.867,0.263006,52.65,Cronulla - Miranda - Caringbah,False,True
+Sandy Point,597,15.24,2986,0,no_data,2,1.486,0.210664,29.41,Liverpool,False,False
+Maianbar,539,20.78,2339,0,no_data,1,1.956,0.118969,5.74,Cronulla - Miranda - Caringbah,False,False
+Waterfall,522,16.28,2232,0,no_data,0,6.784,0.143985,10.0,Engadine - Heathcote,False,False
+Duffys Forest,509,13.95,4250,0,no_data,0,3.242,0.143101,9.56,Warringah,False,False
+Banksmeadow,508,5.12,2225,0,no_data,7,1.603,0.210386,29.26,Botany,False,False
+Henley,455,18.02,3353,0,no_data,8,1.116,0.299928,78.24,Ryde - Hunters Hill,False,True
+Cawdor,430,22.79,2399,0,no_data,0,3.047,0.12041,6.03,Douglas Park - Appin,False,False
+Blairmount,409,12.22,1792,0,no_data,1,1.886,0.242389,43.24,Campbelltown (NSW),False,False
+Sackville North,388,18.56,2833,0,no_data,0,10.401,0.006747,1.32,Dural - Wisemans Ferry,False,False
+Dawes Point,385,27.27,4708,0,no_data,29,0.368,0.339116,95.74,Sydney Inner City,True,True
+Angus,384,16.41,1890,0,no_data,0,2.215,0.223175,33.38,Blacktown - North,False,False
+Minto Heights,384,23.96,2178,0,no_data,0,2.31,0.155569,12.21,Campbelltown (NSW),False,False
+Shanes Park,384,14.06,1531,0,no_data,0,2.536,0.189495,20.59,Blacktown - North,False,False
+Linley Point,382,18.59,3833,0,no_data,5,0.887,0.293425,73.09,Chatswood - Lane Cove,False,True
+Tennyson,379,24.54,2133,0,no_data,0,2.718,0.296446,75.0,Kurrajong Heights - Ebenezer,False,True
+Englorie Park,361,10.53,1653,0,no_data,7,0.33,0.208093,28.09,Campbelltown (NSW),False,False
+The Slopes,327,17.43,2272,0,no_data,0,4.273,0.28317,67.5,Kurrajong Heights - Ebenezer,False,True
+Whale Beach,315,36.83,3285,0,no_data,0,2.488,0.129345,7.35,Pittwater,False,False
+Greendale,314,17.83,1958,0,no_data,0,5.727,0.158708,12.79,Bringelly - Green Valley,False,False
+Dangar Island,313,31.31,1857,0,no_data,2,1.544,0.126054,6.91,Hornsby,False,False
+Oxford Falls,265,60.75,961,0,no_data,0,2.197,0.200899,25.29,Warringah,False,False
+Fiddletown,259,14.29,2562,0,no_data,0,7.795,0.057611,2.06,Dural - Wisemans Ferry,False,False
+Bilgola Beach,251,33.86,4299,0,no_data,5,0.906,0.159004,13.38,Pittwater,False,False
+Sackville,230,15.65,2178,0,no_data,0,8.016,0.031681,1.62,Kurrajong Heights - Ebenezer,False,False
+Menangle Park,224,15.18,1687,0,no_data,0,3.609,0.200556,25.0,Campbelltown (NSW),False,False
+Berrilee,212,25.47,2349,0,no_data,0,3.164,0.110646,4.56,Dural - Wisemans Ferry,False,False
+Cumberland Reach,208,12.02,2386,0,no_data,0,11.877,0.0,0.66,Bilpin - Colo - St Albans,False,False
+Canoelands,177,17.51,2166,0,no_data,0,13.15,0.0,0.66,Dural - Wisemans Ferry,False,False
+Berowra Waters,169,29.59,1812,0,no_data,0,7.548,0.072817,2.5,Dural - Wisemans Ferry,False,False
+Badgerys Creek,168,29.17,1271,0,no_data,0,4.708,0.085303,3.09,Bringelly - Green Valley,False,False
+Clarendon,147,15.65,1625,0,no_data,1,1.658,0.359513,99.41,Richmond - Windsor,False,True
+Huntleys Point,142,33.8,3999,0,no_data,7,0.644,0.29811,76.18,Ryde - Hunters Hill,False,True
+Varroville,134,20.9,2549,0,no_data,2,1.457,0.228894,36.62,Campbelltown (NSW),False,False
+Lovett Bay,117,34.19,2437,0,no_data,0,4.201,0.16968,15.37,Pittwater,False,False
+Laughtondale,102,14.71,1724,0,no_data,0,18.469,0.0,0.66,Dural - Wisemans Ferry,False,False
+Cottage Point,96,40.62,2750,0,no_data,0,4.837,0.136059,8.38,Warringah,False,False
+Pitt Town Bottoms,85,3.53,3250,0,no_data,1,1.432,0.254472,47.79,Rouse Hill - McGraths Hill,False,False
+Elvina Bay,80,21.25,1958,0,no_data,0,3.694,0.16968,15.37,Pittwater,False,False
+Mulgrave,78,21.79,1812,0,no_data,0,2.048,0.303365,80.44,Rouse Hill - McGraths Hill,False,True
+Forest Glen,71,21.13,2583,0,no_data,0,6.655,0.036519,1.76,Dural - Wisemans Ferry,False,False
+Leets Vale,59,23.73,1812,0,no_data,0,18.134,0.0,0.66,Dural - Wisemans Ferry,False,False
+Richmond Lowlands,55,16.36,2749,0,no_data,2,1.884,0.408708,100.0,Richmond - Windsor,False,True
+Great Mackerel Beach,50,24.0,1124,0,no_data,0,5.544,0.149905,11.18,Pittwater,False,False
+Cornwallis,44,11.36,1875,0,no_data,0,2.759,0.379974,99.71,Richmond - Windsor,False,True
+Richards,37,13.51,725,0,no_data,0,2.658,0.211123,29.56,Blacktown - North,False,False
+Milsons Passage,32,68.75,949,0,no_data,0,5.689,0.085994,3.24,Hornsby,False,False
+Morning Bay,31,12.9,1791,0,no_data,0,3.918,0.167047,14.56,Pittwater,False,False
+Coasters Retreat,30,66.67,2250,0,no_data,0,4.253,0.130254,7.5,Pittwater,False,False
+Moore Park,18,0.0,3874,0,no_data,21,0.72,0.321016,89.26,Eastern Suburbs - North,True,True
+Smeaton Grange,16,0.0,899,0,no_data,8,1.286,0.232351,37.5,Camden,False,False
+Ku-ring-gai Chase,10,0.0,1708,0,no_data,0,4.596,0.147127,10.59,Warringah,False,False
+Clyde,9,0.0,725,0,no_data,12,0.897,0.30693,82.21,Merrylands - Guildford,True,True
+Scheyville,7,0.0,6999,0,no_data,0,3.145,0.146987,10.29,Rouse Hill - McGraths Hill,False,False
+Arndell Park,6,0.0,1375,1,gp_count_unknown,1,1.817,0.257275,48.82,Mount Druitt,False,False
+Bankstown Aerodrome,5,0.0,1999,0,no_data,3,1.19,0.310535,84.85,Bankstown,False,True
+Lucas Heights,4,0.0,0,0,no_data,0,3.132,0.143491,9.71,Engadine - Heathcote,False,False
+Rookwood,3,0.0,1874,0,no_data,6,1.422,0.301029,78.97,Auburn,False,True
+Singletons Mill,3,0.0,725,0,no_data,0,15.757,0.0,0.66,Dural - Wisemans Ferry,False,False

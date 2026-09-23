@@ -1,26 +1,5 @@
-intensity_rank,suburb,over_65_pct,estimated_seniors,People_Per_GP_Ratio,median_household_income_weekly,total_gp,population,spatial_density,area
-1,Blakehurst,20.43,1359.0,6652.0,2474,0.0,6652,1986.1459,3.3492
-2,Croydon,20.1,2161.8,5377.5,2157,1.0,10755,4356.5439,2.4687
-3,Caringbah South,19.8,2607.3,13168.0,2721,0.0,13168,2648.1649,4.9725
-4,Vaucluse,19.04,1810.7,9510.0,3418,0.0,9510,3080.0622,3.0876
-5,Greystanes,18.88,4438.9,5877.75,1930,3.0,23511,2658.4425,8.8439
-6,Killara,18.84,2000.8,10620.0,2802,0.0,10620,2284.4605,4.6488
-7,Concord West,18.78,1160.2,6178.0,2354,0.0,6178,2250.8015,2.7448
-8,Beverly Hills,18.69,1959.3,5241.5,1862,1.0,10483,3403.6819,3.0799
-9,Cromer,18.63,1496.0,8030.0,2483,0.0,8030,1271.9583,6.3131
-10,Gymea Bay,17.0,1187.1,6983.0,3047,0.0,6983,2534.2963,2.7554
-11,Wollstonecraft,16.2,1314.6,8115.0,2639,0.0,8115,6836.5628,1.187
-12,Oyster Bay,16.19,921.0,5689.0,3137,0.0,5689,1834.9837,3.1003
-13,Beacon Hill,15.89,1241.6,7814.0,2937,0.0,7814,2835.0628,2.7562
-14,Bonnyrigg Heights,15.46,1139.2,7369.0,1930,0.0,7369,3445.3899,2.1388
-15,North Narrabeen,15.21,915.0,6016.0,2711,0.0,6016,2011.5692,2.9907
-16,Lilyfield,14.2,1085.0,7641.0,2858,0.0,7641,3462.4796,2.2068
-17,Naremburn,13.57,803.9,5924.0,3272,0.0,5924,4666.0365,1.2696
-18,Lane Cove North,12.16,1431.6,11773.0,2386,0.0,11773,5043.9141,2.3341
-19,Narellan Vale,10.92,756.9,6931.0,2248,0.0,6931,2701.3017,2.5658
-20,Girraween,10.71,670.0,6256.0,2378,0.0,6256,2677.6237,2.3364
-21,Oakhurst,9.77,678.7,6947.0,2097,0.0,6947,3422.8419,2.0296
-22,St Helens Park,9.69,644.1,6647.0,1850,0.0,6647,1290.429,5.151
-23,Currans Hill,7.56,418.9,5541.0,2170,0.0,5541,1541.6504,3.5942
-24,Tallawong,3.35,220.1,6570.0,2759,0.0,6570,2032.5455,3.2324
-25,Bardia,2.89,166.1,5747.0,2417,0.0,5747,2693.9483,2.1333
+intensity_rank,suburb,over_65_pct,estimated_seniors,People_Per_GP_Ratio,median_household_income_weekly,total_gp,population,spatial_density,area,gp_data_status,clinics_listed,total_gp_is_floor,practices_within_2km,nearest_practice_km,access_general,access_general_pct,gpc_name,saturated_nearby,access_above_median
+1,Croydon,20.1,2161.8,5377.5,2157,1.0,10755,4356.5439,2.4687,ok,1,False,27,0.385,0.311002,85.59,Strathfield - Burwood - Ashfield,True,True
+2,Greystanes,18.88,4438.9,5877.75,1930,3.0,23511,2658.4425,8.8439,ok,4,True,5,0.645,0.311307,85.74,Merrylands - Guildford,False,True
+3,Beverly Hills,18.69,1959.3,5241.5,1862,1.0,10483,3403.6819,3.0799,ok,1,False,10,0.25,0.300136,78.38,Hurstville,True,True
+4,Beacon Hill,15.89,1241.6,7814.0,2937,0.0,7814,2835.0628,2.7562,ok,0,False,6,1.465,0.185933,20.0,Warringah,False,False

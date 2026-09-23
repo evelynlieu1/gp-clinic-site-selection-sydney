@@ -1,0 +1,681 @@
+suburb,dpa_status,dpa_area_name,overlap_fraction,ambiguous,minority_status_fraction,dpa_catchments,dpa_catchment_count,dpa_covered_fraction,sal_name
+Abbotsbury,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Abbotsbury
+Abbotsford,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Abbotsford (NSW)
+Acacia Gardens,N,Blacktown - North,1.0,False,0.0,Blacktown; Blacktown - North,2,1.0,Acacia Gardens
+Agnes Banks,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Agnes Banks
+Airds,N,Campbelltown (NSW),0.637309,True,0.362691,Campbelltown (NSW),1,1.0,Airds
+Alexandria,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Alexandria
+Alfords Point,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Alfords Point
+Allambie Heights,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Allambie Heights
+Allawah,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Allawah
+Ambarvale,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Ambarvale
+Angus,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Angus
+Annandale,N,Leichhardt,1.0,False,0.0,Leichhardt; Sydney Inner City,2,1.0,Annandale (NSW)
+Annangrove,N,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Annangrove
+Arcadia,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Arcadia (NSW)
+Arncliffe,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Arncliffe
+Arndell Park,N,Mount Druitt,1.0,False,0.0,Blacktown; Mount Druitt,2,1.0,Arndell Park
+Artarmon,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Artarmon
+Ashbury,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Ashbury
+Ashcroft,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Ashcroft
+Ashfield,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Ashfield (NSW)
+Asquith,Y,Hornsby,0.929733,False,0.070267,Hornsby,1,1.0,Asquith
+Auburn,N,Auburn,1.0,False,0.0,Auburn,1,1.0,Auburn (NSW)
+Austral,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Austral
+Avalon Beach,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Avalon Beach
+Badgerys Creek,Y,Bringelly - Green Valley,0.689158,True,0.310842,Bringelly - Green Valley; Penrith,2,1.0,Badgerys Creek
+Balgowlah,N,Manly,1.0,False,0.0,Manly,1,1.0,Balgowlah
+Balgowlah Heights,N,Manly,1.0,False,0.0,Manly,1,1.0,Balgowlah Heights
+Balmain,N,Leichhardt,1.0,False,0.0,Leichhardt,1,1.0,Balmain
+Balmain East,N,Leichhardt,1.0,False,0.0,Leichhardt; Sydney Inner City,2,1.0,Balmain East
+Bangor,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Bangor (NSW)
+Banksia,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Banksia
+Banksmeadow,N,Botany,1.0,False,0.0,Botany,1,1.0,Banksmeadow
+Bankstown,N,Bankstown,1.0,False,0.0,Bankstown; Canterbury,2,1.0,Bankstown
+Bankstown Aerodrome,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Bankstown Aerodrome
+Barangaroo,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Barangaroo
+Barden Ridge,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Barden Ridge
+Bardia,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Bardia
+Bardwell Park,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Bardwell Park
+Bardwell Valley,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Bardwell Valley
+Bass Hill,N,Bankstown,1.0,False,0.0,Bankstown; Merrylands - Guildford,2,1.0,Bass Hill
+Baulkham Hills,N,Baulkham Hills,1.0,False,0.0,Baulkham Hills; Blacktown; Parramatta,3,1.0,Baulkham Hills
+Bayview,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Bayview (NSW)
+Beacon Hill,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Beacon Hill
+Beaconsfield,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Beaconsfield (NSW)
+Beaumont Hills,N,Rouse Hill - McGraths Hill,1.0,False,0.0,Rouse Hill - McGraths Hill,1,1.0,Beaumont Hills
+Beecroft,N,Pennant Hills - Epping,1.0,False,0.0,Carlingford; Pennant Hills - Epping,2,1.0,Beecroft
+Belfield,N,Canterbury,1.0,False,0.0,Canterbury,1,1.0,Belfield
+Bella Vista,N,Baulkham Hills,1.0,False,0.0,Baulkham Hills,1,1.0,Bella Vista
+Bellevue Hill,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Bellevue Hill
+Belmore,N,Canterbury,1.0,False,0.0,Canterbury,1,1.0,Belmore
+Belrose,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Belrose
+Berala,N,Auburn,1.0,False,0.0,Auburn,1,1.0,Berala
+Berkshire Park,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Berkshire Park
+Berowra,Y,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Berowra
+Berowra Heights,Y,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Berowra Heights
+Berowra Waters,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry; Hornsby,2,1.0,Berowra Waters
+Berrilee,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Berrilee
+Beverley Park,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Beverley Park
+Beverly Hills,N,Hurstville,1.0,False,0.0,Canterbury; Hurstville,2,1.0,Beverly Hills
+Bexley,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Bexley
+Bexley North,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Bexley North
+Bidwill,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Bidwill (NSW)
+Bilgola Beach,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Bilgola Beach
+Bilgola Plateau,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Bilgola Plateau
+Birchgrove,N,Leichhardt,1.0,False,0.0,Leichhardt,1,1.0,Birchgrove
+Birrong,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Birrong
+Blackett,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Blackett
+Blacktown,N,Blacktown,1.0,False,0.0,Blacktown,1,1.0,Blacktown
+Blair Athol,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Blair Athol (NSW)
+Blairmount,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Blairmount
+Blakehurst,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Blakehurst
+Bligh Park,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Bligh Park
+Bondi,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Bondi
+Bondi Beach,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Bondi Beach
+Bondi Junction,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Bondi Junction
+Bonnet Bay,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Bonnet Bay
+Bonnyrigg,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Bonnyrigg
+Bonnyrigg Heights,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Bonnyrigg Heights
+Bossley Park,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Bossley Park
+Botany,N,Botany,1.0,False,0.0,Botany,1,1.0,Botany
+Bow Bowing,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Bow Bowing
+Box Hill,N,Rouse Hill - McGraths Hill,1.0,False,0.0,Rouse Hill - McGraths Hill,1,1.0,Box Hill (NSW)
+Bradbury,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Bradbury (NSW)
+Breakfast Point,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Breakfast Point
+Brighton-Le-Sands,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Brighton-Le-Sands
+Bringelly,N,Bringelly - Green Valley,0.644347,True,0.355653,Bringelly - Green Valley,1,1.0,Bringelly
+Bronte,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Bronte
+Brooklyn,Y,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Brooklyn (NSW)
+Brookvale,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Brookvale
+Bundeena,Y,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Bundeena
+Bungarribee,N,Blacktown,1.0,False,0.0,Blacktown; Mount Druitt,2,1.0,Bungarribee
+Burraneer,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Burraneer
+Burwood,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Burwood (NSW)
+Burwood Heights,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Burwood Heights
+Busby,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Busby
+Cabarita,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Cabarita (NSW)
+Cabramatta,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Cabramatta
+Cabramatta West,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Cabramatta West
+Caddens,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Caddens
+Cambridge Gardens,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Cambridge Gardens
+Cambridge Park,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Cambridge Park
+Camden,N,Camden,1.0,False,0.0,Camden,1,1.0,Camden
+Camden South,N,Camden,1.0,False,0.0,Camden,1,1.0,Camden South
+Cammeray,N,North Sydney - Mosman,1.0,False,0.0,Chatswood - Lane Cove; North Sydney - Mosman,2,1.0,Cammeray
+Campbelltown,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Campbelltown (NSW)
+Camperdown,N,Sydney Inner City,1.0,False,0.0,Marrickville - Sydenham - Petersham; Sydney Inner City,2,1.0,Camperdown (NSW)
+Campsie,N,Canterbury,1.0,False,0.0,Canterbury,1,1.0,Campsie
+Canada Bay,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Canada Bay
+Canley Heights,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Canley Heights
+Canley Vale,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Canley Vale
+Canoelands,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Canoelands
+Canterbury,N,Canterbury,1.0,False,0.0,Canterbury; Strathfield - Burwood - Ashfield,2,1.0,Canterbury (NSW)
+Caringbah,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Caringbah
+Caringbah South,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Caringbah South
+Carlingford,N,Carlingford,1.0,False,0.0,Carlingford; Ryde - Hunters Hill,2,1.0,Carlingford
+Carlton,N,Kogarah - Rockdale,1.0,False,0.0,Hurstville; Kogarah - Rockdale,2,1.0,Carlton (NSW)
+Carnes Hill,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Carnes Hill
+Carramar,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Carramar (NSW)
+Carss Park,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Carss Park
+Cartwright,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Cartwright
+Castle Cove,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Castle Cove
+Castle Hill,N,Baulkham Hills,1.0,False,0.0,Baulkham Hills,1,1.0,Castle Hill (NSW)
+Castlecrag,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Castlecrag
+Castlereagh,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Castlereagh
+Casula,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Casula
+Catherine Field,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Catherine Field
+Cattai,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry; Rouse Hill - McGraths Hill,2,1.0,Cattai
+Cawdor,Y,Douglas Park - Appin,0.738287,True,0.261713,Camden; Douglas Park - Appin,2,1.0,Cawdor (NSW)
+Cecil Hills,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Cecil Hills
+Cecil Park,Y,Fairfield,0.54017,True,0.45983,Bringelly - Green Valley; Fairfield,2,1.0,Cecil Park
+Centennial Park,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Centennial Park (NSW)
+Chatswood,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Chatswood
+Chatswood West,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Chatswood West
+Cheltenham,N,Pennant Hills - Epping,1.0,False,0.0,Pennant Hills - Epping,1,1.0,Cheltenham (NSW)
+Cherrybrook,N,Baulkham Hills,1.0,False,0.0,Baulkham Hills,1,1.0,Cherrybrook
+Chester Hill,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Chester Hill
+Chifley,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,Chifley (NSW)
+Chippendale,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Chippendale
+Chipping Norton,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Chipping Norton
+Chiswick,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Chiswick
+Chullora,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Chullora
+Church Point,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Church Point
+Claremont Meadows,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Claremont Meadows
+Clarendon,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Clarendon (NSW)
+Clareville,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Clareville
+Claymore,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Claymore
+Clemton Park,N,Canterbury,1.0,False,0.0,Canterbury,1,1.0,Clemton Park
+Clontarf,N,Manly,1.0,False,0.0,Manly,1,1.0,Clontarf (NSW)
+Clovelly,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,Clovelly
+Clyde,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Clyde (NSW)
+Coasters Retreat,Y,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Coasters Retreat
+Cobbitty,N,Bringelly - Green Valley,0.618901,True,0.381099,Bringelly - Green Valley,1,1.0,Cobbitty
+Colebee,N,Blacktown - North,1.0,False,0.0,Blacktown - North; Mount Druitt,2,1.0,Colebee
+Collaroy,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Collaroy (NSW)
+Collaroy Plateau,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Collaroy Plateau
+Colyton,N,St Marys (NSW),1.0,False,0.0,St Marys (NSW),1,1.0,Colyton
+Como,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Como (NSW)
+Concord,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Concord
+Concord West,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Concord West
+Condell Park,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Condell Park
+Connells Point,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Connells Point
+Constitution Hill,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Constitution Hill
+Coogee,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,Coogee (NSW)
+Cornwallis,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Cornwallis
+Cottage Point,Y,Warringah,1.0,False,0.0,Warringah,1,1.0,Cottage Point
+Cowan,Y,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Cowan
+Cranebrook,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Cranebrook
+Cremorne,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Cremorne (NSW)
+Cremorne Point,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Cremorne Point
+Cromer,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Cromer (NSW)
+Cronulla,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Cronulla
+Crows Nest,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Crows Nest (NSW)
+Croydon,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Croydon (NSW)
+Croydon Park,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Croydon Park (NSW)
+Cumberland Reach,Y,Bilpin - Colo - St Albans,1.0,False,0.0,Bilpin - Colo - St Albans,1,1.0,Cumberland Reach
+Curl Curl,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Curl Curl
+Currans Hill,N,Camden,1.0,False,0.0,Camden,1,1.0,Currans Hill
+Daceyville,N,Botany,1.0,False,0.0,Botany,1,1.0,Daceyville
+Dangar Island,Y,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Dangar Island
+Darling Point,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Darling Point
+Darlinghurst,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Darlinghurst
+Darlington,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Darlington (Sydney - NSW)
+Davidson,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Davidson
+Dawes Point,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Dawes Point
+Dean Park,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Dean Park
+Dee Why,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Dee Why
+Denham Court,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Denham Court
+Denistone,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Denistone
+Denistone East,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Denistone East
+Denistone West,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Denistone West
+Dharruk,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Dharruk
+Dolans Bay,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Dolans Bay
+Dolls Point,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Dolls Point
+Doonside,N,Blacktown,1.0,False,0.0,Blacktown,1,1.0,Doonside
+Double Bay,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Double Bay
+Dover Heights,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Dover Heights
+Drummoyne,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Drummoyne
+Duffys Forest,Y,Warringah,1.0,False,0.0,Warringah,1,1.0,Duffys Forest
+Dulwich Hill,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Marrickville - Sydenham - Petersham; Strathfield - Burwood - Ashfield,2,1.0,Dulwich Hill
+Dundas,N,Carlingford,1.0,False,0.0,Carlingford,1,1.0,Dundas (NSW)
+Dundas Valley,N,Carlingford,1.0,False,0.0,Carlingford,1,1.0,Dundas Valley
+Dural,N,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Dural (Hornsby - NSW)
+Eagle Vale,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Eagle Vale
+Earlwood,N,Canterbury,1.0,False,0.0,Canterbury,1,1.0,Earlwood
+East Hills,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,East Hills
+East Killara,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,East Killara
+East Kurrajong,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,East Kurrajong
+East Lindfield,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,East Lindfield
+East Ryde,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,East Ryde
+Eastern Creek,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Eastern Creek
+Eastgardens,N,Botany,1.0,False,0.0,Botany,1,1.0,Eastgardens
+Eastlakes,N,Botany,1.0,False,0.0,Botany,1,1.0,Eastlakes
+Eastwood,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Eastwood (NSW)
+Ebenezer,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,Ebenezer (NSW)
+Edensor Park,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Edensor Park
+Edgecliff,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Edgecliff
+Edmondson Park,N,Liverpool,1.0,False,0.0,Bringelly - Green Valley; Liverpool,2,1.0,Edmondson Park
+Elanora Heights,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Elanora Heights
+Elderslie,N,Camden,1.0,False,0.0,Camden,1,1.0,Elderslie (Camden - NSW)
+Elizabeth Bay,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Elizabeth Bay
+Elizabeth Hills,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Elizabeth Hills
+Ellis Lane,N,Camden,1.0,False,0.0,Camden,1,1.0,Ellis Lane
+Elvina Bay,Y,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Elvina Bay
+Emerton,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Emerton
+Emu Heights,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Emu Heights (NSW)
+Emu Plains,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Emu Plains
+Enfield,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Enfield (NSW)
+Engadine,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Engadine
+Englorie Park,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Englorie Park
+Enmore,N,Marrickville - Sydenham - Petersham,1.0,False,0.0,Marrickville - Sydenham - Petersham; Sydney Inner City,2,1.0,Enmore (Inner West - NSW)
+Epping,N,Pennant Hills - Epping,1.0,False,0.0,Carlingford; Pennant Hills - Epping; Ryde - Hunters Hill,3,1.0,Epping (NSW)
+Ermington,N,Carlingford,1.0,False,0.0,Carlingford,1,1.0,Ermington
+Erskine Park,N,St Marys (NSW),1.0,False,0.0,St Marys (NSW),1,1.0,Erskine Park
+Erskineville,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Erskineville
+Eschol Park,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Eschol Park
+Eveleigh,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Eveleigh
+Fairfield,N,Fairfield,1.0,False,0.0,Fairfield; Merrylands - Guildford,2,1.0,Fairfield (NSW)
+Fairfield East,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Fairfield East
+Fairfield Heights,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Fairfield Heights
+Fairfield West,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Fairfield West
+Fairlight,N,Manly,1.0,False,0.0,Manly,1,1.0,Fairlight
+Fiddletown,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Fiddletown
+Five Dock,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Five Dock
+Forest Glen,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Forest Glen (NSW)
+Forest Lodge,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Forest Lodge
+Forestville,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Forestville (NSW)
+Freemans Reach,N,Kurrajong Heights - Ebenezer,0.722357,True,0.277643,Kurrajong Heights - Ebenezer,1,1.0,Freemans Reach
+Frenchs Forest,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Frenchs Forest
+Freshwater,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Freshwater (NSW)
+Gables,N,Rouse Hill - McGraths Hill,0.828668,True,0.171332,Rouse Hill - McGraths Hill,1,1.0,Gables
+Galston,N,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Galston
+Georges Hall,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Georges Hall
+Gilead,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Gilead
+Girraween,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Girraween (NSW)
+Gladesville,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Gladesville
+Glebe,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Glebe (NSW)
+Gledswood Hills,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Gledswood Hills
+Glen Alpine,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Glen Alpine
+Glendenning,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Glendenning
+Glenfield,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Glenfield (NSW)
+Glenhaven,N,Baulkham Hills,1.0,False,0.0,Baulkham Hills,1,1.0,Glenhaven
+Glenmore Park,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Glenmore Park
+Glenorie,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Glenorie
+Glenwood,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Glenwood (NSW)
+Glossodia,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,Glossodia
+Gordon,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,Gordon (NSW)
+Grantham Farm,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Grantham Farm
+Granville,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford; Parramatta,2,1.0,Granville (NSW)
+Grasmere,N,Camden,1.0,False,0.0,Camden,1,1.0,Grasmere
+Grays Point,N,Cronulla - Miranda - Caringbah,0.970864,False,0.029136,Cronulla - Miranda - Caringbah; Engadine - Heathcote,2,1.0,Grays Point
+Great Mackerel Beach,Y,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Great Mackerel Beach
+Green Valley,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Green Valley (NSW)
+Greenacre,N,Bankstown,1.0,False,0.0,Bankstown; Strathfield - Burwood - Ashfield,2,1.0,Greenacre
+Greendale,Y,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Greendale (Liverpool - NSW)
+Greenfield Park,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Greenfield Park
+Greenhills Beach,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Greenhills Beach
+Greenwich,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Greenwich
+Gregory Hills,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley; Camden; Campbelltown (NSW),3,1.0,Gregory Hills
+Greystanes,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford; Parramatta,2,1.0,Greystanes
+Grose Vale,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,Grose Vale
+Grose Wold,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,Grose Wold
+Guildford,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Guildford (NSW)
+Guildford West,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Guildford West
+Gymea,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah; Engadine - Heathcote,2,1.0,Gymea
+Gymea Bay,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Gymea Bay
+Haberfield,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Canada Bay; Strathfield - Burwood - Ashfield,2,1.0,Haberfield
+Hammondville,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Hammondville
+Harrington Park,N,Camden,1.0,False,0.0,Camden,1,1.0,Harrington Park
+Harris Park,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Harris Park
+Hassall Grove,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Hassall Grove
+Haymarket,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Haymarket
+Heathcote,Y,Engadine - Heathcote,0.780493,True,0.219507,Engadine - Heathcote,1,1.0,Heathcote (NSW)
+Hebersham,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Hebersham
+Heckenberg,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Heckenberg
+Henley,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Henley
+Hillsdale,N,Botany,1.0,False,0.0,Botany,1,1.0,Hillsdale
+Hinchinbrook,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Hinchinbrook (NSW)
+Hobartville,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Hobartville
+Holroyd,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford; Parramatta,2,1.0,Holroyd
+Holsworthy,Y,Holsworthy Military Area,0.682284,True,0.317716,Holsworthy Military Area; Liverpool,2,1.0,Holsworthy
+Homebush,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Homebush (NSW)
+Homebush West,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Homebush West
+Horningsea Park,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Horningsea Park
+Hornsby,N,Hornsby,0.992784,False,0.007216,Hornsby,1,1.0,Hornsby
+Hornsby Heights,Y,Hornsby,0.979834,False,0.020166,Hornsby,1,1.0,Hornsby Heights
+Horsley Park,Y,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Horsley Park
+Hoxton Park,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley; Liverpool,2,1.0,Hoxton Park
+Hunters Hill,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Hunters Hill
+Huntleys Cove,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Huntleys Cove
+Huntleys Point,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Huntleys Point
+Hurlstone Park,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Hurlstone Park
+Hurstville,N,Hurstville,1.0,False,0.0,Hurstville; Kogarah - Rockdale,2,1.0,Hurstville
+Hurstville Grove,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Hurstville Grove
+Illawong,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Illawong
+Ingleburn,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Ingleburn
+Ingleside,Y,Warringah,0.551385,True,0.448615,Pittwater; Warringah,2,1.0,Ingleside
+Jamisontown,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Jamisontown
+Jannali,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Jannali
+Jordan Springs,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Jordan Springs
+Kangaroo Point,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Kangaroo Point (NSW)
+Kareela,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Kareela
+Kearns,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Kearns
+Kellyville,N,Baulkham Hills,1.0,False,0.0,Baulkham Hills,1,1.0,Kellyville
+Kellyville Ridge,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Kellyville Ridge
+Kemps Creek,Y,Fairfield,0.615783,True,0.384217,Bringelly - Green Valley; Fairfield,2,1.0,Kemps Creek
+Kensington,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,Kensington (NSW)
+Kenthurst,N,Dural - Wisemans Ferry,0.542216,True,0.457784,Dural - Wisemans Ferry,1,1.0,Kenthurst
+Kentlyn,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Kentlyn
+Killara,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,Killara (NSW)
+Killarney Heights,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Killarney Heights
+Kings Langley,N,Blacktown,1.0,False,0.0,Blacktown,1,1.0,Kings Langley
+Kings Park,N,Blacktown,1.0,False,0.0,Blacktown,1,1.0,Kings Park (NSW)
+Kingsford,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,Kingsford (NSW)
+Kingsgrove,N,Canterbury,1.0,False,0.0,Canterbury; Hurstville; Kogarah - Rockdale,3,1.0,Kingsgrove
+Kingswood,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Kingswood (Penrith - NSW)
+Kirkham,N,Camden,1.0,False,0.0,Camden,1,1.0,Kirkham
+Kirrawee,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Kirrawee
+Kirribilli,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Kirribilli
+Kogarah,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Kogarah
+Kogarah Bay,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Kogarah Bay
+Ku-ring-gai Chase,Y,Warringah,0.974732,False,0.025268,Pittwater; Warringah,2,1.0,Ku-ring-gai Chase
+Kurmond,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,Kurmond
+Kurnell,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Kurnell
+Kurraba Point,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Kurraba Point
+Kurrajong,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,Kurrajong
+Kurrajong Hills,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,Kurrajong Hills
+Kyeemagh,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Kyeemagh
+Kyle Bay,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Kyle Bay
+La Perouse,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,La Perouse
+Lakemba,N,Canterbury,1.0,False,0.0,Canterbury,1,1.0,Lakemba
+Lalor Park,N,Blacktown,1.0,False,0.0,Blacktown,1,1.0,Lalor Park
+Lane Cove,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Lane Cove
+Lane Cove North,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Lane Cove North
+Lane Cove West,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Lane Cove West
+Lansvale,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Lansvale
+Laughtondale,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Laughtondale
+Lavender Bay,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Lavender Bay
+Leets Vale,Y,Dural - Wisemans Ferry,1.0,False,0.0,Bilpin - Colo - St Albans; Dural - Wisemans Ferry,2,1.0,Leets Vale
+Leichhardt,N,Leichhardt,1.0,False,0.0,Leichhardt,1,1.0,Leichhardt (NSW)
+Leonay,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Leonay
+Leppington,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Leppington
+Lethbridge Park,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Lethbridge Park
+Leumeah,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Leumeah
+Lewisham,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Marrickville - Sydenham - Petersham; Strathfield - Burwood - Ashfield,2,1.0,Lewisham (NSW)
+Liberty Grove,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Liberty Grove
+Lidcombe,N,Auburn,1.0,False,0.0,Auburn,1,1.0,Lidcombe
+Lilli Pilli,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Lilli Pilli (Sutherland Shire - NSW)
+Lilyfield,N,Leichhardt,1.0,False,0.0,Leichhardt,1,1.0,Lilyfield
+Lindfield,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,Lindfield
+Linley Point,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Linley Point
+Little Bay,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,Little Bay
+Liverpool,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Liverpool
+Llandilo,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Llandilo
+Loftus,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Loftus
+Londonderry,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Londonderry (NSW)
+Long Point,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Long Point (Campbelltown - NSW)
+Longueville,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Longueville
+Lovett Bay,Y,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Lovett Bay
+Lower Portland,Y,Bilpin - Colo - St Albans,1.0,False,0.0,Bilpin - Colo - St Albans; Dural - Wisemans Ferry,2,1.0,Lower Portland
+Lucas Heights,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Lucas Heights
+Luddenham,Y,Penrith,0.896591,True,0.103409,Bringelly - Green Valley; Penrith,2,1.0,Luddenham
+Lugarno,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Lugarno
+Lurnea,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Lurnea
+Macquarie Fields,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Macquarie Fields
+Macquarie Links,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Macquarie Links
+Macquarie Park,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Macquarie Park
+Maianbar,Y,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Maianbar
+Malabar,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,Malabar
+Manly,N,Manly,1.0,False,0.0,Manly,1,1.0,Manly (NSW)
+Manly Vale,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Manly Vale
+Maraylya,Y,Rouse Hill - McGraths Hill,1.0,False,0.0,Rouse Hill - McGraths Hill,1,1.0,Maraylya
+Marayong,N,Blacktown,1.0,False,0.0,Blacktown,1,1.0,Marayong
+Maroota,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Maroota
+Maroubra,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,Maroubra
+Marrickville,N,Marrickville - Sydenham - Petersham,1.0,False,0.0,Marrickville - Sydenham - Petersham,1,1.0,Marrickville
+Marsden Park,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Marsden Park
+Marsfield,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Marsfield
+Mascot,N,Botany,1.0,False,0.0,Botany,1,1.0,Mascot
+Matraville,N,Eastern Suburbs - South,1.0,False,0.0,Botany; Eastern Suburbs - South,2,1.0,Matraville
+Mays Hill,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Mays Hill
+McGraths Hill,N,Rouse Hill - McGraths Hill,1.0,False,0.0,Rouse Hill - McGraths Hill,1,1.0,McGraths Hill
+McMahons Point,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,McMahons Point
+Meadowbank,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Meadowbank (NSW)
+Melonba,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Melonba
+Melrose Park,N,Carlingford,1.0,False,0.0,Carlingford; Ryde - Hunters Hill,2,1.0,Melrose Park (NSW)
+Menai,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Menai
+Menangle Park,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Menangle Park
+Merrylands,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford; Parramatta,2,1.0,Merrylands
+Merrylands West,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Merrylands West
+Middle Cove,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Middle Cove
+Middle Dural,N,Dural - Wisemans Ferry,0.570298,True,0.429702,Dural - Wisemans Ferry,1,1.0,Middle Dural
+Middleton Grange,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Middleton Grange
+Miller,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Miller
+Millers Point,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Millers Point
+Milperra,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Milperra
+Milsons Passage,Y,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Milsons Passage
+Milsons Point,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Milsons Point
+Minchinbury,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Minchinbury
+Minto,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Minto
+Minto Heights,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Minto Heights
+Miranda,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Miranda (NSW)
+Mona Vale,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Mona Vale
+Monterey,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Monterey
+Moore Park,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Moore Park
+Moorebank,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Moorebank
+Morning Bay,Y,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Morning Bay
+Mortdale,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Mortdale
+Mortlake,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Mortlake (NSW)
+Mosman,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Mosman
+Mount Annan,N,Camden,1.0,False,0.0,Camden,1,1.0,Mount Annan
+Mount Colah,Y,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Mount Colah
+Mount Druitt,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Mount Druitt
+Mount Kuring-Gai,Y,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Mount Kuring-Gai
+Mount Lewis,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Mount Lewis
+Mount Pritchard,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Mount Pritchard
+Mount Vernon,Y,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Mount Vernon
+Mulgoa,Y,Penrith,0.5198,True,0.4802,Penrith,1,1.0,Mulgoa
+Mulgrave,N,Rouse Hill - McGraths Hill,1.0,False,0.0,Rouse Hill - McGraths Hill,1,1.0,Mulgrave (NSW)
+Narellan,N,Camden,1.0,False,0.0,Camden,1,1.0,Narellan
+Narellan Vale,N,Camden,1.0,False,0.0,Camden,1,1.0,Narellan Vale
+Naremburn,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Naremburn
+Narrabeen,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Narrabeen
+Narraweena,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Narraweena
+Narwee,N,Hurstville,1.0,False,0.0,Canterbury; Hurstville,2,1.0,Narwee
+Neutral Bay,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Neutral Bay
+Newington,N,Auburn,1.0,False,0.0,Auburn,1,1.0,Newington (NSW)
+Newport,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Newport (NSW)
+Newtown,N,Sydney Inner City,1.0,False,0.0,Marrickville - Sydenham - Petersham; Sydney Inner City,2,1.0,Newtown (NSW)
+Nirimba Fields,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Nirimba Fields
+Normanhurst,N,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Normanhurst
+North Balgowlah,N,Warringah,1.0,False,0.0,Warringah,1,1.0,North Balgowlah
+North Bondi,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,North Bondi
+North Curl Curl,N,Warringah,1.0,False,0.0,Warringah,1,1.0,North Curl Curl
+North Epping,N,Pennant Hills - Epping,1.0,False,0.0,Pennant Hills - Epping,1,1.0,North Epping
+North Kellyville,N,Rouse Hill - McGraths Hill,1.0,False,0.0,Rouse Hill - McGraths Hill,1,1.0,North Kellyville
+North Manly,N,Warringah,1.0,False,0.0,Warringah,1,1.0,North Manly
+North Narrabeen,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,North Narrabeen
+North Parramatta,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,North Parramatta
+North Richmond,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,North Richmond
+North Rocks,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,North Rocks
+North Ryde,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,North Ryde
+North St Marys,N,St Marys (NSW),1.0,False,0.0,St Marys (NSW),1,1.0,North St Marys
+North Strathfield,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,North Strathfield
+North Sydney,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,North Sydney
+North Turramurra,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,North Turramurra
+North Wahroonga,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,North Wahroonga
+North Willoughby,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,North Willoughby
+Northbridge,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Northbridge (NSW)
+Northmead,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Northmead
+Northwood,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Northwood (NSW)
+Norwest,N,Baulkham Hills,1.0,False,0.0,Baulkham Hills,1,1.0,Norwest
+Oakhurst,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Oakhurst (NSW)
+Oakville,N,Rouse Hill - McGraths Hill,1.0,False,0.0,Rouse Hill - McGraths Hill,1,1.0,Oakville
+Oatlands,N,Carlingford,1.0,False,0.0,Carlingford; Parramatta,2,1.0,Oatlands (NSW)
+Oatley,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Oatley
+Old Guildford,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Old Guildford
+Old Toongabbie,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Old Toongabbie
+Oran Park,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Oran Park
+Orchard Hills,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Orchard Hills
+Oxford Falls,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Oxford Falls
+Oxley Park,N,St Marys (NSW),1.0,False,0.0,St Marys (NSW),1,1.0,Oxley Park
+Oyster Bay,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Oyster Bay
+Paddington,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Paddington (NSW)
+Padstow,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Padstow
+Padstow Heights,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Padstow Heights
+Pagewood,N,Botany,1.0,False,0.0,Botany,1,1.0,Pagewood
+Palm Beach,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Palm Beach (NSW)
+Panania,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Panania
+Parklea,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Parklea
+Parramatta,N,Parramatta,1.0,False,0.0,Carlingford; Parramatta,2,1.0,Parramatta
+Peakhurst,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Peakhurst
+Peakhurst Heights,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Peakhurst Heights
+Pemulwuy,N,Mount Druitt,1.0,False,0.0,Blacktown; Merrylands - Guildford; Mount Druitt,3,1.0,Pemulwuy
+Pendle Hill,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Pendle Hill
+Pennant Hills,N,Pennant Hills - Epping,1.0,False,0.0,Pennant Hills - Epping,1,1.0,Pennant Hills
+Penrith,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Penrith
+Penshurst,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,Penshurst (NSW)
+Petersham,N,Marrickville - Sydenham - Petersham,1.0,False,0.0,Marrickville - Sydenham - Petersham,1,1.0,Petersham
+Phillip Bay,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,Phillip Bay
+Picnic Point,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Picnic Point
+Pitt Town,N,Rouse Hill - McGraths Hill,0.648241,True,0.351759,Rouse Hill - McGraths Hill,1,1.0,Pitt Town
+Pitt Town Bottoms,N,Rouse Hill - McGraths Hill,1.0,False,0.0,Rouse Hill - McGraths Hill,1,1.0,Pitt Town Bottoms
+Pleasure Point,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Pleasure Point
+Plumpton,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Plumpton (NSW)
+Point Piper,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Point Piper
+Port Hacking,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Port Hacking
+Potts Hill,N,Bankstown,1.0,False,0.0,Auburn; Bankstown,2,1.0,Potts Hill
+Potts Point,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Potts Point
+Prairiewood,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Prairiewood
+Prestons,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Prestons
+Prospect,N,Blacktown,1.0,False,0.0,Blacktown,1,1.0,Prospect (NSW)
+Punchbowl,N,Canterbury,1.0,False,0.0,Bankstown; Canterbury,2,1.0,Punchbowl (Canterbury-Bankstown - NSW)
+Putney,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Putney
+Pymble,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,Pymble
+Pyrmont,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Pyrmont
+Quakers Hill,N,Blacktown - North,1.0,False,0.0,Blacktown; Blacktown - North,2,1.0,Quakers Hill
+Queens Park,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Queens Park (NSW)
+Queenscliff,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Queenscliff (NSW)
+Raby,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Raby
+Ramsgate,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Ramsgate
+Ramsgate Beach,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Ramsgate Beach
+Randwick,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,Randwick
+Redfern,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Redfern
+Regents Park,N,Auburn,1.0,False,0.0,Auburn,1,1.0,Regents Park (NSW)
+Regentville,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Regentville
+Revesby,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Revesby
+Revesby Heights,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Revesby Heights
+Rhodes,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Rhodes
+Richards,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Richards
+Richmond,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Richmond (NSW)
+Richmond Lowlands,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Richmond Lowlands
+Riverstone,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Riverstone
+Riverview,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Riverview (NSW)
+Riverwood,N,Hurstville,1.0,False,0.0,Canterbury; Hurstville,2,1.0,Riverwood
+Rockdale,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Rockdale
+Rodd Point,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Rodd Point
+Rookwood,N,Auburn,1.0,False,0.0,Auburn,1,1.0,Rookwood (NSW)
+Rooty Hill,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Rooty Hill
+Ropes Crossing,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Ropes Crossing
+Rose Bay,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Rose Bay (NSW)
+Rosebery,N,Sydney Inner City,1.0,False,0.0,Botany; Sydney Inner City,2,1.0,Rosebery (NSW)
+Rosehill,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Rosehill (NSW)
+Roselands,N,Canterbury,1.0,False,0.0,Canterbury,1,1.0,Roselands
+Rosemeadow,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Rosemeadow
+Roseville,N,Ku-ring-gai,1.0,False,0.0,Chatswood - Lane Cove; Ku-ring-gai,2,1.0,Roseville
+Roseville Chase,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,Roseville Chase
+Rossmore,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Rossmore (NSW)
+Rouse Hill,N,Blacktown - North,1.0,False,0.0,Blacktown - North; Rouse Hill - McGraths Hill,2,1.0,Rouse Hill
+Rozelle,N,Leichhardt,1.0,False,0.0,Leichhardt,1,1.0,Rozelle
+Ruse,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Ruse
+Rushcutters Bay,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Rushcutters Bay
+Russell Lea,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Russell Lea
+Rydalmere,N,Carlingford,1.0,False,0.0,Carlingford,1,1.0,Rydalmere
+Ryde,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Ryde
+Sackville,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,Sackville
+Sackville North,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Sackville North
+Sadleir,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,Sadleir
+Sandringham,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Sandringham (NSW)
+Sandy Point,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Sandy Point (NSW)
+Sans Souci,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Sans Souci
+Scheyville,N,Rouse Hill - McGraths Hill,1.0,False,0.0,Rouse Hill - McGraths Hill,1,1.0,Scheyville
+Schofields,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Schofields
+Scotland Island,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Scotland Island
+Seaforth,N,Manly,1.0,False,0.0,Manly,1,1.0,Seaforth (NSW)
+Sefton,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Sefton
+Seven Hills,N,Blacktown,1.0,False,0.0,Blacktown,1,1.0,Seven Hills (NSW)
+Shalvey,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Shalvey
+Shanes Park,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Shanes Park
+Silverwater,N,Auburn,1.0,False,0.0,Auburn,1,1.0,Silverwater (Parramatta - NSW)
+Singletons Mill,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,Singletons Mill
+Smeaton Grange,N,Camden,1.0,False,0.0,Camden,1,1.0,Smeaton Grange
+Smithfield,N,Fairfield,1.0,False,0.0,Fairfield; Merrylands - Guildford,2,1.0,Smithfield (NSW)
+South Coogee,N,Eastern Suburbs - South,1.0,False,0.0,Eastern Suburbs - South,1,1.0,South Coogee
+South Granville,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,South Granville
+South Hurstville,N,Hurstville,1.0,False,0.0,Hurstville,1,1.0,South Hurstville
+South Maroota,Y,Dural - Wisemans Ferry,1.0,False,0.0,Dural - Wisemans Ferry,1,1.0,South Maroota
+South Penrith,N,Penrith,1.0,False,0.0,Penrith,1,1.0,South Penrith
+South Turramurra,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,South Turramurra
+South Wentworthville,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford; Parramatta,2,1.0,South Wentworthville
+South Windsor,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,South Windsor
+Spring Farm,N,Camden,1.0,False,0.0,Camden,1,1.0,Spring Farm (NSW)
+St Andrews,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,St Andrews (NSW)
+St Clair,N,St Marys (NSW),1.0,False,0.0,St Marys (NSW),1,1.0,St Clair (Penrith - NSW)
+St Helens Park,N,Campbelltown (NSW),0.904155,False,0.095845,Campbelltown (NSW),1,1.0,St Helens Park
+St Ives,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,St Ives (NSW)
+St Ives Chase,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,St Ives Chase
+St Johns Park,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,St Johns Park
+St Leonards,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,St Leonards (NSW)
+St Marys,N,St Marys (NSW),1.0,False,0.0,St Marys (NSW),1,1.0,St Marys (NSW)
+St Peters,N,Marrickville - Sydenham - Petersham,1.0,False,0.0,Marrickville - Sydenham - Petersham,1,1.0,St Peters (NSW)
+Stanhope Gardens,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Stanhope Gardens
+Stanmore,N,Marrickville - Sydenham - Petersham,1.0,False,0.0,Marrickville - Sydenham - Petersham,1,1.0,Stanmore (NSW)
+Strathfield,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Strathfield (NSW)
+Strathfield South,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Strathfield South
+Summer Hill,N,Strathfield - Burwood - Ashfield,1.0,False,0.0,Strathfield - Burwood - Ashfield,1,1.0,Summer Hill (Inner West - NSW)
+Surry Hills,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Surry Hills
+Sutherland,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Sutherland (NSW)
+Sydenham,N,Marrickville - Sydenham - Petersham,1.0,False,0.0,Marrickville - Sydenham - Petersham,1,1.0,Sydenham (NSW)
+Sydney,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Sydney
+Sydney Olympic Park,N,Auburn,1.0,False,0.0,Auburn; Canada Bay,2,1.0,Sydney Olympic Park
+Sylvania,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Sylvania
+Sylvania Waters,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Sylvania Waters
+Tallawong,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,Tallawong
+Tamarama,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Tamarama
+Taren Point,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Taren Point
+Telopea,N,Carlingford,1.0,False,0.0,Carlingford,1,1.0,Telopea
+Tempe,N,Marrickville - Sydenham - Petersham,1.0,False,0.0,Marrickville - Sydenham - Petersham,1,1.0,Tempe
+Tennyson,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,Tennyson (NSW)
+Tennyson Point,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,Tennyson Point
+Terrey Hills,Y,Warringah,1.0,False,0.0,Warringah,1,1.0,Terrey Hills
+The Ponds,N,Blacktown - North,1.0,False,0.0,Blacktown - North,1,1.0,The Ponds
+The Rocks,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,The Rocks (Sydney - NSW)
+The Slopes,Y,Kurrajong Heights - Ebenezer,1.0,False,0.0,Kurrajong Heights - Ebenezer,1,1.0,The Slopes
+Thornleigh,N,Hornsby,1.0,False,0.0,Hornsby; Pennant Hills - Epping,2,1.0,Thornleigh
+Toongabbie,N,Parramatta,1.0,False,0.0,Blacktown; Parramatta,2,1.0,Toongabbie (NSW)
+Tregear,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Tregear
+Turramurra,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,Turramurra
+Turrella,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Turrella
+Ultimo,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Ultimo
+Varroville,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Varroville
+Vaucluse,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Vaucluse
+Villawood,N,Merrylands - Guildford,1.0,False,0.0,Bankstown; Merrylands - Guildford,2,1.0,Villawood
+Vineyard,N,Rouse Hill - McGraths Hill,1.0,False,0.0,Blacktown - North; Rouse Hill - McGraths Hill,2,1.0,Vineyard
+Voyager Point,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Voyager Point
+Wahroonga,N,Ku-ring-gai,1.0,False,0.0,Hornsby; Ku-ring-gai,2,1.0,Wahroonga
+Waitara,N,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Waitara
+Wakeley,N,Fairfield,1.0,False,0.0,Fairfield,1,1.0,Wakeley
+Wallacia,Y,Penrith,1.0,False,0.0,Penrith,1,1.0,Wallacia
+Wareemba,N,Canada Bay,1.0,False,0.0,Canada Bay,1,1.0,Wareemba
+Warrawee,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,Warrawee
+Warriewood,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Warriewood
+Warwick Farm,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Warwick Farm
+Waterfall,Y,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Waterfall
+Waterloo,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Waterloo (NSW)
+Watsons Bay,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Watsons Bay
+Wattle Grove,N,Liverpool,1.0,False,0.0,Liverpool,1,1.0,Wattle Grove (NSW)
+Waverley,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Waverley (NSW)
+Waverton,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Waverton
+Wedderburn,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Wedderburn (NSW)
+Wentworth Point,N,Auburn,1.0,False,0.0,Auburn,1,1.0,Wentworth Point
+Wentworthville,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Wentworthville
+Werrington,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Werrington
+Werrington County,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Werrington County
+Werrington Downs,N,Penrith,1.0,False,0.0,Penrith,1,1.0,Werrington Downs
+West Hoxton,N,Bringelly - Green Valley,1.0,False,0.0,Bringelly - Green Valley,1,1.0,West Hoxton
+West Pennant Hills,N,Baulkham Hills,1.0,False,0.0,Baulkham Hills; Pennant Hills - Epping,2,1.0,West Pennant Hills
+West Pymble,N,Ku-ring-gai,1.0,False,0.0,Ku-ring-gai,1,1.0,West Pymble
+West Ryde,N,Ryde - Hunters Hill,1.0,False,0.0,Ryde - Hunters Hill,1,1.0,West Ryde
+Westleigh,N,Hornsby,1.0,False,0.0,Hornsby,1,1.0,Westleigh
+Westmead,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Westmead
+Wetherill Park,N,Fairfield,0.941868,False,0.058132,Fairfield,1,1.0,Wetherill Park
+Whalan,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Whalan
+Whale Beach,N,Pittwater,1.0,False,0.0,Pittwater,1,1.0,Whale Beach
+Wheeler Heights,N,Warringah,1.0,False,0.0,Warringah,1,1.0,Wheeler Heights
+Wilberforce,Y,Kurrajong Heights - Ebenezer,0.749398,True,0.250602,Kurrajong Heights - Ebenezer,1,1.0,Wilberforce (NSW)
+Wiley Park,N,Canterbury,1.0,False,0.0,Canterbury,1,1.0,Wiley Park
+Willmot,N,Mount Druitt,1.0,False,0.0,Mount Druitt,1,1.0,Willmot
+Willoughby,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Willoughby (NSW)
+Willoughby East,N,Chatswood - Lane Cove,1.0,False,0.0,Chatswood - Lane Cove,1,1.0,Willoughby East
+Windsor,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Windsor (NSW)
+Windsor Downs,Y,Richmond - Windsor,1.0,False,0.0,Richmond - Windsor,1,1.0,Windsor Downs
+Winston Hills,N,Parramatta,1.0,False,0.0,Parramatta,1,1.0,Winston Hills
+Wisemans Ferry,Y,Dural - Wisemans Ferry,1.0,False,0.0,Calga - Kulnura; Dural - Wisemans Ferry,2,1.0,Wisemans Ferry
+Wolli Creek,N,Kogarah - Rockdale,1.0,False,0.0,Kogarah - Rockdale,1,1.0,Wolli Creek
+Wollstonecraft,N,North Sydney - Mosman,1.0,False,0.0,North Sydney - Mosman,1,1.0,Wollstonecraft
+Woodbine,N,Campbelltown (NSW),1.0,False,0.0,Campbelltown (NSW),1,1.0,Woodbine (NSW)
+Woodcroft,N,Blacktown,1.0,False,0.0,Blacktown,1,1.0,Woodcroft (NSW)
+Woodpark,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Woodpark
+Woollahra,N,Eastern Suburbs - North,1.0,False,0.0,Eastern Suburbs - North,1,1.0,Woollahra
+Woolloomooloo,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Woolloomooloo
+Woolooware,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Woolooware
+Woolwich,N,Ryde - Hunters Hill,1.0,False,0.0,Leichhardt; Ryde - Hunters Hill,2,1.0,Woolwich
+Woronora,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Woronora
+Woronora Heights,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Woronora Heights
+Yagoona,N,Bankstown,1.0,False,0.0,Bankstown,1,1.0,Yagoona
+Yarramundi,Y,Blackheath - Blue Mountains North,1.0,False,0.0,Blackheath - Blue Mountains North; Richmond - Windsor,2,1.0,Yarramundi
+Yarrawarrah,N,Engadine - Heathcote,1.0,False,0.0,Engadine - Heathcote,1,1.0,Yarrawarrah
+Yennora,N,Merrylands - Guildford,1.0,False,0.0,Merrylands - Guildford,1,1.0,Yennora
+Yowie Bay,N,Cronulla - Miranda - Caringbah,1.0,False,0.0,Cronulla - Miranda - Caringbah,1,1.0,Yowie Bay
+Zetland,N,Sydney Inner City,1.0,False,0.0,Sydney Inner City,1,1.0,Zetland

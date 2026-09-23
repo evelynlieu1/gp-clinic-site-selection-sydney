@@ -1,0 +1,681 @@
+suburb,access_general,access_senior,practices_within_2km,practices_within_5km,nearest_practice_km,travel_cost_method,nearest_practice_min,nearest_practice_name,nearest_practice_suburb,practices_within_general_cutoff,practices_within_senior_cutoff,access_general_pct,access_senior_pct,population,over_65_pct,gp_data_status
+Abbotsbury,0.202947,1.225838,2,24,1.498,straight_line_haversine_35kmh_optimistic_bound,2.57,Lam Practice @ Edensor Park,Edensor Park,170,111,26.32,22.5,4200,15.36,no_data
+Abbotsford,0.301221,1.911065,5,79,0.573,straight_line_haversine_35kmh_optimistic_bound,0.98,Abbotsford Medical Practice,Abbotsford,426,275,79.41,57.65,5431,26.11,ok
+Acacia Gardens,0.282741,2.613522,7,61,0.785,straight_line_haversine_35kmh_optimistic_bound,1.35,Malvern Road Medical Centre,Glenwood,182,134,67.35,97.35,3668,8.78,no_data
+Agnes Banks,0.297673,1.699313,0,4,4.795,straight_line_haversine_35kmh_optimistic_bound,8.22,Myhealth North Richmond,North Richmond,19,10,75.74,44.12,996,13.96,no_data
+Airds,0.161473,1.332265,0,18,2.117,straight_line_haversine_35kmh_optimistic_bound,3.63,Campbelltown General Practice,Bradbury,47,30,13.97,25.88,3265,10.05,ok
+Alexandria,0.336789,2.522131,19,119,0.874,straight_line_haversine_35kmh_optimistic_bound,1.5,Infinity Health Medical Centre Green Square,Zetland,387,278,95.0,94.71,9649,6.17,ok
+Alfords Point,0.242907,1.326299,2,36,0.731,straight_line_haversine_35kmh_optimistic_bound,1.25,Alfords Point Medical Practice,Alfords Point,228,126,43.53,25.59,3131,16.16,ok
+Allambie Heights,0.196828,1.19791,5,32,1.459,straight_line_haversine_35kmh_optimistic_bound,2.5,Medclinic Family Practice,Brookvale,146,93,23.24,21.47,7317,19.2,ok
+Allawah,0.269408,1.556672,16,66,0.882,straight_line_haversine_35kmh_optimistic_bound,1.51,Eastbrooke Medical Centre - Carlton,Carlton,306,172,57.65,34.12,5351,14.6,no_data
+Ambarvale,0.199334,1.744635,7,17,1.087,straight_line_haversine_35kmh_optimistic_bound,1.86,Dr Anil Gupta's Medical Surgery,Rosemeadow,47,39,24.41,47.35,7254,12.94,no_data
+Angus,0.223175,1.743029,0,9,2.215,straight_line_haversine_35kmh_optimistic_bound,3.8,Castle Medical Marsden Park,Marsden Park,101,57,33.38,47.21,384,16.41,no_data
+Annandale,0.34403,2.375535,14,137,0.788,straight_line_haversine_35kmh_optimistic_bound,1.35,Harold Park Medical Centre,Forest Lodge,430,305,96.62,88.97,9487,13.61,ok
+Annangrove,0.158924,1.200055,1,13,1.701,straight_line_haversine_35kmh_optimistic_bound,2.92,Annangrove Medical Centre,Annangrove,85,46,13.09,21.62,1472,18.55,ok
+Arcadia,0.131365,1.100514,0,1,2.375,straight_line_haversine_35kmh_optimistic_bound,4.07,Proverbs Family Medical Practice,Arcadia,34,10,7.65,17.79,1475,22.1,ok
+Arncliffe,0.295256,1.86909,15,75,0.287,straight_line_haversine_35kmh_optimistic_bound,0.49,Arncliffe Family Health Clinic,Arncliffe,408,232,74.12,54.41,12023,12.67,ok
+Arndell Park,0.257275,1.71506,1,36,1.817,straight_line_haversine_35kmh_optimistic_bound,3.12,Walters Road Medical Centre,Blacktown,233,124,48.82,45.29,6,0.0,gp_count_unknown
+Artarmon,0.289155,1.777218,29,63,0.428,straight_line_haversine_35kmh_optimistic_bound,0.73,Artarmon Medical Centre,Artarmon,356,197,70.0,49.12,9417,12.77,ok
+Ashbury,0.322576,2.163176,25,107,0.801,straight_line_haversine_35kmh_optimistic_bound,1.37,Dr Dhanapalan Family Practice,Croydon Park,439,292,89.71,76.91,3353,19.21,no_data
+Ashcroft,0.291562,2.483627,11,73,0.851,straight_line_haversine_35kmh_optimistic_bound,1.46,Mount Pritchard Family Practice,Mount Pritchard,184,143,72.21,93.38,3634,11.64,ok
+Ashfield,0.327798,2.082607,18,102,0.077,straight_line_haversine_35kmh_optimistic_bound,0.13,Hercules Street Family Medical Practice,Ashfield,483,286,91.76,70.15,23012,16.81,ok
+Asquith,0.233405,1.521831,7,29,0.56,straight_line_haversine_35kmh_optimistic_bound,0.96,Royston Clinic,Asquith,106,64,37.94,32.65,6160,11.54,ok
+Auburn,0.299277,2.073148,15,66,0.476,straight_line_haversine_35kmh_optimistic_bound,0.82,Dr Malalie Safie,Auburn,392,230,77.5,69.56,39333,10.15,ok
+Austral,0.138351,0.902531,2,9,0.817,straight_line_haversine_35kmh_optimistic_bound,1.4,West Hoxton Medical Centre,Austral,91,34,8.97,11.47,6847,9.77,ok
+Avalon Beach,0.147937,0.731856,2,6,0.618,straight_line_haversine_35kmh_optimistic_bound,1.06,Avalon Family Medical Practice,Avalon Beach,19,16,10.74,6.76,10379,21.61,ok
+Badgerys Creek,0.085303,1.167521,0,1,4.708,straight_line_haversine_35kmh_optimistic_bound,8.07,Luddenham Medical Centre,Luddenham,22,4,3.09,20.44,168,29.17,no_data
+Balgowlah,0.202738,1.260602,7,31,0.23,straight_line_haversine_35kmh_optimistic_bound,0.39,Balgowlah Family Practice,Balgowlah,205,94,26.18,23.53,8068,16.55,ok
+Balgowlah Heights,0.199682,1.173299,5,32,1.362,straight_line_haversine_35kmh_optimistic_bound,2.33,Balgowlah Family Practice,Balgowlah,214,121,24.56,20.88,3546,15.12,no_data
+Balmain,0.336278,2.334434,10,130,0.07,straight_line_haversine_35kmh_optimistic_bound,0.12,Dr Jonathan Mak,Balmain,401,294,94.71,87.21,10454,16.31,ok
+Balmain East,0.335171,2.414477,26,119,0.101,straight_line_haversine_35kmh_optimistic_bound,0.17,Balmain East Doctors,Balmain East,380,282,93.68,90.29,1900,20.42,ok
+Bangor,0.238343,1.432696,6,23,0.539,straight_line_haversine_35kmh_optimistic_bound,0.92,Southern Cross Medical Practice - Bangor,Bangor,171,94,40.88,28.97,5536,22.29,ok
+Banksia,0.296841,1.830013,20,79,0.529,straight_line_haversine_35kmh_optimistic_bound,0.91,Dr Francis Chung,Banksia,409,220,75.15,52.06,3277,18.71,ok
+Banksmeadow,0.210386,1.357919,7,32,1.603,straight_line_haversine_35kmh_optimistic_bound,2.75,Matraville Medical Complex,Matraville,282,159,29.26,26.32,508,5.12,no_data
+Bankstown,0.29575,1.957677,30,87,0.071,straight_line_haversine_35kmh_optimistic_bound,0.12,Chapel Road Medical Centre,Bankstown,385,201,74.56,61.47,34933,12.34,ok
+Bankstown Aerodrome,0.310535,2.069928,3,60,1.19,straight_line_haversine_35kmh_optimistic_bound,2.04,Dr Yu Yu Tin Surgery,Georges Hall,332,207,84.85,69.26,5,0.0,no_data
+Barangaroo,0.335684,2.461501,35,125,0.311,straight_line_haversine_35kmh_optimistic_bound,0.53,Observatory Tower Medical Centre,Millers Point,376,272,94.26,92.21,220,8.64,ok
+Barden Ridge,0.16786,1.114963,0,21,2.022,straight_line_haversine_35kmh_optimistic_bound,3.47,Healthplus - Menai,Menai,93,42,14.71,18.68,4129,13.71,no_data
+Bardia,0.214067,1.822821,1,23,0.761,straight_line_haversine_35kmh_optimistic_bound,1.3,Myhealth - Edmondson Park,Edmondson Park,123,74,30.15,51.62,5747,2.89,no_data
+Bardwell Park,0.302873,1.948848,12,97,0.394,straight_line_haversine_35kmh_optimistic_bound,0.67,K & L Oey Family Medical Practice,Bardwell Park,407,241,80.29,60.88,2320,18.45,ok
+Bardwell Valley,0.294751,1.882288,18,84,0.86,straight_line_haversine_35kmh_optimistic_bound,1.47,K & L Oey Family Medical Practice,Bardwell Park,408,224,73.82,55.74,2344,19.24,no_data
+Bass Hill,0.331016,2.335981,7,60,0.296,straight_line_haversine_35kmh_optimistic_bound,0.51,Bass Hill Plaza Medical Centre,Bass Hill,361,232,92.5,87.35,10230,15.11,ok
+Baulkham Hills,0.289163,2.009907,6,55,0.937,straight_line_haversine_35kmh_optimistic_bound,1.61,Dr Morris Aziz,Baulkham Hills,259,167,70.15,64.41,37415,16.17,ok
+Bayview,0.184632,1.038488,3,16,1.839,straight_line_haversine_35kmh_optimistic_bound,3.15,Pittwater Family Practice,Mona Vale,31,19,19.56,15.59,3807,40.64,ok
+Beacon Hill,0.185933,1.124483,6,27,1.465,straight_line_haversine_35kmh_optimistic_bound,2.51,Frenchs Forest Doctors,Frenchs Forest,122,65,20.0,18.82,7814,15.89,ok
+Beaconsfield,0.331546,2.523949,15,131,0.336,straight_line_haversine_35kmh_optimistic_bound,0.58,Botany Road Doctors,Beaconsfield,378,266,92.65,95.0,1172,5.46,ok
+Beaumont Hills,0.225652,2.029204,3,37,0.23,straight_line_haversine_35kmh_optimistic_bound,0.39,Beaumont Hills Family Practice,Beaumont Hills,148,101,35.15,66.76,9041,9.43,ok
+Beecroft,0.288553,1.788124,13,55,0.502,straight_line_haversine_35kmh_optimistic_bound,0.86,Beecroft Medical Centre,Beecroft,253,145,69.71,49.41,10291,20.91,ok
+Belfield,0.307551,2.138923,17,96,1.106,straight_line_haversine_35kmh_optimistic_bound,1.9,Myhealth Medical Centre - Enfield,Croydon Park,391,270,82.79,74.41,6555,17.53,ok
+Bella Vista,0.288441,2.312321,11,54,0.574,straight_line_haversine_35kmh_optimistic_bound,0.98,The Children's Doctor,Bella Vista,220,146,69.56,86.03,8384,14.38,ok
+Bellevue Hill,0.263915,2.042963,33,106,0.652,straight_line_haversine_35kmh_optimistic_bound,1.12,Rose Healthcare,Bellevue Hill,271,195,53.24,67.79,10590,17.14,ok
+Belmore,0.29938,2.17426,22,92,0.334,straight_line_haversine_35kmh_optimistic_bound,0.57,Belmore Medical Centre,Belmore,357,254,77.65,77.65,13781,16.83,ok
+Belrose,0.194786,0.887377,2,16,1.885,straight_line_haversine_35kmh_optimistic_bound,3.23,Eastbrooke Belrose Family Practice,Belrose,143,65,22.79,10.59,8726,26.46,ok
+Berala,0.306968,2.031025,9,66,0.096,straight_line_haversine_35kmh_optimistic_bound,0.16,Springlife Medical And Health Clinic,Berala,416,239,82.35,67.06,8757,14.59,ok
+Berkshire Park,0.223391,0.944214,0,2,4.431,straight_line_haversine_35kmh_optimistic_bound,7.6,Bligh Park Family Practice,Bligh Park,77,24,33.82,12.94,2149,9.59,no_data
+Berowra,0.121614,0.696746,2,3,0.565,straight_line_haversine_35kmh_optimistic_bound,0.97,Berowra Station Surgery,Berowra,41,8,6.32,6.32,4762,14.72,ok
+Berowra Heights,0.118115,0.73821,1,2,1.09,straight_line_haversine_35kmh_optimistic_bound,1.87,Berowra Family Medical Practice,Berowra Heights,25,6,5.59,7.21,5286,17.14,ok
+Berowra Waters,0.072817,0.48519,0,0,7.548,straight_line_haversine_35kmh_optimistic_bound,12.94,Brooklyn Family Medical,Brooklyn,4,3,2.5,4.41,169,29.59,no_data
+Berrilee,0.110646,0.83663,0,2,3.164,straight_line_haversine_35kmh_optimistic_bound,5.42,Berowra Family Medical Practice,Berowra Heights,30,9,4.56,9.12,212,25.47,no_data
+Beverley Park,0.262155,1.512727,19,58,0.824,straight_line_haversine_35kmh_optimistic_bound,1.41,Sage Health Clinic (Dr Lynette Ong),Ramsgate,299,160,51.62,32.06,2646,20.98,no_data
+Beverly Hills,0.300136,2.061088,10,86,0.25,straight_line_haversine_35kmh_optimistic_bound,0.43,Affinity Medical Practice,Beverly Hills,329,223,78.38,68.68,10483,18.69,ok
+Bexley,0.281955,1.771605,23,87,0.721,straight_line_haversine_35kmh_optimistic_bound,1.24,Bexley Medical Centre,Bexley,353,203,66.32,48.68,19646,19.52,ok
+Bexley North,0.3038,1.99072,7,96,0.334,straight_line_haversine_35kmh_optimistic_bound,0.57,Life Medical Clinic Bexley,Bexley North,377,239,80.88,63.09,4281,20.86,ok
+Bidwill,0.226015,1.856387,5,30,0.031,straight_line_haversine_35kmh_optimistic_bound,0.05,The Doctors Mt Druitt Medical Hub,Bidwill,139,71,35.29,53.38,4202,11.73,ok
+Bilgola Beach,0.159004,0.850045,5,12,0.906,straight_line_haversine_35kmh_optimistic_bound,1.55,Avalon Wholistic Medical & Dental Centre,Avalon Beach,19,16,13.38,9.71,251,33.86,no_data
+Bilgola Plateau,0.159004,0.850045,6,12,1.257,straight_line_haversine_35kmh_optimistic_bound,2.15,Newport Beach General Practice,Newport,19,16,13.38,9.71,3650,21.73,no_data
+Birchgrove,0.33291,2.307851,9,114,0.628,straight_line_haversine_35kmh_optimistic_bound,1.08,Balmain Village Health,Balmain,399,281,92.94,85.59,3228,20.38,ok
+Birrong,0.318561,2.100594,7,72,1.083,straight_line_haversine_35kmh_optimistic_bound,1.86,Regents Park Medical Centre,Regents Park,388,257,88.38,71.62,3331,14.35,ok
+Blackett,0.242167,2.015132,9,36,0.74,straight_line_haversine_35kmh_optimistic_bound,1.27,Bidwill Family Practice,Bidwill,137,76,43.09,65.0,3586,12.24,ok
+Blacktown,0.285864,2.152693,20,50,0.468,straight_line_haversine_35kmh_optimistic_bound,0.8,Blacktown General Practice,Blacktown,247,135,68.38,75.74,50961,12.74,ok
+Blair Athol,0.229367,2.168121,14,25,1.114,straight_line_haversine_35kmh_optimistic_bound,1.91,Royale Medical Centre,Campbelltown,57,41,36.76,77.5,2725,10.97,no_data
+Blairmount,0.242389,2.412865,1,29,1.886,straight_line_haversine_35kmh_optimistic_bound,3.23,Claymore Medical Centre,Claymore,58,43,43.24,90.15,409,12.22,no_data
+Blakehurst,0.265476,1.614258,1,54,1.433,straight_line_haversine_35kmh_optimistic_bound,2.46,South Hurstville Family Practice,South Hurstville,245,154,55.15,36.47,6652,20.43,no_data
+Bligh Park,0.260267,1.968909,1,8,1.027,straight_line_haversine_35kmh_optimistic_bound,1.76,Bligh Park Family Practice,Bligh Park,36,18,50.74,61.62,6220,8.92,ok
+Bondi,0.241493,1.856147,27,77,0.049,straight_line_haversine_35kmh_optimistic_bound,0.08,Bondi Road Medical Centre,Bondi,243,187,42.65,53.24,10411,12.24,ok
+Bondi Beach,0.223177,1.627942,18,59,0.13,straight_line_haversine_35kmh_optimistic_bound,0.22,Dr S & V Zeldovich,Bondi Beach,236,173,33.53,37.65,11513,8.71,ok
+Bondi Junction,0.270979,2.187496,29,113,0.064,straight_line_haversine_35kmh_optimistic_bound,0.11,Premier Medicine,Bondi Junction,271,201,58.97,78.53,10361,15.06,ok
+Bonnet Bay,0.258458,1.432195,4,33,1.036,straight_line_haversine_35kmh_optimistic_bound,1.78,Como Medical Practice,Como,201,109,49.56,28.82,2238,20.91,no_data
+Bonnyrigg,0.265962,2.117151,6,77,0.376,straight_line_haversine_35kmh_optimistic_bound,0.64,Nguyen Practice @ Bonnyrigg,Bonnyrigg,182,135,55.44,73.24,9785,15.07,ok
+Bonnyrigg Heights,0.230906,1.679231,8,32,1.234,straight_line_haversine_35kmh_optimistic_bound,2.12,Myhealth Edensor Park,Edensor Park,161,127,37.06,42.21,7369,15.46,no_data
+Bossley Park,0.231547,1.339763,9,29,0.741,straight_line_haversine_35kmh_optimistic_bound,1.27,Bossley Park Medical Practice,Bossley Park,234,118,37.21,26.18,15492,19.69,ok
+Botany,0.249795,1.694253,2,44,0.477,straight_line_haversine_35kmh_optimistic_bound,0.82,Botany Medical Centre,Botany,310,208,46.18,43.82,12960,11.96,ok
+Bow Bowing,0.204876,1.751276,4,15,0.918,straight_line_haversine_35kmh_optimistic_bound,1.57,St Andrews Medical Centre,St Andrews,77,49,27.21,47.65,1606,10.65,no_data
+Box Hill,0.179159,1.462834,1,13,1.593,straight_line_haversine_35kmh_optimistic_bound,2.73,Carmel Village Doctors,Box Hill,78,40,17.65,30.44,6450,4.9,ok
+Bradbury,0.194558,1.649348,11,19,1.235,straight_line_haversine_35kmh_optimistic_bound,2.12,Campbelltown General Practice,Bradbury,50,37,22.65,39.71,9433,15.16,ok
+Breakfast Point,0.279312,1.634245,8,62,0.346,straight_line_haversine_35kmh_optimistic_bound,0.59,Medplaza Breakfast Point,Mortlake,454,216,63.97,37.79,4678,25.42,no_data
+Brighton-Le-Sands,0.26417,1.512406,19,64,0.113,straight_line_haversine_35kmh_optimistic_bound,0.19,St George Family Mediclinic,Brighton-Le-Sands,377,186,53.82,31.91,8336,20.87,ok
+Bringelly,0.107017,0.934895,1,1,0.797,straight_line_haversine_35kmh_optimistic_bound,1.37,Bringelly Family Medical Practice,Bringelly,23,6,3.97,12.5,2433,19.32,ok
+Bronte,0.227485,1.804143,22,70,0.255,straight_line_haversine_35kmh_optimistic_bound,0.44,Bronte Medical Centre,Bronte,234,169,36.03,50.59,7166,13.89,ok
+Brooklyn,0.112881,1.271322,0,2,4.51,straight_line_haversine_35kmh_optimistic_bound,7.73,Brooklyn Family Medical,Brooklyn,7,4,5.0,23.97,737,19.54,ok
+Brookvale,0.176567,1.083034,10,27,0.242,straight_line_haversine_35kmh_optimistic_bound,0.41,Warringah Medical And Dental Centre,Brookvale,116,65,17.06,16.76,3389,11.95,ok
+Bundeena,0.083665,0.446374,1,6,0.096,straight_line_haversine_35kmh_optimistic_bound,0.16,Bundeena Family Practice,Bundeena,43,22,2.79,3.53,2103,23.73,ok
+Bungarribee,0.249457,1.878817,4,36,1.151,straight_line_haversine_35kmh_optimistic_bound,1.97,Rainbow Medical Practice,Doonside,184,114,45.88,55.29,3177,4.28,no_data
+Burraneer,0.147127,0.843715,5,18,0.924,straight_line_haversine_35kmh_optimistic_bound,1.58,Burraneer Family Practice,Burraneer,86,43,10.44,9.26,3719,18.77,no_data
+Burwood,0.301424,1.931171,17,78,0.014,straight_line_haversine_35kmh_optimistic_bound,0.02,Quality Care Family Doctors,Burwood,472,244,79.56,59.56,18224,12.57,ok
+Burwood Heights,0.309652,2.008074,25,98,0.765,straight_line_haversine_35kmh_optimistic_bound,1.31,Dr Cheng Phua,Croydon Park,454,266,84.12,64.12,1134,18.96,no_data
+Busby,0.271548,2.291926,10,58,0.513,straight_line_haversine_35kmh_optimistic_bound,0.88,Dr N R Kumar - Busby,Busby,165,136,59.12,85.15,4446,12.3,ok
+Cabarita,0.286272,1.754812,9,67,0.822,straight_line_haversine_35kmh_optimistic_bound,1.41,Medplaza Breakfast Point,Mortlake,440,242,68.68,48.09,1933,29.02,no_data
+Cabramatta,0.322608,2.481132,26,93,0.311,straight_line_haversine_35kmh_optimistic_bound,0.53,La Practice,Cabramatta,284,167,89.85,93.09,21142,16.59,ok
+Cabramatta West,0.312268,2.531522,12,104,0.475,straight_line_haversine_35kmh_optimistic_bound,0.81,Le Practice,Cabramatta West,243,155,86.18,95.29,7822,14.06,ok
+Caddens,0.262792,2.151413,4,32,0.46,straight_line_haversine_35kmh_optimistic_bound,0.79,Caddens Medical Centre,Caddens,82,64,52.35,75.59,3487,12.39,ok
+Cambridge Gardens,0.244249,2.028652,4,28,0.922,straight_line_haversine_35kmh_optimistic_bound,1.58,Sydney Gp Group,Penrith,77,50,44.12,66.47,2030,15.37,no_data
+Cambridge Park,0.262443,2.176231,6,31,0.517,straight_line_haversine_35kmh_optimistic_bound,0.89,Cambridge Park Doctors,Cambridge Park,81,62,51.76,77.94,7054,14.26,ok
+Camden,0.149361,1.497127,4,12,0.092,straight_line_haversine_35kmh_optimistic_bound,0.16,Camden Medical Centre And Skin Cancer Clinic,Camden,38,20,10.88,31.03,3378,23.71,ok
+Camden South,0.127931,1.057843,1,6,0.841,straight_line_haversine_35kmh_optimistic_bound,1.44,Camden South Family Doctors,Camden South,38,17,7.21,16.32,4595,19.28,ok
+Cammeray,0.299148,1.971516,24,76,0.452,straight_line_haversine_35kmh_optimistic_bound,0.77,Cammeray Medical Practice,Cammeray,332,209,77.06,62.06,7088,15.59,ok
+Campbelltown,0.220457,2.013258,14,23,0.316,straight_line_haversine_35kmh_optimistic_bound,0.54,Campbelltown Mall Medical Centre,Campbelltown,54,41,32.79,64.71,16577,15.03,ok
+Camperdown,0.355289,2.551123,20,128,0.345,straight_line_haversine_35kmh_optimistic_bound,0.59,Headspace Camperdown,Camperdown,415,317,98.97,96.03,9381,7.06,ok
+Campsie,0.303786,2.073852,16,101,0.043,straight_line_haversine_35kmh_optimistic_bound,0.07,Campsie Centre Medical Clinic,Campsie,401,262,80.74,69.71,26132,12.93,ok
+Canada Bay,0.309864,1.926688,23,79,1.282,straight_line_haversine_35kmh_optimistic_bound,2.2,Abbotsford Cove General Practice,Five Dock,483,261,84.41,59.26,1308,16.36,no_data
+Canley Heights,0.315325,2.431607,25,96,0.183,straight_line_haversine_35kmh_optimistic_bound,0.31,Ramakrishna Practice,Canley Heights,280,163,87.5,91.18,12320,13.56,ok
+Canley Vale,0.3332,2.597077,34,92,0.479,straight_line_haversine_35kmh_optimistic_bound,0.82,Cabravale Medical Centre,Canley Vale,302,188,93.24,97.06,10300,15.59,gp_count_unknown
+Canoelands,0.0,0.0,0,0,13.15,straight_line_haversine_35kmh_optimistic_bound,22.54,Glenorie District Medical Centre,Glenorie,0,0,0.66,0.81,177,17.51,no_data
+Canterbury,0.313328,2.163352,22,102,0.151,straight_line_haversine_35kmh_optimistic_bound,0.26,Canterbury Plaza Medical Centre,Canterbury,413,273,86.32,77.06,9430,11.01,ok
+Caringbah,0.196235,1.09032,8,30,0.667,straight_line_haversine_35kmh_optimistic_bound,1.14,Dr John B Rizzuto - Gp,Caringbah,130,73,23.09,17.21,12575,15.67,ok
+Caringbah South,0.171631,0.940838,5,25,1.223,straight_line_haversine_35kmh_optimistic_bound,2.1,Caringbah Medical And Dental Centre,Caringbah,106,46,16.18,12.65,13168,19.8,no_data
+Carlingford,0.269996,1.662695,10,54,0.652,straight_line_haversine_35kmh_optimistic_bound,1.12,1health Medical Centre,Carlingford,289,165,58.09,40.59,28044,16.09,ok
+Carlton,0.272325,1.571555,21,67,0.245,straight_line_haversine_35kmh_optimistic_bound,0.42,Eastbrooke Medical Centre - Carlton,Carlton,321,171,59.56,34.41,10631,16.13,ok
+Carnes Hill,0.201141,1.637626,7,27,0.195,straight_line_haversine_35kmh_optimistic_bound,0.34,Carnes Hill Doctors,Carnes Hill,126,75,25.44,38.38,3332,6.33,ok
+Carramar,0.34319,2.601622,23,75,1.009,straight_line_haversine_35kmh_optimistic_bound,1.73,Vasan Medical Centre,Fairfield East,322,225,96.32,97.21,3475,18.79,no_data
+Carss Park,0.265589,1.560531,5,54,1.515,straight_line_haversine_35kmh_optimistic_bound,2.6,Health Konnect Medical Centre,Sans Souci,266,155,55.29,34.26,1265,22.21,no_data
+Cartwright,0.280675,2.438517,8,54,0.756,straight_line_haversine_35kmh_optimistic_bound,1.3,Dr Arun Reddy,Miller,166,136,65.44,91.47,2616,14.07,no_data
+Castle Cove,0.239872,1.610456,2,62,1.38,straight_line_haversine_35kmh_optimistic_bound,2.37,The Family Doctor Medical Practice,Castle Cove,225,126,41.91,36.18,2643,22.29,ok
+Castle Hill,0.253556,1.548529,11,37,0.422,straight_line_haversine_35kmh_optimistic_bound,0.72,Sivanna Health,Castle Hill,237,112,47.5,33.82,40874,19.95,ok
+Castlecrag,0.257268,1.610894,4,67,0.678,straight_line_haversine_35kmh_optimistic_bound,1.16,Castlecrag Medical Practice,Castlecrag,277,157,48.68,36.32,2965,18.79,ok
+Castlereagh,0.133529,0.554674,0,1,4.627,straight_line_haversine_35kmh_optimistic_bound,7.93,First Care Medical Centre - Cranebrook,Cranebrook,41,25,8.09,4.85,1248,18.43,no_data
+Casula,0.250684,2.048065,6,49,0.463,straight_line_haversine_35kmh_optimistic_bound,0.79,Casula Mall Medical Centre,Casula,172,108,46.47,68.24,16584,13.65,ok
+Catherine Field,0.156274,1.244271,0,7,2.494,straight_line_haversine_35kmh_optimistic_bound,4.28,Emerald Hills Medical Centre,Leppington,66,26,12.35,22.79,2609,11.65,no_data
+Cattai,0.062231,0.216417,0,0,6.815,straight_line_haversine_35kmh_optimistic_bound,11.68,Pitt Town Family Practice,Pitt Town,9,2,2.35,2.13,1077,15.97,no_data
+Cawdor,0.12041,0.6459,0,1,3.047,straight_line_haversine_35kmh_optimistic_bound,5.22,Camden South Family Doctors,Camden South,20,9,6.03,5.88,430,22.79,no_data
+Cecil Hills,0.17074,1.136456,1,18,0.652,straight_line_haversine_35kmh_optimistic_bound,1.12,Cecil Hills Medical Centre,Cecil Hills,142,74,16.03,19.56,6906,12.51,ok
+Cecil Park,0.136965,0.685865,0,6,2.754,straight_line_haversine_35kmh_optimistic_bound,4.72,Cecil Hills Medical Centre,Cecil Hills,115,41,8.53,6.18,815,21.1,no_data
+Centennial Park,0.294544,2.447504,24,138,1.025,straight_line_haversine_35kmh_optimistic_bound,1.76,Woollahra General Practice,Woollahra,298,220,73.53,92.06,2225,13.21,no_data
+Chatswood,0.262501,1.599993,20,52,0.107,straight_line_haversine_35kmh_optimistic_bound,0.18,The Station Medical Clinic,Chatswood,308,163,51.91,35.44,25553,15.07,ok
+Chatswood West,0.276107,1.647908,6,56,1.776,straight_line_haversine_35kmh_optimistic_bound,3.04,Sydney North Health Network,Chatswood,340,164,61.76,39.56,1521,19.53,no_data
+Cheltenham,0.282141,1.794981,10,52,1.416,straight_line_haversine_35kmh_optimistic_bound,2.43,North Epping Family Practice,North Epping,247,142,66.76,49.71,2166,19.67,no_data
+Cherrybrook,0.273413,1.719226,3,37,0.227,straight_line_haversine_35kmh_optimistic_bound,0.39,Cherrybrook Medical Centre,Cherrybrook,199,115,60.59,45.88,19082,18.82,ok
+Chester Hill,0.335549,2.385488,6,76,0.402,straight_line_haversine_35kmh_optimistic_bound,0.69,Aya Medical Centre,Chester Hill,378,245,93.82,89.41,14007,14.12,ok
+Chifley,0.137902,0.845536,6,18,1.023,straight_line_haversine_35kmh_optimistic_bound,1.75,Malabar Medical Centre,Malabar,205,78,8.82,9.41,3490,16.39,no_data
+Chippendale,0.345168,2.673072,43,143,0.311,straight_line_haversine_35kmh_optimistic_bound,0.53,Uts Health Service,Ultimo,380,276,97.21,98.97,7803,3.38,ok
+Chipping Norton,0.311726,2.246996,6,64,0.468,straight_line_haversine_35kmh_optimistic_bound,0.8,Chipping Norton Medical Centre,Chipping Norton,291,183,85.88,81.91,9412,17.54,ok
+Chiswick,0.30618,1.931724,6,80,1.005,straight_line_haversine_35kmh_optimistic_bound,1.72,Abbotsford Medical Practice,Abbotsford,418,290,81.76,59.71,2909,17.7,no_data
+Chullora,0.307072,2.094654,8,89,0.937,straight_line_haversine_35kmh_optimistic_bound,1.61,Botanica Medical & Dental Centre,Lidcombe,418,235,82.65,71.18,14,28.57,ok
+Church Point,0.166851,0.891438,0,13,2.459,straight_line_haversine_35kmh_optimistic_bound,4.22,Newport Medical Centre,Newport,24,19,14.41,11.03,1066,30.3,no_data
+Claremont Meadows,0.255459,2.162884,3,26,0.238,straight_line_haversine_35kmh_optimistic_bound,0.41,Depression Clinic And General Practice,Claremont Meadows,85,69,48.09,76.76,5177,7.55,ok
+Clarendon,0.359513,2.923721,1,12,1.658,straight_line_haversine_35kmh_optimistic_bound,2.84,Dr Warwick Mackay,South Windsor,24,18,99.41,99.85,147,15.65,no_data
+Clareville,0.159004,0.850045,2,12,1.562,straight_line_haversine_35kmh_optimistic_bound,2.68,Avalon Family Medical Practice,Avalon Beach,19,16,13.38,9.71,822,34.79,no_data
+Claymore,0.234702,2.12165,4,28,0.201,straight_line_haversine_35kmh_optimistic_bound,0.35,Claymore Medical Centre,Claymore,62,47,38.82,73.53,2579,6.79,ok
+Clemton Park,0.306521,2.179659,19,109,0.403,straight_line_haversine_35kmh_optimistic_bound,0.69,Clemton Park Family Medical Centre,Campsie,382,251,81.91,78.09,1676,26.13,ok
+Clontarf,0.222348,1.360599,5,35,1.345,straight_line_haversine_35kmh_optimistic_bound,2.31,Bupa Seaforth Medical And Wellbeing Centre,Seaforth,225,146,33.09,26.47,1746,17.58,no_data
+Clovelly,0.22471,1.774809,12,69,0.586,straight_line_haversine_35kmh_optimistic_bound,1.0,Bronte Medical Centre,Bronte,233,167,34.56,48.82,4887,11.66,no_data
+Clyde,0.30693,2.161527,12,76,0.897,straight_line_haversine_35kmh_optimistic_bound,1.54,Rosehill Surgery,Rosehill,395,213,82.21,76.47,9,0.0,no_data
+Coasters Retreat,0.130254,0.328192,0,2,4.253,straight_line_haversine_35kmh_optimistic_bound,7.29,Avalon Family Medical Practice,Avalon Beach,23,12,7.5,2.79,30,66.67,no_data
+Cobbitty,0.084476,0.606078,0,0,5.533,straight_line_haversine_35kmh_optimistic_bound,9.48,Myhealth Oran Park,Oran Park,22,15,2.94,5.15,4206,15.38,no_data
+Colebee,0.247955,2.267888,5,31,0.688,straight_line_haversine_35kmh_optimistic_bound,1.18,Pgk Medical,Colebee,149,104,45.44,82.94,4914,4.68,ok
+Collaroy,0.160051,0.876555,2,15,1.804,straight_line_haversine_35kmh_optimistic_bound,3.09,Plateau Family Medicine,Collaroy Plateau,58,42,13.82,10.15,7944,19.88,ok
+Collaroy Plateau,0.174367,0.926634,1,16,0.526,straight_line_haversine_35kmh_optimistic_bound,0.9,Plateau Family Medicine,Collaroy Plateau,60,45,16.76,12.35,4805,13.38,ok
+Colyton,0.218023,1.903543,7,36,0.596,straight_line_haversine_35kmh_optimistic_bound,1.02,Colyton Medical Centre,Colyton,109,59,31.32,56.62,8770,14.18,ok
+Como,0.281999,1.591742,4,39,0.249,straight_line_haversine_35kmh_optimistic_bound,0.43,Como Medical Practice,Como,225,133,66.47,35.15,4053,14.09,ok
+Concord,0.277739,1.683774,11,70,0.161,straight_line_haversine_35kmh_optimistic_bound,0.28,Majors Bay Medical Centre,Concord,466,213,63.24,42.5,14551,19.73,ok
+Concord West,0.274527,1.735349,8,65,1.461,straight_line_haversine_35kmh_optimistic_bound,2.5,Mortlake Family Medical Practice,Mortlake,436,207,60.88,46.76,6178,18.78,no_data
+Condell Park,0.305874,2.077755,7,76,0.246,straight_line_haversine_35kmh_optimistic_bound,0.42,Dr Joseph Rajab,Condell Park,348,214,81.62,69.85,13066,14.01,ok
+Connells Point,0.2817,1.69198,2,56,1.203,straight_line_haversine_35kmh_optimistic_bound,2.06,South Hurstville Family Practice,South Hurstville,257,169,66.03,43.38,2884,20.04,no_data
+Constitution Hill,0.310537,2.315988,14,77,1.047,straight_line_haversine_35kmh_optimistic_bound,1.8,Darcy Road Surgery,Wentworthville,304,196,85.0,86.47,4030,15.09,no_data
+Coogee,0.227192,1.800332,15,75,0.12,straight_line_haversine_35kmh_optimistic_bound,0.21,Coogee Family Medical Centre,Coogee,243,165,35.74,50.0,14634,10.8,ok
+Cornwallis,0.379974,3.256267,0,12,2.759,straight_line_haversine_35kmh_optimistic_bound,4.73,Myhealth Kable Street,Windsor,21,19,99.71,100.0,44,11.36,no_data
+Cottage Point,0.136059,0.745984,0,1,4.837,straight_line_haversine_35kmh_optimistic_bound,8.29,Berowra Station Surgery,Berowra,27,7,8.38,7.35,96,40.62,no_data
+Cowan,0.117157,1.404364,0,0,5.745,straight_line_haversine_35kmh_optimistic_bound,9.85,Brooklyn Family Medical,Brooklyn,5,4,5.44,28.24,631,17.43,no_data
+Cranebrook,0.16953,1.044511,2,5,1.546,straight_line_haversine_35kmh_optimistic_bound,2.65,First Care Medical Centre - Cranebrook,Cranebrook,61,34,15.0,15.74,15779,9.95,ok
+Cremorne,0.291689,1.950295,16,59,0.409,straight_line_haversine_35kmh_optimistic_bound,0.7,Cremorne Medical Practice,Cremorne,316,204,72.35,61.03,11263,18.18,ok
+Cremorne Point,0.299267,2.012678,13,96,1.073,straight_line_haversine_35kmh_optimistic_bound,1.84,Baylife Medical,Neutral Bay,326,229,77.35,64.56,2270,23.17,no_data
+Cromer,0.18132,0.917663,1,18,1.659,straight_line_haversine_35kmh_optimistic_bound,2.84,Plateau Family Medicine,Collaroy Plateau,92,46,18.24,11.76,8030,18.63,no_data
+Cronulla,0.124912,0.700125,6,14,0.104,straight_line_haversine_35kmh_optimistic_bound,0.18,Cronulla General Practice,Cronulla,85,37,6.76,6.47,17899,21.52,ok
+Crows Nest,0.310558,2.020734,22,88,0.279,straight_line_haversine_35kmh_optimistic_bound,0.48,Our Medical Crows Nest,Crows Nest,363,226,85.15,65.44,4974,10.29,ok
+Croydon,0.311002,1.975742,27,84,0.385,straight_line_haversine_35kmh_optimistic_bound,0.66,Croydon Medical Practice,Croydon,471,269,85.59,62.35,10755,20.1,ok
+Croydon Park,0.311754,2.10404,18,95,0.493,straight_line_haversine_35kmh_optimistic_bound,0.84,Dr Cheng Phua,Croydon Park,429,275,86.03,71.91,10929,17.63,ok
+Cumberland Reach,0.0,0.0,0,0,11.877,straight_line_haversine_35kmh_optimistic_bound,20.36,Wilberforce Medical Practice,Wilberforce,0,0,0.66,0.81,208,12.02,no_data
+Curl Curl,0.155278,0.945937,9,24,1.224,straight_line_haversine_35kmh_optimistic_bound,2.1,Freshwater Family Medical Centre,Freshwater,104,49,12.06,13.24,2364,12.39,no_data
+Currans Hill,0.246846,2.425652,3,30,1.467,straight_line_haversine_35kmh_optimistic_bound,2.51,Mt Annan Doctors,Mount Annan,54,48,45.0,90.88,5541,7.56,no_data
+Daceyville,0.265164,2.004606,15,78,0.44,straight_line_haversine_35kmh_optimistic_bound,0.75,Kingsmedical Family Practice,Kingsford,304,206,54.71,63.68,1146,38.83,no_data
+Dangar Island,0.126054,1.638966,2,2,1.544,straight_line_haversine_35kmh_optimistic_bound,2.65,Brooklyn Gp Unit,Brooklyn,9,4,6.91,38.53,313,31.31,no_data
+Darling Point,0.299258,2.376882,16,130,0.628,straight_line_haversine_35kmh_optimistic_bound,1.08,Cooper Street Clinic,Double Bay,308,219,77.21,89.12,3977,30.63,no_data
+Darlinghurst,0.33405,2.63335,58,139,0.106,straight_line_haversine_35kmh_optimistic_bound,0.18,East Sydney Doctors,Darlinghurst,358,252,93.53,97.94,10615,11.26,ok
+Darlington,0.350941,2.636217,34,131,0.246,straight_line_haversine_35kmh_optimistic_bound,0.42,University Health Service - University Of Sydney,Sydney,392,297,98.24,98.09,2597,5.43,ok
+Davidson,0.208184,1.003077,3,24,1.128,straight_line_haversine_35kmh_optimistic_bound,1.93,Davidson Family Medical Practice,Davidson,191,82,28.24,14.56,2725,20.44,ok
+Dawes Point,0.339116,2.467756,29,114,0.368,straight_line_haversine_35kmh_optimistic_bound,0.63,Dr Nyen Ling Yoong,Millers Point,375,270,95.74,92.5,385,27.27,no_data
+Dean Park,0.264554,2.350335,4,39,0.8,straight_line_haversine_35kmh_optimistic_bound,1.37,Glendenning Medical Centre,Glendenning,157,116,54.26,87.79,3180,14.94,no_data
+Dee Why,0.169837,0.917663,6,19,0.069,straight_line_haversine_35kmh_optimistic_bound,0.12,Dee Why Medical Centre,Dee Why,96,42,15.59,11.91,23354,12.02,ok
+Denham Court,0.204446,1.669296,1,16,1.935,straight_line_haversine_35kmh_optimistic_bound,3.32,My Family Health Medical Centre Willowdale,Denham Court,108,51,27.06,41.03,9129,9.12,ok
+Denistone,0.277017,1.688962,20,60,0.557,straight_line_haversine_35kmh_optimistic_bound,0.95,Ryde Family Medical Centre,Denistone,339,186,62.5,42.94,3726,19.54,ok
+Denistone East,0.269998,1.621507,20,56,0.493,straight_line_haversine_35kmh_optimistic_bound,0.85,Midway Family Medical Centre - Ryde,Ryde,334,172,58.24,37.21,2292,17.45,ok
+Denistone West,0.267671,1.671662,16,55,0.908,straight_line_haversine_35kmh_optimistic_bound,1.56,Dr Jl Kearns Practice,Ermington,336,168,56.03,41.18,947,18.59,no_data
+Dharruk,0.245324,2.113687,11,39,0.478,straight_line_haversine_35kmh_optimistic_bound,0.82,Dr David Yap,Dharruk,134,77,44.56,72.94,2806,15.47,ok
+Dolans Bay,0.149657,0.786975,1,22,1.802,straight_line_haversine_35kmh_optimistic_bound,3.09,Burraneer Family Practice,Burraneer,88,38,11.03,8.09,699,15.02,no_data
+Dolls Point,0.208322,1.110489,7,41,0.833,straight_line_haversine_35kmh_optimistic_bound,1.43,Dr Valerie Gonzaga Medical Practice,Ramsgate Beach,223,115,28.38,18.38,1633,20.15,ok
+Doonside,0.26439,2.21863,5,48,0.178,straight_line_haversine_35kmh_optimistic_bound,0.31,Drs Danh And Margaret Nguyen,Doonside,180,112,54.12,80.44,13614,14.16,ok
+Double Bay,0.290976,2.289351,25,124,0.26,straight_line_haversine_35kmh_optimistic_bound,0.45,Dr D Hameiri - General Practice,Double Bay,300,215,71.47,84.85,4709,22.11,ok
+Dover Heights,0.197934,1.246741,8,40,0.628,straight_line_haversine_35kmh_optimistic_bound,1.08,Rose Bay Medical Practice,Rose Bay,228,160,23.97,22.94,4044,16.39,ok
+Drummoyne,0.325257,2.16184,5,74,0.226,straight_line_haversine_35kmh_optimistic_bound,0.39,Dmc Medical Centre,Drummoyne,431,286,90.44,76.62,12011,19.5,ok
+Duffys Forest,0.143101,0.635084,0,3,3.242,straight_line_haversine_35kmh_optimistic_bound,5.56,Terrey Hills Family Surgery,Terrey Hills,72,27,9.56,5.59,509,13.95,no_data
+Dulwich Hill,0.328679,2.106534,14,101,0.768,straight_line_haversine_35kmh_optimistic_bound,1.32,Dr Costa's Surgery,Hurlstone Park,464,290,92.21,72.21,14046,13.62,ok
+Dundas,0.28039,1.946004,6,64,0.747,straight_line_haversine_35kmh_optimistic_bound,1.28,Dundas Valley Medical Centre,Telopea,319,196,65.15,60.59,4959,12.93,no_data
+Dundas Valley,0.283178,1.88353,5,52,1.032,straight_line_haversine_35kmh_optimistic_bound,1.77,Telopea Medical Practice,Telopea,314,185,67.65,56.03,5875,13.5,ok
+Dural,0.202598,1.074439,2,9,1.112,straight_line_haversine_35kmh_optimistic_bound,1.91,Dural Medical Centre,Dural,128,74,25.88,16.47,7900,22.11,ok
+Eagle Vale,0.235568,2.156069,3,26,0.769,straight_line_haversine_35kmh_optimistic_bound,1.32,Eagle Vale Medical Centre,Eagle Vale,64,50,39.26,76.03,5789,12.09,ok
+Earlwood,0.307011,2.097856,9,102,0.186,straight_line_haversine_35kmh_optimistic_bound,0.32,Earlwood Family Practice,Earlwood,407,255,82.5,71.32,18053,20.64,ok
+East Hills,0.22741,1.279884,5,28,0.421,straight_line_haversine_35kmh_optimistic_bound,0.72,East Hills Medical Centre,East Hills,252,133,35.88,24.41,3370,17.57,ok
+East Killara,0.223712,1.180327,1,41,0.56,straight_line_haversine_35kmh_optimistic_bound,0.96,East Killara Medical Practice,East Killara,215,98,34.12,21.32,2895,17.75,ok
+East Kurrajong,0.12214,0.442798,0,1,3.894,straight_line_haversine_35kmh_optimistic_bound,6.67,Glossodia Medical Practice,Glossodia,15,2,6.62,3.38,2203,12.66,no_data
+East Lindfield,0.239636,1.324885,3,42,1.832,straight_line_haversine_35kmh_optimistic_bound,3.14,Lindfield Family Medicine,Lindfield,235,117,41.76,25.44,3710,20.0,no_data
+East Ryde,0.273263,1.723059,4,55,0.339,straight_line_haversine_35kmh_optimistic_bound,0.58,East Ryde Family Medical Practice,East Ryde,365,191,60.44,46.32,2522,17.21,ok
+Eastern Creek,0.203685,1.396331,0,17,2.308,straight_line_haversine_35kmh_optimistic_bound,3.96,Max Care Medical Centre,Eastern Creek,157,86,26.62,27.65,874,10.53,ok
+Eastgardens,0.219935,1.518562,11,48,0.137,straight_line_haversine_35kmh_optimistic_bound,0.24,Eastgardens Medical Centre,Eastgardens,268,179,32.5,32.35,4086,8.08,ok
+Eastlakes,0.28322,2.111238,11,65,1.014,straight_line_haversine_35kmh_optimistic_bound,1.74,Dr Naresh Sachdev,Rosebery,318,235,67.79,72.5,6347,19.3,ok
+Eastwood,0.266008,1.637467,20,57,0.259,straight_line_haversine_35kmh_optimistic_bound,0.44,Kang Nam Surgery,Eastwood,316,155,55.59,38.24,18695,17.42,ok
+Ebenezer,0.058309,0.216417,0,0,6.313,straight_line_haversine_35kmh_optimistic_bound,10.82,Wilberforce Medical Practice,Wilberforce,8,2,2.21,2.13,1081,14.62,no_data
+Edensor Park,0.24379,1.762719,5,36,0.279,straight_line_haversine_35kmh_optimistic_bound,0.48,Myhealth Edensor Park,Edensor Park,187,130,43.82,48.24,10279,16.65,ok
+Edgecliff,0.300655,2.406589,27,129,0.022,straight_line_haversine_35kmh_optimistic_bound,0.04,Edgecliff Medical Centre,Edgecliff,309,222,78.68,90.0,2499,22.61,ok
+Edmondson Park,0.214315,1.80081,5,26,1.055,straight_line_haversine_35kmh_optimistic_bound,1.81,Doctors At Prestons,Prestons,125,76,30.29,50.29,12080,4.43,ok
+Elanora Heights,0.18381,0.945315,3,12,0.741,straight_line_haversine_35kmh_optimistic_bound,1.27,Elanora Heights Family Medicine,Elanora Heights,57,35,19.12,13.09,4581,17.14,ok
+Elderslie,0.176639,1.775571,5,15,0.587,straight_line_haversine_35kmh_optimistic_bound,1.01,Schwarz Family Practice,Elderslie,44,26,17.21,48.97,7878,13.05,ok
+Elizabeth Bay,0.313376,2.470994,38,135,0.3,straight_line_haversine_35kmh_optimistic_bound,0.51,True Health Medical,Potts Point,332,232,86.47,92.65,4878,21.07,ok
+Elizabeth Hills,0.203855,1.425275,6,24,0.755,straight_line_haversine_35kmh_optimistic_bound,1.29,Teammed Middleton Grange,Middleton Grange,148,95,26.76,28.53,3208,5.55,no_data
+Ellis Lane,0.137182,1.16259,0,5,2.805,straight_line_haversine_35kmh_optimistic_bound,4.81,Camden Healthcare Centre,Camden,23,19,8.68,20.29,852,20.19,no_data
+Elvina Bay,0.16968,0.761996,0,12,3.694,straight_line_haversine_35kmh_optimistic_bound,6.33,Newport Medical Centre,Newport,21,18,15.37,7.57,80,21.25,no_data
+Emerton,0.234885,1.980501,8,36,0.367,straight_line_haversine_35kmh_optimistic_bound,0.63,Emerton Medical Centre,Emerton,127,72,39.12,62.5,2295,13.81,ok
+Emu Heights,0.22342,1.585903,0,15,2.246,straight_line_haversine_35kmh_optimistic_bound,3.85,Emu Plains Family Mediclinic,Emu Plains,43,37,33.97,35.0,3205,14.01,no_data
+Emu Plains,0.236749,1.940657,5,28,0.669,straight_line_haversine_35kmh_optimistic_bound,1.15,Emu Plains Medical Centre,Emu Plains,50,38,40.15,60.0,8126,21.72,ok
+Enfield,0.309448,2.026729,19,90,0.463,straight_line_haversine_35kmh_optimistic_bound,0.79,Enfield Medical & Dental,Enfield,454,257,83.82,65.88,2992,17.98,ok
+Engadine,0.171729,1.264889,10,18,0.988,straight_line_haversine_35kmh_optimistic_bound,1.69,Caldarra Medical Surgery,Engadine,71,42,16.32,23.68,17736,17.88,ok
+Englorie Park,0.208093,1.816675,7,22,0.33,straight_line_haversine_35kmh_optimistic_bound,0.57,Myhealth Macarthur Square,Campbelltown,51,40,28.09,51.18,361,10.53,no_data
+Enmore,0.353393,2.512082,21,119,0.298,straight_line_haversine_35kmh_optimistic_bound,0.51,Enmore Medical Practice,Newtown,431,305,98.53,94.12,3871,9.43,ok
+Epping,0.289816,1.836738,10,59,0.418,straight_line_haversine_35kmh_optimistic_bound,0.72,Rawson Medical Centre,Epping,287,155,70.59,52.35,29551,13.63,ok
+Ermington,0.267897,1.87685,4,62,0.542,straight_line_haversine_35kmh_optimistic_bound,0.93,Myhealth Ermington,Ermington,330,189,56.18,54.85,12686,14.01,ok
+Erskine Park,0.162943,1.177774,2,10,1.197,straight_line_haversine_35kmh_optimistic_bound,2.05,Erskine Park Family Clinic,Erskine Park,103,43,14.12,21.18,6486,10.64,ok
+Erskineville,0.343248,2.517886,17,129,0.481,straight_line_haversine_35kmh_optimistic_bound,0.82,Park Sydney Medical Practice,Erskineville,396,296,96.47,94.41,9657,5.51,ok
+Eschol Park,0.239547,2.14499,3,30,1.589,straight_line_haversine_35kmh_optimistic_bound,2.72,Claymore Medical Centre,Claymore,68,49,41.62,75.0,2607,13.08,no_data
+Eveleigh,0.35342,2.64591,25,132,0.319,straight_line_haversine_35kmh_optimistic_bound,0.55,Myhealth South Eveleigh,Eveleigh,398,298,98.68,98.53,606,10.07,ok
+Fairfield,0.331866,2.510184,26,81,0.133,straight_line_haversine_35kmh_optimistic_bound,0.23,Dr David Ian Gibson,Fairfield,311,210,92.79,93.97,18596,16.92,ok
+Fairfield East,0.337529,2.461673,24,89,0.463,straight_line_haversine_35kmh_optimistic_bound,0.79,Vasan Medical Centre,Fairfield East,341,233,95.44,92.35,5198,15.91,ok
+Fairfield Heights,0.325406,2.385111,28,80,0.249,straight_line_haversine_35kmh_optimistic_bound,0.43,Hk Medical Centre,Fairfield Heights,307,198,90.74,89.26,8269,15.55,ok
+Fairfield West,0.310083,2.215347,10,76,0.321,straight_line_haversine_35kmh_optimistic_bound,0.55,Arina Medical Centre,Fairfield West,296,172,84.71,80.15,12981,15.21,ok
+Fairlight,0.187035,1.106749,9,26,0.354,straight_line_haversine_35kmh_optimistic_bound,0.61,Myora Medical General Practice,Fairlight,193,87,20.29,18.24,6141,15.4,ok
+Fiddletown,0.057611,0.312362,0,0,7.795,straight_line_haversine_35kmh_optimistic_bound,13.36,Proverbs Family Medical Practice,Arcadia,5,3,2.06,2.65,259,14.29,no_data
+Five Dock,0.315198,1.970446,10,83,0.001,straight_line_haversine_35kmh_optimistic_bound,0.0,Abbotsford Cove General Practice,Five Dock,477,273,87.35,61.76,9823,16.93,ok
+Forest Glen,0.036519,0.236763,0,0,6.655,straight_line_haversine_35kmh_optimistic_bound,11.41,Glenorie District Medical Centre,Glenorie,2,2,1.76,2.35,71,21.13,no_data
+Forest Lodge,0.349901,2.52277,16,131,0.577,straight_line_haversine_35kmh_optimistic_bound,0.99,Harold Park Medical Centre,Forest Lodge,409,311,97.94,94.85,4965,7.92,ok
+Forestville,0.219112,1.329787,5,32,0.388,straight_line_haversine_35kmh_optimistic_bound,0.67,Darley Street Medical Practice,Forestville,172,114,32.21,25.74,8659,20.43,ok
+Freemans Reach,0.342093,2.540381,0,2,3.715,straight_line_haversine_35kmh_optimistic_bound,6.37,Wilberforce Medical Practice,Wilberforce,19,19,96.18,95.44,2049,14.01,no_data
+Frenchs Forest,0.200846,1.095695,8,17,0.273,straight_line_haversine_35kmh_optimistic_bound,0.47,Forest Family Practice,Frenchs Forest,137,86,25.15,17.65,14267,15.79,ok
+Freshwater,0.158258,0.998183,8,23,0.303,straight_line_haversine_35kmh_optimistic_bound,0.52,Freshwater Family Medical Centre,Freshwater,110,55,12.5,14.26,9186,12.56,ok
+Gables,0.158767,1.012763,0,2,4.254,straight_line_haversine_35kmh_optimistic_bound,7.29,Carmel Village Doctors,Box Hill,53,27,12.94,14.85,3339,4.7,ok
+Galston,0.18405,1.129527,0,2,2.041,straight_line_haversine_35kmh_optimistic_bound,3.5,Galston Family Practice,Galston,77,37,19.26,19.12,3195,24.23,ok
+Georges Hall,0.324564,2.246516,3,66,0.75,straight_line_haversine_35kmh_optimistic_bound,1.29,Dr Yu Yu Tin Surgery,Georges Hall,347,226,90.15,81.76,9739,18.7,ok
+Gilead,0.183673,1.148114,0,3,4.412,straight_line_haversine_35kmh_optimistic_bound,7.56,Rosemeadow Medical Centre,Rosemeadow,31,17,18.97,19.93,882,86.96,no_data
+Girraween,0.298346,2.192101,14,65,0.963,straight_line_haversine_35kmh_optimistic_bound,1.65,Civic Park Medical Centre,Pendle Hill,295,180,76.47,78.82,6256,10.71,no_data
+Gladesville,0.279417,1.646814,8,50,0.103,straight_line_haversine_35kmh_optimistic_bound,0.18,Gladesville Medical,Gladesville,407,227,64.12,39.41,12867,16.23,ok
+Glebe,0.351941,2.59144,18,127,0.703,straight_line_haversine_35kmh_optimistic_bound,1.2,Glebe Medical Centre,Glebe,402,307,98.38,96.91,11680,16.51,ok
+Gledswood Hills,0.219217,1.890643,3,17,1.448,straight_line_haversine_35kmh_optimistic_bound,2.48,Doctors House Gregory Hills,Gledswood Hills,70,46,32.35,56.32,6112,4.38,ok
+Glen Alpine,0.2026,1.681418,1,18,1.891,straight_line_haversine_35kmh_optimistic_bound,3.24,Dr Anil Gupta's Medical Surgery,Rosemeadow,47,40,26.03,42.35,4429,16.82,no_data
+Glendenning,0.261375,2.294697,3,42,1.025,straight_line_haversine_35kmh_optimistic_bound,1.76,Doonside Medical Centre,Doonside,158,109,51.47,85.29,5196,7.02,ok
+Glenfield,0.207067,1.717998,5,22,0.156,straight_line_haversine_35kmh_optimistic_bound,0.27,Glenfield Family Medical Practice,Glenfield,131,80,27.79,45.74,10536,14.09,ok
+Glenhaven,0.233156,1.377695,1,29,0.641,straight_line_haversine_35kmh_optimistic_bound,1.1,Glenhaven Clinic,Glenhaven,189,89,37.79,26.91,6619,27.19,ok
+Glenmore Park,0.218068,1.593149,2,24,1.077,straight_line_haversine_35kmh_optimistic_bound,1.85,Lakes Drive Family Practice,Glenmore Park,56,38,31.47,35.29,25021,8.74,ok
+Glenorie,0.052553,0.469383,0,1,3.834,straight_line_haversine_35kmh_optimistic_bound,6.57,Glenorie District Medical Centre,Glenorie,5,2,1.91,3.97,3792,17.83,ok
+Glenwood,0.276668,2.312403,12,61,0.491,straight_line_haversine_35kmh_optimistic_bound,0.84,Parklea Medical Centre,Glenwood,199,133,62.21,86.18,15829,10.02,ok
+Glossodia,0.25101,1.105011,1,1,1.649,straight_line_haversine_35kmh_optimistic_bound,2.83,Glossodia Medical Practice,Glossodia,20,10,46.62,18.09,2865,10.68,ok
+Gordon,0.274996,1.640255,6,28,0.089,straight_line_haversine_35kmh_optimistic_bound,0.15,Gordon Village General Practice,Gordon,222,148,61.18,38.82,8795,15.85,ok
+Grantham Farm,0.213611,1.910629,4,14,0.832,straight_line_haversine_35kmh_optimistic_bound,1.43,Grantham Street Family Practice,Grantham Farm,84,50,30.0,57.5,3669,3.71,no_data
+Granville,0.292195,2.101933,22,80,0.17,straight_line_haversine_35kmh_optimistic_bound,0.29,New Granville Medical & Dental Centre,Granville,370,190,72.5,71.76,16716,9.66,ok
+Grasmere,0.120749,0.987933,0,6,2.265,straight_line_haversine_35kmh_optimistic_bound,3.88,Camden Medical Centre And Skin Cancer Clinic,Camden,21,15,6.18,14.12,2105,43.33,no_data
+Grays Point,0.194076,1.08432,1,28,1.602,straight_line_haversine_35kmh_optimistic_bound,2.75,North West Medical Practice Gymea,Gymea,91,57,22.21,16.91,3034,17.83,no_data
+Great Mackerel Beach,0.149905,0.722654,0,0,5.544,straight_line_haversine_35kmh_optimistic_bound,9.5,Avalon Family Medical Practice,Avalon Beach,18,10,11.18,6.62,50,24.0,no_data
+Green Valley,0.236018,1.881567,6,32,0.062,straight_line_haversine_35kmh_optimistic_bound,0.11,Wilson Road Medical Clinic,Green Valley,155,114,39.41,55.59,12919,12.93,ok
+Greenacre,0.304716,2.115356,7,94,0.089,straight_line_haversine_35kmh_optimistic_bound,0.15,Dr Tsang's Surgery,Greenacre,404,231,81.32,73.09,26314,13.92,ok
+Greendale,0.158708,1.791833,0,0,5.727,straight_line_haversine_35kmh_optimistic_bound,9.82,Luddenham Medical Centre,Luddenham,4,3,12.79,49.56,314,17.83,no_data
+Greenfield Park,0.265387,1.973888,9,59,0.395,straight_line_haversine_35kmh_optimistic_bound,0.68,Dr Williams Surgery,Greenfield Park,218,132,55.0,62.21,5394,16.69,ok
+Greenhills Beach,0.141791,0.798565,3,10,1.763,straight_line_haversine_35kmh_optimistic_bound,3.02,Cronulla Medical Practice,Cronulla,102,53,9.26,8.38,1375,6.18,no_data
+Greenwich,0.303833,1.944888,10,89,0.612,straight_line_haversine_35kmh_optimistic_bound,1.05,Synergy Medical Practice,Greenwich,386,229,81.03,60.44,5469,20.3,ok
+Gregory Hills,0.253174,2.424246,4,19,0.431,straight_line_haversine_35kmh_optimistic_bound,0.74,Medicines R Us Chemist Gregory Hills,Gregory Hills,62,48,47.21,90.59,9142,4.5,ok
+Greystanes,0.311307,2.268246,5,64,0.645,straight_line_haversine_35kmh_optimistic_bound,1.11,Greystanes Family Medical Practice,Greystanes,304,196,85.74,83.24,23511,18.88,ok
+Grose Vale,0.182059,0.824524,0,1,3.72,straight_line_haversine_35kmh_optimistic_bound,6.38,Myhealth Kurrajong Village,Kurrajong,10,5,18.38,8.97,1272,19.26,no_data
+Grose Wold,0.265248,1.467079,0,4,4.575,straight_line_haversine_35kmh_optimistic_bound,7.84,North Richmond Family Medical Practice,North Richmond,12,9,54.85,30.59,668,15.57,no_data
+Guildford,0.321535,2.3439,9,96,0.317,straight_line_haversine_35kmh_optimistic_bound,0.54,Guildford Road Medical Centre,Guildford,369,219,89.56,87.65,24091,11.22,ok
+Guildford West,0.327917,2.577942,3,81,0.686,straight_line_haversine_35kmh_optimistic_bound,1.18,Guildford West Family Practice,Guildford West,325,201,91.91,96.62,5762,10.93,gp_count_unknown
+Gymea,0.240129,1.386364,17,30,0.198,straight_line_haversine_35kmh_optimistic_bound,0.34,St Michael Family Medical Practice,Gymea,137,86,42.21,27.35,8219,17.58,ok
+Gymea Bay,0.214945,1.225112,4,30,0.943,straight_line_haversine_35kmh_optimistic_bound,1.62,North West Medical Practice Gymea,Gymea,118,62,30.44,22.35,6983,17.0,no_data
+Haberfield,0.326424,2.030848,26,96,0.411,straight_line_haversine_35kmh_optimistic_bound,0.7,Marinucci Medical Centre,Haberfield,494,276,91.32,66.91,6480,22.19,ok
+Hammondville,0.25898,1.625008,2,35,0.2,straight_line_haversine_35kmh_optimistic_bound,0.34,Hammondcare Centre For Positive Ageing & Care,Hammondville,255,150,49.85,37.35,3691,27.74,ok
+Harrington Park,0.204209,2.002138,4,18,0.521,straight_line_haversine_35kmh_optimistic_bound,0.89,Harrington Park Medical Practice,Harrington Park,50,36,26.91,63.24,13332,8.7,ok
+Harris Park,0.301168,2.147999,20,78,0.13,straight_line_haversine_35kmh_optimistic_bound,0.22,Edinburgh Medical Centre,Harris Park,373,192,79.12,75.44,5043,8.47,ok
+Hassall Grove,0.237644,2.004717,9,40,0.415,straight_line_haversine_35kmh_optimistic_bound,0.71,Nmmr Medical Services,Hassall Grove,145,89,40.59,63.82,4401,8.13,ok
+Haymarket,0.341259,2.651561,61,135,0.147,straight_line_haversine_35kmh_optimistic_bound,0.25,Dr Lun - General Practice,Haymarket,379,265,96.03,98.68,8305,4.02,ok
+Heathcote,0.113803,0.812509,0,10,2.455,straight_line_haversine_35kmh_optimistic_bound,4.21,Engadine Medical Centre,Engadine,42,19,5.15,8.68,6148,22.82,ok
+Hebersham,0.250368,2.190497,10,36,0.214,straight_line_haversine_35kmh_optimistic_bound,0.37,Jersey Road Medical Practice,Hebersham,145,83,46.32,78.68,5643,13.59,ok
+Heckenberg,0.282709,2.386841,11,76,0.552,straight_line_haversine_35kmh_optimistic_bound,0.95,Dr N R Kumar - Busby,Busby,177,140,67.21,89.56,3263,11.46,no_data
+Henley,0.299928,1.947844,8,55,1.116,straight_line_haversine_35kmh_optimistic_bound,1.91,Hunters Hill Medical Centre (Mindbodywellth),Hunters Hill,398,280,78.24,60.74,455,18.02,no_data
+Hillsdale,0.207252,1.403824,11,42,0.385,straight_line_haversine_35kmh_optimistic_bound,0.66,Medical Centre - Southpoint,Hillsdale,254,167,27.94,28.09,5647,11.4,ok
+Hinchinbrook,0.242163,2.022857,11,38,0.841,straight_line_haversine_35kmh_optimistic_bound,1.44,Landmark Family Medical And Dental Centre,Len Waters Estate,150,111,42.94,65.74,11521,11.44,ok
+Hobartville,0.362397,2.393487,4,8,0.998,straight_line_haversine_35kmh_optimistic_bound,1.71,Richmond Marketplace Medical Centre,Richmond,20,16,99.56,89.85,2712,15.3,no_data
+Holroyd,0.293165,2.145879,30,74,0.627,straight_line_haversine_35kmh_optimistic_bound,1.08,Pitt Street Merrylands Medical Centre,Merrylands,360,180,72.94,75.15,1248,8.65,no_data
+Holsworthy,0.073927,0.128517,0,0,7.27,straight_line_haversine_35kmh_optimistic_bound,12.46,Minto Family Medical Centre,Minto,50,7,2.65,1.76,5657,5.02,ok
+Homebush,0.281482,1.86235,10,73,0.654,straight_line_haversine_35kmh_optimistic_bound,1.12,North Strathfield Medical Practice,North Strathfield,418,235,65.88,53.82,11660,6.11,ok
+Homebush West,0.281271,1.812609,6,59,0.416,straight_line_haversine_35kmh_optimistic_bound,0.71,Markets Medical & Dental Centre,Homebush West,403,247,65.59,50.88,9108,6.02,ok
+Horningsea Park,0.202179,1.578085,7,22,1.193,straight_line_haversine_35kmh_optimistic_bound,2.04,Carnes Hill Medical Centre,West Hoxton,127,75,25.74,34.56,3673,7.9,ok
+Hornsby,0.238702,1.529881,20,34,0.58,straight_line_haversine_35kmh_optimistic_bound,0.99,Sanctuary Lifestyle Clinic,Hornsby,131,78,41.03,33.09,22462,14.67,ok
+Hornsby Heights,0.191383,1.176151,1,7,1.954,straight_line_haversine_35kmh_optimistic_bound,3.35,Dr Arun Saha,Mount Colah,72,43,21.18,21.03,6354,15.64,ok
+Horsley Park,0.178395,0.788656,1,5,0.14,straight_line_haversine_35kmh_optimistic_bound,0.24,Horsley Park Medical Centre,Horsley Park,202,60,17.5,8.24,1790,21.51,ok
+Hoxton Park,0.237146,1.855793,5,33,0.27,straight_line_haversine_35kmh_optimistic_bound,0.46,Balsam Medical Centre,Hoxton Park,153,104,40.44,53.09,4572,10.0,ok
+Hunters Hill,0.288437,1.824647,6,58,0.407,straight_line_haversine_35kmh_optimistic_bound,0.7,Hunters Hill Medical Centre (Mindbodywellth),Hunters Hill,380,256,69.41,51.76,9014,23.91,ok
+Huntleys Cove,0.291545,1.872409,6,51,0.7,straight_line_haversine_35kmh_optimistic_bound,1.2,Hunters Hill Medical Centre (Mindbodywellth),Hunters Hill,396,263,72.06,54.56,740,32.16,no_data
+Huntleys Point,0.29811,1.878031,7,52,0.644,straight_line_haversine_35kmh_optimistic_bound,1.1,Hunters Hill Medical Centre (Mindbodywellth),Hunters Hill,402,274,76.18,55.0,142,33.8,no_data
+Hurlstone Park,0.325445,2.113323,9,107,0.579,straight_line_haversine_35kmh_optimistic_bound,0.99,Dr Lee's Surgery,Hurlstone Park,454,282,90.88,72.79,5001,19.26,ok
+Hurstville,0.295776,1.879009,14,85,0.434,straight_line_haversine_35kmh_optimistic_bound,0.74,Headspace Hurstville,Hurstville,314,210,74.71,55.44,31162,13.81,ok
+Hurstville Grove,0.279022,1.662761,17,68,0.997,straight_line_haversine_35kmh_optimistic_bound,1.71,South Hurstville Family Practice,South Hurstville,273,191,63.82,40.74,2606,18.34,no_data
+Illawong,0.257642,1.454739,2,25,0.684,straight_line_haversine_35kmh_optimistic_bound,1.17,Healthplus Medical Centre - Illawong,Illawong,218,115,49.41,29.85,7427,20.06,ok
+Ingleburn,0.18551,1.479474,4,17,0.655,straight_line_haversine_35kmh_optimistic_bound,1.12,Ingleburn Medical Centre,Ingleburn,101,46,19.71,30.74,15264,14.09,ok
+Ingleside,0.179727,0.891135,0,13,2.055,straight_line_haversine_35kmh_optimistic_bound,3.52,Elanora Heights Family Medicine,Elanora Heights,57,36,17.79,10.88,1030,18.25,no_data
+Jamisontown,0.228636,2.04004,6,28,0.418,straight_line_haversine_35kmh_optimistic_bound,0.72,Our Medical Penrith,Jamisontown,53,38,36.32,67.65,5321,18.32,ok
+Jannali,0.268139,1.513341,7,36,0.162,straight_line_haversine_35kmh_optimistic_bound,0.28,5 White Street Surgery,Jannali,196,115,56.32,32.21,6632,16.09,ok
+Jordan Springs,0.241851,1.863041,1,14,1.585,straight_line_haversine_35kmh_optimistic_bound,2.72,First Care Medical Centre - Jordan Springs,Jordan Springs,84,63,42.79,53.97,11772,4.83,ok
+Kangaroo Point,0.263006,1.459342,2,52,0.867,straight_line_haversine_35kmh_optimistic_bound,1.49,Good Samaritan Medical & Dental,Sylvania,227,127,52.65,30.0,602,22.92,no_data
+Kareela,0.268238,1.533423,8,34,0.135,straight_line_haversine_35kmh_optimistic_bound,0.23,Kareela Family Practice,Kareela,175,119,56.76,33.24,3572,22.06,ok
+Kearns,0.234468,2.064464,2,18,1.594,straight_line_haversine_35kmh_optimistic_bound,2.73,Raby Medical Centre,Raby,70,49,38.68,68.82,2693,9.54,ok
+Kellyville,0.24722,2.015167,5,41,0.223,straight_line_haversine_35kmh_optimistic_bound,0.38,Dr Vrajlal's Practice,Kellyville,181,114,45.15,65.15,27011,12.44,ok
+Kellyville Ridge,0.23998,2.239908,7,43,0.621,straight_line_haversine_35kmh_optimistic_bound,1.06,Ponds Medical Centre,The Ponds,158,105,42.06,81.18,10890,6.29,ok
+Kemps Creek,0.087159,0.256297,0,0,6.044,straight_line_haversine_35kmh_optimistic_bound,10.36,Cecil Hills Medical Centre,Cecil Hills,66,19,3.38,2.5,2121,21.07,no_data
+Kensington,0.294568,2.342673,20,127,0.327,straight_line_haversine_35kmh_optimistic_bound,0.56,Gp East,Kensington,328,219,73.68,87.5,11927,12.9,ok
+Kenthurst,0.132708,0.972256,0,3,3.426,straight_line_haversine_35kmh_optimistic_bound,5.87,Annangrove Medical Centre,Annangrove,70,27,7.94,13.82,5313,19.67,ok
+Kentlyn,0.153959,1.202295,0,13,3.196,straight_line_haversine_35kmh_optimistic_bound,5.48,Old Leumeah Road Medical Centre,Leumeah,48,35,11.91,21.91,726,23.28,ok
+Killara,0.254847,1.490401,5,43,1.256,straight_line_haversine_35kmh_optimistic_bound,2.15,West Lindfield Family Medical Practice,Lindfield,238,141,47.94,30.88,10620,18.84,no_data
+Killarney Heights,0.216159,1.316658,3,48,1.36,straight_line_haversine_35kmh_optimistic_bound,2.33,The Centre Doctors,Forestville,192,109,30.88,25.29,4502,16.46,no_data
+Kings Langley,0.294289,2.366069,10,67,0.878,straight_line_haversine_35kmh_optimistic_bound,1.5,Kings Langley Family Practice,Kings Langley,231,144,73.38,88.38,9354,18.77,ok
+Kings Park,0.279921,2.443106,5,61,0.882,straight_line_haversine_35kmh_optimistic_bound,1.51,Marayong Medical Centre,Marayong,188,134,64.56,91.91,3476,13.12,no_data
+Kingsford,0.27035,2.120371,16,86,0.153,straight_line_haversine_35kmh_optimistic_bound,0.26,Souths Juniors Medical Centre,Kingsford,297,207,58.38,73.38,13492,13.83,ok
+Kingsgrove,0.298575,1.98278,6,101,0.309,straight_line_haversine_35kmh_optimistic_bound,0.53,Kingsgrove Family Medical Centre,Kingsgrove,353,240,76.76,62.79,12881,19.74,ok
+Kingswood,0.264798,2.24823,6,33,0.569,straight_line_haversine_35kmh_optimistic_bound,0.98,Dr R Rs Muthukrishan Family Practice,Kingswood,78,61,54.41,82.06,10633,12.74,ok
+Kirkham,0.175687,1.868362,1,17,1.776,straight_line_haversine_35kmh_optimistic_bound,3.04,Schwarz Family Practice,Elderslie,46,21,16.91,54.26,690,15.51,no_data
+Kirrawee,0.238714,1.385695,15,31,0.033,straight_line_haversine_35kmh_optimistic_bound,0.06,Mymedical Health Centre,Kirrawee,143,83,41.18,27.21,11007,19.2,ok
+Kirribilli,0.316632,2.235554,13,110,0.473,straight_line_haversine_35kmh_optimistic_bound,0.81,Milsons Point Medical Centre,Milsons Point,346,248,87.79,81.03,3629,24.44,ok
+Kogarah,0.262545,1.504563,26,62,0.067,straight_line_haversine_35kmh_optimistic_bound,0.11,St George Gp After Hours Service,Kogarah,333,172,52.06,31.47,16416,13.59,ok
+Kogarah Bay,0.259682,1.461673,9,54,1.131,straight_line_haversine_35kmh_optimistic_bound,1.94,Sage Health Clinic (Dr Lynette Ong),Ramsgate,278,160,50.44,30.29,2102,19.08,no_data
+Ku-ring-gai Chase,0.147127,0.46944,0,2,4.596,straight_line_haversine_35kmh_optimistic_bound,7.88,Terrey Hills Family Surgery,Terrey Hills,30,17,10.59,4.12,10,0.0,no_data
+Kurmond,0.272127,1.583262,0,5,3.188,straight_line_haversine_35kmh_optimistic_bound,5.47,Myhealth Kurrajong Village,Kurrajong,10,10,59.41,34.85,850,21.18,no_data
+Kurnell,0.109844,0.45329,0,1,4.899,straight_line_haversine_35kmh_optimistic_bound,8.4,Cronulla Medical Practice,Cronulla,111,43,4.26,3.68,2528,14.32,ok
+Kurraba Point,0.30223,2.026888,13,97,1.075,straight_line_haversine_35kmh_optimistic_bound,1.84,Baylife Medical,Neutral Bay,337,231,79.85,66.03,1401,18.56,no_data
+Kurrajong,0.121773,0.33425,0,0,6.436,straight_line_haversine_35kmh_optimistic_bound,11.03,Myhealth Kurrajong Village,Kurrajong,9,3,6.47,2.94,3113,21.11,ok
+Kurrajong Hills,0.112396,0.481967,0,1,3.571,straight_line_haversine_35kmh_optimistic_bound,6.12,Myhealth Kurrajong Village,Kurrajong,6,2,4.71,4.26,705,17.3,no_data
+Kyeemagh,0.276353,1.672038,12,64,1.33,straight_line_haversine_35kmh_optimistic_bound,2.28,St George Family Mediclinic,Brighton-Le-Sands,381,211,61.91,41.32,935,22.99,no_data
+Kyle Bay,0.282419,1.672137,2,56,1.29,straight_line_haversine_35kmh_optimistic_bound,2.21,South Hurstville Family Practice,South Hurstville,253,165,66.91,41.47,1039,18.67,no_data
+La Perouse,0.087681,0.45455,1,9,1.448,straight_line_haversine_35kmh_optimistic_bound,2.48,Prince Henry Medical Practice,Little Bay,131,37,3.53,3.82,366,21.86,ok
+Lakemba,0.309604,2.300653,15,90,0.077,straight_line_haversine_35kmh_optimistic_bound,0.13,Lakemba Medical Services,Lakemba,350,265,83.97,85.44,17092,10.48,ok
+Lalor Park,0.291514,2.318223,11,65,0.07,straight_line_haversine_35kmh_optimistic_bound,0.12,Lalor Park Medical Centre,Lalor Park,244,142,71.91,86.62,7834,14.0,gp_count_unknown
+Lane Cove,0.290262,1.822139,7,70,0.324,straight_line_haversine_35kmh_optimistic_bound,0.56,Lane Cove Family Medical Practice,Riverview,364,225,71.18,51.32,12363,15.16,ok
+Lane Cove North,0.279723,1.721927,8,60,1.052,straight_line_haversine_35kmh_optimistic_bound,1.8,Burns Bay Medical Centre,Lane Cove,349,191,64.41,46.18,11773,12.16,no_data
+Lane Cove West,0.279592,1.691944,7,60,0.757,straight_line_haversine_35kmh_optimistic_bound,1.3,Burns Bay Medical Centre,Lane Cove,366,208,64.26,43.24,3146,14.05,no_data
+Lansvale,0.336134,2.437363,2,84,1.716,straight_line_haversine_35kmh_optimistic_bound,2.94,Chipping Norton Medical Centre,Chipping Norton,319,228,94.41,91.32,2595,16.8,ok
+Laughtondale,0.0,0.0,0,0,18.469,straight_line_haversine_35kmh_optimistic_bound,31.66,Glenorie District Medical Centre,Glenorie,0,0,0.66,0.81,102,14.71,no_data
+Lavender Bay,0.320598,2.260051,16,114,0.433,straight_line_haversine_35kmh_optimistic_bound,0.74,Walker Street Doctors,North Sydney,361,244,88.97,82.65,870,22.76,no_data
+Leets Vale,0.0,0.0,0,0,18.134,straight_line_haversine_35kmh_optimistic_bound,31.09,Wilberforce Medical Practice,Wilberforce,0,0,0.66,0.81,59,23.73,no_data
+Leichhardt,0.344182,2.351014,14,102,0.271,straight_line_haversine_35kmh_optimistic_bound,0.46,Leichhardt Medical And Dental Centre,Leichhardt,466,289,96.76,87.94,15158,12.41,ok
+Leonay,0.215198,1.662059,4,23,1.732,straight_line_haversine_35kmh_optimistic_bound,2.97,Emu Plains Family Mediclinic,Emu Plains,45,35,30.59,40.44,2582,18.71,no_data
+Leppington,0.158699,1.095361,2,4,1.385,straight_line_haversine_35kmh_optimistic_bound,2.37,Optimal Health Medical Centre Leppington,Leppington,84,37,12.65,17.5,9423,11.08,ok
+Lethbridge Park,0.234237,1.911775,5,33,0.978,straight_line_haversine_35kmh_optimistic_bound,1.68,Tregear Medical Centre,Tregear,120,72,38.53,57.79,4730,13.15,ok
+Leumeah,0.193197,1.656683,3,23,0.553,straight_line_haversine_35kmh_optimistic_bound,0.95,Old Leumeah Road Medical Centre,Leumeah,57,40,21.91,40.0,9992,15.75,ok
+Lewisham,0.335651,2.152928,22,106,0.499,straight_line_haversine_35kmh_optimistic_bound,0.86,Petersham Family Medical Centre,Petersham,483,285,94.12,75.88,4060,11.72,no_data
+Liberty Grove,0.270384,1.799521,3,66,1.231,straight_line_haversine_35kmh_optimistic_bound,2.11,Sydney Olympic Park Gp,Sydney Olympic Park,401,207,58.53,49.85,2055,10.61,no_data
+Lidcombe,0.302863,2.047966,16,50,0.247,straight_line_haversine_35kmh_optimistic_bound,0.42,Lidcombe Medical And Health Centre,Lidcombe,409,253,80.15,68.09,23663,10.94,ok
+Lilli Pilli,0.151355,0.800358,0,22,2.755,straight_line_haversine_35kmh_optimistic_bound,4.72,Caringbah Medical And Dental Centre,Caringbah,84,39,11.32,8.53,1405,19.15,no_data
+Lilyfield,0.344323,2.371857,12,116,1.066,straight_line_haversine_35kmh_optimistic_bound,1.83,Leichhardt General Practice,Leichhardt,446,298,96.91,88.68,7641,14.2,no_data
+Lindfield,0.25738,1.519069,5,46,0.963,straight_line_haversine_35kmh_optimistic_bound,1.65,Lindfield Medical And Dental,Lindfield,274,145,48.97,32.5,10943,17.07,ok
+Linley Point,0.293425,1.866725,5,66,0.887,straight_line_haversine_35kmh_optimistic_bound,1.52,Hunters Hill Medical Practice,Hunters Hill,378,255,73.09,54.12,382,18.59,no_data
+Little Bay,0.100868,0.530187,1,15,0.339,straight_line_haversine_35kmh_optimistic_bound,0.58,Prince Henry Medical Practice,Little Bay,158,47,3.82,4.56,4817,21.86,ok
+Liverpool,0.295281,2.312146,23,76,0.38,straight_line_haversine_35kmh_optimistic_bound,0.65,Castlereagh Street Medical Centre,Liverpool,220,148,74.26,85.88,31078,12.23,ok
+Llandilo,0.180875,0.924585,0,4,3.532,straight_line_haversine_35kmh_optimistic_bound,6.06,First Care Medical Centre - Jordan Springs,Jordan Springs,82,46,18.09,12.06,1618,15.7,no_data
+Loftus,0.211751,1.398843,3,32,0.485,straight_line_haversine_35kmh_optimistic_bound,0.83,Loftus Medical Practice,Loftus,115,52,29.71,27.79,4190,18.19,ok
+Londonderry,0.209943,0.815711,0,0,5.369,straight_line_haversine_35kmh_optimistic_bound,9.2,Bligh Park Family Practice,Bligh Park,29,13,29.12,8.82,4024,14.99,no_data
+Long Point,0.139635,0.971003,0,11,2.647,straight_line_haversine_35kmh_optimistic_bound,4.54,Mac-Field Medical Practice,Macquarie Fields,98,30,9.12,13.68,173,20.23,ok
+Longueville,0.3081,1.941463,7,70,1.144,straight_line_haversine_35kmh_optimistic_bound,1.96,Lane Cove Family Medical Practice,Riverview,396,249,82.94,60.15,2116,19.14,ok
+Lovett Bay,0.16968,0.761996,0,6,4.201,straight_line_haversine_35kmh_optimistic_bound,7.2,Newport Medical Centre,Newport,21,18,15.37,7.57,117,34.19,no_data
+Lower Portland,0.0,0.0,0,0,14.183,straight_line_haversine_35kmh_optimistic_bound,24.31,Wilberforce Medical Practice,Wilberforce,0,0,0.66,0.81,711,19.41,no_data
+Lucas Heights,0.143491,0.878191,0,14,3.132,straight_line_haversine_35kmh_optimistic_bound,5.37,Owen Brookes Pty Ltd,Engadine,78,29,9.71,10.29,4,0.0,no_data
+Luddenham,0.109793,1.378685,0,1,2.584,straight_line_haversine_35kmh_optimistic_bound,4.43,Luddenham Medical Centre,Luddenham,21,1,4.12,27.06,1927,11.31,ok
+Lugarno,0.264133,1.528448,1,46,0.895,straight_line_haversine_35kmh_optimistic_bound,1.53,Healthplus - Lugarno,Lugarno,238,161,53.68,32.94,5869,21.25,ok
+Lurnea,0.268557,2.269334,9,55,0.548,straight_line_haversine_35kmh_optimistic_bound,0.94,Lurnea Medical Centre,Lurnea,176,115,56.91,83.53,10057,12.93,ok
+Macquarie Fields,0.190206,1.512269,5,15,0.594,straight_line_haversine_35kmh_optimistic_bound,1.02,My Doctors Medical Centre,Macquarie Fields,122,65,20.74,31.76,14023,13.42,ok
+Macquarie Links,0.208798,1.771192,9,19,1.409,straight_line_haversine_35kmh_optimistic_bound,2.42,Mac-Field Medical Practice,Macquarie Fields,121,72,28.68,48.53,1455,9.83,no_data
+Macquarie Park,0.272857,1.741981,7,52,0.646,straight_line_haversine_35kmh_optimistic_bound,1.11,Macquarie Medical Centre,Macquarie Park,265,159,60.15,47.06,11071,8.71,ok
+Maianbar,0.118969,0.602736,1,11,1.956,straight_line_haversine_35kmh_optimistic_bound,3.35,Bundeena Family Practice,Bundeena,55,32,5.74,5.0,539,20.78,no_data
+Malabar,0.135301,0.868841,3,19,1.138,straight_line_haversine_35kmh_optimistic_bound,1.95,Malabar Medical Centre,Malabar,188,78,8.24,10.0,4714,21.45,ok
+Manly,0.15907,0.883093,3,19,0.778,straight_line_haversine_35kmh_optimistic_bound,1.33,South Steyne Medical Centre,Manly,182,65,13.68,10.44,16296,15.47,ok
+Manly Vale,0.184318,1.168119,12,25,0.089,straight_line_haversine_35kmh_optimistic_bound,0.15,The Cottage Surgery,Manly Vale,160,87,19.41,20.59,6389,14.38,ok
+Maraylya,0.112476,0.647488,0,0,5.472,straight_line_haversine_35kmh_optimistic_bound,9.38,Pitt Town Family Practice,Pitt Town,26,6,4.85,6.03,1281,15.46,no_data
+Marayong,0.29016,2.50697,5,55,0.64,straight_line_haversine_35kmh_optimistic_bound,1.1,Marayong Medical Centre,Marayong,192,132,71.03,93.68,7834,16.99,ok
+Maroota,0.0,0.0,0,0,15.914,straight_line_haversine_35kmh_optimistic_bound,27.28,Glenorie District Medical Centre,Glenorie,0,0,0.66,0.81,616,18.34,no_data
+Maroubra,0.206196,1.510439,13,45,0.356,straight_line_haversine_35kmh_optimistic_bound,0.61,Dr Tass N James,Maroubra,242,153,27.65,31.62,30722,17.93,ok
+Marrickville,0.33316,2.198606,11,102,0.033,straight_line_haversine_35kmh_optimistic_bound,0.06,Illawarra Road Medical Centre,Marrickville,440,297,93.09,78.97,26570,13.98,ok
+Marsden Park,0.225605,1.704462,3,17,1.737,straight_line_haversine_35kmh_optimistic_bound,2.98,Our Medical Home Marsden Park,Marsden Park,130,71,35.0,44.56,14610,5.7,ok
+Marsfield,0.286409,1.76993,5,56,0.887,straight_line_haversine_35kmh_optimistic_bound,1.52,Mq Health General Practice - Marsfield,Marsfield,289,155,68.82,48.38,12492,19.07,ok
+Mascot,0.285606,1.925822,6,61,1.287,straight_line_haversine_35kmh_optimistic_bound,2.21,Life Medical Clinic Botany,Botany,346,257,68.24,59.12,21591,7.54,ok
+Matraville,0.170396,1.112211,6,24,0.331,straight_line_haversine_35kmh_optimistic_bound,0.57,Matraville Medical Centre,Matraville,239,110,15.74,18.53,9925,18.47,ok
+Mays Hill,0.297646,2.203707,33,71,0.449,straight_line_haversine_35kmh_optimistic_bound,0.77,Good Street Medical Centre,Westmead,346,184,75.59,79.56,1902,4.94,ok
+McGraths Hill,0.280285,2.77602,1,8,0.128,straight_line_haversine_35kmh_optimistic_bound,0.22,Mcgraths Hill Medical Centre,Mcgraths Hill,33,18,65.0,99.41,2537,10.8,ok
+McMahons Point,0.327392,2.321325,13,113,0.74,straight_line_haversine_35kmh_optimistic_bound,1.27,Walker Street Doctors,North Sydney,372,254,91.62,86.76,2315,21.3,no_data
+Meadowbank,0.249325,1.618846,11,53,0.311,straight_line_haversine_35kmh_optimistic_bound,0.53,Myhealth Meadowbank,Meadowbank,347,176,45.74,37.06,5089,8.59,ok
+Melonba,0.197248,0.963477,1,6,1.388,straight_line_haversine_35kmh_optimistic_bound,2.38,Castle Medical Marsden Park,Marsden Park,106,45,23.68,13.53,1439,2.02,no_data
+Melrose Park,0.268886,1.855778,9,51,0.957,straight_line_haversine_35kmh_optimistic_bound,1.64,Dr Jl Kearns Practice,Ermington,349,189,57.5,52.94,2059,13.16,no_data
+Menai,0.198794,1.006713,5,9,0.569,straight_line_haversine_35kmh_optimistic_bound,0.97,Menai Medical Centre,Menai,170,73,24.26,14.71,10419,13.7,ok
+Menangle Park,0.200556,1.125949,0,4,3.609,straight_line_haversine_35kmh_optimistic_bound,6.19,Dr Anil Gupta's Medical Surgery,Rosemeadow,45,35,25.0,18.97,224,15.18,no_data
+Merrylands,0.325115,2.424258,16,96,0.043,straight_line_haversine_35kmh_optimistic_bound,0.07,Well Health Medical Hub,Merrylands,368,204,90.29,90.74,32472,11.22,ok
+Merrylands West,0.310762,2.285452,13,91,0.72,straight_line_haversine_35kmh_optimistic_bound,1.23,Quality Medical Practice,Merrylands,332,202,85.29,84.56,7054,15.74,no_data
+Middle Cove,0.25592,1.660594,5,67,1.031,straight_line_haversine_35kmh_optimistic_bound,1.77,Castlecrag Medical Practice,Castlecrag,263,146,48.38,40.29,1327,18.09,no_data
+Middle Dural,0.126209,0.97889,0,4,2.703,straight_line_haversine_35kmh_optimistic_bound,4.63,Kenthurst Medical Centre,Kenthurst,67,11,7.06,13.97,1040,21.54,no_data
+Middleton Grange,0.195064,1.401859,3,24,0.88,straight_line_haversine_35kmh_optimistic_bound,1.51,Teammed Middleton Grange,Middleton Grange,146,80,22.94,27.94,7043,5.41,ok
+Miller,0.254106,2.104788,7,56,0.43,straight_line_haversine_35kmh_optimistic_bound,0.74,Dr Tablante - Miller,Miller,156,120,47.65,72.06,3374,13.78,ok
+Millers Point,0.336631,2.481135,32,119,0.144,straight_line_haversine_35kmh_optimistic_bound,0.25,Dr Nyen Ling Yoong,Millers Point,373,271,94.85,93.24,1735,19.65,ok
+Milperra,0.282481,1.856787,2,33,0.685,straight_line_haversine_35kmh_optimistic_bound,1.17,Ashford Avenue Family Practice,Milperra,293,180,67.06,53.53,4074,18.51,ok
+Milsons Passage,0.085994,1.130406,0,0,5.689,straight_line_haversine_35kmh_optimistic_bound,9.75,Brooklyn Family Medical,Brooklyn,3,2,3.24,19.41,32,68.75,no_data
+Milsons Point,0.314813,2.164144,11,108,0.102,straight_line_haversine_35kmh_optimistic_bound,0.17,Milsons Point Medical Centre,Milsons Point,358,251,86.91,77.21,2529,22.54,ok
+Minchinbury,0.220486,1.921198,1,28,0.196,straight_line_haversine_35kmh_optimistic_bound,0.34,Minchinbury Family Clinic,Minchinbury,134,80,32.94,58.82,5778,10.49,ok
+Minto,0.198656,1.691673,4,15,0.157,straight_line_haversine_35kmh_optimistic_bound,0.27,Minto Family Medical Centre,Minto,69,45,24.12,43.09,13940,11.57,ok
+Minto Heights,0.155569,1.255473,0,12,2.31,straight_line_haversine_35kmh_optimistic_bound,3.96,Minto Family Medical Centre,Minto,61,35,12.21,23.24,384,23.96,no_data
+Miranda,0.218355,1.260341,13,32,0.16,straight_line_haversine_35kmh_optimistic_bound,0.27,Miranda Medical Centre,Miranda,139,84,32.06,23.38,17942,20.37,ok
+Mona Vale,0.194356,1.102476,7,14,0.075,straight_line_haversine_35kmh_optimistic_bound,0.13,Mona Vale Medical Centre,Mona Vale,36,20,22.5,17.94,10877,25.03,ok
+Monterey,0.236786,1.365492,20,55,0.392,straight_line_haversine_35kmh_optimistic_bound,0.67,Ramsgate Beach Family Medical Practice,Monterey,298,151,40.29,26.62,4619,21.45,ok
+Moore Park,0.321016,2.581665,21,142,0.72,straight_line_haversine_35kmh_optimistic_bound,1.23,Dr Kumaradeva Surgery,Redfern,348,237,89.26,96.76,18,0.0,no_data
+Moorebank,0.28211,1.919129,6,41,0.942,straight_line_haversine_35kmh_optimistic_bound,1.61,Moorebank Family Medical Practice,Moorebank,256,165,66.62,58.53,11408,13.1,ok
+Morning Bay,0.167047,0.73256,0,6,3.918,straight_line_haversine_35kmh_optimistic_bound,6.72,Avalon Family Medical Practice,Avalon Beach,21,18,14.56,6.91,31,12.9,no_data
+Mortdale,0.290859,1.839567,9,49,0.639,straight_line_haversine_35kmh_optimistic_bound,1.1,Mortdale Medical Practice,Mortdale,275,206,71.32,52.5,10745,15.66,ok
+Mortlake,0.277265,1.617478,7,61,0.078,straight_line_haversine_35kmh_optimistic_bound,0.13,Mortlake Family Medical Practice,Mortlake,458,206,62.79,36.76,1954,9.42,ok
+Mosman,0.268219,1.727655,10,39,0.326,straight_line_haversine_35kmh_optimistic_bound,0.56,Mosman Medical Centre,Mosman,281,200,56.62,46.62,28329,21.9,ok
+Mount Annan,0.232588,2.256726,3,26,1.885,straight_line_haversine_35kmh_optimistic_bound,3.23,The Good Shepherd Clinic,Mount Annan,48,45,37.65,82.21,11784,8.85,ok
+Mount Colah,0.194216,1.285815,3,19,1.279,straight_line_haversine_35kmh_optimistic_bound,2.19,Dr Arun Saha,Mount Colah,76,46,22.35,24.56,7816,13.4,ok
+Mount Druitt,0.242798,2.142885,10,40,0.126,straight_line_haversine_35kmh_optimistic_bound,0.22,Mount Druitt Medical Centre,Mount Druitt,131,76,43.38,74.85,16986,10.39,ok
+Mount Kuring-Gai,0.144841,0.90011,1,5,1.097,straight_line_haversine_35kmh_optimistic_bound,1.88,Mt Kuring-Gai Medical Centre,Mount Kuring-Gai,52,31,10.15,11.32,1766,15.57,ok
+Mount Lewis,0.297551,2.016487,35,89,1.007,straight_line_haversine_35kmh_optimistic_bound,1.73,Greenoaks Medical Centre - Greenacre,Greenacre,389,212,75.44,65.29,1234,15.56,no_data
+Mount Pritchard,0.284203,2.323335,7,76,0.66,straight_line_haversine_35kmh_optimistic_bound,1.13,Mount Pritchard Family Practice,Mount Pritchard,197,138,68.09,86.91,10426,14.43,gp_count_unknown
+Mount Vernon,0.114738,0.419396,0,2,4.061,straight_line_haversine_35kmh_optimistic_bound,6.96,Horsley Park Medical Centre,Horsley Park,88,33,5.29,3.24,1235,15.55,no_data
+Mulgoa,0.17816,0.926114,0,1,4.803,straight_line_haversine_35kmh_optimistic_bound,8.23,Glenmore Park Mediclinic,Glenmore Park,36,14,17.35,12.21,2044,17.03,gp_count_unknown
+Mulgrave,0.303365,2.668308,0,9,2.048,straight_line_haversine_35kmh_optimistic_bound,3.51,Mcgraths Hill Medical Centre,Mcgraths Hill,45,20,80.44,98.82,78,21.79,no_data
+Narellan,0.218271,2.159238,7,19,0.294,straight_line_haversine_35kmh_optimistic_bound,0.5,B Chua Family Practice,Narellan,50,40,31.76,76.18,3358,15.28,ok
+Narellan Vale,0.226328,2.290069,8,18,0.708,straight_line_haversine_35kmh_optimistic_bound,1.21,Family Medical Practice (Narellan),Narellan,49,43,35.44,85.0,6931,10.92,no_data
+Naremburn,0.299466,1.930501,18,67,0.693,straight_line_haversine_35kmh_optimistic_bound,1.19,Nature Care Health,St Leonards,348,206,77.79,59.41,5924,13.57,no_data
+Narrabeen,0.183306,0.958245,2,16,1.578,straight_line_haversine_35kmh_optimistic_bound,2.7,Narrabeen Family Medical Practice,North Narrabeen,51,37,18.68,13.38,8255,31.13,no_data
+Narraweena,0.186078,1.028784,8,20,0.771,straight_line_haversine_35kmh_optimistic_bound,1.32,Dr M Croft General Practice,Narraweena,112,46,20.15,15.15,6971,20.71,ok
+Narwee,0.299715,2.028354,16,100,0.131,straight_line_haversine_35kmh_optimistic_bound,0.22,Health Hub Narwee,Narwee,333,223,77.94,66.32,5411,18.31,ok
+Neutral Bay,0.309826,2.112604,19,89,0.459,straight_line_haversine_35kmh_optimistic_bound,0.79,Intelligent Ageing,Neutral Bay,339,230,84.26,72.65,10090,15.97,ok
+Newington,0.27167,1.907051,6,55,0.557,straight_line_haversine_35kmh_optimistic_bound,0.95,Newington Medical,Newington,370,212,59.26,57.06,5648,11.07,ok
+Newport,0.185646,1.087406,4,13,0.404,straight_line_haversine_35kmh_optimistic_bound,0.69,Newport Medical And Dental Centre,Newport,25,18,19.85,17.06,9659,19.92,ok
+Newtown,0.354953,2.521998,15,129,0.179,straight_line_haversine_35kmh_optimistic_bound,0.31,King Street Medical Centre - Newtown,Newtown,425,309,98.82,94.56,14690,8.15,ok
+Nirimba Fields,0.246326,2.200669,8,33,0.891,straight_line_haversine_35kmh_optimistic_bound,1.53,Pgk Medical,Colebee,150,115,44.85,79.12,1632,3.98,no_data
+Normanhurst,0.275156,1.915291,8,47,0.317,straight_line_haversine_35kmh_optimistic_bound,0.54,Normanhurst Medical Centre,Normanhurst,173,114,61.32,58.38,5387,18.58,ok
+North Balgowlah,0.205506,1.312181,7,38,1.09,straight_line_haversine_35kmh_optimistic_bound,1.87,Bupa Seaforth Medical And Wellbeing Centre,Seaforth,197,95,27.5,25.15,3816,11.22,ok
+North Bondi,0.208742,1.445669,15,50,0.384,straight_line_haversine_35kmh_optimistic_bound,0.66,Dr Mark Grunwald - General Practice,North Bondi,230,163,28.53,29.41,9290,9.83,ok
+North Curl Curl,0.152545,0.892243,8,23,1.025,straight_line_haversine_35kmh_optimistic_bound,1.76,Our Medical Dee Why,Dee Why,102,43,11.47,11.18,4288,12.06,no_data
+North Epping,0.274948,1.713798,7,59,0.013,straight_line_haversine_35kmh_optimistic_bound,0.02,North Epping Family Practice,North Epping,241,139,61.03,45.15,4657,18.62,ok
+North Kellyville,0.19749,1.601349,3,24,0.815,straight_line_haversine_35kmh_optimistic_bound,1.4,North Kellyville Medical Centre,North Kellyville,130,75,23.82,35.59,17401,6.75,ok
+North Manly,0.180693,1.130181,9,24,0.913,straight_line_haversine_35kmh_optimistic_bound,1.56,Myhealth Warringah Mall,Brookvale,123,68,17.94,19.26,3396,14.08,ok
+North Narrabeen,0.199821,1.030746,4,12,0.626,straight_line_haversine_35kmh_optimistic_bound,1.07,Elm Rd Medical Centre,Warriewood,51,37,24.71,15.44,6016,15.21,ok
+North Parramatta,0.291459,2.03164,8,66,1.129,straight_line_haversine_35kmh_optimistic_bound,1.93,Panacea Health Clinic,North Parramatta,314,195,71.76,67.35,12064,13.6,ok
+North Richmond,0.358168,2.326623,4,8,1.392,straight_line_haversine_35kmh_optimistic_bound,2.39,North Richmond Family Medical Practice,North Richmond,18,10,99.26,87.06,6358,21.75,ok
+North Rocks,0.293049,1.894506,6,49,0.4,straight_line_haversine_35kmh_optimistic_bound,0.69,North Rocks - Stratford Road Family Medical Practice,North Rocks,288,185,72.79,56.47,9136,17.72,ok
+North Ryde,0.276048,1.696262,5,61,0.548,straight_line_haversine_35kmh_optimistic_bound,0.94,Macquarie Park Medical Centre,Macquarie Park,340,167,61.62,43.97,14043,14.88,ok
+North St Marys,0.263432,2.25878,9,35,0.338,straight_line_haversine_35kmh_optimistic_bound,0.58,St Marys Doctors,North St Marys,107,76,52.94,82.5,4123,15.84,ok
+North Strathfield,0.292761,1.90472,14,70,0.55,straight_line_haversine_35kmh_optimistic_bound,0.94,North Strathfield Medical Practice,North Strathfield,446,242,72.65,56.76,4618,9.31,ok
+North Sydney,0.317583,2.166126,18,102,0.202,straight_line_haversine_35kmh_optimistic_bound,0.35,Qualitas Medical Practice,North Sydney,358,240,87.94,77.35,8964,14.17,ok
+North Turramurra,0.203359,1.275265,0,17,2.613,straight_line_haversine_35kmh_optimistic_bound,4.48,North St Ives Medical Practice,St Ives Chase,94,55,26.47,24.12,4194,40.96,ok
+North Wahroonga,0.223196,1.453142,3,37,1.613,straight_line_haversine_35kmh_optimistic_bound,2.76,Hampden Health,Wahroonga,121,65,33.68,29.71,2100,21.48,no_data
+North Willoughby,0.256635,1.582985,21,63,0.946,straight_line_haversine_35kmh_optimistic_bound,1.62,Chatswood Medical Practice,Chatswood,288,149,48.53,34.71,4161,16.25,ok
+Northbridge,0.269917,1.707877,6,64,0.145,straight_line_haversine_35kmh_optimistic_bound,0.25,Dr Ruth Ratner,Northbridge,294,180,57.94,45.0,6493,20.81,ok
+Northmead,0.300679,2.15992,4,61,0.334,straight_line_haversine_35kmh_optimistic_bound,0.57,Myhealth Northmead,Northmead,297,198,78.82,76.32,11261,18.19,ok
+Northwood,0.305225,1.909608,11,82,0.935,straight_line_haversine_35kmh_optimistic_bound,1.6,Synergy Medical Practice,Greenwich,394,237,81.47,57.35,916,18.01,no_data
+Norwest,0.268619,2.004388,12,47,0.33,straight_line_haversine_35kmh_optimistic_bound,0.57,Century Circuit Medical Centre,Norwest,205,140,57.06,63.53,4688,21.57,ok
+Oakhurst,0.243354,2.147411,7,36,0.922,straight_line_haversine_35kmh_optimistic_bound,1.58,Plumpton Marketplace Medical Centre,Plumpton,146,91,43.68,75.29,6947,9.77,no_data
+Oakville,0.213032,1.920586,0,4,3.018,straight_line_haversine_35kmh_optimistic_bound,5.17,Mcgraths Hill Medical Centre,Mcgraths Hill,46,23,29.85,58.68,2027,20.77,no_data
+Oatlands,0.287561,1.989125,6,56,0.233,straight_line_haversine_35kmh_optimistic_bound,0.4,Oatlands Family Practice,Oatlands,323,187,68.97,62.94,5833,18.36,ok
+Oatley,0.289519,1.639864,5,47,0.308,straight_line_haversine_35kmh_optimistic_bound,0.53,Health Plus Medical Centre - Oatley,Oatley,256,193,70.44,38.68,10664,20.16,ok
+Old Guildford,0.34677,2.630915,8,79,1.127,straight_line_haversine_35kmh_optimistic_bound,1.93,Dr Jin Chan Surgery,Guildford,366,231,97.35,97.65,2857,10.19,no_data
+Old Toongabbie,0.299852,2.224929,11,66,0.383,straight_line_haversine_35kmh_optimistic_bound,0.66,Fitzwilliam Road Medical Centre,Old Toongabbie,303,171,78.09,80.59,3276,15.63,ok
+Oran Park,0.168449,1.534558,1,7,0.935,straight_line_haversine_35kmh_optimistic_bound,1.6,Myhealth Oran Park,Oran Park,58,27,14.85,33.68,17624,5.22,ok
+Orchard Hills,0.190773,1.092582,0,7,4.139,straight_line_haversine_35kmh_optimistic_bound,7.09,Claremont Meadows Medical Clinic,Claremont Meadows,73,46,21.03,17.35,1798,20.8,ok
+Oxford Falls,0.200899,1.02454,0,20,2.197,straight_line_haversine_35kmh_optimistic_bound,3.77,Frenchs Forest Doctors,Frenchs Forest,121,57,25.29,15.0,265,60.75,no_data
+Oxley Park,0.236608,2.14014,10,39,0.651,straight_line_haversine_35kmh_optimistic_bound,1.12,Sydney Street Medical Practice,St Marys,112,64,39.85,74.71,4197,9.98,no_data
+Oyster Bay,0.260521,1.430966,6,47,1.531,straight_line_haversine_35kmh_optimistic_bound,2.62,Kareela Family Practice,Kareela,221,127,51.18,28.68,5689,16.19,no_data
+Paddington,0.314258,2.508884,32,137,0.152,straight_line_haversine_35kmh_optimistic_bound,0.26,Paddington Doctors,Paddington,330,233,86.76,93.82,12701,15.27,ok
+Padstow,0.277414,1.720191,17,79,0.23,straight_line_haversine_35kmh_optimistic_bound,0.39,Mdplus Medical Clinic - Padstow,Padstow,347,160,62.94,46.03,14017,16.84,ok
+Padstow Heights,0.264288,1.636012,7,41,1.522,straight_line_haversine_35kmh_optimistic_bound,2.61,Healthplus - Lugarno,Lugarno,263,144,53.97,38.09,3594,24.79,no_data
+Pagewood,0.257551,1.822665,8,52,0.935,straight_line_haversine_35kmh_optimistic_bound,1.6,Key Health Pagewood,Eastgardens,299,224,49.12,51.47,3885,18.66,no_data
+Palm Beach,0.132009,0.378164,0,2,3.991,straight_line_haversine_35kmh_optimistic_bound,6.84,Avalon Family Medical Practice,Avalon Beach,21,12,7.79,3.09,1652,37.53,no_data
+Panania,0.258864,1.634591,11,35,0.167,straight_line_haversine_35kmh_optimistic_bound,0.29,Medclinic Panania,Panania,279,159,49.71,37.94,13507,15.12,ok
+Parklea,0.278887,2.545944,7,53,0.734,straight_line_haversine_35kmh_optimistic_bound,1.26,Stanhope Medical Centre,Stanhope Gardens,181,130,63.68,95.74,3684,5.94,no_data
+Parramatta,0.306875,2.186511,21,80,0.34,straight_line_haversine_35kmh_optimistic_bound,0.58,Isra Medical Services - Parramatta,Parramatta,363,198,82.06,78.38,30211,6.61,ok
+Peakhurst,0.280173,1.85157,12,68,0.265,straight_line_haversine_35kmh_optimistic_bound,0.45,K & L Oey Medical Practice,Peakhurst,287,191,64.71,52.79,12079,20.86,ok
+Peakhurst Heights,0.288122,1.717891,4,52,0.59,straight_line_haversine_35kmh_optimistic_bound,1.01,Healthplus - Lugarno,Lugarno,262,189,69.26,45.59,2524,22.58,ok
+Pemulwuy,0.261361,1.645768,0,23,2.436,straight_line_haversine_35kmh_optimistic_bound,4.18,Golden Cross Medical  Centre,Prospect,269,147,51.32,39.26,5532,11.21,ok
+Pendle Hill,0.299047,2.213259,14,72,0.165,straight_line_haversine_35kmh_optimistic_bound,0.28,Pendle Hill Medical Centre,Pendle Hill,302,183,76.91,80.0,7743,15.99,ok
+Pennant Hills,0.280651,1.828708,12,54,0.287,straight_line_haversine_35kmh_optimistic_bound,0.49,Pennant Hills Medical Centre,Pennant Hills,201,133,65.29,51.91,7588,18.7,ok
+Penrith,0.245168,2.043765,11,32,0.638,straight_line_haversine_35kmh_optimistic_bound,1.09,Myhealth Penrith,Penrith,65,46,44.26,67.94,17966,17.07,ok
+Penshurst,0.297756,1.884921,19,66,0.109,straight_line_haversine_35kmh_optimistic_bound,0.19,Ashby Medical Centre,Penshurst,302,212,75.88,56.18,12592,16.42,ok
+Petersham,0.350263,2.353582,21,102,0.123,straight_line_haversine_35kmh_optimistic_bound,0.21,Dr Yvonne Grandjean-Thomsen,Petersham,478,292,98.09,88.09,8200,11.71,ok
+Phillip Bay,0.119782,0.645502,1,15,1.208,straight_line_haversine_35kmh_optimistic_bound,2.07,Prince Henry Medical Practice,Little Bay,188,59,5.88,5.74,721,22.19,no_data
+Picnic Point,0.224242,1.171476,2,33,0.409,straight_line_haversine_35kmh_optimistic_bound,0.7,Kennedy St Medical Centre Picnic Point,Picnic Point,250,112,34.41,20.74,6413,16.23,ok
+Pitt Town,0.196975,1.857544,1,3,1.035,straight_line_haversine_35kmh_optimistic_bound,1.77,Pitt Town Family Practice,Pitt Town,20,11,23.38,53.68,3871,13.59,ok
+Pitt Town Bottoms,0.254472,2.269284,1,9,1.432,straight_line_haversine_35kmh_optimistic_bound,2.45,Pitt Town Family Practice,Pitt Town,22,14,47.79,83.38,85,3.53,no_data
+Pleasure Point,0.234791,1.200718,1,21,0.753,straight_line_haversine_35kmh_optimistic_bound,1.29,East Hills Medical Centre,East Hills,257,117,38.97,21.76,606,11.22,no_data
+Plumpton,0.252437,2.23453,6,36,0.591,straight_line_haversine_35kmh_optimistic_bound,1.01,Plumpton Marketplace Medical Centre,Plumpton,146,96,46.91,80.88,10070,10.13,ok
+Point Piper,0.276765,2.058525,5,106,1.541,straight_line_haversine_35kmh_optimistic_bound,2.64,Rose Bay Medical Clinic,Rose Bay,290,201,62.35,68.53,1334,31.18,no_data
+Port Hacking,0.143646,0.733043,0,21,2.235,straight_line_haversine_35kmh_optimistic_bound,3.83,Burraneer Family Practice,Burraneer,81,38,9.85,7.06,1210,17.93,no_data
+Potts Hill,0.309107,2.02811,6,75,1.24,straight_line_haversine_35kmh_optimistic_bound,2.13,Regents Park Medical Centre,Regents Park,405,243,83.53,66.18,1454,6.46,no_data
+Potts Point,0.319769,2.471152,41,137,0.689,straight_line_haversine_35kmh_optimistic_bound,1.18,True Health Medical,Potts Point,339,240,88.82,92.79,7183,12.88,ok
+Prairiewood,0.278741,1.913049,10,71,0.738,straight_line_haversine_35kmh_optimistic_bound,1.26,Botros Practice,Wetherill Park,256,154,63.53,58.24,3457,22.22,ok
+Prestons,0.248968,2.121868,4,37,1.184,straight_line_haversine_35kmh_optimistic_bound,2.03,Prestons Family Doctors,Prestons,158,104,45.59,73.68,15694,9.74,ok
+Prospect,0.281292,1.835127,6,49,0.91,straight_line_haversine_35kmh_optimistic_bound,1.56,Edge Medical Centre - Prospect,Prospect,281,159,65.74,52.21,5187,15.33,ok
+Punchbowl,0.301172,2.08241,16,86,0.421,straight_line_haversine_35kmh_optimistic_bound,0.72,Punchbowl Medical Centre,Punchbowl,369,215,79.26,70.0,21384,12.82,ok
+Putney,0.270497,1.6746,11,58,0.542,straight_line_haversine_35kmh_optimistic_bound,0.93,Putney Medical Practice,Ryde,411,196,58.68,41.62,4097,18.77,no_data
+Pymble,0.260108,1.606443,8,30,0.121,straight_line_haversine_35kmh_optimistic_bound,0.21,Pymble Family Doctors,Pymble,188,135,50.59,35.88,11775,16.28,ok
+Pyrmont,0.347208,2.55446,47,126,0.208,straight_line_haversine_35kmh_optimistic_bound,0.36,Star City Medical Centre,Pyrmont,384,299,97.65,96.32,12658,12.89,ok
+Quakers Hill,0.27817,2.550569,9,41,0.266,straight_line_haversine_35kmh_optimistic_bound,0.46,Ramona Street Medical Centre,Quakers Hill,173,126,63.38,95.88,27893,10.49,ok
+Queens Park,0.27247,2.243364,31,113,0.547,straight_line_haversine_35kmh_optimistic_bound,0.94,Sapphire Family Medical Practice,Bondi Junction,275,203,59.71,81.62,3143,15.4,no_data
+Queenscliff,0.142307,0.887788,7,22,0.444,straight_line_haversine_35kmh_optimistic_bound,0.76,Freshwater Family Medical Centre,Freshwater,125,53,9.41,10.74,3407,10.89,no_data
+Raby,0.227023,2.021983,4,17,0.349,straight_line_haversine_35kmh_optimistic_bound,0.6,Raby Medical Centre,Raby,70,54,35.59,65.59,5943,12.92,ok
+Ramsgate,0.233639,1.310144,11,46,0.303,straight_line_haversine_35kmh_optimistic_bound,0.52,Saint Mary Family Clinic,Ramsgate,260,142,38.09,25.0,1151,22.24,ok
+Ramsgate Beach,0.234171,1.307258,9,45,0.34,straight_line_haversine_35kmh_optimistic_bound,0.58,All Saints Medical Centre,Ramsgate Beach,262,143,38.38,24.71,1734,25.03,ok
+Randwick,0.268214,2.203001,20,101,0.044,straight_line_haversine_35kmh_optimistic_bound,0.08,Royal Randwick Medical Centre,Randwick,286,194,56.47,79.41,28943,14.46,ok
+Redfern,0.337299,2.619684,37,149,0.527,straight_line_haversine_35kmh_optimistic_bound,0.9,Redfern Station Medical Centre,Redfern,376,264,95.15,97.5,13072,13.45,ok
+Regents Park,0.318285,2.109497,4,74,0.099,straight_line_haversine_35kmh_optimistic_bound,0.17,Regents Park Medical Centre,Regents Park,399,256,88.09,72.35,4990,14.29,ok
+Regentville,0.216916,1.813586,2,26,0.971,straight_line_haversine_35kmh_optimistic_bound,1.66,Our Medical Penrith,Jamisontown,49,38,31.03,51.03,829,14.23,no_data
+Revesby,0.260352,1.62673,15,64,0.64,straight_line_haversine_35kmh_optimistic_bound,1.1,Revesby Family Clinic,Revesby,321,150,50.88,37.5,15268,17.28,ok
+Revesby Heights,0.251552,1.460824,5,34,0.994,straight_line_haversine_35kmh_optimistic_bound,1.7,Kennedy St Medical Centre Picnic Point,Picnic Point,272,135,46.76,30.15,1916,10.39,ok
+Rhodes,0.263632,1.693997,3,61,0.984,straight_line_haversine_35kmh_optimistic_bound,1.69,Harbourside Medical Centre,Wentworth Point,403,183,53.09,43.68,11453,6.4,ok
+Richards,0.211123,1.497716,0,6,2.658,straight_line_haversine_35kmh_optimistic_bound,4.56,Riverstone Family Medical Practice,Riverstone,82,44,29.56,31.18,37,13.51,no_data
+Richmond,0.39011,2.865478,4,10,0.651,straight_line_haversine_35kmh_optimistic_bound,1.12,Richmond Marketplace Medical Centre,Richmond,21,17,99.85,99.71,5418,26.73,ok
+Richmond Lowlands,0.408708,2.773226,2,8,1.884,straight_line_haversine_35kmh_optimistic_bound,3.23,Francis St Family Practice,Richmond,20,18,100.0,99.26,55,16.36,no_data
+Riverstone,0.201586,1.801677,3,18,0.282,straight_line_haversine_35kmh_optimistic_bound,0.48,Oxford Medical Spot,Riverstone,114,54,25.59,50.44,8627,9.44,ok
+Riverview,0.298247,1.882531,8,68,0.626,straight_line_haversine_35kmh_optimistic_bound,1.07,Lane Cove Family Medical Practice,Riverview,377,251,76.32,55.88,3148,16.55,ok
+Riverwood,0.277438,1.878484,14,90,0.389,straight_line_haversine_35kmh_optimistic_bound,0.67,Revival Medical Centre,Riverwood,313,190,63.09,55.15,12793,19.24,ok
+Rockdale,0.283781,1.700522,26,69,0.133,straight_line_haversine_35kmh_optimistic_bound,0.23,Landmark Medical & Dental Centre - Rockdale,Rockdale,395,195,67.94,44.26,15475,12.31,ok
+Rodd Point,0.318771,1.970894,11,87,0.12,straight_line_haversine_35kmh_optimistic_bound,0.21,Rodd Point Medical Practice,Rodd Point,465,286,88.53,61.91,1380,18.91,ok
+Rookwood,0.301029,2.003548,6,66,1.422,straight_line_haversine_35kmh_optimistic_bound,2.44,Botanica Medical & Dental Centre,Lidcombe,430,236,78.97,63.38,3,0.0,no_data
+Rooty Hill,0.24077,2.090418,8,31,0.104,straight_line_haversine_35kmh_optimistic_bound,0.18,Ifamily Medical Centre,Rooty Hill,147,97,42.5,70.88,16176,16.23,ok
+Ropes Crossing,0.233801,1.751923,1,20,0.539,straight_line_haversine_35kmh_optimistic_bound,0.92,Ropes Crossing Medical Practice,Ropes Crossing,100,71,38.24,47.79,7280,6.87,ok
+Rose Bay,0.238837,1.750679,10,51,0.314,straight_line_haversine_35kmh_optimistic_bound,0.54,Rose Bay Medical Clinic,Rose Bay,254,176,41.32,47.5,9911,20.25,ok
+Rosebery,0.313452,2.416665,14,106,0.48,straight_line_haversine_35kmh_optimistic_bound,0.82,Dr Naresh Sachdev,Rosebery,349,253,86.62,90.44,13533,10.57,ok
+Rosehill,0.290108,2.067898,4,71,1.3,straight_line_haversine_35kmh_optimistic_bound,2.23,Rosehill Family Medical Practice,Rosehill,378,196,70.88,68.97,4047,6.2,ok
+Roselands,0.300651,2.070665,20,109,0.599,straight_line_haversine_35kmh_optimistic_bound,1.03,Primacare Family Medical Centre Roselands,Roselands,339,238,78.53,69.41,12356,15.8,ok
+Rosemeadow,0.192063,1.153868,3,15,0.54,straight_line_haversine_35kmh_optimistic_bound,0.93,Rosemeadow Medical Centre,Rosemeadow,47,28,21.62,20.15,8007,11.98,ok
+Roseville,0.259054,1.526656,21,51,0.457,straight_line_haversine_35kmh_optimistic_bound,0.78,Hill Street Health Hub,Roseville,284,136,50.0,32.79,10340,16.91,ok
+Roseville Chase,0.237775,1.406603,2,41,0.843,straight_line_haversine_35kmh_optimistic_bound,1.45,The Family Doctor Medical Practice,Castle Cove,231,122,40.74,28.38,1618,18.23,no_data
+Rossmore,0.093839,0.778704,0,4,3.721,straight_line_haversine_35kmh_optimistic_bound,6.38,Austral Doctors Surgery,Austral,45,17,3.68,7.79,2241,19.41,no_data
+Rouse Hill,0.193473,1.703099,9,26,0.492,straight_line_haversine_35kmh_optimistic_bound,0.84,Rouse Hill Surgery,Rouse Hill,121,62,22.06,44.41,11349,7.41,ok
+Rozelle,0.347685,2.439807,9,121,0.299,straight_line_haversine_35kmh_optimistic_bound,0.51,Rozelle Medical Centre,Rozelle,415,312,97.79,91.76,8553,13.89,ok
+Ruse,0.183557,1.609576,0,20,2.162,straight_line_haversine_35kmh_optimistic_bound,3.71,Chamberlain Street Medical Practice,Campbelltown,52,35,18.82,36.03,5632,18.29,no_data
+Rushcutters Bay,0.315065,2.527961,37,136,0.286,straight_line_haversine_35kmh_optimistic_bound,0.49,True Health Medical,Potts Point,330,231,87.21,95.15,2335,18.63,no_data
+Russell Lea,0.309338,1.912935,11,78,0.766,straight_line_haversine_35kmh_optimistic_bound,1.31,Rodd Point Medical Practice,Rodd Point,446,281,83.68,58.09,4920,18.64,no_data
+Rydalmere,0.280231,2.009363,5,73,0.263,straight_line_haversine_35kmh_optimistic_bound,0.45,Rydalmere Medical Centre,Rydalmere,340,193,64.85,64.26,7274,13.16,ok
+Ryde,0.262854,1.606234,11,50,0.53,straight_line_haversine_35kmh_optimistic_bound,0.91,Soh Medical Practice,Ryde,365,185,52.5,35.74,31907,13.87,ok
+Sackville,0.031681,0.122153,0,0,8.016,straight_line_haversine_35kmh_optimistic_bound,13.74,Wilberforce Medical Practice,Wilberforce,3,1,1.62,1.62,230,15.65,no_data
+Sackville North,0.006747,0.0,0,0,10.401,straight_line_haversine_35kmh_optimistic_bound,17.83,Wilberforce Medical Practice,Wilberforce,1,0,1.32,0.81,388,18.56,no_data
+Sadleir,0.281749,2.374065,11,71,0.595,straight_line_haversine_35kmh_optimistic_bound,1.02,First Care Medical Centre,Busby,175,141,66.18,88.82,3243,11.9,no_data
+Sandringham,0.217204,1.227375,7,40,0.965,straight_line_haversine_35kmh_optimistic_bound,1.65,Health Konnect Medical Centre,Sans Souci,214,113,31.18,22.65,1275,23.69,no_data
+Sandy Point,0.210664,1.080993,2,27,1.486,straight_line_haversine_35kmh_optimistic_bound,2.55,Kennedy St Medical Centre Picnic Point,Picnic Point,225,111,29.41,16.62,597,15.24,no_data
+Sans Souci,0.223919,1.269509,7,44,0.24,straight_line_haversine_35kmh_optimistic_bound,0.41,Health Konnect Medical Centre,Sans Souci,222,115,34.26,23.82,10864,22.28,ok
+Scheyville,0.146987,1.001437,0,2,3.145,straight_line_haversine_35kmh_optimistic_bound,5.39,Pitt Town Family Practice,Pitt Town,31,11,10.29,14.41,7,0.0,no_data
+Schofields,0.245224,2.242268,3,25,0.787,straight_line_haversine_35kmh_optimistic_bound,1.35,Schofields Medical Practice,Schofields,140,91,44.41,81.47,15213,4.5,ok
+Scotland Island,0.152742,0.781671,0,12,2.87,straight_line_haversine_35kmh_optimistic_bound,4.92,Newport Medical Centre,Newport,19,18,11.76,7.94,711,17.02,no_data
+Seaforth,0.231608,1.49804,1,45,0.945,straight_line_haversine_35kmh_optimistic_bound,1.62,Bupa Seaforth Medical And Wellbeing Centre,Seaforth,235,108,37.35,31.32,7384,15.26,ok
+Sefton,0.325751,2.241206,7,73,0.867,straight_line_haversine_35kmh_optimistic_bound,1.49,Chester Hill Family Medical Practice,Chester Hill,386,245,91.03,81.32,6300,13.59,ok
+Seven Hills,0.298559,2.275689,19,69,0.252,straight_line_haversine_35kmh_optimistic_bound,0.43,Seven Hills Medical Centre,Seven Hills,265,163,76.62,83.68,20095,15.49,ok
+Shalvey,0.228809,1.800397,4,27,1.201,straight_line_haversine_35kmh_optimistic_bound,2.06,Bidwill Family Practice,Bidwill,128,70,36.47,50.15,3455,12.88,no_data
+Shanes Park,0.189495,1.20839,0,11,2.536,straight_line_haversine_35kmh_optimistic_bound,4.35,Ropes Crossing Medical Practice,Ropes Crossing,103,56,20.59,22.21,384,14.06,no_data
+Silverwater,0.26877,1.912348,4,57,0.986,straight_line_haversine_35kmh_optimistic_bound,1.69,Newington Medical,Newington,365,198,57.35,57.94,3600,5.89,gp_count_unknown
+Singletons Mill,0.0,0.0,0,0,15.757,straight_line_haversine_35kmh_optimistic_bound,27.01,Glenorie District Medical Centre,Glenorie,0,0,0.66,0.81,3,0.0,no_data
+Smeaton Grange,0.232351,2.17514,8,15,1.286,straight_line_haversine_35kmh_optimistic_bound,2.21,Mt Annan Doctors,Mount Annan,54,48,37.5,77.79,16,0.0,no_data
+Smithfield,0.319579,2.388564,7,68,0.545,straight_line_haversine_35kmh_optimistic_bound,0.93,Smithfield Family Medical Practice,Smithfield,295,201,88.68,89.71,13160,17.62,ok
+South Coogee,0.209545,1.615934,11,59,1.056,straight_line_haversine_35kmh_optimistic_bound,1.81,Coogee Beach Doctors,Coogee,229,156,28.97,36.62,5611,18.11,ok
+South Granville,0.326917,2.286481,4,71,1.126,straight_line_haversine_35kmh_optimistic_bound,1.93,Guildford After Hours Doctors,Guildford,412,231,91.47,84.71,5829,12.39,ok
+South Hurstville,0.264045,1.534303,12,66,0.16,straight_line_haversine_35kmh_optimistic_bound,0.27,South Hurstville Family Practice,South Hurstville,288,164,53.53,33.53,5221,17.97,ok
+South Maroota,0.008133,0.0,0,0,11.393,straight_line_haversine_35kmh_optimistic_bound,19.53,Glenorie District Medical Centre,Glenorie,1,0,1.47,0.81,613,14.85,no_data
+South Penrith,0.25244,2.13924,9,32,0.085,straight_line_haversine_35kmh_optimistic_bound,0.15,Dr Ong's Surgery,South Penrith,67,50,47.06,74.56,12005,16.77,ok
+South Turramurra,0.291324,1.981724,2,52,1.52,straight_line_haversine_35kmh_optimistic_bound,2.61,North Epping Family Practice,North Epping,214,146,71.62,62.65,3208,17.33,no_data
+South Wentworthville,0.314814,2.427583,12,78,1.161,straight_line_haversine_35kmh_optimistic_bound,1.99,Wentworthville Medical Centre,Wentworthville,310,207,87.06,91.03,6913,11.91,ok
+South Windsor,0.295511,2.367732,2,8,1.477,straight_line_haversine_35kmh_optimistic_bound,2.53,Dr Warwick Mackay,South Windsor,36,19,74.41,88.53,5948,13.43,ok
+Spring Farm,0.187527,1.677924,0,15,2.219,straight_line_haversine_35kmh_optimistic_bound,3.8,Schwarz Family Practice,Elderslie,44,36,20.44,41.91,9868,5.5,ok
+St Andrews,0.218318,1.954699,5,17,0.282,straight_line_haversine_35kmh_optimistic_bound,0.48,St Andrews Medical Centre,St Andrews,71,52,31.91,61.32,5785,13.14,ok
+St Clair,0.192045,1.534091,6,25,0.415,straight_line_haversine_35kmh_optimistic_bound,0.71,St Clair Medical Practice,St Clair,90,53,21.47,33.38,19942,12.71,ok
+St Helens Park,0.173905,1.054047,2,16,1.377,straight_line_haversine_35kmh_optimistic_bound,2.36,First Care Medical Centre - Rosemeadow,Rosemeadow,43,24,16.62,16.18,6647,9.69,no_data
+St Ives,0.22519,1.13656,5,19,0.733,straight_line_haversine_35kmh_optimistic_bound,1.26,St Ives General Medical Practice,St Ives,170,88,34.85,19.71,18384,21.68,ok
+St Ives Chase,0.190341,1.050467,3,14,0.934,straight_line_haversine_35kmh_optimistic_bound,1.6,North St Ives Medical Practice,St Ives Chase,115,61,20.88,15.88,3283,18.76,ok
+St Johns Park,0.285993,2.284395,6,81,1.27,straight_line_haversine_35kmh_optimistic_bound,2.18,Bonnyrigg Family Medical Centre,Bonnyrigg,215,145,68.53,84.41,6302,23.09,ok
+St Leonards,0.29742,1.850676,14,83,0.01,straight_line_haversine_35kmh_optimistic_bound,0.02,Rnsh Staff General Practice,St Leonards,372,214,75.29,52.65,7212,7.2,ok
+St Marys,0.259131,2.232984,8,33,0.401,straight_line_haversine_35kmh_optimistic_bound,0.69,Emerald Medical Centre St Marys,St Marys,97,74,50.15,80.74,13256,12.65,ok
+St Peters,0.328621,2.276514,13,90,0.953,straight_line_haversine_35kmh_optimistic_bound,1.63,Marrickville Metro Medical Centre,Marrickville,402,292,92.06,83.82,3629,7.8,no_data
+Stanhope Gardens,0.259589,2.315238,5,50,0.544,straight_line_haversine_35kmh_optimistic_bound,0.93,Stanhope Park Medical Centre,Stanhope Gardens,176,121,50.29,86.32,9349,10.88,ok
+Stanmore,0.355631,2.471709,20,133,0.11,straight_line_haversine_35kmh_optimistic_bound,0.19,Dr Paul Sztolcman,Stanmore,441,315,99.12,92.94,7619,12.25,ok
+Strathfield,0.29002,1.951994,15,89,1.136,straight_line_haversine_35kmh_optimistic_bound,1.95,Homebush Medical Practice,Homebush,431,231,70.74,61.18,25915,14.93,ok
+Strathfield South,0.302578,2.084974,5,104,0.73,straight_line_haversine_35kmh_optimistic_bound,1.25,South Strathfield Family Medical Practice,Strathfield,410,250,80.0,70.29,3636,15.35,no_data
+Summer Hill,0.333588,2.128338,22,104,0.107,straight_line_haversine_35kmh_optimistic_bound,0.18,The Village Medical Practice,Summer Hill,486,285,93.38,73.97,7288,12.43,ok
+Surry Hills,0.339517,2.677202,49,142,0.286,straight_line_haversine_35kmh_optimistic_bound,0.49,Ponti Health,Surry Hills,370,260,95.88,99.12,15828,10.4,ok
+Sutherland,0.247433,1.660094,10,34,0.085,straight_line_haversine_35kmh_optimistic_bound,0.15,Dr Phil R Loxley,Sutherland,137,77,45.29,40.15,11570,15.6,ok
+Sydenham,0.330559,2.210395,15,88,1.011,straight_line_haversine_35kmh_optimistic_bound,1.73,Marrickville Metro Medical Centre,Marrickville,411,304,92.35,79.71,1100,14.0,no_data
+Sydney,0.346841,2.640478,54,129,0.032,straight_line_haversine_35kmh_optimistic_bound,0.06,Mlc Centre Medical,Sydney,377,275,97.5,98.24,16667,7.09,ok
+Sydney Olympic Park,0.276388,1.874924,5,53,0.944,straight_line_haversine_35kmh_optimistic_bound,1.62,Sydney Olympic Park Gp,Sydney Olympic Park,388,217,62.06,54.71,4848,3.49,ok
+Sylvania,0.249477,1.433197,3,37,0.469,straight_line_haversine_35kmh_optimistic_bound,0.8,Good Samaritan Medical & Dental,Sylvania,187,115,46.03,29.12,10749,25.71,ok
+Sylvania Waters,0.236545,1.376145,7,39,1.323,straight_line_haversine_35kmh_optimistic_bound,2.27,Sylvania Family Medical Centre,Sylvania,169,103,39.71,26.76,3200,19.97,no_data
+Tallawong,0.225108,2.035342,3,32,1.445,straight_line_haversine_35kmh_optimistic_bound,2.48,Alex Avenue Medical Centre,Schofields,137,75,34.71,67.5,6570,3.35,no_data
+Tamarama,0.223126,1.652945,21,57,0.733,straight_line_haversine_35kmh_optimistic_bound,1.26,Bondi Road Medical Centre,Bondi,237,171,33.24,39.85,1478,9.61,no_data
+Taren Point,0.218157,1.253788,0,35,2.053,straight_line_haversine_35kmh_optimistic_bound,3.52,Dr John B Rizzuto - Gp,Caringbah,153,95,31.62,23.09,1879,43.37,no_data
+Telopea,0.294171,1.94374,6,60,0.441,straight_line_haversine_35kmh_optimistic_bound,0.76,Dundas Valley Medical Centre,Telopea,323,192,73.24,60.29,5356,16.47,ok
+Tempe,0.321447,2.182896,13,83,0.96,straight_line_haversine_35kmh_optimistic_bound,1.65,Wolli Creek Medical Centre,Wolli Creek,392,298,89.41,78.24,3550,14.56,ok
+Tennyson,0.296446,1.644582,0,1,2.718,straight_line_haversine_35kmh_optimistic_bound,4.66,Glossodia Medical Practice,Glossodia,17,10,75.0,39.12,379,24.54,no_data
+Tennyson Point,0.272855,1.717097,8,54,0.885,straight_line_haversine_35kmh_optimistic_bound,1.52,Gladesville Family Medical Centre,Gladesville,406,208,60.0,45.44,1247,18.28,no_data
+Terrey Hills,0.166802,0.6135,2,2,1.105,straight_line_haversine_35kmh_optimistic_bound,1.89,Terrey Hills Medical Centre,Terrey Hills,89,30,14.26,5.44,3142,24.57,ok
+The Ponds,0.236295,2.308244,7,42,0.705,straight_line_haversine_35kmh_optimistic_bound,1.21,Ponds Medical Centre,The Ponds,153,101,39.56,85.74,16315,8.19,ok
+The Rocks,0.337554,2.495452,34,117,0.368,straight_line_haversine_35kmh_optimistic_bound,0.63,Bridgeside Medical Centre,The Rocks,373,269,95.59,93.53,629,18.76,ok
+The Slopes,0.28317,1.787724,0,1,4.273,straight_line_haversine_35kmh_optimistic_bound,7.32,Myhealth Kurrajong Village,Kurrajong,10,10,67.5,49.26,327,17.43,no_data
+Thornleigh,0.272839,1.907459,10,45,0.344,straight_line_haversine_35kmh_optimistic_bound,0.59,The Esplanade Medical Practice,Thornleigh,165,119,59.85,57.21,8898,14.96,ok
+Toongabbie,0.295227,2.212342,14,66,0.173,straight_line_haversine_35kmh_optimistic_bound,0.3,Toongabbie Doctors,Toongabbie,280,175,73.97,79.85,16177,12.83,ok
+Tregear,0.23937,2.087099,6,30,0.26,straight_line_haversine_35kmh_optimistic_bound,0.45,Tregear Medical Centre,Tregear,109,71,41.47,70.59,3700,11.92,ok
+Turramurra,0.269747,1.737516,6,47,0.077,straight_line_haversine_35kmh_optimistic_bound,0.13,Turramurra Family Practice,Turramurra,188,121,57.79,46.91,12850,19.7,ok
+Turrella,0.304246,2.006354,17,92,0.743,straight_line_haversine_35kmh_optimistic_bound,1.27,Dr Sultanali Adatia,Arncliffe,409,258,81.18,63.97,2673,9.8,no_data
+Ultimo,0.344653,2.631525,51,127,0.346,straight_line_haversine_35kmh_optimistic_bound,0.59,Myhealth Darling Square,Sydney,385,280,97.06,97.79,7410,6.34,ok
+Varroville,0.228894,1.940399,2,15,1.457,straight_line_haversine_35kmh_optimistic_bound,2.5,Raby Medical Centre,Raby,80,59,36.62,59.85,134,20.9,no_data
+Vaucluse,0.220126,1.309315,3,35,1.832,straight_line_haversine_35kmh_optimistic_bound,3.14,Newcastle Street Medical Practice,Rose Bay,255,167,32.65,24.85,9510,19.04,no_data
+Villawood,0.336238,2.357814,9,75,0.621,straight_line_haversine_35kmh_optimistic_bound,1.07,Villawood Medical Centre,Villawood,359,236,94.56,88.24,7051,12.49,ok
+Vineyard,0.229906,2.093516,0,10,2.371,straight_line_haversine_35kmh_optimistic_bound,4.06,Grantham Street Family Practice,Grantham Farm,59,31,36.91,71.03,1143,25.37,no_data
+Voyager Point,0.236629,1.338834,2,18,1.088,straight_line_haversine_35kmh_optimistic_bound,1.87,East Hills Medical Centre,East Hills,250,139,40.0,26.03,1678,9.71,no_data
+Wahroonga,0.270914,1.811048,8,47,0.465,straight_line_haversine_35kmh_optimistic_bound,0.8,Heritage Medical Practice Wahroonga,Wahroonga,174,104,58.82,50.74,17853,22.21,ok
+Waitara,0.255803,1.678186,20,40,0.424,straight_line_haversine_35kmh_optimistic_bound,0.73,Edgeworth Medical Centre,Hornsby,145,83,48.24,42.06,7837,13.09,ok
+Wakeley,0.296411,2.264262,7,77,1.219,straight_line_haversine_35kmh_optimistic_bound,2.09,Arina Medical Centre,Fairfield West,252,154,74.85,82.79,4893,19.78,gp_count_unknown
+Wallacia,0.17051,1.923498,0,2,2.393,straight_line_haversine_35kmh_optimistic_bound,4.1,Little Gem Medical,Silverdale,5,2,15.88,58.97,1711,17.36,ok
+Wareemba,0.310049,1.905363,8,78,0.295,straight_line_haversine_35kmh_optimistic_bound,0.51,Abbotsford Medical Practice,Abbotsford,450,287,84.56,56.91,1519,20.61,no_data
+Warrawee,0.260405,1.683774,4,48,0.869,straight_line_haversine_35kmh_optimistic_bound,1.49,Kissing Point Road Family Doctors,Turramurra,181,105,51.03,42.65,3170,17.35,no_data
+Warriewood,0.19183,1.029459,10,15,0.952,straight_line_haversine_35kmh_optimistic_bound,1.63,Elm Rd Medical Centre,Warriewood,43,26,21.32,15.29,8379,18.2,ok
+Warwick Farm,0.32426,2.553269,26,78,1.369,straight_line_haversine_35kmh_optimistic_bound,2.35,Myhealth Medical Centre - Liverpool,Liverpool,270,165,90.0,96.18,6135,11.87,no_data
+Waterfall,0.143985,0.606731,0,0,6.784,straight_line_haversine_35kmh_optimistic_bound,11.63,Engadine Medical Centre,Engadine,13,12,10.0,5.29,522,16.28,no_data
+Waterloo,0.335641,2.641389,23,148,0.291,straight_line_haversine_35kmh_optimistic_bound,0.5,Green Square Health,Waterloo,363,270,93.97,98.38,16379,10.38,ok
+Watsons Bay,0.197015,1.052723,0,16,2.431,straight_line_haversine_35kmh_optimistic_bound,4.17,Mosman Integrative Medicine,Mosman,236,146,23.53,16.03,883,16.87,no_data
+Wattle Grove,0.245719,1.667368,2,40,0.787,straight_line_haversine_35kmh_optimistic_bound,1.35,Wattle Grove Family Medical Practice,Holsworthy,222,120,44.71,40.88,8886,9.36,ok
+Waverley,0.253373,2.085678,27,87,0.142,straight_line_haversine_35kmh_optimistic_bound,0.24,Bronte Gp,Waverley,249,188,47.35,70.44,4216,17.81,ok
+Waverton,0.320705,2.218259,15,113,0.878,straight_line_haversine_35kmh_optimistic_bound,1.51,Qualitas Medical Practice,North Sydney,372,249,89.12,80.29,2981,19.22,no_data
+Wedderburn,0.169591,1.148114,0,2,4.973,straight_line_haversine_35kmh_optimistic_bound,8.53,First Care Medical Centre - Rosemeadow,Rosemeadow,21,17,15.15,19.93,665,18.05,no_data
+Wentworth Point,0.263098,1.707468,4,63,0.42,straight_line_haversine_35kmh_optimistic_bound,0.72,Harbourside Medical Centre,Wentworth Point,380,193,52.79,44.71,12703,5.21,ok
+Wentworthville,0.303561,2.258494,16,76,0.014,straight_line_haversine_35kmh_optimistic_bound,0.02,Southern Cross Surgery,Wentworthville,309,195,80.59,82.35,15098,9.48,ok
+Werrington,0.274309,2.439741,4,28,1.716,straight_line_haversine_35kmh_optimistic_bound,2.94,Depression Clinic And General Practice,Claremont Meadows,85,72,60.74,91.62,5328,9.63,ok
+Werrington County,0.266037,2.201954,1,31,0.571,straight_line_haversine_35kmh_optimistic_bound,0.98,Myhealth Werrington County Medical Centre,Werrington County,85,71,55.74,79.26,3698,16.66,ok
+Werrington Downs,0.257606,2.068109,4,32,1.02,straight_line_haversine_35kmh_optimistic_bound,1.75,Myhealth Werrington County Medical Centre,Werrington County,82,64,49.26,69.12,3221,12.76,no_data
+West Hoxton,0.193004,1.449048,4,20,0.734,straight_line_haversine_35kmh_optimistic_bound,1.26,Carnes Hill Medical Centre,West Hoxton,127,72,21.76,29.56,10152,8.95,ok
+West Pennant Hills,0.287915,1.69272,5,46,0.405,straight_line_haversine_35kmh_optimistic_bound,0.69,Rosedale Medical Practice,West Pennant Hills,266,153,69.12,43.53,16620,19.97,ok
+West Pymble,0.263933,1.641673,4,36,1.523,straight_line_haversine_35kmh_optimistic_bound,2.61,Mq Health General Practice - Macquarie University,Macquarie University,221,152,53.38,38.97,5441,16.06,ok
+West Ryde,0.268621,1.707587,19,59,0.433,straight_line_haversine_35kmh_optimistic_bound,0.74,West Ryde Marketplace Medical Centre,West Ryde,348,176,57.21,44.85,13171,14.82,ok
+Westleigh,0.262741,1.752713,2,44,1.855,straight_line_haversine_35kmh_optimistic_bound,3.18,The Esplanade Medical Practice,Thornleigh,161,99,52.21,47.94,4501,21.06,ok
+Westmead,0.308602,2.279274,20,75,0.156,straight_line_haversine_35kmh_optimistic_bound,0.27,Next Practice Wsih (Western Sydney Integrative Health),Westmead,321,206,83.38,84.12,16555,8.68,ok
+Wetherill Park,0.264891,1.555853,7,25,0.909,straight_line_haversine_35kmh_optimistic_bound,1.56,Greenway Medical Hub,Wetherill Park,265,163,54.56,33.97,6412,20.4,ok
+Whalan,0.240139,2.136667,11,39,0.464,straight_line_haversine_35kmh_optimistic_bound,0.8,Whalan Medical Centre,Whalan,123,70,42.35,74.26,5929,15.11,ok
+Whale Beach,0.129345,0.533009,0,5,2.488,straight_line_haversine_35kmh_optimistic_bound,4.27,Avalon Family Medical Practice,Avalon Beach,19,12,7.35,4.71,315,36.83,no_data
+Wheeler Heights,0.183041,0.941132,1,16,0.523,straight_line_haversine_35kmh_optimistic_bound,0.9,Plateau Family Medicine,Collaroy Plateau,75,45,18.53,12.79,3232,14.85,ok
+Wilberforce,0.172946,1.276668,1,2,1.872,straight_line_haversine_35kmh_optimistic_bound,3.21,Wilberforce Medical Practice,Wilberforce,15,10,16.47,24.26,2957,14.91,ok
+Wiley Park,0.289491,2.029046,18,97,0.592,straight_line_haversine_35kmh_optimistic_bound,1.01,Dr Dalati Surgery,Lakemba,334,244,70.29,66.62,10016,9.76,ok
+Willmot,0.215653,1.724596,1,22,1.461,straight_line_haversine_35kmh_optimistic_bound,2.5,Ropes Crossing Medical Practice,Ropes Crossing,106,68,30.74,46.47,2382,14.15,ok
+Willoughby,0.277174,1.688765,23,64,0.1,straight_line_haversine_35kmh_optimistic_bound,0.17,Willoughby Road Family Medical Centre,Willoughby,326,184,62.65,42.79,7124,15.79,ok
+Willoughby East,0.267538,1.676071,13,66,0.683,straight_line_haversine_35kmh_optimistic_bound,1.17,Castlecrag Medical Practice,Castlecrag,294,165,55.88,41.76,1864,15.08,no_data
+Windsor,0.302219,2.778306,6,9,0.218,straight_line_haversine_35kmh_optimistic_bound,0.37,Beyond Healthcare Family Practice,Windsor,25,18,79.71,99.56,1915,20.21,ok
+Windsor Downs,0.27539,2.058509,0,3,2.92,straight_line_haversine_35kmh_optimistic_bound,5.01,Bligh Park Family Practice,Bligh Park,66,25,61.47,68.38,1183,20.2,no_data
+Winston Hills,0.298024,2.130003,6,63,0.496,straight_line_haversine_35kmh_optimistic_bound,0.85,Lomond Crescent Medical Practice,Winston Hills,295,175,76.03,74.12,12123,20.25,ok
+Wisemans Ferry,0.0,0.0,0,0,22.551,straight_line_haversine_35kmh_optimistic_bound,38.66,Wilberforce Medical Practice,Wilberforce,0,0,0.66,0.81,233,21.46,ok
+Wolli Creek,0.308281,2.031321,12,83,0.171,straight_line_haversine_35kmh_optimistic_bound,0.29,Medical & Aviation Centre Wolli Creek,Wolli Creek,409,265,83.09,67.21,10654,3.13,ok
+Wollstonecraft,0.315545,2.100042,15,99,0.7,straight_line_haversine_35kmh_optimistic_bound,1.2,Noi Clinic,Crows Nest,376,239,87.65,71.47,8115,16.2,no_data
+Woodbine,0.227565,2.013325,5,24,0.929,straight_line_haversine_35kmh_optimistic_bound,1.59,Claymore Medical Centre,Claymore,63,47,36.18,64.85,2780,16.12,no_data
+Woodcroft,0.273219,2.278686,8,48,0.851,straight_line_haversine_35kmh_optimistic_bound,1.46,Woodcroft Family Practice,Woodcroft,189,121,60.29,83.97,6597,13.9,ok
+Woodpark,0.310834,2.281644,4,88,1.336,straight_line_haversine_35kmh_optimistic_bound,2.29,Agiostheos Medical Practice - Greystanes,Greystanes,322,200,85.44,84.26,1706,10.67,no_data
+Woollahra,0.288685,2.268001,27,129,0.434,straight_line_haversine_35kmh_optimistic_bound,0.74,Woollahra Family Medical Practice,Woollahra,297,219,69.85,83.09,7189,23.12,ok
+Woolloomooloo,0.326394,2.569677,52,135,0.116,straight_line_haversine_35kmh_optimistic_bound,0.2,Dr Brian Foo,Woolloomooloo,353,243,91.18,96.47,3792,14.98,ok
+Woolooware,0.152585,0.903467,8,18,0.541,straight_line_haversine_35kmh_optimistic_bound,0.93,Woolooware Medical Practice,Woolooware,96,49,11.62,11.62,5060,16.86,ok
+Woolwich,0.318445,2.124537,7,92,1.629,straight_line_haversine_35kmh_optimistic_bound,2.79,Dr Eli Zeltzer - Gp,Balmain,404,263,88.24,73.82,833,32.89,no_data
+Woronora,0.244085,1.617513,3,29,1.185,straight_line_haversine_35kmh_optimistic_bound,2.03,Southern Cross Medical Practice - Bangor,Bangor,145,85,43.97,36.91,2043,18.45,no_data
+Woronora Heights,0.205073,1.389927,1,30,1.564,straight_line_haversine_35kmh_optimistic_bound,2.68,Southern Cross Medical Practice - Bangor,Bangor,112,57,27.35,27.5,2781,13.63,no_data
+Yagoona,0.308365,2.088323,18,63,0.245,straight_line_haversine_35kmh_optimistic_bound,0.42,Dr Edward Howe,Yagoona,371,237,83.24,70.74,19651,14.39,ok
+Yarramundi,0.110551,0.170582,0,1,4.793,straight_line_haversine_35kmh_optimistic_bound,8.22,Winmalee Medical Centre,Winmalee,17,1,4.41,1.91,829,14.11,no_data
+Yarrawarrah,0.200017,1.442938,4,23,0.478,straight_line_haversine_35kmh_optimistic_bound,0.82,Yarrawarrah Medical Practice,Yarrawarrah,84,48,24.85,29.26,2775,19.53,ok
+Yennora,0.337325,2.512793,28,90,1.289,straight_line_haversine_35kmh_optimistic_bound,2.21,Guildford West Family Practice,Guildford West,334,223,95.29,94.26,1675,25.85,no_data
+Yowie Bay,0.208887,1.205218,11,35,1.433,straight_line_haversine_35kmh_optimistic_bound,2.46,Vickers Team Care,Miranda,115,59,28.82,22.06,3053,21.85,no_data
+Zetland,0.325283,2.541141,20,142,0.311,straight_line_haversine_35kmh_optimistic_bound,0.53,Green Square Medical Practice,Zetland,362,256,90.59,95.59,12622,3.68,ok

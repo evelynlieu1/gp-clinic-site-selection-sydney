@@ -1,406 +1,427 @@
-# Methodology and design decisions
+# Methodology, validation and limitations
 
-Companion to [CAVEATS.md](CAVEATS.md). That file records what the numbers *cannot* support; this
-one records what we chose to measure, why, and what we rejected.
+Single reference for how the Nuvo Health site selection works, what was checked, and what
+it cannot tell you. Replaces the previous `METHODOLOGY.md` and `CAVEATS.md`, which
+overlapped and had drifted: of their 73 sections, a triage against the live code found 17
+still accurate, 44 stale in their numbers or file names, and 12 describing the v1 pipeline
+that was deleted on 2026-09-23.
 
-Last updated: 2026-08-19.
+Every figure below was re-derived from the repository rather than carried forward. Where a
+number could not be verified it is either absent or marked.
 
----
-
-## 1. The question
-
-Nuvo Health wants sites for a **mixed-billing, 7-day, multidisciplinary** GP clinic in Greater
-Sydney. That product definition does more work than it first appears, and getting it wrong is the
-root of most errors below:
-
-- **Mixed billing** means the clinic bulk-bills concession holders and charges a gap to everyone
-  else. It needs households who can absorb a gap fee *sometimes*. It is not a bulk-bill practice
-  and it is not a premium private practice.
-- **7 days** and **multidisciplinary** mean the product is *differentiated*. This matters because
-  it breaks the assumption that a suburb with many GPs is a closed market.
-
-The business question is therefore **not** "which suburb has the fewest doctors". It is:
-**where can this particular product win?**
+The short version is in [README.md](README.md). This document is the detail behind it.
 
 ---
 
-## 2. Three fundamental errors we found and corrected
+## The question
 
-### 2.1 Missing data read as zero supply
+Nuvo Health runs mixed-billing, 7-day, multidisciplinary GP clinics, and the decision is which Greater Sydney
+suburb the next one opens in. That is a commercial question, not a public-health one: the score asks where a
+mixed-billing clinic can fill appointments, and the need lens is carried separately as `community_need_score`,
+never ranked on by default.
 
-GP supply came from 70 prompts pasted into an LLM chat (`prompts/chunk_*.txt`). 239 of 680
-suburbs were asked for and no clinic data came back. The pipeline recorded that as
-`total_gp = 0`, and since pressure is `population / (total_gp + 1)`, those suburbs scored as
-*maximum* pressure and dominated every shortlist. **Seven of the original ten recommendations
-were suburbs with no data at all.**
+The frame is the 680 suburbs in `scraped_data/eda_data.csv`. Demand is the 2021 Census (population, 65-plus
+share, median weekly household income); supply is the Healthdirect National Health Services Directory as
+republished by Geoscience Australia, extract 2025-03-07 — 2,089 NSW general practices and 1,832 pharmacies,
+dated and re-fetchable. 443 of the 680 suburbs are eligible for a rank.
 
-Fixed by `gp_supply.py`, which separates three states: `ok` (433), `gp_count_unknown` (8),
-`no_data` (239). Only `ok` is rankable on supply. See CAVEATS.md §1.
+What a ranked row claims is "too few practices for the population that must share them", never "no GP here".
+Cronulla at rank 1 has 6 practices within 2 km, the nearest 104 m away.
 
-### 2.2 Supply counted inside suburb boundaries
+## Method
 
-This one invalidated the answer even after 2.1 was fixed.
+Build an E2SFCA accessibility surface, score four criteria on [0,1], combine as a weighted sum, apply two hard
+eligibility gates and the Nuvo catchment exclusion, then re-rank under 31 perturbations — the deliverable is
+the robust core of that sweep, not the point ranking.
 
-**Croydon ranked #1 with one practice inside its polygon - and 21 general practices within
-1.5 km, 27 within 2 km, 42 within 3 km. Nearest is 370 m.** It sits between Burwood and
-Ashfield, in one of the most GP-saturated parts of Sydney. Nobody would open there.
+### Why E2SFCA rather than counting practices inside the suburb
 
-The pattern is systematic, not a one-off:
+Counting practices inside a suburb polygon measures which side of an administrative line a clinic sits on.
+Croydon has 1 practice inside its boundary and 27 within 2 km; v1 ranked it the best opportunity in Sydney, and
+it now ranks 141 at the 86th percentile of access. The artefact is not rare: 298 of 680 suburbs contain no
+practice, and of the 46 suburbs with 5,000-plus residents and none inside, 43 have one within 2 km.
 
-| | Practices inside | Within 2 km |
+E2SFCA (Luo and Qi 2009) replaces the count with a continuous surface in two steps (`accessibility.py`). Step 1
+gives each practice `R_j = S_j / sum_k P_k W(d_kj)`, its supply over the decay-weighted population competing for
+it; step 2 gives each suburb `A_i = sum_j R_j W(d_ij)`, in practices per 1,000 people. `S_j = 1` for every
+practice — the register has no practitioner-count field, which is what the D5 headcount guard offsets.
+
+`W` is a stepped 5-minute Gaussian decay, 0.980 / 0.827 / 0.549 / 0.192 out to the 20-minute general cutoff; the
+15-minute 65-plus surface is context only, and seniors enter the score through the 2.5x attendance multiple in
+`demand_scale`. Step 1 also counts ABS SA2 population outside the 680-suburb footprint — without that ring, edge
+practices divide by a truncated population and the fringe reads as superbly served; adding it moved the access
+distribution's correlation with practices within 2 km from -0.01 to +0.56. Travel cost is straight-line at an
+effective 35 km/h, not road-network routing: the largest weakness, treated below.
+
+### The four criteria
+
+| criterion | weight | value function | direction |
+|---|---|---|---|
+| `access_gap` | 0.40 | 1 - rank percentile of E2SFCA access, then `x (1 - 0.5 x headcount_adequacy)` | low access -> high score |
+| `demand_scale` | 0.25 | log ramp on senior-weighted population: 0 at 5,000, 1 at 20,000 weighted persons | more demand -> higher |
+| `mixed_billing_fit` | 0.25 | inverted U on median weekly household income, knots at P15/P40/P80/P95 | mid-income -> highest |
+| `operational` | 0.10 | `0.7 x` nearest-pharmacy ramp (1.0 at <=0.4 km, 0 at >=2.0 km) `+ 0.3 x` DPA flag | closer pharmacy -> higher |
+
+Each shape answers a v1 failure. `access_gap` is a rank percentile so that zero-access and ferry-only suburbs
+cannot set the scale, and its guard term lets a trustworthy headcount contradict a high gap score — downward
+only, `gp_data_status == "ok"` only, so headcount never ranks. `demand_scale` is logarithmic because
+senior-weighted population spans 3 to 60,700, and a linear min-max over that range let v1 rank a 1,334-person
+enclave first. `mixed_billing_fit` is an inverted U because a ~$43 rebate against a ~$90 private fee needs
+households that can absorb the gap sometimes; its knots are re-derived at run time from the loaded income column
+($1,583 / $2,101 / $2,872 / $3,492 on the shipped 2021 data). `operational` caps DPA at 0.3 of 0.10 because DPA=Y
+fires on 79 of 680 suburbs at a median population of 815 — a hidden smallness bonus at full weight.
+
+### Gates and exclusions
+
+Both gates are hard: a suburb below either keeps its sub-scores for audit but gets no rank.
+
+| gate | threshold | suburbs removed |
 |---|---|---|
-| Croydon | 1 | 27 |
-| Chippendale | 0 | 43 |
+| local population | >= 1,000 | 96 of 680 |
+| catchment demand | >= 25,000 decay- and senior-weighted persons, ring included | 28, of which 7 are not already below the population floor |
 
-**45 suburbs of 5,000+ people show zero practices inside while being comfortably served.**
-Meanwhile the method hid real candidates: **Heathcote** - 6,148 people, 22.8% aged 65+,
-$2,240/week - has **zero practices within 3 km**, nearest 5.07 km, and never appeared on any
-shortlist.
+The catchment gate's own comment (`site_score.py:161`) claims it binds on zero extra suburbs; the shipped output
+says 7, all rural-fringe, so the comment is stale rather than the gate.
 
-Patients do not stop at the suburb line. A suburb-interior count measures *which side of an
-administrative boundary a clinic sits on*. Fixed by replacing it with an accessibility surface
-(§4).
+Nuvo's own sites are excluded at GP-catchment level, not by suburb name, because a clinic 1 km away in the next
+suburb cannibalises just as effectively. The list is the operator's published listing of 18 centres (15 map to ABS
+suburbs; 3 are precinct names in catchments the 15 already cover), retrieved 2026-09-23 from nuvohealth.com.au,
+and it removes 145 suburbs across 10 of the 46 GP catchments the study touches — 134 of them otherwise eligible.
+**The list is unverified**: every output row carries a confirm-with-client note, and no site should be picked
+before the client confirms it.
 
-### 2.3 Income treated as monotonically better
-
-`W_INCOME = 0.25` on higher-is-better meant the score could never stop climbing. Consequences,
-measured:
-
-| | Value |
-|---|---|
-| Cohort median household income | $2,171/wk |
-| Top-20 median income | **$3,283/wk** (~P90) |
-| Top 20 above $3,500 (P95) | 8 of 20 |
-
-The top of the list was Longueville $4,894, Riverview $4,731, Castlecrag $4,675, North Balgowlah
-$4,212. **Those households want full private billing, not mixed billing.** The score was
-optimising for the segment least likely to buy the product, while the plausible target band
-($1,800-3,000/wk) holds 270 of 423 suburbs and 2.69 million people.
-
-Fixed by an inverted-U income curve (D1).
+That leaves 443 ranked suburbs, with `catchment_rank` and `best_in_catchment` flagging the cases where two of them
+are really one opportunity — Caringbah South at rank 2 sits in Cronulla's own catchment.
 
 ---
 
-## 3. Decisions
+## Three structural errors, and how each was caught
 
-The client gave no specification on any of these, so each is our call, stated with rationale so a
-reader can disagree with the reasoning rather than guess at it.
+Three errors in the first pipeline each changed the answer, not the margins. None was found by
+reading the code: each was found by taking the name at the top of the list and testing it against a
+source the pipeline had never seen. A fourth of the same shape turned up in the rebuild and is
+recorded here because it is only half-closed.
 
-### D1 - Income is an inverted-U, anchored to percentiles
+| # | What was wrong | What exposed it | What replaced it |
+|---|---|---|---|
+| 1 | Never-scraped suburbs scored as having zero GPs | 7 of the 10 recommended names had no supply data at all | Three-state `gp_data_status`; supply re-measured from a 2,089-practice register |
+| 2 | Supply counted inside the suburb polygon | Croydon: 1 practice inside, 27 within 2 km | E2SFCA accessibility surface over practice points |
+| 3 | Income scored monotonically higher-is-better | Top-20 median income $3,283 against a cohort median of $2,171 | Inverted U on income, knots derived from percentiles (D1) |
+| 4 | One unit per practice, so few-but-large reads as scarcity | Dee Why ranked 2 on 35 recorded GPs for 23,354 residents | Downward-only headcount demotion guard (D5) |
 
-Full score on a plateau of **$2,050-2,750/week** (Sydney P40-P80), tapering linearly to zero
-below **$1,550** (P15) and above **$3,500** (P95).
+### 1. Missing data was read as zero supply
 
-*Rationale.* A standard consult rebate is roughly $43 against a typical private fee near $90, so
-a gap of about $45. Below the lower knot, bulk-billing is effectively universal and gap fees do
-not hold - which is why Belmore ($1,456) was correctly diverted to the community-need list.
-Above the upper knot, households prefer premium private care and mixed billing reads downmarket.
-Percentile anchoring means the band self-calibrates rather than hard-coding 2026 dollars.
+**Wrong.** GP supply came from 70 prompt files pasted into an LLM chat (`prompts/chunk_*.txt`). The
+scrape returned 441 of the 680 study suburbs; 239 never appeared. The merge fills those with
+`total_gp = 0.0` (`gp_supply.py:251`), and both v1 consumers read that zero as a measurement: the
+MCDA supply criterion was a min-max on `total_gp`, lower-is-better at weight 0.35, so an unmeasured
+suburb scored a perfect 1.0; the shortlist chain used `People_Per_GP_Ratio = population /
+(total_gp + 1)`, which reads it as maximum pressure.
 
-*Risk.* The knots are a modelling choice, not a measurement. Mitigated by sensitivity analysis
-(§5): if the recommendation only holds for one band setting, it is not a recommendation.
+**Proof.** Cross-tabulate the v1 shortlist against `gp_data_status`. Seven of the ten names in
+`eda/final_top10_clinical_intensity.csv` had `total_gp = 0` and status `no_data` — Blakehurst,
+Caringbah South, Vaucluse, Killara, Concord West, Cromer, Gymea Bay. The whole-cohort MCDA ranking
+was no better: the same 7 of 10, led by Point Piper, population 1,334. Both files are recoverable
+at commit `5fe4d38`; the v1 chain was deleted at `ad78bd7`.
 
-### D2 - Catchment is 20 minutes general, 15 minutes for 65+
+**Replaced.** `gp_supply.py` splits the column into three states — `ok` 433, `gp_count_unknown` 8,
+`no_data` 239 of 680 — with Bayview and Beacon Hill the only two confirmed zeros. v2 does not rank
+on the scrape at all: supply is an E2SFCA surface over the 2,089-practice Healthdirect register, so
+all 680 suburbs are measured on the same basis. `site_score.py:968` admits a suburb to the one
+surviving headcount rule only where `status == "ok"` and `total_gp > 0`, and `_test_headcount_guard`
+(`site_score.py:1428`) asserts it never fires on anything else.
 
-*Rationale.* A 20-minute cutoff is the common standard in the primary-care access literature.
-The tighter senior band encodes something the project's own thesis requires: seniors are 20-25% of
-the scoring weight and the entire clinical-intensity argument, and that cohort does **not** drive
-5 minutes to the next centre. Using one radius for everyone would overstate access for exactly
-the patients the clinic is designed around.
+### 2. Supply was counted inside suburb boundaries
 
-### D3 - Primary lens is commercial (mixed billing)
+**Wrong.** With the no-data suburbs held out, the top name left on the v1 shortlist was Croydon. An
+in-polygon count measures which side of an administrative line a clinic sits on.
 
-*Rationale.* The client is a private operator whose stated model is mixed billing. Two scores
-producing disjoint lists with no stated primary is not an analysis, it is two analyses. The
-community-need variant (income rewarded lower-is-better) is retained and **reported** as an
-equity cross-check, never as a competing recommendation.
+**Proof.** Count register practices by distance from the suburb centroid instead of inside its
+polygon. Croydon, between Burwood and Ashfield, has 1 inside, 21 within 1.5 km, 27 within 2 km, 42
+within 3 km, nearest 385 m. The pattern is systematic, not an anecdote: of the 298 suburbs with no
+practice inside, 170 (57.0%) have one within 1.5 km and 206 (69.1%) within 2 km, and only 61 —
+55,147 people — have none within 3 km. Among suburbs of 5,000-plus residents with none inside there
+are 46, and 43 have one within 2 km; the three exceptions are Heathcote, Spring Farm and Ruse. The
+error hid the genuine cases too: Heathcote, 6,148 residents, has 0 practices within 2 km, 9 within
+3 km, nearest 2.455 km, and never reached a v1 shortlist.
 
-### D4 - Existing Nuvo sites excluded at catchment level
+**Replaced.** `accessibility.py` computes an enhanced two-step floating catchment area surface:
+supply-to-demand ratios with distance decay (`e2sfca`, line 471), plus a ring of demand outside the
+study area (`load_outside_demand`, line 651) so boundary practices are not credited with a
+truncated demand pool. `practices_inside` survives as a context column, not a ranking input. Croydon
+fell to rank 141 of 443 at the 85.6th access percentile; Heathcote rose to rank 10 at the 5.2nd.
+`_test_croydon_structure` (`accessibility.py:1113`) locks the structural claim on synthetic data,
+and `validation.py` supplies the external one: against the Department of Health DPA under-supply
+flag, which the pipeline never reads, `access_gap_unguarded` scores AUC **0.813 [0.743, 0.879]**.
+The composite `site_score` scores 0.640 [0.576, 0.706], as it should — it also rewards income fit
+and demand, which DPA does not measure.
 
-*Rationale.* A clinic 1 km away in the adjacent suburb cannibalises just as effectively as one
-across the road, so excluding by suburb name would not work - the same boundary error as 2.2.
+### 3. Income was treated as monotonically better
 
-*Known incomplete.* Brand-string matching finds 6 clinics; the practice register suggests roughly
-**23 Sydney clinics** in the group trading under non-Nuvo brands. The exclusion list is an
-editable config, and every output carries an explicit "unverified - confirm with client" flag.
-**This is the single cheapest thing the client could supply to improve the analysis.**
+**Wrong.** Income entered at weight 0.25, higher-is-better, so the score could never stop climbing.
 
-### D5 - Supply is practices per capita, not GP headcount
+**Proof.** Read the list's income distribution against its own cohort. Over the 423 rankable
+suburbs in the v1 output, cohort median was $2,171/week and top-20 median $3,283 — the 95th
+percentile of that cohort — with 8 of 20 at or above $3,500. The leaders were Longueville $4,894,
+Riverview $4,731, Castlecrag $4,675 and North Balgowlah $4,212: households that buy full private
+care, the segment least likely to buy mixed billing. The plausible target band, $1,800-3,000, holds
+274 of the 433 `ok` suburbs and 2.69 million people.
 
-*Rationale.* Three converging reasons:
-1. The authoritative register has **no practitioner-count field** at all.
-2. The scraped headcount is unreliable: 26% of usable counts are exactly 1 against a median of 3,
-   and 17% of rankable suburbs are lower bounds rather than exact totals.
-3. GP FTE does exist from the Department of Health, but only at **SA3 scale** - median catchment
-   121,917 people and 56 km2 against a median suburb of 2.7 km2, roughly 14 suburbs per unit. It
-   cannot separate neighbouring suburbs, which is the entire decision being made.
+**Replaced.** D1 makes income an inverted U whose knots are derived at run time from percentiles
+15/40/80/95 of the income column actually loaded (`INCOME_KNOT_PERCENTILES`, `site_score.py:130`) —
+on the shipped 2021 data, $1,583 / $2,101 / $2,872 / $3,492. The eligible top 20 now has a median
+household income of $2,388, a maximum of $3,120 and nothing at or above $3,500; all four former
+leaders score `mixed_billing_fit` 0.0. `_test_derived_income_knots` (`site_score.py:1402`) asserts
+the property the hard-coded dollar knots lacked: multiply every income by 1.2, and no sub-score moves.
 
-GP FTE therefore appears as a **context column only**, never as a ranking input. The honest
-statement is "practices per capita, because headcount at suburb resolution does not exist".
+### 4. Found after the rebuild: one unit per practice
 
-### D6 - Criteria restructured; weights defended by sensitivity, not assertion
+**Wrong.** The register carries no practitioner-count field, so the E2SFCA supply term is one unit
+per practice: a twelve-doctor clinic and a solo GP count the same, and a suburb served by few but
+large practices reads as under-supplied.
 
-The old weights (0.35 supply / 0.25 income / 0.20 seniors / 0.15 population / 0.05 area) were
-undocumented and had two specific defects: `area` at 0.05 rewarded *smallness*, and population at
-only 0.15 - min-maxed across a range dominated by 30,000-plus suburbs - meant a 1,300-person
-enclave was barely penalised. Point Piper ranked first.
+**Proof.** Read the rebuilt ranking against the very scrape v1 was scrapped for. Dee Why ranked 2
+on `access_gap` 0.844 with 35 recorded GPs for 23,354 residents — 667 people per GP, better
+supplied than 70% of the eligible cohort with a usable ratio. Mona Vale at rank 9 was worse still
+at 494 per GP, better supplied than 84%.
 
-| Criterion | Weight | Direction |
+**Replaced.** The D5 guard (`headcount_adequacy`, `site_score.py:839`) lets a trustworthy headcount
+contradict a high `access_gap`, downward only: full demotion at 640 people per GP or fewer, none at
+1,040 or more, at half strength. It demotes 159 of the 443 eligible suburbs, 89 at full adequacy,
+mean `access_gap` reduction 0.210. Dee Why 2 → 17, Mona Vale 9 → 42, Freshwater 10 → 12, and four
+of the ten recommended names change: out go Dee Why, Engadine, Freshwater and Mona Vale; in come
+Collaroy, Glenmore Park, Heathcote and Newport. Guard strength is one of the nine sensitivity
+families (off / 0.25 / 0.5 / 0.75), so the effect can be read off rather than taken on trust.
+
+**Still open.** The guard can only check a suburb with a trustworthy headcount, and 125 of the 443
+eligible have none — 116 `no_data`, 7 `gp_count_unknown`, 2 confirmed zeros. Caringbah South at
+rank 2 is one; Cromer at 16 is the other in the top 30. Five more top-30 names carry floor counts
+rather than exact ones (Cranebrook 5, Newport 8, Miranda 15, Dee Why 17, Botany 23), so their
+people-per-GP is overstated and they are under-demoted. The guard also costs agreement with the
+external check — AUC falls from 0.813 to 0.779 [0.707, 0.846] on the DPA flag, on heavily
+overlapping intervals — and its knots are frozen constants: re-derived on the current 318-suburb
+cohort, the same percentiles give 612 and 1,030, not 640 and 1,040. `site_score.py:35-38` still
+quotes the pre-gate cohort, 197 of 507 and 134 unguardable with Dee Why → 19, against the live 159
+of 443, 125 and 17. A `no_data` suburb's rank carries strictly less evidence than an `ok` one.
+
+---
+
+## Does it work?
+
+`validation.py` asks the two questions nothing else in the pipeline asks: is the score any good against
+something outside itself, and is the ranking just a map of where Sydney's peninsulas are. It is seeded,
+and re-running it leaves its three output CSVs byte-identical.
+
+### External check: access_gap against the DPA flag
+
+The Department of Health's Distribution Priority Area designation is an independent under-supply call
+derived from GP FTE per capita. AUC, with a 2,000-draw class-stratified percentile bootstrap, over all
+680 suburbs (79 positive, 601 negative).
+
+| measure | AUC | 95% CI |
 |---|---|---|
-| Access gap (E2SFCA) | 0.40 | Lower accessibility is better |
-| Demand scale (senior-weighted, with a viability floor) | 0.25 | Higher is better |
-| Mixed-billing fit (inverted-U income, D1) | 0.25 | Peak in band |
-| Operational (pharmacy co-location, DPA status) | 0.10 | Higher is better |
+| `access_gap_unguarded` | 0.813 | [0.743, 0.879] |
+| `access_gap` (shipped, after the D5 guard) | 0.779 | [0.707, 0.846] |
+| `site_score` (composite) | 0.641 | [0.576, 0.706] |
+| `demand_scale` | 0.240 | [0.208, 0.275] |
 
-`area` is dropped. Raw population is replaced by senior-weighted demand with a minimum viable
-catchment floor.
+0.813 is real discrimination on the criterion carrying 40 percent of the weight; `demand_scale` at 0.240
+is the check in the other direction, since a size criterion should anti-predict a flag whose positives
+are tiny. Three things travel with the headline number.
 
-*The weights are not the defence.* No client input existed to derive them, so asserting them
-would be false precision. The defence is §5: the recommendation is the set of suburbs that stay
-top-10 across every plausible weighting.
+1. **The benchmark is rural-calibrated.** The median DPA-positive suburb has 815 people and zero
+   practices within 2 km, against a median of 4,940 across all 680, and only 29 of the 79 positives
+   clear the eligibility gates. A high AUC says the score agrees with the government about obvious
+   scarcity, not that it picks good sites.
+2. **It validates one criterion, not the ranking.** The headline figure is the *unguarded* access
+   surface; the shipped `access_gap` scores 0.779 and the composite only 0.641 — by design, since 60
+   percent of the weight is commercial fit. Even 0.641 is flattered: `operational` is 0.10 of the weight
+   and DPA is 0.3 of it (`DPA_OPERATIONAL_SHARE`, site_score.py:214), so 3 percent of the composite is
+   the answer key. `access_gap` itself has never seen DPA.
+3. **The interval is too narrow.** The bootstrap resamples suburbs as though independent, but DPA
+   arrives by areal overlay of catchment-scale polygons: 35 of the 46 catchments carry a single label
+   across a median of 15 suburbs, so the effective sample is nearer 46 than 680.
 
----
+### Spatial autocorrelation: the suburbs are not independent observations
 
-## 4. Technique: why E2SFCA
+Global Moran's I over the 443 eligible suburbs, k-nearest-neighbour weights, 999 permutations:
+`site_score` 0.359 (z 16.1, p 0.001), `access_gap` 0.623 (z 27.2, p 0.001), `mixed_billing_fit` 0.387,
+`demand_scale` 0.070 (p 0.003). I on `site_score` falls with the neighbour count — 0.397 (k=4), 0.359
+(k=8), 0.296 (k=16), 0.232 (k=32) — and p holds at 0.001, the floor 999 permutations can return rather
+than a measured one-in-a-thousand. The clustering is not a defect; access to care really is spatially
+structured. It changes inference: 443 eligible suburbs are not 443 independent observations, so every
+interval computed suburb-by-suburb, the AUC above included, is a lower bound on the true uncertainty.
 
-Four options were considered for turning "practices near a suburb" into a supply measure.
+### Local clusters: the top of the list is one place
 
-| Technique | Verdict |
-|---|---|
-| Euclidean buffer count (practices within N km) | **Screen only.** Enough to disprove Croydon; too crude to rank on - it double-counts across neighbours and has no demand denominator |
-| Road-network isochrones | **Wanted, NOT SHIPPED.** See the disclosure box below |
-| **E2SFCA** (Enhanced Two-Step Floating Catchment Area) | **Chosen** for its two-step structure and demand denominator. See below |
-| Huff / gravity market-share model | **Deferred.** The right tool for revenue forecasting, but needs calibration data we do not have |
+LISA with a conditional permutation null and Benjamini-Hochberg control at FDR 0.05 finds 58 of 443
+suburbs significant against 124 uncorrected, so the correction is doing real work. By quadrant: 47 LL,
+9 HH, 2 LH, **zero HL**. All nine significant high-high suburbs are Northern Beaches: Avalon Beach
+(rank 4), Newport (8), Collaroy (9), Narrabeen (61), Bilgola Plateau (73), Wheeler Heights (79), Palm
+Beach (84), Collaroy Plateau (191), Bayview (197).
 
-> ### DISCLOSURE: the shipped travel cost is straight-line, not road network
->
-> The accessibility surface in `accessibility.py` uses **straight-line distance converted to
-> indicative drive time at an assumed 35 km/h**. The road-network isochrone work was time-boxed
-> and abandoned. This is the single largest methodological weakness in the rebuild, and it is
-> stated here because two of the three objections raised against Euclidean buffers above
-> **also apply to what actually shipped**: it ignores barriers, and it treats a 10-GP centre
-> the same as a solo GP (see D5 and §8).
->
-> What E2SFCA does add over a buffer count is real - a two-step supply-to-demand ratio and a
-> distance-decayed demand denominator - but it does not fix the geometry.
->
-> **Why this matters in Sydney specifically:** the harbour, the Parramatta and Georges Rivers,
-> national parks and motorways with few crossings mean two suburbs 2 km apart can be 20 minutes
-> apart. Straight-line distance is the **optimistic** bound, so coastal and peninsula suburbs
-> are flattered.
->
-> **The result is sensitive to the assumed speed.** Croydon's "well served" percentile moves
-> 57.8 / 71.9 / 85.6 / 98.1 across 24 / 30 / 35 / 40 km/h. The qualitative conclusion (above
-> median, therefore not an opportunity) survives the whole range, but at the low end it is
-> "barely above median", not "comfortably served".
->
-> Fixing this is the highest-value next step.
+No significant HL suburb means no candidate is a *local* anomaly — every high scorer sits among other
+high scorers, so the opportunity is shared with an adjacent suburb rather than specific to the site.
+Seven of the top 10 are not individually significant, Cronulla among them (local I 0.479, p 0.632). The
+two connected clusters are unstable: Avalon Beach and Collaroy share a cluster at k=16 and k=24 but not
+at k=6, 8 or 12, so membership is advisory and the shortlist groups on GP catchment instead.
 
-**E2SFCA** (Luo & Wang 2003; Luo & Qi 2009) is the standard method in health geography for
-spatial access to primary care:
+### Rank uncertainty, and two results that came out negative
 
-- *Step 1:* for each practice, a supply-to-demand ratio = supply divided by the population within
-  its travel catchment, distance-decayed.
-- *Step 2:* for each suburb, sum the ratios of every practice reachable from it, distance-decayed.
+1,000 resamples of the 33 GP catchments covering the 443 eligible suburbs.
 
-It fixes 2.2 **structurally** rather than by patching: access becomes a continuous surface, so
-Croydon correctly inherits Burwood's supply. Two further properties matter here:
+| rank | suburb | median | 95% interval | P(top 10) |
+|---|---|---|---|---|
+| 1 | Cronulla | 1 | [1, 1] | 1.00 |
+| 2 | Caringbah South | 3 | [2, 5] | 1.00 |
+| 6 | Oran Park | 5 | [2, 11] | 0.96 |
+| 10 | Heathcote | 9 | [3, 17] | 0.63 |
 
-1. The decay weights let D2's cohort difference be expressed directly - a tighter curve for 65+.
-2. **Accessibility is legitimately defined for the 239 `no_data` suburbs**, because it depends on
-   *nearby* practices rather than on whether that suburb was scraped. This is how the held-out
-   suburbs re-enter the analysis instead of being permanently excluded.
+**Blocking barely matters.** Mean 95 percent interval width across the top 10 is 7.8 ranks blocked
+against 7.3 naive, 7 percent. The Moran's I above predicted a much larger gap; it does not appear
+because a rank depends on how many suburbs outscore you, and that count hardly notices whether
+correlated neighbours arrive together. Blocking matters for a mean and very little for a rank. Recorded
+rather than dropped, because the design was argued for in advance and the data then barely supported it.
 
-A plain `practices_within_2km` column is carried on every output alongside it as a
-human-readable sanity check, so no reader can repeat the Croydon mistake.
-
----
-
-## 5. Sensitivity analysis is the deliverable
-
-With no client input on weights, thresholds or travel time, a single ranking is not defensible.
-What *is* defensible is a ranking plus a demonstration that it survives the choices we had to
-make. Three perturbations:
-
-1. Each weight varied +/- 50% and to zero.
-2. Income band knots moved +/- $250.
-3. Travel cutoff at 15 / 20 / 25 minutes.
-
-**The recommendation is the robust core - the suburbs that stay top-10 under every perturbation.**
-Anything that appears only under one parameterisation is reported as fragile, not recommended.
+**The leader's [1, 1] is tautological.** Resampling changes which suburbs compete, never their scores,
+so the top scorer is rank 1 in every draw by construction. That is not evidence of robustness and must
+not be quoted as such; Cronulla's case rests on the 31 assumption perturbations, not on this. The
+informative rows are lower down — Heathcote at rank 10 spans [3, 17] and is top-10 in only 63 percent of
+draws. Neither bootstrap carries measurement error: population, income and the practice register are
+treated as exact, so none of their uncertainty reaches a rank.
 
 ---
 
-## 6. Data sources
+## Limitations
 
-| Purpose | Source | Status |
-|---|---|---|
-| Practice inventory + coordinates | GA "National HealthDirect Health Facilities" layer 0, eCat `696d12c2-38c6-4afa-96b6-309a1ac9a50b`, extract 2025-03-07, CC-BY 4.0 | **Authoritative.** Filter `nhsd_service_type='General practice service'`: 2,089 of 2,482 NSW rows |
-| Pharmacy co-location | Same service, layer 2 - 1,832 NSW | Adopted |
-| Empirical catchments | GP Catchments (GPC) 2023, ABS ASGS 2021 aggregations built from **MBS patient-flow data** | Boundaries only, CC-BY 2.5 AU |
-| DPA (hiring cost) | `dpa_gps_2025a.zip`, 1,328 polygons, March 2025 | Narrow discriminator in Sydney |
-| GP headcount | Dept of Health HeaDS UPP / NHWDS | SA3 scale - context only (D5) |
-| Pathology centres | none exists | Dropped |
-| PHIDU atlases | PHIDU | **CC BY-NC-SA - non-commercial. Unusable for a client engagement** |
+Five limitations are large enough to change a site decision. Each is stated below with its measured size and the direction it pushes the answer.
 
-**NSW government publishes no GP location data.** Its health facilities service carries only
-Ambulance (316) and Hospital (306) layers; Data.NSW has no primary-care equivalent. Everything
-usable is Commonwealth.
+| # | Limitation | Measured size | Direction of error |
+|---|---|---|---|
+| 1 | Travel is straight-line, not road network | Croydon's access percentile swings 57.8 to 98.1 across plausible speeds | Optimistic; flatters coast, peninsula and anywhere across water |
+| 2 | The `area` column is corrupted | 12 of 548 matched suburbs wrong by more than 2x | Maps only; no longer touches the score |
+| 3 | Supply is March 2025, demand is the 2021 Census | ABS 2025 ERP implies 7.9% more people inside the study area | Understates demand, worst in greenfield suburbs |
+| 4 | The headcount guard is blind on 123 eligible suburbs | 123 of 443, including Caringbah South at rank 2 | Ranks can be too high, never too low |
+| 5 | The Nuvo exclusion list is unconfirmed | 145 suburbs in 10 catchments removed on it | Unknown; a wrong list is a large error either way |
 
-### Two important caveats on the register
+### 1. Travel cost is straight-line at 35 km/h
 
-- **It is not complete.** Nationally 6,254 practices against roughly 7,000-7,135 accredited, so
-  it misses an estimated **10-12%**. Listing on the NHSD is voluntary and self-registered. It is
-  demonstrably missing Croydon Medical Centre, about 20 years in operation.
-- **Neither source is ground truth.** Correlation with the project's own scraped counts is only
-  Pearson 0.82-0.84. The register is far better on *provenance* - auditable, licensed, dated - and
-  that is the reason to adopt it, not completeness.
+This is the largest methodological weakness. `access_gap` carries 40% of the weight and rests entirely on great-circle distance converted to drive minutes by one constant.
 
-Note the link commonly circulated (`1d95ca95-...`) is the **WMS service** record carrying
-March-2024 lineage, not the current data record. It also implies WMS-only access; in fact there is
-a queryable ArcGIS REST endpoint that pages GeoJSON directly.
+The constant is measured, not assumed. A real Sydney drive graph gives a median effective straight-line speed of 47.6 km/h over 151,558 origin-destination pairs; that is divided by a stated congestion and access-delay factor of 1.36 to give 35.0 km/h (`accessibility.py:232-247`). The conventional 24 km/h was tested and rejected. Road-network routing is implemented and runnable in `accessibility.py`; it was abandoned on a timed extrapolation of roughly 46.5 minutes of Overpass download for the 2.24 sq deg study bbox against a 25 minute budget — a measured rejection, not an assumption.
+
+No single constant models barriers. Repeating the calibration on a graph spanning Sydney Harbour costs about 17% of median effective speed and raises median circuity from 1.259 to 1.457. The clearest single defect is Dangar Island, ferry-only, credited with a nearest practice 1.544 km away.
+
+Measured across the five speeds in the sweep (`python accessibility.py --sensitivity`):
+
+| km/h | 20-min reach | Croydon pct | Heathcote pct | top 20 kept |
+|---|---|---|---|---|
+| 24.0 | 8.00 km | 57.8 | 12.8 | 16/20 |
+| 30.0 | 10.00 km | 71.9 | 7.3 | 17/20 |
+| **35.0** | **11.67 km** | **85.6** | **5.2** | **20/20** |
+| 40.0 | 13.33 km | 98.1 | 7.2 | 17/20 |
+| 47.6 | 15.87 km | 95.7 | 5.0 | 17/20 |
+
+The qualitative conclusions survive the whole range — Croydon stays above median, Heathcote stays at the bottom. The point percentiles do not, and neither does a quarter of the top 20 at the extremes.
+
+### 2. The `area` column in `scraped_data/eda_data.csv` is corrupted
+
+Checked against the cached ABS SAL 2021 shapefile: 12 of the 548 matched suburbs are wrong by more than 2x. Sydney is recorded at 26.4694 km² against 2.94 actual. Six pairs of unrelated suburbs share a byte-identical value — Dolls Point/The Rocks, Berowra/Berowra Heights, Denistone/Denistone East, Bass Hill/Westmead, Northwood/Woolloomooloo, Tennyson/Tennyson Point — which is a copy-paste signature, and Prospect/Pemulwuy are swapped.
+
+The column feeds nothing in the score. It still drives the combined map's senior-density axis and its sparse-suburb exclusion (`eda/plot_combined_pressure_density.py:671-707`), so map classes for the affected suburbs are wrong today. The fix is one step: recompute areas from `facility_cache/abs_sal_2021`, which is already cached and is already the geometry frame for accessibility, DPA and catchments.
+
+### 3. Supply is March 2025; demand is the 2021 Census
+
+The practice register is the NHSD extract dated 2025-03-07. Population, over-65 share and median household income are ABS 2021 Census. The two sides of every ratio are four years apart.
+
+Measured, not estimated: the ABS 2025 SA2 ERP implies 5,121,215 people inside the study footprint against 4,746,859 in `eda_data.csv`, a 7.9% difference. Growth is not uniform, so the error is not uniform either. Greenfield suburbs in the top 20 — Oran Park (rank 6, 17,624 residents in 2021), Spring Farm (rank 14, 9,868), North Kellyville (rank 18, 17,401) — have grown fastest, so their demand is the most understated and their true rank is probably higher than shown. Practices that opened or closed after March 2025 are missing from the other side of the ratio.
+
+### 4. The headcount guard cannot check 123 of the 443 eligible suburbs
+
+The E2SFCA supply term counts one unit per practice (`S_j = 1`), because the register carries no practitioner-count field. A suburb served by few-but-large practices therefore reads as scarce. The only mitigation is the D5 guard, which lets a trustworthy scraped headcount demote a high `access_gap` — downward only, at half strength, full demotion at 640 people per GP and none at 1,040 (`site_score.py:188-195`). It fires on 159 of the 443 eligible suburbs.
+
+It cannot fire at all on the 123 eligible suburbs whose `gp_data_status` is not `ok` (116 `no_data`, 7 `gp_count_unknown`), nor on Bayview and Beacon Hill, the two confirmed zeros — 125 unguardable suburbs in total. **Caringbah South ranks 2 and is one of them.** Its rank carries strictly less evidence than any `ok` suburb's and must not be presented as equivalent.
+
+A weaker version of the same problem affects suburbs the guard does reach: 57 eligible `ok` suburbs carry `total_gp_is_floor`, meaning the headcount is a lower bound. A floor understates doctors, so `people_per_gp` is too high, adequacy too low, and the suburb is under-demoted. Five sit in the current top 30 — Cranebrook (5), Newport (8), Miranda (15), Dee Why (17), Botany (23). Read `gp_data_status` and `total_gp_is_floor` beside any rank.
+
+The guard is load-bearing: turning it off replaces 4 of the baseline top 10 (Dee Why, Engadine, Freshwater and Mona Vale enter).
+
+### 5. The Nuvo exclusion list is the operator's public web page, not a client-confirmed footprint
+
+`NUVO_SITES` is taken from nuvohealth.com.au/medical-centres/, retrieved 2026-09-23: 18 GP centres, of which 15 map to ABS suburbs and 3 are precinct names (Green Square, Harold Park, Birkenhead) whose catchments the listed 15 already cover. Exclusion is at GP-catchment level, so this removes 145 suburbs across 10 catchments from contention.
+
+Nothing in the repository can confirm it. Neither the clinic scrape nor the Geoscience Australia register records a brand owner — the superseded brand-string match found only 6 of the 18 centres. A public listing can also lag an opening or a closure. `site_score.py` stamps every output row with a confirm-with-client note for this reason. No site should be picked before the client confirms the list.
+
+## What this model is not
+
+**It is not a ranking of clinical need.** It ranks commercial suitability for a mixed-billing clinic, and the two point in different directions. A mixed-billing practice charges a gap fee, so the model rewards suburbs where households can absorb one. LISA on `site_score` makes the consequence explicit: the only significant cluster of low-scoring suburbs is in Western Sydney — Merrylands, Guildford, Fairfield, Bankstown, Mount Druitt, Liverpool — and it decomposes against the significant high-scoring Northern Beaches cluster like this:
+
+| Criterion | High cluster (9 suburbs) | Low cluster (47 suburbs) | Share of the score gap |
+|---|---|---|---|
+| `access_gap` (weight 0.40) | 0.845 | 0.179 | 64% |
+| `mixed_billing_fit` (weight 0.25) | 0.805 | 0.102 | 42% |
+
+Median household income is $2,481 a week in the high cluster and $1,355 in the low one. The low cluster sits below the model's lower income knot, so those suburbs score near zero on billing fit however thin their GP supply is. Greystanes is the pattern in one row: $1,930 a week, `mixed_billing_fit` 0.670, and rank 169 on the commercial lens against 123 on the need lens. Stated plainly: the model is **not** claiming Western Sydney has enough GPs. It is claiming Western Sydney is a poor market for a clinic that charges a gap fee. Only the second claim is supported here. `community_need_score` applies the inverted lens and is reported for every suburb; the two lenses share only 7 of their top 20, so one must be named as primary before any decision.
+
+**It is not a claim that anywhere has no GP.** Every ranked row means "too few practices for the population that must share them". Cronulla at rank 1 has 6 practices within 2 km, the nearest 104 m away. Even Heathcote at rank 10, the worst-served eligible suburb, has 9 practices within 3 km, the nearest 2.455 km.
+
+**It does not model practice capacity.** Appointment availability is not in the data, and every practice is treated as an equivalent competitor. The score therefore under-rates dense areas where a seven-day mixed-billing clinic would be genuinely differentiated. The register is also not a census: nationally it lists 6,254 practices against roughly 7,000-7,135 accredited, missing an estimated 10-12%, and listing is voluntary.
+
+**It is not validated end to end.** Validation covers one criterion, not the composite. `access_gap` (unguarded) discriminates the Department of Health DPA under-supply flag at AUC 0.813 [0.743, 0.879]; the guarded version is 0.779 [0.707, 0.846]. `site_score` itself reaches only 0.641 [0.576, 0.706], and the DPA label is thin — `DPA = Y` covers 79 of 680 suburbs and 2.79% of the population. `mixed_billing_fit`, a quarter of the weight, is checked against nothing: no local billing-behaviour data has been ingested. Medicare quarterly bulk-billing rates at SA3 remain the obvious missing check.
+
+**It is not a shortlist with margin.** Under 31 perturbations across 9 families, exactly one suburb — Cronulla — stays in the top 10 under all of them. Caringbah South, Avalon Beach and Oran Park survive every run except those that zero a criterion's weight. And Caringbah South shares Cronulla's own GP catchment, so it is one opportunity with Cronulla, not a second one.
 
 ---
 
-## 7. What still needs the client
+## Data sources
 
-Ordered by how much it would change the answer:
+Everything the ranking uses is dated, licensed and re-fetchable. One LLM-sourced file survives, and it cannot reach a rank.
 
-1. **The authoritative list of current Nuvo sites** (D4). Cheapest, highest value. Without it we
-   may recommend a suburb they already operate in.
-2. **Actual gap fee charged** (D1). Sets the lower knot with evidence instead of inference.
-3. **Whether they want to compete with premium private practices** (D1 upper knot).
-4. **How far they believe patients will travel for this product** (D2).
-5. **Any weighting preference among access / demand / billing fit / operations** (D6).
+| Dataset | Provenance | Licence | Lands in |
+|---|---|---|---|
+| 2,089 NSW general practices | GA "National HealthDirect Health Facilities" layer 0, eCat `696d12c2-38c6-4afa-96b6-309a1ac9a50b`, NHSD extract 2025-03-07. 2,482 NSW rows filtered to `nhsd_service_type = 'General practice service'` | CC-BY 4.0 | `scraped_data/ga_general_practices_nsw.csv` |
+| 1,832 NSW pharmacies | Same service, layer 2 | CC-BY 4.0 | `scraped_data/ga_pharmacies_nsw.csv` |
+| 826 GP catchments | GPC 2023, Dept of Health, data.gov.au `cc26a27b-…`; ASGS 2021 aggregations built from MBS patient-flow data. Boundary-only, no population | CC-BY 2.5 AU | `facility_cache/gpc_2023/` → `suburb_gp_catchment.csv` |
+| 1,328 DPA polygons | DPA (GPs) 2025a, Dept of Health, data.gov.au `7d889af7-…`, current as at March 2025 | CC-BY 2.5 AU | `facility_cache/dpa_gps_2025a/` → `suburb_dpa_status.csv` |
+| ABS geography | SAL 2021 GDA2020 (104 MB) is the single suburb frame for accessibility, DPA and catchments; SA2 2021 plus SA2 ERP from the ABS Data API (2,454 SA2s) and the SA2→GPC correspondence build the demand ring and catchment populations | not recorded in repo | `facility_cache/` |
+| Population, over-65 %, median incomes | ABS 2021 General Community Profile FeatureServer layer 5, queried per SAL by `pre-processing.ipynb` | not recorded in repo | `scraped_data/eda_data.csv` |
+| `area` column | OSM Nominatim boundary polygons, same notebook. **Corrupted** — Sydney 26.47 km² against 2.94 actual. Feeds no live score, still feeds the combined map | ODbL, not stated in repo | same file |
+| 1,306 scraped clinic rows | 70 prompts in `prompts/` pasted into an LLM, returned as the 70 CSVs in `gp_data/`. No source URLs retained, so not auditable and not reproducible | none | `scraped_data/gp_clinics_all.csv` |
+| 716 OSM `place=suburb` polygons | Overpass via osmnx; misses 30 of the 680 project suburbs | ODbL, not stated in repo | `eda/geo_cache/` (gitignored) |
 
-Until 1 is answered, every output carries the unverified-exclusion flag.
+The scrape is not a ranking input. It becomes `total_gp`, which reaches the score only through the D5 headcount demotion guard, and only where `gp_data_status == 'ok'`.
 
----
+## Running it
 
-## 8. Known limitations carried forward
+`facility_cache/` (423 MB) and `eda/geo_cache/` are gitignored; every CSV in `scraped_data/` is committed. Full regeneration, from the project root, in this order:
 
-See CAVEATS.md for the full list. The ones that bear on this methodology specifically:
+```bash
+python rebuild_suburbs_final.py   # suburbs_final.csv + eda_data.csv (re-runs cell 8 of the notebook)
+python health_facilities.py       # ga_general_practices_nsw.csv, ga_pharmacies_nsw.csv
+python gp_catchments.py           # suburb_gp_catchment.csv; downloads GPC (45 MB), SAL (104 MB), SA2 ERP
+python dpa_status.py              # suburb_dpa_status.csv
+python accessibility.py           # suburb_accessibility.csv — 680 rows, the E2SFCA surface
+python eda/plot_combined_pressure_density.py  # combined_pressure_density.{png,html}; builds the gpkg
+python build_suburb_facility_counts.py        # suburb_practice_counts.csv
+python site_score.py              # site_scores_v2.csv (443 of 680 eligible), sensitivity_analysis.csv, final_shortlist_v2.csv
+python validation.py              # validation.csv, lisa_site_score.csv, rank_bootstrap.csv
+python eda/plot_rank_stability.py             # readme_rank_stability.png
+python eda/plot_mixed_billing_choropleth.py   # mixed_billing_income_vs_supply.{png,html}
+```
 
-- The register misses an estimated 10-12% of practices.
-- Practice **capacity** is not modelled. A count of practices says nothing about appointment
-  availability, which is arguably Sydney's real constraint. Two suburbs with equal practice counts
-  can have very different wait times.
-- **Competition is not modelled as differentiable.** A suburb with many GPs may still support a
-  7-day multidisciplinary mixed-billing clinic if the incumbents are short-consult bulk-billing
-  practices closing at 6pm. The current score treats all practices as equivalent competitors,
-  which is conservative - it will under-rate dense areas where the product is genuinely
-  differentiated.
-- **Absence of supply can indicate absence of demand.** Heathcote may have no GP within 5 km
-  because 6,000 people in bushland cannot support one. Every genuine gap needs a "why is nobody
-  already here?" answer before it ships.
-- Practice **size** is not weighted; a 10-GP centre counts as one practice, because the register
-  has no headcount (D5).
+Four ordering constraints, all enforced by the code rather than by convention:
 
----
+- `gp_catchments.py` is the only script that downloads the ABS SAL zip and writes `facility_cache/abs_sa2_erp.csv`. `dpa_status.py` and `accessibility.py` read them and exit with a `curl` line if they are missing, so it goes first.
+- `accessibility.py` also needs the ABS SA2 2021 boundary zip, which nothing fetches for you. `--no-network` skips the road-network attempt; the shipped surface is straight-line either way.
+- The polygon cache is circular: `build_suburb_facility_counts.py` reads `eda/geo_cache/osm_suburb_polygons_greater_sydney.gpkg`, and only the two map scripts create it. On a fresh clone a map script runs *before* it, not after.
+- `site_score.py` calls `accessibility.load_suburbs()` and `load_outside_demand()`, so the SAL and SA2 caches are required even with every CSV committed. There is no cache-free short path.
 
-## 9. Results
+With `scraped_data/` committed, re-scoring is `python site_score.py && python validation.py` plus the plot scripts. `requirements.txt` is wrong in both directions: add `pandas`, `numpy` and `branca`, used throughout but currently only transitive; drop `exa-py`, `python-dotenv` and `google-genai`, which no live `.py` imports now that the scrape chain is gone.
 
-Two independent adversarial verifiers re-derived everything below. Where they disagreed with the
-implementation, **their** numbers are reported.
+`eda/excluded_no_gp_data.csv` lost its generator when the v1 chain was deleted. The row set rebuilds in one line:
 
-### 9.1 The Croydon fix worked
+```python
+pd.read_csv("scraped_data/suburbs_final.csv").query("gp_data_status != 'ok'")   # 247 rows
+```
 
-Both verifiers confirm, with high confidence, that Croydon now scores as **well served** and
-drops out of the recommendation. The structural error in §2.2 is corrected: access is a surface,
-so Croydon inherits Burwood's and Ashfield's supply. Heathcote correctly scores as poorly served.
-
-That was the point of the rebuild, and it holds.
-
-### 9.2 The robust core is ONE suburb, not a shortlist
-
-| | Result |
-|---|---|
-| Implementation claimed | Cronulla + Dee Why, both stable across all 27 perturbations |
-| Independent 28-run sweep | **Cronulla only** |
-
-Dee Why failed 2 perturbations (income knots +$250; demand_scale weight to zero). **Treat
-Cronulla as the only survivor** and everything below it as a candidate requiring its own
-verification.
-
-Cronulla: population 17,899, 6 practices within 2 km, nearest 104 m, 8 GPs recorded =
-1,989 people per GP - thin on both the accessibility measure and the project's own supply data.
-
-One fragility worth knowing: Cronulla's `mixed_billing_fit` of exactly 1.000 depends on its
-$2,058 income clearing the $2,050 plateau knot by **$8**. It holds rank 1 when the knot is moved,
-but that is a coincidence, not a margin.
-
-### 9.3 A blocking defect: rank 2 contradicts the project's own data
-
-Dee Why was ranked #2 as an opportunity while carrying **35 GPs (a floor, so at least 35)**
-against 23,354 residents = **649 people per GP**, better supplied than roughly 73% of eligible
-suburbs. Both figures sit in `final_shortlist_v2.csv` side by side, unremarked.
-
-**Cause, and it is a consequence of D5.** E2SFCA was run with `S_j = 1` per practice, because the
-register has no headcount. So a suburb served by **few but large** practices scores as
-under-served. Practice size varies enormously - GPs per clinic mean 4.41, median 3, and suburb
-level p10 1.0 against p90 8.5, an 8.5x spread - and `S_j = 1` was never varied in the sensitivity
-sweep, making it the assumption the shortlist is most exposed to.
-
-Illustration:
-
-| Suburb | Pop | Practices within 2 km | GPs recorded | People per GP | Verdict |
-|---|---|---|---|---|---|
-| Cronulla | 17,899 | 6 | 8 | 1,989 | Genuinely thin - survives |
-| **Dee Why** | 23,354 | 6 | **35** (floor) | **649** | **Well supplied - should not rank** |
-| Oran Park | 17,624 | 1 | 19 | 881 | Ambiguous - isolated but large practice |
-| Croydon | 10,755 | 27 | 1 | 5,378 | Saturated - correctly demoted |
-
-**Required guard, not yet implemented:** demote or flag any suburb whose recorded people-per-GP is
-better than the cohort median, even though headcount is not a ranking input. That keeps D5 intact
-while stopping this failure mode.
-
-### 9.4 A data bug nobody had caught: the `area` column is corrupted
-
-Found while verifying the maps. Measured against ABS SAL 2021 geometry:
-
-- **12 of 548 matched suburbs are wrong by more than 2x**, 21 by more than 1.5x, 61 by more
-  than 1.2x.
-- Worst: **Sydney 26.47 km2 recorded against 2.94 actual (9.0x)**; Berowra Waters 14.61 vs 1.68
-  (8.7x); Waterfall 2.36 vs 17.58 (7.5x too small); Pemulwuy 3.71 vs 14.98.
-- **Six pairs of suburbs share a byte-identical area value** - a copy-paste signature:
-  Dolls Point / The Rocks (0.2066), Woolloomooloo / Northwood (0.3769), Tennyson /
-  Tennyson Point (0.4488), Denistone / Denistone East (0.6976), Bass Hill / Westmead (2.9709),
-  Berowra / Berowra Heights (7.9626).
-
-`spatial_density = population / area`, so every density figure inherits this - including the
-priority map's senior-density axis, its "sparse suburb" exclusion, and
-`eda/opportunity_high_density_low_gp.csv`. **ABS SAL 2021 is now cached locally and should replace
-this column outright.**
-
-### 9.5 Other findings that must be closed before this ships
-
-- **Two incompatible suburb geometry frames coexist, undisclosed.** `practices_inside` is built on
-  the OSM `place=suburb` cache (650 polygons + a 30-suburb name join); accessibility, DPA and
-  catchment assignment are all built on ABS SAL 2021 (all 680). They disagree on 16 suburbs.
-  Pick one frame - SAL, since it is authoritative and complete.
-- **Both maps are stale relative to the score.** Neither references the new shortlist, the Nuvo
-  exclusion or the viability gates. Of the 29 suburbs in the priority map's darkest "highest
-  priority" cell, only **3** are in the score's top 10 and **11 are ineligible**. Rank 9
-  (Mona Vale) is not drawn at all, being one of the 30 suburbs with no OSM polygon.
-- **D2's senior half never reached the answer.** `access_senior` at the 15-minute cutoff is
-  computed and written, then never read by the scoring function. The ranking uses `access_general`
-  only; senior demand enters as a non-spatial population multiplier. §4's claim that the decay
-  weights express the cohort difference is therefore **not true of what shipped**.
-- **13 suburbs' supply rests on a CRS-dependent reference point.** `representative_point()` is not
-  population-weighted and moves up to 7.08 km between projections (Berowra Waters).
-- **`final_shortlist_v2.csv` does not state the travel-cost method**, so a reader of the actual
-  deliverable cannot see that 40% of the weight rests on straight-line distance.
-- Register data quality: the blank G-NAF pid figures were **double-counted** (true values 230
-  practices / 245 pharmacies, i.e. 11.0% / 13.4%). 27 non-GP services survive the
-  `General practice service` filter statewide, 9 inside the study area, mostly Headspace youth
-  mental health - so 2,089 slightly overstates comparable GP supply.
-
-### 9.6 Honest summary
-
-The rebuild fixed the error it set out to fix, and the *method* is now defensible in outline. The
-*answer* is not yet: one suburb survives perturbation, rank 2 is contradicted by data already in
-the repo, the travel surface is straight-line, the area column is corrupted, and the maps no
-longer match the ranking.
-
-**Do not put this shortlist in front of the client.** The credible outputs today are the
-diagnosis (§2), the method (§3-5), and Cronulla as a single verified candidate.
+Its context columns are a left join of `suburb_accessibility.csv` (`practices_within_2km`, `nearest_practice_km`, `access_general`, `access_general_pct`) and `suburb_gp_catchment.csv` (`gpc_name`), plus `saturated_nearby = practices_within_2km >= 10` and `access_above_median = access_general_pct > 50`, sorted by population descending. That reproduces the shipped file value-for-value.

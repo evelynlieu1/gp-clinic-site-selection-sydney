@@ -32,8 +32,8 @@ a RANKING input, and no FTE source exists below SA3 (roughly 14 suburbs per unit
 unit per practice misreads few-but-large practices as scarcity, so ``total_gp`` may
 CONTRADICT a high ``access_gap`` via :func:`headcount_adequacy`: downward only, only
 where ``gp_data_status == "ok"``, and a sensitivity family so it can be read off.
-MEASURED: it demotes 197 of 507 eligible suburbs; Dee Why rank 2 (35 recorded GPs,
-23,354 residents) -> 19, Mona Vale 9 -> 44, Freshwater 10 -> 14. BLIND SPOT: 134
+MEASURED: it demotes 159 of 443 eligible suburbs; Dee Why rank 2 (35 recorded GPs,
+23,354 residents) -> 17, Mona Vale 9 -> 42, Freshwater 10 -> 12. BLIND SPOT: 123
 eligible suburbs have no trustworthy headcount and cannot be guarded at all - one,
 Caringbah South, ranks 2 - so a ``no_data`` suburb's rank carries strictly less
 evidence than an ``ok`` one and must not be presented as though it carries the same.

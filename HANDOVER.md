@@ -44,7 +44,9 @@ by few but large practices reads as under-supplied.
 - Added as a sensitivity family including OFF
 - `_test_headcount_guard` asserts it never promotes, never fires on untrusted data, and
   actually bites
-- **Effect: Dee Why 2 → 19, Mona Vale 9 → 44, Freshwater 10 → 14**
+- **Effect: Dee Why 2 → 17, Mona Vale 9 → 42, Freshwater 10 → 12**
+  (these were 19/44/12 before the Nuvo exclusion fix shrank the cohort 507 → 443;
+  ranks are relative, so correcting the cohort moved them)
 
 **The thing to challenge here:** the guard uses `total_gp`, which came from the LLM scrape
 this entire project discredited. I argued that "contradicting a high score" is a weaker

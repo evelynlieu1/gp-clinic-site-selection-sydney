@@ -74,7 +74,7 @@ GPs against 23,354 residents — better supplied than 73% of the cohort.
 **Fix.** A headcount *demotion guard*: recorded headcount may contradict a high gap
 score, but never produce one. It only moves suburbs down, only fires on trustworthy data,
 and is itself one of the sensitivity families so the answer can be read with it off.
-Dee Why moved from rank 2 to 19.
+Dee Why moved from rank 2 to 17, Mona Vale 9 to 42, Freshwater 10 to 12.
 
 ---
 
@@ -204,7 +204,7 @@ All authoritative, dated and re-fetchable. No LLM-scraped figures remain in the 
 
 ## Honest limitations
 
-Full detail in [CAVEATS.md](CAVEATS.md). The ones that would change a decision:
+Full detail in [METHODOLOGY.md](METHODOLOGY.md). The ones that would change a decision:
 
 - **Travel cost is straight-line at 35 km/h, not road network.** This is the largest
   open weakness. Croydon's accessibility percentile swings from 57.8 to 98.1 across
@@ -226,15 +226,14 @@ Full detail in [CAVEATS.md](CAVEATS.md). The ones that would change a decision:
 ## Repository
 
 ```
-site_score.py          scoring, sensitivity sweep, self-tests    (1,843 lines)
+site_score.py          scoring, sensitivity sweep, self-tests    (1,738 lines)
 accessibility.py       E2SFCA surface, travel cost               (1,422)
 gp_supply.py           three-way supply status gate
 gp_catchments.py       Department of Health catchment join
 health_facilities.py   practice and pharmacy register
 dpa_status.py          Distribution Priority Area join
 validation.py          AUC against DPA, Moran's I under a permutation null  (339)
-METHODOLOGY.md         every decision and why                    (406)
-CAVEATS.md             every known weakness                      (367)
+METHODOLOGY.md         method, validation and limitations        (427)
 ```
 
 Outputs land in `eda/`: `site_scores_v2.csv` (all 680, every sub-score),

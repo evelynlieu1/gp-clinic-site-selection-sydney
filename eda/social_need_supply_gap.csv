@@ -1,2 +1,0 @@
-suburb,total_gp,population,People_Per_GP_Ratio,median_household_income_weekly,over_65_pct,spatial_density,area,gp_data_status,clinics_listed,total_gp_is_floor,filter_reason,practices_within_2km,nearest_practice_km,access_general,access_general_pct,gpc_name,saturated_nearby,access_above_median
-Belmore,1.0,13781,6890.5,1456,16.83,4967.0211,2.7745,ok,3,True,income_below_1800,22,0.334,0.29938,77.65,Canterbury,True,True

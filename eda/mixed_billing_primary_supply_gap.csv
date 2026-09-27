@@ -1,5 +1,0 @@
-suburb,total_gp,population,People_Per_GP_Ratio,median_household_income_weekly,over_65_pct,spatial_density,area,gp_data_status,clinics_listed,total_gp_is_floor,practices_within_2km,nearest_practice_km,access_general,access_general_pct,gpc_name,saturated_nearby,access_above_median
-Beacon Hill,0.0,7814,7814.0,2937,15.89,2835.0628,2.7562,ok,0,False,6,1.465,0.185933,20.0,Warringah,False,False
-Greystanes,3.0,23511,5877.75,1930,18.88,2658.4425,8.8439,ok,4,True,5,0.645,0.311307,85.74,Merrylands - Guildford,False,True
-Croydon,1.0,10755,5377.5,2157,20.1,4356.5439,2.4687,ok,1,False,27,0.385,0.311002,85.59,Strathfield - Burwood - Ashfield,True,True
-Beverly Hills,1.0,10483,5241.5,1862,18.69,3403.6819,3.0799,ok,1,False,10,0.25,0.300136,78.38,Hurstville,True,True

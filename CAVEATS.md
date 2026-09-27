@@ -287,35 +287,37 @@ From the **project root**, in this order. Later steps read what earlier ones wri
 
 ```bash
 python rebuild_suburbs_final.py              # merge -> suburbs_final.csv + eda_data.csv
-python eda/generate_insight_plots.py         # scatters, MCDA scores, OPPORTUNITY_SCORING.md
-python eda/export_supply_gap_high_pressure.py   # Step A
-python eda/apply_mixed_billing_filter_step_b.py # Step B
-python eda/rank_intensity_step_c.py             # Step C
-python eda/plot_combined_pressure_density.py    # merged bivariate map (was maps 1 + 3)
-python eda/plot_mixed_billing_choropleth.py     # income x supply map
+python site_score.py                         # v2 scores, sensitivity sweep, shortlist
+python validation.py                         # AUC vs DPA, Moran's I, LISA, rank bootstrap
+python eda/plot_rank_stability.py            # README figure
+python eda/plot_combined_pressure_density.py # merged bivariate map; also builds the
+                                             # gitignored polygon cache that
+                                             # build_suburb_facility_counts.py needs
+python eda/plot_mixed_billing_choropleth.py  # income x supply map
 ```
+
+The v1 chain that used to sit between the first and last commands here
+(`generate_insight_plots.py` and Steps A/B/C) was deleted on 2026-09-23. It produced the
+rankings this document exists to disown - Croydon at #1, a score that rewarded small
+suburbs. Recover it with `git checkout 5fe4d38 -- eda/` if you ever need to reproduce
+what was wrong.
 
 `requirements.txt` omits `pandas`, `numpy` and `branca`, which are used throughout and currently
 resolve only as transitive dependencies. Add them.
 
 Shared logic lives in `gp_supply.py` (status semantics, count parsing) and
-`eda/supply_gap_pool.py` (the Step A/B pool). Change thresholds in one place there, not in the
+`site_score.py` (module-level constants, each with a `#:` comment). Change thresholds there, not in the
 step scripts.
 
 ---
 
 ## 5. Known minor issues, not yet fixed
 
-- `eda/OPPORTUNITY_SCORING.md` is **machine-generated** - `generate_insight_plots.py` overwrites
-  it wholesale every run. It has no "do not edit" banner, and a hand-edit was already lost once.
 - The two folium HTML files change on **every** run (folium emits random element ids), producing
   permanent git diff noise. The paired PNGs are byte-identical.
 - A *negative* `total_gp` on an `ok` row would still be clipped to 0 rather than treated as
   missing. Unreachable today - `parse_gp_count` maps negatives to `None` - but the guard is
   one-sided.
-- `generate_insight_plots.py` reads and rewrites its own input (`eda_data.csv`) in place, and
-  re-implements the `opportunity_score` formula that also lives in `pre-processing.ipynb` cell 8.
-  Harmless while they agree; nothing keeps them in sync.
 - `EXCLUDED_SUBURBS` in `pre-processing.ipynb` is dead code - all 19 entries are no-ops, because
   the source JSONs were pre-filtered to 680 by hand. The real exclusion step is undocumented.
 - `eda/opportunity_high_elderly_pct_low_gp.csv` is named "low_gp" but its z-score composite mixes
@@ -332,7 +334,15 @@ Nothing has been committed. The two retired map scripts are **staged as deletion
 fix is **unstaged**, so a bare `git commit` right now would capture the deletions and none of the
 work. Stage deliberately.
 
-New, untracked: `gp_supply.py`, `eda/supply_gap_pool.py`, `eda/excluded_no_gp_data.csv`.
+New: `gp_supply.py`, `eda/excluded_no_gp_data.csv`.
+
+`eda/excluded_no_gp_data.csv` lost its generator when the v1 chain was deleted, but it is
+not stranded - it is exactly the 247 suburbs whose `gp_data_status` is not `ok`, and
+rebuilds in one line:
+
+```python
+pd.read_csv("scraped_data/suburbs_final.csv").query("gp_data_status != 'ok'")
+```
 
 Retired and replaced by `eda/plot_combined_pressure_density.py`:
 `eda/plot_pressure_choropleth.py`, `eda/plot_senior_density_choropleth.py`, and their four

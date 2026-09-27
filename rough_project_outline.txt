@@ -24,5 +24,5 @@ Nuvo is multidisciplinary so having a pharmacy nearby is convenient for patients
 
 
 What we’ll use: Multi-Criteria Decision Analysis (MCDA)
-- Criteria min-max scaled to 0–1 within cohort: higher-better = (x-min)/(max-min); lower-better = (max-x)/(max-min). See eda/OPPORTUNITY_SCORING.md.
+- v1 scaled every criterion min-max within the cohort: higher-better = (x-min)/(max-min); lower-better = (max-x)/(max-min). SUPERSEDED - v2 gives each criterion its own value function (rank percentile, log ramp, inverted U) because two of the four criteria are not monotone. See the criteria table in README.md.
 

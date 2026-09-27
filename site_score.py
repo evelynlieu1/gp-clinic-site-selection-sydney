@@ -1,20 +1,10 @@
 """
 Site score v2 for the Nuvo Health suburb selection: implements decisions D1 and D6.
 
-WHY THIS REPLACES THE OLD SCORE
--------------------------------
-The v1 score ranked on ``population / (total_gp + 1)`` inside suburb polygons, with
-weights 0.35 supply / 0.25 income / 0.20 seniors / 0.15 population / 0.05 area. It had
-three defects that changed the answer, not just the ordering:
-
-1. Supply counted only practices INSIDE the suburb polygon. Croydon read as
-   "1 practice" while sitting next to Burwood and Ashfield with 27 practices within
-   2 km. See :mod:`accessibility` for the replacement (E2SFCA, competition adjusted).
-2. ``area`` at weight 0.05 rewarded smallness, and population min-maxed across a range
-   dominated by 30,000-plus suburbs barely penalised a 1,300-person enclave. Point Piper
-   (population 1,334) ranked first.
-3. Income was monotonic higher-is-better, which optimises for the households least
-   likely to buy mixed billing. See :func:`mixed_billing_fit` (decision D1).
+Supersedes v1 (``population / (total_gp + 1)`` in-polygon; weights 0.35 supply / 0.25
+income / 0.20 seniors / 0.15 population / 0.05 area), which saw Croydon as 1 practice
+with 27 within 2 km, let the 0.05 area term and a 30,000-plus population range rank
+1,334-person Point Piper first, and read income as monotonic higher-is-better.
 
 CRITERIA (decision D6). Every sub-score is on [0, 1], higher = better site.
 
@@ -27,71 +17,41 @@ mixed_billing_fit      0.25  inverted U on household income (D1)
 operational            0.10  pharmacy co-location plus DPA status
 ===================  ======  ==================================================
 
-The weights are NOT defended by assertion. :func:`run_sensitivity` re-ranks under 31
-perturbations of the weights, the income knots, the travel cutoff, the viability floor,
-the senior multiple, the DPA share, the speed constant and the D5 headcount guard,
-and reports the suburbs that
-stay top 10 under every one of them. That robust core, not the point ranking, is the
-recommendation.
+The recommendation is the robust core, not the point ranking: :func:`run_sensitivity`
+re-ranks under 31 perturbations and reports the suburbs that stay top 10 under every
+one. D3: the primary lens is COMMERCIAL mixed billing; :func:`community_need_income_fit`
+is a secondary column, never ranked on by default.
 
-D3: the primary lens is COMMERCIAL mixed billing. The community-need variant
-(:func:`community_need_income_fit`) is reported as a secondary column and is never
-ranked on by default.
+D4: :data:`NUVO_SITES` is the operator's published list (nuvohealth.com.au, retrieved
+2026-09-23); brand-string matching found 6 of 18 centres, understating the exclusion
+set threefold. CONFIRM WITH THE CLIENT - a listing can lag an opening or closure, and
+exclusion is at GP-CATCHMENT level: a clinic 1 km away in the next suburb cannibalises.
 
-D4 WARNING, REPEATED IN EVERY OUTPUT FILE
------------------------------------------
-:data:`NUVO_SITES` now comes from the operator's own published location list
-(nuvohealth.com.au, retrieved 2026-09-23), not from brand-string matching. The earlier
-method found 6 of 18 centres, because no register records a brand owner, and so
-understated the exclusion set threefold. Still CONFIRM WITH THE CLIENT before acting:
-a public site listing can lag an opening or a closure. Exclusion is applied at
-GP-CATCHMENT level, not suburb level, because a clinic 1 km away in the next suburb
-still cannibalises.
+D5: supply is practices per capita via accessibility; the scraped ``total_gp`` is never
+a RANKING input, and no FTE source exists below SA3 (roughly 14 suburbs per unit). One
+unit per practice misreads few-but-large practices as scarcity, so ``total_gp`` may
+CONTRADICT a high ``access_gap`` via :func:`headcount_adequacy`: downward only, only
+where ``gp_data_status == "ok"``, and a sensitivity family so it can be read off.
+MEASURED: it demotes 197 of 507 eligible suburbs; Dee Why rank 2 (35 recorded GPs,
+23,354 residents) -> 19, Mona Vale 9 -> 44, Freshwater 10 -> 14. BLIND SPOT: 134
+eligible suburbs have no trustworthy headcount and cannot be guarded at all - one,
+Caringbah South, ranks 2 - so a ``no_data`` suburb's rank carries strictly less
+evidence than an ``ok`` one and must not be presented as though it carries the same.
 
-D5: supply is practices per capita via accessibility, never headcount. No GP FTE source
-was obtained by any acquire task (the register has no practitioner-count field, and the
-Department of Health FTE series is SA3 scale, roughly 14 suburbs per unit), so there is
-no FTE column here. The scraped ``total_gp`` is never a RANKING input.
+Two caveats that must travel with the output:
+1. The claim is "too few practices for the population that must share them", never "no
+   GP here": Cronulla at rank 1 has 6 practices within 2 km, nearest 104 m; St Clair at
+   rank 2 has 6 within 2 km, nearest 415 m.
+2. MEASURED: coastal-peninsula catchments hold 13 percent of eligible suburbs but 60
+   percent of the top 10 and 47 percent of the top 30; ``access_gap`` correlates -0.739
+   with log reachable catchment demand against -0.543 with practices within 2 km, so it
+   tracks reachable people more than nearby practices. Commercially that is a captive
+   market, but only as far as the straight-line travel in :mod:`accessibility`, least
+   accurate across water; top-10 peninsula share stays 4-7 across travel-cost variants.
 
-D5 GUARD (added after Dee Why ranked 2 on 35 recorded GPs against 23,354 residents).
-The supply term is one unit per practice, so a suburb served by few but large practices
-reads as under-supplied when it is not. ``total_gp`` is now allowed to CONTRADICT a high
-``access_gap`` - a strictly weaker claim than ranking on it - via
-:func:`headcount_adequacy`. The guard only ever moves a suburb DOWN, fires only where
-``gp_data_status == "ok"``, and is one of the sensitivity families so the answer can be
-read with it off. MEASURED: it demotes 197 of 507 eligible suburbs, and moves Dee Why
-from rank 2 to 19, Mona Vale from 9 to 44, and Freshwater from 10 to 14.
-
-KNOWN BLIND SPOT: 134 eligible suburbs have no trustworthy headcount and so cannot be
-checked by the guard at all. One of them, Caringbah South, ranks 2. Those suburbs are on
-the re-scrape work list in ``eda/excluded_no_gp_data.csv``; until that lands, a high rank
-for a ``no_data`` suburb carries strictly less evidence behind it than a high rank for an
-``ok`` one, and must not be presented as though it carries the same.
-
-TWO INTERPRETIVE CAVEATS THAT MUST TRAVEL WITH THE OUTPUT
----------------------------------------------------------
-1. The top 10 is NOT empty ground. ``access_gap`` is per capita and competition
-   adjusted, so a suburb can rank highly while having practices next door: Cronulla at
-   rank 1 has 6 practices within 2 km and the nearest 104 m away, and St Clair at rank 2
-   has 6 within 2 km and the nearest 415 m away. The claim being made is "too few practices for the population
-   that must share them", never "no GP here". Do not let it be restated as the latter.
-2. The ranking is partly a map of Sydney's peninsulas. MEASURED: coastal-peninsula
-   catchments (Warringah, Pittwater, Cronulla - Miranda - Caringbah,
-   Engadine - Heathcote, Manly) hold 13 percent of eligible suburbs but 60 percent of
-   the top 10 and 47 percent of the top 30. ``access_gap`` correlates -0.739 with log
-   reachable catchment demand against -0.543 with practices within 2 km, so it tracks
-   how few people are reachable more than how few practices are. Read commercially that
-   is a feature, since a peninsula is a captive market whose competitors face inland
-   demand, but it holds only as far as the straight-line travel assumption in
-   :mod:`accessibility`, which is least accurate across water. The peninsula share of
-   the top 10 stays between 4 and 7 across every travel-cost variant tested.
-
-Outputs
--------
-``eda/site_scores_v2.csv``        all 680 suburbs, every sub-score, rank, stability
-``eda/sensitivity_analysis.csv``  one row per suburb per perturbation
-``eda/final_shortlist_v2.csv``    the robust core, ranked, with provenance
-
+Outputs: ``eda/site_scores_v2.csv`` (all 680 suburbs, sub-scores, rank, stability),
+``eda/sensitivity_analysis.csv`` (one row per suburb per perturbation),
+``eda/final_shortlist_v2.csv`` (the robust core, ranked, with provenance).
 Run: ``python site_score.py``  (add ``--test`` for the self-checks only).
 """
 from __future__ import annotations
@@ -148,40 +108,25 @@ TOP_N = 10
 #: Inverted-U knots on median weekly household income, dollars, ascending:
 #: ``(taper_start, plateau_start, plateau_end, taper_end)``.
 #:
-#: Commercial rationale (D1). The standard consult rebate is about $43 against a typical
-#: private fee near $90, so a mixed-billing practice needs households able to absorb a
-#: gap of roughly $45 per visit. Below the lower taper that gap suppresses attendance and
-#: the practice is forced to bulk bill everything. Above the upper taper households buy
-#: full private care, so a mixed-billing offer is competing for the segment least likely
-#: to want it. Monotonic higher-is-better, as used in v1, optimised for exactly that
-#: wrong segment.
-#:
-#: The knots are percentile anchored on the 680 Sydney suburbs. MEASURED positions in
-#: ``eda_data.csv``: $1,550 = P14.1, $2,050 = P37.1, $2,750 = P76.2, $3,500 = P95.0.
-#: The brief described these as P15 / P40 / P80 / P95; three land within 3 points, but
-#: $2,750 is P76 rather than P80. Recorded here rather than silently restated.
+#: Why inverted-U (D1): the rebate is about $43 against a typical private fee near $90,
+#: so mixed billing needs households that can absorb a gap of roughly $45 per visit.
+#: Below the lower taper that gap suppresses attendance; above the upper taper households
+#: buy full private care. v1's monotonic higher-is-better optimised for the wrong segment.
+#: MEASURED over the 680 Sydney suburbs in ``eda_data.csv``: $1,550 = P14.1,
+#: $2,050 = P37.1, $2,750 = P76.2, $3,500 = P95.0 - the brief said P15 / P40 / P80 / P95,
+#: three within 3 points but $2,750 is P76, recorded rather than silently restated.
 INCOME_KNOTS: tuple[float, float, float, float] = (1550.0, 2050.0, 2750.0, 3500.0)
 
-#: The knots ABOVE are a static fallback, used by the doctests and by any caller that
-#: builds a bare :class:`ScoreConfig`. :func:`main` does NOT use them: it derives the
-#: knots from the income distribution actually loaded, at these percentiles.
-#:
-#: WHY THIS MATTERS. The dollar knots were set against the 2021 Census and the income
-#: column is 2021, so they agreed by construction. Swap in a later vintage and they stop
-#: agreeing silently: MEASURED, inflating income 20 percent against FIXED dollar knots
-#: changes the income sub-score for 268 of 341 eligible suburbs, mean absolute delta
-#: 0.3011. Against percentile-derived knots the same inflation changes ZERO suburbs,
-#: because a uniform rescale moves every percentile equally. Deriving the knots makes the
-#: vintage cancel structurally rather than by coincidence.
-#:
-#: Re-anchoring the CURRENT data from the hardcoded dollars to exact percentiles is a
-#: much smaller move than that hazard: 161 of 341 suburbs change, mean absolute delta
-#: 0.0375, because the original values were already close to their targets. This is
+#: The dollar knots above are a static fallback (doctests, a bare :class:`ScoreConfig`);
+#: :func:`main` derives the knots from the income distribution actually loaded, at these
+#: percentiles. The dollars agree with the data only by construction - both are 2021 - so
+#: a later vintage would break them silently. MEASURED: inflating income 20 percent
+#: against FIXED dollar knots changes the income sub-score for 268 of 341 eligible
+#: suburbs, mean absolute delta 0.3011; against percentile-derived knots it changes ZERO.
+#: Re-anchoring the current data costs 161 of 341 suburbs, mean absolute delta 0.0375 -
 #: hygiene that removes a future failure, not a correction of a present error.
-#:
-#: Percentiles are taken over ALL 680 suburbs with a positive recorded income, never over
-#: the eligible cohort, because eligibility depends on the config that holds the knots
-#: and anchoring to it would be circular.
+#: Percentiles run over ALL 680 suburbs with a positive recorded income, never the
+#: eligible cohort, whose eligibility depends on these knots.
 INCOME_KNOT_PERCENTILES: tuple[float, float, float, float] = (15.0, 40.0, 80.0, 95.0)
 
 #: Community-need variant (D3) reuses the two OUTER knots of :data:`INCOME_KNOTS` so the
@@ -192,59 +137,39 @@ INCOME_KNOT_PERCENTILES: tuple[float, float, float, float] = (15.0, 40.0, 80.0, 
 # ---------------------------------------------------------------------------
 
 #: Attendance weight of a 65-plus resident relative to an average resident. Medicare
-#: attendance data puts 65-plus GP attendances at roughly 11 to 12 per year against
-#: roughly 5 to 6 for the whole population, so 2.5 is the middle of that ratio. Varied
-#: in the sensitivity sweep because it is a judgement, not a measurement of this cohort.
+#: attendance data puts 65-plus GP attendances at roughly 11 to 12 per year against 5 to
+#: 6 population-wide, so 2.5 is mid-ratio. Swept: a judgement, not a measurement here.
 SENIOR_ATTENDANCE_MULTIPLE = 2.5
 
-#: Minimum viable LOCAL resident base. A 7-day multidisciplinary clinic carries
-#: weekend and allied-health fixed cost that a small resident base cannot fill, and a
-#: suburb this small rarely has commercially zoned frontage at all. Below this the
-#: suburb is INELIGIBLE: it keeps all its sub-scores in the output for audit, but gets
-#: no rank.
+#: Minimum viable LOCAL resident base. A 7-day multidisciplinary clinic carries weekend
+#: and allied-health fixed cost that a small resident base cannot fill. Below this the
+#: suburb is INELIGIBLE: sub-scores stay in the output for audit, but it gets no rank.
 #:
 #: LOWERED FROM 4,000 TO 1,000. A suburb-level headcount rule sits awkwardly inside a
-#: catchment-based analysis: a small suburb at the centre of a dense catchment is
-#: exactly where a clinic belongs, and at 4,000 the floor was excluding 294 of 680
-#: suburbs on a criterion the rest of the method does not use.
-#:
-#: It is LOWERED rather than REMOVED, and the difference is measured, not asserted. The
-#: original v1 failure this guards against (Point Piper, population 1,334, ranked first)
-#: no longer reproduces: Point Piper now scores 0.186, because the defects that caused
-#: it were the ``area`` weight and the linear population min-max, both already gone in
-#: D6. Removing the floor entirely is safe for the ANSWER - the best suburb it readmits
-#: scores 0.679 against a rank-10 score of 0.780 - but it readmits Coasters Retreat at
-#: 30 residents and Berrilee at 212, which no clinic could staff and which make every
-#: output table read as unserious. 1,000 keeps the methodological consistency and drops
-#: the absurdities. MEASURED: excludes 96 of 680, against 294 at the old value.
-#:
-#: Floor 0.0 is one of the sensitivity runs, so "remove it entirely" is answered by the
-#: sweep rather than by this comment.
+#: catchment-based analysis, and at 4,000 it excluded 294 of 680 suburbs on a criterion
+#: the rest of the method does not use. Lowered rather than removed: the v1 failure it
+#: guarded against (Point Piper, population 1,334, ranked first) now scores 0.186 anyway,
+#: and dropping the floor is safe for the ANSWER - best readmitted suburb 0.679 against a
+#: rank-10 score of 0.780 - but it readmits Coasters Retreat at 30 residents and Berrilee
+#: at 212. MEASURED: 1,000 excludes 96 of 680. Floor 0.0 is one of the sensitivity runs.
 MIN_VIABLE_POPULATION = 1000.0
 
 #: Minimum viable CATCHMENT demand: decay-weighted, senior-weighted population reachable
-#: within the general travel cutoff, including the outside-the-study demand ring. This is
-#: the pool a clinic at this location would actually draw on, computed with the same
-#: weights as E2SFCA step 1, so it cannot disagree with the access measure about who is
-#: reachable.
+#: within the general travel cutoff, outside-the-study demand ring included. Same weights
+#: as E2SFCA step 1, so it cannot disagree with the access measure about who is reachable.
 #:
-#: HONEST FINDING, do not overstate this floor: at :data:`MIN_VIABLE_POPULATION` it binds
-#: on ZERO additional suburbs. The local floor already removes every suburb it would
-#: catch. It only starts excluding suburbs at about 50,000, and the first three it takes
-#: are North Richmond, Berowra Heights and Richmond, which are legitimate candidates. It
-#: is retained as an explicit backstop against an isolated-but-populous suburb, and the
-#: correct reading of it binding on nothing is that Greater Sydney contains no such
-#: suburb, not that the test is unnecessary.
+#: HONEST FINDING: at :data:`MIN_VIABLE_POPULATION` this binds on ZERO extra suburbs, and
+#: only starts excluding at about 50,000, where the first three (North Richmond, Berowra
+#: Heights, Richmond) are legitimate candidates. Kept as an explicit backstop; that it
+#: binds on nothing means Sydney has no isolated-but-populous suburb, not that it is idle.
 MIN_CATCHMENT_DEMAND = 25000.0
 
-#: Log-ramp anchors for :func:`demand_scale_score`, in senior-weighted persons.
-#: The floor is the senior-weighted equivalent of :data:`MIN_VIABLE_POPULATION` at the
-#: study-area 65-plus share. The saturation point (about P91 of the 680) is where a
-#: single site stops being demand constrained and starts being capacity constrained:
-#: beyond it, extra local population accrues to competitors rather than to the first
-#: clinic, so the score should stop rewarding it. Log rather than linear because the
-#: distribution spans 3 to 60,700 and a linear min-max is what let v1 barely penalise a
-#: 1,300-person enclave.
+#: Log-ramp anchors for :func:`demand_scale_score`, in senior-weighted persons. The floor
+#: is :data:`MIN_VIABLE_POPULATION` senior-weighted at the study-area 65-plus share. Past
+#: saturation (about P91 of the 680) a single site is capacity- rather than demand-
+#: constrained: extra local population accrues to competitors, so it should stop scoring.
+#: Log rather than linear because the distribution spans 3 to 60,700, and a linear min-max
+#: is what let v1 barely penalise a 1,300-person enclave.
 DEMAND_FLOOR_WEIGHTED = 5000.0
 DEMAND_SATURATION_WEIGHTED = 20000.0
 
@@ -252,21 +177,16 @@ DEMAND_SATURATION_WEIGHTED = 20000.0
 # D5 - headcount demotion guard
 # ---------------------------------------------------------------------------
 
-#: The E2SFCA supply term in :mod:`accessibility` is ONE UNIT PER PRACTICE: a 12-doctor
-#: clinic and a solo GP count the same. That is D5 working as designed (there is no
-#: per-practice practitioner count in the register), but it has a specific failure mode.
-#: A suburb served by FEW BUT LARGE practices reads as under-supplied when it is not.
-#: MEASURED: Dee Why ranked 2 carrying 35 recorded GPs against 23,354 residents, which is
-#: 667 people per GP, better supplied than 73 percent of the eligible cohort. Mona Vale
-#: ranked 9 is worse again at 494 per GP, better supplied than 87 percent.
-#:
-#: The guard does NOT make headcount a ranking input, which would reverse D5 and lean on
-#: the very scrape the project discredited. It makes the weaker claim that a trustworthy
-#: headcount can CONTRADICT a high gap score. It only ever moves a suburb DOWN, it only
-#: fires where ``gp_data_status == "ok"``, and it never fires on missing data.
-#:
-#: Knots are percentiles of people-per-GP across the eligible ok-cohort (302 suburbs).
-#: MEASURED: P25 = 640, P50 = 1,042. Rounded to two significant figures below.
+#: The E2SFCA supply term in :mod:`accessibility` is ONE UNIT PER PRACTICE - a 12-doctor
+#: clinic and a solo GP count the same, as the register carries no practitioner count -
+#: so a suburb served by FEW BUT LARGE practices reads as under-supplied. MEASURED: Dee
+#: Why ranked 2, 35 recorded GPs against 23,354 residents, is 667 people per GP, better
+#: supplied than 73 percent of the eligible cohort; Mona Vale ranked 9 is worse at 494
+#: per GP, better supplied than 87 percent. The guard does NOT make headcount a ranking
+#: input - that would reverse D5 and lean on the very scrape the project discredited -
+#: only that a trustworthy headcount can CONTRADICT a high gap score, so it only demotes.
+#: Knots are percentiles of people-per-GP across the eligible ok-cohort (302 suburbs):
+#: MEASURED P25 = 640, P50 = 1,042, rounded to two significant figures below.
 GUARD_WELL_SUPPLIED_PPG = 640.0
 GUARD_NO_GUARD_PPG = 1040.0
 
@@ -278,23 +198,19 @@ HEADCOUNT_GUARD_STRENGTH = 0.5
 # D6 - operational
 # ---------------------------------------------------------------------------
 
-#: Distance to the nearest pharmacy at or below which the site counts as co-located:
-#: same retail strip, a walk a patient makes with a script in hand.
+#: At or below this the pharmacy is on the same retail strip: a walk with script in hand.
 PHARMACY_CO_LOCATED_KM = 0.4
 
-#: Distance at or beyond which pharmacy proximity confers no operational benefit: the
-#: patient drives, so the pharmacy could be anywhere.
+#: At or beyond this the patient drives, so the pharmacy could be anywhere: no benefit.
 PHARMACY_NO_BENEFIT_KM = 2.0
 
 #: Split of the 0.10 operational criterion between pharmacy co-location and DPA status.
-#:
-#: DPA gets the smaller share deliberately. It is a near-constant zero (79 of 680
-#: suburbs), and where it does fire it fires almost entirely on fringe suburbs too small
-#: to host this clinic: median population 815 for DPA=Y against 5,643 for DPA=N. Given a
-#: full weight it would act as a hidden smallness bonus, which is the same defect that
-#: got ``area`` dropped from v1. At 0.3 of 0.10 it can move a total score by at most
-#: 0.03, which is a tie-breaker, which is what the DPA analysis recommended it be used
-#: as. The sensitivity sweep runs this share at 0.0 and 0.6.
+#: DPA gets the smaller share deliberately: it is a near-constant zero (79 of 680
+#: suburbs) and fires almost entirely on fringe suburbs too small to host this clinic -
+#: median population 815 for DPA=Y against 5,643 for DPA=N - so at full weight it acts as
+#: a hidden smallness bonus, the defect that got ``area`` dropped from v1. At 0.3 of 0.10
+#: it moves a total score by at most 0.03: a tie-breaker, as the DPA analysis
+#: recommended. Swept at 0.0 and 0.6.
 DPA_OPERATIONAL_SHARE = 0.3
 
 #: Radius for the reported (not scored) pharmacy count.
@@ -317,28 +233,22 @@ CRITERIA = tuple(BASE_WEIGHTS)
 # D4 - Nuvo exclusion
 # ---------------------------------------------------------------------------
 
-#: EDITABLE. Suburbs hosting an existing Nuvo Health GP centre. Every suburb in the same
-#: GP catchment as any of these is excluded from the shortlist, because a clinic 1 km away
-#: in the next suburb still cannibalises.
+#: EDITABLE. Suburbs hosting an existing Nuvo Health GP centre; every suburb in the same
+#: GP catchment is excluded, because a clinic 1 km away still cannibalises. PROVENANCE:
+#: the operator's own listing, nuvohealth.com.au/medical-centres/, retrieved 2026-09-23,
+#: 18 GP medical centres. SUPERSEDES a brand-string match on "nuvo" over the clinic
+#: scrape, which found only 6 because neither the scrape nor the Geoscience Australia
+#: register records a brand owner: that understated the set threefold, 6 catchments and
+#: 75 suburbs against 10 and 145 here.
 #:
-#: PROVENANCE. Taken from the operator's own site listing, nuvohealth.com.au/medical-
-#: centres/, retrieved 2026-09-23: 18 GP medical centres.
-#:
-#: SUPERSEDES a brand-string match on "nuvo" over the clinic scrape, which found only 6
-#: (Leichhardt, Maroubra, Five Dock, Epping, Longueville, Neutral Bay) because neither
-#: the scrape nor the Geoscience Australia register records a brand owner, so any centre
-#: trading under another name was invisible. That method understated the exclusion set by
-#: a factor of three: 6 catchments and 75 suburbs, against 10 and 145 here.
-#:
-#: THREE of the 18 are precinct names rather than ABS suburbs and are omitted from this
-#: tuple, which is safe because each sits in a catchment the listed 15 already cover:
+#: THREE of the 18 are precinct names rather than ABS suburbs, omitted because each sits
+#: in a catchment the listed 15 already cover:
 #:   Green Square  -> Zetland,       Sydney Inner City  (covered by Surry Hills, Glebe)
 #:   Harold Park   -> Forest Lodge,  Sydney Inner City  (covered by Surry Hills, Glebe)
 #:   Birkenhead    -> Drummoyne,     Canada Bay         (covered by Five Dock)
 #:
-#: MEASURED effect of the correction: Manly (was rank 11) and Bondi Beach (was rank 13)
-#: leave contention. The top 10 is unchanged, so the recommendation does not depend on
-#: this fix - but the shortlist previously offered sites where Nuvo already trades.
+#: MEASURED: Manly (was rank 11) and Bondi Beach (was rank 13) leave contention; the top
+#: 10 is unchanged, so the recommendation does not depend on this fix.
 NUVO_SITES: tuple[str, ...] = (
     "Surry Hills",
     "Randwick",
@@ -370,24 +280,18 @@ def income_knots_from_percentiles(
     """
     Derive the four :func:`mixed_billing_fit` knots from an income distribution.
 
-    Zero and missing incomes are dropped first: two suburbs of 14 and 4 residents record
-    $0, and leaving them in would drag the lower knots toward a value no real household
-    has.
+    Zeros and NaNs are dropped: two suburbs of 14 and 4 record $0, which no household has.
 
     >>> vals = np.arange(1000.0, 5001.0, 10.0)
     >>> income_knots_from_percentiles(vals, (15.0, 40.0, 80.0, 95.0))
     (1600.0, 2600.0, 4200.0, 4800.0)
 
-    Scale invariance is the entire reason this function exists. Multiply every income by
-    any positive constant and the knots move by exactly that constant, so the income
-    sub-score of every suburb is unchanged:
+    Scale-invariant: scale all incomes and all knots scale with them, so no score moves.
 
     >>> a = income_knots_from_percentiles(vals)
     >>> b = income_knots_from_percentiles(vals * 1.2)
     >>> [round(x * 1.2, 6) for x in a] == [round(y, 6) for y in b]
     True
-
-    Zeros and NaNs are excluded rather than treated as poverty:
 
     >>> dirty = np.array([0.0, np.nan, 1000.0, 2000.0, 3000.0, 4000.0])
     >>> income_knots_from_percentiles(dirty, (0.0, 25.0, 75.0, 100.0))
@@ -434,8 +338,7 @@ def mixed_billing_fit(
     >>> mixed_billing_fit(3125.0)
     0.5
 
-    Outside the knots, including the degenerate incomes in the data (two suburbs of 14
-    and 4 residents record $0) and the richest suburb in Sydney:
+    Outside the knots, including the $0 suburbs (14 and 4 residents) and Sydney's richest:
 
     >>> mixed_billing_fit(0.0)
     0.0
@@ -446,8 +349,8 @@ def mixed_billing_fit(
     >>> mixed_billing_fit(6999.0)
     0.0
 
-    It is not monotonic, which is the entire point of D1: a $4,000 suburb scores BELOW a
-    $2,400 suburb, where the v1 monotonic score put it far above.
+    Non-monotonic by design, the point of D1: $4,000 scores BELOW $2,400, where the v1
+    monotonic score put it far above.
 
     >>> mixed_billing_fit(4000.0) < mixed_billing_fit(2400.0)
     True
@@ -477,9 +380,7 @@ def community_need_income_fit(
     """
     Decision D3 secondary lens: income rewarded lower-is-better.
 
-    Reuses the two OUTER knots of :data:`INCOME_KNOTS` so the commercial and the
-    community-need lens span the same income range and differ only in shape. Full score
-    at or below the lower taper knot, linear down to zero at the upper one.
+    Reuses the outer two :data:`INCOME_KNOTS`: same span as the commercial lens, inverted.
 
     >>> community_need_income_fit(1550.0)
     1.0
@@ -492,8 +393,7 @@ def community_need_income_fit(
     >>> community_need_income_fit(2525.0)
     0.5
 
-    It is the mirror of the commercial lens at the extremes. A poor suburb scores 1.0
-    here and 0.0 commercially; the plateau of the commercial lens scores middling here:
+    Mirror of the commercial lens at the extremes; its plateau scores middling here:
 
     >>> community_need_income_fit(1550.0), mixed_billing_fit(1550.0)
     (1.0, 0.0)
@@ -516,10 +416,7 @@ def senior_weighted_population(
     """
     Population re-weighted so a 65-plus resident counts ``multiple`` times an average one.
 
-    ``P * (1 + (m - 1) * s)`` where ``s`` is the 65-plus share. Equivalent to counting
-    the under-65s once and the 65-plus cohort ``m`` times.
-
-    A suburb with no seniors is unchanged; one that is entirely 65-plus is multiplied:
+    ``P * (1 + (m - 1) * s)`` where ``s`` is the 65-plus share.
 
     >>> senior_weighted_population(10000.0, 0.0)
     10000.0
@@ -531,8 +428,8 @@ def senior_weighted_population(
     >>> round(senior_weighted_population(10000.0, 15.95), 1)
     12392.5
 
-    Heathcote (22.82 percent) outscores an equal-sized suburb at the Sydney average,
-    which is the demand signal this criterion exists to carry:
+    Heathcote (22.82 percent) outscores an equal-sized suburb at the 15.95 average, which
+    is the demand signal this criterion carries:
 
     >>> senior_weighted_population(6148.0, 22.82) > senior_weighted_population(6148.0, 15.95)
     True
@@ -586,10 +483,8 @@ def pharmacy_score(
     """
     Pharmacy co-location sub-score from the distance to the nearest GA-register pharmacy.
 
-    Co-location is about the NEAREST pharmacy, not how many there are: one adjacent
-    dispensary is the operational win (script fulfilment, shared foot traffic, a
-    same-visit errand), and a fifth pharmacy in the strip adds nothing. The count within
-    :data:`PHARMACY_COUNT_RADIUS_KM` is reported as context, not scored.
+    Scored on the NEAREST pharmacy, not the count: one adjacent dispensary is the win and
+    a fifth adds nothing, so the :data:`PHARMACY_COUNT_RADIUS_KM` count is context only.
 
     >>> pharmacy_score(0.0)
     1.0
@@ -602,8 +497,8 @@ def pharmacy_score(
     >>> pharmacy_score(1.2)
     0.5
 
-    Measured distribution over the 680: P5 0.113 km, median 0.688, P75 1.342, max 13.151.
-    So the ramp spans the middle of the real distribution rather than being flat.
+    Measured over the 680: P5 0.113 km, median 0.688, P75 1.342, max 13.151, so the ramp
+    spans the middle of the real distribution rather than being flat.
 
     >>> round(pharmacy_score(0.688), 4)
     0.82
@@ -621,14 +516,11 @@ def operational_score(
     """
     Combine pharmacy co-location and DPA status into the 0.10 operational criterion.
 
-    ``(1 - dpa_share) * pharmacy + dpa_share * dpa``, a weighted mean of a continuous
-    signal and a binary one. Documented rationale for the split is on
-    :data:`DPA_OPERATIONAL_SHARE`: DPA is a fringe flag on 79 of 680 suburbs whose median
-    population is 815, so a large share of it would smuggle a smallness bonus back into
-    the model.
+    ``(1 - dpa_share) * pharmacy + dpa_share * dpa``; split rationale on
+    :data:`DPA_OPERATIONAL_SHARE`: DPA flags 79 of 680 suburbs, median population 815, so
+    a large share would smuggle a smallness bonus back in.
 
-    A co-located pharmacy with no DPA beats a DPA suburb with no pharmacy, because
-    dispensing adjacency is worth more day to day than a recruitment lever:
+    Pharmacy without DPA beats DPA without pharmacy: adjacency beats a recruitment lever.
 
     >>> operational_score(1.0, False)
     0.7
@@ -641,8 +533,7 @@ def operational_score(
     >>> round(operational_score(0.5, True), 10)
     0.65
 
-    At ``dpa_share=0`` the criterion is pharmacy only, which is one of the sensitivity
-    runs:
+    At ``dpa_share=0`` the criterion is pharmacy only, one of the sensitivity runs:
 
     >>> operational_score(0.4, True, dpa_share=0.0)
     0.4
@@ -658,13 +549,10 @@ def zones_for_cutoff(
     """
     Stepped Gaussian decay zones for an arbitrary travel cutoff (sensitivity test 3).
 
-    Same construction :mod:`accessibility` uses for its shipped constants: the zone
-    weight is :func:`accessibility.gaussian_weight` at the zone MIDPOINT, rounded to
-    3 dp. Deriving it here rather than hard-coding three tables means the 15 and 25
-    minute variants cannot drift from the 20 minute one.
+    Zone weight is :func:`accessibility.gaussian_weight` at the zone MIDPOINT, rounded to
+    3 dp, derived rather than hard-coded so the 15 and 25 minute variants cannot drift.
 
-    It reproduces both shipped tables exactly, which is the check that this function is
-    the same rule the baseline surface was built with:
+    It reproduces both shipped tables exactly, so it is the rule the baseline was built with:
 
     >>> zones_for_cutoff(20.0) == accessibility.GENERAL_ZONES
     True
@@ -673,8 +561,7 @@ def zones_for_cutoff(
     >>> zones_for_cutoff(25.0)
     ((5.0, 0.987), (10.0, 0.888), (15.0, 0.701), (20.0, 0.448), (25.0, 0.154))
 
-    Weights are monotone decreasing and a wider cutoff is more generous at every
-    distance, as it must be:
+    Weights decrease with distance and a wider cutoff is more generous everywhere:
 
     >>> ws = [w for _, w in zones_for_cutoff(25.0)]
     >>> all(a > b for a, b in zip(ws, ws[1:]))
@@ -717,13 +604,11 @@ class ScoreConfig:
     dpa_share: float = DPA_OPERATIONAL_SHARE
     pharmacy_co_located_km: float = PHARMACY_CO_LOCATED_KM
     pharmacy_no_benefit_km: float = PHARMACY_NO_BENEFIT_KM
-    #: Robustness alternative for the access criterion: rank percentile (default) or a
-    #: min-max on the P2 to P98 winsorised range. Tested so the choice is settled by
-    #: measurement rather than by argument.
+    #: Access criterion scaling: rank percentile (default) or min-max on the P2 to P98
+    #: winsorised range. Both run, so the choice is measured rather than argued.
     access_scaling: str = "rank_percentile"
-    #: D5 headcount demotion guard. Strength 0.0 disables it entirely, which is one of
-    #: the sensitivity runs: if the robust core depends on the guard being on, that has
-    #: to be visible rather than assumed.
+    #: D5 headcount demotion guard; 0.0 disables it, which is one of the sensitivity runs
+    #: so a robust core that depends on the guard is visible rather than assumed.
     headcount_guard_strength: float = HEADCOUNT_GUARD_STRENGTH
     guard_well_supplied_ppg: float = GUARD_WELL_SUPPLIED_PPG
     guard_no_guard_ppg: float = GUARD_NO_GUARD_PPG
@@ -767,10 +652,8 @@ class Inputs:
     """
     Everything loaded from disk once, plus the expensive geometry.
 
-    The distance matrices and the outside-the-study demand ring depend only on the
-    suburb frame and the register, never on a :class:`ScoreConfig`, so a 31-run
-    sensitivity sweep must build them once. Accessibility surfaces DO depend on the
-    speed and cutoff, so they are memoised on that pair.
+    Matrices and the demand ring never vary with :class:`ScoreConfig`, so the 31-run
+    sweep builds them once; surfaces vary with speed and cutoff, so are memoised.
     """
 
     frame: pd.DataFrame
@@ -779,9 +662,8 @@ class Inputs:
     site_to_suburb_min: np.ndarray
     site_to_ring_min: np.ndarray
     ring_population: np.ndarray
-    #: Knots derived from THIS frame's income column (see
-    #: :data:`INCOME_KNOT_PERCENTILES`). :func:`main` seeds the base config with these so
-    #: the whole sweep, baseline and perturbations alike, moves with the data vintage.
+    #: Knots from THIS frame's income column (:data:`INCOME_KNOT_PERCENTILES`). :func:`main`
+    #: seeds the base config with them, so the sweep moves with the data vintage.
     income_knots: tuple[float, float, float, float] = INCOME_KNOTS
     _surfaces: dict[tuple[float, float], tuple[np.ndarray, np.ndarray]] = field(
         default_factory=dict
@@ -962,10 +844,9 @@ def headcount_adequacy(
     """
     How strongly a trustworthy GP headcount contradicts a high ``access_gap``.
 
-    1.0 means the suburb carries at least as many doctors per resident as the best
-    supplied quartile of the eligible cohort, so a high practice-count gap score is
-    very likely an artefact of the one-unit-per-practice supply term. 0.0 means the
-    headcount does not contradict the gap score and no demotion applies.
+    1.0 means doctors per resident at least matching the eligible cohort's best supplied
+    quartile, so a high gap score is probably an artefact of the one-unit-per-practice
+    supply term. 0.0 means no demotion applies.
 
     >>> headcount_adequacy(400.0)
     1.0
@@ -989,11 +870,8 @@ def headcount_adequacy(
     >>> headcount_adequacy(3156.0)
     0.0
 
-    Missing or unusable headcount NEVER demotes. This is the same direction of caution
-    as the status gate in :mod:`gp_supply`: a suburb that was never successfully scraped
-    must not be penalised for it, which was the v1 defect that put seven never-scraped
-    suburbs in the top 10. A zero or negative value is degenerate input, not a suburb
-    with infinite doctors, and is treated the same way.
+    Missing, zero or negative headcount NEVER demotes: penalising a failed scrape was the
+    v1 defect that put seven never-scraped suburbs in the top 10.
 
     >>> headcount_adequacy(float("nan"))
     0.0
@@ -1019,13 +897,9 @@ def access_gap_scores(access_general: np.ndarray, scaling: str) -> np.ndarray:
     """
     Invert an accessibility surface into an opportunity sub-score on [0, 1].
 
-    ``rank_percentile`` (default): ``1 - rank_pct(access)``. Robust to the eight suburbs
-    whose access is exactly 0 and to the ferry-only suburbs whose straight-line values
-    :mod:`accessibility` states are meaningless, and it is the reading its own docstring
-    recommends ("the column a scoring model wants to invert").
-
-    ``winsorised_minmax``: min-max on the P2 to P98 range, which keeps magnitude
-    information. Run as a sensitivity case so the choice between them is measured.
+    ``rank_percentile`` (default) survives the eight suburbs with access exactly 0 and the
+    ferry-only suburbs whose straight-line values :mod:`accessibility` calls meaningless.
+    ``winsorised_minmax`` (P2 to P98) keeps magnitude instead, run as a sensitivity case.
 
     >>> a = np.array([0.0, 0.1, 0.2, 0.3, 0.4])
     >>> access_gap_scores(a, "rank_percentile").round(2)
@@ -1046,11 +920,8 @@ def access_gap_scores(access_general: np.ndarray, scaling: str) -> np.ndarray:
 
 def score(inputs: Inputs, config: ScoreConfig | None = None) -> pd.DataFrame:
     """
-    Score all 680 suburbs under one configuration.
-
-    Ineligible suburbs (below a viability floor, or inside a Nuvo catchment) keep every
-    sub-score for audit but get ``rank`` as NA, so an exclusion is always visible rather
-    than silently absent.
+    Score all 680 suburbs under one configuration. Ineligible suburbs keep every
+    sub-score but get ``rank`` as NA, so an exclusion is visible rather than absent.
     """
     cfg = config or ScoreConfig()
     out = inputs.frame.copy()
@@ -1184,12 +1055,9 @@ def perturbations(base: ScoreConfig | None = None) -> list[tuple[str, str, Score
     """
     The full perturbation set as ``(family, label, config)``, baseline excluded.
 
-    Four families are required by the brief (weights, income knots, travel cutoff, and
-    the robust core that falls out of all of them). Four more are added because they are
-    the remaining judgement calls in the chain and leaving them untested would make the
-    sweep look more thorough than it is: the viability floor, the senior multiple, the
-    DPA share inside the operational criterion, and the speed constant that
-    :mod:`accessibility` itself flags as its least defensible number.
+    Four families the brief requires (weights, income knots, cutoff, robust core), plus
+    four judgement calls left untested otherwise: viability floor, senior multiple, DPA
+    share, and the speed constant :mod:`accessibility` calls its least defensible number.
 
     >>> labels = [lab for _, lab, _ in perturbations()]
     >>> len(labels), len(set(labels))
@@ -1254,11 +1122,8 @@ def run_sensitivity(
     inputs: Inputs, base: ScoreConfig | None = None, n: int = TOP_N
 ) -> tuple[pd.DataFrame, pd.DataFrame, list[str]]:
     """
-    Re-rank under every perturbation.
-
-    Returns ``(long_frame, stability, robust_core)``. ``long_frame`` is one row per
-    suburb per run, ``stability`` is per suburb, and ``robust_core`` is the suburbs that
-    are top ``n`` in the baseline AND in every perturbation.
+    Re-rank under every perturbation, returning ``(long, stability, core)``; ``core`` is
+    the suburbs that are top ``n`` in the baseline AND in every perturbation.
     """
     cfg = base or ScoreConfig()
     runs = [("baseline", "baseline", cfg), *perturbations(cfg)]
@@ -1380,12 +1245,9 @@ def report_sensitivity(
 
 def report_criterion_influence(frame: pd.DataFrame, config: ScoreConfig) -> None:
     """
-    Measure what each criterion actually does, rather than trusting its nominal weight.
-
-    A weight is only half the story: a criterion where most suburbs sit at the same value
-    cannot move a ranking however heavily it is weighted. ``weighted sd`` is the real
-    discriminating power, and the correlation column shows which criterion the final
-    ordering is tracking.
+    Measure what each criterion actually does: ``w*sd``, not the nominal weight, is the
+    real discriminating power, because a criterion where most suburbs share a value
+    cannot move a ranking however heavily weighted. ``r(total)`` shows what it tracks.
     """
     weights = config.normalised_weights()
     elig = frame.loc[frame["eligible"]]

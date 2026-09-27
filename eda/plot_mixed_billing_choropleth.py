@@ -78,7 +78,10 @@ from gp_supply import (  # noqa: E402  (sys.path must be set before this import)
     require_status_column,
     status_summary,
 )
-from site_score import INCOME_KNOTS, mixed_billing_fit  # noqa: E402
+from site_score import (  # noqa: E402
+    income_knots_from_percentiles,
+    mixed_billing_fit,
+)
 
 DATA_PATH = ROOT / "scraped_data" / "eda_data.csv"
 REGISTER_PATH = ROOT / "scraped_data" / "ga_general_practices_nsw.csv"
@@ -100,8 +103,18 @@ REGISTER_NSW_TOTAL = 2089
 REGISTER_LAYER_NSW_ROWS = 2482
 REGISTER_LICENCE = "CC-BY 4.0"
 
+#: The income band drawn on this map MUST be the one the score actually used, or the
+#: figure contradicts the model it illustrates. site_score.main() does not use the static
+#: INCOME_KNOTS fallback - it derives the knots from the income distribution it loads, at
+#: percentiles 15/40/80/95 - so importing the constant here drew the wrong band. MEASURED:
+#: the static values are (1550, 2050, 2750, 3500) against derived (1583, 2101, 2872, 3492),
+#: which moved the hatch thresholds on the published map by up to $122/wk.
+INCOME_KNOTS = income_knots_from_percentiles(
+    pd.read_csv(DATA_PATH)["median_household_income_weekly"].to_numpy(float)
+)
+
 # Fit is a 0..1 score by construction, so the colour scale is not clipped and carries no
-# judgement of its own: the judgement is entirely in INCOME_KNOTS, which is imported.
+# judgement of its own: the judgement is entirely in INCOME_KNOTS, derived above.
 FIT_VMIN = 0.0
 FIT_VMAX = 1.0
 

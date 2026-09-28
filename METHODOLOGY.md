@@ -346,6 +346,43 @@ perturbed; the register, incomes and travel cost are held fixed.
 
 ---
 
+### What the DPA check does and does not establish
+
+Reported three ways, because the headline number alone is misleading.
+
+**On all 680 classified suburbs**, `access_gap` scores AUC 0.813 [0.743, 0.879] against a
+flag it has never seen. **On the 443 eligible suburbs** — the ones actually competing for
+the recommendation — it falls to 0.719 [0.586, 0.837], and the composite `site_score`
+falls to 0.570 [0.452, 0.673], an interval containing chance.
+
+**A naive baseline beats the model on the full cohort.** `-log(population)` alone scores
+0.849 [0.809, 0.886]. DPA-positive suburbs have a median population of 815 against 5,643
+for the rest, so any measure correlated with smallness scores well without knowing
+anything about GP supply. Reporting 0.813 as validation, without this, would be claiming
+credit a population proxy earns more of.
+
+**Stratifying by population isolates whether the score adds anything.** Within bands, the
+size channel is closed off:
+
+| Band | n | DPA+ | AUC |
+|---|---|---|---|
+| 0–1,000 | 96 | 43 | 0.808 [0.71, 0.90] |
+| 1,000–5,000 | 248 | 26 | 0.824 [0.71, 0.92] |
+| 5,000–15,000 | 262 | 10 | 0.635 [0.38, 0.86] |
+| 15,000+ | 74 | 0 | not testable |
+
+Discrimination survives at 0.81–0.82 in the two bands with enough positives, so
+`access_gap` is carrying supply information rather than reading suburb size.
+
+**The limitation that follows.** DPA has no positives above 15,000 residents and only ten
+between 5,000 and 15,000, while the top 10 spans 6,148 to 25,021 with a median of 14,473.
+The external check is therefore strongest exactly where the shortlist is not. It
+establishes that the access measure works where it can be tested; it does not establish
+that the ranking of large metropolitan suburbs is externally validated, and no dataset in
+this project can.
+
+---
+
 ### Method choice: rank 1 is not formulation-independent
 
 Every other family in the sweep varies a *parameter*. This one varies the *model*.

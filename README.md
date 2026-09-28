@@ -171,12 +171,41 @@ never seen it.
 
 | Measure | AUC | 95% CI |
 |---|---|---|
-| `access_gap` (unguarded) | **0.813** | [0.743, 0.879] |
+| `access_gap` (unguarded), all 680 | **0.813** | [0.743, 0.879] |
+| `access_gap` (unguarded), eligible 443 | 0.719 | [0.586, 0.837] |
+| `-log(population)` baseline | **0.849** | [0.809, 0.886] |
 | `access_gap` (guarded) | 0.779 | [0.707, 0.846] |
 | `site_score` (composite) | 0.641 | [0.576, 0.706] |
 | `demand_scale` | 0.240 | [0.208, 0.275] |
 
-The accessibility surface reproduces the government's own classification at AUC 0.813.
+The accessibility surface reproduces the government's own classification at AUC 0.813 —
+but that number alone overstates the result, and the qualification matters more than the
+headline.
+
+**A measure that knows nothing about GP supply does better.** `-log(population)` alone
+scores **0.849** [0.81, 0.89]. DPA-positive suburbs have a median population of 815
+against 5,643 for the rest, so anything correlated with smallness scores well here.
+
+**The model does still carry supply signal.** Holding population roughly fixed removes
+that channel, and discrimination survives:
+
+| Population band | n | DPA+ | AUC |
+|---|---|---|---|
+| 0–1,000 | 96 | 43 | 0.808 [0.71, 0.90] |
+| 1,000–5,000 | 248 | 26 | 0.824 [0.71, 0.92] |
+| 5,000–15,000 | 262 | 10 | 0.635 [0.38, 0.86] |
+| 15,000+ | 74 | **0** | — |
+
+**But the check cannot reach the cohort the recommendation comes from.** The top 10 spans
+6,148 to 25,021 residents, median 14,473. DPA has ten positives in the 5,000–15,000 band
+and **none at all above 15,000**. So the external validation is strongest precisely where
+the shortlist is not, and on the 443 eligible suburbs the composite scores 0.570
+[0.45, 0.67] — an interval containing chance.
+
+The defensible claim is that `access_gap` measures something real about GP supply, shown
+where DPA has enough positives to test it. It is not evidence that the ranking of large
+metropolitan suburbs is externally validated, because no external benchmark in this
+project covers them.
 Two readings travel with it: the composite scores *lower* than its own access criterion,
 because `demand_scale` anti-predicts DPA — DPA suburbs have a median population of 815
 while demand rewards size — and the intervals for the guarded and unguarded measures

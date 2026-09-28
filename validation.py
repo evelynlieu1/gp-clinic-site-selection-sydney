@@ -42,6 +42,11 @@ OUT = ROOT / "eda" / "validation.csv"
 #: varied in :func:`sensitivity_over_k` because a single k is a researcher choice.
 DEFAULT_K = 8
 
+#: Population band edges for :func:`stratified_auc`. Chosen so the lowest band sits
+#: below the eligibility floor and the rest split the eligible cohort into roughly even
+#: thirds, not tuned to produce a result.
+POPULATION_STRATA = (1_000.0, 5_000.0, 15_000.0)
+
 #: Permutation draws for the Moran's I null, and resamples for the AUC interval.
 N_PERMUTATIONS = 999
 N_BOOTSTRAP = 2000
@@ -124,6 +129,44 @@ def auc_interval(
         draws[i] = auc(score[take], positive[take])
     lo, hi = np.percentile(draws, [2.5, 97.5])
     return point, float(lo), float(hi)
+
+
+def stratified_auc(
+    score: np.ndarray,
+    positive: np.ndarray,
+    population: np.ndarray,
+    edges: tuple[float, ...] = POPULATION_STRATA,
+) -> pd.DataFrame:
+    """
+    AUC within population bands, which is the test of whether the score adds signal
+    beyond detecting small suburbs.
+
+    DPA-positive suburbs have a median population of 815 against 5,643 for the rest, so a
+    measure that merely correlates with smallness will score a high AUC without knowing
+    anything about GP supply. Holding population roughly fixed removes that channel: if
+    discrimination survives inside a band, the score is carrying supply information; if it
+    collapses to chance, it was reading size.
+
+    Bands with fewer than 5 of either class are reported with an empty AUC rather than a
+    number, because AUC on 2 positives is noise with a decimal point.
+    """
+    score = np.asarray(score, dtype=float)
+    positive = np.asarray(positive, dtype=bool)
+    population = np.asarray(population, dtype=float)
+    rows = []
+    bounds = (0.0,) + tuple(edges) + (float("inf"),)
+    for lo, hi in zip(bounds, bounds[1:]):
+        m = (population >= lo) & (population < hi)
+        n_pos, n_neg = int((positive & m).sum()), int((~positive & m).sum())
+        band = f"{lo:,.0f}-{hi:,.0f}" if np.isfinite(hi) else f"{lo:,.0f}+"
+        if n_pos < 5 or n_neg < 5:
+            rows.append({"band": band, "n": int(m.sum()), "positives": n_pos,
+                         "auc": np.nan, "ci_low": np.nan, "ci_high": np.nan})
+            continue
+        point, lo_ci, hi_ci = auc_interval(score[m], positive[m], n=800)
+        rows.append({"band": band, "n": int(m.sum()), "positives": n_pos,
+                     "auc": point, "ci_low": lo_ci, "ci_high": hi_ci})
+    return pd.DataFrame(rows)
 
 
 # ---------------------------------------------------------------------------
@@ -544,15 +587,49 @@ def main() -> None:
     positive = (flagged["dpa_status"] == "Y").to_numpy()
     print(f"  {int(positive.sum())} DPA-positive, {int((~positive).sum())} negative, "
           f"{len(flagged)} classified")
-    print(f"  {'measure':26s} {'AUC':>6s} {'95% CI':>18s}")
+    elig_mask = flagged["eligible"].to_numpy(bool)
+    print(f"  {'measure':26s} {'all 680':>16s} {'eligible 443':>18s}")
     for col in ("access_gap_unguarded", "access_gap", "demand_scale",
                 "mixed_billing_fit", "site_score"):
         if col not in flagged:
             continue
-        point, lo, hi = auc_interval(flagged[col].to_numpy(float), positive)
-        print(f"  {col:26s} {point:6.3f}   [{lo:.3f}, {hi:.3f}]")
-        rows.append({"test": "auc_vs_dpa", "measure": col, "statistic": point,
+        v = flagged[col].to_numpy(float)
+        p_all, lo_all, hi_all = auc_interval(v, positive)
+        pe, lo_e, hi_e = auc_interval(v[elig_mask], positive[elig_mask])
+        chance = " *" if lo_e < 0.5 < hi_e else ""
+        print(f"  {col:26s} {p_all:6.3f} [{lo_all:.2f},{hi_all:.2f}] "
+              f"{pe:8.3f} [{lo_e:.2f},{hi_e:.2f}]{chance}")
+        rows.append({"test": "auc_vs_dpa_all680", "measure": col, "statistic": p_all,
+                     "ci_low": lo_all, "ci_high": hi_all, "p_value": ""})
+        rows.append({"test": "auc_vs_dpa_eligible", "measure": col, "statistic": pe,
+                     "ci_low": lo_e, "ci_high": hi_e, "p_value": ""})
+    print("  * interval contains 0.5, i.e. not distinguishable from chance")
+
+    print()
+    print("  BASELINE. A measure that knows nothing about GP supply, for comparison:")
+    for label, v in (("population < 1,000 flag", (flagged["population"] < 1000).astype(float).to_numpy()),
+                     ("-log(population)", -np.log(flagged["population"].clip(lower=1).to_numpy(float)))):
+        point, lo, hi = auc_interval(v, positive)
+        print(f"  {label:26s} {point:6.3f} [{lo:.2f},{hi:.2f}]")
+        rows.append({"test": "auc_vs_dpa_baseline", "measure": label, "statistic": point,
                      "ci_low": lo, "ci_high": hi, "p_value": ""})
+
+    print()
+    print("  WITHIN POPULATION BANDS. If discrimination survives here the score carries")
+    print("  supply information; if it collapses, it was reading suburb size.")
+    strat = stratified_auc(flagged["access_gap_unguarded"].to_numpy(float), positive,
+                           flagged["population"].to_numpy(float))
+    print(f"  {'band':>16s} {'n':>5s} {'DPA+':>5s} {'AUC':>7s} {'95% CI':>16s}")
+    for r in strat.itertuples():
+        if np.isnan(r.auc):
+            print(f"  {r.band:>16s} {r.n:5d} {r.positives:5d} {'too few':>7s}")
+            continue
+        chance = " *" if r.ci_low < 0.5 < r.ci_high else ""
+        print(f"  {r.band:>16s} {r.n:5d} {r.positives:5d} {r.auc:7.3f} "
+              f"[{r.ci_low:.2f},{r.ci_high:.2f}]{chance}")
+        rows.append({"test": "auc_vs_dpa_stratified", "measure": r.band,
+                     "statistic": r.auc, "ci_low": r.ci_low, "ci_high": r.ci_high,
+                     "p_value": ""})
 
     print()
     print("=" * 78)

@@ -92,12 +92,19 @@ Dee Why moved from rank 2 to 17, Mona Vale 9 to 42, Freshwater 10 to 12.
 measure and on doctors per resident. It holds the top 10 in **all 31** perturbation
 runs, including the four that delete a criterion outright.
 
-**Rank 1 depends on the formulation.** The sweep now includes a method family, not only
+**Rank 1 is not settled, and the sweep design was flattering it.** The 32 perturbations
+move one knob at a time, which cannot see interactions. Drawing every knob jointly over
+the same ranges, 400 times: Cronulla holds rank 1 in **55%** of draws [0.50, 0.60], Avalon
+Beach in 20%, Glenmore Park 10%, Oran Park 8%. Cronulla holds the top 10 in 94% and Avalon
+Beach in 97%. Cronulla is the modal winner by a clear margin — but the supported claim is
+a shortlist of Cronulla, Avalon Beach, Oran Park and Glenmore Park, not a single name.
+
+**Rank 1 also depends on the formulation.** The sweep now includes a method family, not only
 parameter families: under 3SFCA, which adds demand-side competition weighting and removes
 a double-count that 2SFCA has, Avalon Beach is rank 1 and Cronulla is rank 3. Eight of ten
-top-10 members are common to both. Cronulla is the only suburb that stays top 10 under all
-32 perturbations — but the defensible claim is that Cronulla, Avalon Beach and Glenmore
-Park are the three strongest candidates, not that any one of them is settled.
+top-10 members are common to both. Cronulla stays top 10 under all 32 one-at-a-time
+perturbations, which no other suburb does — though see above for what joint draws do to
+that claim.
 
 **Four suburbs survive every non-degenerate run:** Cronulla, Caringbah South,
 Avalon Beach, Oran Park.
@@ -153,7 +160,7 @@ commercial.
 | Demand | Senior-weighted population on a log ramp |
 | Billing fit | Inverted-U on household income, percentile-anchored |
 | Operational | Pharmacy co-location + Distribution Priority Area status |
-| Robustness | 32 perturbations across 10 families, including 2SFCA vs 3SFCA |
+| Robustness | 32 one-at-a-time perturbations, plus 400 joint draws over the same ranges |
 | Validation | AUC vs the DoH under-supply flag; Moran's I and LISA; blocked rank bootstrap |
 | Uncertainty | 200-replicate population resample calibrated on 2025 ERP |
 

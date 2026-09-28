@@ -32,6 +32,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+import accessibility
+import dpa_status
 import site_score
 
 ROOT = Path(__file__).resolve().parent
@@ -40,6 +42,11 @@ OUT_CSV = ROOT / "eda" / "population_uncertainty.csv"
 
 DEFAULT_REPLICATES = 200
 RNG_SEED = 20260927
+
+#: Draws for the joint sweep. 400 gives a Monte Carlo standard error of about 2.5
+#: percentage points on a probability near 0.5, which is fine for a claim stated to the
+#: nearest few percent and not fine for one stated to the nearest one.
+DEFAULT_JOINT = 400
 TOP_N = 10
 
 
@@ -61,6 +68,81 @@ def growth_ratios() -> np.ndarray:
     if ratios.size < 20:
         raise SystemExit(f"only {ratios.size} calibration ratios, too few to resample")
     return ratios
+
+
+def draw_config(rng, base):
+    """
+    One :class:`site_score.ScoreConfig` with every knob drawn jointly.
+
+    The ranges are NOT invented here. Each one is the span the corresponding
+    one-at-a-time family in :func:`site_score.perturbations` already sweeps, so the joint
+    run explores the same space and the only thing that changes is whether knobs move
+    together. That matters because it removes the obvious objection - that a joint sweep
+    looks less stable simply because someone widened the ranges.
+
+    Weights are drawn as independent multipliers on [0.5, 1.5] and renormalised, which is
+    exactly the x0.5 / x1.5 family. The "to 0" runs are NOT included: deleting a criterion
+    is a different study, and the existing report already excludes those four from its
+    non-degenerate tier.
+    """
+    w = {k: v * rng.uniform(0.5, 1.5) for k, v in site_score.BASE_WEIGHTS.items()}
+    knots = site_score.INCOME_KNOTS
+    shift = rng.uniform(-250.0, 250.0)
+    plateau = rng.uniform(-250.0, 250.0)
+    return replace(
+        base,
+        weights=tuple(w.items()),
+        income_knots=(knots[0] + shift, knots[1] + shift - plateau,
+                      knots[2] + shift + plateau, knots[3] + shift),
+        # Discrete, not continuous: zones_for_cutoff requires a whole number of 5-minute
+        # decay bands, so 15 / 20 / 25 is the full admissible set, not a simplification.
+        general_cutoff_min=float(rng.choice([15.0, 20.0, 25.0])),
+        min_population=float(rng.choice([0.0, 1000.0, 2000.0, 4000.0])),
+        senior_multiple=rng.uniform(1.5, 4.0),
+        dpa_share=rng.uniform(0.0, 0.6),
+        speed_kmh=rng.uniform(30.0, 40.0),
+        access_scaling=str(rng.choice(["rank_percentile", "winsorised_minmax"])),
+        headcount_guard_strength=rng.uniform(0.0, 0.75),
+        access_method=str(rng.choice([accessibility.METHOD_2SFCA,
+                                      accessibility.METHOD_3SFCA])),
+    )
+
+
+def run_joint(inputs, n=DEFAULT_JOINT, seed=RNG_SEED, top_n=10):
+    """
+    Re-rank ``n`` times with every knob drawn jointly, returning one row per suburb.
+
+    The shipped sweep is one-factor-at-a-time: 32 runs, each moving a single knob. That
+    design cannot see interactions, so it reports the best case for stability. Drawing
+    jointly is the same space explored properly.
+    """
+    rng = np.random.default_rng(seed)
+    base = site_score.ScoreConfig(income_knots=inputs.income_knots)
+    names = inputs.frame["suburb"].to_numpy()
+    seen = {s: [] for s in names}
+    for i in range(n):
+        frame = site_score.score(inputs, draw_config(rng, base))
+        elig = frame.loc[frame["eligible"]]
+        ranks = elig["site_score"].rank(ascending=False, method="min")
+        for s, r in zip(elig["suburb"].to_numpy(), ranks.to_numpy()):
+            seen[s].append(float(r))
+        if (i + 1) % 50 == 0:
+            print(f"    {i + 1}/{n} joint draws")
+    rows = []
+    for s in names:
+        d = np.array(seen[s], dtype=float)
+        if d.size == 0:
+            rows.append({"suburb": s, "draws": 0, "rank_median": np.nan,
+                         "rank_lo": np.nan, "rank_hi": np.nan,
+                         "p_top_n": 0.0, "p_rank_1": 0.0})
+            continue
+        lo, hi = np.percentile(d, [2.5, 97.5])
+        rows.append({"suburb": s, "draws": int(d.size),
+                     "rank_median": float(np.median(d)),
+                     "rank_lo": float(lo), "rank_hi": float(hi),
+                     "p_top_n": float((d <= top_n).mean()),
+                     "p_rank_1": float((d == 1).mean())})
+    return pd.DataFrame(rows)
 
 
 def draw(frame: pd.DataFrame, pool: np.ndarray, rng, mode: str) -> np.ndarray:
@@ -128,6 +210,8 @@ def main() -> None:
     parser.add_argument("--replicates", type=int, default=DEFAULT_REPLICATES)
     parser.add_argument("--mode", default="both",
                         choices=["independent", "blocked", "both"])
+    parser.add_argument("--joint", type=int, default=0, metavar="N",
+                        help="also run N joint-perturbation draws and exit")
     args = parser.parse_args()
 
     pool = growth_ratios()
@@ -136,6 +220,25 @@ def main() -> None:
 
     inputs = site_score.load_inputs(verbose=False)
     base = site_score.score(inputs, site_score.ScoreConfig(income_knots=inputs.income_knots))
+
+    if args.joint:
+        print(f"\njoint perturbation sweep, {args.joint} draws, every knob moving together")
+        res = run_joint(inputs, args.joint)
+        br = base.loc[base["eligible"], ["suburb", "rank"]].set_index("suburb")["rank"]
+        m = res.merge(br.rename("base_rank"), on="suburb", how="left")
+        top = m.dropna(subset=["base_rank"]).nsmallest(10, "base_rank")
+        print(f"  {'base':>4s}  {'suburb':20s} {'median':>7s} {'95% interval':>14s} "
+              f"{'P(top10)':>9s} {'P(rank1)':>9s}")
+        for r in top.itertuples():
+            span = f"[{r.rank_lo:.0f}, {r.rank_hi:.0f}]"
+            print(f"  {int(r.base_rank):>4d}  {r.suburb:20s} {r.rank_median:7.0f} "
+                  f"{span:>14s} {r.p_top_n:9.2f} {r.p_rank_1:9.2f}")
+        holders = m.loc[m["p_rank_1"] > 0].nlargest(5, "p_rank_1")
+        print("  holds rank 1 in some draw: " + ", ".join(
+            f"{h.suburb} {h.p_rank_1:.0%}" for h in holders.itertuples()))
+        res.to_csv(ROOT / "eda" / "joint_sensitivity.csv", index=False)
+        print(f"  wrote {ROOT / 'eda' / 'joint_sensitivity.csv'}")
+        return
     base_rank = base.loc[base["eligible"], ["suburb", "rank"]].set_index("suburb")["rank"]
 
     modes = ["independent", "blocked"] if args.mode == "both" else [args.mode]

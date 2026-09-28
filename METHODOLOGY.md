@@ -383,6 +383,49 @@ this project can.
 
 ---
 
+### One factor at a time overstates robustness
+
+The 32-run sweep moves one knob per run. That design cannot see interactions, so it
+reports the best case: a suburb only has to survive 32 single deviations from the
+baseline, never a combination of them.
+
+`uncertainty.py --joint` draws every knob together, 400 times. The ranges are not new —
+each is the span the corresponding one-at-a-time family already sweeps, so the joint run
+explores the same space and the only thing that changes is whether knobs move together.
+Two deliberate exclusions: the `to 0` weight runs, because deleting a criterion is a
+different study, and continuous travel cutoffs, because `zones_for_cutoff` requires whole
+5-minute decay bands so 15/20/25 is the complete admissible set.
+
+| Base rank | Suburb | Median | 95% interval | P(top 10) | P(rank 1) |
+|---|---|---|---|---|---|
+| 1 | Cronulla | 1 | [1, 20] | 0.94 | **0.55** |
+| 4 | Avalon Beach | 3 | [1, 11] | **0.97** | 0.20 |
+| 6 | Oran Park | 4 | [1, 12] | 0.96 | 0.08 |
+| 7 | Glenmore Park | 6 | [1, 25] | 0.80 | 0.10 |
+| 2 | Caringbah South | 5 | [1, 23] | 0.82 | 0.05 |
+| 10 | Heathcote | 21 | [4, 74] | 0.18 | 0.00 |
+
+Monte Carlo error at 400 draws is about ±2.5 points on a probability near 0.5, so
+Cronulla's rank-1 share is 0.55 [0.50, 0.60].
+
+**What this changes.** Under the one-at-a-time sweep Cronulla holds the top 10 in all 32
+runs and no other suburb does. Under joint draws it holds rank 1 in 55% and the top 10 in
+94%, while Avalon Beach holds the top 10 in 97% — a gap of 3 points against a standard
+error of 1.5, so Avalon Beach is marginally the more robust top-10 member, not Cronulla.
+Five suburbs hold rank 1 in some draw.
+
+**The honest claim.** Cronulla is the modal winner and the single most likely rank 1, by a
+clear margin over Avalon Beach at 20%. But rank 1 is not settled: it depends on a
+combination of reasonable choices, no one of which is unreasonable on its own. A shortlist
+of Cronulla, Avalon Beach, Oran Park and Glenmore Park is what the evidence supports; a
+single recommended suburb is not.
+
+This is a general property, not a defect specific to this project. A one-factor-at-a-time
+sweep is the standard robustness check and it systematically flatters whatever the
+baseline happens to be.
+
+---
+
 ### Method choice: rank 1 is not formulation-independent
 
 Every other family in the sweep varies a *parameter*. This one varies the *model*.

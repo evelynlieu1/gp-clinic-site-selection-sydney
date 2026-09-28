@@ -264,6 +264,16 @@ SENSITIVITY_SPEEDS_KMH = (24.0, 30.0, 35.0, 40.0, 47.6)
 #: projection for the full study bbox is about 47 minutes for the download alone.
 NETWORK_TIME_BUDGET_S = 25 * 60
 
+#: Overpass endpoint. ``None`` keeps the osmnx default, overpass-api.de.
+#:
+#: MEASURED on the build machine: overpass-api.de resolves round-robin and at least one of
+#: its addresses is unreachable from here - raw TCP to 162.55.144.139:443 times out while
+#: ``requests`` eventually lands on a working address after 22 seconds. osmnx gives up
+#: first, so every routing attempt failed with ConnectTimeout even for a one-block bbox,
+#: which reads like a code fault and is not one. overpass.osm.ch answered the same query
+#: in 2.1 seconds. Override with ``--overpass-url``.
+OVERPASS_URL: str | None = None
+
 #: Bounding box of the study area, (west, south, east, north). Matches
 #: ``dpa_status.SYDNEY_BBOX``.
 STUDY_BBOX = dpa_status.SYDNEY_BBOX
@@ -811,6 +821,8 @@ def network_travel_minutes(
 
     ox.settings.use_cache = True
     ox.settings.cache_folder = str(CACHE_DIR / "osmnx_cache")
+    if OVERPASS_URL:
+        ox.settings.overpass_url = OVERPASS_URL
 
     started = time.time()
     graph = ox.graph_from_bbox(STUDY_BBOX, network_type="drive", simplify=True)
@@ -869,6 +881,8 @@ def calibrate_effective_speed(
 
     ox.settings.use_cache = True
     ox.settings.cache_folder = str(CACHE_DIR / "osmnx_cache")
+    if OVERPASS_URL:
+        ox.settings.overpass_url = OVERPASS_URL
     graph = ox.graph_from_bbox(bbox, network_type="drive", simplify=True)
     graph = ox.routing.add_edge_travel_times(ox.routing.add_edge_speeds(graph))
 
@@ -1386,6 +1400,9 @@ def main() -> None:
     parser.add_argument("--sensitivity", action="store_true", help="also run sensitivity")
     parser.add_argument("--calibrate", action="store_true",
                         help="re-measure the straight-line to drive-time constant")
+    parser.add_argument("--overpass-url", default=None, metavar="URL",
+                        help="Overpass API base, e.g. https://overpass.osm.ch/api; the "
+                             "default overpass-api.de is unreliable from some networks")
     parser.add_argument("--network-budget", type=float, default=None, metavar="MIN",
                         help="minutes allowed for road-network routing before falling "
                              "back; the default 25 was a build-time constraint, raise it "
@@ -1410,6 +1427,9 @@ def main() -> None:
 
     run_tests()
     print()
+    if args.overpass_url:
+        globals()["OVERPASS_URL"] = args.overpass_url
+        print(f"overpass endpoint: {args.overpass_url}")
     budget_s = (args.network_budget * 60.0 if args.network_budget
                 else NETWORK_TIME_BUDGET_S)
     frame, method = build(use_network=not args.no_network, use_ring=not args.no_ring,

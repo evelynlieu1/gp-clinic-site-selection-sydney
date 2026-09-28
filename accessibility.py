@@ -259,8 +259,9 @@ METHOD_NETWORK = "osmnx_drive_network_freeflow_maxspeed"
 #: raw free-flow measurement, so a reader can see the whole plausible interval.
 SENSITIVITY_SPEEDS_KMH = (24.0, 30.0, 35.0, 40.0, 47.6)
 
-#: Wall-clock budget for the road-network path before it is abandoned (decision made in
-#: the brief: do not let routing stall the build).
+#: Default wall-clock budget for the road-network path before it is abandoned, so a slow
+#: route does not stall a routine build. Override with ``--network-budget MIN``; the
+#: projection for the full study bbox is about 47 minutes for the download alone.
 NETWORK_TIME_BUDGET_S = 25 * 60
 
 #: Bounding box of the study area, (west, south, east, north). Matches
@@ -927,6 +928,7 @@ def build(
     drop_non_gp_like: bool = False,
     use_ring: bool = True,
     verbose: bool = True,
+    network_budget_s: float = NETWORK_TIME_BUDGET_S,
 ) -> tuple[pd.DataFrame, str]:
     """
     Build the accessibility table for all 680 suburbs.
@@ -948,7 +950,9 @@ def build(
     cost_min = straight_line_minutes(dist_km, speed_kmh)
     if use_network:
         try:
-            cost_min = network_travel_minutes(suburbs, practices)
+            cost_min = network_travel_minutes(
+                suburbs, practices, budget_s=network_budget_s
+            )
             method = METHOD_NETWORK
         except NetworkTooSlow as exc:
             if verbose:
@@ -1382,6 +1386,10 @@ def main() -> None:
     parser.add_argument("--sensitivity", action="store_true", help="also run sensitivity")
     parser.add_argument("--calibrate", action="store_true",
                         help="re-measure the straight-line to drive-time constant")
+    parser.add_argument("--network-budget", type=float, default=None, metavar="MIN",
+                        help="minutes allowed for road-network routing before falling "
+                             "back; the default 25 was a build-time constraint, raise it "
+                             "to actually route")
     parser.add_argument("--no-network", action="store_true",
                         help="skip the road-network attempt entirely")
     parser.add_argument("--no-ring", action="store_true",
@@ -1402,7 +1410,10 @@ def main() -> None:
 
     run_tests()
     print()
-    frame, method = build(use_network=not args.no_network, use_ring=not args.no_ring)
+    budget_s = (args.network_budget * 60.0 if args.network_budget
+                else NETWORK_TIME_BUDGET_S)
+    frame, method = build(use_network=not args.no_network, use_ring=not args.no_ring,
+                          network_budget_s=budget_s)
     print(f"travel_cost_method = {method}")
     print(f"decay: general cutoff {GENERAL_CUTOFF_MIN:g} min {GENERAL_ZONES}")
     print(f"       senior  cutoff {SENIOR_CUTOFF_MIN:g} min {SENIOR_ZONES}")

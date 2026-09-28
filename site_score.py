@@ -24,8 +24,9 @@ is a secondary column, never ranked on by default.
 
 D4: :data:`NUVO_SITES` is the operator's published list (nuvohealth.com.au, retrieved
 2026-09-23); brand-string matching found 6 of 18 centres, understating the exclusion
-set threefold. CONFIRM WITH THE CLIENT - a listing can lag an opening or closure, and
-exclusion is at GP-CATCHMENT level: a clinic 1 km away in the next suburb cannibalises.
+set threefold. The list is UNVERIFIED - a public page can lag an opening or closure, and
+this project has no relationship with the operator. Exclusion is at GP-CATCHMENT level: a
+clinic 1 km away in the next suburb cannibalises.
 
 D5: supply is practices per capita via accessibility; the scraped ``total_gp`` is never
 a RANKING input, and no FTE source exists below SA3 (roughly 14 suburbs per unit). One
@@ -90,7 +91,7 @@ LISA_CSV = EDA_DIR / "lisa_site_score.csv"
 NUVO_UNVERIFIED_NOTE = (
     "site list from nuvohealth.com.au/medical-centres/ retrieved 2026-09-23; "
     "15 of 18 GP centres map to an ABS suburb, the other 3 are precinct names whose "
-    "catchments are already covered; confirm with client before acting"
+    "catchments are already covered; unverified, a public page can lag an opening"
 )
 
 SOURCE_NOTE = (

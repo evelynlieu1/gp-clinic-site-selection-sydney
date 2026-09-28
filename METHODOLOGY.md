@@ -87,8 +87,9 @@ Nuvo's own sites are excluded at GP-catchment level, not by suburb name, because
 suburb cannibalises just as effectively. The list is the operator's published listing of 18 centres (15 map to ABS
 suburbs; 3 are precinct names in catchments the 15 already cover), retrieved 2026-09-23 from nuvohealth.com.au,
 and it removes 145 suburbs across 10 of the 46 GP catchments the study touches — 134 of them otherwise eligible.
-**The list is unverified**: every output row carries a confirm-with-client note, and no site should be picked
-before the client confirms it.
+**The list is unverified**: it was read off the operator's public website, every output row says so, and a
+public page can lag an opening or a closure. This project has no relationship with Nuvo Health; the list would
+need confirming with the operator before anyone acted on it.
 
 That leaves 443 ranked suburbs, with `catchment_rank` and `best_in_catchment` flagging the cases where two of them
 are really one opportunity — Caringbah South at rank 2 sits in Cronulla's own catchment.
@@ -403,7 +404,7 @@ The guard is load-bearing: turning it off replaces 4 of the baseline top 10 (Dee
 
 `NUVO_SITES` is taken from nuvohealth.com.au/medical-centres/, retrieved 2026-09-23: 18 GP centres, of which 15 map to ABS suburbs and 3 are precinct names (Green Square, Harold Park, Birkenhead) whose catchments the listed 15 already cover. Exclusion is at GP-catchment level, so this removes 145 suburbs across 10 catchments from contention.
 
-Nothing in the repository can confirm it. Neither the clinic scrape nor the Geoscience Australia register records a brand owner — the superseded brand-string match found only 6 of the 18 centres. A public listing can also lag an opening or a closure. `site_score.py` stamps every output row with a confirm-with-client note for this reason. No site should be picked before the client confirms the list.
+Nothing in the repository can confirm it. Neither the clinic scrape nor the Geoscience Australia register records a brand owner — the superseded brand-string match found only 6 of the 18 centres. A public listing can also lag an opening or a closure. `site_score.py` stamps every output row with an unverified note for this reason. This is an independent analysis with no access to the operator, so the list cannot be confirmed from inside the project.
 
 ## What this model is not
 

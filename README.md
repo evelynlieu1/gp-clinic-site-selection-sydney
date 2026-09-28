@@ -9,6 +9,12 @@ with the evidence that exposed it.**
 
 ---
 
+> **Independent case study.** This analysis has no affiliation with, and was not
+> commissioned by, Nuvo Health. It uses only public data: the Healthdirect practice
+> register, Department of Health catchment and priority-area files, ABS Census and
+> boundary data, and the operator's own published list of clinic locations. Nothing here
+> should be read as their position or as advice given to them.
+
 ## The short version
 
 The original top 10 had **7 suburbs that had never returned any supply data at all.**

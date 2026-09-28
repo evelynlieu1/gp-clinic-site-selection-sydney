@@ -1,7 +1,7 @@
 """
 Distribution Priority Area (DPA) status for the 680 Greater Sydney project suburbs.
 
-DPA is a recruitment-cost lever, not a demand signal. Inside a DPA the client can
+DPA is a recruitment-cost lever, not a demand signal. Inside a DPA an operator can
 employ doctors restricted under s19AB of the Health Insurance Act 1973 (international
 medical graduates and foreign graduates of accredited medical schools); outside one it
 must compete for unrestricted local GPs, which is slower and dearer.

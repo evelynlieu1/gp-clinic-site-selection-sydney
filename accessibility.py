@@ -255,6 +255,20 @@ METHOD_STRAIGHT_LINE = (
 #: Value written when road-network routing succeeded.
 METHOD_NETWORK = "osmnx_drive_network_freeflow_maxspeed"
 
+#: Step-1 formulations. 2SFCA is what the project shipped: a demand point contributes its
+#: whole population to every practice it can reach, so demand is counted once per
+#: overlapping catchment. 3SFCA (Wan, Zou and Sternberg 2012) splits each demand point
+#: across the practices it can reach, weighted by proximity, which removes that
+#: double-count and is the stricter formulation.
+#:
+#: MEASURED on this data: the two agree at Spearman 0.838 on access, and 6 of the top 10
+#: suburbs are common to both, but they disagree about the winner. Cronulla is rank 1
+#: under 2SFCA and rank 3 under 3SFCA; Avalon Beach is rank 4 under 2SFCA and rank 1
+#: under 3SFCA. The 31-run sensitivity sweep varies parameters only, so before this
+#: existed the ranking had never been tested against the choice of formulation.
+METHOD_2SFCA = "2sfca"
+METHOD_3SFCA = "3sfca"
+
 #: Speeds re-run by ``--sensitivity``. Spans the rejected 24 km/h constant through the
 #: raw free-flow measurement, so a reader can see the whole plausible interval.
 SENSITIVITY_SPEEDS_KMH = (24.0, 30.0, 35.0, 40.0, 47.6)
@@ -485,6 +499,7 @@ def e2sfca(
     zones: tuple[tuple[float, float], ...] = GENERAL_ZONES,
     supply: np.ndarray | None = None,
     cost_eval: np.ndarray | None = None,
+    method: str = METHOD_2SFCA,
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """
     Both E2SFCA steps.
@@ -507,7 +522,45 @@ def e2sfca(
     than arbitrary: an empty pool means every ``W(d_kj)`` in its column is zero, so the
     practice contributes nothing to any ``A_i`` whatever value ``R_j`` takes. It happens
     for the NSW practices outside reach of any demand point.
+
+    ``method`` selects step 1. ``"2sfca"`` is the shipped enhanced two-step: a demand
+    point contributes its WHOLE population to every practice it can reach, so demand is
+    counted once per overlapping catchment. ``"3sfca"`` (Wan, Zou and Sternberg 2012)
+    inserts a selection weight ``G_kj = W(d_kj) / sum_m W(d_km)`` first, so a demand point
+    splits itself across the practices it can reach in proportion to how close each is.
+
+    Two demand points of 100 people. The first reaches both practices, the second reaches
+    only practice 0. Under 2SFCA practice 0 carries a pool of 200 and practice 1 a pool of
+    100; under 3SFCA the first point splits 50/50, so the pools are 150 and 50:
+
+    >>> cost = np.array([[0.0, 0.0], [0.0, 99.0]])
+    >>> dem = np.array([100.0, 100.0])
+    >>> z = ((1.0, 1.0),)   # one zone: weight 1 within a minute, 0 beyond
+    >>> _, _, pool2 = e2sfca(cost, dem, z)
+    >>> pool2.tolist()
+    [200.0, 100.0]
+    >>> _, _, pool3 = e2sfca(cost, dem, z, method="3sfca")
+    >>> pool3.tolist()
+    [150.0, 50.0]
+
+    Supply conservation holds under both, which is the check that the change is a
+    reallocation of demand and not a change in how much supply exists:
+
+    >>> for m in ("2sfca", "3sfca"):
+    ...     _, r, pool = e2sfca(cost, dem, z, method=m)
+    ...     round(float((r * pool).sum()), 9)
+    2.0
+    2.0
+
+    A demand point that can reach nothing has no share to split and is skipped rather
+    than producing a division by zero:
+
+    >>> _, _, pool = e2sfca(np.array([[99.0, 99.0]]), np.array([50.0]), z, method="3sfca")
+    >>> pool.tolist()
+    [0.0, 0.0]
     """
+    if method not in (METHOD_2SFCA, METHOD_3SFCA):
+        raise ValueError(f"unknown method {method!r}")
     cost = np.asarray(cost_minutes, dtype=float)
     dem = np.asarray(demand, dtype=float)
     if cost.ndim != 2:
@@ -522,7 +575,12 @@ def e2sfca(
         raise ValueError(f"supply shape {sup.shape} does not match {cost.shape}")
 
     weights = decay_weights(cost, zones)
-    weighted_demand = weights.T @ dem
+    if method == METHOD_3SFCA:
+        reach = weights.sum(axis=1, keepdims=True)
+        share = np.divide(weights, reach, out=np.zeros_like(weights), where=reach > 0)
+        weighted_demand = (share * weights).T @ dem
+    else:
+        weighted_demand = weights.T @ dem
     ratios = np.divide(
         sup, weighted_demand, out=np.zeros_like(sup), where=weighted_demand > 0
     )

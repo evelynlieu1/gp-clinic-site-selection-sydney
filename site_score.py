@@ -18,7 +18,7 @@ operational            0.10  pharmacy co-location plus DPA status
 ===================  ======  ==================================================
 
 The recommendation is the robust core, not the point ranking: :func:`run_sensitivity`
-re-ranks under 31 perturbations and reports the suburbs that stay top 10 under every
+re-ranks under 32 perturbations and reports the suburbs that stay top 10 under every
 one. D3: the primary lens is COMMERCIAL mixed billing; :func:`community_need_income_fit`
 is a secondary column, never ranked on by default.
 
@@ -608,6 +608,10 @@ class ScoreConfig:
     #: Access criterion scaling: rank percentile (default) or min-max on the P2 to P98
     #: winsorised range. Both run, so the choice is measured rather than argued.
     access_scaling: str = "rank_percentile"
+    #: Step-1 formulation, ``2sfca`` (shipped) or ``3sfca``. See
+    #: :data:`accessibility.METHOD_3SFCA`: the two disagree about the winner, so the
+    #: choice is a sensitivity family rather than a settled decision.
+    access_method: str = accessibility.METHOD_2SFCA
     #: D5 headcount demotion guard; 0.0 disables it, which is one of the sensitivity runs
     #: so a robust core that depends on the guard is visible rather than assumed.
     headcount_guard_strength: float = HEADCOUNT_GUARD_STRENGTH
@@ -653,7 +657,7 @@ class Inputs:
     """
     Everything loaded from disk once, plus the expensive geometry.
 
-    Matrices and the demand ring never vary with :class:`ScoreConfig`, so the 31-run
+    Matrices and the demand ring never vary with :class:`ScoreConfig`, so the 32-run
     sweep builds them once; surfaces vary with speed and cutoff, so are memoised.
     """
 
@@ -670,15 +674,21 @@ class Inputs:
         default_factory=dict
     )
 
-    def surface(self, speed_kmh: float, cutoff_min: float) -> tuple[np.ndarray, np.ndarray]:
-        """``(access_general, catchment_weighted_demand)`` for one speed and cutoff."""
-        key = (float(speed_kmh), float(cutoff_min))
+    def surface(
+        self,
+        speed_kmh: float,
+        cutoff_min: float,
+        method: str = accessibility.METHOD_2SFCA,
+    ) -> tuple[np.ndarray, np.ndarray]:
+        """``(access_general, catchment_weighted_demand)`` for one speed, cutoff, method."""
+        key = (float(speed_kmh), float(cutoff_min), str(method))
         if key not in self._surfaces:
             self._surfaces[key] = self._build_surface(*key)
         return self._surfaces[key]
 
     def _build_surface(
-        self, speed_kmh: float, cutoff_min: float
+        self, speed_kmh: float, cutoff_min: float,
+        method: str = accessibility.METHOD_2SFCA,
     ) -> tuple[np.ndarray, np.ndarray]:
         base = accessibility.EFFECTIVE_STRAIGHT_LINE_SPEED_KMH
         rescale = base / speed_kmh  # cost is linear in 1/speed
@@ -695,7 +705,7 @@ class Inputs:
         cost_demand = np.vstack([cost_sites, self.ring_cost_min * rescale])
         demand_vec = np.concatenate([pop, self.ring_population])
         access, _, _ = accessibility.e2sfca(
-            cost_demand, demand_vec, zones, cost_eval=cost_sites
+            cost_demand, demand_vec, zones, cost_eval=cost_sites, method=method
         )
 
         # Catchment demand: the senior-weighted pool a clinic AT this suburb would see,
@@ -926,7 +936,9 @@ def score(inputs: Inputs, config: ScoreConfig | None = None) -> pd.DataFrame:
     """
     cfg = config or ScoreConfig()
     out = inputs.frame.copy()
-    access, catchment = inputs.surface(cfg.speed_kmh, cfg.general_cutoff_min)
+    access, catchment = inputs.surface(
+        cfg.speed_kmh, cfg.general_cutoff_min, cfg.access_method
+    )
 
     out["access_general_scored"] = np.round(access, 6)
     out["catchment_weighted_demand"] = np.round(catchment, 0)
@@ -1061,7 +1073,7 @@ def perturbations(base: ScoreConfig | None = None) -> list[tuple[str, str, Score
 
     >>> labels = [lab for _, lab, _ in perturbations()]
     >>> len(labels), len(set(labels))
-    (31, 31)
+    (32, 32)
     >>> "weight access_gap x0.5" in labels, "cutoff 25 min" in labels
     (True, True)
     """
@@ -1109,7 +1121,13 @@ def perturbations(base: ScoreConfig | None = None) -> list[tuple[str, str, Score
     out.append(("scaling", "access winsorised minmax",
                 replace(cfg, access_scaling="winsorised_minmax")))
 
-    # 8. D5 headcount guard. Includes OFF, so the sweep answers whether the robust core
+    # 8. Step-1 formulation. The other families vary a parameter inside one model; this
+    # one varies the model. Before it existed the ranking had never been tested against
+    # the choice of formulation, and the two formulations disagree about rank 1.
+    out.append(("method", "3SFCA demand competition",
+                replace(cfg, access_method=accessibility.METHOD_3SFCA)))
+
+    # 9. D5 headcount guard. Includes OFF, so the sweep answers whether the robust core
     # survives without the guard as well as with it.
     for strength, tag in ((0.0, "off"), (0.25, "0.25"), (0.75, "0.75")):
         out.append(("guard", f"headcount guard {tag}",

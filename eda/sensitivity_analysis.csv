@@ -19719,6 +19719,686 @@ access winsorised minmax,scaling,Yarrawarrah,0.521828,123,True,False
 access winsorised minmax,scaling,Yennora,0.04889,440,True,False
 access winsorised minmax,scaling,Yowie Bay,0.436682,206,True,False
 access winsorised minmax,scaling,Zetland,0.509971,,False,False
+3SFCA demand competition,method,Abbotsbury,0.49831,206,True,False
+3SFCA demand competition,method,Abbotsford,0.405967,,False,False
+3SFCA demand competition,method,Acacia Gardens,0.491587,209,True,False
+3SFCA demand competition,method,Agnes Banks,0.643529,,False,False
+3SFCA demand competition,method,Airds,0.316622,366,True,False
+3SFCA demand competition,method,Alexandria,0.46246,,False,False
+3SFCA demand competition,method,Alfords Point,0.362292,324,True,False
+3SFCA demand competition,method,Allambie Heights,0.667768,44,True,False
+3SFCA demand competition,method,Allawah,0.354972,332,True,False
+3SFCA demand competition,method,Ambarvale,0.470324,232,True,False
+3SFCA demand competition,method,Angus,0.447748,,False,False
+3SFCA demand competition,method,Annandale,0.475475,,False,False
+3SFCA demand competition,method,Annangrove,0.445799,256,True,False
+3SFCA demand competition,method,Arcadia,0.499119,205,True,False
+3SFCA demand competition,method,Arncliffe,0.547199,159,True,False
+3SFCA demand competition,method,Arndell Park,0.218235,,False,False
+3SFCA demand competition,method,Artarmon,0.582831,,False,False
+3SFCA demand competition,method,Ashbury,0.316904,365,True,False
+3SFCA demand competition,method,Ashcroft,0.22426,418,True,False
+3SFCA demand competition,method,Ashfield,0.47729,224,True,False
+3SFCA demand competition,method,Asquith,0.516826,184,True,False
+3SFCA demand competition,method,Auburn,0.354522,333,True,False
+3SFCA demand competition,method,Austral,0.538913,170,True,False
+3SFCA demand competition,method,Avalon Beach,0.861137,1,True,True
+3SFCA demand competition,method,Badgerys Creek,0.411176,,False,False
+3SFCA demand competition,method,Balgowlah,0.558921,,False,False
+3SFCA demand competition,method,Balgowlah Heights,0.260507,,False,False
+3SFCA demand competition,method,Balmain,0.434189,,False,False
+3SFCA demand competition,method,Balmain East,0.252023,,False,False
+3SFCA demand competition,method,Bangor,0.503911,199,True,False
+3SFCA demand competition,method,Banksia,0.348995,337,True,False
+3SFCA demand competition,method,Banksmeadow,0.461727,,False,False
+3SFCA demand competition,method,Bankstown,0.358824,327,True,False
+3SFCA demand competition,method,Bankstown Aerodrome,0.335606,,False,False
+3SFCA demand competition,method,Barangaroo,0.082353,,False,False
+3SFCA demand competition,method,Barden Ridge,0.423712,269,True,False
+3SFCA demand competition,method,Bardia,0.545116,162,True,False
+3SFCA demand competition,method,Bardwell Park,0.356078,330,True,False
+3SFCA demand competition,method,Bardwell Valley,0.363709,321,True,False
+3SFCA demand competition,method,Bass Hill,0.264177,399,True,False
+3SFCA demand competition,method,Baulkham Hills,0.705743,25,True,False
+3SFCA demand competition,method,Bayview,0.540679,168,True,False
+3SFCA demand competition,method,Beacon Hill,0.636074,69,True,False
+3SFCA demand competition,method,Beaconsfield,0.25461,,False,False
+3SFCA demand competition,method,Beaumont Hills,0.507774,194,True,False
+3SFCA demand competition,method,Beecroft,0.617498,,False,False
+3SFCA demand competition,method,Belfield,0.263529,400,True,False
+3SFCA demand competition,method,Bella Vista,0.27557,396,True,False
+3SFCA demand competition,method,Bellevue Hill,0.424847,,False,False
+3SFCA demand competition,method,Belmore,0.338135,348,True,False
+3SFCA demand competition,method,Belrose,0.678106,37,True,False
+3SFCA demand competition,method,Berala,0.254722,406,True,False
+3SFCA demand competition,method,Berkshire Park,0.58101,125,True,False
+3SFCA demand competition,method,Berowra,0.663318,47,True,False
+3SFCA demand competition,method,Berowra Heights,0.564156,144,True,False
+3SFCA demand competition,method,Berowra Waters,0.530054,,False,False
+3SFCA demand competition,method,Berrilee,0.638235,,False,False
+3SFCA demand competition,method,Beverley Park,0.46301,240,True,False
+3SFCA demand competition,method,Beverly Hills,0.464591,237,True,False
+3SFCA demand competition,method,Bexley,0.550706,156,True,False
+3SFCA demand competition,method,Bexley North,0.277141,395,True,False
+3SFCA demand competition,method,Bidwill,0.152582,434,True,False
+3SFCA demand competition,method,Bilgola Beach,0.423249,,False,False
+3SFCA demand competition,method,Bilgola Plateau,0.65133,57,True,False
+3SFCA demand competition,method,Birchgrove,0.084886,,False,False
+3SFCA demand competition,method,Birrong,0.12,438,True,False
+3SFCA demand competition,method,Blackett,0.180818,426,True,False
+3SFCA demand competition,method,Blacktown,0.599966,108,True,False
+3SFCA demand competition,method,Blair Athol,0.611961,88,True,False
+3SFCA demand competition,method,Blairmount,0.424221,,False,False
+3SFCA demand competition,method,Blakehurst,0.558442,150,True,False
+3SFCA demand competition,method,Bligh Park,0.630714,75,True,False
+3SFCA demand competition,method,Bondi,0.578335,,False,False
+3SFCA demand competition,method,Bondi Beach,0.647258,,False,False
+3SFCA demand competition,method,Bondi Junction,0.540773,,False,False
+3SFCA demand competition,method,Bonnet Bay,0.417468,274,True,False
+3SFCA demand competition,method,Bonnyrigg,0.414892,277,True,False
+3SFCA demand competition,method,Bonnyrigg Heights,0.521025,181,True,False
+3SFCA demand competition,method,Bossley Park,0.483512,217,True,False
+3SFCA demand competition,method,Botany,0.639099,68,True,False
+3SFCA demand competition,method,Bow Bowing,0.603808,101,True,False
+3SFCA demand competition,method,Box Hill,0.490944,210,True,False
+3SFCA demand competition,method,Bradbury,0.559071,149,True,False
+3SFCA demand competition,method,Breakfast Point,0.441543,,False,False
+3SFCA demand competition,method,Brighton-Le-Sands,0.329529,355,True,False
+3SFCA demand competition,method,Bringelly,0.503122,201,True,False
+3SFCA demand competition,method,Bronte,0.293447,,False,False
+3SFCA demand competition,method,Brooklyn,0.452959,,False,False
+3SFCA demand competition,method,Brookvale,0.455882,244,True,False
+3SFCA demand competition,method,Bundeena,0.391169,301,True,False
+3SFCA demand competition,method,Bungarribee,0.479131,222,True,False
+3SFCA demand competition,method,Burraneer,0.311806,371,True,False
+3SFCA demand competition,method,Burwood,0.378534,313,True,False
+3SFCA demand competition,method,Burwood Heights,0.325287,358,True,False
+3SFCA demand competition,method,Busby,0.174607,428,True,False
+3SFCA demand competition,method,Cabarita,0.356234,,False,False
+3SFCA demand competition,method,Cabramatta,0.446471,255,True,False
+3SFCA demand competition,method,Cabramatta West,0.324788,359,True,False
+3SFCA demand competition,method,Caddens,0.600307,107,True,False
+3SFCA demand competition,method,Cambridge Gardens,0.523761,179,True,False
+3SFCA demand competition,method,Cambridge Park,0.451931,248,True,False
+3SFCA demand competition,method,Camden,0.28076,393,True,False
+3SFCA demand competition,method,Camden South,0.657087,52,True,False
+3SFCA demand competition,method,Cammeray,0.52774,,False,False
+3SFCA demand competition,method,Campbelltown,0.559437,147,True,False
+3SFCA demand competition,method,Camperdown,0.452806,,False,False
+3SFCA demand competition,method,Campsie,0.33834,347,True,False
+3SFCA demand competition,method,Canada Bay,0.313585,,False,False
+3SFCA demand competition,method,Canley Heights,0.397191,293,True,False
+3SFCA demand competition,method,Canley Vale,0.334751,352,True,False
+3SFCA demand competition,method,Canoelands,0.677353,,False,False
+3SFCA demand competition,method,Canterbury,0.369907,316,True,False
+3SFCA demand competition,method,Caringbah,0.598515,109,True,False
+3SFCA demand competition,method,Caringbah South,0.817409,8,True,True
+3SFCA demand competition,method,Carlingford,0.677353,38,True,False
+3SFCA demand competition,method,Carlton,0.515797,185,True,False
+3SFCA demand competition,method,Carnes Hill,0.39932,288,True,False
+3SFCA demand competition,method,Carramar,0.107436,440,True,False
+3SFCA demand competition,method,Carss Park,0.480637,221,True,False
+3SFCA demand competition,method,Cartwright,0.258824,402,True,False
+3SFCA demand competition,method,Castle Cove,0.226741,,False,False
+3SFCA demand competition,method,Castle Hill,0.676704,39,True,False
+3SFCA demand competition,method,Castlecrag,0.139199,,False,False
+3SFCA demand competition,method,Castlereagh,0.608824,90,True,False
+3SFCA demand competition,method,Casula,0.606002,96,True,False
+3SFCA demand competition,method,Catherine Field,0.591176,115,True,False
+3SFCA demand competition,method,Cattai,0.667501,,False,False
+3SFCA demand competition,method,Cawdor,0.66,,False,False
+3SFCA demand competition,method,Cecil Hills,0.632101,74,True,False
+3SFCA demand competition,method,Cecil Park,0.565882,,False,False
+3SFCA demand competition,method,Centennial Park,0.363045,,False,False
+3SFCA demand competition,method,Chatswood,0.658779,,False,False
+3SFCA demand competition,method,Chatswood West,0.290994,,False,False
+3SFCA demand competition,method,Cheltenham,0.19555,,False,False
+3SFCA demand competition,method,Cherrybrook,0.745427,14,True,False
+3SFCA demand competition,method,Chester Hill,0.334443,353,True,False
+3SFCA demand competition,method,Chifley,0.518801,,False,False
+3SFCA demand competition,method,Chippendale,0.181666,,False,False
+3SFCA demand competition,method,Chipping Norton,0.503038,202,True,False
+3SFCA demand competition,method,Chiswick,0.332603,,False,False
+3SFCA demand competition,method,Chullora,0.055493,,False,False
+3SFCA demand competition,method,Church Point,0.484361,216,True,False
+3SFCA demand competition,method,Claremont Meadows,0.486797,215,True,False
+3SFCA demand competition,method,Clarendon,0.410726,,False,False
+3SFCA demand competition,method,Clareville,0.633786,,False,False
+3SFCA demand competition,method,Claymore,0.314677,368,True,False
+3SFCA demand competition,method,Clemton Park,0.219283,420,True,False
+3SFCA demand competition,method,Clontarf,0.24373,,False,False
+3SFCA demand competition,method,Clovelly,0.240918,,False,False
+3SFCA demand competition,method,Clyde,0.129321,,False,False
+3SFCA demand competition,method,Coasters Retreat,0.658824,,False,False
+3SFCA demand competition,method,Cobbitty,0.634485,71,True,False
+3SFCA demand competition,method,Colebee,0.396915,294,True,False
+3SFCA demand competition,method,Collaroy,0.760163,12,True,False
+3SFCA demand competition,method,Collaroy Plateau,0.493338,208,True,False
+3SFCA demand competition,method,Colyton,0.478146,223,True,False
+3SFCA demand competition,method,Como,0.395279,298,True,False
+3SFCA demand competition,method,Concord,0.578612,,False,False
+3SFCA demand competition,method,Concord West,0.473498,,False,False
+3SFCA demand competition,method,Condell Park,0.389282,303,True,False
+3SFCA demand competition,method,Connells Point,0.442822,258,True,False
+3SFCA demand competition,method,Constitution Hill,0.248352,,False,False
+3SFCA demand competition,method,Coogee,0.644618,,False,False
+3SFCA demand competition,method,Cornwallis,0.516904,,False,False
+3SFCA demand competition,method,Cottage Point,0.651765,,False,False
+3SFCA demand competition,method,Cowan,0.664118,,False,False
+3SFCA demand competition,method,Cranebrook,0.835141,7,True,True
+3SFCA demand competition,method,Cremorne,0.626012,,False,False
+3SFCA demand competition,method,Cremorne Point,0.357019,,False,False
+3SFCA demand competition,method,Cromer,0.724956,20,True,False
+3SFCA demand competition,method,Cronulla,0.849265,3,True,True
+3SFCA demand competition,method,Crows Nest,0.388474,,False,False
+3SFCA demand competition,method,Croydon,0.528001,174,True,False
+3SFCA demand competition,method,Croydon Park,0.39841,290,True,False
+3SFCA demand competition,method,Cumberland Reach,0.677353,,False,False
+3SFCA demand competition,method,Curl Curl,0.330264,354,True,False
+3SFCA demand competition,method,Currans Hill,0.628982,77,True,False
+3SFCA demand competition,method,Daceyville,0.166778,430,True,False
+3SFCA demand competition,method,Dangar Island,0.547636,,False,False
+3SFCA demand competition,method,Darling Point,0.26351,,False,False
+3SFCA demand competition,method,Darlinghurst,0.498613,,False,False
+3SFCA demand competition,method,Darlington,0.322941,,False,False
+3SFCA demand competition,method,Davidson,0.223002,419,True,False
+3SFCA demand competition,method,Dawes Point,0.089237,,False,False
+3SFCA demand competition,method,Dean Park,0.409537,282,True,False
+3SFCA demand competition,method,Dee Why,0.729593,18,True,False
+3SFCA demand competition,method,Denham Court,0.660807,49,True,False
+3SFCA demand competition,method,Denistone,0.432286,264,True,False
+3SFCA demand competition,method,Denistone East,0.45177,249,True,False
+3SFCA demand competition,method,Denistone West,0.431256,,False,False
+3SFCA demand competition,method,Dharruk,0.311639,372,True,False
+3SFCA demand competition,method,Dolans Bay,0.322759,,False,False
+3SFCA demand competition,method,Dolls Point,0.322162,362,True,False
+3SFCA demand competition,method,Doonside,0.45461,246,True,False
+3SFCA demand competition,method,Double Bay,0.320469,,False,False
+3SFCA demand competition,method,Dover Heights,0.237086,,False,False
+3SFCA demand competition,method,Drummoyne,0.534903,,False,False
+3SFCA demand competition,method,Duffys Forest,0.344706,,False,False
+3SFCA demand competition,method,Dulwich Hill,0.548666,157,True,False
+3SFCA demand competition,method,Dundas,0.388255,305,True,False
+3SFCA demand competition,method,Dundas Valley,0.357796,329,True,False
+3SFCA demand competition,method,Dural,0.541406,166,True,False
+3SFCA demand competition,method,Eagle Vale,0.368658,318,True,False
+3SFCA demand competition,method,Earlwood,0.596041,112,True,False
+3SFCA demand competition,method,East Hills,0.370853,315,True,False
+3SFCA demand competition,method,East Killara,0.3902,302,True,False
+3SFCA demand competition,method,East Kurrajong,0.665882,,False,False
+3SFCA demand competition,method,East Lindfield,0.285854,391,True,False
+3SFCA demand competition,method,East Ryde,0.228627,416,True,False
+3SFCA demand competition,method,Eastern Creek,0.2578,,False,False
+3SFCA demand competition,method,Eastgardens,0.395882,295,True,False
+3SFCA demand competition,method,Eastlakes,0.229206,415,True,False
+3SFCA demand competition,method,Eastwood,0.567423,140,True,False
+3SFCA demand competition,method,Ebenezer,0.672353,,False,False
+3SFCA demand competition,method,Edensor Park,0.525259,178,True,False
+3SFCA demand competition,method,Edgecliff,0.354706,,False,False
+3SFCA demand competition,method,Edmondson Park,0.694981,30,True,False
+3SFCA demand competition,method,Elanora Heights,0.419179,272,True,False
+3SFCA demand competition,method,Elderslie,0.600752,105,True,False
+3SFCA demand competition,method,Elizabeth Bay,0.418013,,False,False
+3SFCA demand competition,method,Elizabeth Hills,0.506596,196,True,False
+3SFCA demand competition,method,Ellis Lane,0.617647,,False,False
+3SFCA demand competition,method,Elvina Bay,0.573103,,False,False
+3SFCA demand competition,method,Emerton,0.202647,423,True,False
+3SFCA demand competition,method,Emu Heights,0.653529,55,True,False
+3SFCA demand competition,method,Emu Plains,0.497476,207,True,False
+3SFCA demand competition,method,Enfield,0.157168,432,True,False
+3SFCA demand competition,method,Engadine,0.712984,24,True,False
+3SFCA demand competition,method,Englorie Park,0.438089,,False,False
+3SFCA demand competition,method,Enmore,0.320882,363,True,False
+3SFCA demand competition,method,Epping,0.696008,,False,False
+3SFCA demand competition,method,Ermington,0.555317,151,True,False
+3SFCA demand competition,method,Erskine Park,0.652877,56,True,False
+3SFCA demand competition,method,Erskineville,0.397695,,False,False
+3SFCA demand competition,method,Eschol Park,0.467492,235,True,False
+3SFCA demand competition,method,Eveleigh,0.060803,,False,False
+3SFCA demand competition,method,Fairfield,0.364706,319,True,False
+3SFCA demand competition,method,Fairfield East,0.153288,433,True,False
+3SFCA demand competition,method,Fairfield Heights,0.302649,382,True,False
+3SFCA demand competition,method,Fairfield West,0.407346,284,True,False
+3SFCA demand competition,method,Fairlight,0.476975,,False,False
+3SFCA demand competition,method,Fiddletown,0.668235,,False,False
+3SFCA demand competition,method,Five Dock,0.492589,,False,False
+3SFCA demand competition,method,Forest Glen,0.672941,,False,False
+3SFCA demand competition,method,Forest Lodge,0.331717,,False,False
+3SFCA demand competition,method,Forestville,0.612229,87,True,False
+3SFCA demand competition,method,Freemans Reach,0.604706,99,True,False
+3SFCA demand competition,method,Frenchs Forest,0.577679,133,True,False
+3SFCA demand competition,method,Freshwater,0.697328,28,True,False
+3SFCA demand competition,method,Gables,0.446504,254,True,False
+3SFCA demand competition,method,Galston,0.398848,289,True,False
+3SFCA demand competition,method,Georges Hall,0.39953,287,True,False
+3SFCA demand competition,method,Gilead,0.370588,,False,False
+3SFCA demand competition,method,Girraween,0.495537,,False,False
+3SFCA demand competition,method,Gladesville,0.574709,135,True,False
+3SFCA demand competition,method,Glebe,0.34831,,False,False
+3SFCA demand competition,method,Gledswood Hills,0.633201,72,True,False
+3SFCA demand competition,method,Glen Alpine,0.607528,91,True,False
+3SFCA demand competition,method,Glendenning,0.532527,173,True,False
+3SFCA demand competition,method,Glenfield,0.721692,22,True,False
+3SFCA demand competition,method,Glenhaven,0.621157,81,True,False
+3SFCA demand competition,method,Glenmore Park,0.856371,2,True,True
+3SFCA demand competition,method,Glenorie,0.474412,,False,False
+3SFCA demand competition,method,Glenwood,0.658467,50,True,False
+3SFCA demand competition,method,Glossodia,0.482721,218,True,False
+3SFCA demand competition,method,Gordon,0.55178,154,True,False
+3SFCA demand competition,method,Grantham Farm,0.579876,128,True,False
+3SFCA demand competition,method,Granville,0.413624,279,True,False
+3SFCA demand competition,method,Grasmere,0.461424,241,True,False
+3SFCA demand competition,method,Grays Point,0.46345,239,True,False
+3SFCA demand competition,method,Great Mackerel Beach,0.411765,,False,False
+3SFCA demand competition,method,Green Valley,0.583602,122,True,False
+3SFCA demand competition,method,Greenacre,0.358683,328,True,False
+3SFCA demand competition,method,Greendale,0.601633,,False,False
+3SFCA demand competition,method,Greenfield Park,0.242568,411,True,False
+3SFCA demand competition,method,Greenhills Beach,0.282304,392,True,False
+3SFCA demand competition,method,Greenwich,0.407128,,False,False
+3SFCA demand competition,method,Gregory Hills,0.753364,13,True,False
+3SFCA demand competition,method,Greystanes,0.591812,114,True,False
+3SFCA demand competition,method,Grose Vale,0.662941,,False,False
+3SFCA demand competition,method,Grose Wold,0.655882,,False,False
+3SFCA demand competition,method,Guildford,0.384706,306,True,False
+3SFCA demand competition,method,Guildford West,0.194018,424,True,False
+3SFCA demand competition,method,Gymea,0.546173,161,True,False
+3SFCA demand competition,method,Gymea Bay,0.583875,121,True,False
+3SFCA demand competition,method,Haberfield,0.425043,268,True,False
+3SFCA demand competition,method,Hammondville,0.294743,386,True,False
+3SFCA demand competition,method,Harrington Park,0.686463,33,True,False
+3SFCA demand competition,method,Harris Park,0.23225,,False,False
+3SFCA demand competition,method,Hassall Grove,0.475521,226,True,False
+3SFCA demand competition,method,Haymarket,0.355349,,False,False
+3SFCA demand competition,method,Heathcote,0.729961,17,True,False
+3SFCA demand competition,method,Hebersham,0.343166,341,True,False
+3SFCA demand competition,method,Heckenberg,0.216468,421,True,False
+3SFCA demand competition,method,Henley,0.146459,,False,False
+3SFCA demand competition,method,Hillsdale,0.309822,376,True,False
+3SFCA demand competition,method,Hinchinbrook,0.607216,92,True,False
+3SFCA demand competition,method,Hobartville,0.513565,187,True,False
+3SFCA demand competition,method,Holroyd,0.312123,370,True,False
+3SFCA demand competition,method,Holsworthy,0.681827,34,True,False
+3SFCA demand competition,method,Homebush,0.541126,167,True,False
+3SFCA demand competition,method,Homebush West,0.435106,261,True,False
+3SFCA demand competition,method,Horningsea Park,0.38281,308,True,False
+3SFCA demand competition,method,Hornsby,0.605053,98,True,False
+3SFCA demand competition,method,Hornsby Heights,0.646764,60,True,False
+3SFCA demand competition,method,Horsley Park,0.525294,177,True,False
+3SFCA demand competition,method,Hoxton Park,0.489899,211,True,False
+3SFCA demand competition,method,Hunters Hill,0.30279,381,True,False
+3SFCA demand competition,method,Huntleys Cove,0.367949,,False,False
+3SFCA demand competition,method,Huntleys Point,0.113462,,False,False
+3SFCA demand competition,method,Hurlstone Park,0.368828,317,True,False
+3SFCA demand competition,method,Hurstville,0.481196,220,True,False
+3SFCA demand competition,method,Hurstville Grove,0.439836,259,True,False
+3SFCA demand competition,method,Illawong,0.565907,143,True,False
+3SFCA demand competition,method,Ingleburn,0.451059,251,True,False
+3SFCA demand competition,method,Ingleside,0.607059,93,True,False
+3SFCA demand competition,method,Jamisontown,0.2788,394,True,False
+3SFCA demand competition,method,Jannali,0.621105,82,True,False
+3SFCA demand competition,method,Jordan Springs,0.726955,19,True,False
+3SFCA demand competition,method,Kangaroo Point,0.228588,,False,False
+3SFCA demand competition,method,Kareela,0.395065,299,True,False
+3SFCA demand competition,method,Kearns,0.522169,180,True,False
+3SFCA demand competition,method,Kellyville,0.679754,35,True,False
+3SFCA demand competition,method,Kellyville Ridge,0.618418,83,True,False
+3SFCA demand competition,method,Kemps Creek,0.45278,247,True,False
+3SFCA demand competition,method,Kensington,0.576914,,False,False
+3SFCA demand competition,method,Kenthurst,0.551304,155,True,False
+3SFCA demand competition,method,Kentlyn,0.403123,,False,False
+3SFCA demand competition,method,Killara,0.647312,59,True,False
+3SFCA demand competition,method,Killarney Heights,0.296966,384,True,False
+3SFCA demand competition,method,Kings Langley,0.617939,84,True,False
+3SFCA demand competition,method,Kings Park,0.507921,193,True,False
+3SFCA demand competition,method,Kingsford,0.532816,,False,False
+3SFCA demand competition,method,Kingsgrove,0.510128,190,True,False
+3SFCA demand competition,method,Kingswood,0.401973,286,True,False
+3SFCA demand competition,method,Kirkham,0.389241,,False,False
+3SFCA demand competition,method,Kirrawee,0.611525,89,True,False
+3SFCA demand competition,method,Kirribilli,0.368572,,False,False
+3SFCA demand competition,method,Kogarah,0.541486,165,True,False
+3SFCA demand competition,method,Kogarah Bay,0.474376,228,True,False
+3SFCA demand competition,method,Ku-ring-gai Chase,0.451081,,False,False
+3SFCA demand competition,method,Kurmond,0.579318,,False,False
+3SFCA demand competition,method,Kurnell,0.397778,291,True,False
+3SFCA demand competition,method,Kurraba Point,0.307726,,False,False
+3SFCA demand competition,method,Kurrajong,0.473529,,False,False
+3SFCA demand competition,method,Kurrajong Hills,0.671176,,False,False
+3SFCA demand competition,method,Kyeemagh,0.181207,,False,False
+3SFCA demand competition,method,Kyle Bay,0.364361,320,True,False
+3SFCA demand competition,method,La Perouse,0.392972,,False,False
+3SFCA demand competition,method,Lakemba,0.335642,351,True,False
+3SFCA demand competition,method,Lalor Park,0.363001,323,True,False
+3SFCA demand competition,method,Lane Cove,0.56844,,False,False
+3SFCA demand competition,method,Lane Cove North,0.59946,,False,False
+3SFCA demand competition,method,Lane Cove West,0.373952,,False,False
+3SFCA demand competition,method,Lansvale,0.110372,439,True,False
+3SFCA demand competition,method,Laughtondale,0.495561,,False,False
+3SFCA demand competition,method,Lavender Bay,0.375294,,False,False
+3SFCA demand competition,method,Leets Vale,0.537995,,False,False
+3SFCA demand competition,method,Leichhardt,0.552266,,False,False
+3SFCA demand competition,method,Leonay,0.586135,120,True,False
+3SFCA demand competition,method,Leppington,0.664663,46,True,False
+3SFCA demand competition,method,Lethbridge Park,0.361278,325,True,False
+3SFCA demand competition,method,Leumeah,0.547994,158,True,False
+3SFCA demand competition,method,Lewisham,0.315922,367,True,False
+3SFCA demand competition,method,Liberty Grove,0.401167,,False,False
+3SFCA demand competition,method,Lidcombe,0.504219,198,True,False
+3SFCA demand competition,method,Lilli Pilli,0.304904,380,True,False
+3SFCA demand competition,method,Lilyfield,0.411964,,False,False
+3SFCA demand competition,method,Lindfield,0.571426,138,True,False
+3SFCA demand competition,method,Linley Point,0.147059,,False,False
+3SFCA demand competition,method,Little Bay,0.493243,,False,False
+3SFCA demand competition,method,Liverpool,0.450827,252,True,False
+3SFCA demand competition,method,Llandilo,0.458244,243,True,False
+3SFCA demand competition,method,Loftus,0.587586,119,True,False
+3SFCA demand competition,method,Londonderry,0.644706,63,True,False
+3SFCA demand competition,method,Long Point,0.245448,,False,False
+3SFCA demand competition,method,Longueville,0.071482,,False,False
+3SFCA demand competition,method,Lovett Bay,0.642059,,False,False
+3SFCA demand competition,method,Lower Portland,0.611773,,False,False
+3SFCA demand competition,method,Lucas Heights,0.298235,,False,False
+3SFCA demand competition,method,Luddenham,0.433572,262,True,False
+3SFCA demand competition,method,Lugarno,0.486856,213,True,False
+3SFCA demand competition,method,Lurnea,0.428431,265,True,False
+3SFCA demand competition,method,Macquarie Fields,0.451523,250,True,False
+3SFCA demand competition,method,Macquarie Links,0.418908,273,True,False
+3SFCA demand competition,method,Macquarie Park,0.449291,253,True,False
+3SFCA demand competition,method,Maianbar,0.598308,,False,False
+3SFCA demand competition,method,Malabar,0.30126,,False,False
+3SFCA demand competition,method,Manly,0.676758,,False,False
+3SFCA demand competition,method,Manly Vale,0.520608,182,True,False
+3SFCA demand competition,method,Maraylya,0.657059,53,True,False
+3SFCA demand competition,method,Marayong,0.325876,357,True,False
+3SFCA demand competition,method,Maroota,0.666744,,False,False
+3SFCA demand competition,method,Maroubra,0.669079,,False,False
+3SFCA demand competition,method,Marrickville,0.582353,124,True,False
+3SFCA demand competition,method,Marsden Park,0.603438,103,True,False
+3SFCA demand competition,method,Marsfield,0.583587,123,True,False
+3SFCA demand competition,method,Mascot,0.635477,70,True,False
+3SFCA demand competition,method,Matraville,0.573736,,False,False
+3SFCA demand competition,method,Mays Hill,0.337961,,False,False
+3SFCA demand competition,method,McGraths Hill,0.421471,271,True,False
+3SFCA demand competition,method,McMahons Point,0.362353,,False,False
+3SFCA demand competition,method,Meadowbank,0.359137,326,True,False
+3SFCA demand competition,method,Melonba,0.57854,131,True,False
+3SFCA demand competition,method,Melrose Park,0.412437,280,True,False
+3SFCA demand competition,method,Menai,0.563311,145,True,False
+3SFCA demand competition,method,Menangle Park,0.400366,,False,False
+3SFCA demand competition,method,Merrylands,0.391778,300,True,False
+3SFCA demand competition,method,Merrylands West,0.260901,401,True,False
+3SFCA demand competition,method,Middle Cove,0.2148,,False,False
+3SFCA demand competition,method,Middle Dural,0.501309,203,True,False
+3SFCA demand competition,method,Middleton Grange,0.606833,94,True,False
+3SFCA demand competition,method,Miller,0.178222,427,True,False
+3SFCA demand competition,method,Millers Point,0.216103,,False,False
+3SFCA demand competition,method,Milperra,0.38276,309,True,False
+3SFCA demand competition,method,Milsons Passage,0.417647,,False,False
+3SFCA demand competition,method,Milsons Point,0.188625,,False,False
+3SFCA demand competition,method,Minchinbury,0.625375,80,True,False
+3SFCA demand competition,method,Minto,0.627889,78,True,False
+3SFCA demand competition,method,Minto Heights,0.576471,,False,False
+3SFCA demand competition,method,Miranda,0.722721,21,True,False
+3SFCA demand competition,method,Mona Vale,0.693236,31,True,False
+3SFCA demand competition,method,Monterey,0.327323,356,True,False
+3SFCA demand competition,method,Moore Park,0.090021,,False,False
+3SFCA demand competition,method,Moorebank,0.604378,100,True,False
+3SFCA demand competition,method,Morning Bay,0.494634,,False,False
+3SFCA demand competition,method,Mortdale,0.56223,146,True,False
+3SFCA demand competition,method,Mortlake,0.360294,,False,False
+3SFCA demand competition,method,Mosman,0.632151,,False,False
+3SFCA demand competition,method,Mount Annan,0.646592,61,True,False
+3SFCA demand competition,method,Mount Colah,0.612307,86,True,False
+3SFCA demand competition,method,Mount Druitt,0.571368,139,True,False
+3SFCA demand competition,method,Mount Kuring-Gai,0.475639,225,True,False
+3SFCA demand competition,method,Mount Lewis,0.102345,442,True,False
+3SFCA demand competition,method,Mount Pritchard,0.395735,297,True,False
+3SFCA demand competition,method,Mount Vernon,0.465201,236,True,False
+3SFCA demand competition,method,Mulgoa,0.668288,42,True,False
+3SFCA demand competition,method,Mulgrave,0.445936,,False,False
+3SFCA demand competition,method,Narellan,0.293731,388,True,False
+3SFCA demand competition,method,Narellan Vale,0.696318,29,True,False
+3SFCA demand competition,method,Naremburn,0.314008,,False,False
+3SFCA demand competition,method,Narrabeen,0.65532,54,True,False
+3SFCA demand competition,method,Narraweena,0.632786,73,True,False
+3SFCA demand competition,method,Narwee,0.182876,425,True,False
+3SFCA demand competition,method,Neutral Bay,0.522366,,False,False
+3SFCA demand competition,method,Newington,0.416151,275,True,False
+3SFCA demand competition,method,Newport,0.841263,4,True,True
+3SFCA demand competition,method,Newtown,0.536989,,False,False
+3SFCA demand competition,method,Nirimba Fields,0.520445,183,True,False
+3SFCA demand competition,method,Normanhurst,0.578367,132,True,False
+3SFCA demand competition,method,North Balgowlah,0.296471,385,True,False
+3SFCA demand competition,method,North Bondi,0.45654,,False,False
+3SFCA demand competition,method,North Curl Curl,0.33788,349,True,False
+3SFCA demand competition,method,North Epping,0.450811,,False,False
+3SFCA demand competition,method,North Kellyville,0.697343,27,True,False
+3SFCA demand competition,method,North Manly,0.454877,245,True,False
+3SFCA demand competition,method,North Narrabeen,0.698278,26,True,False
+3SFCA demand competition,method,North Parramatta,0.40803,,False,False
+3SFCA demand competition,method,North Richmond,0.39582,296,True,False
+3SFCA demand competition,method,North Rocks,0.551712,,False,False
+3SFCA demand competition,method,North Ryde,0.605085,97,True,False
+3SFCA demand competition,method,North St Marys,0.340723,343,True,False
+3SFCA demand competition,method,North Strathfield,0.354548,,False,False
+3SFCA demand competition,method,North Sydney,0.494444,,False,False
+3SFCA demand competition,method,North Turramurra,0.489774,212,True,False
+3SFCA demand competition,method,North Wahroonga,0.38462,307,True,False
+3SFCA demand competition,method,North Willoughby,0.418913,,False,False
+3SFCA demand competition,method,Northbridge,0.221791,,False,False
+3SFCA demand competition,method,Northmead,0.491663,,False,False
+3SFCA demand competition,method,Northwood,0.125247,,False,False
+3SFCA demand competition,method,Norwest,0.552462,153,True,False
+3SFCA demand competition,method,Oakhurst,0.646572,62,True,False
+3SFCA demand competition,method,Oakville,0.589412,118,True,False
+3SFCA demand competition,method,Oatlands,0.515187,186,True,False
+3SFCA demand competition,method,Oatley,0.591155,116,True,False
+3SFCA demand competition,method,Old Guildford,0.084577,443,True,False
+3SFCA demand competition,method,Old Toongabbie,0.386471,,False,False
+3SFCA demand competition,method,Oran Park,0.83616,6,True,True
+3SFCA demand competition,method,Orchard Hills,0.405882,285,True,False
+3SFCA demand competition,method,Oxford Falls,0.277647,,False,False
+3SFCA demand competition,method,Oxley Park,0.343283,340,True,False
+3SFCA demand competition,method,Oyster Bay,0.468519,234,True,False
+3SFCA demand competition,method,Paddington,0.458295,,False,False
+3SFCA demand competition,method,Padstow,0.566426,142,True,False
+3SFCA demand competition,method,Padstow Heights,0.339105,345,True,False
+3SFCA demand competition,method,Pagewood,0.407367,283,True,False
+3SFCA demand competition,method,Palm Beach,0.630588,76,True,False
+3SFCA demand competition,method,Panania,0.64063,66,True,False
+3SFCA demand competition,method,Parklea,0.512067,188,True,False
+3SFCA demand competition,method,Parramatta,0.65919,,False,False
+3SFCA demand competition,method,Peakhurst,0.525773,176,True,False
+3SFCA demand competition,method,Peakhurst Heights,0.463529,238,True,False
+3SFCA demand competition,method,Pemulwuy,0.473321,230,True,False
+3SFCA demand competition,method,Pendle Hill,0.404874,,False,False
+3SFCA demand competition,method,Pennant Hills,0.58039,,False,False
+3SFCA demand competition,method,Penrith,0.613117,85,True,False
+3SFCA demand competition,method,Penshurst,0.510944,189,True,False
+3SFCA demand competition,method,Petersham,0.438983,260,True,False
+3SFCA demand competition,method,Phillip Bay,0.530376,,False,False
+3SFCA demand competition,method,Picnic Point,0.595155,113,True,False
+3SFCA demand competition,method,Pitt Town,0.469927,233,True,False
+3SFCA demand competition,method,Pitt Town Bottoms,0.490252,,False,False
+3SFCA demand competition,method,Pleasure Point,0.329624,,False,False
+3SFCA demand competition,method,Plumpton,0.578913,130,True,False
+3SFCA demand competition,method,Point Piper,0.144674,,False,False
+3SFCA demand competition,method,Port Hacking,0.351527,335,True,False
+3SFCA demand competition,method,Potts Hill,0.34919,336,True,False
+3SFCA demand competition,method,Potts Point,0.43177,,False,False
+3SFCA demand competition,method,Prairiewood,0.149118,435,True,False
+3SFCA demand competition,method,Prestons,0.737745,16,True,False
+3SFCA demand competition,method,Prospect,0.416084,276,True,False
+3SFCA demand competition,method,Punchbowl,0.381959,310,True,False
+3SFCA demand competition,method,Putney,0.352259,334,True,False
+3SFCA demand competition,method,Pymble,0.473886,229,True,False
+3SFCA demand competition,method,Pyrmont,0.528795,,False,False
+3SFCA demand competition,method,Quakers Hill,0.743122,15,True,False
+3SFCA demand competition,method,Queens Park,0.178027,,False,False
+3SFCA demand competition,method,Queenscliff,0.579873,129,True,False
+3SFCA demand competition,method,Raby,0.596614,111,True,False
+3SFCA demand competition,method,Ramsgate,0.266891,397,True,False
+3SFCA demand competition,method,Ramsgate Beach,0.157781,431,True,False
+3SFCA demand competition,method,Randwick,0.673529,,False,False
+3SFCA demand competition,method,Redfern,0.539453,,False,False
+3SFCA demand competition,method,Regents Park,0.130043,437,True,False
+3SFCA demand competition,method,Regentville,0.625859,,False,False
+3SFCA demand competition,method,Revesby,0.542962,164,True,False
+3SFCA demand competition,method,Revesby Heights,0.444651,257,True,False
+3SFCA demand competition,method,Rhodes,0.537237,,False,False
+3SFCA demand competition,method,Richards,0.304706,,False,False
+3SFCA demand competition,method,Richmond,0.338985,346,True,False
+3SFCA demand competition,method,Richmond Lowlands,0.636315,,False,False
+3SFCA demand competition,method,Riverstone,0.536605,171,True,False
+3SFCA demand competition,method,Riverview,0.10405,,False,False
+3SFCA demand competition,method,Riverwood,0.397498,292,True,False
+3SFCA demand competition,method,Rockdale,0.507623,195,True,False
+3SFCA demand competition,method,Rodd Point,0.307854,,False,False
+3SFCA demand competition,method,Rookwood,0.203362,,False,False
+3SFCA demand competition,method,Rooty Hill,0.642073,65,True,False
+3SFCA demand competition,method,Ropes Crossing,0.678303,36,True,False
+3SFCA demand competition,method,Rose Bay,0.562398,,False,False
+3SFCA demand competition,method,Rosebery,0.557067,,False,False
+3SFCA demand competition,method,Rosehill,0.15709,,False,False
+3SFCA demand competition,method,Roselands,0.380985,311,True,False
+3SFCA demand competition,method,Rosemeadow,0.410225,281,True,False
+3SFCA demand competition,method,Roseville,0.533019,172,True,False
+3SFCA demand competition,method,Roseville Chase,0.226756,417,True,False
+3SFCA demand competition,method,Rossmore,0.471405,231,True,False
+3SFCA demand competition,method,Rouse Hill,0.606384,95,True,False
+3SFCA demand competition,method,Rozelle,0.323778,,False,False
+3SFCA demand competition,method,Ruse,0.574477,136,True,False
+3SFCA demand competition,method,Rushcutters Bay,0.263162,,False,False
+3SFCA demand competition,method,Russell Lea,0.3817,,False,False
+3SFCA demand competition,method,Rydalmere,0.372013,314,True,False
+3SFCA demand competition,method,Ryde,0.597835,110,True,False
+3SFCA demand competition,method,Sackville,0.673529,,False,False
+3SFCA demand competition,method,Sackville North,0.674706,,False,False
+3SFCA demand competition,method,Sadleir,0.247351,408,True,False
+3SFCA demand competition,method,Sandringham,0.505481,197,True,False
+3SFCA demand competition,method,Sandy Point,0.432114,,False,False
+3SFCA demand competition,method,Sans Souci,0.600706,106,True,False
+3SFCA demand competition,method,Scheyville,0.365294,,False,False
+3SFCA demand competition,method,Schofields,0.767626,11,True,False
+3SFCA demand competition,method,Scotland Island,0.615882,,False,False
+3SFCA demand competition,method,Seaforth,0.35316,,False,False
+3SFCA demand competition,method,Sefton,0.170732,429,True,False
+3SFCA demand competition,method,Seven Hills,0.626278,79,True,False
+3SFCA demand competition,method,Shalvey,0.339412,344,True,False
+3SFCA demand competition,method,Shanes Park,0.295294,,False,False
+3SFCA demand competition,method,Silverwater,0.312825,369,True,False
+3SFCA demand competition,method,Singletons Mill,0.427353,,False,False
+3SFCA demand competition,method,Smeaton Grange,0.363206,,False,False
+3SFCA demand competition,method,Smithfield,0.388641,304,True,False
+3SFCA demand competition,method,South Coogee,0.530358,,False,False
+3SFCA demand competition,method,South Granville,0.145897,436,True,False
+3SFCA demand competition,method,South Hurstville,0.355455,331,True,False
+3SFCA demand competition,method,South Maroota,0.674118,,False,False
+3SFCA demand competition,method,South Penrith,0.690224,32,True,False
+3SFCA demand competition,method,South Turramurra,0.258058,403,True,False
+3SFCA demand competition,method,South Wentworthville,0.346863,339,True,False
+3SFCA demand competition,method,South Windsor,0.459641,242,True,False
+3SFCA demand competition,method,Spring Farm,0.781743,10,True,True
+3SFCA demand competition,method,St Andrews,0.559086,148,True,False
+3SFCA demand competition,method,St Clair,0.83765,5,True,True
+3SFCA demand competition,method,St Helens Park,0.580424,126,True,False
+3SFCA demand competition,method,St Ives,0.717218,23,True,False
+3SFCA demand competition,method,St Ives Chase,0.256294,405,True,False
+3SFCA demand competition,method,St Johns Park,0.293289,389,True,False
+3SFCA demand competition,method,St Leonards,0.452495,,False,False
+3SFCA demand competition,method,St Marys,0.413634,278,True,False
+3SFCA demand competition,method,St Peters,0.294175,387,True,False
+3SFCA demand competition,method,Stanhope Gardens,0.552735,152,True,False
+3SFCA demand competition,method,Stanmore,0.42638,267,True,False
+3SFCA demand competition,method,Strathfield,0.580139,127,True,False
+3SFCA demand competition,method,Strathfield South,0.311602,373,True,False
+3SFCA demand competition,method,Summer Hill,0.422898,270,True,False
+3SFCA demand competition,method,Surry Hills,0.5716,,False,False
+3SFCA demand competition,method,Sutherland,0.673568,41,True,False
+3SFCA demand competition,method,Sydenham,0.310328,374,True,False
+3SFCA demand competition,method,Sydney,0.56337,,False,False
+3SFCA demand competition,method,Sydney Olympic Park,0.33753,350,True,False
+3SFCA demand competition,method,Sylvania,0.658301,51,True,False
+3SFCA demand competition,method,Sylvania Waters,0.508641,192,True,False
+3SFCA demand competition,method,Tallawong,0.567411,141,True,False
+3SFCA demand competition,method,Tamarama,0.217886,,False,False
+3SFCA demand competition,method,Taren Point,0.231176,413,True,False
+3SFCA demand competition,method,Telopea,0.242189,412,True,False
+3SFCA demand competition,method,Tempe,0.322749,361,True,False
+3SFCA demand competition,method,Tennyson,0.652353,,False,False
+3SFCA demand competition,method,Tennyson Point,0.243331,410,True,False
+3SFCA demand competition,method,Terrey Hills,0.474924,227,True,False
+3SFCA demand competition,method,The Ponds,0.52766,175,True,False
+3SFCA demand competition,method,The Rocks,0.083235,,False,False
+3SFCA demand competition,method,The Slopes,0.655294,,False,False
+3SFCA demand competition,method,Thornleigh,0.542992,163,True,False
+3SFCA demand competition,method,Toongabbie,0.634955,,False,False
+3SFCA demand competition,method,Tregear,0.309545,378,True,False
+3SFCA demand competition,method,Turramurra,0.667861,43,True,False
+3SFCA demand competition,method,Turrella,0.346933,338,True,False
+3SFCA demand competition,method,Ultimo,0.265651,,False,False
+3SFCA demand competition,method,Varroville,0.576065,,False,False
+3SFCA demand competition,method,Vaucluse,0.433297,,False,False
+3SFCA demand competition,method,Villawood,0.213024,422,True,False
+3SFCA demand competition,method,Vineyard,0.322941,360,True,False
+3SFCA demand competition,method,Voyager Point,0.343045,342,True,False
+3SFCA demand competition,method,Wahroonga,0.676104,40,True,False
+3SFCA demand competition,method,Waitara,0.643519,64,True,False
+3SFCA demand competition,method,Wakeley,0.257909,404,True,False
+3SFCA demand competition,method,Wallacia,0.624991,,False,False
+3SFCA demand competition,method,Wareemba,0.351176,,False,False
+3SFCA demand competition,method,Warrawee,0.3102,375,True,False
+3SFCA demand competition,method,Warriewood,0.786121,9,True,True
+3SFCA demand competition,method,Warwick Farm,0.245982,409,True,False
+3SFCA demand competition,method,Waterfall,0.653529,,False,False
+3SFCA demand competition,method,Waterloo,0.532896,,False,False
+3SFCA demand competition,method,Watsons Bay,0.49322,,False,False
+3SFCA demand competition,method,Wattle Grove,0.640568,67,True,False
+3SFCA demand competition,method,Waverley,0.456164,,False,False
+3SFCA demand competition,method,Waverton,0.366192,,False,False
+3SFCA demand competition,method,Wedderburn,0.6059,,False,False
+3SFCA demand competition,method,Wentworth Point,0.539635,169,True,False
+3SFCA demand competition,method,Wentworthville,0.602095,,False,False
+3SFCA demand competition,method,Werrington,0.298727,383,True,False
+3SFCA demand competition,method,Werrington County,0.43302,263,True,False
+3SFCA demand competition,method,Werrington Downs,0.575549,134,True,False
+3SFCA demand competition,method,West Hoxton,0.661614,48,True,False
+3SFCA demand competition,method,West Pennant Hills,0.650351,58,True,False
+3SFCA demand competition,method,West Pymble,0.254685,407,True,False
+3SFCA demand competition,method,West Ryde,0.546284,160,True,False
+3SFCA demand competition,method,Westleigh,0.482073,219,True,False
+3SFCA demand competition,method,Westmead,0.611216,,False,False
+3SFCA demand competition,method,Wetherill Park,0.229863,414,True,False
+3SFCA demand competition,method,Whalan,0.265444,398,True,False
+3SFCA demand competition,method,Whale Beach,0.462839,,False,False
+3SFCA demand competition,method,Wheeler Heights,0.602614,104,True,False
+3SFCA demand competition,method,Wilberforce,0.664735,45,True,False
+3SFCA demand competition,method,Wiley Park,0.289927,390,True,False
+3SFCA demand competition,method,Willmot,0.308875,379,True,False
+3SFCA demand competition,method,Willoughby,0.453447,,False,False
+3SFCA demand competition,method,Willoughby East,0.215232,,False,False
+3SFCA demand competition,method,Windsor,0.320332,364,True,False
+3SFCA demand competition,method,Windsor Downs,0.603529,102,True,False
+3SFCA demand competition,method,Winston Hills,0.626327,,False,False
+3SFCA demand competition,method,Wisemans Ferry,0.261139,,False,False
+3SFCA demand competition,method,Wolli Creek,0.486829,214,True,False
+3SFCA demand competition,method,Wollstonecraft,0.503844,,False,False
+3SFCA demand competition,method,Woodbine,0.427301,266,True,False
+3SFCA demand competition,method,Woodcroft,0.573705,137,True,False
+3SFCA demand competition,method,Woodpark,0.309596,377,True,False
+3SFCA demand competition,method,Woollahra,0.421006,,False,False
+3SFCA demand competition,method,Woolloomooloo,0.305309,,False,False
+3SFCA demand competition,method,Woolooware,0.500455,204,True,False
+3SFCA demand competition,method,Woolwich,0.27629,,False,False
+3SFCA demand competition,method,Woronora,0.509108,191,True,False
+3SFCA demand competition,method,Woronora Heights,0.363385,322,True,False
+3SFCA demand competition,method,Yagoona,0.378824,312,True,False
+3SFCA demand competition,method,Yarramundi,0.666471,,False,False
+3SFCA demand competition,method,Yarrawarrah,0.589854,117,True,False
+3SFCA demand competition,method,Yennora,0.103221,441,True,False
+3SFCA demand competition,method,Yowie Bay,0.503328,200,True,False
+3SFCA demand competition,method,Zetland,0.508301,,False,False
 headcount guard off,guard,Abbotsbury,0.568898,164,True,False
 headcount guard off,guard,Abbotsford,0.468026,,False,False
 headcount guard off,guard,Acacia Gardens,0.417469,294,True,False

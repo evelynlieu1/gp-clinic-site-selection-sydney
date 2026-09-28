@@ -92,6 +92,13 @@ Dee Why moved from rank 2 to 17, Mona Vale 9 to 42, Freshwater 10 to 12.
 measure and on doctors per resident. It holds the top 10 in **all 31** perturbation
 runs, including the four that delete a criterion outright.
 
+**Rank 1 depends on the formulation.** The sweep now includes a method family, not only
+parameter families: under 3SFCA, which adds demand-side competition weighting and removes
+a double-count that 2SFCA has, Avalon Beach is rank 1 and Cronulla is rank 3. Eight of ten
+top-10 members are common to both. Cronulla is the only suburb that stays top 10 under all
+32 perturbations — but the defensible claim is that Cronulla, Avalon Beach and Glenmore
+Park are the three strongest candidates, not that any one of them is settled.
+
 **Four suburbs survive every non-degenerate run:** Cronulla, Caringbah South,
 Avalon Beach, Oran Park.
 
@@ -146,7 +153,7 @@ commercial.
 | Demand | Senior-weighted population on a log ramp |
 | Billing fit | Inverted-U on household income, percentile-anchored |
 | Operational | Pharmacy co-location + Distribution Priority Area status |
-| Robustness | 31 perturbations across 9 families, 21,760 rows |
+| Robustness | 32 perturbations across 10 families, including 2SFCA vs 3SFCA |
 | Validation | AUC vs the DoH under-supply flag; Moran's I and LISA; blocked rank bootstrap |
 | Uncertainty | 200-replicate population resample calibrated on 2025 ERP |
 

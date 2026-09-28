@@ -346,6 +346,50 @@ perturbed; the register, incomes and travel cost are held fixed.
 
 ---
 
+### Method choice: rank 1 is not formulation-independent
+
+Every other family in the sweep varies a *parameter*. This one varies the *model*.
+
+The shipped step 1 is enhanced two-step floating catchment (2SFCA): a suburb contributes
+its whole population to every practice it can reach, so demand is counted once per
+overlapping catchment. Three-step floating catchment (3SFCA, Wan, Zou and Sternberg 2012)
+inserts a selection weight first — `G_kj = W(d_kj) / Σ_m W(d_km)` — so a suburb splits
+itself across the practices it can reach, in proportion to how close each is. 3SFCA is the
+stricter formulation: it removes a double-count that 2SFCA genuinely has.
+
+Both conserve supply — `Σ R_j · pool_j` equals the number of reachable practices under
+either, which is the check that this reallocates demand rather than changing how much
+supply exists. Access correlates at Spearman 0.838.
+
+**They disagree about the winner:**
+
+| Suburb | 2SFCA | 3SFCA |
+|---|---|---|
+| Avalon Beach | 4 | **1** |
+| Glenmore Park | 7 | **2** |
+| Cronulla | **1** | 3 |
+| Newport | 8 | 4 |
+| St Clair | 3 | 5 |
+| Oran Park | 6 | 6 |
+| Cranebrook | 5 | 7 |
+| Caringbah South | 2 | 8 |
+
+Eight of ten top-10 members are common to both; Warriewood and Spring Farm enter under
+3SFCA, Collaroy and Heathcote leave.
+
+**What this does and does not cost the recommendation.** Cronulla stays in the top 10
+under all 32 perturbations including this one — it is the only suburb that does. But
+"Cronulla is rank 1" holds under 2SFCA and not under 3SFCA, and the honest claim is
+therefore narrower: *Cronulla, Avalon Beach and Glenmore Park are the three strongest
+candidates, and which of them leads depends on whether demand-side competition weighting
+is applied.*
+
+Before this family existed the sweep had 31 runs and none of them touched the
+formulation, so the ranking had never been tested against the single largest modelling
+choice in the project.
+
+---
+
 ## Limitations
 
 Five limitations are large enough to change a site decision. Each is stated below with its measured size and the direction it pushes the answer.

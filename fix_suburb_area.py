@@ -1,33 +1,20 @@
 """
-Recompute the ``area`` column from ABS SAL 2021 polygons, replacing corrupted values.
+Recompute the area column from ABS SAL 2021 polygons.
 
-WHY
----
-The shipped ``area`` column disagrees with the authoritative boundary file, and not by a
-rounding margin. MEASURED against SAL 2021 geometry for all 680 suburbs: 519 are within
-5 percent, 70 are off by more than 20 percent, and 18 are off by more than a factor of
-two. The worst are Sydney at 26.4694 km2 against 2.9396 actual (9.0x), Berowra Waters
-8.7x and Prospect 5.4x. Twelve rows also share a value byte-identically with another
-suburb, which is the signature of a join or fill error rather than measurement noise.
+The shipped column disagrees with the boundary file by more than rounding. Measured
+across all 680 suburbs: 519 within 5 percent, 70 out by over 20 percent, 18 by more
+than double. Sydney reads 26.4694 km2 against 2.9396 actual. Twelve rows share a value
+byte-identically with another suburb, which is a fill error rather than noise.
 
-WHY IT MATTERS NOW
-------------------
-``area`` feeds nothing in ``site_score.py`` - the v1 score weighted it at 0.05 and D6
-dropped it. But ``eda/plot_combined_pressure_density.py`` divides by it to build the
-senior-density axis of the bivariate map, so regenerating that map against the old column
-would publish a figure that is wrong by up to 9x on individual suburbs.
+area feeds nothing in site_score.py - D6 dropped it - but
+eda/plot_combined_pressure_density.py divides by it for the senior-density axis, so
+the map has to be regenerated after this runs, not before.
 
-METHOD
-------
-Polygon area in EPSG:3577 (GDA94 / Australian Albers), the same equal-area projection the
-rest of the pipeline uses, via :func:`dpa_status.load_suburbs` so the geometry join is the
-one already used everywhere else rather than a second, silently different one. Areas are
-in square kilometres.
+Areas are polygon areas in EPSG:3577 via dpa_status.load_suburbs, so the geometry join
+is the one the rest of the pipeline uses. Overwrites area in suburbs_final.csv and
+eda_data.csv; git holds the previous values.
 
-This OVERWRITES ``area`` in ``scraped_data/suburbs_final.csv`` and ``eda_data.csv``. The
-previous values are preserved in git; nothing is lost.
-
-Run: ``python fix_suburb_area.py`` (add ``--dry-run`` to report without writing).
+Run: python fix_suburb_area.py [--dry-run]
 """
 from __future__ import annotations
 

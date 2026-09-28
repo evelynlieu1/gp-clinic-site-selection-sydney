@@ -1,58 +1,27 @@
 """
-Propagate input uncertainty into the ranking, and report what survives it.
+Population uncertainty: does the ranking survive the gap between 2021 demand and
+2025 supply?
 
-WHAT THIS IS NOT
-----------------
-It is not Census measurement error. The ABS perturbs small-area counts for
-confidentiality, but the perturbation is a handful of persons and these are suburb
-totals in the thousands, so it moves nothing: at Cronulla's 17,899 residents a +/-3
-perturbation is 0.02 percent. Propagating it would produce an authoritative-looking
-interval of essentially zero width. Stated here because "we propagated Census error"
-sounds rigorous and would have been theatre.
+Not Census measurement error. ABS confidentiality perturbation is a few persons
+against suburb totals in the thousands - 0.02 percent at Cronulla - so it moves
+nothing. The four-year gap between the Census and the March 2025 register does.
 
-WHAT ACTUALLY MOVES THE ANSWER
-------------------------------
-The vintage gap. Supply is the March 2025 register; demand is the 2021 Census. Four
-years of population change sits unmodelled between them, and it is NOT uniform: growth
-corridors moved far more than the median suburb.
+Growth ratios are 2025 SA2 ERP over 2021 Census counts, for suburbs whose SAL polygon
+overlaps an SA2 polygon at IoU >= 0.90. Name matching alone is not enough: 90 suburbs
+share an SA2 name without sharing its boundary, and Chullora reads as 14 residents
+against an ERP of 1,524. The geometric filter keeps 43 of the 90, median growth 5.1
+percent, and puts Oran Park at 1.458.
 
-CALIBRATION, empirical rather than assumed
-------------------------------------------
-Growth ratios come from comparing 2025 SA2 ERP against 2021 Census counts for suburbs
-whose SAL polygon genuinely coincides with an SA2 polygon.
+Each replicate draws a ratio per suburb, scales population and rebuilds the E2SFCA
+surface. Population is the demand side, so access_gap moves with it, not just
+demand_scale. Two modes: independent draws, or one ratio per GP catchment so a growth
+corridor moves together.
 
-Matching on NAME ALONE IS WRONG and was tried first: 90 suburbs share a name with an
-SA2, but the geographies differ. Chullora reads as 14 residents against an SA2 ERP of
-1,524, a 109x "growth" that is entirely an area mismatch. Name matching gave a median
-growth of 8.2 percent and 25 suburbs above 25 percent.
+Caveats: 43 calibration suburbs is small, and they are the ones whose boundaries
+happen to match an SA2 rather than a random sample. ERP adjusts for Census undercount,
+so roughly 2 percent of every ratio is definitional. Only population is perturbed.
 
-Requiring intersection-over-union >= 0.90 between the two polygons leaves 43 suburbs and
-a median growth of 5.1 percent, with 5 above 25 percent. Oran Park comes out at 1.458,
-which is the growth figure this project recorded independently. The IoU filter is doing
-real work: it removes 47 of 90 name matches.
-
-METHOD
-------
-Non-parametric bootstrap. Each replicate draws a growth ratio per suburb from the 43
-observed ratios, scales the 2021 population by it, rebuilds the E2SFCA surface (population
-is the demand side, so access_gap moves too, not just demand_scale) and re-ranks.
-
-Two draw modes, because growth is spatially clustered and independent draws would deny it:
-
-``independent``  each suburb draws its own ratio
-``blocked``      one ratio per GP catchment, shared by its suburbs, so a whole corridor
-                 grows or does not grow together
-
-LIMITS, stated rather than buried
----------------------------------
-- 43 calibration suburbs is a small sample, and they are not a random sample of Sydney:
-  they are the suburbs whose boundaries happen to match an SA2.
-- ERP and Census counts are different measures. ERP adjusts for undercount, so a ratio of
-  about 1.02 is definitional rather than growth. This biases every ratio UP by roughly
-  that amount and is not corrected, which makes the spread conservative in one direction.
-- Only population is perturbed. The register, incomes and travel cost are held fixed.
-
-Run: ``python uncertainty.py`` (``--replicates N``, ``--mode independent|blocked|both``).
+Run: python uncertainty.py [--replicates N] [--mode independent|blocked|both]
 """
 from __future__ import annotations
 
@@ -110,9 +79,9 @@ def run(inputs, mode: str, n: int, seed: int = RNG_SEED) -> pd.DataFrame:
     """
     Re-rank ``n`` times under resampled population, returning one row per suburb.
 
-    The accessibility surface is rebuilt every replicate. Population is the demand side of
-    E2SFCA, so perturbing it moves ``access_gap`` as well as ``demand_scale`` - which is
-    the whole point, and is why this cannot be done by scaling a column after scoring.
+    The surface is rebuilt every replicate: population is the demand side of E2SFCA, so
+    perturbing it moves ``access_gap`` as well as ``demand_scale``. Scaling a column after
+    scoring would miss that.
     """
     pool = growth_ratios()
     rng = np.random.default_rng(seed)

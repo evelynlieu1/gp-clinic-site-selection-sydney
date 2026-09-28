@@ -959,10 +959,9 @@ def score(inputs: Inputs, config: ScoreConfig | None = None) -> pd.DataFrame:
         for p, d in zip(out["pharmacy_fit"], out["dpa_status"])
     ]
 
-    # D5 GUARD. Applied to access_gap only, because that is the criterion the
-    # one-unit-per-practice supply term actually distorts; it then flows through the 0.40
-    # weight without a second, separately-tunable knob. access_gap_unguarded is kept so
-    # the size of every demotion is auditable rather than baked in.
+    # Applied to access_gap only: that is the criterion the one-unit-per-practice supply
+    # term distorts, and it reaches the total through the existing 0.40 weight rather than
+    # a second knob. access_gap_unguarded is kept so each demotion can be checked.
     total_gp = out["total_gp"].to_numpy(float)
     status = out["gp_data_status"].astype(str).to_numpy()
     trustworthy = (status == "ok") & (total_gp > 0) & (pop > 0)
@@ -1384,9 +1383,8 @@ def _test_monotone_in_access(inputs: Inputs) -> None:
     """
     frame = score(inputs)
     elig = frame.loc[frame["eligible"]]
-    # On access_gap_unguarded, NOT access_gap. The D5 headcount guard deliberately
-    # breaks this monotonicity for the suburbs it demotes - that is the whole point of
-    # it - so testing the guarded column would be asserting the guard does nothing.
+    # access_gap_unguarded, not access_gap: the headcount guard breaks this monotonicity
+    # by design, so testing the guarded column would assert the guard does nothing.
     rho = float(
         elig["access_general_scored"].corr(elig["access_gap_unguarded"], method="spearman")
     )
@@ -1679,11 +1677,9 @@ def main() -> None:
     out.to_csv(SCORES_OUT, index=False)
     long.drop(columns=[]).to_csv(SENSITIVITY_OUT, index=False)
 
-    # Two suburbs in the same GP catchment are ONE opportunity, not two: a clinic in
-    # either draws on the same practice pool and the same population, so opening both
-    # cannibalises. The shortlist used to list both - Cronulla and Caringbah South are
-    # both Cronulla - Miranda - Caringbah - which made it read as more diversified than
-    # it was. Duplicates are MARKED, never dropped, so the suppression stays auditable.
+    # Two suburbs in one GP catchment are one opportunity: a clinic in either draws on the
+    # same practices and population. Cronulla and Caringbah South are both Cronulla -
+    # Miranda - Caringbah. Duplicates are marked rather than dropped so they stay visible.
     shortlist = out.loc[out["robust_core_tier"] != ""].copy().sort_values("rank")
     leader = shortlist.groupby("gpc_code")["suburb"].transform("first")
     shortlist["shortlist_status"] = np.where(
@@ -1691,14 +1687,10 @@ def main() -> None:
     )
     distinct_sites = int((shortlist["shortlist_status"] == "recommended").sum())
 
-    # ADVISORY, never automatic. validation.py identifies connected high-high LISA
-    # clusters, which are a second and non-administrative answer to "are these two
-    # suburbs one opportunity". It is NOT used to suppress a row, because the grouping
-    # is not stable: MEASURED, Avalon Beach and Collaroy land in separate clusters at
-    # k <= 12 and the same cluster at k >= 16, and k has no principled value. Grouping
-    # on a knob that flips the deliverable would be worse than the administrative
-    # boundary it replaces. GP catchments at least come from Medicare patient flows,
-    # so they are a measurement. The cluster is surfaced for a human to look at.
+    # Advisory only. validation.py finds connected high-high LISA clusters, a second
+    # answer to "are these one opportunity". Not used to suppress a row: Avalon Beach and
+    # Collaroy fall in separate clusters at k <= 12 and the same one at k >= 16, and k has
+    # no principled value. Catchments at least come from Medicare patient flows.
     shortlist["spatial_cluster"] = ""
     shortlist["spatial_note"] = ""
     if LISA_CSV.exists():

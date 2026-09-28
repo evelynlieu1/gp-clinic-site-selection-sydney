@@ -1,50 +1,28 @@
 """
-Inferential checks on the v2 site score: external validation and spatial autocorrelation.
+Inferential checks on the site score: external validation and spatial structure.
 
-WHY THIS EXISTS
----------------
-Everything upstream is measurement and decision analysis. Nothing in it asks two
-questions a reviewer will ask immediately:
+Everything upstream is measurement and decision analysis, which leaves two questions
+unanswered: is the score any good against something outside itself, and is the ranking
+just a map of where the peninsulas are?
 
-1. Is the score any good against something outside itself?
-2. Is the ranking just a map of where Sydney's peninsulas are?
-
-Both are answerable with data already in the repository, and both produce a statistic
-with an interval or a p-value rather than an assertion.
-
-WHAT IT TESTS
--------------
-``validate_against_dpa``
+validate_against_dpa
     The Department of Health's Distribution Priority Area flag is an independent
-    under-supply designation, derived from GP FTE per capita weighted by demographics.
-    The score has never seen it. Discrimination is reported as AUC with a percentile
-    bootstrap interval. AUC rather than accuracy because the classes are heavily
-    imbalanced (79 positive of 680) and accuracy would be 88 percent for a model that
-    always says "no".
+    under-supply designation derived from GP FTE per capita, and the score has never
+    seen it. Reported as AUC with a bootstrap interval; AUC rather than accuracy
+    because 79 positives of 680 means always-no scores 88 percent.
 
-``morans_i``
-    Global Moran's I on the score, with k-nearest-neighbour weights and a permutation
-    null. The module docstring of :mod:`site_score` already claims the top 10 is
-    concentrated in coastal-peninsula catchments. That is a spatial autocorrelation
-    claim made by eye; this measures it.
+    DPA is a weak benchmark and weak in one direction: DPA-positive suburbs have a
+    median population of 815 and a median of zero practices within 2 km, so it is
+    calibrated for rural workforce distribution, not metropolitan siting.
 
-    A high positive I is NOT by itself a defect. Access to health care is genuinely
-    spatially structured, so some autocorrelation is the phenomenon, not an artefact.
-    What it changes is inference: with I well above the null, the 507 eligible suburbs
-    are not 507 independent observations, so any confidence interval computed as though
-    they were is too narrow. That caveat is the point of measuring it.
+morans_i and lisa_test
+    Global and local spatial autocorrelation against a permutation null. The peninsula
+    concentration was previously asserted from a map; this measures it. Clustering is
+    not a defect - health access is genuinely spatial - but it means the eligible
+    suburbs are not independent observations, so intervals that assume they are will
+    be too narrow.
 
-INTERPRETING THE DPA RESULT
----------------------------
-DPA is a weak benchmark and the weakness runs one way. DPA-positive suburbs have a
-median population of 815 and a median of ZERO practices within 2 km: the designation is
-calibrated for rural workforce distribution, not metropolitan commercial siting. A high
-AUC therefore says "this score recognises genuine under-supply where the government
-recognises it too", which is meaningful. A low AUC on the composite would NOT mean the
-composite is broken, because the composite is deliberately optimising for commercial
-site suitability, of which under-supply is only one input.
-
-Run: ``python validation.py``
+Run: python validation.py
 """
 from __future__ import annotations
 
@@ -322,9 +300,8 @@ def benjamini_hochberg(p: np.ndarray, alpha: float = 0.05) -> np.ndarray:
     >>> benjamini_hochberg(np.array([0.001, 0.008, 0.039, 0.041, 0.9])).tolist()
     [True, True, False, False, False]
 
-    STEP-UP, which is the whole point of the procedure and the part that surprises
-    people: 0.04 fails its own threshold of 0.0333, but a LARGER p-value below it clears
-    0.05, and everything up to that point is then accepted.
+    Step-up: 0.04 fails its own threshold of 0.0333, but a larger p-value below it clears
+    0.05, so everything up to that point is accepted.
 
     >>> benjamini_hochberg(np.array([0.001, 0.04, 0.045])).tolist()
     [True, True, True]
@@ -463,35 +440,19 @@ def bootstrap_ranks(
     """
     Resampling interval on each suburb's rank, optionally blocked on ``blocks``.
 
-    Rank is a RELATIVE statistic: a suburb's position depends entirely on which other
-    suburbs it is measured against. So the resampling question is "how much does this
-    rank depend on the comparison set", and the answer is an interval rather than the
-    single number the point ranking reports.
+    Rank is relative: a suburb's position depends on which others it is measured against,
+    so the question is how much the rank depends on the comparison set.
 
-``blocks=None`` resamples individual suburbs, which assumes they are independent.
-    :func:`morans_i` shows they are not (I = 0.36, p = 0.001), so blocking on GP
-    catchment is the defensible choice.
+    blocks=None resamples individual suburbs and assumes they are independent, which
+    morans_i shows they are not. Passing GP catchment codes keeps correlated suburbs
+    together. Measured, that changes the top-10 intervals by about 7 percent - far less
+    than the global Moran's I suggested, because a rank depends on how many suburbs
+    outscore you and that count barely notices whether neighbours arrive together.
 
-    MEASURED, AND AGAINST EXPECTATION: blocking widens the top-10 intervals by only
-    about 7 percent. The prediction from the global Moran's I was a much larger gap. The
-    reason it does not appear is that a RANK depends on how many suburbs outscore you,
-    and whether correlated neighbours enter the resample together or separately barely
-    changes that count. Spatial blocking matters a great deal for a mean and very little
-    for a rank. Recorded here rather than quietly dropped, because the blocked interval
-    was justified in advance by an argument the data then only weakly supported.
-
-    TWO THINGS THIS DOES NOT CAPTURE, both of which make the intervals a LOWER BOUND:
-
-    1. Measurement error. Population, income and the practice register are treated as
-       exact, so none of their uncertainty reaches the rank.
-    2. The scores themselves never move. Resampling changes only WHICH suburbs compete,
-       so the highest-scoring suburb is rank 1 in every single draw by construction. An
-       interval of [1, 1] for the leader is therefore tautological, NOT evidence of
-       robustness, and must never be quoted as though it were. The informative rows are
-       the ones further down, where rank genuinely depends on the comparison set.
-
-    The assumption sweep in :mod:`site_score` answers the complementary question: it
-    holds the cohort fixed and varies the model instead.
+    Two reasons the intervals are a lower bound. Measurement error in population, income
+    and the register is not modelled (uncertainty.py does population). And scores never
+    move, so the highest scorer is rank 1 in every draw by construction - an interval of
+    [1, 1] for the leader is arithmetic, not robustness.
 
     Two suburbs, one clearly better, ranks are certain:
 
@@ -730,12 +691,8 @@ def main() -> None:
     print("  you, and that count barely notices whether correlated neighbours arrive "
           "together.")
     print()
-    print("  READ THE LEADER'S INTERVAL WITH CARE: resampling never changes a score, so "
-          "the top")
-    print("  scorer is rank 1 in every draw by construction. [1, 1] is tautological. "
-          "The rows")
-    print("  that carry information are the ones where rank depends on the comparison "
-          "set.")
+    print("  Resampling never changes a score, so the top scorer is rank 1 in every draw.")
+    print("  [1, 1] for the leader is arithmetic, not robustness - read the rows below it.")
     merged.to_csv(ROOT / "eda" / "rank_bootstrap.csv", index=False)
     for r in merged.itertuples():
         rows.append({"test": "rank_bootstrap_blocked", "measure": r.suburb,

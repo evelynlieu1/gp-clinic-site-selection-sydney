@@ -292,6 +292,59 @@ treated as exact, so none of their uncertainty reaches a rank.
 
 ---
 
+### Population vintage: the one test that could have moved rank 1
+
+Supply is the March 2025 register; demand is the 2021 Census. Four years of population
+change sits unmodelled between them, and it is not uniform.
+
+This is deliberately **not** "Census measurement error". The ABS perturbs small-area
+counts for confidentiality, but these are suburb totals in the thousands — at Cronulla's
+17,899 residents a ±3 perturbation is 0.02% and propagating it would produce an
+authoritative-looking interval of zero width. The vintage gap is the uncertainty that
+actually moves scores.
+
+**Calibration is empirical, and matching on name alone was wrong.** 90 suburbs share a
+name with an SA2, but SAL and SA2 geographies differ: Chullora reads as 14 residents
+against an SA2 ERP of 1,524 — a 109× "growth" that is entirely an area mismatch. Name
+matching gave a median growth of 8.2% and 25 suburbs above 25%. Requiring
+intersection-over-union ≥ 0.90 between the two polygons leaves **43 suburbs, median
+growth 5.1%, 5 above 25%**, and puts Oran Park at 1.458 — the figure this project had
+recorded independently. The filter discards 47 of 90 name matches.
+
+200 replicates per mode. Each draws a growth ratio per suburb from those 43 observed
+ratios, scales population, and rebuilds the E2SFCA surface — population is the demand
+side, so `access_gap` moves too, not only `demand_scale`.
+
+| Base rank | Suburb | Median | 95% interval | P(top 10) | P(rank 1) |
+|---|---|---|---|---|---|
+| 1 | Cronulla | 1 | [1, 2] | 1.00 | **0.95** |
+| 2 | Caringbah South | 2 | [2, 6] | 1.00 | 0.00 |
+| 3 | St Clair | 5 | [2, 9] | 0.99 | 0.00 |
+| 4 | Avalon Beach | 4 | [1, 7] | 1.00 | 0.04 |
+| 6 | Oran Park | 5 | [2, 12] | 0.95 | 0.00 |
+| 10 | Heathcote | 11 | [6, 18] | 0.42 | 0.00 |
+
+*(catchment-blocked draws, the conservative mode)*
+
+Cronulla holds rank 1 in **95%** of replicates under blocked draws and 99% under
+independent ones. This is the first test in the project capable of dislodging it — the
+rank bootstrap could not, because resampling never changed a score — and it did not.
+
+**Blocking matters here, and that is itself the finding.** Correlating growth within a
+GP catchment widens the top-10 intervals by **66%** (mean width 8.3 ranks against 5.0).
+The cohort bootstrap saw only 7% from the same treatment. The difference is real: cohort
+membership is not spatially structured, but growth is — corridors grow together, so
+correlated draws generate scenarios independent draws never reach. Where a quantity is
+genuinely spatial, blocking changes the answer; where it is not, it does not.
+
+**Limits, stated rather than buried.** 43 calibration suburbs is a small sample and not a
+random one — they are the suburbs whose boundaries happen to match an SA2. ERP adjusts
+for Census undercount, so roughly 2% of every ratio is definitional rather than growth,
+biasing the pool up and the spread conservative in one direction. Only population is
+perturbed; the register, incomes and travel cost are held fixed.
+
+---
+
 ## Limitations
 
 Five limitations are large enough to change a site decision. Each is stated below with its measured size and the direction it pushes the answer.

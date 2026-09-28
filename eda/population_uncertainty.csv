@@ -1,0 +1,1361 @@
+suburb,mode,appearances,rank_median,rank_lo,rank_hi,p_top_n,p_rank_1
+Abbotsbury,independent,200,133.5,83.0,158.0,0.0,0.0
+Abbotsford,independent,0,,,,0.0,0.0
+Acacia Gardens,independent,200,280.0,254.975,302.05,0.0,0.0
+Agnes Banks,independent,162,328.0,280.025,357.975,0.0,0.0
+Airds,independent,200,362.0,277.0,378.0,0.0,0.0
+Alexandria,independent,0,,,,0.0,0.0
+Alfords Point,independent,200,322.5,312.175,329.0,0.0,0.0
+Allambie Heights,independent,200,25.0,11.0,35.025000000000006,0.015,0.0
+Allawah,independent,200,314.0,257.95,333.025,0.0,0.0
+Ambarvale,independent,200,259.0,209.975,277.0,0.0,0.0
+Angus,independent,0,,,,0.0,0.0
+Annandale,independent,0,,,,0.0,0.0
+Annangrove,independent,200,225.0,105.0,246.025,0.0,0.0
+Arcadia,independent,200,188.0,71.0,220.0,0.0,0.0
+Arncliffe,independent,200,121.0,71.975,139.025,0.0,0.0
+Arndell Park,independent,0,,,,0.0,0.0
+Artarmon,independent,0,,,,0.0,0.0
+Ashbury,independent,200,352.0,319.0,358.0,0.0,0.0
+Ashcroft,independent,200,435.0,425.0,440.025,0.0,0.0
+Ashfield,independent,200,216.0,209.0,224.0,0.0,0.0
+Asquith,independent,200,190.0,132.975,207.0,0.0,0.0
+Auburn,independent,200,328.0,286.975,339.0,0.0,0.0
+Austral,independent,200,134.0,42.0,153.025,0.0,0.0
+Avalon Beach,independent,200,4.0,2.0,7.0,1.0,0.005
+Badgerys Creek,independent,0,,,,0.0,0.0
+Balgowlah,independent,0,,,,0.0,0.0
+Balgowlah Heights,independent,0,,,,0.0,0.0
+Balmain,independent,0,,,,0.0,0.0
+Balmain East,independent,0,,,,0.0,0.0
+Bangor,independent,200,199.0,91.975,214.05,0.0,0.0
+Banksia,independent,200,328.0,305.0,338.0,0.0,0.0
+Banksmeadow,independent,0,,,,0.0,0.0
+Bankstown,independent,200,330.0,309.925,336.0,0.0,0.0
+Bankstown Aerodrome,independent,0,,,,0.0,0.0
+Barangaroo,independent,0,,,,0.0,0.0
+Barden Ridge,independent,200,222.0,161.95,235.0,0.0,0.0
+Bardia,independent,200,145.0,88.0,161.0,0.0,0.0
+Bardwell Park,independent,200,323.0,301.975,333.0,0.0,0.0
+Bardwell Valley,independent,200,296.5,284.0,307.0,0.0,0.0
+Bass Hill,independent,200,400.0,363.0,409.0,0.0,0.0
+Baulkham Hills,independent,200,60.5,49.0,71.025,0.0,0.0
+Bayview,independent,200,199.0,140.95,219.0,0.0,0.0
+Beacon Hill,independent,200,38.0,19.975,48.0,0.0,0.0
+Beaconsfield,independent,0,,,,0.0,0.0
+Beaumont Hills,independent,200,169.0,123.80000000000001,195.025,0.0,0.0
+Beecroft,independent,0,,,,0.0,0.0
+Belfield,independent,200,375.5,332.975,385.0,0.0,0.0
+Bella Vista,independent,200,404.0,372.975,413.0,0.0,0.0
+Bellevue Hill,independent,0,,,,0.0,0.0
+Belmore,independent,200,310.0,279.0,327.0,0.0,0.0
+Belrose,independent,200,27.0,12.0,33.0,0.0,0.0
+Berala,independent,200,385.5,356.975,399.0,0.0,0.0
+Berkshire Park,independent,200,203.0,189.975,218.0,0.0,0.0
+Berowra,independent,200,40.0,21.975,50.0,0.0,0.0
+Berowra Heights,independent,200,113.0,14.0,160.0,0.0,0.0
+Berowra Waters,independent,0,,,,0.0,0.0
+Berrilee,independent,0,,,,0.0,0.0
+Beverley Park,independent,200,213.5,201.0,227.025,0.0,0.0
+Beverly Hills,independent,200,233.0,175.975,250.0,0.0,0.0
+Bexley,independent,200,131.0,119.0,141.0,0.0,0.0
+Bexley North,independent,200,379.0,323.95,390.025,0.0,0.0
+Bidwill,independent,200,435.0,386.975,440.0,0.0,0.0
+Bilgola Beach,independent,0,,,,0.0,0.0
+Bilgola Plateau,independent,200,80.0,43.0,90.0,0.0,0.0
+Birchgrove,independent,0,,,,0.0,0.0
+Birrong,independent,200,442.0,438.0,445.0,0.0,0.0
+Blackett,independent,200,431.0,397.0,436.0,0.0,0.0
+Blacktown,independent,200,177.0,161.0,194.0,0.0,0.0
+Blair Athol,independent,200,173.0,160.975,189.0,0.0,0.0
+Blairmount,independent,0,,,,0.0,0.0
+Blakehurst,independent,200,137.0,77.975,163.025,0.0,0.0
+Bligh Park,independent,200,187.0,89.975,230.025,0.0,0.0
+Bondi,independent,0,,,,0.0,0.0
+Bondi Beach,independent,0,,,,0.0,0.0
+Bondi Junction,independent,0,,,,0.0,0.0
+Bonnet Bay,independent,200,294.0,281.975,310.0,0.0,0.0
+Bonnyrigg,independent,200,284.0,239.0,313.025,0.0,0.0
+Bonnyrigg Heights,independent,200,145.5,84.975,168.0,0.0,0.0
+Bossley Park,independent,200,183.0,170.975,196.0,0.0,0.0
+Botany,independent,200,25.0,13.0,31.0,0.0,0.0
+Bow Bowing,independent,200,127.0,118.0,136.0,0.0,0.0
+Box Hill,independent,200,194.0,45.95,221.025,0.0,0.0
+Bradbury,independent,200,176.0,118.975,198.0,0.0,0.0
+Breakfast Point,independent,0,,,,0.0,0.0
+Brighton-Le-Sands,independent,200,293.0,245.975,316.0,0.0,0.0
+Bringelly,independent,200,211.0,205.975,218.0,0.0,0.0
+Bronte,independent,0,,,,0.0,0.0
+Brooklyn,independent,0,,,,0.0,0.0
+Brookvale,independent,200,229.0,205.975,235.0,0.0,0.0
+Bundeena,independent,200,284.0,270.975,290.025,0.0,0.0
+Bungarribee,independent,200,240.0,232.0,248.0,0.0,0.0
+Burraneer,independent,200,320.0,280.8,327.0,0.0,0.0
+Burwood,independent,200,294.0,276.95,302.0,0.0,0.0
+Burwood Heights,independent,200,340.0,330.0,347.0,0.0,0.0
+Busby,independent,200,428.0,385.975,439.025,0.0,0.0
+Cabarita,independent,0,,,,0.0,0.0
+Cabramatta,independent,200,342.0,333.0,348.0,0.0,0.0
+Cabramatta West,independent,200,407.0,379.975,416.025,0.0,0.0
+Caddens,independent,200,215.0,188.925,235.025,0.0,0.0
+Cambridge Gardens,independent,200,258.0,244.925,272.0,0.0,0.0
+Cambridge Park,independent,200,341.5,287.95,361.0,0.0,0.0
+Camden,independent,200,387.0,362.95,392.025,0.0,0.0
+Camden South,independent,200,52.0,27.0,62.0,0.0,0.0
+Cammeray,independent,0,,,,0.0,0.0
+Campbelltown,independent,200,185.0,116.0,216.0,0.0,0.0
+Camperdown,independent,0,,,,0.0,0.0
+Campsie,independent,200,334.0,307.975,345.0,0.0,0.0
+Canada Bay,independent,0,,,,0.0,0.0
+Canley Heights,independent,200,365.5,331.95,376.0,0.0,0.0
+Canley Vale,independent,200,393.0,367.0,404.0,0.0,0.0
+Canoelands,independent,0,,,,0.0,0.0
+Canterbury,independent,200,305.0,245.925,324.025,0.0,0.0
+Caringbah,independent,200,65.0,14.0,91.07500000000002,0.0,0.0
+Caringbah South,independent,200,2.0,2.0,4.0,1.0,0.0
+Carlingford,independent,200,39.0,28.0,50.025000000000006,0.0,0.0
+Carlton,independent,200,164.5,107.975,190.025,0.0,0.0
+Carnes Hill,independent,200,278.0,271.0,284.025,0.0,0.0
+Carramar,independent,200,446.0,442.0,449.025,0.0,0.0
+Carss Park,independent,200,222.0,206.0,235.025,0.0,0.0
+Cartwright,independent,200,418.0,413.0,424.0,0.0,0.0
+Castle Cove,independent,0,,,,0.0,0.0
+Castle Hill,independent,200,43.0,15.975000000000001,54.025000000000006,0.0,0.0
+Castlecrag,independent,0,,,,0.0,0.0
+Castlereagh,independent,200,98.0,90.975,104.0,0.0,0.0
+Casula,independent,200,114.0,103.0,126.025,0.0,0.0
+Catherine Field,independent,200,116.0,109.975,123.025,0.0,0.0
+Cattai,independent,0,,,,0.0,0.0
+Cawdor,independent,0,,,,0.0,0.0
+Cecil Hills,independent,200,26.0,10.975000000000001,40.10000000000002,0.025,0.0
+Cecil Park,independent,26,74.0,67.625,78.75,0.0,0.0
+Centennial Park,independent,0,,,,0.0,0.0
+Chatswood,independent,0,,,,0.0,0.0
+Chatswood West,independent,0,,,,0.0,0.0
+Cheltenham,independent,0,,,,0.0,0.0
+Cherrybrook,independent,200,36.0,30.0,42.0,0.0,0.0
+Chester Hill,independent,200,366.5,349.0,378.0,0.0,0.0
+Chifley,independent,0,,,,0.0,0.0
+Chippendale,independent,0,,,,0.0,0.0
+Chipping Norton,independent,200,237.0,168.95,254.0,0.0,0.0
+Chiswick,independent,0,,,,0.0,0.0
+Chullora,independent,0,,,,0.0,0.0
+Church Point,independent,200,243.0,237.0,250.0,0.0,0.0
+Claremont Meadows,independent,200,251.0,215.925,264.0,0.0,0.0
+Clarendon,independent,0,,,,0.0,0.0
+Clareville,independent,27,103.0,93.0,110.35,0.0,0.0
+Claymore,independent,200,392.5,368.975,409.0,0.0,0.0
+Clemton Park,independent,200,412.0,407.975,416.025,0.0,0.0
+Clontarf,independent,0,,,,0.0,0.0
+Clovelly,independent,0,,,,0.0,0.0
+Clyde,independent,0,,,,0.0,0.0
+Coasters Retreat,independent,0,,,,0.0,0.0
+Cobbitty,independent,200,68.0,33.0,79.025,0.0,0.0
+Colebee,independent,200,301.5,246.95,340.0,0.0,0.0
+Collaroy,independent,200,11.0,5.9750000000000005,14.0,0.48,0.0
+Collaroy Plateau,independent,200,192.0,135.925,209.0,0.0,0.0
+Colyton,independent,200,229.0,172.95,243.0,0.0,0.0
+Como,independent,200,349.0,290.925,362.025,0.0,0.0
+Concord,independent,0,,,,0.0,0.0
+Concord West,independent,0,,,,0.0,0.0
+Condell Park,independent,200,319.0,277.0,335.05,0.0,0.0
+Connells Point,independent,200,279.0,264.0,292.025,0.0,0.0
+Constitution Hill,independent,0,,,,0.0,0.0
+Coogee,independent,0,,,,0.0,0.0
+Cornwallis,independent,0,,,,0.0,0.0
+Cottage Point,independent,0,,,,0.0,0.0
+Cowan,independent,0,,,,0.0,0.0
+Cranebrook,independent,200,6.0,4.0,8.0,1.0,0.0
+Cremorne,independent,0,,,,0.0,0.0
+Cremorne Point,independent,0,,,,0.0,0.0
+Cromer,independent,200,17.0,8.975000000000001,24.025000000000006,0.075,0.0
+Cronulla,independent,200,1.0,1.0,1.0,1.0,0.995
+Crows Nest,independent,0,,,,0.0,0.0
+Croydon,independent,200,140.0,87.0,161.0,0.0,0.0
+Croydon Park,independent,200,260.0,217.975,277.0,0.0,0.0
+Cumberland Reach,independent,0,,,,0.0,0.0
+Curl Curl,independent,200,308.0,298.975,316.0,0.0,0.0
+Currans Hill,independent,200,179.0,118.975,202.025,0.0,0.0
+Daceyville,independent,200,410.0,398.0,416.0,0.0,0.0
+Dangar Island,independent,0,,,,0.0,0.0
+Darling Point,independent,0,,,,0.0,0.0
+Darlinghurst,independent,0,,,,0.0,0.0
+Darlington,independent,0,,,,0.0,0.0
+Davidson,independent,200,406.0,401.0,411.0,0.0,0.0
+Dawes Point,independent,0,,,,0.0,0.0
+Dean Park,independent,200,338.5,314.925,353.025,0.0,0.0
+Dee Why,independent,200,17.0,4.0,25.0,0.18,0.0
+Denham Court,independent,200,47.0,28.950000000000003,74.0,0.0,0.0
+Denistone,independent,200,252.0,218.875,265.0,0.0,0.0
+Denistone East,independent,200,231.0,221.975,238.0,0.0,0.0
+Denistone West,independent,96,238.0,229.75,246.0,0.0,0.0
+Dharruk,independent,200,389.0,383.975,395.0,0.0,0.0
+Dolans Bay,independent,3,316.0,315.05,316.95,0.0,0.0
+Dolls Point,independent,200,305.0,295.0,312.0,0.0,0.0
+Doonside,independent,200,276.0,244.0,311.05,0.0,0.0
+Double Bay,independent,0,,,,0.0,0.0
+Dover Heights,independent,0,,,,0.0,0.0
+Drummoyne,independent,0,,,,0.0,0.0
+Duffys Forest,independent,0,,,,0.0,0.0
+Dulwich Hill,independent,200,136.5,114.0,152.05,0.0,0.0
+Dundas,independent,200,282.0,246.9,309.025,0.0,0.0
+Dundas Valley,independent,200,332.0,280.95,352.0,0.0,0.0
+Dural,independent,200,142.0,83.975,159.025,0.0,0.0
+Eagle Vale,independent,200,349.5,225.975,366.025,0.0,0.0
+Earlwood,independent,200,88.0,74.0,100.025,0.0,0.0
+East Hills,independent,200,261.0,232.975,270.0,0.0,0.0
+East Killara,independent,200,271.5,189.925,287.025,0.0,0.0
+East Kurrajong,independent,18,66.0,61.425,72.3,0.0,0.0
+East Lindfield,independent,200,366.0,329.875,376.025,0.0,0.0
+East Ryde,independent,200,405.0,399.0,410.0,0.0,0.0
+Eastern Creek,independent,40,388.0,383.975,393.025,0.0,0.0
+Eastgardens,independent,200,250.0,186.15,257.0,0.0,0.0
+Eastlakes,independent,200,385.0,355.95,397.0,0.0,0.0
+Eastwood,independent,200,130.0,118.975,139.0,0.0,0.0
+Ebenezer,independent,0,,,,0.0,0.0
+Edensor Park,independent,200,144.5,73.0,178.15000000000003,0.0,0.0
+Edgecliff,independent,0,,,,0.0,0.0
+Edmondson Park,independent,200,29.0,12.0,36.0,0.005,0.0
+Elanora Heights,independent,200,277.0,159.95,291.025,0.0,0.0
+Elderslie,independent,200,116.0,68.975,131.025,0.0,0.0
+Elizabeth Bay,independent,0,,,,0.0,0.0
+Elizabeth Hills,independent,200,153.0,142.975,164.0,0.0,0.0
+Ellis Lane,independent,42,99.0,92.0,106.0,0.0,0.0
+Elvina Bay,independent,0,,,,0.0,0.0
+Emerton,independent,200,424.0,418.975,428.025,0.0,0.0
+Emu Heights,independent,200,139.0,116.95,158.0,0.0,0.0
+Emu Plains,independent,200,240.0,130.85,258.025,0.0,0.0
+Enfield,independent,200,428.0,419.0,433.0,0.0,0.0
+Engadine,independent,200,20.0,3.0,27.0,0.16,0.0
+Englorie Park,independent,0,,,,0.0,0.0
+Enmore,independent,200,366.0,349.75,371.0,0.0,0.0
+Epping,independent,0,,,,0.0,0.0
+Ermington,independent,200,106.0,43.975,137.025,0.0,0.0
+Erskine Park,independent,200,33.0,16.0,41.025000000000006,0.0,0.0
+Erskineville,independent,0,,,,0.0,0.0
+Eschol Park,independent,200,313.0,290.975,326.05,0.0,0.0
+Eveleigh,independent,0,,,,0.0,0.0
+Fairfield,independent,200,359.0,354.0,364.025,0.0,0.0
+Fairfield East,independent,200,442.0,429.975,445.0,0.0,0.0
+Fairfield Heights,independent,200,408.0,381.0,416.0,0.0,0.0
+Fairfield West,independent,200,350.0,310.975,362.0,0.0,0.0
+Fairlight,independent,0,,,,0.0,0.0
+Fiddletown,independent,0,,,,0.0,0.0
+Five Dock,independent,0,,,,0.0,0.0
+Forest Glen,independent,0,,,,0.0,0.0
+Forest Lodge,independent,0,,,,0.0,0.0
+Forestville,independent,200,61.0,12.0,85.0,0.015,0.0
+Freemans Reach,independent,200,396.0,384.975,405.0,0.0,0.0
+Frenchs Forest,independent,200,103.5,64.975,122.0,0.0,0.0
+Freshwater,independent,200,13.0,4.0,28.0,0.39,0.0
+Gables,independent,200,250.0,244.0,256.0,0.0,0.0
+Galston,independent,200,286.0,253.0,294.025,0.0,0.0
+Georges Hall,independent,200,330.0,273.0,345.0,0.0,0.0
+Gilead,independent,59,370.0,363.45,376.1,0.0,0.0
+Girraween,independent,0,,,,0.0,0.0
+Gladesville,independent,200,105.0,64.975,123.0,0.0,0.0
+Glebe,independent,0,,,,0.0,0.0
+Gledswood Hills,independent,200,121.0,68.0,139.025,0.0,0.0
+Glen Alpine,independent,200,142.0,88.975,163.0,0.0,0.0
+Glendenning,independent,200,208.0,153.925,234.0,0.0,0.0
+Glenfield,independent,200,14.5,7.0,22.025000000000006,0.17,0.0
+Glenhaven,independent,200,70.0,35.975,86.0,0.0,0.0
+Glenmore Park,independent,200,9.0,7.0,13.0,0.73,0.0
+Glenorie,independent,0,,,,0.0,0.0
+Glenwood,independent,200,91.0,73.0,121.05000000000001,0.0,0.0
+Glossodia,independent,200,296.0,248.0,313.0,0.0,0.0
+Gordon,independent,200,166.0,110.0,185.025,0.0,0.0
+Grantham Farm,independent,200,153.0,134.95,162.025,0.0,0.0
+Granville,independent,200,269.0,257.95,280.05,0.0,0.0
+Grasmere,independent,200,246.0,241.0,251.0,0.0,0.0
+Grays Point,independent,200,214.0,197.925,226.0,0.0,0.0
+Great Mackerel Beach,independent,0,,,,0.0,0.0
+Green Valley,independent,200,100.0,64.975,121.025,0.0,0.0
+Greenacre,independent,200,310.0,301.975,317.0,0.0,0.0
+Greendale,independent,0,,,,0.0,0.0
+Greenfield Park,independent,200,398.5,340.75,414.0,0.0,0.0
+Greenhills Beach,independent,200,335.0,330.0,341.025,0.0,0.0
+Greenwich,independent,0,,,,0.0,0.0
+Gregory Hills,independent,200,64.0,32.925000000000004,82.0,0.0,0.0
+Greystanes,independent,200,181.0,166.0,193.025,0.0,0.0
+Grose Vale,independent,0,,,,0.0,0.0
+Grose Wold,independent,0,,,,0.0,0.0
+Guildford,independent,200,340.0,331.975,347.0,0.0,0.0
+Guildford West,independent,200,437.0,418.975,441.0,0.0,0.0
+Gymea,independent,200,162.0,103.975,179.0,0.0,0.0
+Gymea Bay,independent,200,98.5,52.975,121.05000000000001,0.0,0.0
+Haberfield,independent,200,259.5,207.925,273.0,0.0,0.0
+Hammondville,independent,200,371.0,327.975,380.025,0.0,0.0
+Harrington Park,independent,200,51.5,11.975000000000001,80.0,0.02,0.0
+Harris Park,independent,0,,,,0.0,0.0
+Hassall Grove,independent,200,233.5,145.9,251.0,0.0,0.0
+Haymarket,independent,0,,,,0.0,0.0
+Heathcote,independent,200,11.0,7.0,15.0,0.325,0.0
+Hebersham,independent,200,370.0,329.9,382.0,0.0,0.0
+Heckenberg,independent,200,432.0,426.0,438.0,0.0,0.0
+Henley,independent,0,,,,0.0,0.0
+Hillsdale,independent,200,260.0,222.925,277.025,0.0,0.0
+Hinchinbrook,independent,200,89.0,61.7,112.0,0.0,0.0
+Hobartville,independent,200,434.0,429.0,438.0,0.0,0.0
+Holroyd,independent,200,370.0,362.0,379.025,0.0,0.0
+Holsworthy,independent,200,33.0,21.900000000000002,40.0,0.0,0.0
+Homebush,independent,200,84.5,46.975,107.0,0.0,0.0
+Homebush West,independent,200,200.0,143.975,224.0,0.0,0.0
+Horningsea Park,independent,200,297.0,269.95,306.0,0.0,0.0
+Hornsby,independent,200,109.0,99.0,118.025,0.0,0.0
+Hornsby Heights,independent,200,46.0,23.975,59.025000000000006,0.0,0.0
+Horsley Park,independent,200,105.0,97.975,112.025,0.0,0.0
+Hoxton Park,independent,200,207.0,147.925,231.0,0.0,0.0
+Hunters Hill,independent,200,360.0,311.0,371.025,0.0,0.0
+Huntleys Cove,independent,15,278.0,274.35,282.0,0.0,0.0
+Huntleys Point,independent,0,,,,0.0,0.0
+Hurlstone Park,independent,200,299.0,248.0,319.0,0.0,0.0
+Hurstville,independent,200,235.0,225.975,242.0,0.0,0.0
+Hurstville Grove,independent,200,265.0,253.0,276.0,0.0,0.0
+Illawong,independent,200,127.5,68.975,164.025,0.0,0.0
+Ingleburn,independent,200,236.0,136.95,251.025,0.0,0.0
+Ingleside,independent,191,106.0,98.0,113.5,0.0,0.0
+Jamisontown,independent,200,399.0,368.975,411.025,0.0,0.0
+Jannali,independent,200,124.0,74.9,145.0,0.0,0.0
+Jordan Springs,independent,200,55.0,29.0,70.0,0.0,0.0
+Kangaroo Point,independent,0,,,,0.0,0.0
+Kareela,independent,200,324.0,270.0,335.0,0.0,0.0
+Kearns,independent,200,228.0,195.0,251.0,0.0,0.0
+Kellyville,independent,200,41.0,28.0,55.0,0.0,0.0
+Kellyville Ridge,independent,200,82.0,42.975,104.0,0.0,0.0
+Kemps Creek,independent,200,219.0,212.0,224.0,0.0,0.0
+Kensington,independent,0,,,,0.0,0.0
+Kenthurst,independent,200,106.0,59.975,124.025,0.0,0.0
+Kentlyn,independent,11,291.0,282.5,295.25,0.0,0.0
+Killara,independent,200,49.0,25.0,62.025000000000006,0.0,0.0
+Killarney Heights,independent,200,341.0,284.95,355.0,0.0,0.0
+Kings Langley,independent,200,164.0,115.975,198.0,0.0,0.0
+Kings Park,independent,200,262.0,235.0,278.0,0.0,0.0
+Kingsford,independent,0,,,,0.0,0.0
+Kingsgrove,independent,200,173.0,140.975,195.0,0.0,0.0
+Kingswood,independent,200,350.0,239.9,373.025,0.0,0.0
+Kirkham,independent,2,331.5,330.075,332.925,0.0,0.0
+Kirrawee,independent,200,95.0,40.925000000000004,115.025,0.0,0.0
+Kirribilli,independent,0,,,,0.0,0.0
+Kogarah,independent,200,146.0,128.0,157.0,0.0,0.0
+Kogarah Bay,independent,200,203.0,193.0,216.0,0.0,0.0
+Ku-ring-gai Chase,independent,0,,,,0.0,0.0
+Kurmond,independent,48,334.0,285.05,360.0,0.0,0.0
+Kurnell,independent,200,249.0,145.725,261.025,0.0,0.0
+Kurraba Point,independent,0,,,,0.0,0.0
+Kurrajong,independent,0,,,,0.0,0.0
+Kurrajong Hills,independent,0,,,,0.0,0.0
+Kyeemagh,independent,92,413.0,404.275,418.0,0.0,0.0
+Kyle Bay,independent,197,358.0,347.0,368.2,0.0,0.0
+La Perouse,independent,0,,,,0.0,0.0
+Lakemba,independent,200,349.0,344.0,355.0,0.0,0.0
+Lalor Park,independent,200,377.0,339.0,388.0,0.0,0.0
+Lane Cove,independent,0,,,,0.0,0.0
+Lane Cove North,independent,0,,,,0.0,0.0
+Lane Cove West,independent,0,,,,0.0,0.0
+Lansvale,independent,200,445.0,442.0,449.0,0.0,0.0
+Laughtondale,independent,0,,,,0.0,0.0
+Lavender Bay,independent,0,,,,0.0,0.0
+Leets Vale,independent,0,,,,0.0,0.0
+Leichhardt,independent,0,,,,0.0,0.0
+Leonay,independent,200,186.0,166.925,199.025,0.0,0.0
+Leppington,independent,200,31.0,7.0,57.0,0.15,0.0
+Lethbridge Park,independent,200,350.0,289.0,360.0,0.0,0.0
+Leumeah,independent,200,174.0,117.95,193.0,0.0,0.0
+Lewisham,independent,200,359.0,315.0,366.0,0.0,0.0
+Liberty Grove,independent,0,,,,0.0,0.0
+Lidcombe,independent,200,184.0,161.0,197.025,0.0,0.0
+Lilli Pilli,independent,200,335.0,329.975,342.025,0.0,0.0
+Lilyfield,independent,0,,,,0.0,0.0
+Lindfield,independent,200,120.0,66.0,136.05,0.0,0.0
+Linley Point,independent,0,,,,0.0,0.0
+Little Bay,independent,0,,,,0.0,0.0
+Liverpool,independent,200,303.0,275.0,324.025,0.0,0.0
+Llandilo,independent,200,241.0,234.0,248.0,0.0,0.0
+Loftus,independent,200,95.0,68.0,116.07500000000002,0.0,0.0
+Londonderry,independent,200,143.0,87.0,163.025,0.0,0.0
+Long Point,independent,0,,,,0.0,0.0
+Longueville,independent,0,,,,0.0,0.0
+Lovett Bay,independent,0,,,,0.0,0.0
+Lower Portland,independent,0,,,,0.0,0.0
+Lucas Heights,independent,0,,,,0.0,0.0
+Luddenham,independent,200,271.0,255.0,278.0,0.0,0.0
+Lugarno,independent,200,202.0,97.95,232.0,0.0,0.0
+Lurnea,independent,200,292.5,250.875,325.0,0.0,0.0
+Macquarie Fields,independent,200,200.5,143.0,236.05,0.0,0.0
+Macquarie Links,independent,200,264.0,254.975,272.025,0.0,0.0
+Macquarie Park,independent,200,246.0,147.95,261.025,0.0,0.0
+Maianbar,independent,0,,,,0.0,0.0
+Malabar,independent,0,,,,0.0,0.0
+Manly,independent,0,,,,0.0,0.0
+Manly Vale,independent,200,146.0,87.0,164.0,0.0,0.0
+Maraylya,independent,200,63.0,58.0,68.0,0.0,0.0
+Marayong,independent,200,388.5,331.0,405.025,0.0,0.0
+Maroota,independent,0,,,,0.0,0.0
+Maroubra,independent,0,,,,0.0,0.0
+Marrickville,independent,200,119.0,112.0,127.0,0.0,0.0
+Marsden Park,independent,200,105.0,73.0,125.0,0.0,0.0
+Marsfield,independent,200,148.0,115.0,166.07500000000002,0.0,0.0
+Mascot,independent,200,47.0,35.95,59.0,0.0,0.0
+Matraville,independent,0,,,,0.0,0.0
+Mays Hill,independent,0,,,,0.0,0.0
+McGraths Hill,independent,200,365.0,335.8,377.0,0.0,0.0
+McMahons Point,independent,0,,,,0.0,0.0
+Meadowbank,independent,200,288.5,246.95,308.0,0.0,0.0
+Melonba,independent,200,133.0,123.975,143.025,0.0,0.0
+Melrose Park,independent,200,241.0,230.975,250.0,0.0,0.0
+Menai,independent,200,112.0,77.50000000000001,127.0,0.0,0.0
+Menangle Park,independent,0,,,,0.0,0.0
+Merrylands,independent,200,346.0,338.0,352.025,0.0,0.0
+Merrylands West,independent,200,412.0,383.0,419.0,0.0,0.0
+Middle Cove,independent,0,,,,0.0,0.0
+Middle Dural,independent,197,170.0,164.0,178.0,0.0,0.0
+Middleton Grange,independent,200,49.0,28.975,62.025000000000006,0.0,0.0
+Miller,independent,200,426.0,391.975,432.0,0.0,0.0
+Millers Point,independent,0,,,,0.0,0.0
+Milperra,independent,200,310.0,256.975,326.0,0.0,0.0
+Milsons Passage,independent,0,,,,0.0,0.0
+Milsons Point,independent,0,,,,0.0,0.0
+Minchinbury,independent,200,71.0,41.925000000000004,85.0,0.0,0.0
+Minto,independent,200,87.5,62.975,106.07500000000002,0.0,0.0
+Minto Heights,independent,0,,,,0.0,0.0
+Miranda,independent,200,20.0,15.0,25.0,0.0,0.0
+Mona Vale,independent,200,48.5,22.925,61.0,0.0,0.0
+Monterey,independent,200,283.0,238.95,304.0,0.0,0.0
+Moore Park,independent,0,,,,0.0,0.0
+Moorebank,independent,200,111.0,49.95,142.025,0.0,0.0
+Morning Bay,independent,0,,,,0.0,0.0
+Mortdale,independent,200,159.0,94.0,183.0,0.0,0.0
+Mortlake,independent,0,,,,0.0,0.0
+Mosman,independent,0,,,,0.0,0.0
+Mount Annan,independent,200,97.5,50.0,117.05000000000001,0.0,0.0
+Mount Colah,independent,200,63.0,9.0,97.0,0.045,0.0
+Mount Druitt,independent,200,168.0,157.975,184.025,0.0,0.0
+Mount Kuring-Gai,independent,200,218.0,211.0,225.0,0.0,0.0
+Mount Lewis,independent,200,440.0,436.975,444.0,0.0,0.0
+Mount Pritchard,independent,200,346.0,293.8,359.025,0.0,0.0
+Mount Vernon,independent,200,178.0,171.0,185.0,0.0,0.0
+Mulgoa,independent,200,89.0,79.975,99.025,0.0,0.0
+Mulgrave,independent,0,,,,0.0,0.0
+Narellan,independent,200,398.0,388.95,404.025,0.0,0.0
+Narellan Vale,independent,200,81.0,45.900000000000006,105.05000000000001,0.0,0.0
+Naremburn,independent,0,,,,0.0,0.0
+Narrabeen,independent,200,65.0,33.0,77.025,0.0,0.0
+Narraweena,independent,200,51.0,27.950000000000003,64.05000000000001,0.0,0.0
+Narwee,independent,200,420.0,385.0,429.0,0.0,0.0
+Neutral Bay,independent,0,,,,0.0,0.0
+Newington,independent,200,244.5,136.0,261.0,0.0,0.0
+Newport,independent,200,8.0,3.0,11.025000000000006,0.935,0.0
+Newtown,independent,0,,,,0.0,0.0
+Nirimba Fields,independent,200,210.0,196.95,222.0,0.0,0.0
+Normanhurst,independent,200,174.0,112.9,198.025,0.0,0.0
+North Balgowlah,independent,200,339.0,292.975,349.0,0.0,0.0
+North Bondi,independent,0,,,,0.0,0.0
+North Curl Curl,independent,200,292.5,246.975,311.0,0.0,0.0
+North Epping,independent,0,,,,0.0,0.0
+North Kellyville,independent,200,21.0,15.0,26.025000000000006,0.0,0.0
+North Manly,independent,200,198.0,164.95,206.0,0.0,0.0
+North Narrabeen,independent,200,51.5,26.950000000000003,68.025,0.0,0.0
+North Parramatta,independent,0,,,,0.0,0.0
+North Richmond,independent,200,414.0,384.975,419.025,0.0,0.0
+North Rocks,independent,0,,,,0.0,0.0
+North Ryde,independent,200,83.0,41.0,108.05000000000001,0.0,0.0
+North St Marys,independent,200,393.0,368.95,410.0,0.0,0.0
+North Strathfield,independent,0,,,,0.0,0.0
+North Sydney,independent,0,,,,0.0,0.0
+North Turramurra,independent,200,201.0,66.975,221.025,0.0,0.0
+North Wahroonga,independent,200,295.0,281.0,310.0,0.0,0.0
+North Willoughby,independent,0,,,,0.0,0.0
+Northbridge,independent,0,,,,0.0,0.0
+Northmead,independent,0,,,,0.0,0.0
+Northwood,independent,0,,,,0.0,0.0
+Norwest,independent,200,173.5,117.775,204.0,0.0,0.0
+Oakhurst,independent,200,78.0,41.0,96.0,0.0,0.0
+Oakville,independent,200,187.0,172.0,199.0,0.0,0.0
+Oatlands,independent,200,192.0,140.975,210.0,0.0,0.0
+Oatley,independent,200,129.0,54.85,154.025,0.0,0.0
+Old Guildford,independent,200,445.5,442.975,449.0,0.0,0.0
+Old Toongabbie,independent,0,,,,0.0,0.0
+Oran Park,independent,200,5.0,2.0,8.0,1.0,0.0
+Orchard Hills,independent,200,293.0,285.0,303.0,0.0,0.0
+Oxford Falls,independent,0,,,,0.0,0.0
+Oxley Park,independent,200,369.0,332.95,379.0,0.0,0.0
+Oyster Bay,independent,200,233.0,172.975,251.05,0.0,0.0
+Paddington,independent,0,,,,0.0,0.0
+Padstow,independent,200,112.0,85.975,130.025,0.0,0.0
+Padstow Heights,independent,200,328.0,273.9,347.0,0.0,0.0
+Pagewood,independent,200,209.0,159.975,229.0,0.0,0.0
+Palm Beach,independent,200,96.0,90.0,103.0,0.0,0.0
+Panania,independent,200,38.0,23.950000000000003,57.025000000000006,0.0,0.0
+Parklea,independent,200,258.0,236.0,273.025,0.0,0.0
+Parramatta,independent,0,,,,0.0,0.0
+Peakhurst,independent,200,165.0,127.975,186.07500000000002,0.0,0.0
+Peakhurst Heights,independent,200,263.0,254.0,275.025,0.0,0.0
+Pemulwuy,independent,200,219.0,157.0,238.025,0.0,0.0
+Pendle Hill,independent,0,,,,0.0,0.0
+Pennant Hills,independent,0,,,,0.0,0.0
+Penrith,independent,200,189.0,163.9,200.025,0.0,0.0
+Penshurst,independent,200,214.5,167.95,232.0,0.0,0.0
+Petersham,independent,200,253.0,203.975,264.025,0.0,0.0
+Phillip Bay,independent,0,,,,0.0,0.0
+Picnic Point,independent,200,52.0,26.0,66.025,0.0,0.0
+Pitt Town,independent,200,261.0,214.925,272.0,0.0,0.0
+Pitt Town Bottoms,independent,0,,,,0.0,0.0
+Pleasure Point,independent,0,,,,0.0,0.0
+Plumpton,independent,200,143.0,82.95,161.0,0.0,0.0
+Point Piper,independent,0,,,,0.0,0.0
+Port Hacking,independent,200,285.0,279.975,291.0,0.0,0.0
+Potts Hill,independent,200,341.0,332.0,349.0,0.0,0.0
+Potts Point,independent,0,,,,0.0,0.0
+Prairiewood,independent,200,438.0,426.0,443.0,0.0,0.0
+Prestons,independent,200,25.0,17.975,32.0,0.0,0.0
+Prospect,independent,200,288.0,230.0,310.0,0.0,0.0
+Punchbowl,independent,200,296.5,284.0,306.0,0.0,0.0
+Putney,independent,200,271.0,226.95,286.025,0.0,0.0
+Pymble,independent,200,220.0,151.0,252.025,0.0,0.0
+Pyrmont,independent,0,,,,0.0,0.0
+Quakers Hill,independent,200,44.0,28.975,58.025000000000006,0.0,0.0
+Queens Park,independent,0,,,,0.0,0.0
+Queenscliff,independent,200,58.0,47.95,65.025,0.0,0.0
+Raby,independent,200,157.5,91.975,175.025,0.0,0.0
+Ramsgate,independent,200,380.0,375.0,386.0,0.0,0.0
+Ramsgate Beach,independent,200,424.0,419.0,429.0,0.0,0.0
+Randwick,independent,0,,,,0.0,0.0
+Redfern,independent,0,,,,0.0,0.0
+Regents Park,independent,200,439.0,417.0,443.0,0.0,0.0
+Regentville,independent,28,144.5,132.375,163.3,0.0,0.0
+Revesby,independent,200,109.0,77.0,134.07500000000002,0.0,0.0
+Revesby Heights,independent,200,220.0,202.975,235.025,0.0,0.0
+Rhodes,independent,0,,,,0.0,0.0
+Richards,independent,0,,,,0.0,0.0
+Richmond,independent,200,429.0,414.975,436.0,0.0,0.0
+Richmond Lowlands,independent,0,,,,0.0,0.0
+Riverstone,independent,200,162.0,106.925,177.0,0.0,0.0
+Riverview,independent,0,,,,0.0,0.0
+Riverwood,independent,200,261.0,235.975,281.025,0.0,0.0
+Rockdale,independent,200,183.0,151.875,199.0,0.0,0.0
+Rodd Point,independent,0,,,,0.0,0.0
+Rookwood,independent,0,,,,0.0,0.0
+Rooty Hill,independent,200,77.5,40.875,85.0,0.0,0.0
+Ropes Crossing,independent,200,69.0,33.0,83.025,0.0,0.0
+Rose Bay,independent,0,,,,0.0,0.0
+Rosebery,independent,0,,,,0.0,0.0
+Rosehill,independent,0,,,,0.0,0.0
+Roselands,independent,200,290.5,249.975,316.0,0.0,0.0
+Rosemeadow,independent,200,303.0,266.0,321.0,0.0,0.0
+Roseville,independent,200,146.0,87.0,166.025,0.0,0.0
+Roseville Chase,independent,200,396.0,388.0,404.0,0.0,0.0
+Rossmore,independent,200,213.0,207.0,219.0,0.0,0.0
+Rouse Hill,independent,200,79.5,42.0,94.0,0.0,0.0
+Rozelle,independent,0,,,,0.0,0.0
+Ruse,independent,200,144.5,89.875,164.025,0.0,0.0
+Rushcutters Bay,independent,0,,,,0.0,0.0
+Russell Lea,independent,0,,,,0.0,0.0
+Rydalmere,independent,200,288.5,229.95,318.025,0.0,0.0
+Ryde,independent,200,75.0,36.95,89.025,0.0,0.0
+Sackville,independent,0,,,,0.0,0.0
+Sackville North,independent,0,,,,0.0,0.0
+Sadleir,independent,200,422.0,416.0,428.0,0.0,0.0
+Sandringham,independent,200,144.0,136.0,154.025,0.0,0.0
+Sandy Point,independent,0,,,,0.0,0.0
+Sans Souci,independent,200,58.0,35.0,70.025,0.0,0.0
+Scheyville,independent,0,,,,0.0,0.0
+Schofields,independent,200,20.0,12.0,27.025000000000006,0.01,0.0
+Scotland Island,independent,8,115.5,109.175,117.65,0.0,0.0
+Seaforth,independent,0,,,,0.0,0.0
+Sefton,independent,200,431.5,415.0,438.0,0.0,0.0
+Seven Hills,independent,200,156.0,134.0,171.025,0.0,0.0
+Shalvey,independent,200,365.0,348.975,373.0,0.0,0.0
+Shanes Park,independent,0,,,,0.0,0.0
+Silverwater,independent,200,320.0,297.975,332.0,0.0,0.0
+Singletons Mill,independent,0,,,,0.0,0.0
+Smeaton Grange,independent,0,,,,0.0,0.0
+Smithfield,independent,200,358.0,339.0,371.0,0.0,0.0
+South Coogee,independent,0,,,,0.0,0.0
+South Granville,independent,200,437.0,418.975,443.0,0.0,0.0
+South Hurstville,independent,200,307.0,202.975,340.025,0.0,0.0
+South Maroota,independent,0,,,,0.0,0.0
+South Penrith,independent,200,108.0,65.0,134.05,0.0,0.0
+South Turramurra,independent,200,421.0,415.0,429.0,0.0,0.0
+South Wentworthville,independent,200,375.0,331.0,385.0,0.0,0.0
+South Windsor,independent,200,413.0,377.0,424.05,0.0,0.0
+Spring Farm,independent,200,17.0,8.0,25.0,0.06,0.0
+St Andrews,independent,200,183.0,127.975,200.0,0.0,0.0
+St Clair,independent,200,4.0,3.0,6.0,1.0,0.0
+St Helens Park,independent,200,149.0,88.925,165.025,0.0,0.0
+St Ives,independent,200,21.0,9.0,30.0,0.1,0.0
+St Ives Chase,independent,200,380.5,276.925,388.07500000000005,0.0,0.0
+St Johns Park,independent,200,397.0,367.975,409.025,0.0,0.0
+St Leonards,independent,0,,,,0.0,0.0
+St Marys,independent,200,316.0,278.0,337.0,0.0,0.0
+St Peters,independent,200,376.0,358.0,382.0,0.0,0.0
+Stanhope Gardens,independent,200,165.0,68.0,180.0,0.0,0.0
+Stanmore,independent,200,261.5,223.975,280.0,0.0,0.0
+Strathfield,independent,200,70.0,63.0,78.0,0.0,0.0
+Strathfield South,independent,200,343.0,302.975,349.025,0.0,0.0
+Summer Hill,independent,200,266.0,223.975,278.0,0.0,0.0
+Surry Hills,independent,0,,,,0.0,0.0
+Sutherland,independent,200,62.0,31.975,75.10000000000002,0.0,0.0
+Sydenham,independent,200,366.0,361.0,371.0,0.0,0.0
+Sydney,independent,0,,,,0.0,0.0
+Sydney Olympic Park,independent,200,287.0,251.9,313.025,0.0,0.0
+Sylvania,independent,200,55.0,32.0,67.0,0.0,0.0
+Sylvania Waters,independent,200,190.0,160.0,202.0,0.0,0.0
+Tallawong,independent,200,130.0,76.925,151.0,0.0,0.0
+Tamarama,independent,0,,,,0.0,0.0
+Taren Point,independent,200,392.0,385.0,401.0,0.0,0.0
+Telopea,independent,200,412.5,389.975,419.0,0.0,0.0
+Tempe,independent,200,357.0,327.0,363.0,0.0,0.0
+Tennyson,independent,0,,,,0.0,0.0
+Tennyson Point,independent,200,373.0,367.0,379.025,0.0,0.0
+Terrey Hills,independent,200,225.0,184.95,230.0,0.0,0.0
+The Ponds,independent,200,160.5,88.95,202.0,0.0,0.0
+The Rocks,independent,0,,,,0.0,0.0
+The Slopes,independent,0,,,,0.0,0.0
+Thornleigh,independent,200,184.0,83.975,202.0,0.0,0.0
+Toongabbie,independent,0,,,,0.0,0.0
+Tregear,independent,200,391.0,372.975,398.025,0.0,0.0
+Turramurra,independent,200,74.0,48.975,90.025,0.0,0.0
+Turrella,independent,200,321.0,309.0,328.0,0.0,0.0
+Ultimo,independent,0,,,,0.0,0.0
+Varroville,independent,0,,,,0.0,0.0
+Vaucluse,independent,0,,,,0.0,0.0
+Villawood,independent,200,426.5,413.975,433.0,0.0,0.0
+Vineyard,independent,200,404.0,396.975,411.0,0.0,0.0
+Voyager Point,independent,200,303.0,292.0,313.025,0.0,0.0
+Wahroonga,independent,200,68.0,40.0,85.0,0.0,0.0
+Waitara,independent,200,79.0,43.0,97.10000000000002,0.0,0.0
+Wakeley,independent,200,417.0,390.975,423.0,0.0,0.0
+Wallacia,independent,0,,,,0.0,0.0
+Wareemba,independent,0,,,,0.0,0.0
+Warrawee,independent,200,382.0,366.0,389.0,0.0,0.0
+Warriewood,independent,200,16.0,7.0,23.0,0.11,0.0
+Warwick Farm,independent,200,433.0,418.975,440.0,0.0,0.0
+Waterfall,independent,0,,,,0.0,0.0
+Waterloo,independent,0,,,,0.0,0.0
+Watsons Bay,independent,0,,,,0.0,0.0
+Wattle Grove,independent,200,50.0,27.975,66.0,0.0,0.0
+Waverley,independent,0,,,,0.0,0.0
+Waverton,independent,0,,,,0.0,0.0
+Wedderburn,independent,0,,,,0.0,0.0
+Wentworth Point,independent,200,104.5,30.975,139.05,0.0,0.0
+Wentworthville,independent,0,,,,0.0,0.0
+Werrington,independent,200,417.0,380.925,428.05,0.0,0.0
+Werrington County,independent,200,318.0,230.0,332.0,0.0,0.0
+Werrington Downs,independent,200,229.0,208.975,245.0,0.0,0.0
+West Hoxton,independent,200,31.0,14.0,37.0,0.0,0.0
+West Pennant Hills,independent,200,110.0,92.0,123.025,0.0,0.0
+West Pymble,independent,200,393.0,365.975,407.0,0.0,0.0
+West Ryde,independent,200,129.0,50.95,156.025,0.0,0.0
+Westleigh,independent,200,242.0,185.9,263.0,0.0,0.0
+Westmead,independent,0,,,,0.0,0.0
+Wetherill Park,independent,200,409.0,382.0,415.0,0.0,0.0
+Whalan,independent,200,398.5,350.925,409.0,0.0,0.0
+Whale Beach,independent,0,,,,0.0,0.0
+Wheeler Heights,independent,200,91.5,75.0,99.0,0.0,0.0
+Wilberforce,independent,200,91.0,80.0,100.025,0.0,0.0
+Wiley Park,independent,200,351.0,303.9,363.0,0.0,0.0
+Willmot,independent,200,377.0,372.975,383.0,0.0,0.0
+Willoughby,independent,0,,,,0.0,0.0
+Willoughby East,independent,0,,,,0.0,0.0
+Windsor,independent,200,425.0,418.0,432.0,0.0,0.0
+Windsor Downs,independent,200,270.0,250.95,294.025,0.0,0.0
+Winston Hills,independent,0,,,,0.0,0.0
+Wisemans Ferry,independent,0,,,,0.0,0.0
+Wolli Creek,independent,200,199.0,119.0,221.025,0.0,0.0
+Wollstonecraft,independent,0,,,,0.0,0.0
+Woodbine,independent,200,334.0,321.975,347.0,0.0,0.0
+Woodcroft,independent,200,175.0,101.925,206.025,0.0,0.0
+Woodpark,independent,200,395.0,385.0,402.0,0.0,0.0
+Woollahra,independent,0,,,,0.0,0.0
+Woolloomooloo,independent,0,,,,0.0,0.0
+Woolooware,independent,200,168.0,119.9,189.025,0.0,0.0
+Woolwich,independent,32,386.0,381.775,390.0,0.0,0.0
+Woronora,independent,200,214.0,200.975,226.0,0.0,0.0
+Woronora Heights,independent,200,307.0,292.975,316.0,0.0,0.0
+Yagoona,independent,200,316.0,307.975,324.05,0.0,0.0
+Yarramundi,independent,28,63.0,57.675,69.325,0.0,0.0
+Yarrawarrah,independent,200,98.0,83.975,110.0,0.0,0.0
+Yennora,independent,200,444.0,441.0,448.0,0.0,0.0
+Yowie Bay,independent,200,187.0,163.975,198.0,0.0,0.0
+Zetland,independent,0,,,,0.0,0.0
+Abbotsbury,blocked,200,139.5,62.900000000000006,170.05,0.0,0.0
+Abbotsford,blocked,0,,,,0.0,0.0
+Acacia Gardens,blocked,200,287.0,224.925,337.1,0.0,0.0
+Agnes Banks,blocked,167,328.0,201.05,374.7,0.0,0.0
+Airds,blocked,200,360.0,261.975,384.0,0.0,0.0
+Alexandria,blocked,0,,,,0.0,0.0
+Alfords Point,blocked,200,322.0,258.925,335.025,0.0,0.0
+Allambie Heights,blocked,200,24.0,13.0,38.0,0.0,0.0
+Allawah,blocked,200,309.0,241.9,353.0,0.0,0.0
+Ambarvale,blocked,200,265.5,192.925,301.025,0.0,0.0
+Angus,blocked,0,,,,0.0,0.0
+Annandale,blocked,0,,,,0.0,0.0
+Annangrove,blocked,200,224.0,99.95,248.0,0.0,0.0
+Arcadia,blocked,200,190.0,70.0,220.025,0.0,0.0
+Arncliffe,blocked,200,114.5,50.95,148.05,0.0,0.0
+Arndell Park,blocked,0,,,,0.0,0.0
+Artarmon,blocked,0,,,,0.0,0.0
+Ashbury,blocked,200,350.0,310.0,363.0,0.0,0.0
+Ashcroft,blocked,200,436.0,414.0,443.0,0.0,0.0
+Ashfield,blocked,200,213.0,196.975,226.0,0.0,0.0
+Asquith,blocked,200,188.0,120.875,219.05,0.0,0.0
+Auburn,blocked,200,327.0,289.95,345.0,0.0,0.0
+Austral,blocked,200,137.0,46.975,157.0,0.0,0.0
+Avalon Beach,blocked,200,4.0,1.0,7.025000000000006,1.0,0.045
+Badgerys Creek,blocked,0,,,,0.0,0.0
+Balgowlah,blocked,0,,,,0.0,0.0
+Balgowlah Heights,blocked,0,,,,0.0,0.0
+Balmain,blocked,0,,,,0.0,0.0
+Balmain East,blocked,0,,,,0.0,0.0
+Bangor,blocked,200,196.0,74.0,223.07500000000002,0.0,0.0
+Banksia,blocked,200,325.0,274.95,353.0,0.0,0.0
+Banksmeadow,blocked,0,,,,0.0,0.0
+Bankstown,blocked,200,329.0,291.95,340.025,0.0,0.0
+Bankstown Aerodrome,blocked,0,,,,0.0,0.0
+Barangaroo,blocked,0,,,,0.0,0.0
+Barden Ridge,blocked,200,223.0,148.0,245.025,0.0,0.0
+Bardia,blocked,200,147.0,80.95,182.0,0.0,0.0
+Bardwell Park,blocked,200,320.5,273.975,342.0,0.0,0.0
+Bardwell Valley,blocked,200,294.0,265.0,323.025,0.0,0.0
+Bass Hill,blocked,200,398.0,358.0,412.0,0.0,0.0
+Baulkham Hills,blocked,200,64.5,39.975,101.0,0.0,0.0
+Bayview,blocked,200,199.0,128.82500000000002,232.025,0.0,0.0
+Beacon Hill,blocked,200,39.0,19.0,58.025000000000006,0.0,0.0
+Beaconsfield,blocked,0,,,,0.0,0.0
+Beaumont Hills,blocked,200,172.0,105.975,204.025,0.0,0.0
+Beecroft,blocked,0,,,,0.0,0.0
+Belfield,blocked,200,372.0,322.775,394.025,0.0,0.0
+Bella Vista,blocked,200,405.0,369.975,419.0,0.0,0.0
+Bellevue Hill,blocked,0,,,,0.0,0.0
+Belmore,blocked,200,304.0,263.975,337.05,0.0,0.0
+Belrose,blocked,200,28.0,15.0,39.05000000000001,0.0,0.0
+Berala,blocked,200,385.0,348.975,402.025,0.0,0.0
+Berkshire Park,blocked,200,206.0,164.0,231.0,0.0,0.0
+Berowra,blocked,200,41.0,23.950000000000003,57.0,0.0,0.0
+Berowra Heights,blocked,200,121.0,15.0,165.0,0.0,0.0
+Berowra Waters,blocked,0,,,,0.0,0.0
+Berrilee,blocked,0,,,,0.0,0.0
+Beverley Park,blocked,200,213.0,182.0,245.025,0.0,0.0
+Beverly Hills,blocked,200,230.0,144.82500000000002,262.025,0.0,0.0
+Bexley,blocked,200,127.5,85.925,159.0,0.0,0.0
+Bexley North,blocked,200,378.0,299.975,398.0,0.0,0.0
+Bidwill,blocked,200,432.0,378.95,443.0,0.0,0.0
+Bilgola Beach,blocked,0,,,,0.0,0.0
+Bilgola Plateau,blocked,200,82.0,37.0,98.0,0.0,0.0
+Birchgrove,blocked,0,,,,0.0,0.0
+Birrong,blocked,200,442.0,432.0,446.0,0.0,0.0
+Blackett,blocked,200,430.0,389.0,440.0,0.0,0.0
+Blacktown,blocked,200,181.0,126.0,227.025,0.0,0.0
+Blair Athol,blocked,200,178.0,139.0,214.07500000000002,0.0,0.0
+Blairmount,blocked,0,,,,0.0,0.0
+Blakehurst,blocked,200,137.0,63.95,180.025,0.0,0.0
+Bligh Park,blocked,200,194.5,47.0,257.07500000000005,0.0,0.0
+Bondi,blocked,0,,,,0.0,0.0
+Bondi Beach,blocked,0,,,,0.0,0.0
+Bondi Junction,blocked,0,,,,0.0,0.0
+Bonnet Bay,blocked,200,298.0,262.0,341.05,0.0,0.0
+Bonnyrigg,blocked,200,289.0,197.95,339.025,0.0,0.0
+Bonnyrigg Heights,blocked,200,151.0,68.925,185.0,0.0,0.0
+Bossley Park,blocked,200,184.5,146.95,212.025,0.0,0.0
+Botany,blocked,200,22.5,10.0,38.025000000000006,0.03,0.0
+Bow Bowing,blocked,200,128.0,96.0,153.025,0.0,0.0
+Box Hill,blocked,200,189.5,48.975,228.0,0.0,0.0
+Bradbury,blocked,200,178.0,96.925,211.025,0.0,0.0
+Breakfast Point,blocked,0,,,,0.0,0.0
+Brighton-Le-Sands,blocked,200,292.0,233.775,327.07500000000005,0.0,0.0
+Bringelly,blocked,200,211.0,201.0,222.0,0.0,0.0
+Bronte,blocked,0,,,,0.0,0.0
+Brooklyn,blocked,0,,,,0.0,0.0
+Brookvale,blocked,200,228.0,195.9,240.0,0.0,0.0
+Bundeena,blocked,200,286.5,239.975,301.0,0.0,0.0
+Bungarribee,blocked,200,242.0,215.95,268.025,0.0,0.0
+Burraneer,blocked,200,321.0,260.975,336.0,0.0,0.0
+Burwood,blocked,200,293.0,262.975,312.025,0.0,0.0
+Burwood Heights,blocked,200,336.0,315.0,353.025,0.0,0.0
+Busby,blocked,200,430.0,366.975,441.025,0.0,0.0
+Cabarita,blocked,0,,,,0.0,0.0
+Cabramatta,blocked,200,342.5,294.925,358.0,0.0,0.0
+Cabramatta West,blocked,200,406.0,342.9,417.0,0.0,0.0
+Caddens,blocked,200,224.0,123.875,266.05,0.0,0.0
+Cambridge Gardens,blocked,200,264.0,206.925,302.15000000000003,0.0,0.0
+Cambridge Park,blocked,200,352.5,236.0,388.0,0.0,0.0
+Camden,blocked,200,387.0,365.975,398.0,0.0,0.0
+Camden South,blocked,200,53.0,27.975,68.0,0.0,0.0
+Cammeray,blocked,0,,,,0.0,0.0
+Campbelltown,blocked,200,185.0,89.85000000000001,233.0,0.0,0.0
+Camperdown,blocked,0,,,,0.0,0.0
+Campsie,blocked,200,332.0,294.875,349.0,0.0,0.0
+Canada Bay,blocked,0,,,,0.0,0.0
+Canley Heights,blocked,200,367.0,279.975,383.025,0.0,0.0
+Canley Vale,blocked,200,394.0,351.975,406.0,0.0,0.0
+Canoelands,blocked,0,,,,0.0,0.0
+Canterbury,blocked,200,306.0,233.9,327.05,0.0,0.0
+Caringbah,blocked,200,62.5,11.975000000000001,102.05000000000001,0.005,0.0
+Caringbah South,blocked,200,2.0,2.0,6.0,1.0,0.0
+Carlingford,blocked,200,40.0,21.0,61.025000000000006,0.0,0.0
+Carlton,blocked,200,161.0,84.975,204.0,0.0,0.0
+Carnes Hill,blocked,200,280.5,266.975,295.07500000000005,0.0,0.0
+Carramar,blocked,200,445.0,441.975,450.0,0.0,0.0
+Carss Park,blocked,200,218.5,183.95,253.025,0.0,0.0
+Cartwright,blocked,200,419.0,396.925,430.0,0.0,0.0
+Castle Cove,blocked,0,,,,0.0,0.0
+Castle Hill,blocked,200,45.0,15.975000000000001,63.0,0.005,0.0
+Castlecrag,blocked,0,,,,0.0,0.0
+Castlereagh,blocked,200,101.0,84.975,119.025,0.0,0.0
+Casula,blocked,200,118.0,79.975,152.025,0.0,0.0
+Catherine Field,blocked,200,116.0,99.975,134.0,0.0,0.0
+Cattai,blocked,0,,,,0.0,0.0
+Cawdor,blocked,0,,,,0.0,0.0
+Cecil Hills,blocked,200,26.0,10.0,45.0,0.04,0.0
+Cecil Park,blocked,23,74.0,63.55,83.8,0.0,0.0
+Centennial Park,blocked,0,,,,0.0,0.0
+Chatswood,blocked,0,,,,0.0,0.0
+Chatswood West,blocked,0,,,,0.0,0.0
+Cheltenham,blocked,0,,,,0.0,0.0
+Cherrybrook,blocked,200,38.0,24.0,59.025000000000006,0.0,0.0
+Chester Hill,blocked,200,366.0,345.0,381.0,0.0,0.0
+Chifley,blocked,0,,,,0.0,0.0
+Chippendale,blocked,0,,,,0.0,0.0
+Chipping Norton,blocked,200,241.0,151.525,263.05,0.0,0.0
+Chiswick,blocked,0,,,,0.0,0.0
+Chullora,blocked,0,,,,0.0,0.0
+Church Point,blocked,200,244.0,230.975,259.0,0.0,0.0
+Claremont Meadows,blocked,200,255.0,145.95,287.025,0.0,0.0
+Clarendon,blocked,0,,,,0.0,0.0
+Clareville,blocked,31,91.0,79.75,111.5,0.0,0.0
+Claymore,blocked,200,394.0,345.0,416.0,0.0,0.0
+Clemton Park,blocked,200,410.0,396.0,421.0,0.0,0.0
+Clontarf,blocked,0,,,,0.0,0.0
+Clovelly,blocked,0,,,,0.0,0.0
+Clyde,blocked,0,,,,0.0,0.0
+Coasters Retreat,blocked,0,,,,0.0,0.0
+Cobbitty,blocked,200,68.0,39.95,82.025,0.0,0.0
+Colebee,blocked,200,311.0,232.975,354.025,0.0,0.0
+Collaroy,blocked,200,10.0,5.0,16.0,0.53,0.0
+Collaroy Plateau,blocked,200,190.0,120.975,219.025,0.0,0.0
+Colyton,blocked,200,231.0,164.875,261.025,0.0,0.0
+Como,blocked,200,348.0,249.975,385.0,0.0,0.0
+Concord,blocked,0,,,,0.0,0.0
+Concord West,blocked,0,,,,0.0,0.0
+Condell Park,blocked,200,313.0,257.9,342.025,0.0,0.0
+Connells Point,blocked,200,280.0,239.925,315.025,0.0,0.0
+Constitution Hill,blocked,0,,,,0.0,0.0
+Coogee,blocked,0,,,,0.0,0.0
+Cornwallis,blocked,0,,,,0.0,0.0
+Cottage Point,blocked,0,,,,0.0,0.0
+Cowan,blocked,0,,,,0.0,0.0
+Cranebrook,blocked,200,6.0,3.0,12.0,0.965,0.0
+Cremorne,blocked,0,,,,0.0,0.0
+Cremorne Point,blocked,0,,,,0.0,0.0
+Cromer,blocked,200,18.0,10.0,28.025000000000006,0.04,0.0
+Cronulla,blocked,200,1.0,1.0,2.0,1.0,0.955
+Crows Nest,blocked,0,,,,0.0,0.0
+Croydon,blocked,200,136.5,70.975,166.025,0.0,0.0
+Croydon Park,blocked,200,258.0,194.95,280.025,0.0,0.0
+Cumberland Reach,blocked,0,,,,0.0,0.0
+Curl Curl,blocked,200,308.0,291.975,328.025,0.0,0.0
+Currans Hill,blocked,200,180.0,95.825,240.025,0.0,0.0
+Daceyville,blocked,200,408.0,380.975,423.0,0.0,0.0
+Dangar Island,blocked,0,,,,0.0,0.0
+Darling Point,blocked,0,,,,0.0,0.0
+Darlinghurst,blocked,0,,,,0.0,0.0
+Darlington,blocked,0,,,,0.0,0.0
+Davidson,blocked,200,405.0,393.975,416.025,0.0,0.0
+Dawes Point,blocked,0,,,,0.0,0.0
+Dean Park,blocked,200,343.0,289.925,372.05,0.0,0.0
+Dee Why,blocked,200,16.0,3.0,26.025000000000006,0.18,0.0
+Denham Court,blocked,200,49.0,18.975,84.025,0.0,0.0
+Denistone,blocked,200,250.0,179.75,283.0,0.0,0.0
+Denistone East,blocked,200,229.0,198.975,253.025,0.0,0.0
+Denistone West,blocked,93,235.0,211.3,255.7,0.0,0.0
+Dharruk,blocked,200,390.5,376.975,406.05,0.0,0.0
+Dolans Bay,blocked,5,308.0,305.3,313.5,0.0,0.0
+Dolls Point,blocked,200,303.0,283.0,322.025,0.0,0.0
+Doonside,blocked,200,281.5,232.95,334.0,0.0,0.0
+Double Bay,blocked,0,,,,0.0,0.0
+Dover Heights,blocked,0,,,,0.0,0.0
+Drummoyne,blocked,0,,,,0.0,0.0
+Duffys Forest,blocked,0,,,,0.0,0.0
+Dulwich Hill,blocked,200,135.0,93.975,158.025,0.0,0.0
+Dundas,blocked,200,285.0,230.625,329.05,0.0,0.0
+Dundas Valley,blocked,200,335.0,270.925,362.025,0.0,0.0
+Dural,blocked,200,141.5,83.95,166.0,0.0,0.0
+Eagle Vale,blocked,200,348.0,195.975,377.05,0.0,0.0
+Earlwood,blocked,200,86.0,50.0,110.05000000000001,0.0,0.0
+East Hills,blocked,200,261.5,218.975,282.025,0.0,0.0
+East Killara,blocked,200,272.0,156.95,309.025,0.0,0.0
+East Kurrajong,blocked,42,66.0,55.05,76.95,0.0,0.0
+East Lindfield,blocked,200,364.0,293.95,390.05,0.0,0.0
+East Ryde,blocked,200,403.0,391.975,416.025,0.0,0.0
+Eastern Creek,blocked,48,388.0,382.35,396.0,0.0,0.0
+Eastgardens,blocked,200,249.0,136.975,267.0,0.0,0.0
+Eastlakes,blocked,200,382.5,335.95,408.025,0.0,0.0
+Eastwood,blocked,200,130.0,103.7,153.0,0.0,0.0
+Ebenezer,blocked,0,,,,0.0,0.0
+Edensor Park,blocked,200,148.5,50.925000000000004,195.07500000000002,0.0,0.0
+Edgecliff,blocked,0,,,,0.0,0.0
+Edmondson Park,blocked,200,32.0,12.975000000000001,47.025000000000006,0.01,0.0
+Elanora Heights,blocked,200,278.0,147.975,302.0,0.0,0.0
+Elderslie,blocked,200,116.5,68.95,139.0,0.0,0.0
+Elizabeth Bay,blocked,0,,,,0.0,0.0
+Elizabeth Hills,blocked,200,154.0,123.975,177.07500000000002,0.0,0.0
+Ellis Lane,blocked,34,94.0,86.475,113.175,0.0,0.0
+Elvina Bay,blocked,0,,,,0.0,0.0
+Emerton,blocked,200,423.0,415.975,432.025,0.0,0.0
+Emu Heights,blocked,200,148.0,70.95,179.07500000000002,0.0,0.0
+Emu Plains,blocked,200,248.5,69.925,275.1,0.0,0.0
+Enfield,blocked,200,427.0,413.975,437.0,0.0,0.0
+Engadine,blocked,200,19.0,3.0,33.0,0.19,0.0
+Englorie Park,blocked,0,,,,0.0,0.0
+Enmore,blocked,200,364.0,334.975,375.0,0.0,0.0
+Epping,blocked,0,,,,0.0,0.0
+Ermington,blocked,200,100.0,36.975,147.025,0.0,0.0
+Erskine Park,blocked,200,34.5,14.975000000000001,50.05000000000001,0.0,0.0
+Erskineville,blocked,0,,,,0.0,0.0
+Eschol Park,blocked,200,316.0,269.0,352.1,0.0,0.0
+Eveleigh,blocked,0,,,,0.0,0.0
+Fairfield,blocked,200,360.0,351.975,369.0,0.0,0.0
+Fairfield East,blocked,200,442.0,428.925,446.0,0.0,0.0
+Fairfield Heights,blocked,200,408.5,367.0,418.0,0.0,0.0
+Fairfield West,blocked,200,351.0,269.0,371.025,0.0,0.0
+Fairlight,blocked,0,,,,0.0,0.0
+Fiddletown,blocked,0,,,,0.0,0.0
+Five Dock,blocked,0,,,,0.0,0.0
+Forest Glen,blocked,0,,,,0.0,0.0
+Forest Lodge,blocked,0,,,,0.0,0.0
+Forestville,blocked,200,56.0,11.975000000000001,95.0,0.01,0.0
+Freemans Reach,blocked,200,396.0,330.875,407.0,0.0,0.0
+Frenchs Forest,blocked,200,104.0,56.0,134.05,0.0,0.0
+Freshwater,blocked,200,12.0,3.0,27.0,0.42,0.0
+Gables,blocked,200,251.0,236.975,267.05,0.0,0.0
+Galston,blocked,200,288.0,250.0,311.0,0.0,0.0
+Georges Hall,blocked,200,331.0,265.8,353.025,0.0,0.0
+Gilead,blocked,56,364.5,353.375,378.625,0.0,0.0
+Girraween,blocked,0,,,,0.0,0.0
+Gladesville,blocked,200,103.5,63.925000000000004,134.0,0.0,0.0
+Glebe,blocked,0,,,,0.0,0.0
+Gledswood Hills,blocked,200,124.5,55.0,162.025,0.0,0.0
+Glen Alpine,blocked,200,144.5,68.975,183.025,0.0,0.0
+Glendenning,blocked,200,218.5,129.8,260.0,0.0,0.0
+Glenfield,blocked,200,15.0,7.0,25.025000000000006,0.205,0.0
+Glenhaven,blocked,200,73.5,35.975,103.05000000000001,0.0,0.0
+Glenmore Park,blocked,200,11.0,6.0,19.025000000000006,0.47,0.0
+Glenorie,blocked,0,,,,0.0,0.0
+Glenwood,blocked,200,100.0,51.975,149.0,0.0,0.0
+Glossodia,blocked,200,301.0,231.9,338.025,0.0,0.0
+Gordon,blocked,200,166.0,91.95,199.0,0.0,0.0
+Grantham Farm,blocked,200,154.0,117.80000000000001,177.05,0.0,0.0
+Granville,blocked,200,269.0,241.95,307.0,0.0,0.0
+Grasmere,blocked,200,246.0,235.0,258.0,0.0,0.0
+Grays Point,blocked,200,216.0,176.0,236.025,0.0,0.0
+Great Mackerel Beach,blocked,0,,,,0.0,0.0
+Green Valley,blocked,200,103.0,51.95,138.05,0.0,0.0
+Greenacre,blocked,200,307.0,282.875,323.025,0.0,0.0
+Greendale,blocked,0,,,,0.0,0.0
+Greenfield Park,blocked,200,400.0,294.0,416.025,0.0,0.0
+Greenhills Beach,blocked,200,335.0,324.975,348.0,0.0,0.0
+Greenwich,blocked,0,,,,0.0,0.0
+Gregory Hills,blocked,200,67.5,21.975,123.025,0.0,0.0
+Greystanes,blocked,200,182.0,140.0,208.0,0.0,0.0
+Grose Vale,blocked,0,,,,0.0,0.0
+Grose Wold,blocked,0,,,,0.0,0.0
+Guildford,blocked,200,341.0,314.975,354.0,0.0,0.0
+Guildford West,blocked,200,435.0,415.0,442.0,0.0,0.0
+Gymea,blocked,200,161.0,93.9,190.025,0.0,0.0
+Gymea Bay,blocked,200,104.0,44.85,143.025,0.0,0.0
+Haberfield,blocked,200,258.0,195.95,278.025,0.0,0.0
+Hammondville,blocked,200,372.0,332.925,387.025,0.0,0.0
+Harrington Park,blocked,200,52.5,8.975000000000001,88.0,0.05,0.0
+Harris Park,blocked,0,,,,0.0,0.0
+Hassall Grove,blocked,200,228.0,112.975,263.025,0.0,0.0
+Haymarket,blocked,0,,,,0.0,0.0
+Heathcote,blocked,200,11.0,6.0,18.0,0.42,0.0
+Hebersham,blocked,200,372.0,302.9,395.025,0.0,0.0
+Heckenberg,blocked,200,433.0,414.925,441.0,0.0,0.0
+Henley,blocked,0,,,,0.0,0.0
+Hillsdale,blocked,200,258.5,205.975,289.07500000000005,0.0,0.0
+Hinchinbrook,blocked,200,90.0,40.95,131.025,0.0,0.0
+Hobartville,blocked,200,432.0,403.925,439.025,0.0,0.0
+Holroyd,blocked,200,371.0,351.975,385.025,0.0,0.0
+Holsworthy,blocked,200,34.0,16.0,44.025000000000006,0.0,0.0
+Homebush,blocked,200,80.5,34.975,115.025,0.0,0.0
+Homebush West,blocked,200,192.0,120.975,224.025,0.0,0.0
+Horningsea Park,blocked,200,299.0,264.0,316.025,0.0,0.0
+Hornsby,blocked,200,110.0,90.975,132.05,0.0,0.0
+Hornsby Heights,blocked,200,46.0,19.975,72.05000000000001,0.0,0.0
+Horsley Park,blocked,200,106.0,91.0,128.025,0.0,0.0
+Hoxton Park,blocked,200,208.0,131.725,245.0,0.0,0.0
+Hunters Hill,blocked,200,358.0,306.0,376.025,0.0,0.0
+Huntleys Cove,blocked,9,272.0,261.8,293.8,0.0,0.0
+Huntleys Point,blocked,0,,,,0.0,0.0
+Hurlstone Park,blocked,200,299.0,247.975,322.0,0.0,0.0
+Hurstville,blocked,200,234.0,203.0,247.025,0.0,0.0
+Hurstville Grove,blocked,200,263.0,230.0,294.025,0.0,0.0
+Illawong,blocked,200,129.0,46.975,187.05,0.0,0.0
+Ingleburn,blocked,200,236.0,137.82500000000002,258.025,0.0,0.0
+Ingleside,blocked,188,107.0,89.0,132.0,0.0,0.0
+Jamisontown,blocked,200,403.0,354.975,418.0,0.0,0.0
+Jannali,blocked,200,123.5,45.95,179.15000000000003,0.0,0.0
+Jordan Springs,blocked,200,60.0,12.975000000000001,93.025,0.01,0.0
+Kangaroo Point,blocked,0,,,,0.0,0.0
+Kareela,blocked,200,325.5,255.0,350.0,0.0,0.0
+Kearns,blocked,200,235.0,167.0,274.025,0.0,0.0
+Kellyville,blocked,200,44.0,23.0,67.025,0.0,0.0
+Kellyville Ridge,blocked,200,86.5,39.975,124.0,0.0,0.0
+Kemps Creek,blocked,200,217.0,207.975,225.0,0.0,0.0
+Kensington,blocked,0,,,,0.0,0.0
+Kenthurst,blocked,200,107.5,56.975,132.025,0.0,0.0
+Kentlyn,blocked,11,288.0,276.75,296.75,0.0,0.0
+Killara,blocked,200,49.0,18.975,80.0,0.0,0.0
+Killarney Heights,blocked,200,340.5,262.975,369.05,0.0,0.0
+Kings Langley,blocked,200,173.0,89.9,224.025,0.0,0.0
+Kings Park,blocked,200,267.0,207.0,312.07500000000005,0.0,0.0
+Kingsford,blocked,0,,,,0.0,0.0
+Kingsgrove,blocked,200,166.5,105.9,205.025,0.0,0.0
+Kingswood,blocked,200,358.5,186.9,388.0,0.0,0.0
+Kirkham,blocked,2,312.5,304.425,320.575,0.0,0.0
+Kirrawee,blocked,200,92.5,33.975,122.05000000000001,0.0,0.0
+Kirribilli,blocked,0,,,,0.0,0.0
+Kogarah,blocked,200,145.0,116.975,165.0,0.0,0.0
+Kogarah Bay,blocked,200,202.0,170.0,236.025,0.0,0.0
+Ku-ring-gai Chase,blocked,0,,,,0.0,0.0
+Kurmond,blocked,41,297.0,226.0,358.0,0.0,0.0
+Kurnell,blocked,200,251.0,142.95,267.0,0.0,0.0
+Kurraba Point,blocked,0,,,,0.0,0.0
+Kurrajong,blocked,0,,,,0.0,0.0
+Kurrajong Hills,blocked,0,,,,0.0,0.0
+Kyeemagh,blocked,90,407.0,384.225,422.775,0.0,0.0
+Kyle Bay,blocked,197,356.0,320.8,382.2,0.0,0.0
+La Perouse,blocked,0,,,,0.0,0.0
+Lakemba,blocked,200,348.0,333.975,360.025,0.0,0.0
+Lalor Park,blocked,200,380.0,317.95,402.05,0.0,0.0
+Lane Cove,blocked,0,,,,0.0,0.0
+Lane Cove North,blocked,0,,,,0.0,0.0
+Lane Cove West,blocked,0,,,,0.0,0.0
+Lansvale,blocked,200,445.5,441.0,450.0,0.0,0.0
+Laughtondale,blocked,0,,,,0.0,0.0
+Lavender Bay,blocked,0,,,,0.0,0.0
+Leets Vale,blocked,0,,,,0.0,0.0
+Leichhardt,blocked,0,,,,0.0,0.0
+Leonay,blocked,200,191.5,133.0,223.025,0.0,0.0
+Leppington,blocked,200,34.5,6.0,61.05000000000001,0.17,0.0
+Lethbridge Park,blocked,200,351.0,272.0,373.0,0.0,0.0
+Leumeah,blocked,200,176.0,98.775,210.025,0.0,0.0
+Lewisham,blocked,200,356.0,308.975,370.0,0.0,0.0
+Liberty Grove,blocked,0,,,,0.0,0.0
+Lidcombe,blocked,200,179.0,148.9,200.025,0.0,0.0
+Lilli Pilli,blocked,200,337.5,322.0,351.0,0.0,0.0
+Lilyfield,blocked,0,,,,0.0,0.0
+Lindfield,blocked,200,118.0,60.85,150.07500000000002,0.0,0.0
+Linley Point,blocked,0,,,,0.0,0.0
+Little Bay,blocked,0,,,,0.0,0.0
+Liverpool,blocked,200,306.0,246.525,344.0,0.0,0.0
+Llandilo,blocked,200,242.5,227.975,260.0,0.0,0.0
+Loftus,blocked,200,97.0,37.975,136.0,0.0,0.0
+Londonderry,blocked,200,147.0,48.95,182.025,0.0,0.0
+Long Point,blocked,0,,,,0.0,0.0
+Longueville,blocked,0,,,,0.0,0.0
+Lovett Bay,blocked,0,,,,0.0,0.0
+Lower Portland,blocked,0,,,,0.0,0.0
+Lucas Heights,blocked,0,,,,0.0,0.0
+Luddenham,blocked,200,272.0,257.0,283.025,0.0,0.0
+Lugarno,blocked,200,200.0,81.0,245.025,0.0,0.0
+Lurnea,blocked,200,303.0,223.975,347.07500000000005,0.0,0.0
+Macquarie Fields,blocked,200,192.0,139.95,243.05,0.0,0.0
+Macquarie Links,blocked,200,266.5,244.975,288.1,0.0,0.0
+Macquarie Park,blocked,200,246.0,130.925,274.0,0.0,0.0
+Maianbar,blocked,0,,,,0.0,0.0
+Malabar,blocked,0,,,,0.0,0.0
+Manly,blocked,0,,,,0.0,0.0
+Manly Vale,blocked,200,143.0,82.975,171.025,0.0,0.0
+Maraylya,blocked,200,63.0,56.0,72.025,0.0,0.0
+Marayong,blocked,200,393.0,317.0,413.025,0.0,0.0
+Maroota,blocked,0,,,,0.0,0.0
+Maroubra,blocked,0,,,,0.0,0.0
+Marrickville,blocked,200,119.0,100.95,135.025,0.0,0.0
+Marsden Park,blocked,200,108.5,70.0,134.05,0.0,0.0
+Marsfield,blocked,200,151.0,86.0,193.025,0.0,0.0
+Mascot,blocked,200,47.0,25.975,72.025,0.0,0.0
+Matraville,blocked,0,,,,0.0,0.0
+Mays Hill,blocked,0,,,,0.0,0.0
+McGraths Hill,blocked,200,366.0,295.75,388.05,0.0,0.0
+McMahons Point,blocked,0,,,,0.0,0.0
+Meadowbank,blocked,200,292.0,236.95,323.0,0.0,0.0
+Melonba,blocked,200,133.5,113.0,160.025,0.0,0.0
+Melrose Park,blocked,200,239.0,217.0,261.07500000000005,0.0,0.0
+Menai,blocked,200,111.0,48.975,138.025,0.0,0.0
+Menangle Park,blocked,0,,,,0.0,0.0
+Merrylands,blocked,200,346.0,320.0,359.025,0.0,0.0
+Merrylands West,blocked,200,409.0,369.925,421.025,0.0,0.0
+Middle Cove,blocked,0,,,,0.0,0.0
+Middle Dural,blocked,197,170.0,158.0,188.0,0.0,0.0
+Middleton Grange,blocked,200,51.0,23.950000000000003,74.025,0.0,0.0
+Miller,blocked,200,426.0,378.95,436.025,0.0,0.0
+Millers Point,blocked,0,,,,0.0,0.0
+Milperra,blocked,200,310.0,247.95,327.0,0.0,0.0
+Milsons Passage,blocked,0,,,,0.0,0.0
+Milsons Point,blocked,0,,,,0.0,0.0
+Minchinbury,blocked,200,71.0,26.975,100.025,0.0,0.0
+Minto,blocked,200,93.0,48.95,130.025,0.0,0.0
+Minto Heights,blocked,0,,,,0.0,0.0
+Miranda,blocked,200,21.0,12.0,35.025000000000006,0.005,0.0
+Mona Vale,blocked,200,50.0,18.0,65.025,0.0,0.0
+Monterey,blocked,200,280.0,223.95,315.07500000000005,0.0,0.0
+Moore Park,blocked,0,,,,0.0,0.0
+Moorebank,blocked,200,117.0,34.925000000000004,157.025,0.0,0.0
+Morning Bay,blocked,0,,,,0.0,0.0
+Mortdale,blocked,200,156.0,67.95,195.07500000000002,0.0,0.0
+Mortlake,blocked,0,,,,0.0,0.0
+Mosman,blocked,0,,,,0.0,0.0
+Mount Annan,blocked,200,100.0,48.95,130.0,0.0,0.0
+Mount Colah,blocked,200,65.0,7.9750000000000005,108.12500000000003,0.05,0.0
+Mount Druitt,blocked,200,170.0,136.925,200.025,0.0,0.0
+Mount Kuring-Gai,blocked,200,217.0,205.975,229.025,0.0,0.0
+Mount Lewis,blocked,200,438.5,425.975,445.0,0.0,0.0
+Mount Pritchard,blocked,200,347.0,243.85,376.025,0.0,0.0
+Mount Vernon,blocked,200,178.0,167.975,191.025,0.0,0.0
+Mulgoa,blocked,200,94.0,69.975,122.0,0.0,0.0
+Mulgrave,blocked,0,,,,0.0,0.0
+Narellan,blocked,200,398.0,380.0,410.0,0.0,0.0
+Narellan Vale,blocked,200,84.5,36.975,129.025,0.0,0.0
+Naremburn,blocked,0,,,,0.0,0.0
+Narrabeen,blocked,200,65.0,30.975,91.0,0.0,0.0
+Narraweena,blocked,200,50.5,24.0,74.05000000000001,0.0,0.0
+Narwee,blocked,200,420.0,367.875,433.05,0.0,0.0
+Neutral Bay,blocked,0,,,,0.0,0.0
+Newington,blocked,200,243.0,134.95,265.05,0.0,0.0
+Newport,blocked,200,8.0,4.0,14.0,0.745,0.0
+Newtown,blocked,0,,,,0.0,0.0
+Nirimba Fields,blocked,200,212.0,169.0,238.025,0.0,0.0
+Normanhurst,blocked,200,175.0,84.975,232.07500000000002,0.0,0.0
+North Balgowlah,blocked,200,339.0,277.95,364.0,0.0,0.0
+North Bondi,blocked,0,,,,0.0,0.0
+North Curl Curl,blocked,200,294.0,234.95,322.0,0.0,0.0
+North Epping,blocked,0,,,,0.0,0.0
+North Kellyville,blocked,200,22.0,13.0,31.0,0.01,0.0
+North Manly,blocked,200,197.5,148.975,216.025,0.0,0.0
+North Narrabeen,blocked,200,53.0,22.0,79.0,0.0,0.0
+North Parramatta,blocked,0,,,,0.0,0.0
+North Richmond,blocked,200,412.0,355.975,422.0,0.0,0.0
+North Rocks,blocked,0,,,,0.0,0.0
+North Ryde,blocked,200,86.0,36.0,119.05000000000001,0.0,0.0
+North St Marys,blocked,200,397.0,356.975,421.025,0.0,0.0
+North Strathfield,blocked,0,,,,0.0,0.0
+North Sydney,blocked,0,,,,0.0,0.0
+North Turramurra,blocked,200,199.0,57.975,229.0,0.0,0.0
+North Wahroonga,blocked,200,298.5,265.95,335.0,0.0,0.0
+North Willoughby,blocked,0,,,,0.0,0.0
+Northbridge,blocked,0,,,,0.0,0.0
+Northmead,blocked,0,,,,0.0,0.0
+Northwood,blocked,0,,,,0.0,0.0
+Norwest,blocked,200,182.0,103.80000000000001,228.05,0.0,0.0
+Oakhurst,blocked,200,80.5,32.0,119.0,0.0,0.0
+Oakville,blocked,200,188.0,149.975,217.0,0.0,0.0
+Oatlands,blocked,200,193.5,126.75,233.0,0.0,0.0
+Oatley,blocked,200,126.0,32.975,163.0,0.0,0.0
+Old Guildford,blocked,200,445.0,441.0,450.0,0.0,0.0
+Old Toongabbie,blocked,0,,,,0.0,0.0
+Oran Park,blocked,200,5.0,2.0,12.025000000000006,0.955,0.0
+Orchard Hills,blocked,200,297.0,281.975,319.0,0.0,0.0
+Oxford Falls,blocked,0,,,,0.0,0.0
+Oxley Park,blocked,200,370.0,321.85,386.025,0.0,0.0
+Oyster Bay,blocked,200,232.0,148.95,278.025,0.0,0.0
+Paddington,blocked,0,,,,0.0,0.0
+Padstow,blocked,200,109.0,66.975,149.0,0.0,0.0
+Padstow Heights,blocked,200,326.5,258.975,368.0,0.0,0.0
+Pagewood,blocked,200,202.5,144.975,244.025,0.0,0.0
+Palm Beach,blocked,200,98.0,86.0,111.0,0.0,0.0
+Panania,blocked,200,38.0,15.0,67.025,0.0,0.0
+Parklea,blocked,200,264.0,201.925,308.0,0.0,0.0
+Parramatta,blocked,0,,,,0.0,0.0
+Peakhurst,blocked,200,160.0,89.875,202.0,0.0,0.0
+Peakhurst Heights,blocked,200,262.0,223.0,292.05,0.0,0.0
+Pemulwuy,blocked,200,216.0,155.975,251.0,0.0,0.0
+Pendle Hill,blocked,0,,,,0.0,0.0
+Pennant Hills,blocked,0,,,,0.0,0.0
+Penrith,blocked,200,193.0,119.9,234.0,0.0,0.0
+Penshurst,blocked,200,210.5,134.925,248.025,0.0,0.0
+Petersham,blocked,200,250.5,199.0,265.025,0.0,0.0
+Phillip Bay,blocked,0,,,,0.0,0.0
+Picnic Point,blocked,200,51.0,23.925,78.025,0.0,0.0
+Pitt Town,blocked,200,262.0,153.975,282.0,0.0,0.0
+Pitt Town Bottoms,blocked,0,,,,0.0,0.0
+Pleasure Point,blocked,0,,,,0.0,0.0
+Plumpton,blocked,200,145.0,74.975,173.025,0.0,0.0
+Point Piper,blocked,0,,,,0.0,0.0
+Port Hacking,blocked,200,287.5,277.0,303.025,0.0,0.0
+Potts Hill,blocked,200,339.0,319.975,353.025,0.0,0.0
+Potts Point,blocked,0,,,,0.0,0.0
+Prairiewood,blocked,200,438.0,420.975,443.0,0.0,0.0
+Prestons,blocked,200,26.0,12.975000000000001,47.0,0.005,0.0
+Prospect,blocked,200,295.0,228.47500000000002,325.025,0.0,0.0
+Punchbowl,blocked,200,295.5,264.975,312.025,0.0,0.0
+Putney,blocked,200,268.0,203.95,304.025,0.0,0.0
+Pymble,blocked,200,223.0,115.9,271.0,0.0,0.0
+Pyrmont,blocked,0,,,,0.0,0.0
+Quakers Hill,blocked,200,47.5,18.0,76.025,0.0,0.0
+Queens Park,blocked,0,,,,0.0,0.0
+Queenscliff,blocked,200,59.0,40.975,71.0,0.0,0.0
+Raby,blocked,200,161.5,72.975,204.0,0.0,0.0
+Ramsgate,blocked,200,380.0,369.0,393.0,0.0,0.0
+Ramsgate Beach,blocked,200,422.0,415.0,433.0,0.0,0.0
+Randwick,blocked,0,,,,0.0,0.0
+Redfern,blocked,0,,,,0.0,0.0
+Regents Park,blocked,200,437.0,413.975,444.0,0.0,0.0
+Regentville,blocked,31,102.0,79.5,122.5,0.0,0.0
+Revesby,blocked,200,106.5,62.975,155.025,0.0,0.0
+Revesby Heights,blocked,200,213.5,178.0,252.0,0.0,0.0
+Rhodes,blocked,0,,,,0.0,0.0
+Richards,blocked,0,,,,0.0,0.0
+Richmond,blocked,200,427.0,406.975,437.025,0.0,0.0
+Richmond Lowlands,blocked,0,,,,0.0,0.0
+Riverstone,blocked,200,161.0,102.0,184.025,0.0,0.0
+Riverview,blocked,0,,,,0.0,0.0
+Riverwood,blocked,200,260.0,205.975,293.025,0.0,0.0
+Rockdale,blocked,200,177.0,132.0,200.07500000000002,0.0,0.0
+Rodd Point,blocked,0,,,,0.0,0.0
+Rookwood,blocked,0,,,,0.0,0.0
+Rooty Hill,blocked,200,77.0,31.0,94.0,0.0,0.0
+Ropes Crossing,blocked,200,70.0,26.0,100.05000000000001,0.0,0.0
+Rose Bay,blocked,0,,,,0.0,0.0
+Rosebery,blocked,0,,,,0.0,0.0
+Rosehill,blocked,0,,,,0.0,0.0
+Roselands,blocked,200,283.5,223.0,323.0,0.0,0.0
+Rosemeadow,blocked,200,304.0,243.875,329.0,0.0,0.0
+Roseville,blocked,200,145.0,72.95,191.05,0.0,0.0
+Roseville Chase,blocked,200,395.0,378.0,414.025,0.0,0.0
+Rossmore,blocked,200,212.0,202.0,219.05,0.0,0.0
+Rouse Hill,blocked,200,81.0,44.975,104.025,0.0,0.0
+Rozelle,blocked,0,,,,0.0,0.0
+Ruse,blocked,200,145.0,73.9,175.025,0.0,0.0
+Rushcutters Bay,blocked,0,,,,0.0,0.0
+Russell Lea,blocked,0,,,,0.0,0.0
+Rydalmere,blocked,200,290.0,213.8,338.0,0.0,0.0
+Ryde,blocked,200,74.0,30.975,98.0,0.0,0.0
+Sackville,blocked,0,,,,0.0,0.0
+Sackville North,blocked,0,,,,0.0,0.0
+Sadleir,blocked,200,423.0,398.975,434.0,0.0,0.0
+Sandringham,blocked,200,143.0,123.975,171.025,0.0,0.0
+Sandy Point,blocked,0,,,,0.0,0.0
+Sans Souci,blocked,200,55.0,29.0,80.025,0.0,0.0
+Scheyville,blocked,0,,,,0.0,0.0
+Schofields,blocked,200,22.0,8.0,34.025000000000006,0.1,0.0
+Scotland Island,blocked,10,98.0,90.125,106.55,0.0,0.0
+Seaforth,blocked,0,,,,0.0,0.0
+Sefton,blocked,200,429.0,412.95,438.0,0.0,0.0
+Seven Hills,blocked,200,158.5,109.925,195.025,0.0,0.0
+Shalvey,blocked,200,365.0,320.0,380.025,0.0,0.0
+Shanes Park,blocked,0,,,,0.0,0.0
+Silverwater,blocked,200,318.5,284.95,341.05,0.0,0.0
+Singletons Mill,blocked,0,,,,0.0,0.0
+Smeaton Grange,blocked,0,,,,0.0,0.0
+Smithfield,blocked,200,359.0,305.925,378.025,0.0,0.0
+South Coogee,blocked,0,,,,0.0,0.0
+South Granville,blocked,200,435.0,420.975,443.0,0.0,0.0
+South Hurstville,blocked,200,309.0,176.975,347.025,0.0,0.0
+South Maroota,blocked,0,,,,0.0,0.0
+South Penrith,blocked,200,122.0,31.950000000000003,182.025,0.0,0.0
+South Turramurra,blocked,200,423.0,398.825,440.0,0.0,0.0
+South Wentworthville,blocked,200,373.0,305.85,390.025,0.0,0.0
+South Windsor,blocked,200,416.0,316.925,437.0,0.0,0.0
+Spring Farm,blocked,200,17.0,7.0,29.025000000000006,0.13,0.0
+St Andrews,blocked,200,186.0,95.975,232.05,0.0,0.0
+St Clair,blocked,200,5.0,2.0,9.0,0.995,0.0
+St Helens Park,blocked,200,148.5,81.85000000000001,175.0,0.0,0.0
+St Ives,blocked,200,21.0,7.0,36.0,0.135,0.0
+St Ives Chase,blocked,200,379.5,255.875,398.05,0.0,0.0
+St Johns Park,blocked,200,398.0,329.925,416.0,0.0,0.0
+St Leonards,blocked,0,,,,0.0,0.0
+St Marys,blocked,200,322.5,273.0,353.025,0.0,0.0
+St Peters,blocked,200,374.0,352.95,387.0,0.0,0.0
+Stanhope Gardens,blocked,200,168.0,61.975,195.0,0.0,0.0
+Stanmore,blocked,200,264.0,219.9,282.025,0.0,0.0
+Strathfield,blocked,200,68.0,46.975,89.025,0.0,0.0
+Strathfield South,blocked,200,338.0,280.0,355.05,0.0,0.0
+Summer Hill,blocked,200,263.0,216.95,281.025,0.0,0.0
+Surry Hills,blocked,0,,,,0.0,0.0
+Sutherland,blocked,200,60.0,19.0,108.05000000000001,0.0,0.0
+Sydenham,blocked,200,366.0,348.975,379.0,0.0,0.0
+Sydney,blocked,0,,,,0.0,0.0
+Sydney Olympic Park,blocked,200,288.0,233.925,319.025,0.0,0.0
+Sylvania,blocked,200,55.0,23.975,88.20000000000005,0.0,0.0
+Sylvania Waters,blocked,200,187.0,133.925,218.05,0.0,0.0
+Tallawong,blocked,200,135.0,62.900000000000006,167.025,0.0,0.0
+Tamarama,blocked,0,,,,0.0,0.0
+Taren Point,blocked,200,392.0,376.0,413.0,0.0,0.0
+Telopea,blocked,200,412.5,381.0,425.025,0.0,0.0
+Tempe,blocked,200,354.0,318.85,370.0,0.0,0.0
+Tennyson,blocked,0,,,,0.0,0.0
+Tennyson Point,blocked,200,370.0,352.95,388.025,0.0,0.0
+Terrey Hills,blocked,200,223.0,176.0,234.0,0.0,0.0
+The Ponds,blocked,200,165.0,74.975,204.0,0.0,0.0
+The Rocks,blocked,0,,,,0.0,0.0
+The Slopes,blocked,0,,,,0.0,0.0
+Thornleigh,blocked,200,183.0,68.925,217.025,0.0,0.0
+Toongabbie,blocked,0,,,,0.0,0.0
+Tregear,blocked,200,392.0,358.975,408.05,0.0,0.0
+Turramurra,blocked,200,75.0,35.975,120.32500000000007,0.0,0.0
+Turrella,blocked,200,316.0,282.975,344.0,0.0,0.0
+Ultimo,blocked,0,,,,0.0,0.0
+Varroville,blocked,0,,,,0.0,0.0
+Vaucluse,blocked,0,,,,0.0,0.0
+Villawood,blocked,200,424.0,405.0,434.0,0.0,0.0
+Vineyard,blocked,200,404.0,386.975,418.0,0.0,0.0
+Voyager Point,blocked,200,303.0,281.0,323.025,0.0,0.0
+Wahroonga,blocked,200,68.5,32.0,108.05000000000001,0.0,0.0
+Waitara,blocked,200,83.0,36.975,136.15000000000003,0.0,0.0
+Wakeley,blocked,200,417.5,365.0,428.025,0.0,0.0
+Wallacia,blocked,0,,,,0.0,0.0
+Wareemba,blocked,0,,,,0.0,0.0
+Warrawee,blocked,200,383.0,340.675,407.025,0.0,0.0
+Warriewood,blocked,200,18.0,8.0,29.0,0.115,0.0
+Warwick Farm,blocked,200,434.0,411.85,440.025,0.0,0.0
+Waterfall,blocked,0,,,,0.0,0.0
+Waterloo,blocked,0,,,,0.0,0.0
+Watsons Bay,blocked,0,,,,0.0,0.0
+Wattle Grove,blocked,200,53.0,22.0,79.0,0.0,0.0
+Waverley,blocked,0,,,,0.0,0.0
+Waverton,blocked,0,,,,0.0,0.0
+Wedderburn,blocked,0,,,,0.0,0.0
+Wentworth Point,blocked,200,105.0,26.950000000000003,145.0,0.0,0.0
+Wentworthville,blocked,0,,,,0.0,0.0
+Werrington,blocked,200,419.0,339.95,441.0,0.0,0.0
+Werrington County,blocked,200,324.5,175.8,351.025,0.0,0.0
+Werrington Downs,blocked,200,236.5,151.0,279.025,0.0,0.0
+West Hoxton,blocked,200,32.0,13.975000000000001,45.05000000000001,0.005,0.0
+West Pennant Hills,blocked,200,115.5,77.975,153.025,0.0,0.0
+West Pymble,blocked,200,393.0,344.575,419.05,0.0,0.0
+West Ryde,blocked,200,128.0,43.95,166.05,0.0,0.0
+Westleigh,blocked,200,243.5,165.975,302.025,0.0,0.0
+Westmead,blocked,0,,,,0.0,0.0
+Wetherill Park,blocked,200,407.0,374.95,417.0,0.0,0.0
+Whalan,blocked,200,399.0,331.975,415.0,0.0,0.0
+Whale Beach,blocked,0,,,,0.0,0.0
+Wheeler Heights,blocked,200,94.0,64.95,120.0,0.0,0.0
+Wilberforce,blocked,200,92.0,72.0,118.0,0.0,0.0
+Wiley Park,blocked,200,348.0,275.925,375.05,0.0,0.0
+Willmot,blocked,200,377.0,362.9,391.025,0.0,0.0
+Willoughby,blocked,0,,,,0.0,0.0
+Willoughby East,blocked,0,,,,0.0,0.0
+Windsor,blocked,200,425.0,411.0,437.0,0.0,0.0
+Windsor Downs,blocked,200,276.0,208.925,341.125,0.0,0.0
+Winston Hills,blocked,0,,,,0.0,0.0
+Wisemans Ferry,blocked,0,,,,0.0,0.0
+Wolli Creek,blocked,200,196.5,96.72500000000001,226.0,0.0,0.0
+Wollstonecraft,blocked,0,,,,0.0,0.0
+Woodbine,blocked,200,338.5,292.95,366.025,0.0,0.0
+Woodcroft,blocked,200,178.0,79.95,229.05,0.0,0.0
+Woodpark,blocked,200,395.0,377.0,406.025,0.0,0.0
+Woollahra,blocked,0,,,,0.0,0.0
+Woolloomooloo,blocked,0,,,,0.0,0.0
+Woolooware,blocked,200,170.0,114.0,188.0,0.0,0.0
+Woolwich,blocked,24,386.0,371.75,400.7,0.0,0.0
+Woronora,blocked,200,212.0,168.95,244.0,0.0,0.0
+Woronora Heights,blocked,200,307.0,274.975,330.0,0.0,0.0
+Yagoona,blocked,200,315.0,288.975,331.025,0.0,0.0
+Yarramundi,blocked,23,64.0,55.3,73.69999999999999,0.0,0.0
+Yarrawarrah,blocked,200,99.5,69.0,130.025,0.0,0.0
+Yennora,blocked,200,445.0,441.975,449.0,0.0,0.0
+Yowie Bay,blocked,200,186.0,137.0,208.025,0.0,0.0
+Zetland,blocked,0,,,,0.0,0.0

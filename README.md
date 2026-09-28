@@ -142,6 +142,7 @@ commercial.
 | Operational | Pharmacy co-location + Distribution Priority Area status |
 | Robustness | 31 perturbations across 9 families, 21,760 rows |
 | Validation | AUC vs the DoH under-supply flag; Moran's I and LISA; blocked rank bootstrap |
+| Uncertainty | 200-replicate population resample calibrated on 2025 ERP |
 
 Weights are 0.40 access / 0.25 demand / 0.25 billing fit / 0.10 operational — and they
 are not defended by assertion. Every one is varied by ±50% and to zero in the sweep.
@@ -218,7 +219,10 @@ Full detail in [METHODOLOGY.md](METHODOLOGY.md). The ones that would change a de
   listing** (18 GP centres, retrieved 2026-09-23), replacing a brand-string match that
   found only 6 and understated the exclusion threefold. A public listing can still lag
   an opening or a closure.
-- **Supply is March 2025, demand is the 2021 Census.** Growth corridors are
+- **Supply is March 2025, demand is the 2021 Census.** Propagated: 200 replicates
+  resampling growth from 43 geometrically-validated SA2 matches leave Cronulla at rank 1
+  in 95% of draws, so the vintage gap does not overturn the recommendation — but it
+  widens rank 7–10 intervals to about ±6 ranks. Growth corridors are
   systematically under-ranked; Oran Park grew 46% over that window.
 
 ---

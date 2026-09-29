@@ -346,6 +346,50 @@ perturbed; the register, incomes and travel cost are held fixed.
 
 ---
 
+### Does access_gap add anything beyond suburb size? Nested logistic models
+
+The AUC comparison prints 0.813 against a 0.849 population baseline and leaves the reader
+to eyeball the difference. Fitting nested models answers it directly, and the coefficient
+is interpretable where an AUC gap is not.
+
+Fit `DPA ~ log(population)`, then `DPA ~ log(population) + access_gap`, and compare by
+likelihood ratio test — `LR = 2(ℓ_full − ℓ_reduced)`, chi-square on 1 df.
+
+| Cohort | n | DPA+ | LR | p | AIC |
+|---|---|---|---|---|---|
+| All classified | 680 | 79 | 56.52 | 5.6e-14 | 400.1 → 345.6 |
+| Eligible only | 443 | 29 | 8.77 | 0.003 | 195.7 → 188.9 |
+
+On its face that settles it: access_gap adds strongly, odds ratio 49.1 on the full cohort.
+
+**But the likelihood ratio test assumes independent observations, and they are not.**
+Refitting with standard errors clustered on GP catchment, which makes no independence
+assumption between suburbs sharing a catchment:
+
+| Cohort | z naive | z clustered | p clustered |
+|---|---|---|---|
+| All 680 | +6.53 | **+1.65** | 0.098 |
+| Eligible 443 | +2.75 | **+0.87** | 0.384 |
+
+The evidence collapses. And the reason is specific rather than mysterious: **40 of the 79
+DPA-positive suburbs sit in just three GP catchments**, and positives appear in only 16 of
+46 catchments at all. The naive test counts those 40 as 40 independent pieces of evidence.
+Clustering counts them closer to three, which is nearer the truth.
+
+**What this does and does not mean.** The coefficient sign and magnitude are unchanged —
+access_gap still moves DPA odds in the expected direction. What changes is how much
+confidence the DPA benchmark can support: once spatial concentration is handled honestly,
+it cannot demonstrate that access_gap beats a size proxy. That is a statement about the
+benchmark's power, not proof that the access measure is uninformative. The
+population-stratified AUC, which attacks the same question differently, still shows
+discrimination at 0.81–0.82 within bands.
+
+**A caveat on the caveat.** Cluster-robust standard errors are themselves unreliable below
+roughly 40–50 clusters. There are 46 here, 33 among the eligible. So the clustered z is the
+better of two imperfect numbers, not a definitive one.
+
+---
+
 ### What the DPA check does and does not establish
 
 Reported three ways, because the headline number alone is misleading.

@@ -30,6 +30,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from scipy import stats
 
 import dpa_status
 
@@ -167,6 +168,69 @@ def stratified_auc(
         rows.append({"band": band, "n": int(m.sum()), "positives": n_pos,
                      "auc": point, "ci_low": lo_ci, "ci_high": hi_ci})
     return pd.DataFrame(rows)
+
+
+def nested_logistic(frame, base, added, outcome="dpa_positive", cluster="gpc_code"):
+    """
+    Fit two nested logistic models and compare them by likelihood ratio test.
+
+    The question the AUC comparison could only answer by eye: does ``added`` carry
+    information about ``outcome`` BEYOND what ``base`` already explains? Fitting
+    ``outcome ~ base`` and ``outcome ~ base + added`` and comparing the log-likelihoods
+    answers it directly, and the coefficient is interpretable where an AUC difference is
+    not.
+
+    ``LR = 2 * (loglik_full - loglik_reduced)`` is distributed chi-square with degrees of
+    freedom equal to the number of added terms, under the null that the added terms have
+    zero coefficients.
+
+    THE P-VALUE ASSUMES INDEPENDENT OBSERVATIONS AND THEY ARE NOT. Moran's I on
+    ``access_gap`` is 0.623 (p = 0.001), so suburbs near each other carry similar values
+    and the model sees less information than its row count suggests. The full model is
+    therefore refitted with standard errors clustered on ``cluster``, which does not
+    assume independence between suburbs in the same GP catchment. Compare the two z
+    statistics: if clustering roughly halves it, the naive inference was overconfident by
+    about that much.
+
+    Returns a dict, not a printed table, so the caller decides what to report.
+    """
+    import statsmodels.api as sm
+
+    df = frame.dropna(subset=[outcome] + list(base) + list(added)).copy()
+    y = df[outcome].to_numpy(float)
+    X0 = sm.add_constant(df[list(base)].to_numpy(float), has_constant="add")
+    X1 = sm.add_constant(df[list(base) + list(added)].to_numpy(float), has_constant="add")
+
+    m0 = sm.Logit(y, X0).fit(disp=0)
+    m1 = sm.Logit(y, X1).fit(disp=0)
+    lr = 2.0 * (m1.llf - m0.llf)
+    dof = len(added)
+    p_lr = float(stats.chi2.sf(lr, dof))
+
+    clustered = sm.Logit(y, X1).fit(
+        disp=0, cov_type="cluster", cov_kwds={"groups": df[cluster].to_numpy()}
+    )
+    names = ["const"] + list(base) + list(added)
+    terms = []
+    for i, nm in enumerate(names):
+        terms.append({
+            "term": nm,
+            "coef": float(m1.params[i]),
+            "odds_ratio": float(np.exp(m1.params[i])),
+            "se_naive": float(m1.bse[i]),
+            "se_clustered": float(clustered.bse[i]),
+            "z_naive": float(m1.tvalues[i]),
+            "z_clustered": float(clustered.tvalues[i]),
+            "p_clustered": float(clustered.pvalues[i]),
+        })
+    return {
+        "n": int(len(df)), "events": int(y.sum()),
+        "llf_reduced": float(m0.llf), "llf_full": float(m1.llf),
+        "aic_reduced": float(m0.aic), "aic_full": float(m1.aic),
+        "lr_stat": float(lr), "lr_df": dof, "lr_p": p_lr,
+        "pseudo_r2_reduced": float(m0.prsquared), "pseudo_r2_full": float(m1.prsquared),
+        "terms": terms,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -630,6 +694,36 @@ def main() -> None:
         rows.append({"test": "auc_vs_dpa_stratified", "measure": r.band,
                      "statistic": r.auc, "ci_low": r.ci_low, "ci_high": r.ci_high,
                      "p_value": ""})
+
+    print()
+    print("  DOES access_gap ADD ANYTHING BEYOND SUBURB SIZE? Nested logistic models,")
+    print("  compared by likelihood ratio test.")
+    flagged["dpa_positive"] = positive.astype(float)
+    flagged["log_population"] = np.log(flagged["population"].clip(lower=1))
+    for label, sub in (("all 680", flagged),
+                       ("eligible 443", flagged.loc[elig_mask])):
+        try:
+            fit = nested_logistic(sub, ["log_population"], ["access_gap_unguarded"])
+        except Exception as exc:  # noqa: BLE001 - a singular fit must not stall the run
+            print(f"    {label}: model did not converge ({type(exc).__name__})")
+            continue
+        print(f"    {label}: n={fit['n']}, {fit['events']} DPA-positive")
+        print(f"      LR = {fit['lr_stat']:.2f} on {fit['lr_df']} df, p = {fit['lr_p']:.3g}"
+              f"   AIC {fit['aic_reduced']:.1f} -> {fit['aic_full']:.1f}")
+        for t in fit["terms"]:
+            if t["term"] == "const":
+                continue
+            print(f"      {t['term']:22s} coef {t['coef']:+7.3f}  OR {t['odds_ratio']:7.3f}"
+                  f"  z {t['z_naive']:+6.2f} naive / {t['z_clustered']:+6.2f} clustered"
+                  f"  p {t['p_clustered']:.3g}")
+            rows.append({"test": f"logit_{label.replace(' ', '')}", "measure": t["term"],
+                         "statistic": t["coef"], "ci_low": t["se_clustered"],
+                         "ci_high": t["odds_ratio"], "p_value": t["p_clustered"]})
+        rows.append({"test": f"logit_lr_{label.replace(' ', '')}", "measure": "access_gap_unguarded",
+                     "statistic": fit["lr_stat"], "ci_low": "", "ci_high": "",
+                     "p_value": fit["lr_p"]})
+    print("  z clustered on GP catchment does not assume suburbs are independent;")
+    print("  the gap between the two z values is the cost of the spatial dependence.")
 
     print()
     print("=" * 78)

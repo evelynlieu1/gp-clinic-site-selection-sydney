@@ -1,8 +1,9 @@
 exa-py>=1.0.0
-python-dotenv>=1.0.0
-geopandas>=0.14.0
-matplotlib>=3.8.0
 folium>=0.15.0
-shapely>=2.0.0
-osmnx>=2.0.0
+geopandas>=0.14.0
 google-genai>=1.0.0
+matplotlib>=3.8.0
+osmnx>=2.0.0
+python-dotenv>=1.0.0
+shapely>=2.0.0
+statsmodels

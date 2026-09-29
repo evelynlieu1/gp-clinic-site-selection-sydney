@@ -209,6 +209,14 @@ and **none at all above 15,000**. So the external validation is strongest precis
 the shortlist is not, and on the 443 eligible suburbs the composite scores 0.570
 [0.45, 0.67] — an interval containing chance.
 
+**And a nested logistic model weakens it further.** `DPA ~ log(population) + access_gap`
+beats `DPA ~ log(population)` on a likelihood ratio test (LR 56.5, p = 5.6e-14) — but that
+test assumes independent suburbs. With standard errors clustered on GP catchment the
+access_gap z falls from +6.53 to +1.65 (p = 0.098), and on the eligible cohort from +2.75
+to +0.87. The cause is concentration: 40 of the 79 DPA-positive suburbs sit in three
+catchments, so the naive test counts 40 independent observations where there are closer to
+three.
+
 The defensible claim is that `access_gap` measures something real about GP supply, shown
 where DPA has enough positives to test it. It is not evidence that the ranking of large
 metropolitan suburbs is externally validated, because no external benchmark in this

@@ -254,7 +254,7 @@ def format_total_gp(total_gp: float, is_floor: bool, status: str, clinics_listed
     return f"{total_gp:,.0f}{'+' if is_floor else ''}"
 
 
-def fit_scores(income: pd.Series) -> np.ndarray:
+def fit_scores(income: pd.Series, knots=None) -> np.ndarray:
     """
     D1 fit for each income, NaN where income is missing.
 
@@ -263,35 +263,48 @@ def fit_scores(income: pd.Series) -> np.ndarray:
     a choropleth: it would paint "unknown" and "measured, outside the band" the same pale
     colour. So missing income is kept as NaN here and drawn flat grey.
 
-    >>> vals = fit_scores(pd.Series([1200.0, 1800.0, 2400.0, 3125.0, 4000.0, float("nan")]))
+    Knots are passed explicitly here so the doctest states the SHAPE and does not move
+    when the income data changes. Production callers pass nothing and get the derived
+    band.
+
+    >>> k = (1550.0, 2050.0, 2750.0, 3500.0)
+    >>> vals = fit_scores(pd.Series([1200.0, 1800.0, 2400.0, 3125.0, 4000.0, float("nan")]), k)
     >>> [None if np.isnan(v) else round(float(v), 3) for v in vals]
     [0.0, 0.5, 1.0, 0.5, 0.0, None]
     """
+    knots = INCOME_KNOTS if knots is None else knots
     inc = pd.to_numeric(income, errors="coerce").to_numpy(dtype=float)
     return np.array(
-        [mixed_billing_fit(float(v)) if np.isfinite(v) else np.nan for v in inc],
+        # INCOME_KNOTS must be passed explicitly. mixed_billing_fit binds its default
+        # at definition time from site_score, so rebinding the name in this module changes
+        # the caption and not the colours - which is worse than not deriving them at all.
+        [mixed_billing_fit(float(v), knots) if np.isfinite(v) else np.nan
+         for v in inc],
         dtype=float,
     )
 
 
-def fit_verdict(income: float, fit: float) -> str:
+def fit_verdict(income: float, fit: float, knots=None) -> str:
     """
     One short reader-facing phrase per suburb, naming WHICH side of the U it sits on.
 
-    >>> fit_verdict(float("nan"), float("nan"))
+    Knots passed explicitly so the phrasing under test does not move with the data.
+
+    >>> k = (1550.0, 2050.0, 2750.0, 3500.0)
+    >>> fit_verdict(float("nan"), float("nan"), k)
     'no income recorded, fit not computable'
-    >>> fit_verdict(1200.0, 0.0)
+    >>> fit_verdict(1200.0, 0.0, k)
     'income at or below $1,550: cannot absorb the gap'
-    >>> fit_verdict(4000.0, 0.0)
+    >>> fit_verdict(4000.0, 0.0, k)
     'income at or above $3,500: buys full private care'
-    >>> fit_verdict(2400.0, 1.0)
+    >>> fit_verdict(2400.0, 1.0, k)
     'best fit: on the mixed-billing plateau'
-    >>> fit_verdict(1800.0, 0.5)
+    >>> fit_verdict(1800.0, 0.5, k)
     'partial fit: on the lower taper'
-    >>> fit_verdict(3125.0, 0.5)
+    >>> fit_verdict(3125.0, 0.5, k)
     'partial fit: on the upper taper'
     """
-    lo, plateau_lo, _plateau_hi, hi = INCOME_KNOTS
+    lo, plateau_lo, _plateau_hi, hi = INCOME_KNOTS if knots is None else knots
     if not np.isfinite(income) or not np.isfinite(fit):
         return "no income recorded, fit not computable"
     if fit <= 0.0:

@@ -619,6 +619,7 @@ The scrape is not a ranking input. It becomes `total_gp`, which reaches the scor
 
 ```bash
 python rebuild_suburbs_final.py   # suburbs_final.csv + eda_data.csv (re-runs cell 8 of the notebook)
+python fix_suburb_area.py         # repairs the area column AND suburb_areas.json, which cell 8 reads
 python health_facilities.py       # ga_general_practices_nsw.csv, ga_pharmacies_nsw.csv
 python gp_catchments.py           # suburb_gp_catchment.csv; downloads GPC (45 MB), SAL (104 MB), SA2 ERP
 python dpa_status.py              # suburb_dpa_status.csv

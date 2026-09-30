@@ -19,6 +19,7 @@ Run: python fix_suburb_area.py [--dry-run]
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -30,6 +31,13 @@ TARGETS = (
     ROOT / "scraped_data" / "suburbs_final.csv",
     ROOT / "scraped_data" / "eda_data.csv",
 )
+
+#: The ORIGIN of the bad values, and the reason repairing only the CSVs does not hold.
+#: Cell 8 of pre-processing.ipynb reads this file and writes ``r["area"] = areas.get(s)``,
+#: so ``rebuild_suburbs_final.py`` - the first command in the documented run order -
+#: restores every corrupted value and silently undoes this script. Repairing the JSON too
+#: makes the fix durable: after one run, rebuilds produce correct areas on their own.
+AREAS_JSON = ROOT / "scraped_data" / "suburb_areas.json"
 
 #: Ratio outside which a suburb's shipped area is reported as materially wrong. Chosen so
 #: the report separates rounding from corruption: MEASURED, 519 of 680 sit inside it.
@@ -103,6 +111,20 @@ def main() -> None:
         frame.to_csv(path, index=False)
         changed = int((before.round(4) != frame["area"]).sum())
         print(f"\nwrote {path.name}: {changed} of {len(frame)} area values changed")
+
+    if AREAS_JSON.exists():
+        existing = json.loads(AREAS_JSON.read_text(encoding="utf-8"))
+        repaired = {k: round(lookup[k], 4) for k in existing if k in lookup}
+        kept = {k: v for k, v in existing.items() if k not in lookup}
+        moved = sum(1 for k, v in existing.items()
+                    if k in lookup and round(float(v), 4) != round(lookup[k], 4))
+        AREAS_JSON.write_text(
+            json.dumps({**repaired, **kept}, indent=2, sort_keys=True), encoding="utf-8"
+        )
+        print(f"\nwrote {AREAS_JSON.name}: {moved} of {len(existing)} values changed "
+              f"({len(kept)} not in the SAL join, left alone)")
+        print("  this is the file cell 8 reads, so rebuilds no longer reintroduce the "
+              "corruption")
 
 
 if __name__ == "__main__":

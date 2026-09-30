@@ -1,10 +1,15 @@
 """
 Recompute the area column from ABS SAL 2021 polygons.
 
-The shipped column disagrees with the boundary file by more than rounding. Measured
-across all 680 suburbs: 519 within 5 percent, 70 out by over 20 percent, 18 by more
-than double. Sydney reads 26.4694 km2 against 2.9396 actual. Twelve rows share a value
-byte-identically with another suburb, which is a fill error rather than noise.
+The shipped column disagreed with the boundary file by more than rounding. Measured on
+2026-09-27, BEFORE this script first ran: 519 of 680 within 5 percent, 70 out by over 20
+percent, 18 by more than double, Sydney at 26.4694 km2 against 2.9396 actual, and twelve
+rows sharing a value byte-identically with another suburb - a fill error, not noise.
+
+Those figures are historical. Run it today and it reports 680 within 5 percent and 0
+beyond 20, because the repair has been applied; that output CONFIRMS the fix rather than
+contradicting this docstring. The four remaining shared values are genuine coincidences
+at 4 decimal places, where chance across 680 suburbs predicts about 23.
 
 area feeds nothing in site_score.py - D6 dropped it - but
 eda/plot_combined_pressure_density.py divides by it for the senior-density axis, so

@@ -9,8 +9,11 @@ suburb polygons (same cache as the priority map). Writes:
 TWO THINGS CHANGED FROM THE EARLIER VERSION OF THIS MAP.
 
 1. The choropleth is no longer raw household income. It is the D1 mixed-billing fit score
-   imported from ``site_score.mixed_billing_fit``: an inverted U, full score on the
-   $2,050-$2,750 plateau, tapering linearly to zero at $1,550 and at $3,500. Dark now
+   imported from ``site_score.mixed_billing_fit``: an inverted U, full score on a middle
+   plateau, tapering linearly to zero at each outer knot. The knots are DERIVED from
+   percentiles of the income column at run time, not hardcoded, so quoting figures here
+   would go stale the moment the data changed - the rendered caption prints the live band
+   (currently a $2,101-$2,872 plateau, zero at or beyond $1,583 and $3,492). Dark now
    means "best fit for a mixed-billing offer", NOT "richest". A monotonic income ramp made
    the wealthiest suburbs look like the best prospects, which is backwards: the standard
    consult rebate is about $43 against a typical private fee near $90, so mixed billing
@@ -32,9 +35,9 @@ THREE DIFFERENT ABSENCES, still drawn as three different things rather than one 
 one. Under an inverted U a pale suburb can mean two opposite commercial problems, and a
 sequential ramp cannot tell them apart, so the two zero causes are hatched apart:
 
-- fit 0 because income is at or below $1,550 -> brown forward hatch. Households cannot
-  absorb the gap; this is a bulk-bill-only market, not a mixed-billing one.
-- fit 0 because income is at or above $3,500 -> navy back hatch. Households buy full
+- fit 0 because income is at or below the lower knot -> brown forward hatch. Households
+  cannot absorb the gap; this is a bulk-bill-only market, not a mixed-billing one.
+- fit 0 because income is at or above the upper knot -> navy back hatch. Households buy full
   private care. These are the suburbs the old monotonic income map coloured DARKEST.
 - no income recorded at all -> flat grey. Fit is not computable, which is not a score of
   zero. (Currently no suburb is in this class; the count is printed so a reader can see
@@ -254,7 +257,9 @@ def format_total_gp(total_gp: float, is_floor: bool, status: str, clinics_listed
     return f"{total_gp:,.0f}{'+' if is_floor else ''}"
 
 
-def fit_scores(income: pd.Series, knots=None) -> np.ndarray:
+def fit_scores(
+    income: pd.Series, knots: tuple[float, float, float, float] | None = None
+) -> np.ndarray:
     """
     D1 fit for each income, NaN where income is missing.
 
@@ -284,7 +289,10 @@ def fit_scores(income: pd.Series, knots=None) -> np.ndarray:
     )
 
 
-def fit_verdict(income: float, fit: float, knots=None) -> str:
+def fit_verdict(
+    income: float, fit: float,
+    knots: tuple[float, float, float, float] | None = None,
+) -> str:
     """
     One short reader-facing phrase per suburb, naming WHICH side of the U it sits on.
 

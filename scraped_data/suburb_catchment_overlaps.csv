@@ -1,0 +1,758 @@
+suburb,gpc_code,gpc_name,overlap_fraction,overlap_km2,suburb_km2
+Abbotsbury,GP1077,Fairfield,1.0,4.9785,4.9785
+Abbotsford,GP1044,Canada Bay,1.0,1.0179,1.0179
+Acacia Gardens,GP1023,Blacktown - North,0.947919,0.9491,1.0012
+Acacia Gardens,GP1022,Blacktown,0.052081,0.0521,1.0012
+Agnes Banks,GP1176,Richmond - Windsor,1.0,15.4751,15.4751
+Airds,GP1043,Campbelltown (NSW),1.0,2.3808,2.3808
+Alexandria,GP1189,Sydney Inner City,1.0,3.5368,3.5368
+Alfords Point,GP1074,Engadine - Heathcote,1.0,2.5665,2.5665
+Allambie Heights,GP1209,Warringah,1.0,6.6746,6.6746
+Allawah,GP1113,Kogarah - Rockdale,1.0,0.584,0.584
+Ambarvale,GP1043,Campbelltown (NSW),1.0,2.8478,2.8478
+Angus,GP1023,Blacktown - North,1.0,6.0899,6.0899
+Annandale,GP1121,Leichhardt,0.996928,1.4886,1.4932
+Annandale,GP1189,Sydney Inner City,0.003072,0.0046,1.4932
+Annangrove,GP1070,Dural - Wisemans Ferry,1.0,10.2464,10.2464
+Arcadia,GP1070,Dural - Wisemans Ferry,1.0,22.4088,22.4088
+Arncliffe,GP1113,Kogarah - Rockdale,1.0,2.9437,2.9437
+Arndell Park,GP1143,Mount Druitt,0.989315,1.9794,2.0008
+Arndell Park,GP1022,Blacktown,0.010685,0.0214,2.0008
+Artarmon,GP1050,Chatswood - Lane Cove,1.0,2.5355,2.5355
+Ashbury,GP1186,Strathfield - Burwood - Ashfield,1.0,1.031,1.031
+Ashcroft,GP1036,Bringelly - Green Valley,1.0,1.1539,1.1539
+Ashfield,GP1186,Strathfield - Burwood - Ashfield,1.0,3.4138,3.4138
+Asquith,GP1100,Hornsby,1.0,3.5035,3.5035
+Auburn,GP1005,Auburn,1.0,8.5637,8.5637
+Austral,GP1036,Bringelly - Green Valley,1.0,17.6608,17.6608
+Avalon Beach,GP1169,Pittwater,1.0,5.1521,5.1521
+Badgerys Creek,GP1036,Bringelly - Green Valley,0.672347,18.1405,26.9809
+Badgerys Creek,GP1167,Penrith,0.327653,8.8404,26.9809
+Balgowlah,GP1131,Manly,1.0,1.9594,1.9594
+Balgowlah Heights,GP1131,Manly,1.0,1.6836,1.6836
+Balmain,GP1121,Leichhardt,1.0,1.5374,1.5374
+Balmain East,GP1121,Leichhardt,0.812436,0.2785,0.3428
+Balmain East,GP1189,Sydney Inner City,0.187564,0.0643,0.3428
+Bangor,GP1074,Engadine - Heathcote,1.0,3.9225,3.9225
+Banksia,GP1113,Kogarah - Rockdale,1.0,0.9571,0.9571
+Banksmeadow,GP1030,Botany,1.0,4.1582,4.1582
+Bankstown,GP1008,Bankstown,0.99246,6.3066,6.3545
+Bankstown,GP1046,Canterbury,0.00754,0.0479,6.3545
+Bankstown Aerodrome,GP1008,Bankstown,1.0,3.7302,3.7302
+Barangaroo,GP1189,Sydney Inner City,1.0,0.2227,0.2227
+Barden Ridge,GP1074,Engadine - Heathcote,1.0,5.5989,5.5989
+Bardia,GP1043,Campbelltown (NSW),1.0,2.11,2.11
+Bardwell Park,GP1113,Kogarah - Rockdale,1.0,0.9558,0.9558
+Bardwell Valley,GP1113,Kogarah - Rockdale,1.0,0.6271,0.6271
+Bass Hill,GP1008,Bankstown,0.993177,2.9379,2.9581
+Bass Hill,GP1137,Merrylands - Guildford,0.006823,0.0202,2.9581
+Baulkham Hills,GP1015,Baulkham Hills,0.961016,13.1187,13.6508
+Baulkham Hills,GP1165,Parramatta,0.021397,0.2921,13.6508
+Baulkham Hills,GP1022,Blacktown,0.017586,0.2401,13.6508
+Bayview,GP1169,Pittwater,1.0,3.7612,3.7612
+Beacon Hill,GP1209,Warringah,1.0,2.886,2.886
+Beaconsfield,GP1189,Sydney Inner City,1.0,0.1515,0.1515
+Beaumont Hills,GP1178,Rouse Hill - McGraths Hill,1.0,3.1897,3.1897
+Beecroft,GP1166,Pennant Hills - Epping,0.774751,3.9646,5.1172
+Beecroft,GP1047,Carlingford,0.225249,1.1526,5.1172
+Belfield,GP1046,Canterbury,1.0,1.7827,1.7827
+Bella Vista,GP1015,Baulkham Hills,1.0,4.389,4.389
+Bellevue Hill,GP1071,Eastern Suburbs - North,1.0,2.373,2.373
+Belmore,GP1046,Canterbury,1.0,2.7307,2.7307
+Belrose,GP1209,Warringah,1.0,13.5328,13.5328
+Berala,GP1005,Auburn,1.0,2.1278,2.1278
+Berkshire Park,GP1176,Richmond - Windsor,1.0,19.2667,19.2667
+Berowra,GP1100,Hornsby,1.0,8.2969,8.2969
+Berowra Heights,GP1100,Hornsby,1.0,8.0036,8.0036
+Berowra Waters,GP1070,Dural - Wisemans Ferry,0.896571,1.5096,1.6838
+Berowra Waters,GP1100,Hornsby,0.103429,0.1742,1.6838
+Berrilee,GP1070,Dural - Wisemans Ferry,1.0,12.0651,12.0651
+Beverley Park,GP1113,Kogarah - Rockdale,1.0,1.0054,1.0054
+Beverly Hills,GP1101,Hurstville,0.813967,2.4609,3.0234
+Beverly Hills,GP1046,Canterbury,0.186033,0.5624,3.0234
+Bexley,GP1113,Kogarah - Rockdale,1.0,4.3755,4.3755
+Bexley North,GP1113,Kogarah - Rockdale,1.0,1.2316,1.2316
+Bidwill,GP1143,Mount Druitt,1.0,1.5128,1.5128
+Bilgola Beach,GP1169,Pittwater,1.0,0.33,0.33
+Bilgola Plateau,GP1169,Pittwater,1.0,1.3925,1.3925
+Birchgrove,GP1121,Leichhardt,1.0,0.5859,0.5859
+Birrong,GP1008,Bankstown,1.0,1.1959,1.1959
+Blackett,GP1143,Mount Druitt,1.0,1.0632,1.0632
+Blacktown,GP1022,Blacktown,1.0,16.0651,16.0651
+Blair Athol,GP1043,Campbelltown (NSW),1.0,0.9011,0.9011
+Blairmount,GP1043,Campbelltown (NSW),1.0,2.929,2.929
+Blakehurst,GP1101,Hurstville,1.0,2.3043,2.3043
+Bligh Park,GP1176,Richmond - Windsor,1.0,2.1152,2.1152
+Bondi,GP1071,Eastern Suburbs - North,1.0,0.8654,0.8654
+Bondi Beach,GP1071,Eastern Suburbs - North,1.0,1.2191,1.2191
+Bondi Junction,GP1071,Eastern Suburbs - North,1.0,1.079,1.079
+Bonnet Bay,GP1074,Engadine - Heathcote,1.0,1.1301,1.1301
+Bonnyrigg,GP1077,Fairfield,1.0,3.042,3.042
+Bonnyrigg Heights,GP1077,Fairfield,1.0,2.1534,2.1534
+Bossley Park,GP1077,Fairfield,1.0,4.5356,4.5356
+Botany,GP1030,Botany,1.0,3.2108,3.2108
+Bow Bowing,GP1043,Campbelltown (NSW),1.0,0.7635,0.7635
+Box Hill,GP1178,Rouse Hill - McGraths Hill,1.0,9.0584,9.0584
+Bradbury,GP1043,Campbelltown (NSW),1.0,3.5424,3.5424
+Breakfast Point,GP1044,Canada Bay,1.0,0.5244,0.5244
+Brighton-Le-Sands,GP1113,Kogarah - Rockdale,1.0,1.601,1.601
+Bringelly,GP1036,Bringelly - Green Valley,1.0,40.2134,40.2134
+Bronte,GP1071,Eastern Suburbs - North,1.0,1.331,1.331
+Brooklyn,GP1100,Hornsby,1.0,32.1374,32.1374
+Brookvale,GP1209,Warringah,1.0,2.1951,2.1951
+Bundeena,GP1062,Cronulla - Miranda - Caringbah,1.0,1.1785,1.1785
+Bungarribee,GP1022,Blacktown,0.919375,2.2596,2.4577
+Bungarribee,GP1143,Mount Druitt,0.080625,0.1982,2.4577
+Burraneer,GP1062,Cronulla - Miranda - Caringbah,1.0,1.4481,1.4481
+Burwood,GP1186,Strathfield - Burwood - Ashfield,1.0,2.4456,2.4456
+Burwood Heights,GP1186,Strathfield - Burwood - Ashfield,1.0,0.2261,0.2261
+Busby,GP1036,Bringelly - Green Valley,1.0,1.2108,1.2108
+Cabarita,GP1044,Canada Bay,1.0,0.4999,0.4999
+Cabramatta,GP1077,Fairfield,1.0,5.0421,5.0421
+Cabramatta West,GP1077,Fairfield,1.0,1.8282,1.8282
+Caddens,GP1167,Penrith,1.0,0.9908,0.9908
+Cambridge Gardens,GP1167,Penrith,1.0,0.7728,0.7728
+Cambridge Park,GP1167,Penrith,1.0,2.6153,2.6153
+Camden,GP1041,Camden,1.0,4.6378,4.6378
+Camden South,GP1041,Camden,1.0,4.236,4.236
+Cammeray,GP1158,North Sydney - Mosman,0.949209,1.4738,1.5527
+Cammeray,GP1050,Chatswood - Lane Cove,0.050791,0.0789,1.5527
+Campbelltown,GP1043,Campbelltown (NSW),1.0,11.1637,11.1637
+Camperdown,GP1189,Sydney Inner City,0.976662,1.4679,1.503
+Camperdown,GP1132,Marrickville - Sydenham - Petersham,0.023338,0.0351,1.503
+Campsie,GP1046,Canterbury,1.0,3.3738,3.3738
+Canada Bay,GP1044,Canada Bay,1.0,0.3224,0.3224
+Canley Heights,GP1077,Fairfield,1.0,2.6049,2.6049
+Canley Vale,GP1077,Fairfield,1.0,2.8865,2.8865
+Canoelands,GP1070,Dural - Wisemans Ferry,1.0,63.4478,63.4478
+Canterbury,GP1046,Canterbury,0.506096,0.9937,1.9635
+Canterbury,GP1186,Strathfield - Burwood - Ashfield,0.493904,0.9698,1.9635
+Caringbah,GP1062,Cronulla - Miranda - Caringbah,1.0,4.0563,4.0563
+Caringbah South,GP1062,Cronulla - Miranda - Caringbah,1.0,4.0915,4.0915
+Carlingford,GP1047,Carlingford,0.995434,8.5132,8.5523
+Carlingford,GP1179,Ryde - Hunters Hill,0.004566,0.0391,8.5523
+Carlton,GP1113,Kogarah - Rockdale,0.911969,1.8614,2.0411
+Carlton,GP1101,Hurstville,0.088031,0.1797,2.0411
+Carnes Hill,GP1036,Bringelly - Green Valley,1.0,1.3206,1.3206
+Carramar,GP1137,Merrylands - Guildford,1.0,1.0173,1.0173
+Carss Park,GP1101,Hurstville,1.0,0.6294,0.6294
+Cartwright,GP1125,Liverpool,1.0,0.9626,0.9626
+Castle Cove,GP1050,Chatswood - Lane Cove,1.0,2.3429,2.3429
+Castle Hill,GP1015,Baulkham Hills,1.0,18.8107,18.8107
+Castlecrag,GP1050,Chatswood - Lane Cove,1.0,1.506,1.506
+Castlereagh,GP1167,Penrith,1.0,32.1443,32.1443
+Casula,GP1125,Liverpool,1.0,7.072,7.072
+Catherine Field,GP1036,Bringelly - Green Valley,1.0,10.3146,10.3146
+Cattai,GP1070,Dural - Wisemans Ferry,0.79237,17.985,22.6977
+Cattai,GP1178,Rouse Hill - McGraths Hill,0.20763,4.7127,22.6977
+Cawdor,GP1066,Douglas Park - Appin,0.738287,20.9087,28.3206
+Cawdor,GP1041,Camden,0.261713,7.4119,28.3206
+Cecil Hills,GP1036,Bringelly - Green Valley,1.0,6.2181,6.2181
+Cecil Park,GP1077,Fairfield,0.54017,5.9288,10.9758
+Cecil Park,GP1036,Bringelly - Green Valley,0.45983,5.047,10.9758
+Centennial Park,GP1071,Eastern Suburbs - North,1.0,2.2295,2.2295
+Chatswood,GP1050,Chatswood - Lane Cove,1.0,5.0102,5.0102
+Chatswood West,GP1050,Chatswood - Lane Cove,1.0,0.8099,0.8099
+Cheltenham,GP1166,Pennant Hills - Epping,1.0,1.6533,1.6533
+Cherrybrook,GP1015,Baulkham Hills,1.0,8.2598,8.2598
+Chester Hill,GP1137,Merrylands - Guildford,1.0,3.9753,3.9753
+Chifley,GP1072,Eastern Suburbs - South,1.0,1.0568,1.0568
+Chippendale,GP1189,Sydney Inner City,1.0,0.4639,0.4639
+Chipping Norton,GP1125,Liverpool,1.0,7.1334,7.1334
+Chiswick,GP1044,Canada Bay,1.0,0.5133,0.5133
+Chullora,GP1008,Bankstown,1.0,1.9887,1.9887
+Church Point,GP1169,Pittwater,1.0,0.721,0.721
+Claremont Meadows,GP1167,Penrith,1.0,3.0397,3.0397
+Clarendon,GP1176,Richmond - Windsor,1.0,4.7204,4.7204
+Clareville,GP1169,Pittwater,1.0,0.5039,0.5039
+Claymore,GP1043,Campbelltown (NSW),1.0,1.4203,1.4203
+Clemton Park,GP1046,Canterbury,1.0,0.3694,0.3694
+Clontarf,GP1131,Manly,1.0,0.8595,0.8595
+Clovelly,GP1072,Eastern Suburbs - South,1.0,0.7861,0.7861
+Clyde,GP1137,Merrylands - Guildford,1.0,0.6717,0.6717
+Coasters Retreat,GP1169,Pittwater,1.0,0.1163,0.1163
+Cobbitty,GP1036,Bringelly - Green Valley,1.0,52.1637,52.1637
+Colebee,GP1023,Blacktown - North,0.983014,3.4172,3.4763
+Colebee,GP1143,Mount Druitt,0.016986,0.059,3.4763
+Collaroy,GP1209,Warringah,1.0,2.6787,2.6787
+Collaroy Plateau,GP1209,Warringah,1.0,1.2201,1.2201
+Colyton,GP1185,St Marys (NSW),1.0,3.3646,3.3646
+Como,GP1074,Engadine - Heathcote,1.0,1.5974,1.5974
+Concord,GP1044,Canada Bay,1.0,5.0573,5.0573
+Concord West,GP1044,Canada Bay,1.0,2.5422,2.5422
+Condell Park,GP1008,Bankstown,1.0,3.8954,3.8954
+Connells Point,GP1101,Hurstville,1.0,1.0348,1.0348
+Constitution Hill,GP1165,Parramatta,1.0,1.1884,1.1884
+Coogee,GP1072,Eastern Suburbs - South,1.0,1.9183,1.9183
+Cornwallis,GP1176,Richmond - Windsor,1.0,7.5193,7.5193
+Cottage Point,GP1209,Warringah,1.0,0.4048,0.4048
+Cowan,GP1100,Hornsby,1.0,31.8969,31.8969
+Cranebrook,GP1167,Penrith,1.0,14.9497,14.9497
+Cremorne,GP1158,North Sydney - Mosman,1.0,1.6376,1.6376
+Cremorne Point,GP1158,North Sydney - Mosman,1.0,0.4276,0.4276
+Cromer,GP1209,Warringah,1.0,6.2058,6.2058
+Cronulla,GP1062,Cronulla - Miranda - Caringbah,1.0,3.8716,3.8716
+Crows Nest,GP1158,North Sydney - Mosman,1.0,0.7623,0.7623
+Croydon,GP1186,Strathfield - Burwood - Ashfield,1.0,2.4353,2.4353
+Croydon Park,GP1186,Strathfield - Burwood - Ashfield,1.0,2.5503,2.5503
+Cumberland Reach,GP1019,Bilpin - Colo - St Albans,1.0,3.4262,3.4262
+Curl Curl,GP1209,Warringah,1.0,1.276,1.276
+Currans Hill,GP1041,Camden,1.0,3.6077,3.6077
+Daceyville,GP1030,Botany,1.0,0.4879,0.4879
+Dangar Island,GP1100,Hornsby,1.0,0.3163,0.3163
+Darling Point,GP1071,Eastern Suburbs - North,1.0,0.6704,0.6704
+Darlinghurst,GP1189,Sydney Inner City,1.0,0.857,0.857
+Darlington,GP1189,Sydney Inner City,1.0,0.3808,0.3808
+Davidson,GP1209,Warringah,1.0,2.5182,2.5182
+Dawes Point,GP1189,Sydney Inner City,1.0,0.1514,0.1514
+Dean Park,GP1143,Mount Druitt,1.0,1.5119,1.5119
+Dee Why,GP1209,Warringah,1.0,3.0839,3.0839
+Denham Court,GP1043,Campbelltown (NSW),1.0,13.3798,13.3798
+Denistone,GP1179,Ryde - Hunters Hill,1.0,1.5078,1.5078
+Denistone East,GP1179,Ryde - Hunters Hill,1.0,0.6986,0.6986
+Denistone West,GP1179,Ryde - Hunters Hill,1.0,0.3211,0.3211
+Dharruk,GP1143,Mount Druitt,1.0,0.9416,0.9416
+Dolans Bay,GP1062,Cronulla - Miranda - Caringbah,1.0,0.2593,0.2593
+Dolls Point,GP1113,Kogarah - Rockdale,1.0,0.2201,0.2201
+Doonside,GP1022,Blacktown,1.0,5.9586,5.9586
+Double Bay,GP1071,Eastern Suburbs - North,1.0,0.7927,0.7927
+Dover Heights,GP1071,Eastern Suburbs - North,1.0,0.9472,0.9472
+Drummoyne,GP1044,Canada Bay,1.0,2.3103,2.3103
+Duffys Forest,GP1209,Warringah,1.0,4.6205,4.6205
+Dulwich Hill,GP1186,Strathfield - Burwood - Ashfield,0.977713,2.0746,2.1219
+Dulwich Hill,GP1132,Marrickville - Sydenham - Petersham,0.022287,0.0473,2.1219
+Dundas,GP1047,Carlingford,1.0,1.3874,1.3874
+Dundas Valley,GP1047,Carlingford,1.0,1.8053,1.8053
+Dural,GP1070,Dural - Wisemans Ferry,1.0,34.1347,34.1347
+Eagle Vale,GP1043,Campbelltown (NSW),1.0,2.5191,2.5191
+Earlwood,GP1046,Canterbury,1.0,5.6097,5.6097
+East Hills,GP1008,Bankstown,1.0,1.4275,1.4275
+East Killara,GP1114,Ku-ring-gai,1.0,3.1903,3.1903
+East Kurrajong,GP1115,Kurrajong Heights - Ebenezer,1.0,35.6231,35.6231
+East Lindfield,GP1114,Ku-ring-gai,1.0,2.3308,2.3308
+East Ryde,GP1179,Ryde - Hunters Hill,1.0,1.0928,1.0928
+Eastern Creek,GP1143,Mount Druitt,1.0,20.431,20.431
+Eastgardens,GP1030,Botany,1.0,0.5373,0.5373
+Eastlakes,GP1030,Botany,1.0,2.0028,2.0028
+Eastwood,GP1179,Ryde - Hunters Hill,1.0,5.1937,5.1937
+Ebenezer,GP1115,Kurrajong Heights - Ebenezer,1.0,21.8578,21.8578
+Edensor Park,GP1077,Fairfield,1.0,3.0952,3.0952
+Edgecliff,GP1071,Eastern Suburbs - North,1.0,0.3194,0.3194
+Edmondson Park,GP1125,Liverpool,0.87188,6.0563,6.9462
+Edmondson Park,GP1036,Bringelly - Green Valley,0.12812,0.89,6.9462
+Elanora Heights,GP1169,Pittwater,1.0,3.8765,3.8765
+Elderslie,GP1041,Camden,1.0,5.2506,5.2506
+Elizabeth Bay,GP1189,Sydney Inner City,1.0,0.251,0.251
+Elizabeth Hills,GP1036,Bringelly - Green Valley,1.0,1.1228,1.1228
+Ellis Lane,GP1041,Camden,1.0,3.5763,3.5763
+Elvina Bay,GP1169,Pittwater,1.0,0.2523,0.2523
+Emerton,GP1143,Mount Druitt,1.0,0.8957,0.8957
+Emu Heights,GP1167,Penrith,1.0,3.4299,3.4299
+Emu Plains,GP1167,Penrith,1.0,8.12,8.12
+Enfield,GP1186,Strathfield - Burwood - Ashfield,1.0,0.7264,0.7264
+Engadine,GP1074,Engadine - Heathcote,1.0,9.2325,9.2325
+Englorie Park,GP1043,Campbelltown (NSW),1.0,0.1074,0.1074
+Enmore,GP1132,Marrickville - Sydenham - Petersham,0.968462,0.4338,0.4479
+Enmore,GP1189,Sydney Inner City,0.031538,0.0141,0.4479
+Epping,GP1166,Pennant Hills - Epping,0.953097,6.5167,6.8374
+Epping,GP1047,Carlingford,0.038209,0.2613,6.8374
+Epping,GP1179,Ryde - Hunters Hill,0.008694,0.0594,6.8374
+Ermington,GP1047,Carlingford,1.0,3.8599,3.8599
+Erskine Park,GP1185,St Marys (NSW),1.0,8.3944,8.3944
+Erskineville,GP1189,Sydney Inner City,1.0,0.8079,0.8079
+Eschol Park,GP1043,Campbelltown (NSW),1.0,2.7261,2.7261
+Eveleigh,GP1189,Sydney Inner City,1.0,0.5271,0.5271
+Fairfield,GP1077,Fairfield,0.953436,4.2241,4.4304
+Fairfield,GP1137,Merrylands - Guildford,0.046564,0.2063,4.4304
+Fairfield East,GP1137,Merrylands - Guildford,1.0,1.9874,1.9874
+Fairfield Heights,GP1077,Fairfield,1.0,1.4742,1.4742
+Fairfield West,GP1077,Fairfield,1.0,3.217,3.217
+Fairlight,GP1131,Manly,1.0,1.1682,1.1682
+Fiddletown,GP1070,Dural - Wisemans Ferry,1.0,69.4134,69.4134
+Five Dock,GP1044,Canada Bay,1.0,2.4617,2.4617
+Forest Glen,GP1070,Dural - Wisemans Ferry,1.0,5.603,5.603
+Forest Lodge,GP1189,Sydney Inner City,1.0,0.4496,0.4496
+Forestville,GP1209,Warringah,1.0,4.6869,4.6869
+Freemans Reach,GP1115,Kurrajong Heights - Ebenezer,1.0,24.6001,24.6001
+Frenchs Forest,GP1209,Warringah,1.0,8.6915,8.6915
+Freshwater,GP1209,Warringah,1.0,1.7541,1.7541
+Gables,GP1178,Rouse Hill - McGraths Hill,1.0,6.121,6.121
+Galston,GP1070,Dural - Wisemans Ferry,1.0,23.5591,23.5591
+Georges Hall,GP1008,Bankstown,1.0,3.293,3.293
+Gilead,GP1043,Campbelltown (NSW),1.0,28.0354,28.0354
+Girraween,GP1165,Parramatta,1.0,2.3158,2.3158
+Gladesville,GP1179,Ryde - Hunters Hill,1.0,3.506,3.506
+Glebe,GP1189,Sydney Inner City,1.0,1.6876,1.6876
+Gledswood Hills,GP1036,Bringelly - Green Valley,1.0,5.8035,5.8035
+Glen Alpine,GP1043,Campbelltown (NSW),1.0,5.3625,5.3625
+Glendenning,GP1143,Mount Druitt,1.0,3.5719,3.5719
+Glenfield,GP1043,Campbelltown (NSW),1.0,6.9946,6.9946
+Glenhaven,GP1015,Baulkham Hills,1.0,7.2142,7.2142
+Glenmore Park,GP1167,Penrith,1.0,9.7309,9.7309
+Glenorie,GP1070,Dural - Wisemans Ferry,1.0,79.4351,79.4351
+Glenwood,GP1023,Blacktown - North,1.0,5.1186,5.1186
+Glossodia,GP1115,Kurrajong Heights - Ebenezer,1.0,15.5361,15.5361
+Gordon,GP1114,Ku-ring-gai,1.0,3.7883,3.7883
+Grantham Farm,GP1023,Blacktown - North,1.0,3.6188,3.6188
+Granville,GP1137,Merrylands - Guildford,0.921795,3.0935,3.3559
+Granville,GP1165,Parramatta,0.078205,0.2625,3.3559
+Grasmere,GP1041,Camden,1.0,5.4384,5.4384
+Grays Point,GP1062,Cronulla - Miranda - Caringbah,0.970864,1.2679,1.3059
+Grays Point,GP1074,Engadine - Heathcote,0.029136,0.038,1.3059
+Great Mackerel Beach,GP1169,Pittwater,1.0,0.1218,0.1218
+Green Valley,GP1036,Bringelly - Green Valley,1.0,3.2145,3.2145
+Greenacre,GP1008,Bankstown,0.993812,7.398,7.444
+Greenacre,GP1186,Strathfield - Burwood - Ashfield,0.006188,0.0461,7.444
+Greendale,GP1036,Bringelly - Green Valley,1.0,33.9317,33.9317
+Greenfield Park,GP1077,Fairfield,1.0,1.503,1.503
+Greenhills Beach,GP1062,Cronulla - Miranda - Caringbah,1.0,0.393,0.393
+Greenwich,GP1050,Chatswood - Lane Cove,1.0,1.6619,1.6619
+Gregory Hills,GP1036,Bringelly - Green Valley,0.62712,2.9202,4.6566
+Gregory Hills,GP1043,Campbelltown (NSW),0.224302,1.0445,4.6566
+Gregory Hills,GP1041,Camden,0.148578,0.6919,4.6566
+Greystanes,GP1137,Merrylands - Guildford,0.904814,8.1153,8.969
+Greystanes,GP1165,Parramatta,0.095186,0.8537,8.969
+Grose Vale,GP1115,Kurrajong Heights - Ebenezer,1.0,18.4768,18.4768
+Grose Wold,GP1115,Kurrajong Heights - Ebenezer,1.0,11.3466,11.3466
+Guildford,GP1137,Merrylands - Guildford,1.0,5.9042,5.9042
+Guildford West,GP1137,Merrylands - Guildford,1.0,1.6088,1.6088
+Gymea,GP1062,Cronulla - Miranda - Caringbah,0.990199,2.1847,2.2063
+Gymea,GP1074,Engadine - Heathcote,0.009801,0.0216,2.2063
+Gymea Bay,GP1062,Cronulla - Miranda - Caringbah,1.0,2.381,2.381
+Haberfield,GP1186,Strathfield - Burwood - Ashfield,0.998758,2.3824,2.3854
+Haberfield,GP1044,Canada Bay,0.001242,0.003,2.3854
+Hammondville,GP1125,Liverpool,1.0,1.8177,1.8177
+Harrington Park,GP1041,Camden,1.0,8.0041,8.0041
+Harris Park,GP1165,Parramatta,1.0,0.6346,0.6346
+Hassall Grove,GP1143,Mount Druitt,1.0,1.2205,1.2205
+Haymarket,GP1189,Sydney Inner City,1.0,0.5183,0.5183
+Heathcote,GP1074,Engadine - Heathcote,1.0,10.1723,10.1723
+Hebersham,GP1143,Mount Druitt,1.0,1.681,1.681
+Heckenberg,GP1036,Bringelly - Green Valley,1.0,0.9282,0.9282
+Henley,GP1179,Ryde - Hunters Hill,1.0,0.2731,0.2731
+Hillsdale,GP1030,Botany,1.0,0.5464,0.5464
+Hinchinbrook,GP1036,Bringelly - Green Valley,1.0,3.2285,3.2285
+Hobartville,GP1176,Richmond - Windsor,1.0,1.0913,1.0913
+Holroyd,GP1137,Merrylands - Guildford,0.869282,0.4383,0.5042
+Holroyd,GP1165,Parramatta,0.130718,0.0659,0.5042
+Holsworthy,GP1099,Holsworthy Military Area,0.682284,129.823,190.2771
+Holsworthy,GP1125,Liverpool,0.317716,60.4541,190.2771
+Homebush,GP1186,Strathfield - Burwood - Ashfield,1.0,2.0481,2.0481
+Homebush West,GP1186,Strathfield - Burwood - Ashfield,1.0,1.7007,1.7007
+Horningsea Park,GP1036,Bringelly - Green Valley,1.0,0.9806,0.9806
+Hornsby,GP1100,Hornsby,1.0,8.3835,8.3835
+Hornsby Heights,GP1100,Hornsby,1.0,10.2176,10.2176
+Horsley Park,GP1077,Fairfield,1.0,21.9682,21.9682
+Hoxton Park,GP1036,Bringelly - Green Valley,0.989242,1.5221,1.5386
+Hoxton Park,GP1125,Liverpool,0.010758,0.0166,1.5386
+Hunters Hill,GP1179,Ryde - Hunters Hill,1.0,3.6318,3.6318
+Huntleys Cove,GP1179,Ryde - Hunters Hill,1.0,0.274,0.274
+Huntleys Point,GP1179,Ryde - Hunters Hill,1.0,0.2136,0.2136
+Hurlstone Park,GP1186,Strathfield - Burwood - Ashfield,1.0,1.2012,1.2012
+Hurstville,GP1101,Hurstville,0.995614,4.2086,4.2271
+Hurstville,GP1113,Kogarah - Rockdale,0.004386,0.0185,4.2271
+Hurstville Grove,GP1101,Hurstville,1.0,0.9184,0.9184
+Illawong,GP1074,Engadine - Heathcote,1.0,4.7598,4.7598
+Ingleburn,GP1043,Campbelltown (NSW),1.0,12.4384,12.4384
+Ingleside,GP1209,Warringah,0.551385,9.9729,18.0871
+Ingleside,GP1169,Pittwater,0.448615,8.1141,18.0871
+Jamisontown,GP1167,Penrith,1.0,3.9576,3.9576
+Jannali,GP1074,Engadine - Heathcote,1.0,2.4962,2.4962
+Jordan Springs,GP1167,Penrith,1.0,9.7299,9.7299
+Kangaroo Point,GP1062,Cronulla - Miranda - Caringbah,1.0,0.2656,0.2656
+Kareela,GP1074,Engadine - Heathcote,1.0,1.6,1.6
+Kearns,GP1043,Campbelltown (NSW),1.0,2.359,2.359
+Kellyville,GP1015,Baulkham Hills,1.0,9.5981,9.5981
+Kellyville Ridge,GP1023,Blacktown - North,1.0,2.7069,2.7069
+Kemps Creek,GP1077,Fairfield,0.615783,21.1849,34.4031
+Kemps Creek,GP1036,Bringelly - Green Valley,0.384217,13.2183,34.4031
+Kensington,GP1072,Eastern Suburbs - South,1.0,2.6691,2.6691
+Kenthurst,GP1070,Dural - Wisemans Ferry,1.0,45.4947,45.4947
+Kentlyn,GP1043,Campbelltown (NSW),1.0,11.2947,11.2947
+Killara,GP1114,Ku-ring-gai,1.0,4.6316,4.6316
+Killarney Heights,GP1209,Warringah,1.0,4.2438,4.2438
+Kings Langley,GP1022,Blacktown,1.0,3.6676,3.6676
+Kings Park,GP1022,Blacktown,1.0,2.605,2.605
+Kingsford,GP1072,Eastern Suburbs - South,1.0,1.9871,1.9871
+Kingsgrove,GP1046,Canterbury,0.586396,2.6335,4.4909
+Kingsgrove,GP1113,Kogarah - Rockdale,0.406323,1.8248,4.4909
+Kingsgrove,GP1101,Hurstville,0.007281,0.0327,4.4909
+Kingswood,GP1167,Penrith,1.0,5.4854,5.4854
+Kirkham,GP1041,Camden,1.0,4.22,4.22
+Kirrawee,GP1074,Engadine - Heathcote,1.0,3.5678,3.5678
+Kirribilli,GP1158,North Sydney - Mosman,1.0,0.4333,0.4333
+Kogarah,GP1113,Kogarah - Rockdale,1.0,2.5955,2.5955
+Kogarah Bay,GP1113,Kogarah - Rockdale,1.0,0.6648,0.6648
+Ku-ring-gai Chase,GP1209,Warringah,0.501579,47.0988,93.901
+Ku-ring-gai Chase,GP1169,Pittwater,0.498421,46.8022,93.901
+Kurmond,GP1115,Kurrajong Heights - Ebenezer,1.0,8.3269,8.3269
+Kurnell,GP1062,Cronulla - Miranda - Caringbah,1.0,19.3454,19.3454
+Kurraba Point,GP1158,North Sydney - Mosman,1.0,0.2347,0.2347
+Kurrajong,GP1115,Kurrajong Heights - Ebenezer,1.0,46.3817,46.3817
+Kurrajong Hills,GP1115,Kurrajong Heights - Ebenezer,1.0,17.4766,17.4766
+Kyeemagh,GP1113,Kogarah - Rockdale,1.0,0.5967,0.5967
+Kyle Bay,GP1101,Hurstville,1.0,0.369,0.369
+La Perouse,GP1072,Eastern Suburbs - South,1.0,1.7546,1.7546
+Lakemba,GP1046,Canterbury,1.0,2.187,2.187
+Lalor Park,GP1022,Blacktown,1.0,2.7013,2.7013
+Lane Cove,GP1050,Chatswood - Lane Cove,1.0,2.5806,2.5806
+Lane Cove North,GP1050,Chatswood - Lane Cove,1.0,2.3628,2.3628
+Lane Cove West,GP1050,Chatswood - Lane Cove,1.0,1.687,1.687
+Lansvale,GP1077,Fairfield,1.0,2.8931,2.8931
+Laughtondale,GP1070,Dural - Wisemans Ferry,1.0,27.0591,27.0591
+Lavender Bay,GP1158,North Sydney - Mosman,1.0,0.1643,0.1643
+Leets Vale,GP1070,Dural - Wisemans Ferry,0.660428,6.1226,9.2707
+Leets Vale,GP1019,Bilpin - Colo - St Albans,0.339572,3.1481,9.2707
+Leichhardt,GP1121,Leichhardt,1.0,2.595,2.595
+Leonay,GP1167,Penrith,1.0,2.4701,2.4701
+Leppington,GP1036,Bringelly - Green Valley,1.0,20.3807,20.3807
+Lethbridge Park,GP1143,Mount Druitt,1.0,1.6236,1.6236
+Leumeah,GP1043,Campbelltown (NSW),1.0,4.0547,4.0547
+Lewisham,GP1186,Strathfield - Burwood - Ashfield,0.97689,0.6271,0.6419
+Lewisham,GP1132,Marrickville - Sydenham - Petersham,0.02311,0.0148,0.6419
+Liberty Grove,GP1044,Canada Bay,1.0,0.2326,0.2326
+Lidcombe,GP1005,Auburn,1.0,6.7934,6.7934
+Lilli Pilli,GP1062,Cronulla - Miranda - Caringbah,1.0,0.6069,0.6069
+Lilyfield,GP1121,Leichhardt,1.0,2.1589,2.1589
+Lindfield,GP1114,Ku-ring-gai,1.0,5.1311,5.1311
+Linley Point,GP1050,Chatswood - Lane Cove,1.0,0.2022,0.2022
+Little Bay,GP1072,Eastern Suburbs - South,1.0,2.4574,2.4574
+Liverpool,GP1125,Liverpool,1.0,6.3553,6.3553
+Llandilo,GP1167,Penrith,1.0,12.8862,12.8862
+Loftus,GP1074,Engadine - Heathcote,1.0,2.5315,2.5315
+Londonderry,GP1176,Richmond - Windsor,1.0,36.2495,36.2495
+Long Point,GP1043,Campbelltown (NSW),1.0,2.0111,2.0111
+Longueville,GP1050,Chatswood - Lane Cove,1.0,0.9931,0.9931
+Lovett Bay,GP1169,Pittwater,1.0,0.4537,0.4537
+Lower Portland,GP1019,Bilpin - Colo - St Albans,0.671757,40.3447,60.0586
+Lower Portland,GP1070,Dural - Wisemans Ferry,0.328243,19.7138,60.0586
+Lucas Heights,GP1074,Engadine - Heathcote,1.0,9.9327,9.9327
+Luddenham,GP1167,Penrith,0.822599,36.2771,44.1006
+Luddenham,GP1036,Bringelly - Green Valley,0.177401,7.8235,44.1006
+Lugarno,GP1101,Hurstville,1.0,2.6788,2.6788
+Lurnea,GP1125,Liverpool,1.0,2.5035,2.5035
+Macquarie Fields,GP1043,Campbelltown (NSW),1.0,7.0119,7.0119
+Macquarie Links,GP1043,Campbelltown (NSW),1.0,1.7721,1.7721
+Macquarie Park,GP1179,Ryde - Hunters Hill,1.0,6.7633,6.7633
+Maianbar,GP1062,Cronulla - Miranda - Caringbah,1.0,0.293,0.293
+Malabar,GP1072,Eastern Suburbs - South,1.0,3.5734,3.5734
+Manly,GP1131,Manly,1.0,5.5673,5.5673
+Manly Vale,GP1209,Warringah,1.0,1.9051,1.9051
+Maraylya,GP1178,Rouse Hill - McGraths Hill,1.0,19.4173,19.4173
+Marayong,GP1022,Blacktown,1.0,2.7059,2.7059
+Maroota,GP1070,Dural - Wisemans Ferry,1.0,57.1141,57.1141
+Maroubra,GP1072,Eastern Suburbs - South,1.0,5.9235,5.9235
+Marrickville,GP1132,Marrickville - Sydenham - Petersham,1.0,5.7711,5.7711
+Marsden Park,GP1023,Blacktown - North,1.0,12.8961,12.8961
+Marsfield,GP1179,Ryde - Hunters Hill,1.0,3.8636,3.8636
+Mascot,GP1030,Botany,1.0,11.9611,11.9611
+Matraville,GP1072,Eastern Suburbs - South,0.599392,2.3575,3.9332
+Matraville,GP1030,Botany,0.400608,1.5757,3.9332
+Mays Hill,GP1165,Parramatta,1.0,0.2993,0.2993
+McGraths Hill,GP1178,Rouse Hill - McGraths Hill,1.0,3.093,3.093
+McMahons Point,GP1158,North Sydney - Mosman,1.0,0.3491,0.3491
+Meadowbank,GP1179,Ryde - Hunters Hill,1.0,0.6855,0.6855
+Melonba,GP1023,Blacktown - North,1.0,6.4715,6.4715
+Melrose Park,GP1047,Carlingford,0.581406,0.7428,1.2777
+Melrose Park,GP1179,Ryde - Hunters Hill,0.418594,0.5348,1.2777
+Menai,GP1074,Engadine - Heathcote,1.0,12.9446,12.9446
+Menangle Park,GP1043,Campbelltown (NSW),1.0,8.7197,8.7197
+Merrylands,GP1137,Merrylands - Guildford,0.980217,6.5932,6.7262
+Merrylands,GP1165,Parramatta,0.019783,0.1331,6.7262
+Merrylands West,GP1137,Merrylands - Guildford,1.0,1.7354,1.7354
+Middle Cove,GP1050,Chatswood - Lane Cove,1.0,1.0362,1.0362
+Middle Dural,GP1070,Dural - Wisemans Ferry,1.0,7.66,7.66
+Middleton Grange,GP1036,Bringelly - Green Valley,1.0,2.5545,2.5545
+Miller,GP1036,Bringelly - Green Valley,1.0,1.2704,1.2704
+Millers Point,GP1189,Sydney Inner City,1.0,0.2512,0.2512
+Milperra,GP1008,Bankstown,1.0,5.3711,5.3711
+Milsons Passage,GP1100,Hornsby,1.0,0.6383,0.6383
+Milsons Point,GP1158,North Sydney - Mosman,1.0,0.1983,0.1983
+Minchinbury,GP1143,Mount Druitt,1.0,4.1855,4.1855
+Minto,GP1043,Campbelltown (NSW),1.0,9.5681,9.5681
+Minto Heights,GP1043,Campbelltown (NSW),1.0,5.9612,5.9612
+Miranda,GP1062,Cronulla - Miranda - Caringbah,1.0,4.7075,4.7075
+Mona Vale,GP1169,Pittwater,1.0,4.6198,4.6198
+Monterey,GP1113,Kogarah - Rockdale,1.0,1.1523,1.1523
+Moore Park,GP1071,Eastern Suburbs - North,1.0,1.8625,1.8625
+Moorebank,GP1125,Liverpool,1.0,12.5156,12.5156
+Morning Bay,GP1169,Pittwater,1.0,0.2156,0.2156
+Mortdale,GP1101,Hurstville,1.0,2.934,2.934
+Mortlake,GP1044,Canada Bay,1.0,0.2384,0.2384
+Mosman,GP1158,North Sydney - Mosman,1.0,8.651,8.651
+Mount Annan,GP1041,Camden,1.0,10.2261,10.2261
+Mount Colah,GP1100,Hornsby,1.0,11.0626,11.0626
+Mount Druitt,GP1143,Mount Druitt,1.0,6.2554,6.2554
+Mount Kuring-Gai,GP1100,Hornsby,1.0,10.5767,10.5767
+Mount Lewis,GP1008,Bankstown,1.0,0.3328,0.3328
+Mount Pritchard,GP1077,Fairfield,1.0,3.0939,3.0939
+Mount Vernon,GP1077,Fairfield,1.0,6.5433,6.5433
+Mulgoa,GP1167,Penrith,1.0,54.2694,54.2694
+Mulgrave,GP1178,Rouse Hill - McGraths Hill,1.0,4.0196,4.0196
+Narellan,GP1041,Camden,1.0,3.9913,3.9913
+Narellan Vale,GP1041,Camden,1.0,2.5556,2.5556
+Naremburn,GP1050,Chatswood - Lane Cove,1.0,1.2496,1.2496
+Narrabeen,GP1209,Warringah,1.0,2.1966,2.1966
+Narraweena,GP1209,Warringah,1.0,1.7761,1.7761
+Narwee,GP1101,Hurstville,0.791531,0.9837,1.2428
+Narwee,GP1046,Canterbury,0.208469,0.2591,1.2428
+Neutral Bay,GP1158,North Sydney - Mosman,1.0,1.2686,1.2686
+Newington,GP1005,Auburn,1.0,0.9268,0.9268
+Newport,GP1169,Pittwater,1.0,3.812,3.812
+Newtown,GP1189,Sydney Inner City,0.994511,1.578,1.5867
+Newtown,GP1132,Marrickville - Sydenham - Petersham,0.005489,0.0087,1.5867
+Nirimba Fields,GP1023,Blacktown - North,1.0,2.8543,2.8543
+Normanhurst,GP1100,Hornsby,1.0,2.207,2.207
+North Balgowlah,GP1209,Warringah,1.0,1.1214,1.1214
+North Bondi,GP1071,Eastern Suburbs - North,1.0,1.2639,1.2639
+North Curl Curl,GP1209,Warringah,1.0,1.1802,1.1802
+North Epping,GP1166,Pennant Hills - Epping,1.0,2.3331,2.3331
+North Kellyville,GP1178,Rouse Hill - McGraths Hill,1.0,8.0714,8.0714
+North Manly,GP1209,Warringah,1.0,1.0966,1.0966
+North Narrabeen,GP1169,Pittwater,1.0,2.5093,2.5093
+North Parramatta,GP1165,Parramatta,1.0,5.2718,5.2718
+North Richmond,GP1176,Richmond - Windsor,1.0,22.1179,22.1179
+North Rocks,GP1165,Parramatta,1.0,5.4618,5.4618
+North Ryde,GP1179,Ryde - Hunters Hill,1.0,5.3596,5.3596
+North St Marys,GP1185,St Marys (NSW),1.0,3.1857,3.1857
+North Strathfield,GP1044,Canada Bay,1.0,1.0356,1.0356
+North Sydney,GP1158,North Sydney - Mosman,1.0,1.4751,1.4751
+North Turramurra,GP1114,Ku-ring-gai,1.0,11.6144,11.6144
+North Wahroonga,GP1114,Ku-ring-gai,1.0,3.8913,3.8913
+North Willoughby,GP1050,Chatswood - Lane Cove,1.0,0.9344,0.9344
+Northbridge,GP1050,Chatswood - Lane Cove,1.0,2.7281,2.7281
+Northmead,GP1165,Parramatta,1.0,4.2852,4.2852
+Northwood,GP1050,Chatswood - Lane Cove,1.0,0.382,0.382
+Norwest,GP1015,Baulkham Hills,1.0,2.8068,2.8068
+Oakhurst,GP1143,Mount Druitt,1.0,2.0268,2.0268
+Oakville,GP1178,Rouse Hill - McGraths Hill,1.0,15.1478,15.1478
+Oatlands,GP1047,Carlingford,0.992914,2.4448,2.4623
+Oatlands,GP1165,Parramatta,0.007086,0.0174,2.4623
+Oatley,GP1101,Hurstville,1.0,4.3739,4.3739
+Old Guildford,GP1137,Merrylands - Guildford,1.0,0.9609,0.9609
+Old Toongabbie,GP1165,Parramatta,1.0,1.2744,1.2744
+Oran Park,GP1036,Bringelly - Green Valley,1.0,13.2478,13.2478
+Orchard Hills,GP1167,Penrith,1.0,43.0734,43.0734
+Oxford Falls,GP1209,Warringah,1.0,6.4693,6.4693
+Oxley Park,GP1185,St Marys (NSW),1.0,1.2703,1.2703
+Oyster Bay,GP1074,Engadine - Heathcote,1.0,2.1014,2.1014
+Paddington,GP1071,Eastern Suburbs - North,1.0,1.6261,1.6261
+Padstow,GP1008,Bankstown,1.0,5.4013,5.4013
+Padstow Heights,GP1008,Bankstown,1.0,1.9305,1.9305
+Pagewood,GP1030,Botany,1.0,2.1981,2.1981
+Palm Beach,GP1169,Pittwater,1.0,2.716,2.716
+Panania,GP1008,Bankstown,1.0,4.7502,4.7502
+Parklea,GP1023,Blacktown - North,1.0,1.0604,1.0604
+Parramatta,GP1165,Parramatta,0.957746,5.0133,5.2345
+Parramatta,GP1047,Carlingford,0.042254,0.2212,5.2345
+Peakhurst,GP1101,Hurstville,1.0,3.6256,3.6256
+Peakhurst Heights,GP1101,Hurstville,1.0,0.8728,0.8728
+Pemulwuy,GP1143,Mount Druitt,0.612064,9.1687,14.98
+Pemulwuy,GP1137,Merrylands - Guildford,0.33226,4.9773,14.98
+Pemulwuy,GP1022,Blacktown,0.055676,0.834,14.98
+Pendle Hill,GP1165,Parramatta,1.0,1.9638,1.9638
+Pennant Hills,GP1166,Pennant Hills - Epping,1.0,6.1229,6.1229
+Penrith,GP1167,Penrith,1.0,12.3319,12.3319
+Penshurst,GP1101,Hurstville,1.0,2.5303,2.5303
+Petersham,GP1132,Marrickville - Sydenham - Petersham,1.0,1.287,1.287
+Phillip Bay,GP1072,Eastern Suburbs - South,1.0,0.626,0.626
+Picnic Point,GP1008,Bankstown,1.0,3.8591,3.8591
+Pitt Town,GP1178,Rouse Hill - McGraths Hill,1.0,12.5984,12.5984
+Pitt Town Bottoms,GP1178,Rouse Hill - McGraths Hill,1.0,5.7256,5.7256
+Pleasure Point,GP1125,Liverpool,1.0,1.55,1.55
+Plumpton,GP1143,Mount Druitt,1.0,2.958,2.958
+Point Piper,GP1071,Eastern Suburbs - North,1.0,0.386,0.386
+Port Hacking,GP1062,Cronulla - Miranda - Caringbah,1.0,0.4066,0.4066
+Potts Hill,GP1008,Bankstown,0.98334,1.1089,1.1277
+Potts Hill,GP1005,Auburn,0.01666,0.0188,1.1277
+Potts Point,GP1189,Sydney Inner City,1.0,0.6252,0.6252
+Prairiewood,GP1077,Fairfield,1.0,2.1337,2.1337
+Prestons,GP1125,Liverpool,1.0,9.2151,9.2151
+Prospect,GP1022,Blacktown,1.0,2.5795,2.5795
+Punchbowl,GP1046,Canterbury,0.97486,4.2133,4.3219
+Punchbowl,GP1008,Bankstown,0.02514,0.1087,4.3219
+Putney,GP1179,Ryde - Hunters Hill,1.0,1.508,1.508
+Pymble,GP1114,Ku-ring-gai,1.0,6.5679,6.5679
+Pyrmont,GP1189,Sydney Inner City,1.0,0.9301,0.9301
+Quakers Hill,GP1023,Blacktown - North,0.711231,6.5152,9.1604
+Quakers Hill,GP1022,Blacktown,0.288769,2.6452,9.1604
+Queens Park,GP1071,Eastern Suburbs - North,1.0,0.8436,0.8436
+Queenscliff,GP1209,Warringah,1.0,0.4227,0.4227
+Raby,GP1043,Campbelltown (NSW),1.0,2.6591,2.6591
+Ramsgate,GP1113,Kogarah - Rockdale,1.0,0.4282,0.4282
+Ramsgate Beach,GP1113,Kogarah - Rockdale,1.0,0.4028,0.4028
+Randwick,GP1072,Eastern Suburbs - South,1.0,5.3091,5.3091
+Redfern,GP1189,Sydney Inner City,1.0,1.1717,1.1717
+Regents Park,GP1005,Auburn,1.0,1.9868,1.9868
+Regentville,GP1167,Penrith,1.0,1.1939,1.1939
+Revesby,GP1008,Bankstown,1.0,5.6083,5.6083
+Revesby Heights,GP1008,Bankstown,1.0,0.8009,0.8009
+Rhodes,GP1044,Canada Bay,1.0,1.0062,1.0062
+Richards,GP1023,Blacktown - North,1.0,7.5391,7.5391
+Richmond,GP1176,Richmond - Windsor,1.0,26.8129,26.8129
+Richmond Lowlands,GP1176,Richmond - Windsor,1.0,7.6659,7.6659
+Riverstone,GP1023,Blacktown - North,1.0,6.3653,6.3653
+Riverview,GP1050,Chatswood - Lane Cove,1.0,1.3718,1.3718
+Riverwood,GP1101,Hurstville,0.716732,2.7685,3.8627
+Riverwood,GP1046,Canterbury,0.283268,1.0942,3.8627
+Rockdale,GP1113,Kogarah - Rockdale,1.0,2.442,2.442
+Rodd Point,GP1044,Canada Bay,1.0,0.3741,0.3741
+Rookwood,GP1005,Auburn,1.0,3.015,3.015
+Rooty Hill,GP1143,Mount Druitt,1.0,6.8074,6.8074
+Ropes Crossing,GP1143,Mount Druitt,1.0,5.5032,5.5032
+Rose Bay,GP1071,Eastern Suburbs - North,1.0,2.5297,2.5297
+Rosebery,GP1189,Sydney Inner City,0.760513,1.4664,1.9282
+Rosebery,GP1030,Botany,0.239487,0.4618,1.9282
+Rosehill,GP1165,Parramatta,1.0,3.6704,3.6704
+Roselands,GP1046,Canterbury,1.0,2.7443,2.7443
+Rosemeadow,GP1043,Campbelltown (NSW),1.0,3.0098,3.0098
+Roseville,GP1114,Ku-ring-gai,0.818531,3.2109,3.9228
+Roseville,GP1050,Chatswood - Lane Cove,0.181469,0.7119,3.9228
+Roseville Chase,GP1114,Ku-ring-gai,1.0,1.2646,1.2646
+Rossmore,GP1036,Bringelly - Green Valley,1.0,16.3463,16.3463
+Rouse Hill,GP1023,Blacktown - North,0.503815,6.4602,12.8226
+Rouse Hill,GP1178,Rouse Hill - McGraths Hill,0.496185,6.3624,12.8226
+Rozelle,GP1121,Leichhardt,1.0,1.8339,1.8339
+Ruse,GP1043,Campbelltown (NSW),1.0,2.5957,2.5957
+Rushcutters Bay,GP1189,Sydney Inner City,1.0,0.1574,0.1574
+Russell Lea,GP1044,Canada Bay,1.0,1.0044,1.0044
+Rydalmere,GP1047,Carlingford,1.0,3.8345,3.8345
+Ryde,GP1179,Ryde - Hunters Hill,1.0,7.101,7.101
+Sackville,GP1115,Kurrajong Heights - Ebenezer,1.0,5.0889,5.0889
+Sackville North,GP1070,Dural - Wisemans Ferry,1.0,13.0907,13.0907
+Sadleir,GP1036,Bringelly - Green Valley,1.0,0.8992,0.8992
+Sandringham,GP1113,Kogarah - Rockdale,1.0,0.4954,0.4954
+Sandy Point,GP1125,Liverpool,1.0,0.3985,0.3985
+Sans Souci,GP1113,Kogarah - Rockdale,1.0,3.0652,3.0652
+Scheyville,GP1178,Rouse Hill - McGraths Hill,1.0,7.412,7.412
+Schofields,GP1023,Blacktown - North,1.0,8.8766,8.8766
+Scotland Island,GP1169,Pittwater,1.0,0.5463,0.5463
+Seaforth,GP1131,Manly,1.0,3.1077,3.1077
+Sefton,GP1137,Merrylands - Guildford,1.0,1.8148,1.8148
+Seven Hills,GP1022,Blacktown,1.0,9.6282,9.6282
+Shalvey,GP1143,Mount Druitt,1.0,1.584,1.584
+Shanes Park,GP1023,Blacktown - North,1.0,8.7516,8.7516
+Silverwater,GP1005,Auburn,1.0,2.7001,2.7001
+Singletons Mill,GP1070,Dural - Wisemans Ferry,1.0,6.024,6.024
+Smeaton Grange,GP1041,Camden,1.0,2.7707,2.7707
+Smithfield,GP1077,Fairfield,0.517473,4.6132,8.9149
+Smithfield,GP1137,Merrylands - Guildford,0.482527,4.3017,8.9149
+South Coogee,GP1072,Eastern Suburbs - South,1.0,1.1322,1.1322
+South Granville,GP1137,Merrylands - Guildford,1.0,2.1913,2.1913
+South Hurstville,GP1101,Hurstville,1.0,1.042,1.042
+South Maroota,GP1070,Dural - Wisemans Ferry,1.0,34.8602,34.8602
+South Penrith,GP1167,Penrith,1.0,5.0604,5.0604
+South Turramurra,GP1114,Ku-ring-gai,1.0,3.0622,3.0622
+South Wentworthville,GP1137,Merrylands - Guildford,0.845144,1.5285,1.8086
+South Wentworthville,GP1165,Parramatta,0.154856,0.2801,1.8086
+South Windsor,GP1176,Richmond - Windsor,1.0,8.9049,8.9049
+Spring Farm,GP1041,Camden,1.0,6.3566,6.3566
+St Andrews,GP1043,Campbelltown (NSW),1.0,2.0825,2.0825
+St Clair,GP1185,St Marys (NSW),1.0,7.2035,7.2035
+St Helens Park,GP1043,Campbelltown (NSW),1.0,5.1651,5.1651
+St Ives,GP1114,Ku-ring-gai,1.0,14.2627,14.2627
+St Ives Chase,GP1114,Ku-ring-gai,1.0,3.479,3.479
+St Johns Park,GP1077,Fairfield,1.0,1.9817,1.9817
+St Leonards,GP1050,Chatswood - Lane Cove,1.0,0.8013,0.8013
+St Marys,GP1185,St Marys (NSW),1.0,9.696,9.696
+St Peters,GP1132,Marrickville - Sydenham - Petersham,1.0,1.7296,1.7296
+Stanhope Gardens,GP1023,Blacktown - North,1.0,2.8406,2.8406
+Stanmore,GP1132,Marrickville - Sydenham - Petersham,1.0,1.2175,1.2175
+Strathfield,GP1186,Strathfield - Burwood - Ashfield,1.0,6.5503,6.5503
+Strathfield South,GP1186,Strathfield - Burwood - Ashfield,1.0,2.511,2.511
+Summer Hill,GP1186,Strathfield - Burwood - Ashfield,1.0,1.2032,1.2032
+Surry Hills,GP1189,Sydney Inner City,1.0,1.3163,1.3163
+Sutherland,GP1074,Engadine - Heathcote,1.0,3.571,3.571
+Sydenham,GP1132,Marrickville - Sydenham - Petersham,1.0,0.2704,0.2704
+Sydney,GP1189,Sydney Inner City,1.0,2.9396,2.9396
+Sydney Olympic Park,GP1005,Auburn,0.956921,6.354,6.64
+Sydney Olympic Park,GP1044,Canada Bay,0.043079,0.286,6.64
+Sylvania,GP1062,Cronulla - Miranda - Caringbah,1.0,3.3621,3.3621
+Sylvania Waters,GP1062,Cronulla - Miranda - Caringbah,1.0,1.0602,1.0602
+Tallawong,GP1023,Blacktown - North,1.0,3.6405,3.6405
+Tamarama,GP1071,Eastern Suburbs - North,1.0,0.3001,0.3001
+Taren Point,GP1062,Cronulla - Miranda - Caringbah,1.0,1.3587,1.3587
+Telopea,GP1047,Carlingford,1.0,1.4648,1.4648
+Tempe,GP1132,Marrickville - Sydenham - Petersham,1.0,1.8539,1.8539
+Tennyson,GP1115,Kurrajong Heights - Ebenezer,1.0,8.7031,8.7031
+Tennyson Point,GP1179,Ryde - Hunters Hill,1.0,0.449,0.449
+Terrey Hills,GP1209,Warringah,1.0,8.4467,8.4467
+The Ponds,GP1023,Blacktown - North,1.0,4.6531,4.6531
+The Rocks,GP1189,Sydney Inner City,1.0,0.2042,0.2042
+The Slopes,GP1115,Kurrajong Heights - Ebenezer,1.0,3.504,3.504
+Thornleigh,GP1100,Hornsby,0.968859,3.7496,3.8701
+Thornleigh,GP1166,Pennant Hills - Epping,0.031141,0.1205,3.8701
+Toongabbie,GP1165,Parramatta,0.519729,2.46,4.7331
+Toongabbie,GP1022,Blacktown,0.480271,2.2732,4.7331
+Tregear,GP1143,Mount Druitt,1.0,1.6416,1.6416
+Turramurra,GP1114,Ku-ring-gai,1.0,6.0014,6.0014
+Turrella,GP1113,Kogarah - Rockdale,1.0,0.6397,0.6397
+Ultimo,GP1189,Sydney Inner City,1.0,0.5584,0.5584
+Varroville,GP1043,Campbelltown (NSW),1.0,7.2685,7.2685
+Vaucluse,GP1071,Eastern Suburbs - North,1.0,3.1062,3.1062
+Villawood,GP1137,Merrylands - Guildford,0.695691,2.7308,3.9253
+Villawood,GP1008,Bankstown,0.304309,1.1945,3.9253
+Vineyard,GP1178,Rouse Hill - McGraths Hill,0.788861,8.3763,10.6183
+Vineyard,GP1023,Blacktown - North,0.211139,2.2419,10.6183
+Voyager Point,GP1125,Liverpool,1.0,1.7301,1.7301
+Wahroonga,GP1114,Ku-ring-gai,0.830501,8.0974,9.75
+Wahroonga,GP1100,Hornsby,0.169499,1.6526,9.75
+Waitara,GP1100,Hornsby,1.0,0.7617,0.7617
+Wakeley,GP1077,Fairfield,1.0,1.629,1.629
+Wallacia,GP1167,Penrith,1.0,25.5341,25.5341
+Wareemba,GP1044,Canada Bay,1.0,0.3168,0.3168
+Warrawee,GP1114,Ku-ring-gai,1.0,1.3376,1.3376
+Warriewood,GP1169,Pittwater,1.0,4.1363,4.1363
+Warwick Farm,GP1125,Liverpool,1.0,4.6128,4.6128
+Waterfall,GP1074,Engadine - Heathcote,1.0,17.5829,17.5829
+Waterloo,GP1189,Sydney Inner City,1.0,1.1338,1.1338
+Watsons Bay,GP1071,Eastern Suburbs - North,1.0,0.6082,0.6082
+Wattle Grove,GP1125,Liverpool,1.0,2.5908,2.5908
+Waverley,GP1071,Eastern Suburbs - North,1.0,0.6009,0.6009
+Waverton,GP1158,North Sydney - Mosman,1.0,0.7023,0.7023
+Wedderburn,GP1043,Campbelltown (NSW),1.0,25.3761,25.3761
+Wentworth Point,GP1005,Auburn,1.0,0.5737,0.5737
+Wentworthville,GP1165,Parramatta,1.0,3.1199,3.1199
+Werrington,GP1167,Penrith,1.0,4.507,4.507
+Werrington County,GP1167,Penrith,1.0,2.0897,2.0897
+Werrington Downs,GP1167,Penrith,1.0,1.1089,1.1089
+West Hoxton,GP1036,Bringelly - Green Valley,1.0,6.7081,6.7081
+West Pennant Hills,GP1015,Baulkham Hills,0.842583,7.8289,9.2916
+West Pennant Hills,GP1166,Pennant Hills - Epping,0.157417,1.4627,9.2916
+West Pymble,GP1114,Ku-ring-gai,1.0,3.6836,3.6836
+West Ryde,GP1179,Ryde - Hunters Hill,1.0,3.5655,3.5655
+Westleigh,GP1100,Hornsby,1.0,3.8209,3.8209
+Westmead,GP1165,Parramatta,1.0,2.9261,2.9261
+Wetherill Park,GP1077,Fairfield,1.0,11.2145,11.2145
+Whalan,GP1143,Mount Druitt,1.0,2.4291,2.4291
+Whale Beach,GP1169,Pittwater,1.0,0.4973,0.4973
+Wheeler Heights,GP1209,Warringah,1.0,0.852,0.852
+Wilberforce,GP1115,Kurrajong Heights - Ebenezer,1.0,32.1027,32.1027
+Wiley Park,GP1046,Canterbury,1.0,1.362,1.362
+Willmot,GP1143,Mount Druitt,1.0,0.9148,0.9148
+Willoughby,GP1050,Chatswood - Lane Cove,1.0,1.6274,1.6274
+Willoughby East,GP1050,Chatswood - Lane Cove,1.0,0.5612,0.5612
+Windsor,GP1176,Richmond - Windsor,1.0,4.1339,4.1339
+Windsor Downs,GP1176,Richmond - Windsor,1.0,7.5754,7.5754
+Winston Hills,GP1165,Parramatta,1.0,4.7394,4.7394
+Wisemans Ferry,GP1070,Dural - Wisemans Ferry,0.912704,12.2917,13.4673
+Wisemans Ferry,GP1040,Calga - Kulnura,0.087296,1.1756,13.4673
+Wolli Creek,GP1113,Kogarah - Rockdale,1.0,0.6612,0.6612
+Wollstonecraft,GP1158,North Sydney - Mosman,1.0,1.2032,1.2032
+Woodbine,GP1043,Campbelltown (NSW),1.0,1.6143,1.6143
+Woodcroft,GP1022,Blacktown,1.0,1.6927,1.6927
+Woodpark,GP1137,Merrylands - Guildford,1.0,0.3865,0.3865
+Woollahra,GP1071,Eastern Suburbs - North,1.0,1.2306,1.2306
+Woolloomooloo,GP1189,Sydney Inner City,1.0,0.3722,0.3722
+Woolooware,GP1062,Cronulla - Miranda - Caringbah,1.0,1.8599,1.8599
+Woolwich,GP1179,Ryde - Hunters Hill,0.743598,0.5196,0.6987
+Woolwich,GP1121,Leichhardt,0.256402,0.1792,0.6987
+Woronora,GP1074,Engadine - Heathcote,1.0,1.8813,1.8813
+Woronora Heights,GP1074,Engadine - Heathcote,1.0,2.5994,2.5994
+Yagoona,GP1008,Bankstown,1.0,4.6173,4.6173
+Yarramundi,GP1021,Blackheath - Blue Mountains North,0.529824,17.1171,32.3072
+Yarramundi,GP1176,Richmond - Windsor,0.470176,15.1901,32.3072
+Yarrawarrah,GP1074,Engadine - Heathcote,1.0,1.2437,1.2437
+Yennora,GP1137,Merrylands - Guildford,1.0,2.739,2.739
+Yowie Bay,GP1062,Cronulla - Miranda - Caringbah,1.0,1.2045,1.2045
+Zetland,GP1189,Sydney Inner City,1.0,0.8049,0.8049

@@ -80,6 +80,7 @@ ROOT = Path(__file__).resolve().parent
 CACHE_DIR = ROOT / "facility_cache"
 DATA_PATH = ROOT / "scraped_data" / "eda_data.csv"
 OUT_CSV = ROOT / "scraped_data" / "suburb_gp_catchment.csv"
+OVERLAPS_CSV = ROOT / "scraped_data" / "suburb_catchment_overlaps.csv"
 
 # Equal-area projection for every area computation in this module.
 # EPSG:3577 -- GDA94 / Australian Albers. Equal-area conic, the standard choice for
@@ -134,6 +135,21 @@ GA_PRACTICES_CSV = CACHE_DIR / "ga_general_practices_nsw_raw.csv"
 #: dominant catchment. 1% is above the sliver noise floor produced by overlaying a
 #: GDA94 catchment layer on GDA2020 suburb polygons.
 STRADDLE_THRESHOLD = 0.01
+
+#: Minimum share of a suburb an intersection must cover before it counts as touching a
+#: catchment at all. Overlaying two independently digitised boundary sets produces
+#: zero-width artefacts along every shared edge, and without a floor those are
+#: indistinguishable from real straddling.
+#:
+#: MEASURED on the 680 suburbs: assign_catchments finds 1,241 intersecting pairs, of which
+#: 484 cover less than one part in a million of their suburb - median 30 square metres,
+#: smallest 3.3e-16 of its suburb, which is a topological artefact and not a place.
+#:
+#: The exact value is NOT a tuning knob, which is the reason to trust it: thresholds of
+#: 1e-6, 1e-4 and 1e-3 all remove the same 484 pairs, because the artefacts cluster below
+#: 1e-6 and the next real overlap is far above 1e-3. Anything in that range is the same
+#: filter.
+SLIVER_FLOOR = 1e-4
 
 _USER_AGENT = "Mozilla/5.0 (compatible; nuvo-health-suburb-selection/1.0)"
 
@@ -322,8 +338,16 @@ def assign_catchments(
     suburb/catchment pair the intersection area is divided by the suburb's own area to
     give ``overlap_fraction``; the largest fraction wins.
 
-    Returns ``(assignment, all_overlaps)``. ``all_overlaps`` keeps every pair above
-    the sliver floor so straddling can be inspected, not just asserted.
+    Returns ``(assignment, all_overlaps)``. ``all_overlaps`` keeps every pair covering at
+    least :data:`SLIVER_FLOOR` of its suburb, so straddling can be inspected rather than
+    asserted. Pairs below the floor are boundary artefacts, not places.
+
+    The floor does NOT change the assignment. ``dominant`` is the largest overlap per
+    suburb and the smallest of those is 50.2 percent, so no sliver was ever a candidate to
+    win. What it changes is the two diagnostic columns: MEASURED, ``catchments_touched``
+    falls from a mean of 1.82 and a max of 6 to a mean of 1.10 and a max of 3, because
+    without the floor every shared boundary edge counted as a catchment the suburb
+    touches.
     """
     if suburb_polygons.crs != catchments.crs:
         raise ValueError("suburb and catchment layers must share a CRS")
@@ -361,6 +385,12 @@ def assign_catchments(
     all_overlaps = pd.DataFrame(overlaps).sort_values(
         ["suburb", "overlap_fraction"], ascending=[True, False]
     )
+    # Drop boundary artefacts BEFORE anything is derived. Done after sorting and before
+    # drop_duplicates so the dominant pick is unaffected either way - the largest overlap
+    # per suburb is never a sliver - while the derived counts below stop counting edges.
+    all_overlaps = all_overlaps.loc[
+        all_overlaps["overlap_fraction"] >= SLIVER_FLOOR
+    ].copy()
     dominant = all_overlaps.drop_duplicates("suburb", keep="first").copy()
 
     # Share of each suburb that is NOT in its dominant catchment, using every
@@ -493,8 +523,21 @@ def build() -> pd.DataFrame:
 
     assignment, all_overlaps = assign_catchments(matched, catchments)
 
+    # Written out rather than discarded. The docstring says straddling can be inspected
+    # rather than asserted, and that is only true if the pair-level detail survives the
+    # function. One row per suburb-catchment overlap above SLIVER_FLOOR.
+    OVERLAPS_CSV.parent.mkdir(parents=True, exist_ok=True)
+    all_overlaps.round({"overlap_fraction": 6, "overlap_km2": 4, "suburb_km2": 4}).to_csv(
+        OVERLAPS_CSV, index=False
+    )
+    print(f"Wrote {OVERLAPS_CSV} ({len(all_overlaps)} pairs above the sliver floor)")
+
+    # catchments_touched is exported rather than computed and discarded: it is the
+    # column that says whether a suburb is a clean member of one catchment or sits on a
+    # boundary, which is the question the Croydon finding turned on.
     out = assignment[
-        ["suburb", "gpc_code", "gpc_name", "overlap_fraction", "straddles_catchment"]
+        ["suburb", "gpc_code", "gpc_name", "overlap_fraction", "straddles_catchment",
+         "catchments_touched"]
     ].copy()
     out["overlap_fraction"] = out["overlap_fraction"].round(6)
     out = out.sort_values("suburb").reset_index(drop=True)

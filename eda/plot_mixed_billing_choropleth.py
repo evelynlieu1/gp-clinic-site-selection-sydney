@@ -76,12 +76,12 @@ from shapely.geometry import box
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from gp_supply import (  # noqa: E402  (sys.path must be set before this import)
+from gp_supply import (
     GP_STATUS_OK,
     require_status_column,
     status_summary,
 )
-from site_score import (  # noqa: E402
+from site_score import (
     income_knots_from_percentiles,
     mixed_billing_fit,
 )
@@ -1068,44 +1068,44 @@ def main() -> None:
     print("Richest 5 mapped suburbs, and what D1 makes of them:", flush=True)
     for _, r in richest.iterrows():
         print(
-            f"  {str(r['suburb']):22s} ${float(r[inc_col]):7,.0f}/wk  fit "
+            f"  {r['suburb']!s:22s} ${float(r[inc_col]):7,.0f}/wk  fit "
             f"{float(r['mixed_billing_fit']):.3f}",
             flush=True,
         )
 
     footnotes = [
-        f"Choropleth is the D1 mixed-billing fit score imported from site_score.py, not raw "
+        (f"Choropleth is the D1 mixed-billing fit score imported from site_score.py, not raw "
         f"income: full score on the ${plo:,.0f}-${phi:,.0f}/wk plateau, tapering to 0 at "
         f"${lo:,.0f} and ${hi:,.0f}. Mixed billing needs households able to absorb roughly a "
         "$45 gap per visit (about $43 rebate against about $90 private) and not already "
-        "buying full private care, so fit is not monotonic in income.",
-        f"That is why there are two hatches: {counts_view['below']} suburbs in view score 0 "
+        "buying full private care, so fit is not monotonic in income."),
+        (f"That is why there are two hatches: {counts_view['below']} suburbs in view score 0 "
         f"because income is at or below ${lo:,.0f}, and {counts_view['above']} because it is "
         f"at or above ${hi:,.0f}. Both sit at the palest end of one ramp and they are "
         "opposite commercial problems. The previous version of this map coloured the second "
-        "group darkest of all.",
-        f"Dots are the {REGISTER_NAME} register ({REGISTER_LICENCE}), NSW extract "
+        "group darkest of all."),
+        (f"Dots are the {REGISTER_NAME} register ({REGISTER_LICENCE}), NSW extract "
         f"{REGISTER_EXTRACT}, filtered to nhsd_service_type = 'General practice service': "
         f"{len(reg):,} of the {REGISTER_LAYER_NSW_ROWS:,} NSW rows in that layer, the other "
         "393 being nurse-led clinics, maternal and child health, skin cancer clinics and "
         "similar. Dot size encodes nothing, because the register has no practitioner-count "
-        "field, so there is no GP head count or FTE anywhere on this map.",
-        f"{n_zero_inside} of {len(gdf)} mapped suburbs contain no register practice. That is "
+        "field, so there is no GP head count or FTE anywhere on this map."),
+        (f"{n_zero_inside} of {len(gdf)} mapped suburbs contain no register practice. That is "
         "an absence of an address inside a boundary, not an absence of access: Croydon has 1 "
         "practice inside it and 27 within 2 km. Hollow rings are practices outside the 680 "
         "study suburbs or inside one of the 30 with no polygon; they compete for the same "
-        "patients but belong to no suburb here.",
-        "A tight knot of hollow rings on the water colour is a MISSING BOUNDARY, not open "
+        "patients but belong to no suburb here."),
+        ("A tight knot of hollow rings on the water colour is a MISSING BOUNDARY, not open "
         f"water: the 30 suburbs with no polygon are drawn as nothing, and the biggest are "
         f"{gap_phrase}. "
         f"Also worth knowing before reading the dark green as a ranking: {counts_all['best']} "
         f"of the {len(gdf)} mapped suburbs score exactly 1.0, so inside a shortlist this "
-        "criterion filters rather than discriminates.",
-        "Register limits, stated: it misses roughly 10 to 12% of practices nationally, and "
+        "criterion filters rather than discriminates."),
+        ("Register limits, stated: it misses roughly 10 to 12% of practices nationally, and "
         f"{n_non_gp} of the {len(reg):,} NSW rows carry names indicating they are not "
         "conventional general practice (Headspace, Aboriginal Medical Services, refugee, "
         "travel and university health). They are drawn and flagged in the interactive "
-        "tooltip rather than removed, because some do bulk bill general consultations.",
+        "tooltip rather than removed, because some do bulk bill general consultations."),
     ]
 
     norm = Normalize(vmin=FIT_VMIN, vmax=FIT_VMAX, clip=False)

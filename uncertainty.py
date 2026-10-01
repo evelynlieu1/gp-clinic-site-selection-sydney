@@ -33,7 +33,6 @@ import numpy as np
 import pandas as pd
 
 import accessibility
-import dpa_status
 import site_score
 
 ROOT = Path(__file__).resolve().parent

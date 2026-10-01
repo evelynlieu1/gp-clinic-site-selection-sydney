@@ -12,6 +12,7 @@ README figure honest. Run: ``python eda/plot_rank_stability.py``
 from pathlib import Path
 
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -34,7 +35,7 @@ DEGENERATE = {
 def main() -> None:
     sens = pd.read_csv(SENS)
     scores = pd.read_csv(SCORES)
-    base = scores.loc[scores["eligible"] == True].nsmallest(14, "rank")  # noqa: E712
+    base = scores.loc[scores["eligible"] == True].nsmallest(14, "rank")
 
     runs = sens.loc[sens["run"] != "baseline"]
     n_all = runs["run"].nunique()

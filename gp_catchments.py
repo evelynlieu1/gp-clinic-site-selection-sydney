@@ -66,7 +66,6 @@ of the total is exposed to it.
 """
 from __future__ import annotations
 
-import io
 import shutil
 import sys
 import urllib.request

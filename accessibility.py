@@ -800,7 +800,7 @@ def load_outside_demand(suburbs: pd.DataFrame) -> pd.DataFrame:
     ring.attrs["implied_inside_population"] = float(
         (sa2["erp"].to_numpy(dtype=float) * (1.0 - fraction_outside)).sum()
     )
-    ring.attrs["sa2_parts_considered"] = int(len(sa2))
+    ring.attrs["sa2_parts_considered"] = len(sa2)
     _RING_CACHE[key] = ring
     return ring
 

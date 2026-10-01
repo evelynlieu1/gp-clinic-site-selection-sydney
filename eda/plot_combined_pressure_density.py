@@ -68,7 +68,7 @@ from shapely.geometry import box
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from gp_supply import (  # noqa: E402  (ROOT must be on sys.path first)
+from gp_supply import (
     GP_STATUS_NO_DATA,
     GP_STATUS_OK,
     rankable_mask,
@@ -831,27 +831,27 @@ def main() -> None:
     gdf = gdf_4326.to_crs(PLOT_CRS)
 
     footnotes = [
-        f"Darkest cell = least accessible tercile and densest senior tercile: {top_cell} "
-        f"suburbs, {top_recovered} of them unrankable on the old axis.",
-        "X axis: E2SFCA accessibility (accessibility.py) = practices per 1,000 people within "
+        (f"Darkest cell = least accessible tercile and densest senior tercile: {top_cell} "
+        f"suburbs, {top_recovered} of them unrankable on the old axis."),
+        ("X axis: E2SFCA accessibility (accessibility.py) = practices per 1,000 people within "
         "a 20 min cutoff, each practice shared with everyone who can reach it. Supply is the "
         "Geoscience Australia HealthDirect register, 2,089 NSW general practices, extract "
-        "2025-03-07, placed by coordinates.",
-        "It replaces population / (total GP + 1), which counted only doctors INSIDE a suburb "
+        "2025-03-07, placed by coordinates."),
+        ("It replaces population / (total GP + 1), which counted only doctors INSIDE a suburb "
         "and so ranked Croydon first on the 1 practice inside it while 27 sit within 2 km. "
         "Low accessibility means too few practices for the people sharing them, never that "
-        "no GP is nearby.",
-        f"Accessibility exists for all {n_map} mapped suburbs, the {n_never} the clinic "
+        "no GP is nearby."),
+        (f"Accessibility exists for all {n_map} mapped suburbs, the {n_never} the clinic "
         "scrape never returned included, because it depends on where practices are and who "
         f"else can reach them: {n_recovered} suburbs this map used to hatch as unranked now "
-        f"carry a real class, {n_set_aside} remain hatched.",
-        f"Terciles computed within the {n_class} classified suburbs. Not drawn: {no_geom} "
+        f"carry a real class, {n_set_aside} remain hatched."),
+        (f"Terciles computed within the {n_class} classified suburbs. Not drawn: {no_geom} "
         f"suburbs with no OSM polygon, {n_sparse} sparse suburbs "
-        f"(< {MIN_OVERALL_PEOPLE_PER_KM2:.0f} people/km²).",
-        "Travel cost is straight-line at 35 km/h, an optimistic bound calibrated against a "
+        f"(< {MIN_OVERALL_PEOPLE_PER_KM2:.0f} people/km²)."),
+        ("Travel cost is straight-line at 35 km/h, an optimistic bound calibrated against a "
         "routed OSM drive network and weakest across water, so peninsulas are flattered. The "
         "register misses roughly 10 to 12% of practices nationally, so a thin reading is a "
-        "floor on supply, not proof of absence.",
+        "floor on supply, not proof of absence."),
     ]
     if n_confirmed_zero:
         footnotes.insert(

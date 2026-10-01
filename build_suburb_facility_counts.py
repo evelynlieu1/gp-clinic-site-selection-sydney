@@ -43,7 +43,7 @@ ROOT = Path(__file__).resolve().parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-import health_facilities as hf  # noqa: E402  (project root added to sys.path above)
+import health_facilities as hf
 
 EDA_DATA = ROOT / "scraped_data" / "eda_data.csv"
 POLYGON_GPKG = ROOT / "eda" / "geo_cache" / "osm_suburb_polygons_greater_sydney.gpkg"
@@ -206,7 +206,7 @@ def quality_report(gps: pd.DataFrame, pharms: pd.DataFrame, project_keys: set[st
         regex=True,
         na=False,
     )
-    print(f"\n-- residual non-GP services surviving the service-type filter --")
+    print("\n-- residual non-GP services surviving the service-type filter --")
     print(f"  flagged for review (NOT removed)      : {int(residual.sum())}")
     for _, r in gps.loc[residual, ["organisation_name", "suburb"]].iterrows():
         print(f"      {str(r['organisation_name'])[:50]:52s} {r['suburb']}")
@@ -226,7 +226,7 @@ def show_examples(gps: pd.DataFrame) -> None:
         rows = gps[(name_key == k) & (gps["longitude"] == lon) & (gps["latitude"] == lat)]
         print(f"  {n} rows  {rows['organisation_name'].iloc[0]}  ({lat:.5f}, {lon:.5f})")
         for _, r in rows.iterrows():
-            print(f"      objectid {r['objectid']:6d}  pid {str(r['gnaf_address_detail_pid']):>16s}"
+            print(f"      objectid {r['objectid']:6d}  pid {r['gnaf_address_detail_pid']!s:>16s}"
                   f"  {r['suburb']}")
 
 

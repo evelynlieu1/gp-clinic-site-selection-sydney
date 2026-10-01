@@ -224,7 +224,7 @@ def nested_logistic(frame, base, added, outcome="dpa_positive", cluster="gpc_cod
             "p_clustered": float(clustered.pvalues[i]),
         })
     return {
-        "n": int(len(df)), "events": int(y.sum()),
+        "n": len(df), "events": int(y.sum()),
         "llf_reduced": float(m0.llf), "llf_full": float(m1.llf),
         "aic_reduced": float(m0.aic), "aic_full": float(m1.aic),
         "lr_stat": float(lr), "lr_df": dof, "lr_p": p_lr,
@@ -729,7 +729,7 @@ def main() -> None:
     print("=" * 78)
     print("2. SPATIAL AUTOCORRELATION, Moran's I under a permutation null")
     print("=" * 78)
-    elig = df[df["eligible"] == True]  # noqa: E712
+    elig = df[df["eligible"] == True]
     xy = elig[["x_m", "y_m"]].to_numpy(float)
     w = knn_weights(xy, DEFAULT_K)
     print(f"  {len(elig)} eligible suburbs, k={DEFAULT_K} nearest neighbours, "

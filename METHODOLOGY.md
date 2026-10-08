@@ -22,7 +22,7 @@ never ranked on by default.
 
 The frame is the 680 suburbs in `scraped_data/eda_data.csv`. Demand is the 2021 Census (population, 65-plus
 share, median weekly household income); supply is the Healthdirect National Health Services Directory as
-republished by Geoscience Australia, extract 2025-03-07 — 2,089 NSW general practices and 1,832 pharmacies,
+republished by Geoscience Australia, extract 2025-03-07-2,089 NSW general practices and 1,832 pharmacies,
 dated and re-fetchable. 443 of the 680 suburbs are eligible for a rank.
 
 What a ranked row claims is "too few practices for the population that must share them", never "no GP here".
@@ -31,7 +31,7 @@ Cronulla at rank 1 has 6 practices within 2 km, the nearest 104 m away.
 ## Method
 
 Build an E2SFCA accessibility surface, score four criteria on [0,1], combine as a weighted sum, apply two hard
-eligibility gates and the Nuvo catchment exclusion, then re-rank under 31 perturbations — the deliverable is
+eligibility gates and the Nuvo catchment exclusion, then re-rank under 31 perturbations - the deliverable is
 the robust core of that sweep, not the point ranking.
 
 ### Why E2SFCA rather than counting practices inside the suburb
@@ -44,11 +44,11 @@ practice, and of the 46 suburbs with 5,000-plus residents and none inside, 43 ha
 E2SFCA (Luo and Qi 2009) replaces the count with a continuous surface in two steps (`accessibility.py`). Step 1
 gives each practice `R_j = S_j / sum_k P_k W(d_kj)`, its supply over the decay-weighted population competing for
 it; step 2 gives each suburb `A_i = sum_j R_j W(d_ij)`, in practices per 1,000 people. `S_j = 1` for every
-practice — the register has no practitioner-count field, which is what the D5 headcount guard offsets.
+practice - the register has no practitioner-count field, which is what the D5 headcount guard offsets.
 
 `W` is a stepped 5-minute Gaussian decay, 0.980 / 0.827 / 0.549 / 0.192 out to the 20-minute general cutoff; the
 15-minute 65-plus surface is context only, and seniors enter the score through the 2.5x attendance multiple in
-`demand_scale`. Step 1 also counts ABS SA2 population outside the 680-suburb footprint — without that ring, edge
+`demand_scale`. Step 1 also counts ABS SA2 population outside the 680-suburb footprint - without that ring, edge
 practices divide by a truncated population and the fringe reads as superbly served; adding it moved the access
 distribution's correlation with practices within 2 km from -0.01 to +0.56. Travel cost is straight-line at an
 effective 35 km/h, not road-network routing: the largest weakness, treated below.
@@ -63,13 +63,13 @@ effective 35 km/h, not road-network routing: the largest weakness, treated below
 | `operational` | 0.10 | `0.7 x` nearest-pharmacy ramp (1.0 at <=0.4 km, 0 at >=2.0 km) `+ 0.3 x` DPA flag | closer pharmacy -> higher |
 
 Each shape answers a v1 failure. `access_gap` is a rank percentile so that zero-access and ferry-only suburbs
-cannot set the scale, and its guard term lets a trustworthy headcount contradict a high gap score — downward
+cannot set the scale, and its guard term lets a trustworthy headcount contradict a high gap score - downward
 only, `gp_data_status == "ok"` only, so headcount never ranks. `demand_scale` is logarithmic because
 senior-weighted population spans 3 to 60,700, and a linear min-max over that range let v1 rank a 1,334-person
 enclave first. `mixed_billing_fit` is an inverted U because a ~$43 rebate against a ~$90 private fee needs
 households that can absorb the gap sometimes; its knots are re-derived at run time from the loaded income column
 ($1,583 / $2,101 / $2,872 / $3,492 on the shipped 2021 data). `operational` caps DPA at 0.3 of 0.10 because DPA=Y
-fires on 79 of 680 suburbs at a median population of 815 — a hidden smallness bonus at full weight.
+fires on 79 of 680 suburbs at a median population of 815 - a hidden smallness bonus at full weight.
 
 ### Gates and exclusions
 
@@ -86,13 +86,13 @@ says 7, all rural-fringe, so the comment is stale rather than the gate.
 Nuvo's own sites are excluded at GP-catchment level, not by suburb name, because a clinic 1 km away in the next
 suburb cannibalises just as effectively. The list is the operator's published listing of 18 centres (15 map to ABS
 suburbs; 3 are precinct names in catchments the 15 already cover), retrieved 2026-09-23 from nuvohealth.com.au,
-and it removes 145 suburbs across 10 of the 46 GP catchments the study touches — 134 of them otherwise eligible.
+and it removes 145 suburbs across 10 of the 46 GP catchments the study touches - 134 of them otherwise eligible.
 **The list is unverified**: it was read off the operator's public website, every output row says so, and a
 public page can lag an opening or a closure. This project has no relationship with Nuvo Health; the list would
 need confirming with the operator before anyone acted on it.
 
 That leaves 443 ranked suburbs, with `catchment_rank` and `best_in_catchment` flagging the cases where two of them
-are really one opportunity — Caringbah South at rank 2 sits in Cronulla's own catchment.
+are really one opportunity - Caringbah South at rank 2 sits in Cronulla's own catchment.
 
 ---
 
@@ -120,13 +120,13 @@ suburb scored a perfect 1.0; the shortlist chain used `People_Per_GP_Ratio = pop
 (total_gp + 1)`, which reads it as maximum pressure.
 
 **Proof.** Cross-tabulate the v1 shortlist against `gp_data_status`. Seven of the ten names in
-`eda/final_top10_clinical_intensity.csv` had `total_gp = 0` and status `no_data` — Blakehurst,
+`eda/final_top10_clinical_intensity.csv` had `total_gp = 0` and status `no_data` - Blakehurst,
 Caringbah South, Vaucluse, Killara, Concord West, Cromer, Gymea Bay. The whole-cohort MCDA ranking
 was no better: the same 7 of 10, led by Point Piper, population 1,334. Both files are recoverable
 at commit `5fe4d38`; the v1 chain was deleted at `ad78bd7`.
 
-**Replaced.** `gp_supply.py` splits the column into three states — `ok` 433, `gp_count_unknown` 8,
-`no_data` 239 of 680 — with Bayview and Beacon Hill the only two confirmed zeros. v2 does not rank
+**Replaced.** `gp_supply.py` splits the column into three states - `ok` 433, `gp_count_unknown` 8,
+`no_data` 239 of 680 - with Bayview and Beacon Hill the only two confirmed zeros. v2 does not rank
 on the scrape at all: supply is an E2SFCA surface over the 2,089-practice Healthdirect register, so
 all 680 suburbs are measured on the same basis. `site_score.py:968` admits a suburb to the one
 surviving headcount rule only where `status == "ok"` and `total_gp > 0`, and `_test_headcount_guard`
@@ -140,8 +140,7 @@ in-polygon count measures which side of an administrative line a clinic sits on.
 **Proof.** Count register practices by distance from the suburb centroid instead of inside its
 polygon. Croydon, between Burwood and Ashfield, has 1 inside, 21 within 1.5 km, 27 within 2 km, 42
 within 3 km, nearest 385 m. The pattern is systematic, not an anecdote: of the 298 suburbs with no
-practice inside, 170 (57.0%) have one within 1.5 km and 206 (69.1%) within 2 km, and only 61 —
-55,147 people — have none within 3 km. Among suburbs of 5,000-plus residents with none inside there
+practice inside, 170 (57.0%) have one within 1.5 km and 206 (69.1%) within 2 km, and only 61-55,147 people - have none within 3 km. Among suburbs of 5,000-plus residents with none inside there
 are 46, and 43 have one within 2 km; the three exceptions are Heathcote, Spring Farm and Ruse. The
 error hid the genuine cases too: Heathcote, 6,148 residents, has 0 practices within 2 km, 9 within
 3 km, nearest 2.455 km, and never reached a v1 shortlist.
@@ -154,7 +153,7 @@ fell to rank 141 of 443 at the 85.6th access percentile; Heathcote rose to rank 
 `_test_croydon_structure` (`accessibility.py:1113`) locks the structural claim on synthetic data,
 and `validation.py` supplies the external one: against the Department of Health DPA under-supply
 flag, which the pipeline never reads, `access_gap_unguarded` scores AUC **0.813 [0.743, 0.879]**.
-The composite `site_score` scores 0.640 [0.576, 0.706], as it should — it also rewards income fit
+The composite `site_score` scores 0.640 [0.576, 0.706], as it should - it also rewards income fit
 and demand, which DPA does not measure.
 
 ### 3. Income was treated as monotonically better
@@ -162,15 +161,14 @@ and demand, which DPA does not measure.
 **Wrong.** Income entered at weight 0.25, higher-is-better, so the score could never stop climbing.
 
 **Proof.** Read the list's income distribution against its own cohort. Over the 423 rankable
-suburbs in the v1 output, cohort median was $2,171/week and top-20 median $3,283 — the 95th
-percentile of that cohort — with 8 of 20 at or above $3,500. The leaders were Longueville $4,894,
+suburbs in the v1 output, cohort median was $2,171/week and top-20 median $3,283 - the 95th
+percentile of that cohort - with 8 of 20 at or above $3,500. The leaders were Longueville $4,894,
 Riverview $4,731, Castlecrag $4,675 and North Balgowlah $4,212: households that buy full private
 care, the segment least likely to buy mixed billing. The plausible target band, $1,800-3,000, holds
 274 of the 433 `ok` suburbs and 2.69 million people.
 
 **Replaced.** D1 makes income an inverted U whose knots are derived at run time from percentiles
-15/40/80/95 of the income column actually loaded (`INCOME_KNOT_PERCENTILES`, `site_score.py:130`) —
-on the shipped 2021 data, $1,583 / $2,101 / $2,872 / $3,492. The eligible top 20 now has a median
+15/40/80/95 of the income column actually loaded (`INCOME_KNOT_PERCENTILES`, `site_score.py:130`) - on the shipped 2021 data, $1,583 / $2,101 / $2,872 / $3,492. The eligible top 20 now has a median
 household income of $2,388, a maximum of $3,120 and nothing at or above $3,500; all four former
 leaders score `mixed_billing_fit` 0.0. `_test_derived_income_knots` (`site_score.py:1402`) asserts
 the property the hard-coded dollar knots lacked: multiply every income by 1.2, and no sub-score moves.
@@ -182,7 +180,7 @@ per practice: a twelve-doctor clinic and a solo GP count the same, and a suburb 
 large practices reads as under-supplied.
 
 **Proof.** Read the rebuilt ranking against the very scrape v1 was scrapped for. Dee Why ranked 2
-on `access_gap` 0.844 with 35 recorded GPs for 23,354 residents — 667 people per GP, better
+on `access_gap` 0.844 with 35 recorded GPs for 23,354 residents - 667 people per GP, better
 supplied than 70% of the eligible cohort with a usable ratio. Mona Vale at rank 9 was worse still
 at 494 per GP, better supplied than 84%.
 
@@ -195,12 +193,12 @@ Collaroy, Glenmore Park, Heathcote and Newport. Guard strength is one of the nin
 families (off / 0.25 / 0.5 / 0.75), so the effect can be read off rather than taken on trust.
 
 **Still open.** The guard can only check a suburb with a trustworthy headcount, and 125 of the 443
-eligible have none — 116 `no_data`, 7 `gp_count_unknown`, 2 confirmed zeros. Caringbah South at
+eligible have none - 116 `no_data`, 7 `gp_count_unknown`, 2 confirmed zeros. Caringbah South at
 rank 2 is one; Cromer at 16 is the other in the top 30. Five more top-30 names carry floor counts
 rather than exact ones (Cranebrook 5, Newport 8, Miranda 15, Dee Why 17, Botany 23), so their
 people-per-GP is overstated and they are under-demoted. The guard also costs agreement with the
-external check — AUC falls from 0.813 to 0.779 [0.707, 0.846] on the DPA flag, on heavily
-overlapping intervals — and its knots are frozen constants: re-derived on the current 318-suburb
+external check - AUC falls from 0.813 to 0.779 [0.707, 0.846] on the DPA flag, on heavily
+overlapping intervals - and its knots are frozen constants: re-derived on the current 318-suburb
 cohort, the same percentiles give 612 and 1,030, not 640 and 1,040. `site_score.py:35-38` still
 quotes the pre-gate cohort, 197 of 507 and 134 unguardable with Dee Why → 19, against the live 159
 of 443, 125 and 17. A `no_data` suburb's rank carries strictly less evidence than an `ok` one.
@@ -231,24 +229,24 @@ is the check in the other direction, since a size criterion should anti-predict 
 are tiny. Three things travel with the headline number.
 
 1. **The benchmark is rural-calibrated.** The median DPA-positive suburb has 815 people and zero
-   practices within 2 km, against a median of 4,940 across all 680, and only 29 of the 79 positives
-   clear the eligibility gates. A high AUC says the score agrees with the government about obvious
-   scarcity, not that it picks good sites.
+ practices within 2 km, against a median of 4,940 across all 680, and only 29 of the 79 positives
+ clear the eligibility gates. A high AUC says the score agrees with the government about obvious
+ scarcity, not that it picks good sites.
 2. **It validates one criterion, not the ranking.** The headline figure is the *unguarded* access
-   surface; the shipped `access_gap` scores 0.779 and the composite only 0.641 — by design, since 60
-   percent of the weight is commercial fit. Even 0.641 is flattered: `operational` is 0.10 of the weight
-   and DPA is 0.3 of it (`DPA_OPERATIONAL_SHARE`, site_score.py:214), so 3 percent of the composite is
-   the answer key. `access_gap` itself has never seen DPA.
+ surface; the shipped `access_gap` scores 0.779 and the composite only 0.641 - by design, since 60
+ percent of the weight is commercial fit. Even 0.641 is flattered: `operational` is 0.10 of the weight
+ and DPA is 0.3 of it (`DPA_OPERATIONAL_SHARE`, site_score.py:214), so 3 percent of the composite is
+ the answer key. `access_gap` itself has never seen DPA.
 3. **The interval is too narrow.** The bootstrap resamples suburbs as though independent, but DPA
-   arrives by areal overlay of catchment-scale polygons: 35 of the 46 catchments carry a single label
-   across a median of 15 suburbs, so the effective sample is nearer 46 than 680.
+ arrives by areal overlay of catchment-scale polygons: 35 of the 46 catchments carry a single label
+ across a median of 15 suburbs, so the effective sample is nearer 46 than 680.
 
 ### Spatial autocorrelation: the suburbs are not independent observations
 
 Global Moran's I over the 443 eligible suburbs, k-nearest-neighbour weights, 999 permutations:
 `site_score` 0.359 (z 16.1, p 0.001), `access_gap` 0.623 (z 27.2, p 0.001), `mixed_billing_fit` 0.387,
-`demand_scale` 0.070 (p 0.003). I on `site_score` falls with the neighbour count — 0.397 (k=4), 0.359
-(k=8), 0.296 (k=16), 0.232 (k=32) — and p holds at 0.001, the floor 999 permutations can return rather
+`demand_scale` 0.070 (p 0.003). I on `site_score` falls with the neighbour count - 0.397 (k=4), 0.359
+(k=8), 0.296 (k=16), 0.232 (k=32) - and p holds at 0.001, the floor 999 permutations can return rather
 than a measured one-in-a-thousand. The clustering is not a defect; access to care really is spatially
 structured. It changes inference: 443 eligible suburbs are not 443 independent observations, so every
 interval computed suburb-by-suburb, the AUC above included, is a lower bound on the true uncertainty.
@@ -261,7 +259,7 @@ suburbs significant against 124 uncorrected, so the correction is doing real wor
 (rank 4), Newport (8), Collaroy (9), Narrabeen (61), Bilgola Plateau (73), Wheeler Heights (79), Palm
 Beach (84), Collaroy Plateau (191), Bayview (197).
 
-No significant HL suburb means no candidate is a *local* anomaly — every high scorer sits among other
+No significant HL suburb means no candidate is a *local* anomaly - every high scorer sits among other
 high scorers, so the opportunity is shared with an adjacent suburb rather than specific to the site.
 Seven of the top 10 are not individually significant, Cronulla among them (local I 0.479, p 0.632). The
 two connected clusters are unstable: Avalon Beach and Collaroy share a cluster at k=16 and k=24 but not
@@ -287,7 +285,7 @@ rather than dropped, because the design was argued for in advance and the data t
 **The leader's [1, 1] is tautological.** Resampling changes which suburbs compete, never their scores,
 so the top scorer is rank 1 in every draw by construction. That is not evidence of robustness and must
 not be quoted as such; Cronulla's case rests on the 31 assumption perturbations, not on this. The
-informative rows are lower down — Heathcote at rank 10 spans [3, 17] and is top-10 in only 63 percent of
+informative rows are lower down - Heathcote at rank 10 spans [3, 17] and is top-10 in only 63 percent of
 draws. Neither bootstrap carries measurement error: population, income and the practice register are
 treated as exact, so none of their uncertainty reaches a rank.
 
@@ -299,21 +297,21 @@ Supply is the March 2025 register; demand is the 2021 Census. Four years of popu
 change sits unmodelled between them, and it is not uniform.
 
 This is deliberately **not** "Census measurement error". The ABS perturbs small-area
-counts for confidentiality, but these are suburb totals in the thousands — at Cronulla's
+counts for confidentiality, but these are suburb totals in the thousands - at Cronulla's
 17,899 residents a ±3 perturbation is 0.02% and propagating it would produce an
 authoritative-looking interval of zero width. The vintage gap is the uncertainty that
 actually moves scores.
 
 **Calibration is empirical, and matching on name alone was wrong.** 90 suburbs share a
 name with an SA2, but SAL and SA2 geographies differ: Chullora reads as 14 residents
-against an SA2 ERP of 1,524 — a 109× "growth" that is entirely an area mismatch. Name
+against an SA2 ERP of 1,524 - a 109× "growth" that is entirely an area mismatch. Name
 matching gave a median growth of 8.2% and 25 suburbs above 25%. Requiring
 intersection-over-union ≥ 0.90 between the two polygons leaves **43 suburbs, median
-growth 5.1%, 5 above 25%**, and puts Oran Park at 1.458 — the figure this project had
+growth 5.1%, 5 above 25%**, and puts Oran Park at 1.458 - the figure this project had
 recorded independently. The filter discards 47 of 90 name matches.
 
 200 replicates per mode. Each draws a growth ratio per suburb from those 43 observed
-ratios, scales population, and rebuilds the E2SFCA surface — population is the demand
+ratios, scales population, and rebuilds the E2SFCA surface - population is the demand
 side, so `access_gap` moves too, not only `demand_scale`.
 
 | Base rank | Suburb | Median | 95% interval | P(top 10) | P(rank 1) |
@@ -328,18 +326,18 @@ side, so `access_gap` moves too, not only `demand_scale`.
 *(catchment-blocked draws, the conservative mode)*
 
 Cronulla holds rank 1 in **95%** of replicates under blocked draws and 99% under
-independent ones. This is the first test in the project capable of dislodging it — the
-rank bootstrap could not, because resampling never changed a score — and it did not.
+independent ones. This is the first test in the project capable of dislodging it - the
+rank bootstrap could not, because resampling never changed a score - and it did not.
 
 **Blocking matters here, and that is itself the finding.** Correlating growth within a
 GP catchment widens the top-10 intervals by **66%** (mean width 8.3 ranks against 5.0).
 The cohort bootstrap saw only 7% from the same treatment. The difference is real: cohort
-membership is not spatially structured, but growth is — corridors grow together, so
+membership is not spatially structured, but growth is - corridors grow together, so
 correlated draws generate scenarios independent draws never reach. Where a quantity is
 genuinely spatial, blocking changes the answer; where it is not, it does not.
 
 **Limits, stated rather than buried.** 43 calibration suburbs is a small sample and not a
-random one — they are the suburbs whose boundaries happen to match an SA2. ERP adjusts
+random one - they are the suburbs whose boundaries happen to match an SA2. ERP adjusts
 for Census undercount, so roughly 2% of every ratio is definitional rather than growth,
 biasing the pool up and the spread conservative in one direction. Only population is
 perturbed; the register, incomes and travel cost are held fixed.
@@ -353,7 +351,7 @@ to eyeball the difference. Fitting nested models answers it directly, and the co
 is interpretable where an AUC gap is not.
 
 Fit `DPA ~ log(population)`, then `DPA ~ log(population) + access_gap`, and compare by
-likelihood ratio test — `LR = 2(ℓ_full − ℓ_reduced)`, chi-square on 1 df.
+likelihood ratio test - `LR = 2(ℓ_full - ℓ_reduced)`, chi-square on 1 df.
 
 | Cohort | n | DPA+ | LR | p | AIC |
 |---|---|---|---|---|---|
@@ -376,16 +374,15 @@ DPA-positive suburbs sit in just three GP catchments**, and positives appear in 
 46 catchments at all. The naive test counts those 40 as 40 independent pieces of evidence.
 Clustering counts them closer to three, which is nearer the truth.
 
-**What this does and does not mean.** The coefficient sign and magnitude are unchanged —
-access_gap still moves DPA odds in the expected direction. What changes is how much
+**What this does and does not mean.** The coefficient sign and magnitude are unchanged - access_gap still moves DPA odds in the expected direction. What changes is how much
 confidence the DPA benchmark can support: once spatial concentration is handled honestly,
 it cannot demonstrate that access_gap beats a size proxy. That is a statement about the
 benchmark's power, not proof that the access measure is uninformative. The
 population-stratified AUC, which attacks the same question differently, still shows
-discrimination at 0.81–0.82 within bands.
+discrimination at 0.81-0.82 within bands.
 
 **A caveat on the caveat.** Cluster-robust standard errors are themselves unreliable below
-roughly 40–50 clusters. There are 46 here, 33 among the eligible. So the clustered z is the
+roughly 40-50 clusters. There are 46 here, 33 among the eligible. So the clustered z is the
 better of two imperfect numbers, not a definitive one.
 
 ---
@@ -395,8 +392,8 @@ better of two imperfect numbers, not a definitive one.
 Reported three ways, because the headline number alone is misleading.
 
 **On all 680 classified suburbs**, `access_gap` scores AUC 0.813 [0.743, 0.879] against a
-flag it has never seen. **On the 443 eligible suburbs** — the ones actually competing for
-the recommendation — it falls to 0.719 [0.586, 0.837], and the composite `site_score`
+flag it has never seen. **On the 443 eligible suburbs** - the ones actually competing for
+the recommendation - it falls to 0.719 [0.586, 0.837], and the composite `site_score`
 falls to 0.570 [0.452, 0.673], an interval containing chance.
 
 **A naive baseline beats the model on the full cohort.** `-log(population)` alone scores
@@ -410,12 +407,12 @@ size channel is closed off:
 
 | Band | n | DPA+ | AUC |
 |---|---|---|---|
-| 0–1,000 | 96 | 43 | 0.808 [0.71, 0.90] |
-| 1,000–5,000 | 248 | 26 | 0.824 [0.71, 0.92] |
-| 5,000–15,000 | 262 | 10 | 0.635 [0.38, 0.86] |
+| 0-1,000 | 96 | 43 | 0.808 [0.71, 0.90] |
+| 1,000-5,000 | 248 | 26 | 0.824 [0.71, 0.92] |
+| 5,000-15,000 | 262 | 10 | 0.635 [0.38, 0.86] |
 | 15,000+ | 74 | 0 | not testable |
 
-Discrimination survives at 0.81–0.82 in the two bands with enough positives, so
+Discrimination survives at 0.81-0.82 in the two bands with enough positives, so
 `access_gap` is carrying supply information rather than reading suburb size.
 
 **The limitation that follows.** DPA has no positives above 15,000 residents and only ten
@@ -433,8 +430,7 @@ The 32-run sweep moves one knob per run. That design cannot see interactions, so
 reports the best case: a suburb only has to survive 32 single deviations from the
 baseline, never a combination of them.
 
-`uncertainty.py --joint` draws every knob together, 400 times. The ranges are not new —
-each is the span the corresponding one-at-a-time family already sweeps, so the joint run
+`uncertainty.py --joint` draws every knob together, 400 times. The ranges are not new - each is the span the corresponding one-at-a-time family already sweeps, so the joint run
 explores the same space and the only thing that changes is whether knobs move together.
 Two deliberate exclusions: the `to 0` weight runs, because deleting a criterion is a
 different study, and continuous travel cutoffs, because `zones_for_cutoff` requires whole
@@ -454,7 +450,7 @@ Cronulla's rank-1 share is 0.55 [0.50, 0.60].
 
 **What this changes.** Under the one-at-a-time sweep Cronulla holds the top 10 in all 32
 runs and no other suburb does. Under joint draws it holds rank 1 in 55% and the top 10 in
-94%, while Avalon Beach holds the top 10 in 97% — a gap of 3 points against a standard
+94%, while Avalon Beach holds the top 10 in 97% - a gap of 3 points against a standard
 error of 1.5, so Avalon Beach is marginally the more robust top-10 member, not Cronulla.
 Five suburbs hold rank 1 in some draw.
 
@@ -477,11 +473,11 @@ Every other family in the sweep varies a *parameter*. This one varies the *model
 The shipped step 1 is enhanced two-step floating catchment (2SFCA): a suburb contributes
 its whole population to every practice it can reach, so demand is counted once per
 overlapping catchment. Three-step floating catchment (3SFCA, Wan, Zou and Sternberg 2012)
-inserts a selection weight first — `G_kj = W(d_kj) / Σ_m W(d_km)` — so a suburb splits
+inserts a selection weight first - `G_kj = W(d_kj) / Σ_m W(d_km)` - so a suburb splits
 itself across the practices it can reach, in proportion to how close each is. 3SFCA is the
 stricter formulation: it removes a double-count that 2SFCA genuinely has.
 
-Both conserve supply — `Σ R_j · pool_j` equals the number of reachable practices under
+Both conserve supply - `Σ R_j · pool_j` equals the number of reachable practices under
 either, which is the check that this reallocates demand rather than changing how much
 supply exists. Access correlates at Spearman 0.838.
 
@@ -502,7 +498,7 @@ Eight of ten top-10 members are common to both; Warriewood and Spring Farm enter
 3SFCA, Collaroy and Heathcote leave.
 
 **What this does and does not cost the recommendation.** Cronulla stays in the top 10
-under all 32 perturbations including this one — it is the only suburb that does. But
+under all 32 perturbations including this one - it is the only suburb that does. But
 "Cronulla is rank 1" holds under 2SFCA and not under 3SFCA, and the honest claim is
 therefore narrower: *Cronulla, Avalon Beach and Glenmore Park are the three strongest
 candidates, and which of them leads depends on whether demand-side competition weighting
@@ -530,7 +526,7 @@ Five limitations are large enough to change a site decision. Each is stated belo
 
 This is the largest methodological weakness. `access_gap` carries 40% of the weight and rests entirely on great-circle distance converted to drive minutes by one constant.
 
-The constant is measured, not assumed. A real Sydney drive graph gives a median effective straight-line speed of 47.6 km/h over 151,558 origin-destination pairs; that is divided by a stated congestion and access-delay factor of 1.36 to give 35.0 km/h (`accessibility.py:232-247`). The conventional 24 km/h was tested and rejected. Road-network routing is implemented and runnable in `accessibility.py`; it was abandoned on a timed extrapolation of roughly 46.5 minutes of Overpass download for the 2.24 sq deg study bbox against a 25 minute budget — a measured rejection, not an assumption.
+The constant is measured, not assumed. A real Sydney drive graph gives a median effective straight-line speed of 47.6 km/h over 151,558 origin-destination pairs; that is divided by a stated congestion and access-delay factor of 1.36 to give 35.0 km/h (`accessibility.py:232-247`). The conventional 24 km/h was tested and rejected. Road-network routing is implemented and runnable in `accessibility.py`; it was abandoned on a timed extrapolation of roughly 46.5 minutes of Overpass download for the 2.24 sq deg study bbox against a 25 minute budget - a measured rejection, not an assumption.
 
 No single constant models barriers. Repeating the calibration on a graph spanning Sydney Harbour costs about 17% of median effective speed and raises median circuity from 1.259 to 1.457. The clearest single defect is Dangar Island, ferry-only, credited with a nearest practice 1.544 km away.
 
@@ -544,11 +540,11 @@ Measured across the five speeds in the sweep (`python accessibility.py --sensiti
 | 40.0 | 13.33 km | 98.1 | 7.2 | 17/20 |
 | 47.6 | 15.87 km | 95.7 | 5.0 | 17/20 |
 
-The qualitative conclusions survive the whole range — Croydon stays above median, Heathcote stays at the bottom. The point percentiles do not, and neither does a quarter of the top 20 at the extremes.
+The qualitative conclusions survive the whole range - Croydon stays above median, Heathcote stays at the bottom. The point percentiles do not, and neither does a quarter of the top 20 at the extremes.
 
 ### 2. The `area` column in `scraped_data/eda_data.csv` is corrupted
 
-Checked against the cached ABS SAL 2021 shapefile: 12 of the 548 matched suburbs are wrong by more than 2x. Sydney is recorded at 26.4694 km² against 2.94 actual. Six pairs of unrelated suburbs share a byte-identical value — Dolls Point/The Rocks, Berowra/Berowra Heights, Denistone/Denistone East, Bass Hill/Westmead, Northwood/Woolloomooloo, Tennyson/Tennyson Point — which is a copy-paste signature, and Prospect/Pemulwuy are swapped.
+Checked against the cached ABS SAL 2021 shapefile: 12 of the 548 matched suburbs are wrong by more than 2x. Sydney is recorded at 26.4694 km² against 2.94 actual. Six pairs of unrelated suburbs share a byte-identical value - Dolls Point/The Rocks, Berowra/Berowra Heights, Denistone/Denistone East, Bass Hill/Westmead, Northwood/Woolloomooloo, Tennyson/Tennyson Point - which is a copy-paste signature, and Prospect/Pemulwuy are swapped.
 
 The column feeds nothing in the score. It still drives the combined map's senior-density axis and its sparse-suburb exclusion (`eda/plot_combined_pressure_density.py:671-707`), so map classes for the affected suburbs are wrong today. The fix is one step: recompute areas from `facility_cache/abs_sal_2021`, which is already cached and is already the geometry frame for accessibility, DPA and catchments.
 
@@ -556,15 +552,15 @@ The column feeds nothing in the score. It still drives the combined map's senior
 
 The practice register is the NHSD extract dated 2025-03-07. Population, over-65 share and median household income are ABS 2021 Census. The two sides of every ratio are four years apart.
 
-Measured, not estimated: the ABS 2025 SA2 ERP implies 5,121,215 people inside the study footprint against 4,746,859 in `eda_data.csv`, a 7.9% difference. Growth is not uniform, so the error is not uniform either. Greenfield suburbs in the top 20 — Oran Park (rank 6, 17,624 residents in 2021), Spring Farm (rank 14, 9,868), North Kellyville (rank 18, 17,401) — have grown fastest, so their demand is the most understated and their true rank is probably higher than shown. Practices that opened or closed after March 2025 are missing from the other side of the ratio.
+Measured, not estimated: the ABS 2025 SA2 ERP implies 5,121,215 people inside the study footprint against 4,746,859 in `eda_data.csv`, a 7.9% difference. Growth is not uniform, so the error is not uniform either. Greenfield suburbs in the top 20 - Oran Park (rank 6, 17,624 residents in 2021), Spring Farm (rank 14, 9,868), North Kellyville (rank 18, 17,401) - have grown fastest, so their demand is the most understated and their true rank is probably higher than shown. Practices that opened or closed after March 2025 are missing from the other side of the ratio.
 
 ### 4. The headcount guard cannot check 123 of the 443 eligible suburbs
 
-The E2SFCA supply term counts one unit per practice (`S_j = 1`), because the register carries no practitioner-count field. A suburb served by few-but-large practices therefore reads as scarce. The only mitigation is the D5 guard, which lets a trustworthy scraped headcount demote a high `access_gap` — downward only, at half strength, full demotion at 640 people per GP and none at 1,040 (`site_score.py:188-195`). It fires on 159 of the 443 eligible suburbs.
+The E2SFCA supply term counts one unit per practice (`S_j = 1`), because the register carries no practitioner-count field. A suburb served by few-but-large practices therefore reads as scarce. The only mitigation is the D5 guard, which lets a trustworthy scraped headcount demote a high `access_gap` - downward only, at half strength, full demotion at 640 people per GP and none at 1,040 (`site_score.py:188-195`). It fires on 159 of the 443 eligible suburbs.
 
-It cannot fire at all on the 123 eligible suburbs whose `gp_data_status` is not `ok` (116 `no_data`, 7 `gp_count_unknown`), nor on Bayview and Beacon Hill, the two confirmed zeros — 125 unguardable suburbs in total. **Caringbah South ranks 2 and is one of them.** Its rank carries strictly less evidence than any `ok` suburb's and must not be presented as equivalent.
+It cannot fire at all on the 123 eligible suburbs whose `gp_data_status` is not `ok` (116 `no_data`, 7 `gp_count_unknown`), nor on Bayview and Beacon Hill, the two confirmed zeros - 125 unguardable suburbs in total. **Caringbah South ranks 2 and is one of them.** Its rank carries strictly less evidence than any `ok` suburb's and must not be presented as equivalent.
 
-A weaker version of the same problem affects suburbs the guard does reach: 57 eligible `ok` suburbs carry `total_gp_is_floor`, meaning the headcount is a lower bound. A floor understates doctors, so `people_per_gp` is too high, adequacy too low, and the suburb is under-demoted. Five sit in the current top 30 — Cranebrook (5), Newport (8), Miranda (15), Dee Why (17), Botany (23). Read `gp_data_status` and `total_gp_is_floor` beside any rank.
+A weaker version of the same problem affects suburbs the guard does reach: 57 eligible `ok` suburbs carry `total_gp_is_floor`, meaning the headcount is a lower bound. A floor understates doctors, so `people_per_gp` is too high, adequacy too low, and the suburb is under-demoted. Five sit in the current top 30 - Cranebrook (5), Newport (8), Miranda (15), Dee Why (17), Botany (23). Read `gp_data_status` and `total_gp_is_floor` beside any rank.
 
 The guard is load-bearing: turning it off replaces 4 of the baseline top 10 (Dee Why, Engadine, Freshwater and Mona Vale enter).
 
@@ -572,11 +568,11 @@ The guard is load-bearing: turning it off replaces 4 of the baseline top 10 (Dee
 
 `NUVO_SITES` is taken from nuvohealth.com.au/medical-centres/, retrieved 2026-09-23: 18 GP centres, of which 15 map to ABS suburbs and 3 are precinct names (Green Square, Harold Park, Birkenhead) whose catchments the listed 15 already cover. Exclusion is at GP-catchment level, so this removes 145 suburbs across 10 catchments from contention.
 
-Nothing in the repository can confirm it. Neither the clinic scrape nor the Geoscience Australia register records a brand owner — the superseded brand-string match found only 6 of the 18 centres. A public listing can also lag an opening or a closure. `site_score.py` stamps every output row with an unverified note for this reason. This is an independent analysis with no access to the operator, so the list cannot be confirmed from inside the project.
+Nothing in the repository can confirm it. Neither the clinic scrape nor the Geoscience Australia register records a brand owner - the superseded brand-string match found only 6 of the 18 centres. A public listing can also lag an opening or a closure. `site_score.py` stamps every output row with an unverified note for this reason. This is an independent analysis with no access to the operator, so the list cannot be confirmed from inside the project.
 
 ## What this model is not
 
-**It is not a ranking of clinical need.** It ranks commercial suitability for a mixed-billing clinic, and the two point in different directions. A mixed-billing practice charges a gap fee, so the model rewards suburbs where households can absorb one. LISA on `site_score` makes the consequence explicit: the only significant cluster of low-scoring suburbs is in Western Sydney — Merrylands, Guildford, Fairfield, Bankstown, Mount Druitt, Liverpool — and it decomposes against the significant high-scoring Northern Beaches cluster like this:
+**It is not a ranking of clinical need.** It ranks commercial suitability for a mixed-billing clinic, and the two point in different directions. A mixed-billing practice charges a gap fee, so the model rewards suburbs where households can absorb one. LISA on `site_score` makes the consequence explicit: the only significant cluster of low-scoring suburbs is in Western Sydney - Merrylands, Guildford, Fairfield, Bankstown, Mount Druitt, Liverpool - and it decomposes against the significant high-scoring Northern Beaches cluster like this:
 
 | Criterion | High cluster (9 suburbs) | Low cluster (47 suburbs) | Share of the score gap |
 |---|---|---|---|
@@ -589,9 +585,9 @@ Median household income is $2,481 a week in the high cluster and $1,355 in the l
 
 **It does not model practice capacity.** Appointment availability is not in the data, and every practice is treated as an equivalent competitor. The score therefore under-rates dense areas where a seven-day mixed-billing clinic would be genuinely differentiated. The register is also not a census: nationally it lists 6,254 practices against roughly 7,000-7,135 accredited, missing an estimated 10-12%, and listing is voluntary.
 
-**It is not validated end to end.** Validation covers one criterion, not the composite. `access_gap` (unguarded) discriminates the Department of Health DPA under-supply flag at AUC 0.813 [0.743, 0.879]; the guarded version is 0.779 [0.707, 0.846]. `site_score` itself reaches only 0.641 [0.576, 0.706], and the DPA label is thin — `DPA = Y` covers 79 of 680 suburbs and 2.79% of the population. `mixed_billing_fit`, a quarter of the weight, is checked against nothing: no local billing-behaviour data has been ingested. Medicare quarterly bulk-billing rates at SA3 remain the obvious missing check.
+**It is not validated end to end.** Validation covers one criterion, not the composite. `access_gap` (unguarded) discriminates the Department of Health DPA under-supply flag at AUC 0.813 [0.743, 0.879]; the guarded version is 0.779 [0.707, 0.846]. `site_score` itself reaches only 0.641 [0.576, 0.706], and the DPA label is thin - `DPA = Y` covers 79 of 680 suburbs and 2.79% of the population. `mixed_billing_fit`, a quarter of the weight, is checked against nothing: no local billing-behaviour data has been ingested. Medicare quarterly bulk-billing rates at SA3 remain the obvious missing check.
 
-**It is not a shortlist with margin.** Under 31 perturbations across 9 families, exactly one suburb — Cronulla — stays in the top 10 under all of them. Caringbah South, Avalon Beach and Oran Park survive every run except those that zero a criterion's weight. And Caringbah South shares Cronulla's own GP catchment, so it is one opportunity with Cronulla, not a second one.
+**It is not a shortlist with margin.** Under 31 perturbations across 9 families, exactly one suburb - Cronulla - stays in the top 10 under all of them. Caringbah South, Avalon Beach and Oran Park survive every run except those that zero a criterion's weight. And Caringbah South shares Cronulla's own GP catchment, so it is one opportunity with Cronulla, not a second one.
 
 ---
 
@@ -607,7 +603,7 @@ Everything the ranking uses is dated, licensed and re-fetchable. One LLM-sourced
 | 1,328 DPA polygons | DPA (GPs) 2025a, Dept of Health, data.gov.au `7d889af7-…`, current as at March 2025 | CC-BY 2.5 AU | `facility_cache/dpa_gps_2025a/` → `suburb_dpa_status.csv` |
 | ABS geography | SAL 2021 GDA2020 (104 MB) is the single suburb frame for accessibility, DPA and catchments; SA2 2021 plus SA2 ERP from the ABS Data API (2,454 SA2s) and the SA2→GPC correspondence build the demand ring and catchment populations | not recorded in repo | `facility_cache/` |
 | Population, over-65 %, median incomes | ABS 2021 General Community Profile FeatureServer layer 5, queried per SAL by `pre-processing.ipynb` | not recorded in repo | `scraped_data/eda_data.csv` |
-| `area` column | OSM Nominatim boundary polygons, same notebook. **Corrupted** — Sydney 26.47 km² against 2.94 actual. Feeds no live score, still feeds the combined map | ODbL, not stated in repo | same file |
+| `area` column | OSM Nominatim boundary polygons, same notebook. **Corrupted** - Sydney 26.47 km² against 2.94 actual. Feeds no live score, still feeds the combined map | ODbL, not stated in repo | same file |
 | 1,306 scraped clinic rows | 70 prompts in `prompts/` pasted into an LLM, returned as the 70 CSVs in `gp_data/`. No source URLs retained, so not auditable and not reproducible | none | `scraped_data/gp_clinics_all.csv` |
 | 716 OSM `place=suburb` polygons | Overpass via osmnx; misses 30 of the 680 project suburbs | ODbL, not stated in repo | `eda/geo_cache/` (gitignored) |
 
@@ -623,7 +619,7 @@ python fix_suburb_area.py         # repairs the area column AND suburb_areas.jso
 python health_facilities.py       # ga_general_practices_nsw.csv, ga_pharmacies_nsw.csv
 python gp_catchments.py           # suburb_gp_catchment.csv; downloads GPC (45 MB), SAL (104 MB), SA2 ERP
 python dpa_status.py              # suburb_dpa_status.csv
-python accessibility.py           # suburb_accessibility.csv — 680 rows, the E2SFCA surface
+python accessibility.py           # suburb_accessibility.csv - 680 rows, the E2SFCA surface
 python eda/plot_combined_pressure_density.py  # combined_pressure_density.{png,html}; builds the gpkg
 python build_suburb_facility_counts.py        # suburb_practice_counts.csv
 python site_score.py              # site_scores_v2.csv (443 of 680 eligible), sensitivity_analysis.csv, final_shortlist_v2.csv

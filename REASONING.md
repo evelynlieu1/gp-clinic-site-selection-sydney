@@ -24,7 +24,7 @@ Everything below is the gap between those two sentences.
 
 First instinct: rank by `population / total_gp`. Fewest doctors per person wins.
 
-Immediate snag — suburbs with zero GPs divide by zero. The reflex fix is
+Immediate snag - suburbs with zero GPs divide by zero. The reflex fix is
 `population / (total_gp + 1)`.
 
 That `+1` looks like housekeeping. It was the single decision that invalidated the first
@@ -40,7 +40,7 @@ straight to the top.
 
 ---
 
-## 2. Separating "none" from "unknown" — and creating a new problem
+## 2. Separating "none" from "unknown" - and creating a new problem
 
 Replace the number with an explicit three-way status: `ok` (433 suburbs),
 `gp_count_unknown` (8), `no_data` (239). Only measured suburbs may make a supply claim.
@@ -53,7 +53,7 @@ scraped that particular suburb?** There is, but it needs the next realisation fi
 
 ---
 
-## 3. The Croydon moment — the unit of analysis was wrong
+## 3. The Croydon moment - the unit of analysis was wrong
 
 Croydon ranked first. One practice inside its boundary.
 
@@ -80,7 +80,7 @@ government's own data says they are one market.
 | Candidate | Why it was rejected |
 |---|---|
 | Practices within X km | X is arbitrary, and it ignores that those practices also serve everyone *else* within X km of them |
-| Distance to nearest practice | Ignores capacity entirely — one GP next door beats twelve a suburb away |
+| Distance to nearest practice | Ignores capacity entirely - one GP next door beats twelve a suburb away |
 | Plain gravity model | Right shape, but no principled functional form and no competition term |
 | **E2SFCA** | **Chosen** |
 
@@ -90,8 +90,7 @@ practice's supply by that crowd. That gives "practices per weighted person compe
 here". **Step two, per suburb:** add up that ratio across every practice the suburb can
 reach, discounted the same way.
 
-It won because it answers the actual question — *practices per person competing for them*
-— rather than a proxy for it. It also solved stage 2: accessibility needs only a suburb's
+It won because it answers the actual question - *practices per person competing for them* - rather than a proxy for it. It also solved stage 2: accessibility needs only a suburb's
 population and location plus the practice register, never the scrape. **The 247 held-out
 suburbs re-enter the analysis.**
 
@@ -100,7 +99,7 @@ suburbs re-enter the analysis.**
 ## 5. Every spatial method has an edge, and the edge lies
 
 Run E2SFCA over the 680 study suburbs and practices near the boundary get a truncated
-demand pool — the people who would compete for them live outside the study area and are
+demand pool - the people who would compete for them live outside the study area and are
 invisible. Their supply-to-demand ratio explodes, and the fringe suburbs that can reach
 them read as superbly served.
 
@@ -127,10 +126,10 @@ Two of them then went wrong in instructive ways.
 
 ### The income trap
 
-First version: higher income scores higher. Seems reasonable — wealthier catchment,
+First version: higher income scores higher. Seems reasonable - wealthier catchment,
 healthier business.
 
-It is backwards. The top 20 came out at the **90th income percentile** — exactly the
+It is backwards. The top 20 came out at the **90th income percentile** - exactly the
 households who skip mixed billing and buy full private care. Mixed billing needs people
 who can absorb roughly a $45 gap *and are not already paying more*.
 
@@ -146,7 +145,7 @@ Point Piper, population 1,334, ranked first. Two causes: area was a weighted cri
 30,000-person suburbs, so a 1,300-person enclave was barely penalised.
 
 Fixes: drop the area term, put demand on a **log ramp** so small is genuinely punished, and
-add **hard eligibility gates** that cannot be compensated for — fail one and you get no
+add **hard eligibility gates** that cannot be compensated for - fail one and you get no
 rank at all, however good your other scores.
 
 > **The lesson:** min-max normalisation on a skewed variable barely penalises the tail.
@@ -154,13 +153,13 @@ rank at all, however good your other scores.
 
 ---
 
-## 7. "Why 0.40?" — the question with no good answer
+## 7. "Why 0.40?" - the question with no good answer
 
 Someone will ask why access carries 0.40 and operational 0.10. There is no defensible
 answer. Every weight is a judgement.
 
 Options considered: **AHP** produces weights that look derived while still encoding the
-analyst's opinion — it launders judgement through a matrix. **Regression** would estimate
+analyst's opinion - it launders judgement through a matrix. **Regression** would estimate
 them from data, except there is no outcome variable anywhere in this problem: no revenue,
 no patient volumes, no success labels.
 
@@ -177,7 +176,7 @@ That reframing is the single most useful move in the project.
 Everything so far is internally consistent. Internal consistency is not evidence.
 
 The test needs something the model has never seen. The Department of Health's
-**Distribution Priority Area** flag is exactly that — an independent under-supply
+**Distribution Priority Area** flag is exactly that - an independent under-supply
 designation derived from GP FTE per capita.
 
 AUC **0.813**. The accessibility surface reproduces the government's own classification
@@ -193,7 +192,7 @@ correlated with smallness scores well on this task. The 0.813 was substantially 
 "is this a small suburb".
 
 So isolate it: stratify by population band and ask whether discrimination survives with
-size held roughly fixed. It does — **0.808 and 0.824** in the two bands with enough
+size held roughly fixed. It does - **0.808 and 0.824** in the two bands with enough
 positives. The measure is carrying real supply information.
 
 But DPA has **zero positives above 15,000 residents**, and the shortlist spans 6,148 to
@@ -214,7 +213,7 @@ survive 31 single deviations from the baseline, never a combination of them.
 
 Drawing every knob jointly over the *same ranges*, 400 times: Cronulla holds rank 1 in
 **55%** of draws. **Twelve** different suburbs take rank 1 in at least one draw, five of
-them in more than 1% — Avalon Beach 20%, Glenmore Park 10%, Oran Park 8%, Caringbah South
+them in more than 1% - Avalon Beach 20%, Glenmore Park 10%, Oran Park 8%, Caringbah South
 5%.
 
 > **The lesson:** OAT sensitivity is the standard robustness check and it systematically
@@ -228,7 +227,7 @@ Every one of those 31 perturbations varied a *parameter*. None varied the *model
 
 3SFCA is a standard refinement of the same technique: it adds a demand-side competition
 weight, so a suburb splits itself across the practices it can reach instead of
-contributing its whole population to each. It is the stricter formulation — 2SFCA genuinely
+contributing its whole population to each. It is the stricter formulation - 2SFCA genuinely
 double-counts demand across overlapping catchments.
 
 Under 3SFCA: **Avalon Beach is rank 1 and Cronulla is rank 3.**
@@ -243,8 +242,7 @@ ordering is not.
 ## 11. What it still cannot do
 
 The model measures **under-supply**, not **winnability**. It cannot distinguish a suburb
-that is thin because existing practices are turning patients away — genuine unmet demand —
-from one that is thin because the market never supported more. Those require opposite
+that is thin because existing practices are turning patients away - genuine unmet demand - from one that is thin because the market never supported more. Those require opposite
 decisions and look identical in this data.
 
 Closing that needs appointment wait times or practice-level capacity. Neither is public.
@@ -256,16 +254,16 @@ That is the honest reason it remains open, not an oversight.
 
 Not one suburb. A shortlist, with its confidence stated:
 
-- **Cronulla** is the modal winner — rank 1 in 55% of joint draws, top 10 in all 32
-  one-at-a-time perturbations
+- **Cronulla** is the modal winner - rank 1 in 55% of joint draws, top 10 in all 32
+ one-at-a-time perturbations
 - **Avalon Beach, Oran Park, Glenmore Park** each hold rank 1 in a meaningful share
 - The top 10 spans only **seven distinct GP catchments**, so it is seven opportunities
-  presented as ten
+ presented as ten
 - Ranks 9 and 10 are noise
 
 And it narrows further on contact with reality: the model takes 680 suburbs down to seven
-catchments worth visiting. The last step — ringing those practices to ask whether they are
-accepting new patients — is a day's work and no public dataset can replace it.
+catchments worth visiting. The last step - ringing those practices to ask whether they are
+accepting new patients - is a day's work and no public dataset can replace it.
 
 ---
 

@@ -3,7 +3,7 @@
 Four sessions to go from "I don't know what this is" to able to defend it. Work through in
 order; each one assumes the last. Roughly 10 hours total.
 
-Delete this file before publishing — it is scaffolding, not part of the deliverable.
+Delete this file before publishing - it is scaffolding, not part of the deliverable.
 
 ---
 
@@ -14,7 +14,7 @@ python site_score.py --test
 ```
 
 Expect `tests OK: 4 assert cases, 6 data-backed cases, 77 doctests`. If that fails, stop
-and fix it — nothing below is worth doing against a broken tree.
+and fix it - nothing below is worth doing against a broken tree.
 
 Then read the five value functions in `site_score.py`: `mixed_billing_fit`, `log_ramp`,
 `operational_score`, `headcount_adequacy`, `access_gap_scores`.
@@ -36,11 +36,11 @@ Ask these five of every method. If you can answer all five without looking, you 
 5. What does the number actually mean *in this data*?
 
 Question 3 is the one that separates watching lectures from owning the material. For most
-methods here you can answer it with a measured number — that is not an accident.
+methods here you can answer it with a measured number - that is not an accident.
 
 ---
 
-## Session 1 — What is this asking? (1 hour, no code)
+## Session 1 - What is this asking? (1 hour, no code)
 
 Read `README.md` start to finish. Nothing else.
 
@@ -56,16 +56,16 @@ it. If you lead with "Cronulla" in an interview you have led with the weakest pa
 
 ---
 
-## Session 2 — The one idea everything rests on (2–3 hours)
+## Session 2 - The one idea everything rests on (2-3 hours)
 
 `accessibility.py`. **Read the module docstring first, all 200 lines.** It is the argument
 of the file, not decoration.
 
 Then, in this order:
 
-1. `gaussian_weight` (:360) — how distance becomes a weight between 1 and 0
-2. `decay_weights` — the same thing applied to a matrix
-3. `e2sfca` — the two steps, and read the doctests before the body
+1. `gaussian_weight` (:360) - how distance becomes a weight between 1 and 0
+2. `decay_weights` - the same thing applied to a matrix
+3. `e2sfca` - the two steps, and read the doctests before the body
 
 **The mechanism in one paragraph.** Step 1 works practice by practice: add up all the
 population that can reach it, each person discounted by distance, then divide the
@@ -92,17 +92,17 @@ capacity estimate.
 
 ---
 
-## Session 3 — How the score is built (2–3 hours)
+## Session 3 - How the score is built (2-3 hours)
 
-`site_score.py`, docstring lines 1–56, then the five value functions you already skimmed.
+`site_score.py`, docstring lines 1-56, then the five value functions you already skimmed.
 
 **The structural idea:** there are two different mechanisms doing two different jobs.
 
 - **Hard gates** (population ≥ 1,000, catchment demand ≥ 25,000, Nuvo exclusion) are
-  non-compensatory. Fail one and you get no rank at all — a perfect access score cannot
-  rescue you. This is what stops a 30-person suburb winning.
+ non-compensatory. Fail one and you get no rank at all - a perfect access score cannot
+ rescue you. This is what stops a 30-person suburb winning.
 - **The weighted sum** is compensatory. Inside the eligible set, a weak criterion can be
-  offset by a strong one.
+ offset by a strong one.
 
 Then read `perturbations()` and `run_sensitivity()`. The sweep varies one knob per run.
 
@@ -120,7 +120,7 @@ it sits in the same GP catchment as your rank 1. What are you recommending?"*
 
 ---
 
-## Session 4 — How we know it isn't nonsense (3–4 hours)
+## Session 4 - How we know it isn't nonsense (3-4 hours)
 
 `validation.py`. Start with `auc()` and read its doctests before its body.
 
@@ -128,18 +128,18 @@ it sits in the same GP catchment as your rank 1. What are you recommending?"*
 
 | In the code | Your course |
 |---|---|
-| `auc()` — discrimination via ranks | **W5 V15** Wilcoxon Rank Sum. The AUC *is* U/(n₁n₀) |
+| `auc()` - discrimination via ranks | **W5 V15** Wilcoxon Rank Sum. The AUC *is* U/(n₁n₀) |
 | ROC / AUC as a performance measure | **W2 V05** Measures of performance |
 | Bootstrap intervals | **W6 V17** Bootstrap |
 | Permutation nulls | **W6 V16** Permutation tests |
-| Benjamini–Hochberg | **W7 V18** Multiple testing |
+| Benjamini - Hochberg | **W7 V18** Multiple testing |
 | `nested_logistic` + LR test | **W10 V27** model selection, **W11 V29** logistic regression |
 
 Genuinely new: Moran's I, LISA, block bootstrap. Two of the three are extensions of Week 6.
 
 ### The half-hour that converts watching into owning
 
-Take ten suburbs. Compute the AUC by hand — rank them, sum the ranks of the DPA-positive
+Take ten suburbs. Compute the AUC by hand - rank them, sum the ranks of the DPA-positive
 ones, subtract `n(n+1)/2`, divide by `n₁n₀`. Check against `auc()`. This does more than
 re-watching the lecture.
 
@@ -148,16 +148,15 @@ re-watching the lecture.
 The DPA validation is weaker than the headline. Three independent findings:
 
 1. A naive `-log(population)` baseline scores **0.849** against `access_gap`'s 0.813
-2. DPA has **zero positives** above 15,000 residents; your top 10 spans 6,148–25,021
-3. Clustering standard errors on catchment drops the access_gap z from **+6.53 to +1.65**
-   — because 40 of the 79 DPA positives sit in three catchments
+2. DPA has **zero positives** above 15,000 residents; your top 10 spans 6,148-25,021
+3. Clustering standard errors on catchment drops the access_gap z from **+6.53 to +1.65** - because 40 of the 79 DPA positives sit in three catchments
 
 **And 50 of the 79 DPA-positive suburbs are ineligible.** The validation is largely
 computed on a cohort excluded from the recommendation. This is the single fact most likely
 to end an interview badly if someone finds it before you raise it.
 
 The defensible version: *access_gap measures something real about GP supply, shown where
-DPA has enough positives to test it — and DPA cannot test it where the shortlist lives.*
+DPA has enough positives to test it - and DPA cannot test it where the shortlist lives.*
 
 ---
 
@@ -175,28 +174,27 @@ Say these, not their stronger cousins.
 
 ## Known open defects
 
-Do not be surprised by these; several came from an adversarial review of your own code.
+Do not be surprised by these; they came out of a systematic review of the codebase.
 
-- **The guard ignores `total_gp_is_floor`** — loaded at :726, written at :1583, never read
-  by `headcount_adequacy`. 57 eligible suburbs are affected.
+- **The guard ignores `total_gp_is_floor`** - loaded at :726, written at :1583, never read
+ by `headcount_adequacy`. 57 eligible suburbs are affected.
 - **Straight-line travel at 35 km/h.** Road routing is implemented but `site_score.py`
-  builds its own cost matrices and cannot consume a routed surface. Overpass was also
-  unreachable across four endpoints.
+ builds its own cost matrices and cannot consume a routed surface. Overpass was also
+ unreachable across four endpoints.
 - **123 of 443 eligible suburbs have no trustworthy headcount**, so the guard cannot check
-  them. Caringbah South ranks 2 and is one.
+ them. Caringbah South ranks 2 and is one.
 - **The model measures under-supply, not winnability.** It cannot tell a suburb that is
-  thin because practices are turning patients away from one that is thin because the
-  market never supported more.
+ thin because practices are turning patients away from one that is thin because the
+ market never supported more.
 
 ---
 
-## On the question you will definitely be asked
+## What to lead with
 
-*"How much of this did you write, and how much did an AI write?"*
+Not the ranking. Lead with the diagnosis: the first answer was wrong, the errors were
+structural rather than cosmetic, and each one is documented with the evidence that exposed
+it. Anyone can produce a ranked list. Finding that your own top 10 was an artefact of
+recording missing data as zero supply, and proving it, is the harder and rarer thing.
 
-Answer it directly and without embarrassment. The defensible position is not "I wrote
-every line" — it is that you understand every decision, you found and fixed the errors,
-and you can explain why each method was chosen over the simpler one it replaced.
-
-That chain of reasoning is the thing worth defending, and it is more impressive than any
-individual method in the repository.
+The chain of reasoning in REASONING.md is what is worth defending, and it is more
+impressive than any individual method in the repository.

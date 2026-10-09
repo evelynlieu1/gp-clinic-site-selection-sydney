@@ -86,7 +86,15 @@ Dee Why moved from rank 2 to 17, Mona Vale 9 to 42, Freshwater 10 to 12.
 
 ## The current answer, and how much of it to believe
 
-![Rank stability under 31 perturbations](eda/plots/readme_rank_stability.png)
+![Rank stability under 32 perturbations](eda/plots/readme_rank_stability.png)
+
+*Share of the 32 perturbation runs in which each suburb stays in the top 10. The
+recommendation is what survives the sweep, not what wins the point estimate.*
+
+![Priority map: accessibility against senior density](eda/plots/combined_pressure_density.png)
+
+*Bivariate priority map. Darkest suburbs have both the least reachable GP capacity and the
+highest senior density. Hatching marks suburbs where accessibility is not computable.*
 
 **Cronulla** - 17,899 residents, 6 practices within 2 km, thin on both the accessibility
 measure and on doctors per resident. It holds the top 10 in **all 31** perturbation
@@ -98,6 +106,11 @@ the same ranges, 400 times: Cronulla holds rank 1 in **55%** of draws [0.50, 0.6
 Beach in 20%, Glenmore Park 10%, Oran Park 8%. Cronulla holds the top 10 in 94% and Avalon
 Beach in 97%. Cronulla is the modal winner by a clear margin - but the supported claim is
 a shortlist of Cronulla, Avalon Beach, Oran Park and Glenmore Park, not a single name.
+
+![2SFCA against 3SFCA ranks](eda/plots/method_comparison.png)
+
+*Eight of ten top-10 suburbs survive the switch between formulations, but the ordering
+does not. The lines cross; the membership mostly holds.*
 
 **Rank 1 also depends on the formulation.** The sweep now includes a method family, not only
 parameter families: under 3SFCA, which adds demand-side competition weighting and removes
@@ -152,6 +165,40 @@ commercial.
 
 ## Method
 
+```mermaid
+flowchart TD
+    subgraph sources["Public data"]
+        A1["Healthdirect register<br/>2,089 practices, 1,832 pharmacies"]
+        A2["ABS Census 2021<br/>SAL + SA2 boundaries"]
+        A3["DoH GP catchments<br/>from Medicare patient flows"]
+        A4["DoH Distribution<br/>Priority Area 2025a"]
+    end
+
+    A1 --> B["accessibility.py<br/>E2SFCA surface"]
+    A2 --> B
+    A2 --> C["site_score.py<br/>4 criteria, 2 hard gates"]
+    A3 --> C
+    A4 --> C
+    B --> C
+
+    C --> D["Ranking<br/>443 of 680 eligible"]
+    C --> E["32 perturbations<br/>10 families"]
+
+    D --> F["validation.py<br/>AUC vs DPA, Moran's I, LISA"]
+    D --> G["uncertainty.py<br/>population resample, joint draws"]
+
+    E --> H["Robust core<br/>what survives the sweep"]
+    F --> H
+    G --> H
+
+    style B fill:#E1F5EE,stroke:#0F6E56
+    style C fill:#E1F5EE,stroke:#0F6E56
+    style H fill:#EEEDFE,stroke:#534AB7
+```
+
+The recommendation is **H**, not **D**. The point estimate is an input to the robustness
+test, not the output of the project.
+
 | Component | Approach |
 |---|---|
 | Supply access | E2SFCA, distance-decayed, competition-adjusted |
@@ -164,6 +211,13 @@ commercial.
 
 Weights are 0.40 access / 0.25 demand / 0.25 billing fit / 0.10 operational - and they
 are not defended by assertion. Every one is varied by ±50% and to zero in the sweep.
+
+![Mixed-billing fit against practice locations](eda/plots/mixed_billing_income_vs_supply.png)
+
+*The choropleth is the inverted-U billing fit, not raw income: dark means "best fit for a
+mixed-billing offer", not "richest". Each dot is one practice from the register. Hatched
+suburbs score zero for opposite reasons - too poor to absorb a gap fee, or wealthy enough
+to buy full private care.*
 
 ### Does it work?
 

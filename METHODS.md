@@ -3,21 +3,21 @@
 Every statistical and spatial method in this project: what it does, where it lives, why it
 was chosen over the simpler alternative, and what it assumes.
 
-Everything here is **non-parametric and resampling-based**. That was not a stylistic
-choice - the observations are spatially autocorrelated (Moran's I = 0.359, p = 0.001), so
+Everything here is **non-parametric and resampling-based**. This was not a stylistic
+choice. The observations are spatially autocorrelated (Moran's I = 0.359, p = 0.001), so
 any method whose standard error assumes independent suburbs is wrong by an unknown amount.
 
 ---
 
-## 1. Spatial accessibility - E2SFCA
+## 1. Spatial accessibility (E2SFCA)
 
 **Enhanced two-step floating catchment area.** `accessibility.py`, `e2sfca()`
 
 | | |
 |---|---|
 | Answers | How many practices can each suburb reach, after everyone else competing for them? |
-| Step 1 | `R_j = S_j / Σ_k P_k · W(d_kj)` - supply per weighted person competing at practice *j* |
-| Step 2 | `A_i = Σ_j R_j · W(d_ij)` - sum of those ratios across reachable practices |
+| Step 1 | `R_j = S_j / Σ_k P_k · W(d_kj)` (supply per weighted person competing at practice *j*) |
+| Step 2 | `A_i = Σ_j R_j · W(d_ij)` (sum of those ratios across reachable practices) |
 | Chosen over | Practices inside the suburb boundary; practices within *X* km; nearest-practice distance; a plain gravity model |
 | Assumes | Travel cost is a reasonable proxy for access; one unit of supply per practice |
 
@@ -58,7 +58,8 @@ Each criterion maps to [0,1] through its own function rather than a shared z-sco
 **Why not z-scores.** Three reasons, in order of severity.
 
 1. **Two of the four criteria are not monotone.** A z-score can only encode "more is
- better". It structurally cannot express an optimum in the middle, and income has one - mixed billing needs households who can absorb a gap fee and are not already buying full
+ better". It structurally cannot express an optimum in the middle, but income has one.
+ Mixed billing needs households who can absorb a gap fee and are not already buying full
  private care.
 2. **Z-scores are mutually coupled.** Every suburb's score depends on the mean and standard
  deviation of all of them, so one outlier moves everyone. When the eligible cohort
@@ -68,9 +69,9 @@ Each criterion maps to [0,1] through its own function rather than a shared z-sco
  domain claims. Standardisation dissolves them into "relative to average".
 
 **What z-scores do better, stated:** with sd forced to 1, nominal weight equals effective
-weight exactly. Here it does not - `access_gap` carries 40% nominal but 32.6% of the real
-discriminating power. That drift is measured by `report_criterion_influence()` on every
-run rather than left implicit.
+weight exactly. Here it does not. For example, `access_gap` carries 40% of the nominal
+weight but only 32.6% of the real discriminating power. That drift is measured by
+`report_criterion_influence()` on every run rather than left implicit.
 
 ---
 
@@ -79,16 +80,18 @@ run rather than left implicit.
 Two different mechanisms, deliberately:
 
 - **Hard gates** (population ≥ 1,000; catchment demand ≥ 25,000; existing-clinic
- exclusion). Non-compensatory - fail one and you get no rank at all, however strong the
- rest. This is what stops a 1,334-person enclave winning.
-- **Weighted sum** over the eligible set. Compensatory - a weak criterion can be offset.
+ exclusion). These are non-compensatory, so a suburb that fails one gets no rank at all,
+ however strong the rest of its criteria are. This is what stops a 1,334-person enclave
+ winning.
+- **Weighted sum** over the eligible set. This stage is compensatory, so a weak criterion
+ can be offset by stronger ones.
 
 Conjunctive screening followed by compensatory aggregation is a standard MCDA pattern, and
 the split is the answer to "why doesn't a tiny suburb with perfect access win?"
 
 ---
 
-## 4. Discrimination - AUC via Mann-Whitney
+## 4. Discrimination (AUC via Mann-Whitney)
 
 `validation.py`, `auc()`, `auc_interval()`, `stratified_auc()`
 
@@ -97,13 +100,13 @@ statistic, normalised.
 
 **Why not accuracy.** 79 positives in 680 means "always no" scores 88%.
 
-**Interval:** percentile bootstrap, **stratified by class** - with 79 positives an
-unstratified resample can empty the class entirely.
+**Interval:** percentile bootstrap, **stratified by class**, because with only 79 positives
+an unstratified resample can empty the class entirely.
 
 **Stratified by population band**, because DPA-positive suburbs have a median population of
 815 against 5,643 for the rest. Without holding size fixed, the AUC substantially measures
-"is this a small suburb" - a bare `-log(population)` baseline scores 0.849 against
-`access_gap`'s 0.813.
+"is this a small suburb". A bare `-log(population)` baseline scores 0.849, which is higher
+than `access_gap`'s 0.813.
 
 ---
 
@@ -126,19 +129,19 @@ are 46.
 
 ---
 
-## 6. Spatial autocorrelation - Moran's I and LISA
+## 6. Spatial autocorrelation (Moran's I and LISA)
 
 `validation.py`, `morans_i_test()`, `lisa_test()`, `spatial_clusters()`
 
 **Global Moran's I** with row-standardised k-nearest-neighbour weights, against a
-**permutation null** (999 draws) rather than the analytic normal approximation - the score
-is bounded on [0,1] and visibly non-normal, which is exactly where the closed-form variance
-misleads.
+**permutation null** (999 draws) rather than the analytic normal approximation. This is
+because the score is bounded on [0,1] and visibly non-normal, which is exactly where the
+closed-form variance misleads.
 
 **Local Moran's I (LISA)** with a **conditional** null: each suburb keeps its own value
 while its neighbours are resampled. That is the correct null for a local statistic.
 
-**Benjamini - Hochberg FDR** across all 443 simultaneous tests. At α = 0.05 roughly 22
+**Benjamini-Hochberg FDR** across all 443 simultaneous tests. At α = 0.05 roughly 22
 "significant" clusters would appear in pure noise; the correction took 124 down to 58.
 
 **Decomposition identity verified:** the mean of the local statistics equals the global
@@ -157,8 +160,8 @@ statistic to six decimal places.
 
 **Block bootstrap** resamples catchments rather than suburbs because Moran's I shows
 suburbs are not independent. **Measured, against expectation:** blocking widens the top-10
-intervals by only 7% - a rank depends on *how many* suburbs outscore you, and that count
-barely notices whether correlated neighbours arrive together.
+intervals by only 7%. This is because a rank depends on *how many* suburbs outscore you,
+and that count is barely affected by whether correlated neighbours arrive together.
 
 **The joint sweep** uses exactly the ranges the one-at-a-time families already sweep, so
 the result cannot be attributed to widened ranges. One-factor-at-a-time sensitivity cannot
@@ -177,7 +180,7 @@ headcount guard, and the 2SFCA/3SFCA formulation.
 
 **Why this instead of deriving the weights.** AHP produces weights that look derived while
 still encoding the analyst's judgement. Regression needs an outcome variable, and there is
-none - no revenue, no patient volumes, no success labels. So the weights stay asserted and
+none (no revenue, no patient volumes, no success labels). So the weights stay asserted and
 the *claim* changes: report what survives, not what wins.
 
 ---
@@ -200,7 +203,7 @@ the *claim* changes: report what survives, not what wins.
 | Method | Why not |
 |---|---|
 | t-test / Welch | Independence measured false. Normality and equal variance both hold; independence does not, and it is the one nobody checks |
-| ANOVA | Same independence problem, plus the null is known false - catchments are defined geographically |
+| ANOVA | Same independence problem. The null is also known to be false, because catchments are defined geographically |
 | Levene's test | A precondition test for tests that should not be run. It passes (p = 0.63), which is reassurance about the wrong thing |
 | Chi-square independence | Expected cell counts below 5 in the upper population bands, and the cells are filled by spatially clustered units |
 | Pearson with p-values | At n = 443 everything is significant; magnitudes are the finding. Spearman is used, reported without p-values |
@@ -212,8 +215,9 @@ the *claim* changes: report what survives, not what wins.
 
 ## Assumptions carried, in one place
 
-1. Travel cost is straight-line distance at 35 km/h - a measured conversion from 151,558
- origin-destination pairs, median circuity 1.259, but not road routing.
+1. Travel cost is straight-line distance at 35 km/h. This conversion was measured from
+ 151,558 origin-destination pairs (median circuity 1.259), but the cost is still not based
+ on road routing.
 2. One unit of supply per practice. No practitioner-count field exists in the register.
 3. Demand is the 2021 Census; supply is the March 2025 register.
 4. The income band is calibrated to percentiles of the observed distribution, so it is

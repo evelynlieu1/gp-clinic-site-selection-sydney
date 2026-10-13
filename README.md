@@ -389,15 +389,15 @@ a decision:
 ## Repository
 
 ```
-site_score.py          scoring, sensitivity sweep, self-tests    (1,738 lines)
-accessibility.py       E2SFCA surface, travel cost               (1,422)
+site_score.py          scoring, sensitivity sweep, self-tests    (1,749 lines)
+accessibility.py       E2SFCA surface, travel cost               (1,511)
 gp_supply.py           three-way supply status gate
 gp_catchments.py       Department of Health catchment join
 health_facilities.py   practice and pharmacy register
 dpa_status.py          Distribution Priority Area join
-validation.py          AUC against DPA, Moran's I under a permutation null  (339)
+validation.py          AUC against DPA, Moran's I under a permutation null  (884)
 eda/plot_shortlist.py  the two summary figures at the top of this page
-METHODOLOGY.md         method, validation and limitations        (427)
+METHODOLOGY.md         method, validation and limitations        (648)
 METHODS.md             every statistical method, and what was rejected
 ```
 

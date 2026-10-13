@@ -1,14 +1,12 @@
 """
 Regenerate scraped_data/suburbs_final.csv using the same code as pre-processing.ipynb (merge cell).
 
-Run from anywhere:
+Run from the repository root:
   python rebuild_suburbs_final.py
 
-Or from PowerShell (use your real project path):
-  Set-Location C:/Users/nhu92/Desktop/nuvo-health-suburb-selection-project
-  python rebuild_suburbs_final.py
-
-Do NOT paste the Set-Location line into a Jupyter Python cell - that is only for the terminal.
+The script changes to its own folder before it runs, so it also works when called from
+another directory with the full path to the file. This is a terminal command, not Python
+code for a Jupyter cell.
 """
 from __future__ import annotations
 

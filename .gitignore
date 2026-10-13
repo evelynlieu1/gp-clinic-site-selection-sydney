@@ -20,6 +20,10 @@ build/
 .venv/
 *.swp
 *.swo
+.vscode/
+
+# Personal planning notes (kept locally, not published)
+rough_project_outline.txt
 
 # OSM suburb polygon cache (large; regenerate with eda/plot_combined_pressure_density.py)
 eda/geo_cache/

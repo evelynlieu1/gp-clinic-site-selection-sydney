@@ -22,7 +22,7 @@ never ranked on by default.
 
 The frame is the 680 suburbs in `scraped_data/eda_data.csv`. Demand is the 2021 Census (population, 65-plus
 share, median weekly household income); supply is the Healthdirect National Health Services Directory as
-republished by Geoscience Australia, extract 2025-03-07-2,089 NSW general practices and 1,832 pharmacies,
+republished by Geoscience Australia, extract 2025-03-07: 2,089 NSW general practices and 1,832 pharmacies,
 dated and re-fetchable. 443 of the 680 suburbs are eligible for a rank.
 
 What a ranked row claims is "too few practices for the population that must share them", never "no GP here".
@@ -140,7 +140,7 @@ in-polygon count measures which side of an administrative line a clinic sits on.
 **Proof.** Count register practices by distance from the suburb centroid instead of inside its
 polygon. Croydon, between Burwood and Ashfield, has 1 inside, 21 within 1.5 km, 27 within 2 km, 42
 within 3 km, nearest 385 m. The pattern is systematic, not an anecdote: of the 298 suburbs with no
-practice inside, 170 (57.0%) have one within 1.5 km and 206 (69.1%) within 2 km, and only 61-55,147 people - have none within 3 km. Among suburbs of 5,000-plus residents with none inside there
+practice inside, 170 (57.0%) have one within 1.5 km and 206 (69.1%) within 2 km, and only 61 suburbs (55,147 people) have none within 3 km. Among suburbs of 5,000-plus residents with none inside there
 are 46, and 43 have one within 2 km; the three exceptions are Heathcote, Spring Farm and Ruse. The
 error hid the genuine cases too: Heathcote, 6,148 residents, has 0 practices within 2 km, 9 within
 3 km, nearest 2.455 km, and never reached a v1 shortlist.

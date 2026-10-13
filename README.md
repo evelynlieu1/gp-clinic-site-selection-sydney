@@ -15,6 +15,12 @@ with the evidence that exposed it.**
 > boundary data, and the operator's own published list of clinic locations. Nothing here
 > should be read as their position or as advice given to them.
 
+**At a glance**
+- **Answer:** a shortlist of four suburbs (Cronulla, Avalon Beach, Oran Park, Glenmore Park), not a single winner. Cronulla came first in 55% of 400 joint re-runs.
+- **Skills:** Python (pandas, geospatial), ABS Census and public health data, E2SFCA accessibility modelling, weighted multi-criteria scoring, sensitivity and bootstrap testing.
+- **What it demonstrates:** catching and documenting my own model's errors. Missing data had been read as zero supply, supply was counted only inside suburb boundaries, and income was rewarded without limit.
+- Full method in [METHODOLOGY.md](METHODOLOGY.md).
+
 ## The short version
 
 The original top 10 had **7 suburbs that had never returned any supply data at all.**
